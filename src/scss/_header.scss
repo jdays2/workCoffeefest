@@ -1,0 +1,136 @@
+.header {
+    padding-top: 2.4rem;
+    padding-bottom: 2.1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color: #383a39, $alpha: 0.6);
+    backdrop-filter: blur(5rem);
+    z-index: 5;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 7.8rem;
+
+        img {
+            width: 22.8rem;
+            height: 8.4rem;
+            object-fit: contain;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__top-list {
+        margin-bottom: 4.8rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -2.6rem;
+            width: calc(100% - 4rem);
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateX(-50%);
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+
+            &-link {
+                color: $text;
+            }
+        }
+    }
+
+    &__bottom-list {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 4.5rem;
+            }
+
+            &-link {
+                color: $text;
+            }
+        }
+    }
+
+    &__right {
+        margin-left: auto;
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+    }
+
+    &__search,
+    &__account {
+        margin-right: 2.4rem;
+    }
+
+    &__search,
+    &__account,
+    &__cart {
+        img {
+            width: 2.8rem;
+            height: 2.8rem;
+            object-fit: contain;
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 4.8rem;
+        padding-bottom: 4.8rem;
+
+        &__burger {
+            svg {
+                width: 5.6rem;
+                height: 3.4rem;
+                object-fit: contain;
+            }
+        }
+
+        .container {
+            justify-content: space-between;
+        }
+
+        &__logo {
+            margin-right: 0;
+
+            img {
+                width: 23.6rem;
+                height: 8rem;
+            }
+        }
+
+        &__right {
+            margin-left: 0;
+            align-self: center;
+        }
+
+        &__account,
+        &__cart {
+            img {
+                width: 5.4rem;
+                height: 5.4rem;
+            }
+        }
+    }
+}

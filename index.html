@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/fonts/fonts.css">
+    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Страницы</title>
+</head>
+
+<body>
+    @@include('./templates/header.html')
+    <main>
+        <section class="index">
+            <div class="container">
+                <ul class="index__list">
+                    <li class="index__list-item">
+                        <a href="/dist/registration.html" target="_blank" class="index__list-item__link text1">
+                            <span>Личный кабинет. Регистрация</span>
+                        </a>
+                    </li>
+                    <li class="index__list-item">
+                        <a href="/dist/login.html" target="_blank" class="index__list-item__link text1">
+                            <span>Личный кабинет. Вход</span>
+                            <div></div>
+                        </a>
+                    </li>
+                    <li class="index__list-item">
+                        <a href="/dist/forget-password.html" target="_blank" class="index__list-item__link text1">
+                            <span>Личный кабинет. Забыли пароль?</span>
+                            <div></div>
+                        </a>
+                    </li>
+                    <li class="index__list-item">
+                        <a href="/dist/password-recovery.html" target="_blank" class="index__list-item__link text1">
+                            <span>Личный кабинет. Восстановление пароля</span>
+                            <div></div>
+                        </a>
+                    </li>
+                    <li class="index__list-item">
+                        <a href="/dist/account-lk.html" target="_blank" class="index__list-item__link text1">
+                            <span>Личный кабинет. Личные данные</span>
+                            <div></div>
+                        </a>
+                    </li>
+
+                    <li class="index__list-item">
+                        <a href="/dist/catalog-general.html" target="_blank" class="index__list-item__link text1">
+                            <span>Каталог (общий)</span>
+                            <div></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    @@include('./templates/footer.html')
+</body>
+
+</html>

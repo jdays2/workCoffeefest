@@ -1,0 +1,111 @@
+.account-main {
+    padding-top: 29.7rem;
+    padding-bottom: 13.5rem;
+    min-height: 108.7rem;
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        right: 0;
+        bottom: -12rem;
+        width: 96.9rem;
+        height: 120.7rem;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__content {
+        max-width: 60.6rem;
+    }
+
+    &__subheading {
+        margin-bottom: 1.8rem;
+    }
+
+    &__heading {
+        margin-bottom: 3.2rem;
+    }
+
+    &__text {
+        margin-bottom: 4.5rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        word-break: break-all;
+
+        a {
+            margin-left: 1rem;
+        }
+    }
+
+    &__form {
+        width: 48rem;
+        margin-bottom: 4.5rem;
+
+        .input-container {
+            &:not(:last-of-type) {
+                margin-bottom: 2.4rem;
+            }
+
+            &:last-of-type {
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+
+    &__submit {
+        width: 100%;
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 24rem;
+        padding-bottom: 24rem;
+        min-height: 162.4rem;
+
+        &.forget-password-main {
+            .account-main__bg {
+                height: 71.4rem;
+            }
+        }
+
+        &__bg {
+            width: 100%;
+            height: 50rem;
+            left: 0;
+            right: auto;
+            bottom: -7.2rem;
+            object-fit: cover;
+        }
+
+        &__content {
+            max-width: none;
+        }
+
+        &__subheading {
+            margin-bottom: 2.8rem;
+        }
+
+        &__heading {
+            margin-bottom: 3.4rem;
+        }
+
+        &__text {
+            margin-bottom: 8rem;
+        }
+
+        &__form {
+            margin-bottom: 8rem;
+            width: 100%;
+
+            .input-container {
+                &:not(:last-of-type) {
+                    margin-bottom: 4.8rem;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 6.4rem;
+                }
+            }
+        }
+    }
+}
