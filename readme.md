@@ -1,3 +1,3 @@
-Верстка для COFFE FEST
+Верстка для COFFEE FEST
 # Сайт с версткой:
-## https://alekseyvotencev.github.io/coffefest/
+## https://alekseyvotencev.github.io/coffeefest/
