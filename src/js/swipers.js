@@ -22,6 +22,56 @@ document.addEventListener('DOMContentLoaded', function () {
         else return String(number)
     }
 
+    // ГЛАВНАЯ
+
+    const mainHeroBanner = new Swiper('.main-banner__swiper', {
+        slidesPerView: 1,
+        spaceBetween: rem(3),
+        pagination: {
+            el: '.main-banner__swiper-controllers .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.main-banner__swiper-controllers .next',
+            prevEl: '.main-banner__swiper-controllers .prev',
+        },
+    })
+
+    const servicesSwiper = new Swiper('.services__swiper', {
+        slidesPerView: 4,
+        spaceBetween: rem(3.4),
+        pagination: {
+            el: '.services__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.services__swiper-next',
+            prevEl: '.services__swiper-prev',
+        },
+    })
+
+    const newsSwiper = new Swiper('.news__swiper', {
+        slidesPerView: 3,
+        spaceBetween: rem(3.5),
+        pagination: {
+            el: '.news__swiper-controllers .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.news__swiper-controllers .next',
+            prevEl: '.news__swiper-controllers .prev',
+        },
+    })
+
+    const eventsSwiper = new Swiper('.events__swiper', {
+        slidesPerView: 1,
+        spaceBetween: rem(3.5),
+        speed: 600,
+        pagination: {
+            el: '.events__swiper-controllers .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.events__swiper-controllers .swiper-next',
+            prevEl: '.events__swiper-controllers .swiper-prev',
+        },
+    })
     // КАТАЛОГ (ОБЩИЙ)
 
     const catalogHeroSwiper = new Swiper('.catalog-hero__swiper', {

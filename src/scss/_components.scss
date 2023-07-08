@@ -1,11 +1,15 @@
 $white: #ffffff;
 $black: #383a39;
+$light: #fff9ee;
 $darkGrey: #797979;
 $grey: #bababa;
-$red: #9c3f66;
-$green: #66a7ac;
-$darkBlue: #283352;
-
+$red: #51283f;
+$green: #203d3c;
+$blue: #67a7ac;
+$darkBlue: #1e283f;
+$brightHeadlines: #e6af9a;
+$biege: #f1ded0;
+$biege-btn: #e3bca0;
 $peach: #e8ccbf;
 $text: #fffcf8;
 $background: #faf1ed;
@@ -13,8 +17,38 @@ $line: rgba(234, 194, 178, 0.25);
 $grey20: rgba(121, 121, 121, 0.2);
 $white20: rgba(255, 255, 255, 0.2);
 
-a {
-    color: $red;
+.biege-section {
+    background-color: $biege;
+}
+
+.light-section {
+    background: url(../images/svg/services-ornament.svg) top left/cover no-repeat;
+}
+
+.white-arrow-btn {
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $light;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+
+    img {
+        width: 2.8rem;
+        height: 1.6rem;
+        object-fit: contain;
+    }
+
+    &:hover {
+        background-color: $brightHeadlines;
+    }
+}
+
+.section {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .hero-section {
@@ -41,8 +75,8 @@ a {
 .heading2 {
     font-weight: 700;
     font-size: 6rem;
-    line-height: 7.2rem;
-    text-transform: uppercase;
+    line-height: 1;
+    color: $darkBlue;
 
     @media (max-width: 48em) {
         font-size: 5.2rem;
@@ -65,7 +99,7 @@ a {
 .heading4 {
     font-weight: 700;
     font-size: 2.2rem;
-    line-height: 2.9rem;
+    line-height: 1.3;
     text-transform: uppercase;
 
     @media (max-width: 48em) {
@@ -88,14 +122,28 @@ a {
     }
 }
 
+.light-square-btn {
+    padding: 1.4rem 3.6rem;
+    display: inline-block;
+    position: relative;
+    color: $biege-btn;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    border: 2px solid $biege-btn;
+    text-transform: uppercase;
+}
+
 .arrow-link {
     display: flex;
     align-items: center;
     gap: 1.4rem;
     font-weight: 700;
     font-size: 1.8rem;
-    line-height: 2.3rem;
-    letter-spacing: 0.05em;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
     text-transform: uppercase;
     color: $black;
 
@@ -132,39 +180,34 @@ a {
     }
 }
 
-.text1 {
+.biege-btn {
+    padding: 2.4rem 3.6rem;
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 2.5rem;
-
-    @media (max-width: 48em) {
-        font-size: 2.8rem;
-        line-height: 4rem;
-    }
-}
-
-.text2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-
-    @media (max-width: 48em) {
-        font-size: 2.8rem;
-        line-height: 4rem;
-    }
-}
-
-.text3 {
     font-size: 1.8rem;
-    line-height: 2.5rem;
-
-    @media (max-width: 48em) {
-        font-size: 2.8rem;
-        line-height: 4rem;
-    }
+    line-height: 1.3;
+    color: $darkBlue;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    background: rgba(230, 176, 154, 0.2);
+    border: 2px solid $darkBlue;
 }
 
-.gray-text {
-    color: $darkGrey;
+.text1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.menu {
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.btns-caps {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
 }
 
 .input-container {
@@ -484,71 +527,66 @@ a {
 }
 
 .swiper-controllers {
-    padding-top: 4.4rem;
-    padding-bottom: 3.6rem;
-    width: 100%;
-    background-color: rgba($color: $darkGrey, $alpha: 0.2);
-    backdrop-filter: blur(5rem);
-
-    .container {
+    .swiper-next,
+    .swiper-prev {
+        position: absolute;
+        top: 50%;
+        width: 7rem;
+        height: 7rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        background-color: $white;
+        border-radius: 50%;
+        border: 2px solid $biege-btn;
+        z-index: 1;
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer;
+
+        img {
+            width: 2.8rem;
+            height: 1.6rem;
+        }
+
+        &:hover {
+            background-color: $biege-btn;
+        }
     }
 
-    .swiper-prev,
-    .swiper-next {
-        &.swiper-button-disabled {
-            img {
-                opacity: 0.5;
-            }
-        }
+    .swiper-prev {
+        left: 0;
+        transform: translate(-50%, -50%);
+
         img {
-            width: 3.8rem;
-            height: 1.2rem;
-            object-fit: contain;
+            transform: scaleX(-1);
         }
+    }
+
+    .swiper-next {
+        right: 0;
+        transform: translate(50%, -50%);
     }
 
     .swiper-pagination {
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: center;
 
-        &-bullet {
-            position: relative;
-            width: 2.9rem;
-            height: 2.9rem;
-            border: 1px solid transparent;
+        .swiper-pagination-bullet {
+            width: 1.3rem;
+            height: 1.3rem;
             border-radius: 50%;
             opacity: 1;
             background-color: transparent;
-            transition: border-color 0.2s ease-in-out;
+            border: 2px solid $darkBlue;
 
             &:not(:last-child) {
-                margin-right: 2.2rem;
+                margin-right: 1.3rem;
             }
 
-            &::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 0.9rem;
-                height: 0.9rem;
-                background-color: rgba($color: $white, $alpha: 0.2);
-                border-radius: 50%;
-                transform: translate(-50%, -50%);
-                transition: background-color 0.2s ease-in-out;
-            }
-        }
-
-        &-bullet-active {
-            border-color: $white;
-            background-color: transparent;
-
-            &::after {
-                background-color: $white;
+            &.swiper-pagination-bullet-active {
+                background-color: $darkBlue;
             }
         }
     }
