@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/fonts/fonts.css">
     <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/css/main.css">
-    <title>Страницы</title>
+    <title>Новости</title>
 </head>
 
 <body>
@@ -83,59 +82,81 @@
     </div>
 </header>
     <main>
-        <section class="index">
+        <section class="news-banner">
+            <img src="./src/images/news-banner.png" alt="" class="news-banner__img">
+            <img src="./src/images/svg/news-ornament.svg" alt="" class="news-banner__bg">
+
             <div class="container">
-                <ul class="index__list">
+                <p class="news-banner__heading">Регистрируйся в программе лояльности </p>
+                <p class="news-banner__subheading">и получай 100 баллов на свой счёт карты</p>
+                <button class="biege-btn news-banner__btn">Зарегистрироваться</button>
+            </div>
+        </section>
 
-
-                    <li class="index__list-item">
-                        <a href="./dist/main.html" target="_blank" class="index__list-item__link text1">Главная </a>
-                    </li>
-                    <li class="index__list-item">
-                        <a href="./dist/news.html" target="_blank" class="index__list-item__link text1">Новости </a>
-                    </li>
-
-
-
-                    <li class="index__list-item">
-                        <a href="./dist/registration.html" target="_blank" class="index__list-item__link text1">
-                            <span>Личный кабинет. Регистрация</span>
-                        </a>
-                    </li>
-                    <li class="index__list-item">
-                        <a href="./dist/login.html" target="_blank" class="index__list-item__link text1">
-                            <span>Личный кабинет. Вход</span>
-                            <div></div>
-                        </a>
-                    </li>
-                    <li class="index__list-item">
-                        <a href="./dist/forget-password.html" target="_blank" class="index__list-item__link text1">
-                            <span>Личный кабинет. Забыли пароль?</span>
-                            <div></div>
-                        </a>
-                    </li>
-                    <li class="index__list-item">
-                        <a href="./dist/password-recovery.html" target="_blank" class="index__list-item__link text1">
-                            <span>Личный кабинет. Восстановление пароля</span>
-                            <div></div>
-                        </a>
-                    </li>
-                    <li class="index__list-item">
-                        <a href="./dist/account-lk.html" target="_blank" class="index__list-item__link text1">
-                            <span>Личный кабинет. Личные данные</span>
-                            <div></div>
+        <section class="news-main">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="/dist/main.html" class="breadcrumbs__item-link">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
+                                    stroke="#29354D" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
                         </a>
                     </li>
 
-                    <li class="index__list-item">
-                        <a href="./dist/catalog-general.html" target="_blank" class="index__list-item__link text1">
-                            <span>Каталог (общий)</span>
-                            <div></div>
-                        </a>
+                    <li class="breadcrumbs__item">
+                        <a href="/dist/news.html" class="breadcrumbs__item-link">Новости</a>
                     </li>
-
-
                 </ul>
+
+                <p class="news-main__heading heading2">Последние новости</p>
+
+                <div class="news-main__tags">
+                    <button>
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 18H15" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 18H2" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 7H19" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 7H2" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7 15H13C14.1 15 15 15.5 15 17V19C15 20.5 14.1 21 13 21H7C5.9 21 5 20.5 5 19V17C5 15.5 5.9 15 7 15Z"
+                                stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M11 4H17C18.1 4 19 4.5 19 6V8C19 9.5 18.1 10 17 10H11C9.9 10 9 9.5 9 8V6C9 4.5 9.9 4 11 4Z"
+                                stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>Фильтры</span>
+                    </button>
+                </div>
+
+                <div class="news-main__list">
+                    <div class="news-main__item">
+                        <img src="./src/images/news-img1.png" alt="" class="news-main__item-img">
+                        <div class="news-main__item-text">
+                            <p class="news-main__item-heading heading4">Ежедневные загрузки</p>
+                            <p class="news-main__item-description menu">Наше производство и офис возвращаются к
+                                привычному
+                                графику
+                                и ежедневным отгрузкам. Наше
+                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.Наше
+                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.</p>
+                            <div class="news-main__item-bottom">
+                                <p class="news-main__item-date btns-caps">01.12.23</p>
+                                <p class="news-main__item-name btns-caps">НОВОСТИ КОФЕ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
