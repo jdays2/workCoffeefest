@@ -722,3 +722,20 @@ $white20: rgba(255, 255, 255, 0.2);
         }
     }
 }
+
+.tag-btn {
+    padding: 1.4rem 3.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 2rem;
+    line-height: 1.25;
+    border: 2px solid $darkBlue;
+    color: $darkBlue;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        object-fit: contain;
+    }
+}
