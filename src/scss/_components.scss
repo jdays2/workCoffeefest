@@ -601,6 +601,8 @@ $white20: rgba(255, 255, 255, 0.2);
 
     &__item {
         position: relative;
+        display: flex;
+        align-items: center;
 
         &:not(:last-child) {
             margin-right: 2.4rem;
@@ -612,7 +614,7 @@ $white20: rgba(255, 255, 255, 0.2);
                 font-size: 2rem;
                 line-height: 1.25;
                 color: $darkBlue;
-                top: 0.2rem;
+                top: 0;
             }
         }
 
@@ -624,6 +626,9 @@ $white20: rgba(255, 255, 255, 0.2);
 
         &-link {
             color: $darkBlue;
+            position: relative;
+            align-items: center;
+            display: flex;
 
             svg {
                 width: 2.8rem;

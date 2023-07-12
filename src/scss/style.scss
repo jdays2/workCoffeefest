@@ -33,8 +33,10 @@
 @import "franchise";
 
 @import "news-banner";
-
 @import "news-main";
+
+@import "news-detail__hero";
+@import "news-detail";
 
 body {
     position: relative;
