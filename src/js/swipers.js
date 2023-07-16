@@ -72,6 +72,36 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.events__swiper-controllers .swiper-prev',
         },
     })
+
+    const aboutInteriors = new Swiper('.about-interiors__swiper', {
+        slidesPerView: 1.8,
+        spaceBetween: rem(3),
+        centeredSlides: true,
+        loop: true,
+        speed: 600,
+        pagination: {
+            el: '.about-interiors__swiper-controllers .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.about-interiors__swiper-controllers .swiper-next',
+            prevEl: '.about-interiors__swiper-controllers .swiper-prev',
+        },
+    })
+
+
+
+    const aboutTeamSwiper = new Swiper('.about-team__swiper', {
+        slidesPerView: 4,
+        spaceBetween: rem(3.4),
+        speed: 600,
+        pagination: {
+            el: '.about-team__swiper-controllers .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.about-team__swiper-controllers .swiper-next',
+            prevEl: '.about-team__swiper-controllers .swiper-prev',
+        },
+    })
     // КАТАЛОГ (ОБЩИЙ)
 
     const catalogHeroSwiper = new Swiper('.catalog-hero__swiper', {

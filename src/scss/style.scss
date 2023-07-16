@@ -9,6 +9,8 @@
 
 @import "popup";
 
+@import "section-banner";
+
 @import "account-main";
 @import "account-lk";
 
@@ -28,8 +30,6 @@
 
 @import "events";
 
-@import "team";
-
 @import "franchise";
 
 @import "news-banner";
@@ -37,6 +37,12 @@
 
 @import "news-detail__hero";
 @import "news-detail";
+
+@import "about-hero";
+@import "about-info";
+@import "about-production";
+@import "about-interiors";
+@import "about-team";
 
 body {
     position: relative;

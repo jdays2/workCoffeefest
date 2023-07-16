@@ -1,0 +1,25 @@
+.about-info {
+    background-color: $biege;
+
+    .section-tags__container {
+        margin-bottom: 4rem;
+    }
+
+    .section-tags {
+        display: flex;
+        gap: 0.8rem;
+
+        &__item {
+            &-btn {
+                padding: 1.4rem 3.6rem;
+                font-size: 2rem;
+                line-height: 1.25;
+                color: $darkBlue;
+
+                &.active {
+                    border: 2px solid $darkBlue;
+                }
+            }
+        }
+    }
+}
