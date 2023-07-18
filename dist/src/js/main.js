@@ -155,4 +155,33 @@ document.addEventListener('DOMContentLoaded', function () {
         initTabs(ordersTags, orderTables)
     }
 
+    // валидация на имя
+    if (document.querySelector('.input#name')) {
+        const inputName = document.querySelector('.input#name');
+        const inputNameContainer = inputName.parentElement;
+        const regName = /^[A-zА-ё]+$/;
+        inputName.addEventListener('input', function (e) {
+            let inputClass = regName.test(e.target.value) ? 'success' : 'invalid';
+            inputNameContainer.classList.remove('success', 'invalid');
+            inputNameContainer.classList.add(inputClass);
+            if (e.target.value === '') {
+                inputNameContainer.classList.remove('success', 'invalid');
+            }
+        })
+
+
+        const inputEmail = document.querySelector('.input#email');
+        const inputEmailContainer = inputEmail.parentElement;
+        const regNameEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm;
+        inputEmail.addEventListener('input', function (e) {
+            let inputClass = regNameEmail.test(e.target.value) ? 'success' : 'invalid';
+            inputEmailContainer.classList.remove('success', 'invalid');
+            inputEmailContainer.classList.add(inputClass);
+            if (e.target.value === '') {
+                inputEmailContainer.classList.remove('success', 'invalid');
+            }
+        })
+
+    }
+
 })

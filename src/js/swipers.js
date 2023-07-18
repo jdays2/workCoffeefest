@@ -73,18 +73,18 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     })
 
-    const aboutInteriors = new Swiper('.about-interiors__swiper', {
+    const interiors = new Swiper('.interiors__swiper', {
         slidesPerView: 1.8,
         spaceBetween: rem(3),
         centeredSlides: true,
         loop: true,
         speed: 600,
         pagination: {
-            el: '.about-interiors__swiper-controllers .swiper-pagination',
+            el: '.interiors__swiper-controllers .swiper-pagination',
         },
         navigation: {
-            nextEl: '.about-interiors__swiper-controllers .swiper-next',
-            prevEl: '.about-interiors__swiper-controllers .swiper-prev',
+            nextEl: '.interiors__swiper-controllers .swiper-next',
+            prevEl: '.interiors__swiper-controllers .swiper-prev',
         },
     })
 
