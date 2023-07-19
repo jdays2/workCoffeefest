@@ -8,6 +8,14 @@
         padding-bottom: 15rem;
     }
 
+    &.business {
+        .section-banner__left {
+            .arrow-link {
+                color: $biege-btn;
+            }
+        }
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -18,6 +26,11 @@
         &-heading {
             margin-bottom: 4.5rem;
             color: $light;
+        }
+
+        &-subheading {
+            margin-bottom: 4.5rem;
+            color: $brightHeadlines;
         }
 
         &-description {
