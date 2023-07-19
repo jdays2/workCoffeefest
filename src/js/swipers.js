@@ -48,6 +48,30 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     })
 
+    const awaySwiper = new Swiper('.away__swiper', {
+        slidesPerView: 3,
+        spaceBetween: rem(3.5),
+        pagination: {
+            el: '.services__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.services__swiper-next',
+            prevEl: '.services__swiper-prev',
+        },
+    })
+
+    const proposalSwiper = new Swiper('.proposal__swiper', {
+        slidesPerView: 3,
+        spaceBetween: rem(3.5),
+        pagination: {
+            el: '.services__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.services__swiper-next',
+            prevEl: '.services__swiper-prev',
+        },
+    })
+
     const newsSwiper = new Swiper('.news__swiper', {
         slidesPerView: 3,
         spaceBetween: rem(3.5),
