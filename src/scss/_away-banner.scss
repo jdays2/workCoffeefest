@@ -56,6 +56,14 @@
 	}
 }
 
+.blue-coloring {
+	color: #29354D;
+	border-color: #29354D;
+
+	&--title {
+		width: 130rem;
+	}
+}
 
 .away__swiper {
 	margin-bottom: 4rem;
