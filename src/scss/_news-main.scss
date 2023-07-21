@@ -7,6 +7,13 @@
         margin-bottom: 8rem;
     }
 
+    &__description {
+        margin-top: -4.5rem;
+        margin-bottom: 8rem;
+        width: 78.5rem;
+        font-weight: 700;
+    }
+
     &__tags {
         margin-bottom: 10rem;
         display: flex;
@@ -54,6 +61,12 @@
         &-description {
             margin-bottom: 1.6rem;
             color: $light;
+
+            p {
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
         }
 
         &-bottom {
