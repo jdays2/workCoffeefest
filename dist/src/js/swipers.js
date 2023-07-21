@@ -102,6 +102,21 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.about-team__swiper-controllers .swiper-prev',
         },
     })
+
+    const authorcoffeeTypesSwiper = new Swiper('.authorcoffee-types__swiper', {
+        slidesPerView: 1,
+        spaceBetween: rem(3.5),
+        speed: 600,
+        pagination: {
+            el: '.authorcoffee-types__swiper-controllers .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.authorcoffee-types__swiper-controllers .swiper-next',
+            prevEl: '.authorcoffee-types__swiper-controllers .swiper-prev',
+        },
+    })
+
+
     // КАТАЛОГ (ОБЩИЙ)
 
     const catalogHeroSwiper = new Swiper('.catalog-hero__swiper', {

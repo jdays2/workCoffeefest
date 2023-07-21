@@ -60,6 +60,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
+
+    // переключение тегов
+
+    function initTags(tagButtons, tagBlocks) {
+        tagButtons.forEach(btn => {
+            btn.addEventListener('click', function () {
+                tagButtons.forEach(el => el.classList.remove('active'));
+                tagBlocks.forEach(el => el.classList.remove('active'));
+                btn.classList.add('active');
+                const path = btn.dataset.path;
+                tagBlocks.forEach(block => {
+                    if (block.dataset.target === path) {
+                        block.classList.add('active');
+                    }
+                })
+            })
+        })
+    }
     // аккордеоны
 
     function initAccordion(accordion) {
@@ -184,4 +202,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
+    // аккордеон на странице Доставка и оплата
+    if (document.querySelector('.delivery-main__accordion')) {
+        document.querySelectorAll('.delivery-main__accordion').forEach(acc => {
+            initAccordion(acc);
+        })
+    }
+
+    // теги на странице Доставка и оплата
+    if (document.querySelector('.delivery-main .section-tags')) {
+        const deliveryMainTags = document.querySelectorAll('.section-tags__item-btn');
+        const deliveryMainTagsBlock = document.querySelectorAll('.delivery-main__accordion');
+        initTags(deliveryMainTags, deliveryMainTagsBlock);
+    }
+
+    // аккордеон на странице Карьера
+    if (document.querySelector('.carrer-vacancies__accordion')) {
+        initAccordion(document.querySelector('.carrer-vacancies__accordion'));
+    }
 })
