@@ -54,7 +54,7 @@
 
 @import "cooperation";
 
-<<<<<<< HEAD
+
 @import "contacts-info";
 
 @import "coffeeshops";
@@ -79,11 +79,22 @@
 @import "catalog-main-banner";
 
 @import "request-employees";
-=======
+
 @import "away-banner";
 
 @import 'proposal-card';
->>>>>>> 1f8385f (feat: desktop away.html is done)
+
+@import "contacts-info";
+
+@import "coffeeshops";
+
+@import "authorcoffee-types";
+
+@import "delivery-main";
+
+@import "carrer-banner";
+@import "carrer-vacancies";
+
 
 body {
     position: relative;
