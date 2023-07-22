@@ -484,6 +484,7 @@ $white20: rgba(255, 255, 255, 0.2);
         transition: background-color 0.2s ease-in-out;
         cursor: pointer;
 
+        svg,
         img {
             width: 2.8rem;
             height: 1.6rem;
@@ -498,6 +499,7 @@ $white20: rgba(255, 255, 255, 0.2);
         left: 0;
         transform: translate(-50%, -50%);
 
+        svg,
         img {
             transform: scaleX(-1);
         }
