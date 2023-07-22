@@ -71,6 +71,27 @@
         }
     }
 
+    &.cooking-menu {
+        .main-banner__btn {
+            color: $light;
+            border-color: $light;
+            background-color: rgba(35, 41, 62, 0.3);
+        }
+
+        .main-banner__swiper-controllers {
+            .swiper-pagination {
+                &-bullet {
+                    background-color: #e3bca0;
+                    border-color: #e3bca0;
+
+                    &.swiper-pagination-bullet-active {
+                        background-color: #e3bca0;
+                    }
+                }
+            }
+        }
+    }
+
     &__swiper {
         height: 100%;
 
