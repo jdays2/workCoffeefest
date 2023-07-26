@@ -3,6 +3,35 @@
     height: 78rem;
     position: relative;
 
+    &.authorcoffee {
+        .main-banner__btn {
+            top: 28rem;
+            transform: translateX(-50%);
+            background-color: rgba(35, 41, 62, 0.3);
+        }
+    }
+
+    &.cooking-menu {
+        .main-banner__btn {
+            color: $light;
+            border-color: $light;
+            background-color: rgba(35, 41, 62, 0.3);
+        }
+
+        .main-banner__swiper-controllers {
+            .swiper-pagination {
+                &-bullet {
+                    background-color: #e3bca0;
+                    border-color: #e3bca0;
+
+                    &.swiper-pagination-bullet-active {
+                        background-color: #e3bca0;
+                    }
+                }
+            }
+        }
+    }
+
     &__swiper {
         height: 100%;
 
@@ -31,6 +60,7 @@
             .next {
                 cursor: pointer;
                 transition: opacity 0.2s ease-in-out;
+                svg,
                 img {
                     width: 2.8rem;
                     height: 1.6rem;
@@ -43,6 +73,7 @@
             }
 
             .prev {
+                svg,
                 img {
                     transform: scale(-1);
                 }
