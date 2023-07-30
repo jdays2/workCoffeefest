@@ -1,105 +1,123 @@
-@import "set";
-@import "components";
-@import "../fonts/fonts";
+@import 'set';
+@import 'components';
+@import '../fonts/fonts';
 
-@import "index";
+@import 'index';
 
-@import "header";
-@import "footer";
+@import 'header';
+@import 'footer';
 
-@import "popup";
+@import 'popup';
 
-@import "section-banner";
+@import 'section-banner';
 
-@import "account-main";
-@import "account-lk";
+@import 'account-main';
+@import 'account-lk';
 
-@import "catalog-hero";
-@import "catalog-main";
+@import 'catalog-hero';
+@import 'catalog-main';
 @import 'catalog-main-block';
 @import 'catalog-card-1';
 @import 'catalog-card-price';
 
-@import "main-banner";
-@import "main-about";
+@import 'main-banner';
+@import 'main-about';
 
-@import "categories-section";
+@import 'categories-section';
 
-@import "services";
+@import 'services';
 
-@import "video";
+@import 'video';
 
-@import "news";
+@import 'news';
 
-@import "events";
+@import 'events';
 
-@import "franchise";
+@import 'franchise';
 
-@import "news-banner";
-@import "news-main";
+@import 'news-banner';
+@import 'news-main';
 
-@import "news-detail__hero";
-@import "news-detail";
+@import 'news-detail__hero';
+@import 'news-detail';
 
-@import "about-hero";
-@import "about-info";
-@import "about-production";
-@import "about-team";
-@import "about-advantages";
+@import 'about-hero';
+@import 'about-info';
+@import 'about-production';
+@import 'about-team';
+@import 'about-advantages';
 
-@import "interiors";
+@import 'interiors';
 
-@import "business-advantages";
+@import 'business-advantages';
 
-@import "cooperation";
+@import 'cooperation';
 
-@import "away-banner";
+@import 'away-banner';
 
 @import 'proposal-card';
+
+@import 'contacts-info';
+
+@import 'coffeeshops';
+
+@import 'authorcoffee-types';
+
+@import 'delivery-main';
+
+@import 'carrer-banner';
+@import 'carrer-vacancies';
+
+@import 'catalog-main-block';
+@import 'catalog-card-price';
+@import 'catalog-card-add-to-cart';
+@import 'catalog-card-1';
+@import 'catalog-card-2';
+@import 'catalog-main-banner';
 
 @import 'coloring';
 
 body {
-    position: relative;
+	position: relative;
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(56, 55, 66, 0.25);
-        -webkit-backdrop-filter: blur(1rem);
-                backdrop-filter: blur(1rem);
-        opacity: 0;
-        visibility: hidden;
-        transition-property: opacity, visibility;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
-        z-index: 5;
-    }
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(56, 55, 66, 0.25);
+		-webkit-backdrop-filter: blur(1rem);
+		backdrop-filter: blur(1rem);
+		opacity: 0;
+		visibility: hidden;
+		transition-property: opacity, visibility;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-in-out;
+		z-index: 5;
+	}
 }
 
 body.blur {
-    &::after {
-        opacity: 1;
-        visibility: visible;
-    }
+	&::after {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 body.lock {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 @media (min-width: 48.01em) {
-    .mobile {
-        display: none !important;
-    }
+	.mobile {
+		display: none !important;
+	}
 }
 
 @media (max-width: 48em) {
-    .desktop {
-        display: none !important;
-    }
+	.desktop {
+		display: none !important;
+	}
 }
