@@ -1,4 +1,5 @@
 .delivery-main {
+<<<<<<< HEAD
     background-color: $light;
 
     &__heading {
@@ -21,4 +22,28 @@
         margin-bottom: 6rem;
         color: $darkGrey;
     }
+=======
+	background-color: $light;
+
+	&__heading {
+		margin-bottom: 2.8rem;
+	}
+
+	.section-tags__container {
+		margin-bottom: 6rem;
+	}
+
+	&__accordion {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	&__notice {
+		margin-bottom: 6rem;
+		color: $darkGrey;
+	}
+>>>>>>> df18357 (feat: update from remote)
 }
