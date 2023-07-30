@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     const servicesSwiper = new Swiper('.services__swiper', {
-        slidesPerView: 4,
         spaceBetween: rem(3.4),
         pagination: {
             el: '.services__swiper-pagination',
@@ -46,34 +45,17 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.services__swiper-next',
             prevEl: '.services__swiper-prev',
         },
-    })
-
-    const awaySwiper = new Swiper('.away__swiper', {
-        slidesPerView: 3,
-        spaceBetween: rem(3.5),
-        pagination: {
-            el: '.services__swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.services__swiper-next',
-            prevEl: '.services__swiper-prev',
-        },
-    })
-
-    const proposalSwiper = new Swiper('.proposal__swiper', {
-        slidesPerView: 3,
-        spaceBetween: rem(3.5),
-        pagination: {
-            el: '.services__swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.services__swiper-next',
-            prevEl: '.services__swiper-prev',
-        },
+        breakpoints: {
+            769: {
+                slidesPerView: 4,
+            },
+            320: {
+                slidesPerView: 1,
+            }
+        }
     })
 
     const newsSwiper = new Swiper('.news__swiper', {
-        slidesPerView: 3,
         spaceBetween: rem(3.5),
         pagination: {
             el: '.news__swiper-controllers .swiper-pagination',
@@ -82,6 +64,14 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.news__swiper-controllers .next',
             prevEl: '.news__swiper-controllers .prev',
         },
+        breakpoints: {
+            769: {
+                slidesPerView: 3,
+            },
+            320: {
+                slidesPerView: 1,
+            }
+        }
     })
 
     const eventsSwiper = new Swiper('.events__swiper', {

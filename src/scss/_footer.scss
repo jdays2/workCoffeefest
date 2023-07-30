@@ -144,7 +144,7 @@
 
     @media (max-width: 48em) {
         &__top {
-            padding: 8rem 4rem 13.6rem 4rem;
+            padding: 8rem 0 13.6rem 0;
             border-radius: 7.2rem 7.2rem 0 0;
 
             .container {
@@ -153,10 +153,10 @@
 
             &-logo {
                 margin-right: 0;
-                margin-bottom: 6rem;
+                margin-bottom: 7.2rem;
 
                 img {
-                    width: 25.4rem;
+                    width: 18.6rem;
                     height: 8.6rem;
                 }
             }
@@ -169,7 +169,7 @@
                 &.block5 {
                     margin-right: 0;
                     max-width: none;
-                    margin-bottom: 6.4rem;
+                    margin-bottom: 6.2rem;
                 }
 
                 &.block1 {
@@ -198,7 +198,8 @@
                 }
 
                 &__heading {
-                    margin-bottom: 2.8rem;
+                    margin-bottom: 3rem;
+                    color: $brightHeadlines;
                 }
 
                 &__list {

@@ -1,6 +1,6 @@
 .main-banner {
     margin-top: 14rem;
-    height: 78rem;
+    height: calc(100vh - 14rem);
     position: relative;
 
     &.authorcoffee {
@@ -11,7 +11,9 @@
         }
     }
 
-    &.cooking-menu {
+
+    &.cooking-menu,
+    &.grain-coffee {
         .main-banner__btn {
             color: $light;
             border-color: $light;
@@ -110,9 +112,47 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 2px solid #fff9ee;
-        background-color: rgba(230, 176, 154, 0.2);
-        color: #fff9ee;
         z-index: 1;
+    }
+
+    @media (max-width: 48em) {
+        margin-top: 18.2rem;
+        height: calc(100vh - 18.2rem);
+
+        &__swiper {
+            &-slide {
+                &__img {
+                    object-position: center;
+                }
+            }
+
+            &-controllers {
+                bottom: 8rem;
+    
+                .prev,
+                .next {
+                    svg,
+                    img {
+                        width: 5.6rem;
+                        height: 2.6rem;
+                    }
+                }
+    
+                .swiper-pagination {
+                    margin: 0 4rem;
+    
+                    .swiper-pagination-bullet {
+                        width: 3rem;
+                        height: 3rem;
+    
+                        &:not(:last-child) {
+                            margin-right: 3.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+       
     }
 }

@@ -1,5 +1,8 @@
 .catalog-main-banner {
     background-color: $light;
+    &:nth-child(2) {
+        padding-top: 8rem;
+    }
 }
 .catalog-main-banner__container {
     display: flex;
@@ -67,9 +70,11 @@
 }
 
 @media (max-width: 48em) {
+
     .catalog-main-banner {
         margin: 0 0 18rem 0;
     }
+
     .catalog-main-banner__container {
         flex-direction: column;
     }

@@ -1,5 +1,4 @@
 .services {
-    background: url(../images/svg/services-ornament.svg) top left/cover no-repeat;
     &__heading {
         margin-bottom: 5rem;
     }
@@ -104,6 +103,43 @@
                     width: 20.6rem;
                     height: 19.2rem;
                     object-fit: contain;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__heading {
+            margin-bottom: 8rem;
+        }
+
+        &__list {
+        }
+
+        &__swiper {
+            &-slide {
+                &__icon {
+                    padding: 8rem 4rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    height: auto;
+                    border-radius: 0 0 7.2rem 7.2rem;
+
+                    img {
+                        margin-bottom: 2.4rem;
+                        width: 18rem;
+                        height: 19.2rem;
+                        align-self: center;
+                    }
+
+                    &-heading {
+                        margin-bottom: 2.4rem;
+                    }
+
+                    &-heading,
+                    &-description {
+                        color: $light;
+                    }
                 }
             }
         }

@@ -14,10 +14,10 @@
     <header class="header">
     <div class="container">
         <button class="header__burger mobile">
-            <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 8.44336H26" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M1 0.568359H26" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M1 16.3184H26" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="17" viewBox="0 0 28 17" fill="none">
+                <path d="M1 8.44336H26" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1 0.568359H26" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1 16.3184H26" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
         <a href="#" class="header__logo">
@@ -112,7 +112,7 @@
 
 
             <div class="container">
-                <button class="biege-btn main-banner__btn">посмотреть меню</button>
+                <button class="main-banner__btn stroke-btn light-btn">посмотреть меню</button>
             </div>
         </section>
 
@@ -123,8 +123,9 @@
                     <div class="categories-section__list-item">
                         <img src="./src/images/categories-img1.png" alt="" class="categories-section__list-item__img">
                         <div class="categories-section__list-item__text">
-                            <p class="categories-section__list-item__text-heading">меню кофеен</p>
-                            <p class="categories-section__list-item__text-description">В каждом из наших заведений –
+                            <p class="categories-section__list-item__text-heading heading4">меню кофеен</p>
+                            <p class="categories-section__list-item__text-description text1">В каждом из наших заведений
+                                –
                                 сбалансированное меню, состоящее из&nbsp;популярных блюд, а
                                 также диетических и веганских позиций</p>
                             <a href="#" class="categories-section__list-item__link white-arrow-btn">
@@ -136,20 +137,22 @@
 
                     <div class="categories-section__list-item">
                         <div class="categories-section__list-item__text">
-                            <p class="categories-section__list-item__text-heading">меню кулинарии</p>
-                            <p class="categories-section__list-item__text-description">Готовим свежую и вкусную еду из
+                            <p class="categories-section__list-item__text-heading heading4">меню кулинарии</p>
+                            <p class="categories-section__list-item__text-description text1">Готовим свежую и вкусную
+                                еду из
                                 натуральных и качественных ингредиентов</p>
                             <a href="#" class="categories-section__list-item__link white-arrow-btn">
                                 <img src="./src/images/svg/arrow28-right.svg" alt="">
                             </a>
                         </div>
-                        <img src="./src/images/categories-img2.png" alt="" class="categories-section__list-item__img">
+                        <img src="./src/images/categories-img2.png" alt=""
+                            class="categories-section__list-item__img desktop">
                     </div>
 
                     <div class="categories-section__list-item">
                         <div class="categories-section__list-item__text">
-                            <p class="categories-section__list-item__text-heading">Зерновой кофе</p>
-                            <p class="categories-section__list-item__text-description">Тщательно отбираем зерно и
+                            <p class="categories-section__list-item__text-heading heading4">Зерновой кофе</p>
+                            <p class="categories-section__list-item__text-description text1">Тщательно отбираем зерно и
                                 обжариваем
                                 на собственном производстве в Москве</p>
                             <a href="#" class="categories-section__list-item__link white-arrow-btn">
@@ -160,8 +163,9 @@
 
                     <div class="categories-section__list-item">
                         <div class="categories-section__list-item__text">
-                            <p class="categories-section__list-item__text-heading">торты на заказ</p>
-                            <p class="categories-section__list-item__text-description">Наши кондитеры приготовят торт на
+                            <p class="categories-section__list-item__text-heading heading4">торты на заказ</p>
+                            <p class="categories-section__list-item__text-description text1">Наши кондитеры приготовят
+                                торт на
                                 заказ по вашему индивидуальному дизайну</p>
                             <a href="#" class="categories-section__list-item__link white-arrow-btn">
                                 <img src="./src/images/svg/arrow28-right.svg" alt="">
@@ -181,7 +185,7 @@
                     <div class="swiper-container services__swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text">
+                                <div class="services__swiper-slide__text desktop">
                                     <p class="services__swiper-slide__text-heading heading4">кейтеринг</p>
                                     <p class="services__swiper-slide__text-description text1">Полный цикл выездного
                                         обслуживания – от приготовления и доставки блюд до подачи и
@@ -189,11 +193,18 @@
                                     </p>
                                 </div>
                                 <div class="services__swiper-slide__icon catering">
-                                    <img src="./src/images/svg/catering-icon.svg" alt="">
+                                    <img src="./src/images/svg/catering-icon.svg" alt="" class="desktop">
+                                    <img src="./src/images/svg/catering-icon-mobile.svg" alt="" class="mobile">
+                                    <p class="services__swiper-slide__icon-heading heading4 mobile">кейтеринг</p>
+                                    <p class="services__swiper-slide__icon-description text1 mobile">Полный цикл
+                                        выездного
+                                        обслуживания – от приготовления и доставки блюд до подачи и
+                                        сервировки
+                                    </p>
                                 </div>
                             </div>
                             <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text">
+                                <div class="services__swiper-slide__text desktop">
                                     <p class="services__swiper-slide__text-heading heading4">организация
                                         мероприятий</p>
                                     <p class="services__swiper-slide__text-description text1">Организуем
@@ -202,11 +213,18 @@
                                     </p>
                                 </div>
                                 <div class="services__swiper-slide__icon organization">
-                                    <img src="./src/images/svg/organization-icon.svg" alt="">
+                                    <img src="./src/images/svg/organization-icon.svg" alt="" class="desktop">
+                                    <img src="./src/images/svg/organization-icon-mobile.svg" alt="" class="mobile">
+                                    <p class="services__swiper-slide__icon-heading heading4 mobile">организация
+                                        мероприятий</p>
+                                    <p class="services__swiper-slide__icon-description text1 mobile">Организуем
+                                        гастрономическую
+                                        часть любого мероприятия, независимо от тематики, формата и количества гостей
+                                    </p>
                                 </div>
                             </div>
                             <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text">
+                                <div class="services__swiper-slide__text desktop">
                                     <p class="services__swiper-slide__text-heading heading4">корпоративное
                                         питание</p>
                                     <p class="services__swiper-slide__text-description text1">Комплексные обеды
@@ -215,22 +233,35 @@
                                     </p>
                                 </div>
                                 <div class="services__swiper-slide__icon corporate">
-                                    <img src="./src/images/svg/corporate-icon.svg" alt="">
+                                    <img src="./src/images/svg/corporate-icon.svg" alt="" class="desktop">
+                                    <img src="./src/images/svg/corporate-icon-mobile.svg" alt="" class="mobile">
+                                    <p class="services__swiper-slide__icon-heading heading4 mobile">корпоративное
+                                        питание</p>
+                                    <p class="services__swiper-slide__icon-description text1 mobile">Комплексные обеды
+                                        собственного
+                                        производства для корпоративных клиентов
+                                    </p>
                                 </div>
                             </div>
                             <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text">
+                                <div class="services__swiper-slide__text desktop">
                                     <p class="services__swiper-slide__text-heading heading4">выездной бариста</p>
                                     <p class="services__swiper-slide__text-description text1">Приготовим вкусную чашку и
                                         увлекательно расскажем все о кофе на вашем мероприятии
                                     </p>
                                 </div>
                                 <div class="services__swiper-slide__icon barista">
-                                    <img src="./src/images/svg/barista-icon.svg" alt="">
+                                    <img src="./src/images/svg/barista-icon.svg" alt="" class="desktop">
+                                    <img src="./src/images/svg/barista-icon-mobile.svg" alt="" class="mobile">
+                                    <p class="services__swiper-slide__icon-heading heading4 mobile">выездной бариста</p>
+                                    <p class="services__swiper-slide__icon-description text1 mobile">Приготовим вкусную
+                                        чашку и
+                                        увлекательно расскажем все о кофе на вашем мероприятии
+                                    </p>
                                 </div>
                             </div>
                             <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text">
+                                <div class="services__swiper-slide__text desktop">
                                     <p class="services__swiper-slide__text-heading heading4">кейтеринг</p>
                                     <p class="services__swiper-slide__text-description text1">Полный цикл выездного
                                         обслуживания – от приготовления и доставки блюд до подачи и
@@ -238,11 +269,18 @@
                                     </p>
                                 </div>
                                 <div class="services__swiper-slide__icon catering">
-                                    <img src="./src/images/svg/catering-icon.svg" alt="">
+                                    <img src="./src/images/svg/catering-icon.svg" alt="" class="desktop">
+                                    <img src="./src/images/svg/catering-icon-mobile.svg" alt="" class="mobile">
+                                    <p class="services__swiper-slide__icon-heading heading4 mobile">кейтеринг</p>
+                                    <p class="services__swiper-slide__icon-description text1 mobile">Полный цикл
+                                        выездного
+                                        обслуживания – от приготовления и доставки блюд до подачи и
+                                        сервировки
+                                    </p>
                                 </div>
                             </div>
                             <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text">
+                                <div class="services__swiper-slide__text desktop">
                                     <p class="services__swiper-slide__text-heading heading4">организация
                                         мероприятий</p>
                                     <p class="services__swiper-slide__text-description text1">Организуем
@@ -251,12 +289,19 @@
                                     </p>
                                 </div>
                                 <div class="services__swiper-slide__icon organization">
-                                    <img src="./src/images/svg/organization-icon.svg" alt="">
+                                    <img src="./src/images/svg/organization-icon.svg" alt="" class="desktop">
+                                    <img src="./src/images/svg/organization-icon-mobile.svg" alt="" class="mobile">
+                                    <p class="services__swiper-slide__icon-heading heading4 mobile">организация
+                                        мероприятий</p>
+                                    <p class="services__swiper-slide__icon-description text1 mobile">Организуем
+                                        гастрономическую
+                                        часть любого мероприятия, независимо от тематики, формата и количества гостей
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-controllers">
+                    <div class="swiper-controllers desktop">
                         <div class="swiper-prev services__swiper-prev">
                             <img src="./src/images/svg/arrow28-right.svg" alt="">
                         </div>
@@ -273,14 +318,14 @@
             <div class="container">
                 <div class="video__content">
                     <img src="./src/images/video.png" alt="" class="video__content-item">
-                    <button class="video__content-btn">
-                        <img src="./src/images/svg/play-biege.svg" alt="">
+                    <button class="video__content-btn play-btn">
+                        <img src="./src/images/svg/play-btn-F1DED0.svg" alt="">
                     </button>
                 </div>
             </div>
         </section>
 
-        <section class="main-about">
+        <section class="main-about light-section">
             <div class="container">
                 <div class="main-about__banner">
                     <p class="main-about__banner-heading heading2">Мы создаем вкус</p>
@@ -290,7 +335,7 @@
                         это позволяет нам создавать многогранный, с точки зрения вкуса и аромата, продукт. Мы работаем с
                         зерном только премиум качества — Fine Commercial и Specialty. Вместе со свежей обжаркой это
                         позволяет нам создавать многогранный, с точки зрения вкуса и аромата, продукт. </p>
-                    <a href="#" class="main-about__banner-link light-square-btn">Подробнее</a>
+                    <a href="#" class="main-about__banner-link square-btn">Подробнее</a>
                 </div>
             </div>
         </section>
@@ -393,10 +438,10 @@
                     </div>
 
                     <div class="swiper-controllers news__swiper-controllers">
-                        <div class="swiper-prev services__swiper-prev">
+                        <div class="swiper-prev services__swiper-prev desktop">
                             <img src="./src/images/svg/arrow28-right.svg" alt="">
                         </div>
-                        <div class="swiper-next services__swiper-next">
+                        <div class="swiper-next services__swiper-next desktop">
                             <img src="./src/images/svg/arrow28-right.svg" alt="">
                         </div>
                         <div class="swiper-pagination services__swiper-pagination"></div>
@@ -506,10 +551,10 @@
                     </div>
 
                     <div class="swiper-controllers events__swiper-controllers">
-                        <div class="swiper-prev">
+                        <div class="swiper-prev desktop">
                             <img src="./src/images/svg/arrow28-right.svg" alt="">
                         </div>
-                        <div class="swiper-next">
+                        <div class="swiper-next desktop">
                             <img src="./src/images/svg/arrow28-right.svg" alt="">
                         </div>
                         <div class="swiper-pagination services__swiper-pagination"></div>
@@ -562,7 +607,7 @@
                         </div>
 
                         <div class="section-banner__right-video">
-                            <img src="./src/images/team-img2.png" alt="section-banner__right-video__content">
+                            <img src="./src/images/team-img2.png" alt="" class="section-banner__right-video__content">
                             <button class="play-btn">
                                 <img src="./src/images/svg/play-btn-F1DED0.svg" alt="">
                             </button>
@@ -583,7 +628,7 @@
                         <p class="franchise__left-description text1">У нас устойчивая бизнес-модель и большие планы по
                             расширению сети. Приглашаем вас стать частью
                             нашего проекта!</p>
-                        <button class="franchise__left-btn light-square-btn">оставить заявку</button>
+                        <button class="franchise__left-btn square-btn">оставить заявку</button>
                     </div>
 
                     <div class="franchise__right">

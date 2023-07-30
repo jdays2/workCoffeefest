@@ -44,10 +44,30 @@
 		z-index: 0;
 	}
 }
-
-.swiper-slide .catalog-card-1 {
-	flex: 0 1 25%;
-	padding: 0;
+.catalog-card-1__img {
+    max-width: 37.4rem;
+    height: auto;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.catalog-card-1__descr {
+    padding: 3rem;
+    border-radius: 0 0 5rem 5rem;
+    border: 0.15rem solid $line;
+    max-width: 37.4rem;
+    position: relative;
+    background: url("../images/svg/card-1-backgrnd.svg") top left/cover no-repeat $biege;
+}
+.catalog-card-1__title {
+    max-width: 31.4rem;
+    margin: 0 0 2rem 0;
+}
+.catalog-card-1__add-to-cart {
+    top: 11.8rem;
+    left: 28.4rem;
 }
 
 .swiper-wrapper {
