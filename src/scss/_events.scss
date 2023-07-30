@@ -23,6 +23,7 @@
                 margin-bottom: 4.5rem;
             }
 
+<<<<<<< HEAD
             &__link {
                 &:hover:not(:focus-visible) {
                     color: $light;
@@ -35,6 +36,8 @@
                 }
             }
 
+=======
+>>>>>>> cd4bfcd (news pages + mobile styles main page)
             &__img {
                 width: 77.5rem;
                 height: 59rem;
@@ -47,7 +50,11 @@
     @media (max-width: 48em) {
         &__swiper {
             margin-bottom: 8rem;
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> cd4bfcd (news pages + mobile styles main page)
             &-slide {
                 flex-direction: column;
                 border-radius: 0 0 7.2rem 7.2rem;

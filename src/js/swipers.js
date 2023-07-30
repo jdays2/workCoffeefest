@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     })
 
+<<<<<<< HEAD
     if (document.querySelector('.services__container')) {
         document.querySelectorAll('.services__container').forEach(item => {
             const prev = item.querySelector('.services__swiper-prev');
@@ -79,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const proposalSwiper = new Swiper('.proposal__swiper', {
         slidesPerView: 3,
         spaceBetween: rem(3.5),
+=======
+    const servicesSwiper = new Swiper('.services__swiper', {
+        spaceBetween: rem(3.4),
+>>>>>>> cd4bfcd (news pages + mobile styles main page)
         pagination: {
             el: '.services__swiper-pagination',
         },
@@ -86,6 +91,17 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.services__swiper-next',
             prevEl: '.services__swiper-prev',
         },
+<<<<<<< HEAD
+=======
+        breakpoints: {
+            769: {
+                slidesPerView: 4,
+            },
+            320: {
+                slidesPerView: 1,
+            }
+        }
+>>>>>>> cd4bfcd (news pages + mobile styles main page)
     })
 
     const newsSwiper = new Swiper('.news__swiper', {
@@ -94,8 +110,13 @@ document.addEventListener('DOMContentLoaded', function () {
             el: '.news__swiper-controllers .swiper-pagination',
         },
         navigation: {
+<<<<<<< HEAD
             nextEl: '.news__swiper-controllers .swiper-next',
             prevEl: '.news__swiper-controllers .swiper-prev',
+=======
+            nextEl: '.news__swiper-controllers .next',
+            prevEl: '.news__swiper-controllers .prev',
+>>>>>>> cd4bfcd (news pages + mobile styles main page)
         },
         breakpoints: {
             769: {
