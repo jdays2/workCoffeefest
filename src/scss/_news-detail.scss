@@ -1,0 +1,103 @@
+.news-detail {
+    background-color: $light;
+
+    .container {
+        display: flex;
+        width: 132rem;
+    }
+
+    &__left {
+        margin-right: 9.2rem;
+        .social-list {
+            &__item {
+                &:not(:last-child) {
+                    margin-bottom: 1.6rem;
+                }
+
+                &-link {
+                    img {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+    &__center {
+        width: 64.6rem;
+
+        &-block {
+            margin-bottom: 5rem;
+
+            .heading4 {
+                margin-bottom: 2.4rem;
+            }
+
+            &__description {
+                &:not(:last-child) {
+                    margin-bottom: 2.4rem;
+                }
+
+                p {
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            &__img {
+                width: 100%;
+                height: 55.6rem;
+                object-fit: cover;
+                border-radius: 0 0 5rem 5rem;
+            }
+        }
+    }
+
+    &__right {
+        margin-left: auto;
+        width: 37.5rem;
+
+        &-heading {
+            margin-bottom: 3rem;
+        }
+
+        &-list {
+            &__item {
+                padding: 4rem 3.5rem;
+                position: relative;
+                width: 100%;
+                background:
+                    url(../images/svg/other-news-ornament.svg) top left/cover no-repeat,
+                    $biege;
+                border-radius: 0 0 5rem 5rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 3.6rem;
+                }
+
+                .heading4 {
+                    margin-bottom: 1.6rem;
+                }
+
+                .menu {
+                    margin-bottom: 3.4rem;
+                }
+
+                .arrow-link {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
