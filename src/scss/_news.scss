@@ -23,7 +23,9 @@
                 display: flex;
                 flex-direction: column;
                 min-height: 29.4rem;
-                background: url(../images/svg/categories-ornament1.svg) top left/cover no-repeat, $darkBlue;
+                background:
+                    url(../images/svg/categories-ornament1.svg) top left/cover no-repeat,
+                    $darkBlue;
                 border-radius: 0 0 5rem 5rem;
 
                 &-heading {
@@ -59,5 +61,41 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+
+    @media (max-width: 48em) {
+        &__swiper {
+            margin-bottom: 8rem;
+            &-slide {
+                &__img {
+                    height: 58rem;
+                }
+
+                &__text {
+                    padding: 8rem 4rem;
+                    min-height: auto;
+
+                    &-description {
+                        margin-bottom: 8rem;
+                    }
+
+                    &-bottom {
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+
+        &__swiper-controllers {
+            margin-bottom: 8rem;
+        }
+
+        &__link {
+            bottom: auto;
+            right: auto;
+            position: relative;
+            left: 100%;
+            transform: translateX(-100%);
+        }
     }
 }

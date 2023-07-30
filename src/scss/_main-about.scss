@@ -1,7 +1,6 @@
 .main-about {
     padding-top: 15rem;
     padding-bottom: 15rem;
-    background: $light, url(../images/svg/main-about-ornament.svg) top left/cover no-repeat;
 
     &__banner {
         padding: 8rem 9rem;
@@ -28,6 +27,17 @@
 
         &-subheading {
             color: $brightHeadlines;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__banner {
+            padding: 12rem 4rem;
+            border-radius: 0 0 7.2rem 7.2rem;
+
+            &-description {
+                width: 100%;
+            }
         }
     }
 }
