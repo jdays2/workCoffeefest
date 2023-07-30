@@ -1,0 +1,190 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.catalog-card {
+	&__main-price {
+		position: relative;
+		font-size: 1.8rem;
+		color: $darkGrey;
+		line-height: 2.5rem;
+		& span {
+			font-size: 1.4rem;
+		}
+		&::before {
+			content: '';
+
+			position: absolute;
+			top: 1.1rem;
+			left: 0;
+			width: 4.4rem;
+			height: 0.1rem;
+			background: $darkGrey;
+		}
+	}
+	&__sale {
+		display: flex;
+	}
+	&__sale-price {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 3.6rem;
+	}
+	&__weight {
+		align-self: center;
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+		color: $darkGrey;
+	}
+	&__add-to-cart {
+		position: absolute;
+		border-radius: 100rem;
+		bottom: 3.5rem;
+		right: 2.9rem;
+		width: 7rem;
+		height: 7rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $light;
+		cursor: pointer;
+		& img {
+			width: 2.8rem;
+			height: 2.8rem;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+	}
+}
+<<<<<<< HEAD
+=======
+.catalog-card__price {
+}
+.catalog-card__main-price {
+    position: relative;
+    font-size: 1.8rem;
+    color: $darkGrey;
+    line-height: 2.5rem;
+    & span {
+        font-size: 1.4rem;
+    }
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 1.1rem;
+        left: 0;
+        width: 4.4rem;
+        height: 0.1rem;
+        background: $darkGrey;
+    }
+}
+.catalog-card__sale {
+    display: flex;
+}
+.catalog-card__sale-price {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+}
+.catalog-card__weight {
+    align-self: center;
+    font-size: 1.8rem;
+    line-height: 2.5rem; 
+    color: $darkGrey;
+}
+
+@media (max-width: 48em) {
+    .catalog-card__main-price {
+        font-size: 2.8rem;
+        line-height: 3.92rem;
+        & span {
+            font-size: 2.8rem;
+        }
+        &::before {
+            top: 1.3rem;
+            left: 0;
+            width: 7.6rem;
+            height: 0.1rem;
+        }
+    }
+    .catalog-card__sale-price {
+        font-size: 4.4rem;
+        line-height: 5.28rem;
+        & span {
+            font-size: 2.8rem;
+            font-weight: 400;
+            line-height: 7.2rem;
+        }
+    }
+    .catalog-card__weight {
+        font-size: 2.8rem;
+        line-height: 3.92rem; 
+    }
+}
+>>>>>>> 69bfa55 (cooking-menu added)
+=======
+
+.catalog-card__main-price {
+	position: relative;
+	font-size: 1.8rem;
+	color: $darkGrey;
+	line-height: 2.5rem;
+	& span {
+		font-size: 1.4rem;
+	}
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 1.1rem;
+		left: 0;
+		width: 4.4rem;
+		height: 0.1rem;
+		background: $darkGrey;
+	}
+}
+.catalog-card__sale {
+	display: flex;
+}
+.catalog-card__sale-price {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 3.6rem;
+}
+.catalog-card__weight {
+	align-self: center;
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	color: $darkGrey;
+}
+
+@media (max-width: 48em) {
+	.catalog-card__main-price {
+		font-size: 2.8rem;
+		line-height: 3.92rem;
+		& span {
+			font-size: 2.8rem;
+		}
+		&::before {
+			top: 1.3rem;
+			left: 0;
+			width: 7.6rem;
+			height: 0.1rem;
+		}
+	}
+	.catalog-card__sale-price {
+		font-size: 4.4rem;
+		line-height: 5.28rem;
+		& span {
+			font-size: 2.8rem;
+			font-weight: 400;
+			line-height: 7.2rem;
+		}
+	}
+	.catalog-card__weight {
+		font-size: 2.8rem;
+		line-height: 3.92rem;
+	}
+}
+>>>>>>> df18357 (feat: update from remote)
+>>>>>>> 021b322 (feat: update from remote)
