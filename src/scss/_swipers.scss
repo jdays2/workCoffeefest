@@ -1,0 +1,21 @@
+.team__swiper,
+.proposal__swiper {
+	.swiper-wrapper {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+	}
+}
+
+.team__swiper-pagination,
+.service-for__swiper-pagination,
+.proposal__swiper-pagination {
+	position: relative;
+	top: 5rem;
+}
+
+.service-for__swiper {
+	.services__list-item__text {
+		min-height: 31rem;
+	}
+}
