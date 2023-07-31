@@ -1,33 +1,4 @@
 .catalog-card__add-to-cart {
-<<<<<<< HEAD
-    position: absolute;
-    border-radius: 100rem;
-    top: 0rem;
-    left: 0rem;
-    width: 7rem;
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $light;
-    & img {
-        width: 2.8rem;
-        height: 2.8rem;
-        object-fit: cover;
-    }
-}
-
-@media (max-width: 48em) {
-    .catalog-card__add-to-cart {
-        width: 10.4rem;
-        height: 10.4rem;
-        & img {
-            width: 4.8rem;
-            height: 4.8rem;
-        }
-    }
-}
-=======
 	position: absolute;
 	border-radius: 100rem;
 	top: 0rem;
@@ -56,4 +27,3 @@
 		}
 	}
 }
->>>>>>> df18357 (feat: update from remote)
