@@ -1,0 +1,57 @@
+.events {
+    &__container {
+        position: relative;
+    }
+
+    &__swiper {
+        margin-bottom: 5rem;
+
+        &-slide {
+            display: flex;
+            border-radius: 0 0 5rem 5rem;
+
+            &__text {
+                padding: 8rem 6.8rem 8rem 6rem;
+                width: 82.5rem;
+                background-color: $biege;
+                border-radius: 0 0 0 5rem;
+            }
+
+            &__heading,
+            &__subheading,
+            &__description {
+                margin-bottom: 4.5rem;
+            }
+
+            &__img {
+                width: 77.5rem;
+                height: 59rem;
+                object-fit: cover;
+                border-radius: 0 0 5rem 0;
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__swiper {
+            margin-bottom: 8rem;
+            
+            &-slide {
+                flex-direction: column;
+                border-radius: 0 0 7.2rem 7.2rem;
+
+                &__text {
+                    padding: 12rem 4rem 8rem 4rem;
+                    width: 100%;
+                    border-radius: 0;
+                }
+
+                &__img {
+                    width: 100%;
+                    height: 46rem;
+                    border-radius: inherit;
+                }
+            }
+        }
+    }
+}
