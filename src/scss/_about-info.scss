@@ -5,11 +5,7 @@
 		margin-bottom: 4rem;
 	}
 
-	&__card {
-		display: none;
-
-		&.active {
-			display: flex;
-		}
+	.section-tags__container {
+		margin-bottom: 4rem;
 	}
 }

@@ -3,8 +3,11 @@
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     height: -webkit-max-content;
     height: -moz-max-content;
+=======
+>>>>>>> c38f3e1 (feat: update from main remote)
     height: max-content;
     display: flex;
     align-items: center;
@@ -44,8 +47,12 @@
         background-color: $white;
 
         svg {
+<<<<<<< HEAD
             -o-object-fit: contain;
                object-fit: contain;
+=======
+            object-fit: contain;
+>>>>>>> c38f3e1 (feat: update from main remote)
         }
     }
 
