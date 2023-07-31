@@ -81,6 +81,12 @@
 
 @import 'coloring';
 
+//Марк
+@import 'proposal';
+@import 'away-banner';
+@import 'away-card-slider';
+@import 'swipers';
+
 body {
 	position: relative;
 
@@ -118,6 +124,7 @@ body.lock {
 	.mobile {
 		display: none !important;
 	}
+<<<<<<< HEAD
 }
 
 body {
@@ -157,6 +164,8 @@ body.lock {
 	.mobile {
 		display: none !important;
 	}
+=======
+>>>>>>> 3f9d4f3 (feat: recreate away.html and fix some errors)
 }
 
 @media (max-width: 48em) {
