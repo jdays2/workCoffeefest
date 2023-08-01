@@ -224,6 +224,19 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
+	const feedbackSwiper = new Swiper('.feedback__swiper', {
+		slidesPerView: 1,
+		spaceBetween: rem(3.5),
+		speed: 600,
+		pagination: {
+			el: '.feedback__swiper-controllers .swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.feedback__swiper-controllers .swiper-next',
+			prevEl: '.feedback__swiper-controllers .swiper-prev',
+		},
+	});
+
 	const authorcoffeeTypesSwiper = new Swiper('.authorcoffee-types__swiper', {
 		slidesPerView: 1,
 		spaceBetween: rem(3.5),
@@ -257,17 +270,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesPerGroup: 3,
 		spaceBetween: rem(3.5),
 		pagination: {
-			el: '.services__swiper-pagination',
+			el: '.away__swiper-pagination',
 		},
 		navigation: {
-			nextEl: '.services__swiper-next',
-			prevEl: '.services__swiper-prev',
+			nextEl: '.away__swiper-next',
+			prevEl: '.away__swiper-prev',
 		},
 	});
 
 	const proposalSwiper = new Swiper('.proposal__swiper', {
 		slidesPerView: 3,
-        slidesPerGroup: 3,
+		slidesPerGroup: 3,
 		spaceBetween: rem(3.5),
 		pagination: {
 			el: '.proposal__swiper-pagination',
@@ -291,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
-    const serviceFor = new Swiper('.service-for__swiper', {
+	const serviceFor = new Swiper('.service-for__swiper', {
 		slidesPerView: 4,
 		slidesPerGroup: 4,
 		spaceBetween: rem(3.5),
@@ -303,5 +316,16 @@ document.addEventListener('DOMContentLoaded', function () {
 			prevEl: '.service-for__swiper-prev',
 		},
 	});
-   
+
+	const corpoFoodBanner = new Swiper('.corpo-food__swiper', {
+		slidesPerView: 1,
+		spaceBetween: rem(3),
+		pagination: {
+			el: '.corpo-food__swiper-controllers .swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.corpo-food__swiper-controllers .next',
+			prevEl: '.corpo-food__swiper-controllers .prev',
+		},
+	});
 });
