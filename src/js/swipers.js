@@ -36,24 +36,33 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     })
 
-    const servicesSwiper = new Swiper('.services__swiper', {
-        spaceBetween: rem(3.4),
-        pagination: {
-            el: '.services__swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.services__swiper-next',
-            prevEl: '.services__swiper-prev',
-        },
-        breakpoints: {
-            769: {
-                slidesPerView: 4,
-            },
-            320: {
-                slidesPerView: 1,
-            }
-        }
-    })
+    if (document.querySelector('.services__container')) {
+        document.querySelectorAll('.services__container').forEach(item => {
+            const prev = item.querySelector('.services__swiper-prev');
+            const next = item.querySelector('.services__swiper-next');
+            const pagination = item.querySelector('.services__swiper-pagination');
+            const slider = item.querySelector('.services__swiper');
+            const servicesSwiper = new Swiper(slider, {
+                spaceBetween: rem(3.4),
+                pagination: {
+                    el: pagination,
+                },
+                navigation: {
+                    nextEl: next,
+                    prevEl: prev,
+                },
+                breakpoints: {
+                    769: {
+                        slidesPerView: 4,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                    }
+                }
+            })
+        })
+    }
+
 
     const newsSwiper = new Swiper('.news__swiper', {
         spaceBetween: rem(3.5),

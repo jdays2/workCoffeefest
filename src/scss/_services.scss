@@ -59,13 +59,41 @@
         }
     }
 
+    &.business {
+        .services__swiper-slide__text {
+            display: flex;
+            flex-direction: column;
+            min-height: 27.5rem;
+
+            &-description {
+                margin-bottom: 3rem;
+                width: 31.5rem;
+            }
+
+            &-link {
+                margin-left: auto;
+                margin-top: auto;
+                border-bottom: 1px solid $darkBlue;
+            }
+        }
+    }
+
     &__swiper {
         margin-bottom: 5rem;
 
+        .swiper-wrapper {
+            align-items: stretch;
+        }
+
         &-slide {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
             &__text {
-                padding: 5rem 3rem 2rem 3rem;
+                padding: 5rem 3rem 3rem 3rem;
                 min-height: 24.1rem;
+                height: calc(100% - 27.2rem);
                 background-color: $biege;
 
                 &-heading {

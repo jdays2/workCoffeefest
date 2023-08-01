@@ -11,6 +11,21 @@
         }
     }
 
+    &.business {
+        .main-banner__swiper-controllers {
+            .swiper-pagination {
+                &-bullet {
+                    border-color: $brightHeadlines;
+
+                    &.swiper-pagination-bullet-active {
+                        border-color: #f5f5f5;
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+
     &.cooking-menu,
     &.grain-coffee {
         .main-banner__btn {
@@ -127,7 +142,7 @@
 
             &-controllers {
                 bottom: 8rem;
-    
+
                 .prev,
                 .next {
                     svg,
@@ -136,14 +151,14 @@
                         height: 2.6rem;
                     }
                 }
-    
+
                 .swiper-pagination {
                     margin: 0 4rem;
-    
+
                     .swiper-pagination-bullet {
                         width: 3rem;
                         height: 3rem;
-    
+
                         &:not(:last-child) {
                             margin-right: 3.2rem;
                         }
@@ -151,7 +166,5 @@
                 }
             }
         }
-
-       
     }
 }
