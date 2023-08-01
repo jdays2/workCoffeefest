@@ -53,7 +53,8 @@
                 img {
                     width: 20.6rem;
                     height: 19.2rem;
-                    object-fit: contain;
+                    -o-object-fit: contain;
+                       object-fit: contain;
                 }
             }
         }
@@ -102,7 +103,8 @@
                 img {
                     width: 20.6rem;
                     height: 19.2rem;
-                    object-fit: contain;
+                    -o-object-fit: contain;
+                       object-fit: contain;
                 }
             }
         }

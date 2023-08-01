@@ -21,6 +21,18 @@
 		}
 	}
 
+	&__link {
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%;
+		letter-spacing: 0.09rem;
+		text-transform: uppercase;
+		color: #fff9ee;
+		margin-left: auto;
+		margin-top: 6rem;
+	}
+
 	&__descr {
 		width: 100%;
 		height: -webkit-fit-content;
@@ -30,11 +42,12 @@
 		flex-direction: column;
 		justify-content: space-between;
 		border-radius: 0rem 0rem 5rem 5rem;
-		padding: 4rem 6rem 6.1rem;
+		padding: 6rem 4rem;
 		position: relative;
 		overflow: hidden;
-		background-color: #29354D;
+		background-color: #29354d;
 		background-image: url('../images/svg/proposal-card-bg.svg');
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0rem -6.8rem;
 
@@ -42,6 +55,13 @@
 			background-image: url('../images/svg/proposal-card-bg.svg');
 			background-repeat: no-repeat;
 			background-position: 0rem 0rem;
+		}
+
+		&--mega-large {
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 0px -3.8rem;
+			height: 51rem;
 		}
 	}
 
@@ -83,7 +103,7 @@
 		display: flex;
 		align-items: center;
 		gap: 2.4rem;
-    margin-left: auto;
+		margin-left: auto;
 	}
 
 	&__price-value {
@@ -95,16 +115,18 @@
 		line-height: 130%; /* 23.4px */
 		letter-spacing: 0.09rem;
 		text-transform: uppercase;
+		margin-left: auto;
+		margin-top: 4.1rem;
 	}
 
-  &__add-to-card {
-    color: #FFF9EE;
-    font-family: Circe;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%; /* 23.4px */
-    letter-spacing: 0.09rem;
-    text-transform: uppercase;
-  }
+	&__add-to-card {
+		color: #fff9ee;
+		font-family: Circe;
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%; /* 23.4px */
+		letter-spacing: 0.09rem;
+		text-transform: uppercase;
+	}
 }
