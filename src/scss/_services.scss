@@ -9,14 +9,19 @@
 
     &__list {
         display: flex;
+        align-items: stretch;
         justify-content: space-between;
 
         &-item {
             width: 36.2rem;
+            display: flex;
+            flex-direction: column;
+            height: auto;
 
             &__text {
                 padding: 5rem 3rem 2rem 3rem;
-                min-height: 27rem;
+                min-height: 22rem;
+                height: calc(100% - 27.2rem);
                 background-color: $biege;
 
                 &-heading {
@@ -50,9 +55,10 @@
                 &.barista {
                     background-color: $darkBlue;
                 }
+
                 img {
-                    width: 20.6rem;
-                    height: 19.2rem;
+                    max-width: 20.6rem;
+                    max-height: 19.2rem;
                     object-fit: contain;
                 }
             }

@@ -43,6 +43,7 @@
 @import "about-production";
 @import "about-team";
 @import "about-advantages";
+@import "about-numbers";
 
 @import "interiors";
 
@@ -61,14 +62,15 @@
 @import "carrer-banner";
 @import "carrer-vacancies";
 
+@import "chronology";
 
 // ГЛЕБ
-@import 'catalog-main-block';
-@import 'catalog-card-price';
-@import 'catalog-card-add-to-cart';
-@import 'catalog-card-1';
-@import 'catalog-card-2';
-@import 'catalog-main-banner';
+@import "catalog-main-block";
+@import "catalog-card-price";
+@import "catalog-card-add-to-cart";
+@import "catalog-card-1";
+@import "catalog-card-2";
+@import "catalog-main-banner";
 
 body {
     position: relative;

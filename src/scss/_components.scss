@@ -499,17 +499,16 @@ $white20: rgba(255, 255, 255, 0.2);
 
 .section-tags {
     display: flex;
-    gap: 0.8rem;
+    gap: 5rem;
 
     &__item {
         &-btn {
-            padding: 1.4rem 3.6rem;
             font-size: 2rem;
             line-height: 1.25;
             color: $darkBlue;
 
             &.active {
-                border: 2px solid $darkBlue;
+                font-weight: 700;
             }
         }
     }
