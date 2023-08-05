@@ -35,6 +35,18 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
+	const catalogBanner = new Swiper('.catalog-banner__swiper', {
+		slidesPerView: 1,
+		spaceBetween: rem(3),
+		pagination: {
+			el: '.main-banner__swiper-controllers .swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.main-banner__swiper-controllers .next',
+			prevEl: '.main-banner__swiper-controllers .prev',
+		},
+	});
+
 	const servicesSwiper = new Swiper('.services__swiper', {
 		spaceBetween: rem(3.4),
 		pagination: {
