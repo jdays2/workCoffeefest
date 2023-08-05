@@ -24,6 +24,10 @@ $white20: rgba(255, 255, 255, 0.2);
 	background-color: $light;
 }
 
+.biege-section-clear {
+	background-color: $light;
+}
+
 .light-section {
 	background: url(../images/svg/services-ornament.svg) top left/cover no-repeat;
 }
@@ -911,7 +915,21 @@ $white20: rgba(255, 255, 255, 0.2);
 	background: url(../images/svg/section-info-ornament.svg) top left/cover
 			no-repeat,
 		$darkBlue;
-
+	&--big-right-part {
+		padding: 0;
+		.section-info__card-left {
+			padding: 9rem 7rem;
+			width: 50%;
+		}
+		.section-info__card-right {
+			width: 50%;
+		}
+		.section-info__card-right__img {
+			width: 100%;
+			height: 100%;
+			border-radius: 0rem 0px 5rem 0rem;
+		}
+	}
 	&-left {
 		width: 64rem;
 

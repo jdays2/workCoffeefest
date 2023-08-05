@@ -185,7 +185,6 @@ body.lock {
 	.mobile {
 		display: none !important;
 	}
-<<<<<<< HEAD
 }
 
 body {
@@ -200,7 +199,7 @@ body {
 		height: 100%;
 		background: rgba(56, 55, 66, 0.25);
 		-webkit-backdrop-filter: blur(1rem);
-		        backdrop-filter: blur(1rem);
+		backdrop-filter: blur(1rem);
 		opacity: 0;
 		visibility: hidden;
 		transition-property: opacity, visibility;
@@ -225,8 +224,6 @@ body.lock {
 	.mobile {
 		display: none !important;
 	}
-=======
->>>>>>> 3f9d4f3 (feat: recreate away.html and fix some errors)
 }
 
 @media (max-width: 48em) {
