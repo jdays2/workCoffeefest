@@ -156,6 +156,11 @@ $white20: rgba(255, 255, 255, 0.2);
     }
 }
 
+.blue-square-btn {
+    border-color: $darkBlue;
+    color: $darkBlue;
+}
+
 .arrow-link {
     display: inline-flex;
     align-items: center;
