@@ -10,12 +10,16 @@
 =======
 	max-width: 100%;
 	position: relative;
-  max-height:69.9rem;
+	max-height: 69.9rem;
 	height: 69.9rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> c1d57f6 (feat: change grain-coffee page)
+=======
+	width: 37.4rem;
+>>>>>>> c972811 (feat: finish card-det & add cart.html)
 }
 .catalog-card-2__img {
 	max-width: 100%;
@@ -46,6 +50,7 @@
 		overflow: hidden;
 		transition: 0.7s;
 		max-height: 0rem;
+		height: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -56,19 +61,19 @@
 		gap: 3rem;
 	}
 
-    &__details-item {
-        display: flex;
-        flex-direction: column;
-        gap: 0.4rem;
+	&__details-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
 
-        span {
-            color: #797979;
-        }
+		span {
+			color: #797979;
+		}
 
-        strong {
-            font-weight: 400;
-        }
-    }
+		strong {
+			font-weight: 400;
+		}
+	}
 }
 
 .catalog-card-2__price-package {
@@ -77,11 +82,18 @@
 	top: 0.2rem;
 }
 
+.catalog-card__sale {
+	margin-top: auto;
+}
+
 .catalog-card-2__descr {
 	transition: 0.5s;
 	max-width: 37.4rem;
 	padding: 3rem;
 	padding-bottom: 4rem;
+	min-height: 37.4rem;
+	display: flex;
+	flex-direction: column;
 	z-index: 1;
 	border-radius: 0 0 5rem 5rem;
 	border: 0.15rem solid $line;
@@ -370,9 +382,9 @@
 @media (hover: hover) {
 	.catalog-card-2:hover {
 		.catalog-card-2__details {
-			max-height: 32.6rem;
-			height: 32.6rem;
+			max-height: 32.7rem;
 			opacity: 1;
+			height: 32.7rem;
 			padding-bottom: 3rem;
 		}
 	}
