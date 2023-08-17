@@ -1,6 +1,6 @@
 .catalog-card-1 {
-	flex: 0 1 25%;
 	padding: 0 1.75rem;
+	width: 37.4rem;
 
 	&__img {
 		max-width: 37.4rem;
@@ -19,10 +19,10 @@
 		border: 0.15rem solid $line;
 		max-width: 37.4rem;
 		position: relative;
-		gap: 1.6rem;
-		height: -webkit-fit-content;
-		height: -moz-fit-content;
-		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 20.8rem;
 		display: flex;
 		flex-direction: column;
 		background: url('../images/svg/card-1-backgrnd.svg') top left/cover
@@ -38,6 +38,7 @@
 		top: auto;
 		bottom: 2rem;
 		right: 2rem;
+		cursor: pointer;
 	}
 
 	&__info-block {
