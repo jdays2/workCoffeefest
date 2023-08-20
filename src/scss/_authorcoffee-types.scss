@@ -1,12 +1,8 @@
-.authorcoffee-types {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 89b79b4 (feat: update from main remote)
-    &__container {
-        position: relative;
-    }
+.catalog-card-1 {
+	padding: 0 1.75rem;
+	width: 37.4rem;
 
+<<<<<<< HEAD
     &__swiper {
         margin-bottom: 5rem;
 
@@ -107,9 +103,149 @@
 					border-radius: inherit;
 				}
 			}
+=======
+	&__img {
+		max-width: 37.4rem;
+		height: auto;
+		& img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
 		}
 	}
->>>>>>> df18357 (feat: update from remote)
-=======
->>>>>>> 89b79b4 (feat: update from main remote)
+
+	&__descr {
+		padding: 3rem;
+		border-radius: 0 0 5rem 5rem;
+		border: 0.15rem solid $line;
+		max-width: 37.4rem;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 20.8rem;
+		display: flex;
+		flex-direction: column;
+		background: url('../images/svg/card-1-backgrnd.svg') top left/cover
+			no-repeat $biege;
+	}
+
+	&__title {
+		max-width: 31.4rem;
+	}
+
+	&__add-to-cart {
+		left: auto;
+		top: auto;
+		bottom: 2rem;
+		right: 2rem;
+		cursor: pointer;
+	}
+
+	&__info-block {
+		display: flex;
+		width: 51rem;
+		border-radius: 0px 0px 5rem 5rem;
+		flex-direction: column;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		background: url('../images/svg/card-1-backgrnd-big.svg') top left/cover
+			no-repeat $biege;
+		padding: 6rem 4rem;
+		gap: 1.6rem;
+
+		&-title {
+			font-family: Circe;
+			font-size: 2.2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 130%;
+			text-transform: uppercase;
+		}
+	}
+
+	&__info-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__info-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+
+		span {
+			display: block;
+			color: #797979;
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+		}
+
+		strong {
+			display: block;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 125%;
+		}
+	}
+
+	&__info-price {
+		margin-left: auto;
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%;
+	}
+
+	&__link {
+		padding-top: 1.4rem;
+		margin-left: auto;
+        border-bottom: 0.1rem solid #29354D;
+		span {
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 130%;
+			letter-spacing: 0.09rem;
+			text-transform: uppercase;
+>>>>>>> f23ac42 (feat: change files after rebase)
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.catalog-card-1 {
+		flex: 0 1 100%;
+		padding: 0;
+		&:not(:last-child) {
+			margin: 0 0 5rem 0;
+		}
+	}
+	.catalog-card-1__img {
+		max-width: 71rem;
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.catalog-card-1__descr {
+		padding: 6rem 4rem 4rem 4rem;
+		border-radius: 0 0 7.2rem 7.2rem;
+		border: 0.3rem solid $line;
+		max-width: none;
+	}
+	.catalog-card-1__title {
+		max-width: 52rem;
+		margin: 0 0 4rem 0;
+	}
+	.catalog-card-1__add-to-cart {
+		left: 56.6rem;
+		top: 22rem;
+	}
 }
