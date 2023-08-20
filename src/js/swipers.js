@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
             el: '.news__swiper-controllers .swiper-pagination',
         },
         navigation: {
-            nextEl: '.news__swiper-controllers .next',
-            prevEl: '.news__swiper-controllers .prev',
+            nextEl: '.news__swiper-controllers .swiper-next',
+            prevEl: '.news__swiper-controllers .swiper-prev',
         },
         breakpoints: {
             769: {

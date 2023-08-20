@@ -216,6 +216,14 @@ document.addEventListener('DOMContentLoaded', function () {
         initTags(deliveryMainTags, deliveryMainTagsBlock);
     }
 
+    // теги на странице О компании
+    if (document.querySelector('.about-info .section-tags')) {
+        const aboutInfoTags = document.querySelectorAll('.about-info .section-tags__item-btn');
+        const aboutInfoTagsBlock = document.querySelectorAll('.about-info .about-info__card');
+        initTags(aboutInfoTags, aboutInfoTagsBlock);
+    }
+
+
     // аккордеон на странице Карьера
     if (document.querySelector('.carrer-vacancies__accordion')) {
         initAccordion(document.querySelector('.carrer-vacancies__accordion'));

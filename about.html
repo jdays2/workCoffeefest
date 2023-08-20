@@ -16,7 +16,6 @@
         <section class="about-hero">
             <img src="./src/images/about-hero.png" alt="" class="about-hero__img">
             <div class="container">
-                <p class="about-hero__heading heading1">120+ кофеен в Москве</p>
             </div>
         </section>
 
@@ -42,10 +41,10 @@
                 <div class="section-tags__container">
                     <ul class="section-tags">
                         <li class="section-tags__item">
-                            <button class="section-tags__item-btn active">О проекте</button>
+                            <button class="section-tags__item-btn active" data-path="about">О проекте</button>
                         </li>
                         <li class="section-tags__item">
-                            <button class="section-tags__item-btn">Наше производство</button>
+                            <button class="section-tags__item-btn" data-path="production">Наше производство</button>
                         </li>
                         <li class="section-tags__item">
                             <button class="section-tags__item-btn">Интерьеры проектов</button>
@@ -62,7 +61,7 @@
                     </ul>
                 </div>
 
-                <div class="about-info__card section-info__card">
+                <div class="about-info__card section-info__card active" data-target="about">
                     <div class="section-info__card-left">
                         <p class="section-info__card-left__heading heading2">О нас</p>
                         <p class="section-info__card-left__subheading heading4">С кофе нас связывает не только
@@ -88,7 +87,51 @@
                         <div class="section-info__card-right__video">
                             <img src="./src/images/team-img2.png" alt="">
                             <button class="play-btn">
-                                <img src="./src/images/svg/play-btn-F1DED0.svg" alt="">
+                                <svg width="88" height="88" viewBox="0 0 88 88" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="43.5" cy="43.5" r="42.5" stroke="#F1DED0" stroke-width="2" />
+                                    <path
+                                        d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
+                                        fill="#F1DED0" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info__card section-info__card" data-target="production">
+                    <div class="section-info__card-left">
+                        <p class="section-info__card-left__heading heading2">Наше производство</p>
+                        <p class="section-info__card-left__subheading heading4">С кофе нас связывает не только
+                            многолетняя любовь, но и профессиональная симпатия, которая впервые возникла в 2016 году в
+                            деловых кварталах Лондона…</p>
+                        <div class="section-info__card-left__description menu">
+                            <p>Тогда, очаровавшись стильными кафетериями в районе Сити, у нас родилась идея создать
+                                похожую сеть заведений формата fast casual в Москве. Сейчас у нас более 130 заведений
+                                разного формата – от кофеен в бизнес-центрах, городских больницах и поликлиниках до
+                                полноценных городских кафе.
+
+                            </p>
+                            <p> В каждом из наших заведений – натуральная свежая еда и вкусный кофе по демократичным
+                                ценам, а также наша авторская коллекция кофе на 100% натуральных сиропах, уникальные
+                                рецепты для которой собраны с разных уголков мира!</p>
+                        </div>
+                    </div>
+
+                    <div class="section-info__card-right">
+                        <div class="section-info__card-right__img">
+                            <img src="./src/images/about-info-img.png" alt="">
+                        </div>
+                        <div class="section-info__card-right__video">
+                            <img src="./src/images/team-img2.png" alt="">
+                            <button class="play-btn">
+                                <svg width="88" height="88" viewBox="0 0 88 88" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="43.5" cy="43.5" r="42.5" stroke="#F1DED0" stroke-width="2" />
+                                    <path
+                                        d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
+                                        fill="#F1DED0" />
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -113,7 +156,17 @@
 
                     <p class="chronology__heading heading2">Путь CofeFest</p>
                     <div class="chronology__timeline">
-                        <img src="./src/images/svg/timeline.svg" alt="" class="chronology__timeline-img">
+                        <svg width="1599" height="170" viewBox="0 0 1599 170" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="chronology__timeline__img">
+                            <path
+                                d="M133.82 81.0534C98.8571 77.7031 71.5873 47.4464 71.5873 11.8355C71.5873 9.27845 71.7215 6.70052 72.0003 4.15391L72.4546 0L68.3967 0.793208C28.7567 8.52699 0 43.9187 0 84.9568C0 125.995 28.7567 160.927 68.3863 168.651L72.4443 169.444L71.99 165.29C71.7215 162.754 71.5769 160.165 71.5769 157.608C71.5769 121.998 98.8468 91.7408 133.809 88.3905M65.5984 7.72334C64.0393 37.3852 80.4982 65.7424 106.281 79.2165C75.8621 71.8793 50.4198 49.7321 38.9274 20.2268C47.064 14.3195 56.0266 10.1134 65.5984 7.71291V7.72334ZM65.4848 157.608C65.4848 158.965 65.5261 160.343 65.5984 161.721C56.0266 159.331 47.0537 155.135 38.9068 149.248C50.3785 119.733 75.8311 97.5751 106.261 90.2274C81.6547 103.086 65.4952 129.439 65.4952 157.608H65.4848ZM33.8886 145.324C30.0371 142.036 26.5058 138.384 23.3771 134.459C12.2358 120.453 6.09209 102.867 6.09209 84.9568C6.09209 67.047 12.2255 49.2207 23.3771 35.1308C26.5058 31.1752 30.0474 27.4909 33.9092 24.1824C46.176 54.1469 71.7628 76.5655 102.863 84.7272C71.7421 92.8889 46.145 115.339 33.8886 145.335V145.324Z"
+                                fill="#EAB7A1" />
+                            <path d="M1525.49 84.5876H133.493" stroke="#EAB7A1" stroke-width="7"
+                                stroke-miterlimit="10" />
+                            <path d="M1525.94 44.3986L1591.74 85.8959L1525.94 127.393V44.3986Z" stroke="#EAB7A1"
+                                stroke-width="7" stroke-miterlimit="10" />
+                        </svg>
+
                         <div class="chronology__timeline-active">
                             <span></span>
                             <span></span>
@@ -121,6 +174,15 @@
                         </div>
 
                         <ul class="chronology__timeline-list">
+                            <li class="chronology__timeline-list__item active">
+                                <p class="chronology__timeline-list__item-description text1">Основание компании.
+                                    Создание концепции и ценностей
+                                    бренда, открытие первой кофейни CofeFest в
+                                    Москве.</p>
+                                <p class="chronology__timeline-list__item-year heading2">2017</p>
+                                <p class="chronology__timeline-list__item-number heading2">1</p>
+                                <p class="chronology__timeline-list__item-notice text1">кофейня в Москве</p>
+                            </li>
                             <li class="chronology__timeline-list__item">2018</li>
                             <li class="chronology__timeline-list__item">2019</li>
                             <li class="chronology__timeline-list__item">2020</li>
@@ -128,15 +190,6 @@
                             <li class="chronology__timeline-list__item">2022</li>
                             <li class="chronology__timeline-list__item">2023</li>
                         </ul>
-                    </div>
-
-                    <div class="chronology__info">
-                        <p class="chronology__info-description text1">Основание компании. Создание концепции и ценностей
-                            бренда, открытие первой кофейни CofeFest в
-                            Москве.</p>
-                        <p class="chronology__info-year heading2">2017</p>
-                        <p class="chronology__info-number heading2">1</p>
-                        <p class="chronology__info-notice text1">кофейня в Москве</p>
                     </div>
                 </div>
 
@@ -207,7 +260,12 @@
                 <div class="video__content">
                     <img src="./src/images/video.png" alt="" class="video__content-item">
                     <button class="video__content-btn play-btn">
-                        <img src="./src/images/svg/play-btn-F1DED0.svg" alt="">
+                        <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="43.5" cy="43.5" r="42.5" stroke="#F1DED0" stroke-width="2" />
+                            <path
+                                d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
+                                fill="#F1DED0" />
+                        </svg>
                     </button>
                 </div>
             </div>

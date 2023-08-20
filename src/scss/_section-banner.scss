@@ -12,6 +12,16 @@
         .section-banner__left {
             .arrow-link {
                 color: $biege-btn;
+
+                &:hover:not(:focus-visible) {
+                    color: $light;
+
+                    .arrow-link__icon {
+                        path {
+                            fill: $light;
+                        }
+                    }
+                }
             }
         }
     }
@@ -46,6 +56,16 @@
 
         &-link {
             color: $light;
+
+            &:hover:not(:focus-visible) {
+                color: $biege-btn;
+
+                .arrow-link__icon {
+                    path {
+                        fill: $biege-btn;
+                    }
+                }
+            }
         }
     }
 

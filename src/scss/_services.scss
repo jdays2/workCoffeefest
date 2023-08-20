@@ -80,6 +80,11 @@
                 margin-left: auto;
                 margin-top: auto;
                 border-bottom: 1px solid $darkBlue;
+
+                &:hover:not(:focus-visible) {
+                    color: $light;
+                    border-color: $light;
+                }
             }
         }
     }

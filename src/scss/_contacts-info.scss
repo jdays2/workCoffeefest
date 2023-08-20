@@ -38,11 +38,16 @@
                     font-weight: 700;
                     font-size: 2rem;
                     line-height: 1.25rem;
+                    transition: color 0.2s ease-in-out;
 
                     svg {
                         width: 4.9rem;
                         height: 4.9rem;
                         object-fit: contain;
+                    }
+
+                    &:hover {
+                        color: $brightHeadlines;
                     }
                 }
             }

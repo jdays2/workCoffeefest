@@ -28,6 +28,18 @@
                         }
                     }
                 }
+
+                &-link {
+                    &:hover:not(:focus-visible) {
+                        color: $light;
+
+                        .arrow-link__icon {
+                            path {
+                                fill: $light;
+                            }
+                        }
+                    }
+                }
             }
 
             &__right {

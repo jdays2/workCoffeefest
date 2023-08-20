@@ -89,16 +89,49 @@
 
         &-list {
             position: absolute;
-            top: 2rem;
+            
             display: flex;
-            left: 43rem;
-            gap: 9rem;
+            left: 10rem;
 
             &__item {
+                width: 27.5rem;
+                height: 52rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
                 color: $biege-btn;
                 font-size: 4.5rem;
                 font-weight: 700;
                 line-height: 1;
+
+                &:not(:first-child) {
+                    margin-left: -10.4rem;
+                }
+
+                &-year {
+                    margin-top: auto;
+                    margin-bottom: 24.8rem;
+                    color: $brightHeadlines;
+                }
+
+                &-description {
+                    margin-bottom: 2.5rem;
+                    color: $light;
+                    text-align: center;
+                }
+
+                &-number {
+                    margin-bottom: 1.4rem;
+                }
+
+                &.active {
+                    color: $light;
+
+                    .chronology__timeline-list__item-year {
+                        color: $light;
+                    }
+                }
             }
         }
     }
