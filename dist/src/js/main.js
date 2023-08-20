@@ -216,8 +216,6 @@ document.addEventListener('DOMContentLoaded', function () {
         initTags(deliveryMainTags, deliveryMainTagsBlock);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     // теги на странице О компании
     if (document.querySelector('.about-info .section-tags')) {
         const aboutInfoTags = document.querySelectorAll('.about-info .section-tags__item-btn');
@@ -226,10 +224,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-=======
->>>>>>> bf42d05 (add some pages)
-=======
->>>>>>> c38f3e1 (feat: update from main remote)
     // аккордеон на странице Карьера
     if (document.querySelector('.carrer-vacancies__accordion')) {
         initAccordion(document.querySelector('.carrer-vacancies__accordion'));

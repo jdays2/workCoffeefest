@@ -3,95 +3,62 @@
 	height: calc(100vh - 14rem);
 	position: relative;
 
-<<<<<<< HEAD
-    &.authorcoffee {
-        .main-banner__btn {
-            top: 28rem;
-            transform: translateX(-50%);
-        }
-
-        .main-banner__swiper-controllers {
-            display: flex;
-            align-items: center;
-
-            .prev,
-            .next {
-                width: 2.8rem;
-                height: 1.6rem;
-                svg {
-                    width: 2.8rem;
-                    height: 1.6rem;
-                    -o-object-fit: contain;
-                       object-fit: contain;
-                }
-            }
-            .swiper-pagination {
-                &-bullet {
-                    border-color: $brightHeadlines;
-
-                    &.swiper-pagination-bullet-active {
-                        border-color: #f5f5f5;
-                        background-color: #f5f5f5;
-                    }
-                }
-            }
-        }
-    }
-
-<<<<<<< HEAD
-    &.business {
-        .main-banner__swiper-controllers {
-            .swiper-pagination {
-                &-bullet {
-                    border-color: $brightHeadlines;
-=======
-    &.cooking-menu,
-    &.grain-coffee {
-        .main-banner__btn {
-            color: $light;
-            border-color: $light;
-            background-color: rgba(35, 41, 62, 0.3);
-        }
->>>>>>> cd4bfcd (news pages + mobile styles main page)
-
-                    &.swiper-pagination-bullet-active {
-                        border-color: #f5f5f5;
-                        background-color: #f5f5f5;
-                    }
-                }
-            }
-        }
-    }
-
-    &.cooking-menu,
-    &.grain-coffee {
-        .main-banner__swiper-controllers {
-            .swiper-pagination {
-                &-bullet {
-                    background-color: #e3bca0;
-                    border-color: #e3bca0;
-=======
 	&.authorcoffee {
 		.main-banner__btn {
 			top: 28rem;
 			transform: translateX(-50%);
-			background-color: rgba(35, 41, 62, 0.3);
+		}
+
+		.main-banner__swiper-controllers {
+			display: flex;
+			align-items: center;
+
+			.prev,
+			.next {
+				width: 2.8rem;
+				height: 1.6rem;
+				svg {
+					width: 2.8rem;
+					height: 1.6rem;
+					-o-object-fit: contain;
+					object-fit: contain;
+				}
+			}
+			.swiper-pagination {
+				&-bullet {
+					border-color: $brightHeadlines;
+
+					&.swiper-pagination-bullet-active {
+						border-color: #f5f5f5;
+						background-color: #f5f5f5;
+					}
+				}
+			}
+		}
+	}
+
+	&.business {
+		.main-banner__swiper-controllers {
+			.swiper-pagination {
+				&-bullet {
+					border-color: $brightHeadlines;
+
+					&.swiper-pagination-bullet-active {
+						border-color: #f5f5f5;
+						background-color: #f5f5f5;
+					}
+				}
+			}
 		}
 	}
 
 	&.cooking-menu,
 	&.grain-coffee {
-		.main-banner__btn {
-			color: $light;
-			border-color: $light;
-			background-color: rgba(35, 41, 62, 0.3);
-		}
-
 		.main-banner__swiper-controllers {
 			.swiper-pagination {
 				&-bullet {
+					background-color: #e3bca0;
 					border-color: #e3bca0;
->>>>>>> fe00892 (feat: change grain-coffee page)
 
 					&.swiper-pagination-bullet-active {
 						background-color: #e3bca0;
@@ -104,21 +71,7 @@
 	&__swiper {
 		height: 100%;
 
-<<<<<<< HEAD
-        &-slide {
-            &__img {
-                width: 100%;
-                height: 100%;
-                -o-object-fit: cover;
-                   object-fit: cover;
-                position: relative;
-                z-index: -1;
-            }
-        }
-=======
 		&-slide {
-			background: url(../images/svg/main-ornament.svg) top left/cover no-repeat;
-
 			&__img {
 				width: 100%;
 				height: 100%;
@@ -128,7 +81,6 @@
 				z-index: -1;
 			}
 		}
->>>>>>> fe00892 (feat: change grain-coffee page)
 
 		&-controllers {
 			width: 100%;
@@ -139,19 +91,6 @@
 			justify-content: center;
 			z-index: 1;
 
-<<<<<<< HEAD
-            .prev,
-            .next {
-                cursor: pointer;
-                transition: opacity 0.2s ease-in-out;
-                svg,
-                img {
-                    width: 2.8rem;
-                    height: 1.6rem;
-                    -o-object-fit: contain;
-                       object-fit: contain;
-                }
-=======
 			.prev,
 			.next {
 				cursor: pointer;
@@ -163,7 +102,6 @@
 					-o-object-fit: contain;
 					object-fit: contain;
 				}
->>>>>>> fe00892 (feat: change grain-coffee page)
 
 				&.swiper-button-disabled {
 					opacity: 0;
@@ -215,65 +153,6 @@
 		margin-top: 18.2rem;
 		height: calc(100vh - 18.2rem);
 
-<<<<<<< HEAD
-        &__swiper {
-            &-slide {
-                &__img {
-<<<<<<< HEAD
-                    -o-object-position: center;
-                       object-position: center;
-=======
-                    object-position: center;
->>>>>>> cd4bfcd (news pages + mobile styles main page)
-                }
-            }
-
-            &-controllers {
-                bottom: 8rem;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> cd4bfcd (news pages + mobile styles main page)
-                .prev,
-                .next {
-                    svg,
-                    img {
-                        width: 5.6rem;
-                        height: 2.6rem;
-                    }
-                }
-<<<<<<< HEAD
-
-                .swiper-pagination {
-                    margin: 0 4rem;
-
-                    .swiper-pagination-bullet {
-                        width: 3rem;
-                        height: 3rem;
-
-=======
-    
-                .swiper-pagination {
-                    margin: 0 4rem;
-    
-                    .swiper-pagination-bullet {
-                        width: 3rem;
-                        height: 3rem;
-    
->>>>>>> cd4bfcd (news pages + mobile styles main page)
-                        &:not(:last-child) {
-                            margin-right: 3.2rem;
-                        }
-                    }
-                }
-            }
-        }
-<<<<<<< HEAD
-    }
-}
-=======
-=======
 		&__swiper {
 			&-slide {
 				&__img {
@@ -284,8 +163,6 @@
 
 			&-controllers {
 				bottom: 8rem;
->>>>>>> fe00892 (feat: change grain-coffee page)
-
 				.prev,
 				.next {
 					svg,
@@ -311,4 +188,3 @@
 		}
 	}
 }
->>>>>>> cd4bfcd (news pages + mobile styles main page)

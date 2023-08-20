@@ -12,8 +12,6 @@
         .section-banner__left {
             .arrow-link {
                 color: $biege-btn;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
                 &:hover:not(:focus-visible) {
                     color: $light;
@@ -24,10 +22,6 @@
                         }
                     }
                 }
-=======
->>>>>>> cd4bfcd (news pages + mobile styles main page)
-=======
->>>>>>> c38f3e1 (feat: update from main remote)
             }
         }
     }
@@ -62,8 +56,6 @@
 
         &-link {
             color: $light;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             &:hover:not(:focus-visible) {
                 color: $biege-btn;
@@ -74,10 +66,6 @@
                     }
                 }
             }
-=======
->>>>>>> cd4bfcd (news pages + mobile styles main page)
-=======
->>>>>>> c38f3e1 (feat: update from main remote)
         }
     }
 
@@ -93,7 +81,8 @@
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                -o-object-fit: cover;
+                   object-fit: cover;
                 border-radius: inherit;
             }
         }
@@ -114,7 +103,8 @@
             &__content {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                -o-object-fit: cover;
+                   object-fit: cover;
                 border-radius: inherit;
             }
         }

@@ -17,7 +17,8 @@
             img {
                 width: 22.8rem;
                 height: 8.4rem;
-                object-fit: contain;
+                -o-object-fit: contain;
+                   object-fit: contain;
             }
         }
 
@@ -75,7 +76,8 @@
                     img {
                         width: 4.5rem;
                         height: 4.5rem;
-                        object-fit: contain;
+                        -o-object-fit: contain;
+                           object-fit: contain;
                     }
                 }
             }

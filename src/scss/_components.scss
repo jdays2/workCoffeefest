@@ -574,6 +574,34 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 }
 
+.heading-biege {
+	color: #e3bca0;
+}
+
+.box-biege {
+	width: 100%;
+	padding: 4.4rem 4rem 6.2rem;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 0 5rem 5rem;
+	background: $biege;
+}
+
+.box-blue {
+	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	display: flex;
+	padding: 4rem;
+	border-radius: 0 0 5rem 5rem;
+	background: $darkBlue;
+}
+
+
 .red-btn {
 	padding: 2.4rem 3.6rem;
 	display: flex;
