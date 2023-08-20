@@ -1,50 +1,8 @@
-<<<<<<< HEAD
-.catalog-main-banner {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 89b79b4 (feat: update from main remote)
-    background-color: $light;
-
-    &:nth-child(2) {
-        padding-top: 8rem;
-=======
-.catalog {
-    &__content-box {
-        display: flex;
-        gap: 3.5rem 3.45rem;
-				flex-wrap: wrap;
-        margin-bottom: 5rem;
->>>>>>> c1d57f6 (feat: change grain-coffee page)
-    }
-
-		&-det {
-			padding-top: 14.4rem;
-		}
-
-    .section {
-        padding: 0;
-        padding-bottom: 15rem;
-
-        &:nth-child(2) {
-            padding-top: 8rem;
-        }
-    }
-
-		.heading2 {
-			line-height: 4.2rem;
-		}
-}
-
-// .catalog-main-block {
-//     padding-bottom: 15rem;
-// }
-
 .catalog-main-banner {
 	background-color: $light;
 
 	&:nth-child(2) {
-		padding-top: 8rem;
+			padding-top: 8rem;
 	}
 }
 .catalog-main-banner__container {
@@ -72,7 +30,7 @@
 }
 .catalog-main-banner__text-part {
 	&:not(:last-child) {
-		margin: 0 0 2rem 0;
+			margin: 0 0 2rem 0;
 	}
 }
 .catalog-main-banner__background {
@@ -82,10 +40,10 @@
 	width: 93.8rem;
 	height: auto;
 	& img {
-		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		object-fit: cover;
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			   object-fit: cover;
 	}
 }
 .catalog-main-banner__right-photo {
@@ -94,191 +52,11 @@
 	height: auto;
 	border-radius: 0 0 5rem 0;
 	& img {
-		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		object-fit: cover;
-		border-radius: inherit;
-	}
-}
-
-.catalog-banner {
-	position: relative;
-	height: 78.3rem;
-	margin-top: 14rem;
-
-	&__heading {
-		color: #e3bca0;
-		text-align: center;
-		font-family: El Messiri;
-		font-size: 5.4rem;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 100%;
-		margin-bottom: 2.5rem;
-		width: 114rem;
-	}
-
-	.swiper-container-pointer-events {
-		height: 100%;
-	}
-
-	&__swiper-slide {
-		position: relative;
-		background: url(../images/svg/catalog-banner-bg.svg) top left/cover
-				no-repeat,
-			linear-gradient(rgba(87, 42, 62, 0.7), rgba(87, 42, 62, 0.0));
-	}
-
-	&__slide-img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		object-fit: cover;
-		z-index: -1;
-		pointer-events: none;
-	}
-
-	&__subheading {
-		color: #fffaf1;
-		text-align: center;
-		font-family: Circe;
-		font-size: 3.6rem;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 100%;
-		margin-bottom: 4.2rem;
-	}
-
-	.square-btn--big {
-		border: 0.2rem solid #f5f5f5;
-		background: rgba(35, 41, 62, 0.3);
-		color: #f5f5f5;
-	}
-
-	.container {
-		position: absolute;
-		top: 15.9rem;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.main-banner__swiper-controllers {
-        bottom: 4.95rem;
-		.swiper-pagination {
-			&-bullet {
-				border-color: #e3bca0;
-
-				&.swiper-pagination-bullet-active {
-					background-color: #e3bca0;
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 48em) {
-<<<<<<< HEAD
-    .catalog-main-banner__container {
-        flex-direction: column;
-    }
-    .catalog-main-banner__left-part {
-        padding: 12rem 4rem 8rem 4rem;
-        max-width: none;
-        border-radius: 0 0 0 0;
-    }
-    .catalog-main-banner__title {
-        margin: 0 0 8rem 0;
-    }
-    .catalog-main-banner__subtitle {
-        margin: 0 0 4rem 0;
-    }
-    .catalog-main-banner__text {
-        font-size: 2.8rem;
-        line-height: 3.92rem;
-    }
-    .catalog-main-banner__text-part {
-        &:not(:last-child) {
-            margin: 0 0 4rem 0;
-        }
-    }
-    .catalog-main-banner__background {
-        max-width: 71rem;
-        margin: 0 0 0 0;
-    }
-    .catalog-main-banner__right-photo {
-        max-width: 71rem;
-        border-radius: 0 0 7.2rem 7.2rem;
-        overflow: hidden;
-    }
-    .catalog-main-banner__play-btn {
-        max-width: 12rem;
-        top: 21.6rem;
-        left: 29.6rem;
-    }
-<<<<<<< HEAD
-=======
-	background-color: $light;
-}
-.catalog-main-banner__container {
-	display: flex;
-}
-.catalog-main-banner__left-part {
-	background: $darkBlue;
-	position: relative;
-	padding: 6rem 6rem 12rem 6rem;
-	max-width: 81.7rem;
-	border-radius: 0 0 0 5rem;
-}
-.catalog-main-banner__title {
-	color: $light;
-	margin: 0 0 4.5rem 0;
-}
-.catalog-main-banner__subtitle {
-	color: $brightHeadlines;
-	margin: 0 0 4.5rem 0;
-}
-.catalog-main-banner__text {
-	color: $light;
-	font-size: 2rem;
-	line-height: 2.5rem; /* 25px */
-}
-.catalog-main-banner__text-part {
-	&:not(:last-child) {
-		margin: 0 0 2rem 0;
-	}
-}
-.catalog-main-banner__background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 93.8rem;
-	height: auto;
-	& img {
-		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		   object-fit: cover;
-	}
-}
-.catalog-main-banner__right-photo {
-	position: relative;
-	max-width: 78.3rem;
-	height: auto;
-	border-radius: 0 0 5rem 0;
-	& img {
-		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		   object-fit: cover;
-		border-radius: inherit;
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			   object-fit: cover;
+			border-radius: inherit;
 	}
 }
 .catalog-main-banner__play-btn {
@@ -288,60 +66,49 @@
 	max-width: 8.8rem;
 	height: auto;
 	& img {
-		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		   object-fit: cover;
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			   object-fit: cover;
 	}
 }
 
 @media (max-width: 48em) {
-	.catalog-main-banner {
-		margin: 0 0 18rem 0;
-	}
-=======
->>>>>>> c1d57f6 (feat: change grain-coffee page)
 	.catalog-main-banner__container {
-		flex-direction: column;
+			flex-direction: column;
 	}
 	.catalog-main-banner__left-part {
-		padding: 12rem 4rem 8rem 4rem;
-		max-width: none;
-		border-radius: 0 0 0 0;
+			padding: 12rem 4rem 8rem 4rem;
+			max-width: none;
+			border-radius: 0 0 0 0;
 	}
 	.catalog-main-banner__title {
-		margin: 0 0 8rem 0;
+			margin: 0 0 8rem 0;
 	}
 	.catalog-main-banner__subtitle {
-		margin: 0 0 4rem 0;
+			margin: 0 0 4rem 0;
 	}
 	.catalog-main-banner__text {
-		font-size: 2.8rem;
-		line-height: 3.92rem;
+			font-size: 2.8rem;
+			line-height: 3.92rem;
 	}
 	.catalog-main-banner__text-part {
-		&:not(:last-child) {
-			margin: 0 0 4rem 0;
-		}
+			&:not(:last-child) {
+					margin: 0 0 4rem 0;
+			}
 	}
 	.catalog-main-banner__background {
-		max-width: 71rem;
-		margin: 0 0 0 0;
+			max-width: 71rem;
+			margin: 0 0 0 0;
 	}
 	.catalog-main-banner__right-photo {
-		max-width: 71rem;
-		border-radius: 0 0 7.2rem 7.2rem;
-		overflow: hidden;
+			max-width: 71rem;
+			border-radius: 0 0 7.2rem 7.2rem;
+			overflow: hidden;
 	}
 	.catalog-main-banner__play-btn {
-		max-width: 12rem;
-		top: 21.6rem;
-		left: 29.6rem;
+			max-width: 12rem;
+			top: 21.6rem;
+			left: 29.6rem;
 	}
-<<<<<<< HEAD
->>>>>>> df18357 (feat: update from remote)
-=======
->>>>>>> 89b79b4 (feat: update from main remote)
-=======
->>>>>>> c1d57f6 (feat: change grain-coffee page)
 }

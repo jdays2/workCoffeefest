@@ -1,0 +1,25 @@
+.catalog {
+  &__content-box {
+      display: flex;
+      gap: 3.5rem 3.45rem;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+  }
+
+  &-det {
+    padding-top: 14.4rem;
+  }
+
+  .section {
+      padding: 0;
+      padding-bottom: 15rem;
+
+      &:nth-child(2) {
+          padding-top: 8rem;
+      }
+  }
+
+  .heading2 {
+    line-height: 4.2rem;
+  }
+}
