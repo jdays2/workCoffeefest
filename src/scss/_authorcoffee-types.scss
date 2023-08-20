@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .catalog-card-1 {
 	padding: 0 1.75rem;
 	width: 37.4rem;
@@ -113,65 +114,46 @@
 			-o-object-fit: cover;
 			object-fit: cover;
 		}
+=======
+.authorcoffee-types {
+	&__container {
+			position: relative;
+>>>>>>> a589598 (fix: change styles)
 	}
 
-	&__descr {
-		padding: 3rem;
-		border-radius: 0 0 5rem 5rem;
-		border: 0.15rem solid $line;
-		max-width: 37.4rem;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 20.8rem;
-		display: flex;
-		flex-direction: column;
-		background: url('../images/svg/card-1-backgrnd.svg') top left/cover
-			no-repeat $biege;
-	}
+	&__swiper {
+			margin-bottom: 5rem;
 
-	&__title {
-		max-width: 31.4rem;
-	}
+			&-slide {
+					display: flex;
 
-	&__add-to-cart {
-		left: auto;
-		top: auto;
-		bottom: 2rem;
-		right: 2rem;
-		cursor: pointer;
-	}
+					&__left {
+							padding: 8rem 6rem;
+							width: 82rem;
+							background-color: $biege;
+							border-radius: 0 0 0 5rem;
 
-	&__info-block {
-		display: flex;
-		width: 51rem;
-		border-radius: 0px 0px 5rem 5rem;
-		flex-direction: column;
-		height: -webkit-fit-content;
-		height: -moz-fit-content;
-		height: fit-content;
-		background: url('../images/svg/card-1-backgrnd-big.svg') top left/cover
-			no-repeat $biege;
-		padding: 6rem 4rem;
-		gap: 1.6rem;
+							&-heading,
+							&-subheading,
+							&-description {
+									margin-bottom: 4.5rem;
+							}
 
-		&-title {
-			font-family: Circe;
-			font-size: 2.2rem;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 130%;
-			text-transform: uppercase;
-		}
-	}
+							&-description {
+									p {
+											&:not(:last-child) {
+													margin-bottom: 1rem;
+											}
+									}
+							}
+					}
 
-	&__info-row {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+					&__right {
+							width: 78rem;
+							min-height: 64.5rem;
+							border-radius: 0 0 5rem 0;
 
+<<<<<<< HEAD
 	&__info-item {
 		display: flex;
 		flex-direction: column;
@@ -247,5 +229,16 @@
 	.catalog-card-1__add-to-cart {
 		left: 56.6rem;
 		top: 22rem;
+=======
+							&-img {
+									width: 100%;
+									height: 100%;
+									-o-object-fit: cover;
+									   object-fit: cover;
+									border-radius: inherit;
+							}
+					}
+			}
+>>>>>>> a589598 (fix: change styles)
 	}
 }
