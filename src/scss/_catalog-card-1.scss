@@ -1,23 +1,4 @@
 .catalog-card-1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	flex: 0 1 25%;
-	padding: 0 1.75rem;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
-
-	&__img {
-		max-width: 100%;
-		height: 32.5rem;
-
-		img {
-=======
-	flex: 0 1 25%;
-=======
->>>>>>> c972811 (feat: finish card-det & add cart.html)
 	padding: 0 1.75rem;
 	width: 37.4rem;
 
@@ -25,155 +6,17 @@
 		max-width: 37.4rem;
 		height: auto;
 		& img {
->>>>>>> 3f9d4f3 (feat: recreate away.html and fix some errors)
 			width: 100%;
 			height: 100%;
 			-o-object-fit: cover;
 			object-fit: cover;
 		}
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 3f9d4f3 (feat: recreate away.html and fix some errors)
 	&__descr {
 		padding: 3rem;
 		border-radius: 0 0 5rem 5rem;
 		border: 0.15rem solid $line;
-<<<<<<< HEAD
-		background: $biege;
-		max-width: 100%;
-		height: 19rem;
-		position: relative;
-		z-index: 2;
-	}
-	&__title {
-		max-width: 45rem;
-		margin: 0 0 2rem 0;
-	}
-	&__buy {
-		display: flex;
-		flex-direction: column;
-	}
-	&__background {
-		position: absolute;
-		top: 0;
-		left: 0;
-		max-width: 37.4rem;
-		height: auto;
-		pointer-events: none;
-		z-index: 0;
-	}
-}
-
-.swiper-slide .catalog-card-1 {
-	flex: 0 1 25%;
-	padding: 0;
-}
-
-.swiper-wrapper {
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 89b79b4 (feat: update from main remote)
-    flex: 0 1 25%;
-    padding: 0 1.75rem;
-}
-.catalog-card-1__img {
-    max-width: 37.4rem;
-    height: auto;
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-.catalog-card-1__descr {
-    padding: 3rem;
-    border-radius: 0 0 5rem 5rem;
-    border: 0.15rem solid $line;
-    max-width: 37.4rem;
-    position: relative;
-    background: url("../images/svg/card-1-backgrnd.svg") top left/cover no-repeat $biege;
-}
-.catalog-card-1__title {
-    max-width: 31.4rem;
-    margin: 0 0 2rem 0;
-}
-.catalog-card-1__add-to-cart {
-    top: 11.8rem;
-    left: 28.4rem;
-}
-
-@media (max-width: 48em) {
-    .catalog-card-1 {
-        flex: 0 1 100%;
-        padding: 0;
-        &:not(:last-child) {
-            margin: 0 0 5rem 0;
-        }
-    }
-    .catalog-card-1__img {
-        max-width: 71rem;
-        & img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .catalog-card-1__descr {
-        padding: 6rem 4rem 4rem 4rem;
-        border-radius: 0 0 7.2rem 7.2rem;
-        border: 0.3rem solid $line;
-        max-width: none;
-    }
-    .catalog-card-1__title {
-        max-width: 52rem;
-        margin: 0 0 4rem 0;
-    }
-    .catalog-card-1__add-to-cart {
-        left: 56.6rem;
-        top: 22rem;
-    }
-<<<<<<< HEAD
->>>>>>> 69bfa55 (cooking-menu added)
-}
-=======
-	flex: 0 1 25%;
-	padding: 0 1.75rem;
-}
-.catalog-card-1__img {
-	max-width: 37.4rem;
-	height: auto;
-	& img {
-		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		object-fit: cover;
-	}
-}
-.catalog-card-1__descr {
-	padding: 3rem;
-	border-radius: 0 0 5rem 5rem;
-	border: 0.15rem solid $line;
-	max-width: 37.4rem;
-	position: relative;
-	background: url('../images/svg/card-1-backgrnd.svg') top left/cover no-repeat
-		$biege;
-}
-.catalog-card-1__title {
-	max-width: 31.4rem;
-	margin: 0 0 2rem 0;
-}
-.catalog-card-1__add-to-cart {
-	top: 11.8rem;
-	left: 28.4rem;
-}
-
-@media (max-width: 48em) {
-=======
 		max-width: 37.4rem;
 		position: relative;
 		display: flex;
@@ -274,7 +117,6 @@
 }
 
 @media (max-width: 48em) {
->>>>>>> 3f9d4f3 (feat: recreate away.html and fix some errors)
 	.catalog-card-1 {
 		flex: 0 1 100%;
 		padding: 0;
@@ -304,10 +146,3 @@
 		top: 22rem;
 	}
 }
-<<<<<<< HEAD
->>>>>>> df18357 (feat: update from remote)
-=======
-}
->>>>>>> 89b79b4 (feat: update from main remote)
-=======
->>>>>>> 3f9d4f3 (feat: recreate away.html and fix some errors)
