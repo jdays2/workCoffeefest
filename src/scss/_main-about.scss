@@ -23,12 +23,6 @@
             margin-left: auto;
             margin-right: auto;
             width: 113.7rem;
-
-            p {
-                &:not(:last-child) {
-                    margin-bottom: 1rem;
-                }
-            }
         }
 
         &-subheading {

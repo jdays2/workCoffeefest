@@ -38,7 +38,8 @@
             &__img {
                 width: 77.5rem;
                 height: 59rem;
-                object-fit: cover;
+                -o-object-fit: cover;
+                   object-fit: cover;
                 border-radius: 0 0 5rem 0;
             }
         }
@@ -47,7 +48,6 @@
     @media (max-width: 48em) {
         &__swiper {
             margin-bottom: 8rem;
-
             &-slide {
                 flex-direction: column;
                 border-radius: 0 0 7.2rem 7.2rem;

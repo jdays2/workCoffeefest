@@ -1,105 +1,106 @@
 .news {
-    &__container {
-        position: relative;
-    }
+	&__container {
+		position: relative;
+	}
 
-    &__heading {
-        margin-bottom: 5rem;
-    }
+	&__heading {
+		margin-bottom: 5rem;
+	}
 
-    &__swiper {
-        margin-bottom: 5.4rem;
+	&__swiper {
+		margin-bottom: 5.4rem;
 
-        &-slide {
-            &__img {
-                width: 100%;
-                height: 35.5rem;
-                object-fit: cover;
-            }
+		&-slide {
+			&__img {
+				width: 100%;
+				height: 35.5rem;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
 
-            &__text {
-                padding: 5rem 3rem;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                min-height: 29.4rem;
-                background:
-                    url(../images/svg/categories-ornament1.svg) top left/cover no-repeat,
-                    $darkBlue;
-                border-radius: 0 0 5rem 5rem;
+			&__text {
+				padding: 5rem 3rem;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				min-height: 29.4rem;
+				background: url(../images/svg/categories-ornament1.svg) top left/cover
+						no-repeat,
+					$darkBlue;
+				border-radius: 0 0 5rem 5rem;
 
-                &-heading {
-                    margin-bottom: 1.2rem;
-                    color: $brightHeadlines;
-                }
+				&-heading {
+					margin-bottom: 1.2rem;
+					color: $brightHeadlines;
+				}
 
-                &-description {
-                    margin-bottom: 1.2rem;
-                    color: $light;
-                }
+				&-description {
+					margin-bottom: 1.2rem;
+					color: $light;
+				}
 
-                &-bottom {
-                    margin-top: auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
+				&-bottom {
+					margin-top: auto;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
 
-                    p {
-                        margin-right: 2.4rem;
-                        color: $brightHeadlines;
-                    }
+					p {
+						margin-right: 2.4rem;
+						color: $brightHeadlines;
+					}
 
-                    a {
-                        color: $light;
+					a {
+						color: $light;
 
-                        &:hover {
-                            color: $brightHeadlines;
-                        }
-                    }
-                }
-            }
-        }
-    }
+						&:hover {
+							color: $brightHeadlines;
+						}
+					}
+				}
+			}
+		}
+	}
 
-    &__link {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+	&__link {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
 
-    @media (max-width: 48em) {
-        &__swiper {
-            margin-bottom: 8rem;
-            &-slide {
-                &__img {
-                    height: 58rem;
-                }
+	@media (max-width: 48em) {
+		&__swiper {
+			margin-bottom: 8rem;
+			&-slide {
+				&__img {
+					height: 58rem;
+				}
 
-                &__text {
-                    padding: 8rem 4rem;
-                    min-height: auto;
+				&__text {
+					padding: 8rem 4rem;
+					min-height: auto;
 
-                    &-description {
-                        margin-bottom: 8rem;
-                    }
+					&-description {
+						margin-bottom: 8rem;
+					}
 
-                    &-bottom {
-                        justify-content: space-between;
-                    }
-                }
-            }
-        }
+					&-bottom {
+						justify-content: space-between;
+					}
+				}
+			}
+		}
 
-        &__swiper-controllers {
-            margin-bottom: 8rem;
-        }
+		&__swiper-controllers {
+			margin-bottom: 8rem;
+		}
 
-        &__link {
-            bottom: auto;
-            right: auto;
-            position: relative;
-            left: 100%;
-            transform: translateX(-100%);
-        }
-    }
+		&__link {
+			bottom: auto;
+			right: auto;
+			position: relative;
+			left: 100%;
+			transform: translateX(-100%);
+		}
+	}
 }

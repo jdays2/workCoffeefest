@@ -1,186 +1,188 @@
 .services {
-    &__heading {
-        margin-bottom: 5rem;
-    }
+	&__heading {
+		margin-bottom: 5rem;
+	}
 
-    &__container {
-        position: relative;
-    }
+	&__container {
+		position: relative;
+	}
 
-    &__list {
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;
+	&__list {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
 
-        &-item {
-            width: 36.2rem;
-            display: flex;
-            flex-direction: column;
-            height: auto;
+		&-item {
+			width: 36.2rem;
+			display: flex;
+			flex-direction: column;
+			height: auto;
 
-            &__text {
-                padding: 5rem 3rem 2rem 3rem;
-                min-height: 22rem;
-                height: calc(100% - 27.2rem);
-                background-color: $biege;
+			&__text {
+				padding: 5rem 3rem 2rem 3rem;
+				min-height: 22rem;
+				height: calc(100% - 27.2rem);
+				background-color: $biege;
 
-                &-heading {
-                    margin-bottom: 1.2rem;
-                }
+				&-heading {
+					margin-bottom: 1.2rem;
+				}
 
-                &-description {
-                    width: 27.7rem;
-                }
-            }
+				&-description {
+					width: 27.7rem;
+				}
+			}
 
-            &__icon {
-                height: 27.2rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 0 0 5rem 5rem;
+			&__icon {
+				height: 27.2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 0 0 5rem 5rem;
 
-                &.catering {
-                    background-color: $red;
-                }
+				&.catering {
+					background-color: $red;
+				}
 
-                &.organization {
-                    background-color: $blue;
-                }
+				&.organization {
+					background-color: $blue;
+				}
 
-                &.corporate {
-                    background-color: $green;
-                }
+				&.corporate {
+					background-color: $green;
+				}
 
-                &.barista {
-                    background-color: $darkBlue;
-                }
+				&.barista {
+					background-color: $darkBlue;
+				}
 
-                img {
-                    max-width: 20.6rem;
-                    max-height: 19.2rem;
-                    object-fit: contain;
-                }
-            }
-        }
-    }
+				img {
+					max-width: 20.6rem;
+					max-height: 19.2rem;
+					-o-object-fit: contain;
+					object-fit: contain;
+				}
+			}
+		}
+	}
 
-    &.business {
-        .services__swiper-slide__text {
-            display: flex;
-            flex-direction: column;
-            min-height: 27.5rem;
+	&.business {
+		.services__swiper-slide__text {
+			display: flex;
+			flex-direction: column;
+			min-height: 27.5rem;
 
-            &-description {
-                margin-bottom: 3rem;
-                width: 31.5rem;
-            }
+			&-description {
+				margin-bottom: 3rem;
+				width: 31.5rem;
+			}
 
-            &-link {
-                margin-left: auto;
-                margin-top: auto;
-                border-bottom: 1px solid $darkBlue;
+			&-link {
+				margin-left: auto;
+				margin-top: auto;
+				border-bottom: 1px solid $darkBlue;
 
-                &:hover:not(:focus-visible) {
-                    color: $light;
-                    border-color: $light;
-                }
-            }
-        }
-    }
+				&:hover:not(:focus-visible) {
+					color: $light;
+					border-color: $light;
+				}
+			}
+		}
+	}
 
-    &__swiper {
-        margin-bottom: 5rem;
+	&__swiper {
+		margin-bottom: 5rem;
 
-        .swiper-wrapper {
-            align-items: stretch;
-        }
+		.swiper-wrapper {
+			align-items: stretch;
+		}
 
-        &-slide {
-            display: flex;
-            flex-direction: column;
-            height: auto;
+		&-slide {
+			display: flex;
+			flex-direction: column;
+			height: auto;
 
-            &__text {
-                padding: 5rem 3rem 3rem 3rem;
-                min-height: 24.1rem;
-                height: calc(100% - 27.2rem);
-                background-color: $biege;
+			&__text {
+				padding: 5rem 3rem 3rem 3rem;
+				min-height: 24.1rem;
+				height: calc(100% - 27.2rem);
+				background-color: $biege;
 
-                &-heading {
-                    margin-bottom: 1.2rem;
-                }
+				&-heading {
+					margin-bottom: 1.2rem;
+				}
 
-                &-description {
-                    width: 27.7rem;
-                }
-            }
+				&-description {
+					width: 27.7rem;
+				}
+			}
 
-            &__icon {
-                height: 27.2rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 0 0 5rem 5rem;
+			&__icon {
+				height: 27.2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 0 0 5rem 5rem;
 
-                &.catering {
-                    background-color: $red;
-                }
+				&.catering {
+					background-color: $red;
+				}
 
-                &.organization {
-                    background-color: $blue;
-                }
+				&.organization {
+					background-color: $blue;
+				}
 
-                &.corporate {
-                    background-color: $green;
-                }
+				&.corporate {
+					background-color: $green;
+				}
 
-                &.barista {
-                    background-color: $darkBlue;
-                }
-                img {
-                    width: 20.6rem;
-                    height: 19.2rem;
-                    object-fit: contain;
-                }
-            }
-        }
-    }
+				&.barista {
+					background-color: $darkBlue;
+				}
+				img {
+					width: 20.6rem;
+					height: 19.2rem;
+					-o-object-fit: contain;
+					object-fit: contain;
+				}
+			}
+		}
+	}
 
-    @media (max-width: 48em) {
-        &__heading {
-            margin-bottom: 8rem;
-        }
+	@media (max-width: 48em) {
+		&__heading {
+			margin-bottom: 8rem;
+		}
 
-        &__list {
-        }
+		&__list {
+		}
 
-        &__swiper {
-            &-slide {
-                &__icon {
-                    padding: 8rem 4rem;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    height: auto;
-                    border-radius: 0 0 7.2rem 7.2rem;
+		&__swiper {
+			&-slide {
+				&__icon {
+					padding: 8rem 4rem;
+					flex-direction: column;
+					align-items: flex-start;
+					height: auto;
+					border-radius: 0 0 7.2rem 7.2rem;
 
-                    img {
-                        margin-bottom: 2.4rem;
-                        width: 18rem;
-                        height: 19.2rem;
-                        align-self: center;
-                    }
+					img {
+						margin-bottom: 2.4rem;
+						width: 18rem;
+						height: 19.2rem;
+						align-self: center;
+					}
 
-                    &-heading {
-                        margin-bottom: 2.4rem;
-                    }
+					&-heading {
+						margin-bottom: 2.4rem;
+					}
 
-                    &-heading,
-                    &-description {
-                        color: $light;
-                    }
-                }
-            }
-        }
-    }
+					&-heading,
+					&-description {
+						color: $light;
+					}
+				}
+			}
+		}
+	}
 }

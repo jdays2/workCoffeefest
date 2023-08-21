@@ -3,6 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     display: flex;
     align-items: center;
@@ -42,7 +44,8 @@
         background-color: $white;
 
         svg {
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
         }
     }
 
