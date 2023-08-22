@@ -174,6 +174,19 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     })
 
+    const teamSwiper = new Swiper('.team__swiper', {
+        slidesPerView: 4,
+        spaceBetween: rem(3.4),
+        speed: 600,
+        pagination: {
+            el: '.team__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.services__swiper-next',
+            prevEl: 'services__swiper-prev',
+        },
+    })
+
     const serviceSwiper = new Swiper('.service__swiper', {
         slidesPerView: 4,
         spaceBetween: rem(3.4),
