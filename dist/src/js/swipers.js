@@ -76,6 +76,30 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     })
 
+    const formatsSwiper = new Swiper('.formats__swiper', {
+        slidesPerView: 3,
+        spaceBetween: rem(3.5),
+        pagination: {
+            el: '.formats__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.formats__swiper-next',
+            prevEl: '.formats__swiper-prev',
+        },
+    })
+
+    const urMenuSwiper = new Swiper('.ur-menu__swiper', {
+        slidesPerView: 3,
+        spaceBetween: rem(3.5),
+        pagination: {
+            el: '.ur-menu__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.ur-menu__swiper-next',
+            prevEl: '.ur-menu__swiper-prev',
+        },
+    })
+
     const proposalSwiper = new Swiper('.proposal__swiper', {
         slidesPerView: 3,
         spaceBetween: rem(3.5),
@@ -147,6 +171,32 @@ document.addEventListener('DOMContentLoaded', function () {
         navigation: {
             nextEl: '.about-team__swiper-controllers .swiper-next',
             prevEl: '.about-team__swiper-controllers .swiper-prev',
+        },
+    })
+
+    const serviceSwiper = new Swiper('.service__swiper', {
+        slidesPerView: 4,
+        spaceBetween: rem(3.4),
+        speed: 600,
+        pagination: {
+            el: '.service__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.service__swiper-next',
+            prevEl: '.service__swiper-prev',
+        },
+    })
+
+    const servSwiper = new Swiper('.serv__swiper', {
+        slidesPerView: 4,
+        spaceBetween: rem(3.4),
+        speed: 600,
+        pagination: {
+            el: '.serv__swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.serv__swiper-next',
+            prevEl: '.serv__swiper-prev',
         },
     })
 
