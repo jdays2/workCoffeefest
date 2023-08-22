@@ -1,6 +1,10 @@
 .team__swiper,
 .proposal__swiper,
-.away__swiper {
+.interiors__swiper,
+.away__swiper,
+.ur-menu__swiper,
+.formats__swiper,
+.serv__swiper {
 	.swiper-wrapper {
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
@@ -9,15 +13,18 @@
 }
 
 .team__swiper-pagination,
-.service-for__swiper-pagination,
+.service__swiper-pagination,
 .proposal__swiper-pagination,
 .away__swiper-pagination,
-.feedback__swiper-pagination {
+.formats__swiper-pagination,
+.feedback__swiper-pagination,
+.ur-menu__swiper-pagination,
+.serv__swiper-pagination {
 	position: relative;
 	top: 5rem;
 }
 
-.service-for__swiper {
+.service__swiper {
 	.services__list-item__text {
 		min-height: 31rem;
 	}
