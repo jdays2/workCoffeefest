@@ -1033,6 +1033,15 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 }
 
+.three-item-container {
+	display: flex;
+	gap: 3.5rem;
+
+	.catalog-card-1 {
+		width: 51rem;
+	}
+}
+
 .section-info__card {
 	padding: 8rem 6rem;
 	display: flex;
