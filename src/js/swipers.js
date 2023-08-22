@@ -104,11 +104,11 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 3,
         spaceBetween: rem(3.5),
         pagination: {
-            el: '.services__swiper-pagination',
+            el: '.proposal__swiper-pagination',
         },
         navigation: {
-            nextEl: '.services__swiper-next',
-            prevEl: '.services__swiper-prev',
+            nextEl: '.proposal__swiper-next',
+            prevEl: '.proposal__swiper-prev',
         },
     })
 

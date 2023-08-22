@@ -283,6 +283,15 @@ $white20: rgba(255, 255, 255, 0.2);
 	color: $black;
 	transition: color 0.2s ease-in-out;
 
+	&:hover {
+		@media (hover:hover) {
+			color: #e3bca0;
+			path {
+				fill: #e3bca0;
+			}
+		}
+	}
+
 	&__icon {
 		width: 2.9rem;
 		height: 1.3rem;
@@ -1082,7 +1091,7 @@ $white20: rgba(255, 255, 255, 0.2);
 
 		&__heading {
 			margin-bottom: 4.5rem;
-			width: 67rem;
+			width: 64.4rem;
 			color: $light;
 		}
 

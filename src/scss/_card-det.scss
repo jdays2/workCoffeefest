@@ -120,12 +120,24 @@
 		background: #fff9ee;
 		box-shadow: 1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.05);
 
-		.stroke-btn--slim {
-			width: 25.6rem;
-		}
-
 		&:focus {
 			outline: none;
+		}
+
+		.stroke-btn {
+			&--slim {
+				transition: 0.2s ease-in-out;
+				padding: 1.4rem;
+				background-color: #fff9ee;
+			}
+
+			&:hover {
+				@media (hover:hover) {
+					background-color: rgba(35, 41, 62, 0.3);
+					color: #FFF9EE;
+					border-color: #FFF9EE;
+				}
+			}
 		}
 	}
 
@@ -365,6 +377,7 @@
 			&:focus {
 				outline: none;
 			}
+
 			color: #29354d;
 			font-family: Circe;
 			font-size: 1.8rem;
@@ -372,6 +385,7 @@
 			font-weight: 400;
 			line-height: 140%;
 			cursor: pointer;
+			transition: 0.3s ease-in-out;
 		}
 	}
 
