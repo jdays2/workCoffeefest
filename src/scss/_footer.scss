@@ -1,7 +1,7 @@
 .footer {
     &__top {
         padding-top: 5.4rem;
-        padding-bottom: 5.5rem;
+        padding-bottom: 9.2rem;
         color: $text;
         position: relative;
         background-color: $darkBlue;
@@ -12,13 +12,13 @@
         }
 
         &-logo {
-            margin-right: 9.5rem;
+            margin-right: 14.2rem;
 
             img {
-                width: 22.8rem;
+                width: 18.1rem;
                 height: 8.4rem;
                 -o-object-fit: contain;
-                   object-fit: contain;
+                object-fit: contain;
             }
         }
 
@@ -40,28 +40,30 @@
                 }
             }
 
-            &.block1 {
-                margin-right: 8.6rem;
+            &.block1,
+            &.block3,
+            &.block4 {
+                margin-right: 7.8rem;
             }
 
             &.block2 {
-                margin-right: 8.6rem;
-                max-width: 22.4rem;
+                margin-right: 7.8rem;
+                max-width: 24.2rem;
             }
+        }
 
-            &.block3 {
-                margin-right: 8.6rem;
-            }
+        &-right {
+            max-width: 22.4rem;
 
-            &.block4 {
-                margin-right: 8.8rem;
+            .block6 {
+                margin-bottom: 4.5rem;
             }
         }
 
         &-social {
             position: absolute;
             right: 16rem;
-            bottom: 6.2rem;
+            bottom: 6rem;
             display: flex;
             align-items: center;
 
@@ -73,11 +75,11 @@
                 &-link {
                     display: inline-block;
 
-                    img {
+                    svg {
                         width: 4.5rem;
                         height: 4.5rem;
                         -o-object-fit: contain;
-                           object-fit: contain;
+                        object-fit: contain;
                     }
                 }
             }
@@ -87,7 +89,7 @@
     &__bottom {
         padding-top: 2.2rem;
         padding-bottom: 2.2rem;
-        background-color: $background;
+        background-color: $light;
         color: $black;
 
         .container {
