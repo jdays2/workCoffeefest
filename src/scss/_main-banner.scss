@@ -1,8 +1,7 @@
 .main-banner {
-	margin-top: 14rem;
+	margin-top: 13.9rem;
 	height: calc(100vh - 14rem);
 	position: relative;
-
 	&.authorcoffee {
 		.main-banner__btn {
 			top: 28rem;
@@ -36,7 +35,7 @@
 			}
 		}
 	}
-
+	&.catalog,
 	&.business {
 		.main-banner__swiper-controllers {
 			.swiper-pagination {
@@ -47,6 +46,11 @@
 						border-color: #f5f5f5;
 						background-color: #f5f5f5;
 					}
+				}
+			}
+			.next, .prev {
+				path {
+					fill: #fff;
 				}
 			}
 		}
@@ -101,6 +105,10 @@
 					height: 1.6rem;
 					-o-object-fit: contain;
 					object-fit: contain;
+				}
+
+				path {
+					fill: $darkBlue;
 				}
 
 				&.swiper-button-disabled {

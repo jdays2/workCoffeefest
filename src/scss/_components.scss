@@ -266,9 +266,16 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 }
 
-.blue-square-btn {
+.square-btn.blue-square-btn {
 	border-color: $darkBlue;
 	color: $darkBlue;
+	&:hover {
+		@media (hover: hover) {
+			border-color: #fff9ee;
+			background: rgba(35, 41, 62, 0.30);
+			color: #FFF9EE;
+		}
+	}
 }
 
 .arrow-link {
@@ -284,7 +291,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	transition: color 0.2s ease-in-out;
 
 	&:hover {
-		@media (hover:hover) {
+		@media (hover: hover) {
 			color: #e3bca0;
 			path {
 				fill: #e3bca0;

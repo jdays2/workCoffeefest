@@ -20,26 +20,26 @@
 	<body>
 		@@include('./templates/header.html')
 		<main class="main catalog">
-			<section class="catalog-banner">
-				<div class="swiper-container catalog-banner__swiper">
+			<section class="main-banner catalog">
+				<div class="swiper-container main-banner__swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide catalog-banner__swiper-slide">
+						<div class="swiper-slide main-banner__swiper-slide">
 							<img
-								src="./src/images/grain-coffee-banner.png"
+								src="./src/images/catalog-banner.png"
 								alt=""
-								class="catalog-banner__slide-img" />
+								class="main-banner__swiper-slide__img" />
 						</div>
-						<div class="swiper-slide catalog-banner__swiper-slide">
+						<div class="swiper-slide main-banner__swiper-slide">
 							<img
-								src="./src/images/grain-coffee-banner.png"
+								src="./src/images/catalog-banner.png"
 								alt=""
-								class="catalog-banner__slide-img" />
+								class="main-banner__swiper-slide__img" />
 						</div>
-						<div class="swiper-slide catalog-banner__swiper-slide">
+						<div class="swiper-slide main-banner__swiper-slide">
 							<img
-								src="./src/images/grain-coffee-banner.png"
+								src="./src/images/catalog-banner.png"
 								alt=""
-								class="catalog-banner__slide-img" />
+								class="main-banner__swiper-slide__img" />
 						</div>
 					</div>
 
@@ -70,16 +70,6 @@
 							</svg>
 						</div>
 					</div>
-				</div>
-
-				<div class="container">
-					<p class="catalog-banner__heading">
-						Мы обжариваем кофе из 4 стран-партнеров на собственном цехе
-					</p>
-					<p class="catalog-banner__subheading">
-						Закажи пробник кофе для своей кофейни
-					</p>
-					<button class="square-btn square-btn--big">подробнее</button>
 				</div>
 			</section>
 
@@ -114,6 +104,121 @@
 								</a>
 							</li>
 						</ul>
+					</div>
+
+					<div class="news-main__tags">
+						<button class="news-main__filters tag-btn" id="filter">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22 18H15"
+									stroke="#29354D"
+									stroke-width="1.5"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M5 18H2"
+									stroke="#29354D"
+									stroke-width="1.5"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M22 7H19"
+									stroke="#29354D"
+									stroke-width="1.5"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M9 7H2"
+									stroke="#29354D"
+									stroke-width="1.5"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M7 15H13C14.1 15 15 15.5 15 17V19C15 20.5 14.1 21 13 21H7C5.9 21 5 20.5 5 19V17C5 15.5 5.9 15 7 15Z"
+									stroke="#29354D"
+									stroke-width="1.5"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M11 4H17C18.1 4 19 4.5 19 6V8C19 9.5 18.1 10 17 10H11C9.9 10 9 9.5 9 8V6C9 4.5 9.9 4 11 4Z"
+									stroke="#29354D"
+									stroke-width="1.5"
+									stroke-miterlimit="10"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<span>Фильтры</span>
+						</button>
+		
+						<button class="news-main__tags-btn tag-btn">
+							<span>Новости кофе</span>
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g
+									id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+									<path
+										id="Vector"
+										d="M3 4L21 22M21 4L3 22"
+										stroke="#29354D"
+										stroke-width="2"
+										stroke-linecap="round" />
+								</g>
+							</svg>
+						</button>
+		
+						<button class="news-main__tags-btn tag-btn">
+							<span>Новости кофеен</span>
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g
+									id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+									<path
+										id="Vector"
+										d="M3 4L21 22M21 4L3 22"
+										stroke="#29354D"
+										stroke-width="2"
+										stroke-linecap="round" />
+								</g>
+							</svg>
+						</button>
+		
+						<button class="news-main__tags-btn tag-btn">
+							<span>События</span>
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g
+									id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+									<path
+										id="Vector"
+										d="M3 4L21 22M21 4L3 22"
+										stroke="#29354D"
+										stroke-width="2"
+										stroke-linecap="round" />
+								</g>
+							</svg>
+						</button>
 					</div>
 
 					<div class="catalog-main-block__container">
@@ -264,6 +369,8 @@
 							</svg>
 						</a>
 					</div>
+
+					
 				</div>
 			</section>
 
@@ -1701,7 +1808,7 @@
 						<div class="section-info__card-right">
 							<div class="section-info__card-right__img">
 								<img
-									src="./src/images/catalog-banner-photo.jpg"
+									src="./src/images/main-banner-photo.jpg"
 									alt="" />
 							</div>
 						</div>

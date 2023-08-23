@@ -1,332 +1,480 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/fonts/fonts.css">
-    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <title>О компании</title>
-</head>
+		<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
+		<title>О компании</title>
+	</head>
 
-<body>
-    @@include('./templates/header.html')
-    <main>
-        <section class="about-hero">
-            <img src="./src/images/about-hero.png" alt="" class="about-hero__img">
-            <div class="container">
-            </div>
-        </section>
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="about-hero">
+				<img
+					src="./src/images/about-hero.png"
+					alt=""
+					class="about-hero__img" />
+				<div class="container"></div>
+			</section>
 
-        <section class="about-info section">
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/main.html" class="breadcrumbs__item-link">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-                                    stroke="#29354D" stroke-width="1.5" stroke-linecap="round" />
-                            </svg>
-                        </a>
-                    </li>
+			<section class="about-info section">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg
+									width="28"
+									height="28"
+									viewBox="0 0 28 28"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-linecap="round" />
+								</svg>
+							</a>
+						</li>
 
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/about.html" class="breadcrumbs__item-link">О Компании</a>
-                    </li>
-                </ul>
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/about.html"
+								class="breadcrumbs__item-link">
+								О Компании
+							</a>
+						</li>
+					</ul>
 
-                <div class="section-tags__container">
-                    <ul class="section-tags">
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn active" data-path="about">О проекте</button>
-                        </li>
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn" data-path="production">Наше производство</button>
-                        </li>
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn">Интерьеры проектов</button>
-                        </li>
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn">B2B и партнерство</button>
-                        </li>
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn">Арендодателям</button>
-                        </li>
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn">Команда</button>
-                        </li>
-                    </ul>
-                </div>
+					<div class="section-tags__container">
+						<ul class="section-tags">
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn active"
+									data-path="about">
+									О проекте
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn"
+									data-path="production">
+									Наше производство
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button class="section-tags__item-btn">
+									Интерьеры проектов
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button class="section-tags__item-btn">
+									B2B и партнерство
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button class="section-tags__item-btn">Арендодателям</button>
+							</li>
+							<li class="section-tags__item">
+								<button class="section-tags__item-btn">Команда</button>
+							</li>
+						</ul>
+					</div>
 
-                <div class="about-info__card section-info__card active" data-target="about">
-                    <div class="section-info__card-left">
-                        <p class="section-info__card-left__heading heading2">О нас</p>
-                        <p class="section-info__card-left__subheading heading4">С кофе нас связывает не только
-                            многолетняя любовь, но и профессиональная симпатия, которая впервые возникла в 2016 году в
-                            деловых кварталах Лондона…</p>
-                        <div class="section-info__card-left__description menu">
-                            <p>Тогда, очаровавшись стильными кафетериями в районе Сити, у нас родилась идея создать
-                                похожую сеть заведений формата fast casual в Москве. Сейчас у нас более 130 заведений
-                                разного формата – от кофеен в бизнес-центрах, городских больницах и поликлиниках до
-                                полноценных городских кафе.
+					<div
+						class="about-info__card section-info__card active"
+						data-target="about">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">О нас</p>
+							<p class="section-info__card-left__subheading heading4">
+								С кофе нас связывает не только многолетняя любовь, но и
+								профессиональная симпатия, которая впервые возникла в 2016 году
+								в деловых кварталах Лондона…
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									Тогда, очаровавшись стильными кафетериями в районе Сити, у нас
+									родилась идея создать похожую сеть заведений формата fast
+									casual в Москве. Сейчас у нас более 130 заведений разного
+									формата – от кофеен в бизнес-центрах, городских больницах и
+									поликлиниках до полноценных городских кафе.
+								</p>
+								<p>
+									В каждом из наших заведений – натуральная свежая еда и вкусный
+									кофе по демократичным ценам, а также наша авторская коллекция
+									кофе на 100% натуральных сиропах, уникальные рецепты для
+									которой собраны с разных уголков мира!
+								</p>
+							</div>
+						</div>
 
-                            </p>
-                            <p> В каждом из наших заведений – натуральная свежая еда и вкусный кофе по демократичным
-                                ценам, а также наша авторская коллекция кофе на 100% натуральных сиропах, уникальные
-                                рецепты для которой собраны с разных уголков мира!</p>
-                        </div>
-                    </div>
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/about-info-img.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__video">
+								<img
+									src="./src/images/team-img2.png"
+									alt="" />
+								<button class="play-btn">
+									<svg
+										width="88"
+										height="88"
+										viewBox="0 0 88 88"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle
+											cx="43.5"
+											cy="43.5"
+											r="42.5"
+											stroke="#F1DED0"
+											stroke-width="2" />
+										<path
+											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
+											fill="#F1DED0" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
 
-                    <div class="section-info__card-right">
-                        <div class="section-info__card-right__img">
-                            <img src="./src/images/about-info-img.png" alt="">
-                        </div>
-                        <div class="section-info__card-right__video">
-                            <img src="./src/images/team-img2.png" alt="">
-                            <button class="play-btn">
-                                <svg width="88" height="88" viewBox="0 0 88 88" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="43.5" cy="43.5" r="42.5" stroke="#F1DED0" stroke-width="2" />
-                                    <path
-                                        d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-                                        fill="#F1DED0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+					<div
+						class="about-info__card section-info__card"
+						data-target="production">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">
+								Наше производство
+							</p>
+							<p class="section-info__card-left__subheading heading4">
+								С кофе нас связывает не только многолетняя любовь, но и
+								профессиональная симпатия, которая впервые возникла в 2016 году
+								в деловых кварталах Лондона…
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									Тогда, очаровавшись стильными кафетериями в районе Сити, у нас
+									родилась идея создать похожую сеть заведений формата fast
+									casual в Москве. Сейчас у нас более 130 заведений разного
+									формата – от кофеен в бизнес-центрах, городских больницах и
+									поликлиниках до полноценных городских кафе.
+								</p>
+								<p>
+									В каждом из наших заведений – натуральная свежая еда и вкусный
+									кофе по демократичным ценам, а также наша авторская коллекция
+									кофе на 100% натуральных сиропах, уникальные рецепты для
+									которой собраны с разных уголков мира!
+								</p>
+							</div>
+						</div>
 
-                <div class="about-info__card section-info__card" data-target="production">
-                    <div class="section-info__card-left">
-                        <p class="section-info__card-left__heading heading2">Наше производство</p>
-                        <p class="section-info__card-left__subheading heading4">С кофе нас связывает не только
-                            многолетняя любовь, но и профессиональная симпатия, которая впервые возникла в 2016 году в
-                            деловых кварталах Лондона…</p>
-                        <div class="section-info__card-left__description menu">
-                            <p>Тогда, очаровавшись стильными кафетериями в районе Сити, у нас родилась идея создать
-                                похожую сеть заведений формата fast casual в Москве. Сейчас у нас более 130 заведений
-                                разного формата – от кофеен в бизнес-центрах, городских больницах и поликлиниках до
-                                полноценных городских кафе.
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/about-info-img.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__video">
+								<img
+									src="./src/images/team-img2.png"
+									alt="" />
+								<button class="play-btn">
+									<svg
+										width="88"
+										height="88"
+										viewBox="0 0 88 88"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle
+											cx="43.5"
+											cy="43.5"
+											r="42.5"
+											stroke="#F1DED0"
+											stroke-width="2" />
+										<path
+											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
+											fill="#F1DED0" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                            </p>
-                            <p> В каждом из наших заведений – натуральная свежая еда и вкусный кофе по демократичным
-                                ценам, а также наша авторская коллекция кофе на 100% натуральных сиропах, уникальные
-                                рецепты для которой собраны с разных уголков мира!</p>
-                        </div>
-                    </div>
+			<section class="chronology section">
+				<div class="container">
+					<div class="chronology__container">
+						<div class="chronology__borders">
+							<img
+								src="./src/images/svg/border-top-left.svg"
+								alt=""
+								class="chronology__borders-item top-left" />
+							<img
+								src="./src/images/svg/border-top-right.svg"
+								alt=""
+								class="chronology__borders-item top-right" />
+							<img
+								src="./src/images/svg/border-bottom-left.svg"
+								alt=""
+								class="chronology__borders-item bottom-left" />
+							<img
+								src="./src/images/svg/border-bottom-right.svg"
+								alt=""
+								class="chronology__borders-item bottom-right" />
+						</div>
 
-                    <div class="section-info__card-right">
-                        <div class="section-info__card-right__img">
-                            <img src="./src/images/about-info-img.png" alt="">
-                        </div>
-                        <div class="section-info__card-right__video">
-                            <img src="./src/images/team-img2.png" alt="">
-                            <button class="play-btn">
-                                <svg width="88" height="88" viewBox="0 0 88 88" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="43.5" cy="43.5" r="42.5" stroke="#F1DED0" stroke-width="2" />
-                                    <path
-                                        d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-                                        fill="#F1DED0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+						<p class="chronology__heading heading2">Путь CofeFest</p>
+						<div class="chronology__timeline">
+							<svg
+								width="1599"
+								height="170"
+								viewBox="0 0 1599 170"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="chronology__timeline__img">
+								<path
+									d="M133.82 81.0534C98.8571 77.7031 71.5873 47.4464 71.5873 11.8355C71.5873 9.27845 71.7215 6.70052 72.0003 4.15391L72.4546 0L68.3967 0.793208C28.7567 8.52699 0 43.9187 0 84.9568C0 125.995 28.7567 160.927 68.3863 168.651L72.4443 169.444L71.99 165.29C71.7215 162.754 71.5769 160.165 71.5769 157.608C71.5769 121.998 98.8468 91.7408 133.809 88.3905M65.5984 7.72334C64.0393 37.3852 80.4982 65.7424 106.281 79.2165C75.8621 71.8793 50.4198 49.7321 38.9274 20.2268C47.064 14.3195 56.0266 10.1134 65.5984 7.71291V7.72334ZM65.4848 157.608C65.4848 158.965 65.5261 160.343 65.5984 161.721C56.0266 159.331 47.0537 155.135 38.9068 149.248C50.3785 119.733 75.8311 97.5751 106.261 90.2274C81.6547 103.086 65.4952 129.439 65.4952 157.608H65.4848ZM33.8886 145.324C30.0371 142.036 26.5058 138.384 23.3771 134.459C12.2358 120.453 6.09209 102.867 6.09209 84.9568C6.09209 67.047 12.2255 49.2207 23.3771 35.1308C26.5058 31.1752 30.0474 27.4909 33.9092 24.1824C46.176 54.1469 71.7628 76.5655 102.863 84.7272C71.7421 92.8889 46.145 115.339 33.8886 145.335V145.324Z"
+									fill="#EAB7A1" />
+								<path
+									d="M1525.49 84.5876H133.493"
+									stroke="#EAB7A1"
+									stroke-width="7"
+									stroke-miterlimit="10" />
+								<path
+									d="M1525.94 44.3986L1591.74 85.8959L1525.94 127.393V44.3986Z"
+									stroke="#EAB7A1"
+									stroke-width="7"
+									stroke-miterlimit="10" />
+							</svg>
 
+							<div class="chronology__timeline-active">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
 
-        <section class="chronology section">
-            <div class="container">
-                <div class="chronology__container">
-                    <div class="chronology__borders">
-                        <img src="./src/images/svg/border-top-left.svg" alt=""
-                            class="chronology__borders-item top-left">
-                        <img src="./src/images/svg/border-top-right.svg" alt=""
-                            class="chronology__borders-item top-right">
-                        <img src="./src/images/svg/border-bottom-left.svg" alt=""
-                            class="chronology__borders-item bottom-left">
-                        <img src="./src/images/svg/border-bottom-right.svg" alt=""
-                            class="chronology__borders-item bottom-right">
-                    </div>
+							<ul class="chronology__timeline-list">
+								<li class="chronology__timeline-list__item active">
+									<p class="chronology__timeline-list__item-description text1">
+										Основание компании. Создание концепции и ценностей бренда,
+										открытие первой кофейни CofeFest в Москве.
+									</p>
+									<p class="chronology__timeline-list__item-year heading2">
+										2017
+									</p>
+									<p class="chronology__timeline-list__item-number heading2">
+										1
+									</p>
+									<p class="chronology__timeline-list__item-notice text1">
+										кофейня в Москве
+									</p>
+								</li>
+								<li class="chronology__timeline-list__item">2018</li>
+								<li class="chronology__timeline-list__item">2019</li>
+								<li class="chronology__timeline-list__item">2020</li>
+								<li class="chronology__timeline-list__item">2021</li>
+								<li class="chronology__timeline-list__item">2022</li>
+								<li class="chronology__timeline-list__item">2023</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                    <p class="chronology__heading heading2">Путь CofeFest</p>
-                    <div class="chronology__timeline">
-                        <svg width="1599" height="170" viewBox="0 0 1599 170" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" class="chronology__timeline__img">
-                            <path
-                                d="M133.82 81.0534C98.8571 77.7031 71.5873 47.4464 71.5873 11.8355C71.5873 9.27845 71.7215 6.70052 72.0003 4.15391L72.4546 0L68.3967 0.793208C28.7567 8.52699 0 43.9187 0 84.9568C0 125.995 28.7567 160.927 68.3863 168.651L72.4443 169.444L71.99 165.29C71.7215 162.754 71.5769 160.165 71.5769 157.608C71.5769 121.998 98.8468 91.7408 133.809 88.3905M65.5984 7.72334C64.0393 37.3852 80.4982 65.7424 106.281 79.2165C75.8621 71.8793 50.4198 49.7321 38.9274 20.2268C47.064 14.3195 56.0266 10.1134 65.5984 7.71291V7.72334ZM65.4848 157.608C65.4848 158.965 65.5261 160.343 65.5984 161.721C56.0266 159.331 47.0537 155.135 38.9068 149.248C50.3785 119.733 75.8311 97.5751 106.261 90.2274C81.6547 103.086 65.4952 129.439 65.4952 157.608H65.4848ZM33.8886 145.324C30.0371 142.036 26.5058 138.384 23.3771 134.459C12.2358 120.453 6.09209 102.867 6.09209 84.9568C6.09209 67.047 12.2255 49.2207 23.3771 35.1308C26.5058 31.1752 30.0474 27.4909 33.9092 24.1824C46.176 54.1469 71.7628 76.5655 102.863 84.7272C71.7421 92.8889 46.145 115.339 33.8886 145.335V145.324Z"
-                                fill="#EAB7A1" />
-                            <path d="M1525.49 84.5876H133.493" stroke="#EAB7A1" stroke-width="7"
-                                stroke-miterlimit="10" />
-                            <path d="M1525.94 44.3986L1591.74 85.8959L1525.94 127.393V44.3986Z" stroke="#EAB7A1"
-                                stroke-width="7" stroke-miterlimit="10" />
-                        </svg>
+			<section class="about-numbers section light-section">
+				<div class="container">
+					<div class="about-numbers__container">
+						<div class="top-left"></div>
+						<div class="top-right"></div>
+						<p class="about-numbers__heading heading2">CofeFest в цифрах</p>
+						<ul class="about-numbers__list">
+							<li class="about-numbers__list-item">
+								<p class="about-numbers__list-item__number">150+</p>
+								<p class="about-numbers__list-item__description heading4">
+									кофеен в Москве
+								</p>
+							</li>
+							<li class="about-numbers__list-item">
+								<p class="about-numbers__list-item__number">380</p>
+								<p class="about-numbers__list-item__description heading4">
+									килограмм кофе каждый день
+								</p>
+							</li>
+							<li class="about-numbers__list-item">
+								<p class="about-numbers__list-item__number">500</p>
+								<p class="about-numbers__list-item__description heading4">
+									сотрудников
+								</p>
+							</li>
+							<li class="about-numbers__list-item">
+								<p class="about-numbers__list-item__number">2000м²</p>
+								<p class="about-numbers__list-item__description heading4">
+									производство еды, кондитерской и кофе
+								</p>
+							</li>
+							<li class="about-numbers__list-item">
+								<p class="about-numbers__list-item__number">7000</p>
+								<p class="about-numbers__list-item__description heading4">
+									гостей ежедневно
+								</p>
+							</li>
+							<li class="about-numbers__list-item">
+								<p class="about-numbers__list-item__number">40 000</p>
+								<p class="about-numbers__list-item__description heading4">
+									единиц товара продается каждый день
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-                        <div class="chronology__timeline-active">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+			<section class="main-about section biege-section">
+				<div class="container">
+					<div class="main-about__banner">
+						<p class="main-about__banner-heading heading2">
+							CofeFest больше, чем сеть кофеен
+						</p>
+						<p class="main-about__banner-subheading heading4">
+							наше производство
+						</p>
+						<div class="main-about__banner-description menu">
+							<p>
+								Чтобы поддерживать стабильное качество и натуральность нашей
+								продукции по доступным ценам, в 2019 году мы запустили
+								собственное производство полного цикла с современным
+								высокотехнологичным оборудованием, а в 2023 году кофейных цех.
+							</p>
+							<p>
+								Каждый день мы предлагаем нашим гостям сбалансированное меню –
+								от популярных блюд до диетических и веганских позиций. Наша
+								особая гордость – выпечка, пироги и кондитерские изделия по
+								домашним и классическим рецептам. А торты и десерты на заказ от
+								кондитерской CofeFest станут украшением любого торжества!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                        <ul class="chronology__timeline-list">
-                            <li class="chronology__timeline-list__item active">
-                                <p class="chronology__timeline-list__item-description text1">Основание компании.
-                                    Создание концепции и ценностей
-                                    бренда, открытие первой кофейни CofeFest в
-                                    Москве.</p>
-                                <p class="chronology__timeline-list__item-year heading2">2017</p>
-                                <p class="chronology__timeline-list__item-number heading2">1</p>
-                                <p class="chronology__timeline-list__item-notice text1">кофейня в Москве</p>
-                            </li>
-                            <li class="chronology__timeline-list__item">2018</li>
-                            <li class="chronology__timeline-list__item">2019</li>
-                            <li class="chronology__timeline-list__item">2020</li>
-                            <li class="chronology__timeline-list__item">2021</li>
-                            <li class="chronology__timeline-list__item">2022</li>
-                            <li class="chronology__timeline-list__item">2023</li>
-                        </ul>
-                    </div>
-                </div>
+			<section class="video">
+				<div class="container">
+					<video
+						id="my-video"
+						class="video-js"
+						controls
+						preload="auto"
+						width="640"
+						height="264"
+						poster="./src/images/sample-for-video.png"
+						data-setup="{}">
+						<source
+							src="./src/sample/audiosample.mp4"
+							type="video/mp4" />
+  
+							To view this video please enable JavaScript, and consider
+							upgrading to a web browser that
+							<a
+								href="https://videojs.com/html5-video-support/"
+								target="_blank">
+								supports HTML5 video
+							</a>
+						</p>
+					</video>
+				</div>
+			</section>
 
+			<section class="section services light-section">
+				<div class="container">
+					<p class="services__heading heading2">Наши ценности</p>
 
+					<div class="services__list">
+						<div class="services__list-item">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">
+									Качество
+								</p>
+								<p class="services__list-item__text-description text1">
+									Cofefest - это более 90 кофеен разного формата в Москве. И мы
+									продолжаем активно открывать новые точки каждый месяц.
+								</p>
+							</div>
+							<div class="services__list-item__icon catering">
+								<img
+									src="./src/images/svg/diamond.svg"
+									alt="" />
+							</div>
+						</div>
+						<div class="services__list-item">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">Забота</p>
+								<p class="services__list-item__text-description text1">
+									Более 7-ми лет работы на рынке. Гибкость и оперативность
+									принятия решений на всех этапах проведения сделки.
+								</p>
+							</div>
+							<div class="services__list-item__icon organization">
+								<img
+									src="./src/images/svg/care.svg"
+									alt="" />
+							</div>
+						</div>
+						<div class="services__list-item">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">
+									Надежность
+								</p>
+								<p class="services__list-item__text-description text1">
+									Выберите нас в качестве постоянного поставщика, и вы
+									существенно сэкономите на закупках.
+								</p>
+							</div>
+							<div class="services__list-item__icon corporate">
+								<img
+									src="./src/images/svg/help.svg"
+									alt="" />
+							</div>
+						</div>
+						<div class="services__list-item">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">
+									Развитие
+								</p>
+								<p class="services__list-item__text-description text1">
+									Наша гордость это профессиональные повара, благодаря которым
+									вы ежедневно получаете готовый качественный и вкусный продукт
+								</p>
+							</div>
+							<div class="services__list-item__icon barista">
+								<img
+									src="./src/images/svg/development.svg"
+									alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            </div>
-        </section>
-
-        <section class="about-numbers section light-section">
-            <div class="container">
-                <div class="about-numbers__container">
-                    <div class="top-left"></div>
-                    <div class="top-right"></div>
-                    <p class="about-numbers__heading heading2">CofeFest в цифрах</p>
-                    <ul class="about-numbers__list">
-                        <li class="about-numbers__list-item">
-                            <p class="about-numbers__list-item__number">150+ </p>
-                            <p class="about-numbers__list-item__description heading4">кофеен в Москве</p>
-                        </li>
-                        <li class="about-numbers__list-item">
-                            <p class="about-numbers__list-item__number">380 </p>
-                            <p class="about-numbers__list-item__description heading4">килограмм кофе каждый день</p>
-                        </li>
-                        <li class="about-numbers__list-item">
-                            <p class="about-numbers__list-item__number">500 </p>
-                            <p class="about-numbers__list-item__description heading4">сотрудников</p>
-                        </li>
-                        <li class="about-numbers__list-item">
-                            <p class="about-numbers__list-item__number">2000м² </p>
-                            <p class="about-numbers__list-item__description heading4">производство еды, кондитерской и
-                                кофе</p>
-                        </li>
-                        <li class="about-numbers__list-item">
-                            <p class="about-numbers__list-item__number">7000 </p>
-                            <p class="about-numbers__list-item__description heading4">гостей ежедневно</p>
-                        </li>
-                        <li class="about-numbers__list-item">
-                            <p class="about-numbers__list-item__number">40 000 </p>
-                            <p class="about-numbers__list-item__description heading4">единиц товара продается каждый
-                                день</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-about section biege-section">
-            <div class="container">
-                <div class="main-about__banner">
-                    <p class="main-about__banner-heading heading2">CofeFest больше, чем сеть кофеен</p>
-                    <p class="main-about__banner-subheading heading4">наше производство</p>
-                    <div class="main-about__banner-description menu">
-                        <p>Чтобы поддерживать стабильное качество и натуральность нашей продукции по доступным ценам, в
-                            2019 году мы запустили собственное производство полного цикла с современным
-                            высокотехнологичным оборудованием, а в 2023 году кофейных цех.
-                        </p>
-                        <p> Каждый день мы предлагаем нашим гостям сбалансированное меню – от популярных блюд до
-                            диетических и веганских позиций. Наша особая гордость – выпечка, пироги и кондитерские
-                            изделия по домашним и классическим рецептам. А торты и десерты на заказ от кондитерской
-                            CofeFest станут украшением любого торжества!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="video">
-            <div class="container">
-                <div class="video__content">
-                    <img src="./src/images/video.png" alt="" class="video__content-item">
-                    <button class="video__content-btn play-btn">
-                        <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="43.5" cy="43.5" r="42.5" stroke="#F1DED0" stroke-width="2" />
-                            <path
-                                d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-                                fill="#F1DED0" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="section services light-section">
-            <div class="container">
-                <p class="services__heading heading2">Наши ценности</p>
-
-                <div class="services__list">
-                    <div class="services__list-item">
-                        <div class="services__list-item__text">
-                            <p class="services__list-item__text-heading heading4">Качество</p>
-                            <p class="services__list-item__text-description text1">Cofefest - это более 90 кофеен
-                                разного формата в Москве. И мы продолжаем активно открывать новые точки каждый месяц.
-                            </p>
-                        </div>
-                        <div class="services__list-item__icon catering">
-                            <img src="./src/images/svg/diamond.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="services__list-item">
-                        <div class="services__list-item__text">
-                            <p class="services__list-item__text-heading heading4">Забота
-                            </p>
-                            <p class="services__list-item__text-description text1">Более 7-ми лет работы на рынке.
-                                Гибкость и оперативность принятия решений на всех этапах проведения сделки.
-                            </p>
-                        </div>
-                        <div class="services__list-item__icon organization">
-                            <img src="./src/images/svg/care.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="services__list-item">
-                        <div class="services__list-item__text">
-                            <p class="services__list-item__text-heading heading4">Надежность</p>
-                            <p class="services__list-item__text-description text1">Выберите нас в качестве постоянного
-                                поставщика, и вы существенно сэкономите на закупках.
-                            </p>
-                        </div>
-                        <div class="services__list-item__icon corporate">
-                            <img src="./src/images/svg/help.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="services__list-item">
-                        <div class="services__list-item__text">
-                            <p class="services__list-item__text-heading heading4">Развитие
-                            </p>
-                            <p class="services__list-item__text-description text1">Наша гордость это профессиональные
-                                повара, благодаря которым вы ежедневно получаете готовый качественный и вкусный продукт
-                            </p>
-                        </div>
-                        <div class="services__list-item__icon barista">
-                            <img src="./src/images/svg/development.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- <section class="about-production">
+			<!-- <section class="about-production">
             <div class="container">
                 <div class="about-production__container">
 
@@ -351,99 +499,158 @@
             </div>
         </section> -->
 
-        <section class="about-team section biege-section">
-            <div class="container">
-                <p class="about-team__heading heading2">Наша команда</p>
-                <p class="about-team__description menu">Мы неустанно накапливаем опыт. Работа с кофе — это эмпирический
-                    исследовательский путь. За нашими
-                    плечами 8 лет работы и более 500 тонн обжаренного кофе</p>
-                <div class="about-team__container">
-                    <div class="swiper-container about-team__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide about-team__swiper-slide">
-                                <img src="./src/images/team1.png" alt="" class="about-team__swiper-slide__img">
-                                <p class="about-team__swiper-slide__name heading4">Екатерина Ткачева</p>
-                                <p class="about-team__swiper-slide__post text1">Руководитель отдела продаж</p>
-                            </div>
+			<section class="about-team section biege-section">
+				<div class="container">
+					<p class="about-team__heading heading2">Наша команда</p>
+					<p class="about-team__description menu">
+						Мы неустанно накапливаем опыт. Работа с кофе — это эмпирический
+						исследовательский путь. За нашими плечами 8 лет работы и более 500
+						тонн обжаренного кофе
+					</p>
+					<div class="about-team__container">
+						<div class="swiper-container about-team__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide about-team__swiper-slide">
+									<img
+										src="./src/images/team1.png"
+										alt=""
+										class="about-team__swiper-slide__img" />
+									<p class="about-team__swiper-slide__name heading4">
+										Екатерина Ткачева
+									</p>
+									<p class="about-team__swiper-slide__post text1">
+										Руководитель отдела продаж
+									</p>
+								</div>
 
-                            <div class="swiper-slide about-team__swiper-slide">
-                                <img src="./src/images/team2.png" alt="" class="about-team__swiper-slide__img">
-                                <p class="about-team__swiper-slide__name heading4">Александра Владимировская</p>
-                                <p class="about-team__swiper-slide__post text1">Ведущий специалист отдела продаж</p>
-                            </div>
+								<div class="swiper-slide about-team__swiper-slide">
+									<img
+										src="./src/images/team2.png"
+										alt=""
+										class="about-team__swiper-slide__img" />
+									<p class="about-team__swiper-slide__name heading4">
+										Александра Владимировская
+									</p>
+									<p class="about-team__swiper-slide__post text1">
+										Ведущий специалист отдела продаж
+									</p>
+								</div>
 
-                            <div class="swiper-slide about-team__swiper-slide">
-                                <img src="./src/images/team3.png" alt="" class="about-team__swiper-slide__img">
-                                <p class="about-team__swiper-slide__name heading4">Дарья Мартыненко</p>
-                                <p class="about-team__swiper-slide__post text1">Руководитель проектов</p>
-                            </div>
+								<div class="swiper-slide about-team__swiper-slide">
+									<img
+										src="./src/images/team3.png"
+										alt=""
+										class="about-team__swiper-slide__img" />
+									<p class="about-team__swiper-slide__name heading4">
+										Дарья Мартыненко
+									</p>
+									<p class="about-team__swiper-slide__post text1">
+										Руководитель проектов
+									</p>
+								</div>
 
-                            <div class="swiper-slide about-team__swiper-slide">
-                                <img src="./src/images/team4.png" alt="" class="about-team__swiper-slide__img">
-                                <p class="about-team__swiper-slide__name heading4">Дарья Мартыненко</p>
-                                <p class="about-team__swiper-slide__post text1">Руководитель проектов</p>
-                            </div>
+								<div class="swiper-slide about-team__swiper-slide">
+									<img
+										src="./src/images/team4.png"
+										alt=""
+										class="about-team__swiper-slide__img" />
+									<p class="about-team__swiper-slide__name heading4">
+										Дарья Мартыненко
+									</p>
+									<p class="about-team__swiper-slide__post text1">
+										Руководитель проектов
+									</p>
+								</div>
 
-                            <div class="swiper-slide about-team__swiper-slide">
-                                <img src="./src/images/team1.png" alt="" class="about-team__swiper-slide__img">
-                                <p class="about-team__swiper-slide__name heading4">Екатерина Ткачева</p>
-                                <p class="about-team__swiper-slide__post text1">Руководитель отдела продаж</p>
-                            </div>
+								<div class="swiper-slide about-team__swiper-slide">
+									<img
+										src="./src/images/team1.png"
+										alt=""
+										class="about-team__swiper-slide__img" />
+									<p class="about-team__swiper-slide__name heading4">
+										Екатерина Ткачева
+									</p>
+									<p class="about-team__swiper-slide__post text1">
+										Руководитель отдела продаж
+									</p>
+								</div>
 
-                            <div class="swiper-slide about-team__swiper-slide">
-                                <img src="./src/images/team2.png" alt="" class="about-team__swiper-slide__img">
-                                <p class="about-team__swiper-slide__name heading4">Александра Владимировская</p>
-                                <p class="about-team__swiper-slide__post text1">Ведущий специалист отдела продаж</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-team__swiper-controllers swiper-controllers">
-                        <div class="swiper-prev services__swiper-prev">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-next services__swiper-next">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-pagination services__swiper-pagination"></div>
-                    </div>
-                </div>
+								<div class="swiper-slide about-team__swiper-slide">
+									<img
+										src="./src/images/team2.png"
+										alt=""
+										class="about-team__swiper-slide__img" />
+									<p class="about-team__swiper-slide__name heading4">
+										Александра Владимировская
+									</p>
+									<p class="about-team__swiper-slide__post text1">
+										Ведущий специалист отдела продаж
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="about-team__swiper-controllers swiper-controllers">
+							<div class="swiper-prev services__swiper-prev">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-next services__swiper-next">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            </div>
-
-        </section>
-
-        <section class="interiors section light-section">
-            <div class="container">
-                <p class="interiors__heading heading2">Наши интерьеры</p>
-                <div class="interiors__container">
-                    <div class="swiper-container interiors__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide interiors__swiper-slide">
-                                <img src="./src/images/interiors1.png" alt="" class="interiors__swiper-slide__img">
-                            </div>
-                            <div class="swiper-slide interiors__swiper-slide">
-                                <img src="./src/images/interiors2.png" alt="" class="interiors__swiper-slide__img">
-                            </div>
-                            <div class="swiper-slide interiors__swiper-slide">
-                                <img src="./src/images/interiors3.png" alt="" class="interiors__swiper-slide__img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="interiors__swiper-controllers swiper-controllers">
-                        <div class="swiper-prev">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-next">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-pagination services__swiper-pagination"></div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </main>
-    @@include('./templates/footer.html')
-</body>
-
+			<section class="interiors section light-section">
+				<div class="container">
+					<p class="interiors__heading heading2">Наши интерьеры</p>
+					<div class="interiors__container">
+						<div class="swiper-container interiors__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors1.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors2.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors3.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+							</div>
+						</div>
+						<div class="interiors__swiper-controllers swiper-controllers">
+							<div class="swiper-prev">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-next">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./src/js/video.js"></script>
+		<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+		@@include('./templates/footer.html')
+	</body>
 </html>

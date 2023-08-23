@@ -124,6 +124,10 @@
 			outline: none;
 		}
 
+		.card-det__item-value {
+			text-align: left;
+		}
+
 		.stroke-btn {
 			&--slim {
 				transition: 0.2s ease-in-out;
@@ -132,10 +136,10 @@
 			}
 
 			&:hover {
-				@media (hover:hover) {
+				@media (hover: hover) {
 					background-color: rgba(35, 41, 62, 0.3);
-					color: #FFF9EE;
-					border-color: #FFF9EE;
+					color: #fff9ee;
+					border-color: #fff9ee;
 				}
 			}
 		}
@@ -193,6 +197,7 @@
 		width: 100%;
 		position: relative;
 		margin-bottom: 2rem;
+		gap: 1.2rem;
 
 		.card-det__more {
 			width: -webkit-fit-content;
@@ -253,6 +258,17 @@
 				border: none;
 				gap: 2rem;
 				padding: 0;
+				transition: 0.3s ease-in-out;
+
+				&:hover {
+					@media (hover: hover) {
+						span {
+							font-weight: 700;
+							line-height: 125%;
+						}
+					}
+				}
+
 				span {
 					width: 100%;
 					cursor: pointer;
