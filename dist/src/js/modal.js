@@ -22,7 +22,7 @@ const modals = document.querySelectorAll('.modal');
 const activeClass = 'active';
 if (modals) {
 	modals.forEach((item) => {
-		const closeBtn = document.querySelector('.modal__close-btn');
+		const closeBtn = item.querySelector('.modal__close-btn');
 		closeBtn.addEventListener('click', () => {
 			item.classList.remove(activeClass);
 		});
@@ -52,16 +52,41 @@ if (filterBtn) {
 	});
 }
 
-//очистка фильтра
-const clearBtn = document.querySelector('#clear-filter');
+//обработка модалки для фильтра (news)
+const filterBtnNews = document.querySelectorAll('#filter-1');
+const filterModalNews = document.querySelector('.filter-modal-1');
 
-if (clearBtn) {
-	console.log(clearBtn);
-	clearBtn.addEventListener('click', () => {
-		const inputs = filterModal.querySelectorAll('input');
-		console.log(inputs);
-		inputs.forEach((item) => {
-			item.checked = false;
+if (filterBtnNews) {
+	filterBtnNews.forEach((item) => {
+		item.addEventListener('click', () => {
+			filterModalNews.classList.toggle(activeClass);
 		});
 	});
 }
+
+//очистка фильтра
+const clearBtn = document.querySelectorAll('#clear-filter');
+
+if (clearBtn) {
+	clearBtn.forEach((item) => {
+		item.addEventListener('click', () => {
+			const inputs = filterModal.querySelectorAll('input');
+			inputs.forEach((item) => {
+				item.checked = false;
+			});
+		});
+	});
+}
+
+//очистка фильтра (news)
+if (clearBtn) {
+	clearBtn.forEach((item) => {
+		item.addEventListener('click', () => {
+			const inputs = filterModalNews.querySelectorAll('input');
+			inputs.forEach((item) => {
+				item.checked = false;
+			});
+		});
+	});
+}
+
