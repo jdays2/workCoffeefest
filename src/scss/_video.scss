@@ -59,8 +59,35 @@
 }
 
 .vjs-poster img {
-	width: 100%;
-	height: 100%;
+	width: 100% !important;
+	height: 100% !important;
 	-o-object-fit: cover !important;
 	object-fit: cover !important;
+}
+
+.video-js {
+	width: 160rem;
+	height: 74.2rem;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+	content: '' !important;
+}
+
+.video-js .vjs-big-play-button {
+    z-index: 20 !important;
+	border-radius: 0 !important;
+	border: none !important;
+	background-color: #ffffff00 !important;
+	width: 8.8rem !important;
+	height: 8.8rem !important;
+	background-image: url('../images/svg/big-play.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+
+.video-js .vjs-big-play-button:hover {
+	background-image: url('../images/svg/big-play-hover.svg') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
