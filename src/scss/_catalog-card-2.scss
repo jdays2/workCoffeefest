@@ -7,19 +7,69 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 37.4rem;
+
+	.catalog-card__price {
+		margin-top: auto;
+	}
+
+	&__imgless {
+		border-bottom: 0.4rem solid #fff9ee;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-color: $biege;
+		&-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 19.8rem;
+
+			span {
+				color: #29354d;
+				font-family: Circe;
+				font-size: 1.8rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 120%;
+				letter-spacing: 0.09rem;
+				text-transform: uppercase;
+				margin-bottom: 1.6rem;
+			}
+
+			strong {
+				color: #29354d;
+				text-align: center;
+				font-family: Circe;
+				font-size: 2rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 125%;
+			}
+		}
+	}
 }
 .catalog-card-2__img {
-	max-width: 100%;
+	width: 100%;
 	height: 32.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 0;
+
 	& img {
 		width: 100%;
 		height: 100%;
 		-o-object-fit: cover;
 		object-fit: cover;
+		z-index: 2;
 	}
 }
 
@@ -63,6 +113,7 @@
 	}
 }
 
+
 .catalog-card-2__price-package {
 	position: relative;
 	left: -0.2rem;
@@ -81,22 +132,22 @@
 	min-height: 37.4rem;
 	display: flex;
 	flex-direction: column;
-	z-index: 1;
+	z-index: 3;
 	border-radius: 0 0 5rem 5rem;
 	border: 0.15rem solid $line;
 	background: url('../images/svg/card-2-backgrnd.svg') top left/cover no-repeat
 		$biege;
 }
 .catalog-card-2__title {
-	margin: 0 0 2.7rem;
+	margin: 0 0 3rem;
 }
 .catalog-card-2__characteristics {
 	font-size: 1.8rem;
 	line-height: 3rem;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1.1rem 1.6rem;
-	margin: 0 0 2.8rem;
+	gap: 1.2rem 1.6rem;
+	margin: 0 0 3rem;
 	width: 32rem;
 	position: relative;
 }
@@ -126,23 +177,50 @@
 	width: -moz-fit-content;
 	width: fit-content;
 	margin: 0 auto;
-	margin-bottom: 2rem;
+	margin-bottom: 2.4rem;
+	position: relative;
+	height: 5rem;
+
+	label {
+		display: flex;
+		height: 5rem;
+		padding: 1.4rem 2.4rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	input {
+		position: absolute;
+		top: 0;
+		right: 0;
+		pointer-events: none;
+		opacity: 0;
+	}
+
+	input:checked + .catalog-card-2__weight {
+		color: #29354d;
+		font-size: 2.2rem;
+		font-weight: 700;
+		line-height: 2.8rem;
+		color: $darkBlue;
+
+		span {
+			color: #29354d;
+			line-height: 120%;
+			letter-spacing: 0.11rem;
+		}
+	}
 }
 .catalog-card-2__weight {
 	font-size: 1.8rem;
 	line-height: 2.5rem;
 	color: $darkGrey;
-	transition: 0.3s;
-	&.active {
-		font-size: 2.2rem;
-		font-weight: 700;
-		line-height: 2.8rem;
-		color: $darkBlue;
-		& span {
-			line-height: 120%;
-			letter-spacing: 0.11rem;
-		}
-	}
+	transition: 0.2s ease-in-out;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
 .catalog-card-2__add-to-cart {
 	top: auto;
@@ -215,12 +293,12 @@
 }
 
 @media (hover: hover) {
-	.catalog-card-2:hover {
-		.catalog-card-2__details {
-			max-height: 32.7rem;
-			opacity: 1;
-			height: 32.7rem;
-			padding-bottom: 3rem;
-		}
+.catalog-card-2:hover {
+	.catalog-card-2__details {
+		max-height: 32.7rem;
+		opacity: 1;
+		height: 32.7rem;
+		padding-bottom: 3rem;
 	}
+}
 }

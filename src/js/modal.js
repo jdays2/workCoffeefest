@@ -90,3 +90,22 @@ if (clearBtn) {
 	});
 }
 
+
+//обработка select-popup !общего! (изменение активного элемента в кнопке)
+const mainSelects = document.querySelectorAll('.popup-block__popup--select');
+
+if (mainSelects) {
+	mainSelects.forEach((item) => {
+		const mainWrapper = item.closest('.popup-block');
+		const value = mainWrapper.querySelector('.popup-block__select-value');
+		const inputs = item.querySelectorAll('input');
+		inputs.forEach((item) => {
+			item.addEventListener('input', () => {
+				const labelValue = item.nextElementSibling.textContent;
+				if (item.checked === true) {
+					value.textContent = labelValue;
+				}
+			});
+		});
+	});
+}

@@ -1051,13 +1051,12 @@ $white20: rgba(255, 255, 255, 0.2);
 	width: 100%;
 	display: flex;
 	align-items: center;
-	.swiper {
-		overflow: hidden;
-		width: 148.5rem;
-	}
+
 	&__btn {
+		&.swiper-button-disabled {
+			display: none;
+		}
 		&-left {
-			display: block;
 			transform: rotate(-180deg);
 			padding-left: 3rem;
 			svg {
@@ -1066,8 +1065,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			}
 		}
 
-		&-right {
-			display: block;
+		&-right { 
 			padding-left: 3rem;
 			svg {
 				width: 2.8rem;
@@ -1075,10 +1073,17 @@ $white20: rgba(255, 255, 255, 0.2);
 			}
 		}
 	}
+
+	.swiper {
+		overflow: hidden;
+		width: 148.5rem;
+		z-index: 0;
+	}
 	.swiper-wrapper {
 		padding-right: 10rem;
 	}
 	&__item {
+		cursor: pointer;
 		position: relative;
 		width: -webkit-fit-content;
 		width: -moz-fit-content;

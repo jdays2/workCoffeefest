@@ -144,259 +144,374 @@
 				</div>
 			</section>
 
-			<section
-				style="
-					margin: 0 auto;
-					text-align: center;
-					padding: 5rem 0rem;
-					margin-bottom: 5rem;
-					font-size: 3rem;
-				">
-				ТУТ ДОЛЖЕН БЫТЬ ФИЛЬТР
-			</section>
-
 			<section class="catalog-main-block grain-coffee section">
+				<div class="settings-bar container">
+					<div class="settings-bar__row">
+						<div class="settings-bar__box">
+							<button
+								class="tag-btn"
+								id="filter">
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M22 18H15"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M5 18H2"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M22 7H19"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M9 7H2"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M7 15H13C14.1 15 15 15.5 15 17V19C15 20.5 14.1 21 13 21H7C5.9 21 5 20.5 5 19V17C5 15.5 5.9 15 7 15Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M11 4H17C18.1 4 19 4.5 19 6V8C19 9.5 18.1 10 17 10H11C9.9 10 9 9.5 9 8V6C9 4.5 9.9 4 11 4Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<span>Фильтры</span>
+							</button>
+
+							<div class="search-block">
+								<label>
+									<input
+										class="search-block__input"
+										type="text"
+										placeholder="Поиск" />
+									<button class="search-block__main-icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none">
+											<path
+												d="M4.14466 17.2263L4.87484 17.055L4.14466 17.2263ZM4.14466 10.405L4.87484 10.5763L4.14466 10.405ZM23.4867 10.405L24.2168 10.2337L23.4867 10.405ZM23.4867 17.2263L24.2168 17.3976L23.4867 17.2263ZM17.2263 23.4867L17.055 22.7565L17.2263 23.4867ZM10.405 23.4867L10.2337 24.2168L10.405 23.4867ZM10.405 4.14466L10.2337 3.41448L10.405 4.14466ZM17.2263 4.14466L17.3976 3.41448L17.2263 4.14466ZM25.7197 26.7803C26.0126 27.0732 26.4874 27.0732 26.7803 26.7803C27.0732 26.4874 27.0732 26.0126 26.7803 25.7197L25.7197 26.7803ZM4.87484 17.055C4.37505 14.9244 4.37505 12.7069 4.87484 10.5763L3.41448 10.2337C2.86184 12.5897 2.86184 15.0416 3.41448 17.3976L4.87484 17.055ZM22.7565 10.5763C23.2563 12.7069 23.2563 14.9244 22.7565 17.055L24.2168 17.3976C24.7695 15.0416 24.7695 12.5897 24.2168 10.2337L22.7565 10.5763ZM17.055 22.7565C14.9244 23.2563 12.7069 23.2563 10.5763 22.7565L10.2337 24.2168C12.5897 24.7695 15.0416 24.7695 17.3976 24.2168L17.055 22.7565ZM10.5763 4.87484C12.7069 4.37505 14.9244 4.37505 17.055 4.87484L17.3976 3.41448C15.0416 2.86184 12.5897 2.86184 10.2337 3.41448L10.5763 4.87484ZM10.5763 22.7565C7.74731 22.0929 5.53843 19.884 4.87484 17.055L3.41448 17.3976C4.20817 20.7812 6.85012 23.4231 10.2337 24.2168L10.5763 22.7565ZM17.3976 24.2168C20.7812 23.4231 23.4231 20.7812 24.2168 17.3976L22.7565 17.055C22.0929 19.884 19.884 22.0929 17.055 22.7565L17.3976 24.2168ZM17.055 4.87484C19.884 5.53843 22.0929 7.74731 22.7565 10.5763L24.2168 10.2337C23.4231 6.85012 20.7812 4.20817 17.3976 3.41448L17.055 4.87484ZM10.2337 3.41448C6.85012 4.20817 4.20817 6.85011 3.41448 10.2337L4.87484 10.5763C5.53843 7.74731 7.74731 5.53843 10.5763 4.87484L10.2337 3.41448ZM21.1386 22.1993L25.7197 26.7803L26.7803 25.7197L22.1993 21.1386L21.1386 22.1993Z"
+												fill="#29354D" />
+										</svg>
+									</button>
+
+									<button class="search-block__enter-icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none">
+											<path
+												d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM27.5303 6.53033C27.8232 6.23744 27.8232 5.76257 27.5303 5.46967L22.7574 0.696701C22.4645 0.403808 21.9896 0.403808 21.6967 0.696701C21.4038 0.989594 21.4038 1.46447 21.6967 1.75736L25.9393 6L21.6967 10.2426C21.4038 10.5355 21.4038 11.0104 21.6967 11.3033C21.9896 11.5962 22.4645 11.5962 22.7574 11.3033L27.5303 6.53033ZM1 6.75L27 6.75L27 5.25L1 5.25L1 6.75Z"
+												fill="#29354D" />
+										</svg>
+									</button>
+								</label>
+							</div>
+						</div>
+
+						<button class="popup-block__wrapper">
+							<label class="popup-block">
+								<span class="popup-block__arrows-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M10.4498 6.71997L6.72974 3L3.00977 6.71997"
+											stroke="#29354D"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M6.72949 21V3"
+											stroke="#29354D"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M13.5498 17.2812L17.2698 21.0012L20.9898 17.2812"
+											stroke="#29354D"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M17.2695 3V21"
+											stroke="#29354D"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+								<input type="checkbox" />
+								<div class="popup-block__popup popup-block__popup--select">
+									<div class="popup-block__list">
+										<label class="popup-block__item">
+											<input
+												type="radio"
+												name="popup-block__item" />
+											<span class="popup-block__item-title text2">
+												Сначала новые
+											</span>
+										</label>
+
+										<label class="popup-block__item">
+											<input
+												type="radio"
+												name="popup-block__item" />
+											<span class="popup-block__item-title text2">
+												Сначала недорогие
+											</span>
+										</label>
+
+										<label class="popup-block__item">
+											<input
+												type="radio"
+												name="popup-block__item" />
+											<span class="popup-block__item-title text2">
+												Сначала дорогие
+											</span>
+										</label>
+									</div>
+								</div>
+								<span class="text2 popup-block__select-value">
+									В каком виде доставить
+								</span>
+
+								<svg
+									class="popup-block__more-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="none">
+									<path
+										d="M6.5 9L12.5 15L18.5 9"
+										stroke="#29354D"
+										stroke-width="1.5" />
+								</svg>
+							</label>
+						</button>
+					</div>
+
+					<div class="settings-bar__row">
+						<div class="filter__tag-list">
+							<button class="tag-btn tag-btn--borderless">
+								<span>Новости кофе</span>
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g
+										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+										<path
+											id="Vector"
+											d="M3 4L21 22M21 4L3 22"
+											stroke="#29354D"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+
+							<button class="tag-btn tag-btn--borderless">
+								<span>Новости кофеен</span>
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g
+										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+										<path
+											id="Vector"
+											d="M3 4L21 22M21 4L3 22"
+											stroke="#29354D"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+
+							<button class="tag-btn tag-btn--borderless">
+								<span>События</span>
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g
+										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+										<path
+											id="Vector"
+											d="M3 4L21 22M21 4L3 22"
+											stroke="#29354D"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="settings-bar__row">
+						<div class="category-block">
+							<button class="category-block__btn-left">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none">
+									<path
+										d="M1 5.75C0.585786 5.75 0.25 6.08579 0.25 6.5C0.25 6.91421 0.585786 7.25 1 7.25L1 5.75ZM27.5303 7.03033C27.8232 6.73744 27.8232 6.26257 27.5303 5.96967L22.7574 1.1967C22.4645 0.903808 21.9896 0.903808 21.6967 1.1967C21.4038 1.48959 21.4038 1.96447 21.6967 2.25736L25.9393 6.5L21.6967 10.7426C21.4038 11.0355 21.4038 11.5104 21.6967 11.8033C21.9896 12.0962 22.4645 12.0962 22.7574 11.8033L27.5303 7.03033ZM1 7.25L27 7.25L27 5.75L1 5.75L1 7.25Z"
+										fill="#29354D" />
+								</svg>
+							</button>
+							<div class="category-block category-block__swiper swiper">
+								<div class="swiper-wrapper">
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Все</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Завтраки</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Салаты</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Супы и блюда</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Сэндвичи и бургеры</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Зерновой кофе</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Горячие напитки</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Выпечка</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Десерты</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Кофе и чай</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Завтраки</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Зерновой кофе</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Горячие напитки</span>
+									</label>
+
+									<label class="category-block__item swiper-slide">
+										<input type="checkbox" />
+										<span>Кулич</span>
+									</label>
+								</div>
+							</div>
+
+							<button class="category-block__btn-right">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none">
+									<path
+										d="M1 5.75C0.585786 5.75 0.25 6.08579 0.25 6.5C0.25 6.91421 0.585786 7.25 1 7.25L1 5.75ZM27.5303 7.03033C27.8232 6.73744 27.8232 6.26257 27.5303 5.96967L22.7574 1.1967C22.4645 0.903808 21.9896 0.903808 21.6967 1.1967C21.4038 1.48959 21.4038 1.96447 21.6967 2.25736L25.9393 6.5L21.6967 10.7426C21.4038 11.0355 21.4038 11.5104 21.6967 11.8033C21.9896 12.0962 22.4645 12.0962 22.7574 11.8033L27.5303 7.03033ZM1 7.25L27 7.25L27 5.75L1 5.75L1 7.25Z"
+										fill="#29354D" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
 				<div class="catalog-main-block__container container">
 					<div class="catalog-main-block__title heading2">Завтраки</div>
 					<div class="catalog__content-box">
 						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
+							<a
+								href="/"
+								class="catalog-card-1__img">
 								<img
 									src="./src/images/sandwichwithcofee.png"
 									alt="" />
-							</div>
+							</a>
 							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
 									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
 											<span>₽</span>
 										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
 										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
-										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
-										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
-										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
-										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
-										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
-										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
 									</div>
 								</div>
 								<div
@@ -409,26 +524,40 @@
 						</div>
 
 						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
+							<a
+								href="/"
+								class="catalog-card-1__img">
 								<img
 									src="./src/images/sandwichwithcofee.png"
 									alt="" />
-							</div>
+							</a>
 							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
 									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
 											<span>₽</span>
 										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
 									</div>
 								</div>
 								<div
@@ -441,26 +570,40 @@
 						</div>
 
 						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
+							<a
+								href="/"
+								class="catalog-card-1__img">
 								<img
 									src="./src/images/sandwichwithcofee.png"
 									alt="" />
-							</div>
+							</a>
 							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
 									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
 											<span>₽</span>
 										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
 									</div>
 								</div>
 								<div
@@ -473,26 +616,40 @@
 						</div>
 
 						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
+							<a
+								href="/"
+								class="catalog-card-1__img">
 								<img
 									src="./src/images/sandwichwithcofee.png"
 									alt="" />
-							</div>
+							</a>
 							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
 									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
 											<span>₽</span>
 										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
 									</div>
 								</div>
 								<div
@@ -505,26 +662,363 @@
 						</div>
 
 						<div class="catalog-card-1">
-							<div class="catalog-card-1__img">
+							<a
+								href="/"
+								class="catalog-card-1__img">
 								<img
 									src="./src/images/sandwichwithcofee.png"
 									alt="" />
-							</div>
+							</a>
 							<div class="catalog-card-1__descr">
-								<div class="catalog-card-1__title heading4">
-									Клаб-сэндвич с ветчиной и сыром
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
 									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
 											<span>₽</span>
 										</div>
-										<div class="catalog-card__weight">/ 240 г</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-1">
+							<a
+								href="/"
+								class="catalog-card-1__img">
+								<img
+									src="./src/images/sandwichwithcofee.png"
+									alt="" />
+							</a>
+							<div class="catalog-card-1__descr">
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
+											<span>₽</span>
+										</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-1">
+							<a
+								href="/"
+								class="catalog-card-1__img">
+								<img
+									src="./src/images/sandwichwithcofee.png"
+									alt="" />
+							</a>
+							<div class="catalog-card-1__descr">
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
+											<span>₽</span>
+										</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-1">
+							<a
+								href="/"
+								class="catalog-card-1__img">
+								<img
+									src="./src/images/sandwichwithcofee.png"
+									alt="" />
+							</a>
+							<div class="catalog-card-1__descr">
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
+											<span>₽</span>
+										</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-1">
+							<a
+								href="/"
+								class="catalog-card-1__img">
+								<img
+									src="./src/images/sandwichwithcofee.png"
+									alt="" />
+							</a>
+							<div class="catalog-card-1__descr">
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
+											<span>₽</span>
+										</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-1">
+							<a
+								href="/"
+								class="catalog-card-1__img">
+								<img
+									src="./src/images/sandwichwithcofee.png"
+									alt="" />
+							</a>
+							<div class="catalog-card-1__descr">
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
+											<span>₽</span>
+										</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-1">
+							<a
+								href="/"
+								class="catalog-card-1__img">
+								<img
+									src="./src/images/sandwichwithcofee.png"
+									alt="" />
+							</a>
+							<div class="catalog-card-1__descr">
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
+											<span>₽</span>
+										</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-1">
+							<!-- скрываем, если изображения нет -->
+							<!-- <a
+								href="/"
+								class="catalog-card-1__img">
+								<img
+									src="./src/images/sandwichwithcofee.png"
+									alt="" />
+							</a> -->
+							<div class="catalog-card-1__descr">
+								<div class="catalog-card-1__imgless">
+									<div class="catalog-card-1__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
+
+								<div class="catalog-card-1__info">
+									<a
+										href="/"
+										class="catalog-card-1__title heading4">
+										Клаб-сэндвич с ветчиной и сыром
+									</a>
+
+									<div class="catalog-card__price">
+										<div class="catalog-card__main-price">
+											800
+											<span>₽</span>
+										</div>
+										<div class="catalog-card__sale">
+											<div class="catalog-card__sale-price">
+												600
+												<span>₽</span>
+											</div>
+											<div class="catalog-card__weight">/ 240 г</div>
+										</div>
 									</div>
 								</div>
 								<div

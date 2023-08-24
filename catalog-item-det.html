@@ -22,15 +22,18 @@
 		<main class="main catalog catalog-det">
 			<section class="section light-section-clear card-det-section">
 				<div class="card-det-section__bg-left">
-					<img src="./src/images/svg/border-card-det-bg.svg" alt="">
+					<img
+						src="./src/images/svg/border-card-det-bg.svg"
+						alt="" />
 				</div>
 
 				<div class="card-det-section__bg-right">
-					<img src="./src/images/svg/border-card-det-bg.svg" alt="">
+					<img
+						src="./src/images/svg/border-card-det-bg.svg"
+						alt="" />
 				</div>
 
 				<div class="container card-det__container">
-
 					<div class="breadcrumbs__container container">
 						<ul class="breadcrumbs">
 							<li class="breadcrumbs__item">
@@ -451,7 +454,9 @@
 												</label>
 											</div>
 										</div>
-										<span class="text2 card-det__select-value">В каком виде доставить</span>
+										<span class="text2 card-det__select-value">
+											В каком виде доставить
+										</span>
 
 										<svg
 											class="card-det__more-icon"
@@ -498,13 +503,23 @@
 								<img
 									src="./src/images/coffee-packages.png"
 									alt="" />
+								<div class="catalog-card-2__imgless">
+									<div class="catalog-card-2__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
 							</div>
 							<div class="catalog-card-2__descr">
-								<div class="catalog-card-2__title heading4">
+								<a
+									href="/"
+									class="catalog-card-2__title heading4">
 									Espresso Seasonal
-								</div>
+								</a>
 
-								<div class="catalog-card-2__details">
+								<a
+									href="/"
+									class="catalog-card-2__details">
 									<p class="catalog-card-2__details-text text2">
 										Сезонный кофе с сочной кислотностью Боливии и легкими
 										цветочными нотами Эфиопии. Во вкусе присутствует вишня,
@@ -521,7 +536,7 @@
 											<strong>Красные фрукты, смородина, какао</strong>
 										</div>
 									</div>
-								</div>
+								</a>
 
 								<div class="catalog-card-2__characteristics">
 									<div class="catalog-card-2__characteristic">
@@ -570,21 +585,176 @@
 									</div>
 								</div>
 								<div class="catalog-card-2__weights">
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										250
-										<span>г</span>
+									<label>
+										<input
+											type="radio"
+											name="weight-1" />
+										<div class="catalog-card-2__weight">
+											250
+											<span>г</span>
+										</div>
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-1"
+											checked />
+										<div class="catalog-card-2__weight">
+											500
+											<span>г</span>
+										</div>
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-1" />
+										<div class="catalog-card-2__weight">
+											1
+											<span>кг</span>
+										</div>
+									</label>
+								</div>
+								<div class="catalog-card__price">
+									<div class="catalog-card__main-price">
+										800
+										<span>₽</span>
 									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper active">
-										500
-										<span>г</span>
+									<div class="catalog-card__sale">
+										<div class="catalog-card__sale-price">
+											600
+											<span>₽</span>
+										</div>
+										<div
+											class="catalog-card__weight catalog-card-2__price-package">
+											/упаковка
+										</div>
 									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										1
-										<span>кг</span>
+								</div>
+								<div
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
+									<img
+										src="./src/images/svg/black-cart.svg"
+										alt="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-card-2">
+							<div class="catalog-card-2__img">
+								<!-- в данном случае скрывается только картинка, а не ее блок -->
+								<!-- <img
+									src="./src/images/coffee-packages.png"
+									alt="" /> -->
+								<div class="catalog-card-2__imgless">
+									<div class="catalog-card-2__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
 									</div>
+								</div>
+							</div>
+							<div class="catalog-card-2__descr">
+								<a
+									href="/"
+									class="catalog-card-2__title heading4">
+									Espresso Seasonal
+								</a>
+
+								<a
+									href="/"
+									class="catalog-card-2__details">
+									<p class="catalog-card-2__details-text text2">
+										Сезонный кофе с сочной кислотностью Боливии и легкими
+										цветочными нотами Эфиопии. Во вкусе присутствует вишня,
+										сладкие пряности, мёд
+									</p>
+
+									<div class="catalog-card-2__details-stats">
+										<div class="catalog-card-2__details-item text1">
+											<span>Срок годности</span>
+											<strong>1 год</strong>
+										</div>
+										<div class="catalog-card-2__details-item text1">
+											<span>В букете</span>
+											<strong>Красные фрукты, смородина, какао</strong>
+										</div>
+									</div>
+								</a>
+
+								<div class="catalog-card-2__characteristics">
+									<div class="catalog-card-2__characteristic">
+										<div class="catalog-card-2__characteristic-text">
+											Кислотность
+										</div>
+										<div class="catalog-card-2__characteristic-lines">
+											<span class="active"></span>
+											<span class="active"></span>
+											<span class="active"></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="catalog-card-2__characteristic">
+										<div class="catalog-card-2__characteristic-text">
+											Сладость
+										</div>
+										<div class="catalog-card-2__characteristic-lines">
+											<span class="active"></span>
+											<span class="active"></span>
+											<span class=""></span>
+											<span class=""></span>
+										</div>
+									</div>
+									<div class="catalog-card-2__characteristic">
+										<div class="catalog-card-2__characteristic-text">
+											Плотность
+										</div>
+										<div class="catalog-card-2__characteristic-lines">
+											<span class="active"></span>
+											<span class="active"></span>
+											<span class="active"></span>
+											<span class="active"></span>
+										</div>
+									</div>
+									<div class="catalog-card-2__characteristic">
+										<div class="catalog-card-2__characteristic-text">
+											Горечь
+										</div>
+										<div class="catalog-card-2__characteristic-lines">
+											<span class="active"></span>
+											<span class="active"></span>
+											<span class=""></span>
+											<span class=""></span>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-card-2__weights">
+									<label>
+										<input
+											type="radio"
+											name="weight-2" />
+										<div class="catalog-card-2__weight">
+											250
+											<span>г</span>
+										</div>
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-2"
+											checked />
+										<div class="catalog-card-2__weight">
+											500
+											<span>г</span>
+										</div>
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-2" />
+										<div class="catalog-card-2__weight">
+											1
+											<span>кг</span>
+										</div>
+									</label>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -616,13 +786,23 @@
 								<img
 									src="./src/images/coffee-packages.png"
 									alt="" />
+								<div class="catalog-card-2__imgless">
+									<div class="catalog-card-2__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
 							</div>
 							<div class="catalog-card-2__descr">
-								<div class="catalog-card-2__title heading4">
+								<a
+									href="/"
+									class="catalog-card-2__title heading4">
 									Espresso Seasonal
-								</div>
+								</a>
 
-								<div class="catalog-card-2__details">
+								<a
+									href="/"
+									class="catalog-card-2__details">
 									<p class="catalog-card-2__details-text text2">
 										Сезонный кофе с сочной кислотностью Боливии и легкими
 										цветочными нотами Эфиопии. Во вкусе присутствует вишня,
@@ -639,7 +819,7 @@
 											<strong>Красные фрукты, смородина, какао</strong>
 										</div>
 									</div>
-								</div>
+								</a>
 
 								<div class="catalog-card-2__characteristics">
 									<div class="catalog-card-2__characteristic">
@@ -688,21 +868,34 @@
 									</div>
 								</div>
 								<div class="catalog-card-2__weights">
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										250
-										<span>г</span>
-									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper active">
-										500
-										<span>г</span>
-									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										1
-										<span>кг</span>
-									</div>
+									<label>
+										<input
+											type="radio"
+											name="weight-3" />
+										<div class="catalog-card-2__weight">
+											250
+											<span>г</span>
+										</div>
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-3"
+											checked />
+										<div class="catalog-card-2__weight">
+											500
+											<span>г</span>
+										</div>
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-3" />
+										<div class="catalog-card-2__weight">
+											1
+											<span>кг</span>
+										</div>
+									</label>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -734,13 +927,23 @@
 								<img
 									src="./src/images/coffee-packages.png"
 									alt="" />
+								<div class="catalog-card-2__imgless">
+									<div class="catalog-card-2__imgless-box">
+										<span>новинка</span>
+										<strong>Блюдо на фотосессии прямо сейчас</strong>
+									</div>
+								</div>
 							</div>
 							<div class="catalog-card-2__descr">
-								<div class="catalog-card-2__title heading4">
+								<a
+									href="/"
+									class="catalog-card-2__title heading4">
 									Espresso Seasonal
-								</div>
+								</a>
 
-								<div class="catalog-card-2__details">
+								<a
+									href="/"
+									class="catalog-card-2__details">
 									<p class="catalog-card-2__details-text text2">
 										Сезонный кофе с сочной кислотностью Боливии и легкими
 										цветочными нотами Эфиопии. Во вкусе присутствует вишня,
@@ -757,7 +960,7 @@
 											<strong>Красные фрукты, смородина, какао</strong>
 										</div>
 									</div>
-								</div>
+								</a>
 
 								<div class="catalog-card-2__characteristics">
 									<div class="catalog-card-2__characteristic">
@@ -806,139 +1009,34 @@
 									</div>
 								</div>
 								<div class="catalog-card-2__weights">
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										250
-										<span>г</span>
-									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper active">
-										500
-										<span>г</span>
-									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										1
-										<span>кг</span>
-									</div>
-								</div>
-								<div class="catalog-card__price">
-									<div class="catalog-card__main-price">
-										800
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__sale">
-										<div class="catalog-card__sale-price">
-											600
-											<span>₽</span>
+									<label>
+										<input
+											type="radio"
+											name="weight-4" />
+										<div class="catalog-card-2__weight">
+											250
+											<span>г</span>
 										</div>
-										<div
-											class="catalog-card__weight catalog-card-2__price-package">
-											/упаковка
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-4"
+											checked />
+										<div class="catalog-card-2__weight">
+											500
+											<span>г</span>
 										</div>
-									</div>
-								</div>
-								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-card-2">
-							<div class="catalog-card-2__img">
-								<img
-									src="./src/images/coffee-packages.png"
-									alt="" />
-							</div>
-							<div class="catalog-card-2__descr">
-								<div class="catalog-card-2__title heading4">
-									Espresso Seasonal
-								</div>
-
-								<div class="catalog-card-2__details">
-									<p class="catalog-card-2__details-text text2">
-										Сезонный кофе с сочной кислотностью Боливии и легкими
-										цветочными нотами Эфиопии. Во вкусе присутствует вишня,
-										сладкие пряности, мёд
-									</p>
-
-									<div class="catalog-card-2__details-stats">
-										<div class="catalog-card-2__details-item text1">
-											<span>Срок годности</span>
-											<strong>1 год</strong>
+									</label>
+									<label>
+										<input
+											type="radio"
+											name="weight-4" />
+										<div class="catalog-card-2__weight">
+											1
+											<span>кг</span>
 										</div>
-										<div class="catalog-card-2__details-item text1">
-											<span>В букете</span>
-											<strong>Красные фрукты, смородина, какао</strong>
-										</div>
-									</div>
-								</div>
-
-								<div class="catalog-card-2__characteristics">
-									<div class="catalog-card-2__characteristic">
-										<div class="catalog-card-2__characteristic-text">
-											Кислотность
-										</div>
-										<div class="catalog-card-2__characteristic-lines">
-											<span class="active"></span>
-											<span class="active"></span>
-											<span class="active"></span>
-											<span></span>
-										</div>
-									</div>
-									<div class="catalog-card-2__characteristic">
-										<div class="catalog-card-2__characteristic-text">
-											Сладость
-										</div>
-										<div class="catalog-card-2__characteristic-lines">
-											<span class="active"></span>
-											<span class="active"></span>
-											<span class=""></span>
-											<span class=""></span>
-										</div>
-									</div>
-									<div class="catalog-card-2__characteristic">
-										<div class="catalog-card-2__characteristic-text">
-											Плотность
-										</div>
-										<div class="catalog-card-2__characteristic-lines">
-											<span class="active"></span>
-											<span class="active"></span>
-											<span class="active"></span>
-											<span class="active"></span>
-										</div>
-									</div>
-									<div class="catalog-card-2__characteristic">
-										<div class="catalog-card-2__characteristic-text">
-											Горечь
-										</div>
-										<div class="catalog-card-2__characteristic-lines">
-											<span class="active"></span>
-											<span class="active"></span>
-											<span class=""></span>
-											<span class=""></span>
-										</div>
-									</div>
-								</div>
-								<div class="catalog-card-2__weights">
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										250
-										<span>г</span>
-									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper active">
-										500
-										<span>г</span>
-									</div>
-									<div
-										class="catalog-card-2__weight catalog-card-2__weight-wrapper">
-										1
-										<span>кг</span>
-									</div>
+									</label>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
