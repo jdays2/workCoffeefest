@@ -25,7 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const mainHeroBanner = new Swiper('.main-banner__swiper', {
 		slidesPerView: 1,
+		speed: 700,
 		spaceBetween: rem(3),
+		autoplay: {
+			delay: 7000, // Интервал между сменой слайдов в миллисекундах
+			disableOnInteraction: false, // Остановка автопрокрутки при взаимодействии пользователя
+		},
 		pagination: {
 			el: '.main-banner__swiper-controllers .swiper-pagination',
 		},
@@ -269,32 +274,32 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
-	const checkContentFits = () => {
-		const container = document.querySelector('.category-block__swiper');
-		if (!container) {
-			return;
-		}
+	// const checkContentFits = () => {
+	// 	const container = document.querySelector('.category-block__swiper');
+	// 	if (!container) {
+	// 		return;
+	// 	}
 
-		const wrapper = container.querySelector('.swiper-wrapper');
-		const slides = wrapper.querySelectorAll('.swiper-slide');
+	// 	const wrapper = container.querySelector('.swiper-wrapper');
+	// 	const slides = wrapper.querySelectorAll('.swiper-slide');
 
-		const totalWidth = Array.from(slides).reduce(
-			(acc, slide) => acc + slide.offsetWidth,
-			0,
-		);
+	// 	const totalWidth = Array.from(slides).reduce(
+	// 		(acc, slide) => acc + slide.offsetWidth,
+	// 		0,
+	// 	);
 
-		if (totalWidth <= container.offsetWidth) {
-			categoryBlockSwiper.params.allowSlideNext = false;
-			categoryBlockSwiper.params.allowSlidePrev = false;
-			categoryBlockSwiper.navigation.hide();
-		} else {
-			categoryBlockSwiper.params.allowSlideNext = true;
-			categoryBlockSwiper.params.allowSlidePrev = true;
-			categoryBlockSwiper.navigation.show();
-		}
+	// 	if (totalWidth <= container.offsetWidth) {
+	// 		categoryBlockSwiper.params.allowSlideNext = false;
+	// 		categoryBlockSwiper.params.allowSlidePrev = false;
+	// 		categoryBlockSwiper.navigation.hide();
+	// 	} else {
+	// 		categoryBlockSwiper.params.allowSlideNext = true;
+	// 		categoryBlockSwiper.params.allowSlidePrev = true;
+	// 		categoryBlockSwiper.navigation.show();
+	// 	}
 
-		categoryBlockSwiper.update();
-	};
+	// 	categoryBlockSwiper.update();
+	// };
 
-	checkContentFits();
+	// checkContentFits();
 });

@@ -265,18 +265,3 @@ if (searchBtn && searchCloseBtn) {
 	});
 }
 
-//обработка переключания активной карточки/блока в about.html
-// const tegBtns = document.querySelectorAll('.section-tags__item-btn');
-// const tegBlocks = document.querySelectorAll(
-// 	'.about-info__card.section-info__card',
-// );
-
-// if (tegBtns && tegBlocks) {
-// 	tegBtns.forEach((item, ID) => {
-// 		item.addEventListener('click', () => {
-// 			tegBlocks.forEach((item) => {
-// 				item.classList.remove('hide');
-// 			});
-// 		});
-// 	});
-// }
