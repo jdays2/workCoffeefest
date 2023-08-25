@@ -3,6 +3,24 @@
 		margin-bottom: 5rem;
 	}
 
+	&__link {
+		margin-top: auto;
+		display: block;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		border-bottom: 0.1rem solid;
+
+		color: #29354d;
+		font-family: Circe;
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%; /* 23.4px */
+		letter-spacing: 0.09rem;
+		text-transform: uppercase;
+	}
+
 	&__container {
 		position: relative;
 	}
@@ -66,7 +84,7 @@
 		}
 	}
 
-	&.business {
+	&--link {
 		.services__swiper-slide__text {
 			display: flex;
 			flex-direction: column;
