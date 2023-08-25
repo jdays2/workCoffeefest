@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Для бизнеса</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/fonts/fonts.css">
-    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <title>Для бизнеса</title>
-</head>
-
-<body>
-    <header class="header">
+	<body>
+		<header class="header">
 	<div class="container">
 		<button class="header__burger mobile">
 			<svg
@@ -264,211 +271,372 @@
 	</div>
 </header>
 
-    <main>
-        <section class="main-banner business">
+		<main>
+			<section class="main-banner">
+				<div class="swiper-container main-banner__swiper">
+					<div class="swiper-wrapper">
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-5.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>подробнее</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="blue">
+							<img
+								src="./src/images/main-banner-1.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--blue">
+								<span>перейти в каталог</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-2.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>заказать пробник</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-3.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>Посмотреть меню</span>
+							</a>
+						</div>
 
-            <div class="swiper-container main-banner__swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide main-banner__swiper-slide">
-                        <img src="./src/images/business-banner.png" alt="" class="main-banner__swiper-slide__img">
-                    </div>
-                    <div class="swiper-slide main-banner__swiper-slide">
-                        <img src="./src/images/business-banner.png" alt="" class="main-banner__swiper-slide__img">
-                    </div>
-                    <div class="swiper-slide main-banner__swiper-slide">
-                        <img src="./src/images/business-banner.png" alt="" class="main-banner__swiper-slide__img">
-                    </div>
-                    <div class="swiper-slide main-banner__swiper-slide">
-                        <img src="./src/images/business-banner.png" alt="" class="main-banner__swiper-slide__img">
-                    </div>
-                    <div class="swiper-slide main-banner__swiper-slide">
-                        <img src="./src/images/business-banner.png" alt="" class="main-banner__swiper-slide__img">
-                    </div>
-                    <div class="swiper-slide main-banner__swiper-slide">
-                        <img src="./src/images/business-banner.png" alt="" class="main-banner__swiper-slide__img">
-                    </div>
-                </div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-4.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>Посмотреть меню</span>
+								<span class="banner-btns__icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+											fill="#FFFCF8" />
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
 
-                <div class="main-banner__swiper-controllers">
-                    <div class="prev">
-                        <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-                                fill="#F5F5F5" />
-                        </svg>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="next">
-                        <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-                                fill="#F5F5F5" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
+					<div class="main-banner__swiper-controllers">
+						<div class="prev">
+							<svg
+								width="28"
+								height="16"
+								viewBox="0 0 28 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
+									fill="#e3bca0" />
+							</svg>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="next">
+							<svg
+								width="28"
+								height="16"
+								viewBox="0 0 28 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
+									fill="#e3bca0" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
 
+			<section class="about-info section">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg
+									width="28"
+									height="28"
+									viewBox="0 0 28 28"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-linecap="round" />
+								</svg>
+							</a>
+						</li>
 
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/business.html"
+								class="breadcrumbs__item-link">
+								Для бизнеса
+							</a>
+						</li>
+					</ul>
 
-            <div class="container">
-                <button class="main-banner__btn stroke-btn light-btn">посмотреть меню</button>
-            </div>
-        </section>
+					<div class="about-info__card section-info__card active">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">
+								Мы предлагаем
+							</p>
+							<p class="section-info__card-left__subheading heading4">
+								полный цикл работ в сфере Horeca, от открытия кофейни до
+								организации мероприятий под ключ или кейтеринга
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									CofeFest для бизнеса — это поставки комплексных обедов,
+									кулинарной и кондитерской продукции собственного производства
+									для корпоративных клиентов.
+								</p>
+								<p>
+									Каждый день на протяжении уже более трех лет мы готовим
+									завтраки и обеды для резидентов бизнес-центров, сотрудников
+									медицинских клиник и деловых людей, предпочитающих здоровые
+									экспресс-бизнес-ланчи как удобная альтернатива домашней еды в
+									контейнерах и дорогим обедам в ресторанах.
+								</p>
+							</div>
+						</div>
 
-        <section class="about-info section">
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/main.html" class="breadcrumbs__item-link">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-                                    stroke="#29354D" stroke-width="1.5" stroke-linecap="round" />
-                            </svg>
-                        </a>
-                    </li>
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/business-img1.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/business-img2.png"
+									alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/business.html" class="breadcrumbs__item-link">Для бизнеса</a>
-                    </li>
-                </ul>
+			<section class="section services light-section business">
+				<div class="container">
+					<p class="services__heading heading2">Наши услуги</p>
 
-                <div class="about-info__card section-info__card active">
-                    <div class="section-info__card-left">
-                        <p class="section-info__card-left__heading heading2">Мы предлагаем</p>
-                        <p class="section-info__card-left__subheading heading4">полный цикл работ в сфере Horeca, от
-                            открытия кофейни до организации мероприятий под ключ или кейтеринга</p>
-                        <div class="section-info__card-left__description menu">
-                            <p>CofeFest для бизнеса — это поставки комплексных обедов, кулинарной и кондитерской
-                                продукции собственного производства для корпоративных клиентов. </p>
-                            <p> Каждый день на протяжении уже более трех лет мы готовим завтраки и обеды для резидентов
-                                бизнес-центров, сотрудников медицинских клиник и деловых людей, предпочитающих здоровые
-                                экспресс-бизнес-ланчи как удобная альтернатива домашней еды в контейнерах и дорогим
-                                обедам в ресторанах.</p>
-                        </div>
-                    </div>
+					<div class="services__container">
+						<div class="swiper-container services__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Выездной бариста
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Приготовим вкусную чашку и увлекательно расскажем все о
+											кофе на вашем мероприятии
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__icon catering">
+										<img
+											src="./src/images/svg/catering-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/catering-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Открыть кофейню
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Мы всегда готовы к новым предложениям и с удовольствием
+											рассмотрим вашу территорию для нашей сети
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__icon organization">
+										<img
+											src="./src/images/svg/organization-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/organization-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											корпоративное питание
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Комплексные обеды собственного производства для
+											корпоративных клиентов
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__icon corporate">
+										<img
+											src="./src/images/svg/corporate-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/corporate-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Кейтеринг
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Полный цикл выездного обслуживания – от приготовления и
+											доставки блюд до подачи и сервировки
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__icon barista">
+										<img
+											src="./src/images/svg/barista-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/barista-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											кейтеринг
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Полный цикл выездного обслуживания – от приготовления и
+											доставки блюд до подачи и сервировки
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__icon catering">
+										<img
+											src="./src/images/svg/catering-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/catering-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											организация мероприятий
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Организуем гастрономическую часть любого мероприятия,
+											независимо от тематики, формата и количества гостей
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__icon organization">
+										<img
+											src="./src/images/svg/organization-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/organization-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-controllers desktop">
+							<div class="swiper-prev services__swiper-prev">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-next services__swiper-next">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                    <div class="section-info__card-right">
-                        <div class="section-info__card-right__img">
-                            <img src="./src/images/business-img1.png" alt="">
-                        </div>
-                        <div class="section-info__card-right__img">
-                            <img src="./src/images/business-img2.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section services light-section business">
-            <div class="container">
-                <p class="services__heading heading2">Наши услуги</p>
-
-                <div class="services__container">
-                    <div class="swiper-container services__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Выездной бариста</p>
-                                    <p class="services__swiper-slide__text-description text1">Приготовим вкусную чашку и
-                                        увлекательно расскажем все о кофе на вашем мероприятии
-                                    </p>
-                                    <a href="#" class="services__swiper-slide__text-link btns-caps">узнать подробнее</a>
-                                </div>
-                                <div class="services__swiper-slide__icon catering">
-                                    <img src="./src/images/svg/catering-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/catering-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Открыть кофейню</p>
-                                    <p class="services__swiper-slide__text-description text1">Мы всегда готовы к новым
-                                        предложениям и с удовольствием рассмотрим вашу территорию для нашей сети
-                                    </p>
-                                    <a href="#" class="services__swiper-slide__text-link btns-caps">узнать подробнее</a>
-                                </div>
-                                <div class="services__swiper-slide__icon organization">
-                                    <img src="./src/images/svg/organization-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/organization-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">корпоративное
-                                        питание</p>
-                                    <p class="services__swiper-slide__text-description text1">Комплексные обеды
-                                        собственного производства для корпоративных клиентов
-                                    </p>
-                                    <a href="#" class="services__swiper-slide__text-link btns-caps">узнать подробнее</a>
-                                </div>
-                                <div class="services__swiper-slide__icon corporate">
-                                    <img src="./src/images/svg/corporate-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/corporate-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Кейтеринг</p>
-                                    <p class="services__swiper-slide__text-description text1">Полный цикл выездного
-                                        обслуживания – от приготовления и доставки блюд до подачи и сервировки
-                                    </p>
-                                    <a href="#" class="services__swiper-slide__text-link btns-caps">узнать подробнее</a>
-                                </div>
-                                <div class="services__swiper-slide__icon barista">
-                                    <img src="./src/images/svg/barista-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/barista-icon-mobile.svg" alt="" class="mobile">
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">кейтеринг</p>
-                                    <p class="services__swiper-slide__text-description text1">Полный цикл выездного
-                                        обслуживания – от приготовления и доставки блюд до подачи и
-                                        сервировки
-                                    </p>
-                                    <a href="#" class="services__swiper-slide__text-link btns-caps">узнать подробнее</a>
-                                </div>
-                                <div class="services__swiper-slide__icon catering">
-                                    <img src="./src/images/svg/catering-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/catering-icon-mobile.svg" alt="" class="mobile">
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">организация
-                                        мероприятий</p>
-                                    <p class="services__swiper-slide__text-description text1">Организуем
-                                        гастрономическую
-                                        часть любого мероприятия, независимо от тематики, формата и количества гостей
-                                    </p>
-                                    <a href="#" class="services__swiper-slide__text-link btns-caps">узнать подробнее</a>
-                                </div>
-                                <div class="services__swiper-slide__icon organization">
-                                    <img src="./src/images/svg/organization-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/organization-icon-mobile.svg" alt="" class="mobile">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-controllers desktop">
-                        <div class="swiper-prev services__swiper-prev">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-next services__swiper-next">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-pagination services__swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- <section class="section light-section business-advantages">
+			<!-- <section class="section light-section business-advantages">
             <div class="container">
                 <div class="business-advantages__container">
 
@@ -519,231 +687,367 @@
             </div>
         </section> -->
 
-        <section class="section-banner business">
-            <div class="container">
-                <div class="section-banner__container">
-                    <div class="section-banner__left">
-                        <p class="section-banner__left-heading heading2">Cofefest в вашем бизнес-центре</p>
-                        <div class="section-banner__left-description menu">
-                            <p> В настоящее время мы выросли до 90 уютных кафе разного формата, c посадочными местами и
-                                с едой навынос, двух корпоративных столовых и нескольких буфетов в медицинских
-                                учреждениях и государственных больницах столицы. </p>
-                            <p> Чтобы поддерживать стабильное качество и натуральность нашего продукта по доступным
-                                ценам, будь то обеды, завтраки или сладости к кофе, мы создали в 2019 году собственное
-                                производство полного цикла, с современным технологичным оборудованием и соблюдением всех
-                                последних стандартов безопасности. </p>
-                        </div>
-                        <a href="#" class="arrow-link">
-                            <span>подробнее</span>
-                            <svg width="29" height="13" viewBox="0 0 29 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class="arrow-link__icon">
-                                <path
-                                    d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-                                    fill="#E3BCA0" />
-                            </svg>
-                        </a>
-                    </div>
+			<section class="section-banner business">
+				<div class="container">
+					<div class="section-banner__container">
+						<div class="section-banner__left">
+							<p class="section-banner__left-heading heading2">
+								Cofefest в вашем бизнес-центре
+							</p>
+							<div class="section-banner__left-description menu">
+								<p>
+									В настоящее время мы выросли до 90 уютных кафе разного
+									формата, c посадочными местами и с едой навынос, двух
+									корпоративных столовых и нескольких буфетов в медицинских
+									учреждениях и государственных больницах столицы.
+								</p>
+								<p>
+									Чтобы поддерживать стабильное качество и натуральность нашего
+									продукта по доступным ценам, будь то обеды, завтраки или
+									сладости к кофе, мы создали в 2019 году собственное
+									производство полного цикла, с современным технологичным
+									оборудованием и соблюдением всех последних стандартов
+									безопасности.
+								</p>
+							</div>
+							<a
+								href="#"
+								class="arrow-link">
+								<span>подробнее</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#E3BCA0" />
+								</svg>
+							</a>
+						</div>
 
-                    <div class="section-banner__right">
-                        <div class="section-banner__right-img">
-                            <img src="./src/images/about-buisness.png" alt="">
-                        </div>
+						<div class="section-banner__right">
+							<div class="section-banner__right-img">
+								<img
+									src="./src/images/about-buisness.png"
+									alt="" />
+							</div>
 
-                        <div class="section-banner__right-video">
-                            <img src="./src/images/team-img2.png" alt="section-banner__right-video__content">
-                            <button class="play-btn">
-                                <svg width="88" height="88" viewBox="0 0 88 88" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="43.5" cy="43.5" r="42.5" stroke="#F1DED0" stroke-width="2" />
-                                    <path
-                                        d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-                                        fill="#F1DED0" />
-                                </svg>
-                            </button>
+							<div class="section-banner__right-video">
+								<img
+									src="./src/images/team-img2.png"
+									alt="section-banner__right-video__content" />
+								<button class="play-btn">
+									<svg
+										width="88"
+										height="88"
+										viewBox="0 0 88 88"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle
+											cx="43.5"
+											cy="43.5"
+											r="42.5"
+											stroke="#F1DED0"
+											stroke-width="2" />
+										<path
+											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
+											fill="#F1DED0" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+			<section class="section services light-section">
+				<div class="container">
+					<p class="services__heading heading2">Арендодателям</p>
+					<div class="services__container">
+						<div class="swiper-container services__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Производство полного цикла
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Наша фабрика-кухня находится в Москве, на которой
+											располагается полная линейка высоко-технологичного
+											оборудования, позволяющего нам производить широкий
+											ассортимент кулинарных и кондитерских блюд
+										</p>
+									</div>
+									<div class="services__swiper-slide__icon catering">
+										<img
+											src="./src/images/svg/catering-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/catering-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Современные технологии
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Мы уделяем особое внимание тому, чтобы блюда были
+											сбалансированными, легко усваивались и содержали максимум
+											питательных веществ. Сохранить эти свойства нам помогает
+											кулинарная технология su-vide, которую мы активно
+											применяем.
+										</p>
+									</div>
+									<div class="services__swiper-slide__icon organization">
+										<img
+											src="./src/images/svg/organization-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/organization-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Опытные повара
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Наша гордость это профессиональные повара, благодаря
+											которым вы ежедневно получаете готовый качественный и
+											вкусный продукт
+										</p>
+									</div>
+									<div class="services__swiper-slide__icon corporate">
+										<img
+											src="./src/images/svg/corporate-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/corporate-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Гарантия свежести
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Мы обеспечиваем контроль качества на всех этапах – от
+											приема сырья до готовой продукции. Все блюда и выпечка
+											производятся из отборных и натуральных ингредиентов и
+											доставляются в день изготовления
+										</p>
+									</div>
+									<div class="services__swiper-slide__icon barista">
+										<img
+											src="./src/images/svg/barista-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/barista-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Производство полного цикла
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Наша фабрика-кухня находится в Москве, на которой
+											располагается полная линейка высоко-технологичного
+											оборудования, позволяющего нам производить широкий
+											ассортимент кулинарных и кондитерских блюд
+										</p>
+									</div>
+									<div class="services__swiper-slide__icon catering">
+										<img
+											src="./src/images/svg/catering-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/catering-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text desktop">
+										<p class="services__swiper-slide__text-heading heading4">
+											Современные технологии
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Мы уделяем особое внимание тому, чтобы блюда были
+											сбалансированными, легко усваивались и содержали максимум
+											питательных веществ. Сохранить эти свойства нам помогает
+											кулинарная технология su-vide, которую мы активно
+											применяем.
+										</p>
+									</div>
+									<div class="services__swiper-slide__icon organization">
+										<img
+											src="./src/images/svg/organization-icon.svg"
+											alt=""
+											class="desktop" />
+										<img
+											src="./src/images/svg/organization-icon-mobile.svg"
+											alt=""
+											class="mobile" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-controllers desktop">
+							<div class="swiper-prev services__swiper-prev">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-next services__swiper-next">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <section class="section services light-section">
-            <div class="container">
-                <p class="services__heading heading2">Арендодателям</p>
-                <div class="services__container">
-                    <div class="swiper-container services__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Производство полного цикла
-                                    </p>
-                                    <p class="services__swiper-slide__text-description text1">Наша фабрика-кухня
-                                        находится в Москве, на которой располагается полная линейка
-                                        высоко-технологичного оборудования, позволяющего нам производить широкий
-                                        ассортимент кулинарных и кондитерских блюд
-                                    </p>
-                                </div>
-                                <div class="services__swiper-slide__icon catering">
-                                    <img src="./src/images/svg/catering-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/catering-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Современные технологии</p>
-                                    <p class="services__swiper-slide__text-description text1">Мы уделяем особое внимание
-                                        тому, чтобы блюда были сбалансированными, легко усваивались и содержали максимум
-                                        питательных веществ. Сохранить эти свойства нам помогает кулинарная технология
-                                        su-vide, которую мы активно применяем.
-                                    </p>
-                                </div>
-                                <div class="services__swiper-slide__icon organization">
-                                    <img src="./src/images/svg/organization-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/organization-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Опытные повара</p>
-                                    <p class="services__swiper-slide__text-description text1">Наша гордость это
-                                        профессиональные повара, благодаря которым вы ежедневно получаете готовый
-                                        качественный и вкусный продукт
-                                    </p>
-                                </div>
-                                <div class="services__swiper-slide__icon corporate">
-                                    <img src="./src/images/svg/corporate-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/corporate-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Гарантия свежести</p>
-                                    <p class="services__swiper-slide__text-description text1">Мы обеспечиваем контроль
-                                        качества на всех этапах – от приема сырья до готовой продукции. Все блюда и
-                                        выпечка производятся из отборных и натуральных ингредиентов и доставляются в
-                                        день изготовления
-                                    </p>
-                                </div>
-                                <div class="services__swiper-slide__icon barista">
-                                    <img src="./src/images/svg/barista-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/barista-icon-mobile.svg" alt="" class="mobile">
+			<section class="interiors">
+				<div class="container">
+					<p class="interiors__heading heading2">Наши интерьеры</p>
+					<div class="interiors__container">
+						<div class="swiper-container interiors__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors1.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors2.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors3.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+							</div>
+						</div>
+						<div class="interiors__swiper-controllers swiper-controllers">
+							<div class="swiper-prev">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-next">
+								<img
+									src="./src/images/svg/arrow28-right.svg"
+									alt="" />
+							</div>
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Производство полного цикла
-                                    </p>
-                                    <p class="services__swiper-slide__text-description text1">Наша фабрика-кухня
-                                        находится в Москве, на которой располагается полная линейка
-                                        высоко-технологичного оборудования, позволяющего нам производить широкий
-                                        ассортимент кулинарных и кондитерских блюд
-                                    </p>
-                                </div>
-                                <div class="services__swiper-slide__icon catering">
-                                    <img src="./src/images/svg/catering-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/catering-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                            <div class="swiper-slide services__swiper-slide">
-                                <div class="services__swiper-slide__text desktop">
-                                    <p class="services__swiper-slide__text-heading heading4">Современные технологии</p>
-                                    <p class="services__swiper-slide__text-description text1">Мы уделяем особое внимание
-                                        тому, чтобы блюда были сбалансированными, легко усваивались и содержали максимум
-                                        питательных веществ. Сохранить эти свойства нам помогает кулинарная технология
-                                        su-vide, которую мы активно применяем.
-                                    </p>
-                                </div>
-                                <div class="services__swiper-slide__icon organization">
-                                    <img src="./src/images/svg/organization-icon.svg" alt="" class="desktop">
-                                    <img src="./src/images/svg/organization-icon-mobile.svg" alt="" class="mobile">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-controllers desktop">
-                        <div class="swiper-prev services__swiper-prev">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-next services__swiper-next">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-pagination services__swiper-pagination"></div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="interiors">
-            <div class="container">
-                <p class="interiors__heading heading2">Наши интерьеры</p>
-                <div class="interiors__container">
-                    <div class="swiper-container interiors__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide interiors__swiper-slide">
-                                <img src="./src/images/interiors1.png" alt="" class="interiors__swiper-slide__img">
-                            </div>
-                            <div class="swiper-slide interiors__swiper-slide">
-                                <img src="./src/images/interiors2.png" alt="" class="interiors__swiper-slide__img">
-                            </div>
-                            <div class="swiper-slide interiors__swiper-slide">
-                                <img src="./src/images/interiors3.png" alt="" class="interiors__swiper-slide__img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="interiors__swiper-controllers swiper-controllers">
-                        <div class="swiper-prev">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-next">
-                            <img src="./src/images/svg/arrow28-right.svg" alt="">
-                        </div>
-                        <div class="swiper-pagination services__swiper-pagination"></div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="cooperation section light-section">
-            <div class="container">
-                <div class="cooperation__container">
-                    <div class="cooperation__left">
-                        <p class="heading2">Хотите с нами сотрудничать?</p>
-                        <p class="heading4">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время!</p>
-                        <form action="#" class="cooperation__left-form">
-                            <div class="cooperation__left-form__input-container input-container">
-                                <input type="text" id="name" class="input" placeholder="Имя">
-                                <label for="name" class="input-label">Имя</label>
-                                <div class="icon">
-                                    <img src="./src/images/svg/success-validation.svg" alt="" class="success">
-                                </div>
-                                <div class="icon">
-                                    <img src="./src/images/svg/invalid-validation.svg" alt="" class="invalid">
-                                </div>
-                            </div>
-                            <div class="cooperation__left-form__input-container input-container">
-                                <input type="text" id="email" class="input" placeholder="Email">
-                                <label for="email" class="input-label">Email</label>
-                                <div class="icon">
-                                    <img src="./src/images/svg/success-validation.svg" alt="" class="success">
-                                </div>
-                                <div class="icon">
-                                    <img src="./src/images/svg/invalid-validation.svg" alt="" class="invalid">
-                                </div>
-                            </div>
-                        </form>
-                        <button class="cooperation__left-btn square-btn">отправить заявку </button>
-                    </div>
-                    <div class="cooperation__right">
-                        <img src="./src/images/cooperation-img.png" alt="" class="cooperation__right-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
+			<section class="cooperation section light-section">
+				<div class="container">
+					<div class="cooperation__container">
+						<div class="cooperation__left">
+							<p class="heading2">Хотите с нами сотрудничать?</p>
+							<p class="heading4">
+								Оставьте заявку и наш менеджер свяжется с Вами в ближайшее
+								время!
+							</p>
+							<form
+								action="#"
+								class="cooperation__left-form">
+								<div
+									class="cooperation__left-form__input-container input-container">
+									<input
+										type="text"
+										id="name"
+										class="input"
+										placeholder="Имя" />
+									<label
+										for="name"
+										class="input-label">
+										Имя
+									</label>
+									<div class="icon">
+										<img
+											src="./src/images/svg/success-validation.svg"
+											alt=""
+											class="success" />
+									</div>
+									<div class="icon">
+										<img
+											src="./src/images/svg/invalid-validation.svg"
+											alt=""
+											class="invalid" />
+									</div>
+								</div>
+								<div
+									class="cooperation__left-form__input-container input-container">
+									<input
+										type="text"
+										id="email"
+										class="input"
+										placeholder="Email" />
+									<label
+										for="email"
+										class="input-label">
+										Email
+									</label>
+									<div class="icon">
+										<img
+											src="./src/images/svg/success-validation.svg"
+											alt=""
+											class="success" />
+									</div>
+									<div class="icon">
+										<img
+											src="./src/images/svg/invalid-validation.svg"
+											alt=""
+											class="invalid" />
+									</div>
+								</div>
+							</form>
+							<button class="cooperation__left-btn square-btn">
+								отправить заявку
+							</button>
+						</div>
+						<div class="cooperation__right">
+							<img
+								src="./src/images/cooperation-img.png"
+								alt=""
+								class="cooperation__right-img" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
 	<div class="footer__top">
 		<div class="container">
 			<a
@@ -1486,12 +1790,12 @@
 <script
 	src="https://api-maps.yandex.ru/2.1/?apikey=bd3d2e96-cba3-46c0-8f30-c68fa989a9ee&lang=ru_RU"
 	type="text/javascript"></script>
+<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 <script src="./src/js/swiper-bundle.min.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/main.js"></script>
 <script src="./src/js/card-det.js"></script>
 <script src="./src/js/modal.js"></script>
 
-</body>
-
+	</body>
 </html>

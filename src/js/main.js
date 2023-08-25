@@ -64,12 +64,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		tagButtons.forEach((btn) => {
 			btn.addEventListener('click', function () {
 				tagButtons.forEach((el) => el.classList.remove('active'));
-				tagBlocks.forEach((el) => el.classList.remove('active'));
+				tagBlocks.forEach((el) => {
+					el.classList.remove('active');
+					el.classList.add('hide');
+				});
 				btn.classList.add('active');
 				const path = btn.dataset.path;
 				tagBlocks.forEach((block) => {
 					if (block.dataset.target === path) {
 						block.classList.add('active');
+						block.classList.remove('hide');
 					}
 				});
 			});
@@ -260,3 +264,19 @@ if (searchBtn && searchCloseBtn) {
 		headerList.classList.toggle(activeClass);
 	});
 }
+
+//обработка переключания активной карточки/блока в about.html
+// const tegBtns = document.querySelectorAll('.section-tags__item-btn');
+// const tegBlocks = document.querySelectorAll(
+// 	'.about-info__card.section-info__card',
+// );
+
+// if (tegBtns && tegBlocks) {
+// 	tegBtns.forEach((item, ID) => {
+// 		item.addEventListener('click', () => {
+// 			tegBlocks.forEach((item) => {
+// 				item.classList.remove('hide');
+// 			});
+// 		});
+// 	});
+// }

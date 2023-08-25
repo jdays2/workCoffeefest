@@ -751,15 +751,29 @@ $white20: rgba(255, 255, 255, 0.2);
 .section-tags {
 	display: flex;
 	gap: 5rem;
+	align-items: center;
+	height: 3.6rem;
 
 	&__item {
 		&-btn {
 			font-size: 2rem;
 			line-height: 1.25;
 			color: $darkBlue;
+			height: 3.6rem;
+			display: flex;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			align-items: center;
+			transition: 0.2s ease-in-out;
 
 			&.active {
+				color: #29354d;
+				font-family: Circe;
+				font-size: 3rem;
+				font-style: normal;
 				font-weight: 700;
+				line-height: 120%; /* 36px */
 			}
 		}
 	}
@@ -1060,15 +1074,15 @@ $white20: rgba(255, 255, 255, 0.2);
 			transform: rotate(-180deg);
 			padding-left: 3rem;
 			svg {
-				width: 2.8rem;
+				width: 3.2rem;
 				height: 1.1rem;
 			}
 		}
 
-		&-right { 
+		&-right {
 			padding-left: 3rem;
 			svg {
-				width: 2.8rem;
+				width: 3.2rem;
 				height: 1.1rem;
 			}
 		}
@@ -1429,6 +1443,13 @@ $white20: rgba(255, 255, 255, 0.2);
 	background: url(../images/svg/section-info-ornament.svg) top left/cover
 			no-repeat,
 		$darkBlue;
+	&.hide {
+		display: none;
+	}
+
+	&.active {
+		display: flex !important;
+	}
 	&--big-right-part {
 		padding: 0;
 		.section-info__card-left {
@@ -1443,6 +1464,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			width: 100%;
 			height: 100%;
 			border-radius: 0rem 0px 5rem 0rem;
+			position: relative;
 
 			img {
 				-o-object-fit: cover;
@@ -1496,6 +1518,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			height: 100%;
 			overflow: hidden;
 			border-radius: 0 0 5rem 5rem;
+			position: relative;
 
 			img {
 				width: 100%;

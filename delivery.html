@@ -1,198 +1,271 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Доставка и оплата</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/fonts/fonts.css">
-    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <title>Доставка и оплата</title>
-</head>
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="main-banner">
+				<div class="main-banner__swiper-slide">
+					<img
+						src="./src/images/delivery-banner.png"
+						alt=""
+						class="main-banner__swiper-slide__img" />
+				</div>
+			</section>
 
-<body>
-    @@include('./templates/header.html')
-    <main>
-        <section class="news-banner">
-            <img src="./src/images/delivery-img1.png" alt="" class="news-banner__img">
-<<<<<<< HEAD
-=======
-            <img src="./src/images/svg/news-ornament.svg" alt="" class="news-banner__bg">
+			<section class="delivery-main section">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg
+									width="28"
+									height="28"
+									viewBox="0 0 28 28"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-linecap="round" />
+								</svg>
+							</a>
+						</li>
 
-            <div class="container">
-                <p class="news-banner__heading">CofeFest уже 5 лет доставляет продукцию </p>
-                <p class="news-banner__subheading">для кофеен, ресторанов, офисов и наших гостей по Москве и России</p>
-            </div>
->>>>>>> c38f3e1 (feat: update from main remote)
-        </section>
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/delivery.html"
+								class="breadcrumbs__item-link">
+								Доставка и оплата
+							</a>
+						</li>
+					</ul>
 
-        <section class="delivery-main section">
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/main.html" class="breadcrumbs__item-link">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-                                    stroke="#29354D" stroke-width="1.5" stroke-linecap="round" />
-                            </svg>
-                        </a>
-                    </li>
+					<p class="delivery-main__heading heading2">Доставка и оплата</p>
+					<p class="delivery-main__notice text1">
+						Принимаем заказы с 12:00 до 22:00 Москва в пределах МКАД
+					</p>
 
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/delivery.html" class="breadcrumbs__item-link">Доставка и оплата</a>
-                    </li>
-                </ul>
+					<div class="section-tags__container">
+						<ul class="section-tags">
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn active"
+									data-path="delivery">
+									Способы доставки
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn"
+									data-path="pay">
+									Способы оплаты
+								</button>
+							</li>
+						</ul>
+					</div>
 
-                <p class="delivery-main__heading heading2">Доставка и оплата</p>
-                <p class="delivery-main__notice text1">Принимаем заказы с 12:00 до 22:00 Москва в пределах МКАД</p>
+					<div
+						class="delivery-main__accordion accordion active"
+						data-target="delivery">
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">Самовывоз из кофеен в Москве</p>
+								<img
+									src="./src/images/svg/blue-arrow-up.svg"
+									alt=""
+									class="arrow" />
+							</div>
+							<div class="acc-content"></div>
+						</div>
 
-                <div class="section-tags__container">
-                    <ul class="section-tags">
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn active" data-path="delivery">Способы доставки</button>
-                        </li>
-                        <li class="section-tags__item">
-                            <button class="section-tags__item-btn" data-path="pay">Способы оплаты</button>
-                        </li>
-                    </ul>
-                </div>
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">Курьерская доставка</p>
+								<img
+									src="./src/images/svg/blue-arrow-up.svg"
+									alt=""
+									class="arrow" />
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>
+										Заказ будет доставлен по указанному адресу после
+										предварительного звонка оператора.
+									</p>
+									<p>
+										Мы осуществляем курьерскую доставку по России. Стоимость
+										будет рассчитана автоматически при оформлении заказа в
+										корзине (при стоимости заказа от 1500 рублей доставка по
+										Москве бесплатная)
+									</p>
+								</div>
+							</div>
+						</div>
 
-                <div class="delivery-main__accordion accordion active" data-target="delivery">
-                    <div class="acc-item">
-                        <div class="acc-head">
-                            <p class="heading4">Самовывоз из кофеен в Москве</p>
-                            <img src="./src/images/svg/blue-arrow-up.svg" alt="" class="arrow">
-                        </div>
-                        <div class="acc-content"></div>
-                    </div>
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">Сроки курьерской доставки</p>
+								<img
+									src="./src/images/svg/blue-arrow-up.svg"
+									alt=""
+									class="arrow" />
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>
+										Заказ будет доставлен по указанному адресу после
+										предварительного звонка оператора.
+									</p>
+								</div>
+							</div>
+						</div>
 
-                    <div class="acc-item">
-                        <div class="acc-head">
-                            <p class="heading4">Курьерская доставка</p>
-                            <img src="./src/images/svg/blue-arrow-up.svg" alt="" class="arrow">
-                        </div>
-                        <div class="acc-content menu">
-                            <div class="content">
-                                <p>Заказ будет доставлен по указанному адресу после предварительного звонка
-                                    оператора.
-                                </p>
-                                <p> Мы осуществляем курьерскую доставку по России. Стоимость будет рассчитана
-                                    автоматически
-                                    при оформлении заказа в корзине
-                                    (при стоимости заказа от 1500 рублей доставка по Москве бесплатная)</p>
-                            </div>
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">Самовывоз из ПВЗ в России и СНГ</p>
+								<img
+									src="./src/images/svg/blue-arrow-up.svg"
+									alt=""
+									class="arrow" />
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>
+										Вы можете получить заказ в ПВЗ транспортной компании в любом
+										регионе России и странах СНГ
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                        </div>
-                    </div>
+					<div
+						class="delivery-main__accordion accordion"
+						data-target="pay">
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">Наличными или картой курьеру</p>
+								<img
+									src="./src/images/svg/blue-arrow-up.svg"
+									alt=""
+									class="arrow" />
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p class="heading">
+										Заказ будет доставлен по указанному адресу после
+										предварительного звонка оператора.
+									</p>
+									<p class="text">
+										Если Вам потребуется сдача, скажите об этом оператору при
+										оформлении заказа.
+									</p>
+									<p class="text">
+										Чаевые курьеру приветствуются, но остаются исключительно на
+										Ваше усмотрение.
+									</p>
+									<p class="text">
+										При получении заказа, оплатите его в соответствии с чеком,
+										затем примите заказ, проверьте комплектность и только
+										убедившись что все в порядке, отпускайте курьера.
+									</p>
+								</div>
+							</div>
+						</div>
 
-                    <div class="acc-item">
-                        <div class="acc-head">
-                            <p class="heading4">Сроки курьерской доставки</p>
-                            <img src="./src/images/svg/blue-arrow-up.svg" alt="" class="arrow">
-                        </div>
-                        <div class="acc-content menu">
-                            <div class="content">
-                                <p>Заказ будет доставлен по указанному адресу после предварительного звонка
-                                    оператора.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">Банковской картой онлайн</p>
+								<img
+									src="./src/images/svg/blue-arrow-up.svg"
+									alt=""
+									class="arrow" />
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<ul class="pay-ways">
+										<li class="pay-ways__item">
+											<img
+												src="./src/images/svg/mir.svg"
+												alt=""
+												class="pay-ways__item-img" />
+										</li>
+										<li class="pay-ways__item">
+											<img
+												src="./src/images/svg/sbp.svg"
+												alt=""
+												class="pay-ways__item-img" />
+										</li>
+										<li class="pay-ways__item">
+											<img
+												src="./src/images/svg/visa-pay.svg"
+												alt=""
+												class="pay-ways__item-img" />
+										</li>
+										<li class="pay-ways__item">
+											<img
+												src="./src/images/svg/mastercard.svg"
+												alt=""
+												class="pay-ways__item-img" />
+										</li>
+										<li class="pay-ways__item">
+											<img
+												src="./src/images/svg/maestro.svg"
+												alt=""
+												class="pay-ways__item-img" />
+										</li>
+										<li class="pay-ways__item">
+											<img
+												src="./src/images/svg/sberpay.svg"
+												alt=""
+												class="pay-ways__item-img" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 
-                    <div class="acc-item">
-                        <div class="acc-head">
-                            <p class="heading4">Самовывоз из ПВЗ в России и СНГ</p>
-                            <img src="./src/images/svg/blue-arrow-up.svg" alt="" class="arrow">
-                        </div>
-                        <div class="acc-content menu">
-                            <div class="content">
-                                <p>Вы можете получить заказ в ПВЗ транспортной компании в любом регионе России и
-                                    странах
-                                    СНГ
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="delivery-main__accordion accordion" data-target="pay">
-
-                    <div class="acc-item">
-                        <div class="acc-head">
-                            <p class="heading4">Наличными или картой курьеру</p>
-                            <img src="./src/images/svg/blue-arrow-up.svg" alt="" class="arrow">
-                        </div>
-                        <div class="acc-content menu">
-                            <div class="content">
-                                <p class="heading">Заказ будет доставлен по указанному адресу после предварительного
-                                    звонка оператора.
-                                </p>
-                                <p class="text">Если Вам потребуется сдача, скажите об этом оператору при оформлении
-                                    заказа. </p>
-                                <p class="text"> Чаевые курьеру приветствуются, но остаются исключительно на Ваше
-                                    усмотрение.</p>
-                                <p class="text"> При получении заказа, оплатите его в соответствии с чеком, затем
-                                    примите заказ,
-                                    проверьте комплектность и только убедившись что все в порядке, отпускайте
-                                    курьера.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="acc-item">
-                        <div class="acc-head">
-                            <p class="heading4">Банковской картой онлайн</p>
-                            <img src="./src/images/svg/blue-arrow-up.svg" alt="" class="arrow">
-                        </div>
-                        <div class="acc-content menu">
-                            <div class="content">
-                                <ul class="pay-ways">
-                                    <li class="pay-ways__item">
-                                        <img src="./src/images/svg/mir.svg" alt="" class="pay-ways__item-img">
-                                    </li>
-                                    <li class="pay-ways__item">
-                                        <img src="./src/images/svg/sbp.svg" alt="" class="pay-ways__item-img">
-                                    </li>
-                                    <li class="pay-ways__item">
-                                        <img src="./src/images/svg/visa-pay.svg" alt="" class="pay-ways__item-img">
-                                    </li>
-                                    <li class="pay-ways__item">
-                                        <img src="./src/images/svg/mastercard.svg" alt="" class="pay-ways__item-img">
-                                    </li>
-                                    <li class="pay-ways__item">
-                                        <img src="./src/images/svg/maestro.svg" alt="" class="pay-ways__item-img">
-                                    </li>
-                                    <li class="pay-ways__item">
-                                        <img src="./src/images/svg/sberpay.svg" alt="" class="pay-ways__item-img">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="acc-item">
-                        <div class="acc-head">
-                            <p class="heading4">Наличными или картой при самовывозе</p>
-                            <img src="./src/images/svg/blue-arrow-up.svg" alt="" class="arrow">
-                        </div>
-                        <div class="acc-content menu">
-                            <div class="content">
-                                <p>При получении заказа в магазине оплатите его наличными или банковской картой
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-    </main>
-    @@include('./templates/footer.html')
-</body>
-
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">Наличными или картой при самовывозе</p>
+								<img
+									src="./src/images/svg/blue-arrow-up.svg"
+									alt=""
+									class="arrow" />
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>
+										При получении заказа в магазине оплатите его наличными или
+										банковской картой
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
 </html>

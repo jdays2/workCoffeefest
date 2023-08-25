@@ -14,6 +14,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+			<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
 		<title>Карьера</title>
 	</head>
 
@@ -272,15 +275,18 @@
 </header>
 
 		<main>
-			<section class="carrer-banner">
-				<img
-					src="./src/images/carrer-banner.png"
-					alt=""
-					class="carrer-banner__img" />
-				<div class="container">
-					<button class="stroke-btn light-btn carrer-banner__btn">
-						Заполнить анкету
-					</button>
+			<section class="main-banner">
+				<div class="main-banner__swiper-slide">
+					<img
+						src="./src/images/career-baner.png"
+						alt=""
+						class="main-banner__swiper-slide__img" />
+				
+					<a
+						href=""
+						class="banner-btns banner-btns--biege banner-btns--bottom">
+						<span>Заполнить анкету</span>
+					</a>
 				</div>
 			</section>
 
@@ -433,30 +439,17 @@
 
 			<section class="video">
 				<div class="container">
-					<div class="video__content">
-						<img
-							src="./src/images/video.png"
-							alt=""
-							class="video__content-item" />
-						<button class="video__content-btn play-btn">
-							<svg
-								width="88"
-								height="88"
-								viewBox="0 0 88 88"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<circle
-									cx="43.5"
-									cy="43.5"
-									r="42.5"
-									stroke="#F1DED0"
-									stroke-width="2" />
-								<path
-									d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-									fill="#F1DED0" />
-							</svg>
-						</button>
-					</div>
+					<video
+						id="my-video"
+						class="video-js"
+						controls
+						preload="true"
+						poster="./src/images/sample-for-video.png"
+						data-setup="{}">
+						<source
+							src="./src/images/sample/sample.mp4"
+							type="video/mp4" />
+					</video>
 				</div>
 			</section>
 
@@ -1419,6 +1412,7 @@
 <script
 	src="https://api-maps.yandex.ru/2.1/?apikey=bd3d2e96-cba3-46c0-8f30-c68fa989a9ee&lang=ru_RU"
 	type="text/javascript"></script>
+<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 <script src="./src/js/swiper-bundle.min.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/main.js"></script>

@@ -1,0 +1,89 @@
+.banner-btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2.4rem 3.6rem;
+	position: absolute;
+	height: 7.1rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	gap: 2rem;
+	transition: 0.25s ease-in-out;
+
+	span {
+		font-family: Circe;
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 700;
+		letter-spacing: 0.09rem;
+		text-transform: uppercase;
+		transition: 0.2s ease-in-out;
+	}
+
+	&:hover {
+		@media (hover: hover) {
+			border: 0.2rem solid #fff9ee;
+			background-color: #fff9ee;
+			span {
+				color: $darkBlue;
+			}
+
+			path {
+				fill: $darkBlue;
+			}
+		}
+	}
+
+	&__icon {
+		svg {
+			width: 3.1rem;
+			height: 1.3rem;
+		}
+	}
+
+	&--top {
+		top: 27.4rem;
+		transform: translateX(-50%);
+	}
+
+	&--bottom {
+		top: auto;
+		bottom: 25.8rem;
+		transform: translateX(-50%);
+	}
+
+	&--light {
+		border: 0.2rem solid #f5f5f5;
+		background: rgba(35, 41, 62, 0.3);
+
+		span {
+			color: #f5f5f5;
+		}
+	}
+
+	&--biege {
+		border: 0.2rem solid $biege;
+		background: rgba(230, 176, 154, 0.2);
+		span {
+			color: $biege;
+		}
+	}
+
+	&--blue {
+		border: 0.2rem solid $darkBlue;
+		background: rgba(230, 176, 154, 0.2);
+		span {
+			color: $darkBlue;
+		}
+	}
+
+	&--red {
+		border: 0.2rem solid $red;
+		background: rgba(230, 176, 154, 0.2);
+		span {
+			color: $red;
+		}
+	}
+}

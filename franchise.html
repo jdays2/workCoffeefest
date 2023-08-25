@@ -14,6 +14,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+			<link
+						href="https://vjs.zencdn.net/8.5.2/video-js.css"
+						rel="stylesheet" />
 		<title>Франшиза</title>
 	</head>
 
@@ -21,11 +24,19 @@
 		@@include('./templates/header.html')
 
 		<main>
-			<section class="about-hero">
-				<img
-					src="./src/images/franchise-banner.png"
-					alt=""
-					class="about-hero__img" />
+			<section class="main-banner">
+				<div class="main-banner__swiper-slide">
+					<img
+						src="./src/images/franchise-banner.png"
+						alt=""
+						class="main-banner__swiper-slide__img" />
+				
+					<a
+						href=""
+						class="banner-btns banner-btns--biege">
+						<span>подробнее</span>
+					</a>
+				</div>
 			</section>
 
 			<section class="about-info section">

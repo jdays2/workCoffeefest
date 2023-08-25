@@ -276,12 +276,16 @@
 </header>
 
 		<main>
-			<section class="about-hero">
+			<section class="main-banner">
 				<img
-					src="./src/images/about-hero.png"
+					src="./src/images/about-banner.png"
 					alt=""
-					class="about-hero__img" />
-				<div class="container"></div>
+					class="main-banner__swiper-slide__img" />
+				<a
+					href=""
+					class="banner-btns banner-btns--biege">
+					<span>Каталог</span>
+				</a>
 			</section>
 
 			<section class="about-info section">
@@ -306,7 +310,9 @@
 							</a>
 						</li>
 
-						<li class="breadcrumbs__item">
+						<li
+							class="breadcrumbs__item"
+							data-path="about">
 							<a
 								href="/dist/about.html"
 								class="breadcrumbs__item-link">
@@ -317,7 +323,7 @@
 
 					<div class="section-tags__container">
 						<ul class="section-tags">
-							<li class="section-tags__item">
+							<li class="section-tags__item active">
 								<button
 									class="section-tags__item-btn active"
 									data-path="about">
@@ -332,20 +338,32 @@
 								</button>
 							</li>
 							<li class="section-tags__item">
-								<button class="section-tags__item-btn">
+								<button
+									class="section-tags__item-btn"
+									data-path="projects">
 									Интерьеры проектов
 								</button>
 							</li>
 							<li class="section-tags__item">
-								<button class="section-tags__item-btn">
+								<button
+									class="section-tags__item-btn"
+									data-path="b2b">
 									B2B и партнерство
 								</button>
 							</li>
 							<li class="section-tags__item">
-								<button class="section-tags__item-btn">Арендодателям</button>
+								<button
+									class="section-tags__item-btn"
+									data-path="rent">
+									Арендодателям
+								</button>
 							</li>
 							<li class="section-tags__item">
-								<button class="section-tags__item-btn">Команда</button>
+								<button
+									class="section-tags__item-btn"
+									data-path="team">
+									Команда
+								</button>
 							</li>
 						</ul>
 					</div>
@@ -383,7 +401,7 @@
 									src="./src/images/about-info-img.png"
 									alt="" />
 							</div>
-							<div class="section-info__card-right__video">
+							<div class="section-info__card-right__img">
 								<img
 									src="./src/images/team-img2.png"
 									alt="" />
@@ -410,69 +428,249 @@
 					</div>
 
 					<div
-						class="about-info__card section-info__card"
+						class="about-info__card section-info__card hide"
 						data-target="production">
 						<div class="section-info__card-left">
 							<p class="section-info__card-left__heading heading2">
-								Наше производство
+								CofeFest в цифрах
 							</p>
 							<p class="section-info__card-left__subheading heading4">
-								С кофе нас связывает не только многолетняя любовь, но и
-								профессиональная симпатия, которая впервые возникла в 2016 году
-								в деловых кварталах Лондона…
+								мы выросли до 90 уютных кафе разного формата, c посадочными
+								местами и с едой на вынос
 							</p>
 							<div class="section-info__card-left__description menu">
 								<p>
-									Тогда, очаровавшись стильными кафетериями в районе Сити, у нас
-									родилась идея создать похожую сеть заведений формата fast
-									casual в Москве. Сейчас у нас более 130 заведений разного
-									формата – от кофеен в бизнес-центрах, городских больницах и
-									поликлиниках до полноценных городских кафе.
+									Чтобы поддерживать стабильное качество и натуральность нашего
+									продукта по доступным ценам, будь то обеды, завтраки или
+									сладости к кофе, мы создали в 2019 году собственное
+									производство полного цикла, с современным технологичным
+									оборудованием и соблюдением всех последних стандартов
+									безопасности.
 								</p>
 								<p>
-									В каждом из наших заведений – натуральная свежая еда и вкусный
-									кофе по демократичным ценам, а также наша авторская коллекция
-									кофе на 100% натуральных сиропах, уникальные рецепты для
-									которой собраны с разных уголков мира!
+									Оформление элементов бренда и интерьеров в стиле ар-деко
+									1920-х, гармонично вписывается в деловые аллеи стильных бизнес
+									центров.
 								</p>
+								<button class="square-btn">оставить заявку</button>
 							</div>
+
+							<a
+								href="#"
+								class="main-about__banner-link light-square-btn main-about__banner-link--margin-color">
+								Подробнее
+							</a>
 						</div>
 
 						<div class="section-info__card-right">
 							<div class="section-info__card-right__img">
 								<img
-									src="./src/images/about-info-img.png"
+									src="./src/images/team-img2-normal.png"
 									alt="" />
 							</div>
-							<div class="section-info__card-right__video">
+							<div class="section-info__card-right__img">
 								<img
-									src="./src/images/team-img2.png"
+									src="./src/images/team5.png"
 									alt="" />
-								<button class="play-btn">
-									<svg
-										width="88"
-										height="88"
-										viewBox="0 0 88 88"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<circle
-											cx="43.5"
-											cy="43.5"
-											r="42.5"
-											stroke="#F1DED0"
-											stroke-width="2" />
-										<path
-											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-											fill="#F1DED0" />
-									</svg>
-								</button>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="about-info__card section-info__card hide"
+						data-target="projects">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">
+								Производство
+							</p>
+							<p class="section-info__card-left__subheading heading4">
+								мы выросли до 90 уютных кафе разного формата, c посадочными
+								местами и с едой на вынос
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									Чтобы поддерживать стабильное качество и натуральность нашего
+									продукта по доступным ценам, будь то обеды, завтраки или
+									сладости к кофе, мы создали в 2019 году собственное
+									производство полного цикла, с современным технологичным
+									оборудованием и соблюдением всех последних стандартов
+									безопасности.
+								</p>
+								<p>
+									Оформление элементов бренда и интерьеров в стиле ар-деко
+									1920-х, гармонично вписывается в деловые аллеи стильных бизнес
+									центров.
+								</p>
+								<button class="square-btn">оставить заявку</button>
+							</div>
+
+							<a
+								href="#"
+								class="main-about__banner-link light-square-btn main-about__banner-link--margin-color">
+								Подробнее
+							</a>
+						</div>
+
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team-img2-normal.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team5.png"
+									alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="about-info__card section-info__card hide"
+						data-target="b2b">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">Интерьеры</p>
+							<p class="section-info__card-left__subheading heading4">
+								мы выросли до 90 уютных кафе разного формата, c посадочными
+								местами и с едой на вынос
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									Чтобы поддерживать стабильное качество и натуральность нашего
+									продукта по доступным ценам, будь то обеды, завтраки или
+									сладости к кофе, мы создали в 2019 году собственное
+									производство полного цикла, с современным технологичным
+									оборудованием и соблюдением всех последних стандартов
+									безопасности.
+								</p>
+								<p>
+									Оформление элементов бренда и интерьеров в стиле ар-деко
+									1920-х, гармонично вписывается в деловые аллеи стильных бизнес
+									центров.
+								</p>
+								<button class="square-btn">оставить заявку</button>
+							</div>
+
+							<a
+								href="#"
+								class="main-about__banner-link light-square-btn main-about__banner-link--margin-color">
+								Подробнее
+							</a>
+						</div>
+
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team-img2-normal.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team5.png"
+									alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="about-info__card section-info__card hide"
+						data-target="rent">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">Команда</p>
+							<p class="section-info__card-left__subheading heading4">
+								мы выросли до 90 уютных кафе разного формата, c посадочными
+								местами и с едой на вынос
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									Чтобы поддерживать стабильное качество и натуральность нашего
+									продукта по доступным ценам, будь то обеды, завтраки или
+									сладости к кофе, мы создали в 2019 году собственное
+									производство полного цикла, с современным технологичным
+									оборудованием и соблюдением всех последних стандартов
+									безопасности.
+								</p>
+								<p>
+									Оформление элементов бренда и интерьеров в стиле ар-деко
+									1920-х, гармонично вписывается в деловые аллеи стильных бизнес
+									центров.
+								</p>
+								<button class="square-btn">оставить заявку</button>
+							</div>
+
+							<a
+								href="#"
+								class="main-about__banner-link light-square-btn main-about__banner-link--margin-color">
+								Подробнее
+							</a>
+						</div>
+
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team-img2-normal.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team5.png"
+									alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="about-info__card section-info__card hide"
+						data-target="team">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">
+								Командаfff
+							</p>
+							<p class="section-info__card-left__subheading heading4">
+								мы выросли до 90 уютных кафе разного формата, c посадочными
+								местами и с едой на вынос
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									Чтобы поддерживать стабильное качество и натуральность нашего
+									продукта по доступным ценам, будь то обеды, завтраки или
+									сладости к кофе, мы создали в 2019 году собственное
+									производство полного цикла, с современным технологичным
+									оборудованием и соблюдением всех последних стандартов
+									безопасности.
+								</p>
+								<p>
+									Оформление элементов бренда и интерьеров в стиле ар-деко
+									1920-х, гармонично вписывается в деловые аллеи стильных бизнес
+									центров.
+								</p>
+								<button class="square-btn">оставить заявку</button>
+							</div>
+
+							<a
+								href="#"
+								class="main-about__banner-link light-square-btn main-about__banner-link--margin-color">
+								Подробнее
+							</a>
+						</div>
+
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team-img2-normal.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/team5.png"
+									alt="" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="chronology section">
+			<!-- <section class="chronology section">
 				<div class="container">
 					<div class="chronology__container">
 						<div class="chronology__borders">
@@ -550,7 +748,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="about-numbers section light-section">
 				<div class="container">
@@ -890,8 +1088,7 @@
 				</div>
 			</section>
 		</main>
-		<script src="./src/js/video.js"></script>
-		<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+
 		<footer class="footer">
 	<div class="footer__top">
 		<div class="container">
@@ -1635,6 +1832,7 @@
 <script
 	src="https://api-maps.yandex.ru/2.1/?apikey=bd3d2e96-cba3-46c0-8f30-c68fa989a9ee&lang=ru_RU"
 	type="text/javascript"></script>
+<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 <script src="./src/js/swiper-bundle.min.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/main.js"></script>
