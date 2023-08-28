@@ -291,6 +291,7 @@
 		padding-right: 0.8rem;
 		padding-top: 0.2rem;
 		padding-bottom: 0.2rem;
+		scrollbar-width: thin;
 
 		&::-webkit-scrollbar {
 			width: 0.4rem;
@@ -307,7 +308,6 @@
 			background-color: #555; /* Цвет ползунка при наведении */
 		}
 
-		/* Стилизация трека (бара, по которому передвигается ползунок) */
 		&::-webkit-scrollbar-track {
 			background-color: #fff9ee; /* Цвет трека скроллбара */
 		}
@@ -315,7 +315,6 @@
 		&::-webkit-scrollbar-track:hover {
 			background-color: #ddd; /* Цвет трека при наведении */
 		}
-		scrollbar-width: thin; /* Ширина скроллбара */
 
 		&::-webkit-scrollbar {
 			width: 0.4rem; /* Ширина скроллбара для Firefox */
