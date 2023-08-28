@@ -1,217 +1,370 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Новости</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/fonts/fonts.css">
-    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <title>Новости</title>
-</head>
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="main-banner">
+				<div
+					class="main-banner__swiper-slide"
+					>
+					<img
+						src="./src/images/news-banner.png"
+						alt=""
+						class="main-banner__swiper-slide__img" />
+					<a
+						href=""
+						class="banner-btns banner-btns--biege">
+						<span>Зарегестрироваться</span>
+					</a>
+				</div>
+			</section>
 
-<body>
-    @@include('./templates/header.html')
-    <main>
-        <section class="news-banner">
-            <img src="./src/images/news-banner.png" alt="" class="news-banner__img">
-            <img src="./src/images/svg/news-ornament.svg" alt="" class="news-banner__bg">
+			<section class="news-main">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg
+									width="28"
+									height="28"
+									viewBox="0 0 28 28"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-linecap="round" />
+								</svg>
+							</a>
+						</li>
 
-            <div class="container">
-                <p class="news-banner__heading">Регистрируйся в программе лояльности </p>
-                <p class="news-banner__subheading">и получай 100 баллов на свой счёт карты</p>
-                <button class="biege-btn news-banner__btn">Зарегистрироваться</button>
-            </div>
-        </section>
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/news.html"
+								class="breadcrumbs__item-link">
+								Новости
+							</a>
+						</li>
+					</ul>
 
-        <section class="news-main">
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/main.html" class="breadcrumbs__item-link">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-                                    stroke="#29354D" stroke-width="1.5" stroke-linecap="round" />
-                            </svg>
-                        </a>
-                    </li>
+					<p class="news-main__heading heading2">Последние новости</p>
 
-                    <li class="breadcrumbs__item">
-                        <a href="/dist/news.html" class="breadcrumbs__item-link">Новости</a>
-                    </li>
-                </ul>
+					<div class="settings-bar">
+						<div class="filter__tag-list">
+							<button
+								class="tag-btn"
+								id="filter-1">
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M22 18H15"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M5 18H2"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M22 7H19"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M9 7H2"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M7 15H13C14.1 15 15 15.5 15 17V19C15 20.5 14.1 21 13 21H7C5.9 21 5 20.5 5 19V17C5 15.5 5.9 15 7 15Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M11 4H17C18.1 4 19 4.5 19 6V8C19 9.5 18.1 10 17 10H11C9.9 10 9 9.5 9 8V6C9 4.5 9.9 4 11 4Z"
+										stroke="#29354D"
+										stroke-width="1.5"
+										stroke-miterlimit="10"
+										stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								<span>Фильтры</span>
+							</button>
 
-                <p class="news-main__heading heading2">Последние новости</p>
+							<button class="tag-btn tag-btn--borderless">
+								<span>Новости кофе</span>
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g
+										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+										<path
+											id="Vector"
+											d="M3 4L21 22M21 4L3 22"
+											stroke="#29354D"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
 
-                <div class="news-main__tags">
-                    <button class="news-main__filters tag-btn">
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 18H15" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M5 18H2" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M22 7H19" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 7H2" stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M7 15H13C14.1 15 15 15.5 15 17V19C15 20.5 14.1 21 13 21H7C5.9 21 5 20.5 5 19V17C5 15.5 5.9 15 7 15Z"
-                                stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M11 4H17C18.1 4 19 4.5 19 6V8C19 9.5 18.1 10 17 10H11C9.9 10 9 9.5 9 8V6C9 4.5 9.9 4 11 4Z"
-                                stroke="#29354D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <span>Фильтры</span>
-                    </button>
+							<button class="tag-btn tag-btn--borderless">
+								<span>Новости кофеен</span>
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g
+										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+										<path
+											id="Vector"
+											d="M3 4L21 22M21 4L3 22"
+											stroke="#29354D"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
 
-                    <button class="news-main__tags-btn tag-btn">
-                        <span>Новости кофе</span>
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-                                <path id="Vector" d="M3 4L21 22M21 4L3 22" stroke="#29354D" stroke-width="2"
-                                    stroke-linecap="round" />
-                            </g>
-                        </svg>
-                    </button>
+							<button class="tag-btn tag-btn--borderless">
+								<span>События</span>
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g
+										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
+										<path
+											id="Vector"
+											d="M3 4L21 22M21 4L3 22"
+											stroke="#29354D"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</g>
+								</svg>
+							</button>
+						</div>
+					</div>
 
-                    <button class="news-main__tags-btn tag-btn">
-                        <span>Новости кофеен</span>
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-                                <path id="Vector" d="M3 4L21 22M21 4L3 22" stroke="#29354D" stroke-width="2"
-                                    stroke-linecap="round" />
-                            </g>
-                        </svg>
-                    </button>
+					<div class="news-main__list">
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
 
-                    <button class="news-main__tags-btn tag-btn">
-                        <span>События</span>
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-                                <path id="Vector" d="M3 4L21 22M21 4L3 22" stroke="#29354D" stroke-width="2"
-                                    stroke-linecap="round" />
-                            </g>
-                        </svg>
-                    </button>
-                </div>
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
 
-                <div class="news-main__list">
-                    <div class="news-main__item">
-                        <img src="./src/images/news-img1.png" alt="" class="news-main__item-img">
-                        <div class="news-main__item-text">
-                            <p class="news-main__item-heading heading4">Ежедневные загрузки</p>
-                            <p class="news-main__item-description menu">Наше производство и офис возвращаются к
-                                привычному
-                                графику
-                                и ежедневным отгрузкам. Наше
-                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.Наше
-                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.</p>
-                            <div class="news-main__item-bottom">
-                                <p class="news-main__item-date btns-caps">01.12.23</p>
-                                <a href="#" class="news-main__item-name btns-caps">НОВОСТИ КОФЕ</a>
-                            </div>
-                        </div>
-                    </div>
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
 
-                    <div class="news-main__item">
-                        <img src="./src/images/news-img2.png" alt="" class="news-main__item-img">
-                        <div class="news-main__item-text">
-                            <p class="news-main__item-heading heading4">НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!</p>
-                            <p class="news-main__item-description menu">Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам. Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам.Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам.</p>
-                            <div class="news-main__item-bottom">
-                                <p class="news-main__item-date btns-caps">01.12.23</p>
-                                <a href="#" class="news-main__item-name btns-caps">НОВОСТИ КОФЕ</a>
-                            </div>
-                        </div>
-                    </div>
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
 
-                    <div class="news-main__item">
-                        <img src="./src/images/news-img1.png" alt="" class="news-main__item-img">
-                        <div class="news-main__item-text">
-                            <p class="news-main__item-heading heading4">Ежедневные загрузки</p>
-                            <p class="news-main__item-description menu">Наше производство и офис возвращаются к
-                                привычному
-                                графику
-                                и ежедневным отгрузкам. Наше
-                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.Наше
-                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.</p>
-                            <div class="news-main__item-bottom">
-                                <p class="news-main__item-date btns-caps">01.12.23</p>
-                                <a href="#" class="news-main__item-name btns-caps">НОВОСТИ КОФЕ</a>
-                            </div>
-                        </div>
-                    </div>
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
 
-                    <div class="news-main__item">
-                        <img src="./src/images/news-img2.png" alt="" class="news-main__item-img">
-                        <div class="news-main__item-text">
-                            <p class="news-main__item-heading heading4">НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!</p>
-                            <p class="news-main__item-description menu">Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам. Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам.Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам.</p>
-                            <div class="news-main__item-bottom">
-                                <p class="news-main__item-date btns-caps">01.12.23</p>
-                                <a href="#" class="news-main__item-name btns-caps">НОВОСТИ КОФЕ</a>
-                            </div>
-                        </div>
-                    </div>
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <div class="news-main__item">
-                        <img src="./src/images/news-img1.png" alt="" class="news-main__item-img">
-                        <div class="news-main__item-text">
-                            <p class="news-main__item-heading heading4">Ежедневные загрузки</p>
-                            <p class="news-main__item-description menu">Наше производство и офис возвращаются к
-                                привычному
-                                графику
-                                и ежедневным отгрузкам. Наше
-                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.Наше
-                                производство и офис возвращаются к привычному графику и ежедневным отгрузкам.</p>
-                            <div class="news-main__item-bottom">
-                                <p class="news-main__item-date btns-caps">01.12.23</p>
-                                <a href="#" class="news-main__item-name btns-caps">НОВОСТИ КОФЕ</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="news-main__item">
-                        <img src="./src/images/news-img2.png" alt="" class="news-main__item-img">
-                        <div class="news-main__item-text">
-                            <p class="news-main__item-heading heading4">НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!</p>
-                            <p class="news-main__item-description menu">Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам. Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам.Наше производство и офис возвращаются к
-                                привычному графику и ежедневным отгрузкам.</p>
-                            <div class="news-main__item-bottom">
-                                <p class="news-main__item-date btns-caps">01.12.23</p>
-                                <a href="#" class="news-main__item-name btns-caps">НОВОСТИ КОФЕ</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-main__list-bottom">
-                    <button class="arrow-link">
-                        <span>показать ещё</span>
-                        <svg width="29" height="13" viewBox="0 0 29 13" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="arrow-link__icon">
-                            <path
-                                d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-                                fill="#29354D" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </main>
-    @@include('./templates/footer.html')
-</body>
-
+					<div class="news-main__list-bottom">
+						<button class="arrow-link">
+							<span>показать ещё</span>
+							<svg
+								width="29"
+								height="13"
+								viewBox="0 0 29 13"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="arrow-link__icon">
+								<path
+									d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+									fill="#29354D" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
 </html>

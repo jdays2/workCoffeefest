@@ -1,0 +1,62 @@
+.about-numbers {
+    &__container {
+        padding-bottom: 15rem;
+        position: relative;
+        border-bottom: 7px solid $red;
+
+        .top-left,
+        .top-right {
+            position: absolute;
+            top: 0;
+            width: 49rem;
+            height: 8px;
+            background-color: $red;
+        }
+
+        .top-left {
+            left: 0;
+        }
+
+        .top-right {
+            right: 0;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 15rem;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15rem;
+
+        &-item {
+            &:nth-child(3n + 1) {
+                width: 31rem;
+            }
+
+            &:nth-child(3n + 2) {
+                width: 38.6rem;
+            }
+
+            &:nth-child(3n + 3) {
+                width: 33.5rem;
+            }
+
+            &__number {
+                margin-bottom: 2.4rem;
+                font-weight: 700;
+                font-size: 9rem;
+                line-height: 1;
+                color: $red;
+            }
+
+            &__description {
+            }
+        }
+    }
+}
