@@ -101,6 +101,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
+
+	const modalMapSwiper = new Swiper('.modal-map__swiper', {
+		slidesPerView: 1,
+		pagination: {
+			el: '.modal-map__swiper-pagination',
+		},
+	});
+
 	const formatsSwiper = new Swiper('.formats__swiper', {
 		slidesPerView: 3,
 		spaceBetween: rem(3.5),
