@@ -1,0 +1,164 @@
+.ordering {
+	&__box {
+		border: 0.2rem solid #f1ded0;
+		border-radius: 0 0 5rem 5rem;
+		&-head {
+			padding: 3.2rem 6rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: url(../images/svg/acc-head-ornament.svg) top left/cover
+					no-repeat,
+				#f1ded0;
+			cursor: pointer;
+		}
+		&-content {
+			padding: 4rem;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+		&-input-list {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 2.4rem;
+			margin-bottom: 4rem;
+		}
+		&-card-list {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 3.2rem 1.4rem;
+			margin-bottom: 4rem;
+		}
+
+		&-card-logo {
+			height: 4.1rem;
+			width: 14.2rem;
+
+			img {
+				height: 100%;
+				width: 100%;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+
+		&-card-icon {
+			display: block;
+			width: 2.15rem;
+			height: 0.65rem;
+			margin: 0 auto;
+			margin-top: 10.85rem;
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+    &-card-left {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3.77rem
+    }
+
+		&-card-right {
+			margin-left: auto;
+			height: 100%;
+			width: 5.6rem;
+			background: rgba(234, 194, 178, 0.05);
+			-webkit-backdrop-filter: blur(0.18rem);
+			backdrop-filter: blur(0.18rem);
+		}
+
+		&-card-date {
+			color: #fff9ee;
+			font-family: Circe;
+			font-size: 1.4rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 125%;
+		}
+
+		&-card-item {
+			display: block;
+			width: 23.1rem;
+			overflow: hidden;
+			cursor: pointer;
+			height: 13.3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border-radius: 1rem;
+			border: 0.1rem solid rgba(121, 121, 121, 0.2);
+
+			.cards-list__item-number {
+				color: #fff9ee;
+				font-family: Circe;
+				font-size: 1.4rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 125%;
+				gap: 0.5rem;
+
+				span {
+					background-color: transparent;
+					width: auto;
+					height: auto;
+					color: #fff9ee;
+					font-size: 3rem;
+					margin-bottom: 1.82rem;
+				}
+			}
+
+			&.red {
+        align-items: flex-end;
+				background: url('../images/svg/credit-card-bg-red.svg') top left/cover
+					no-repeat #e6af9a;
+			}
+
+			&.blue {
+        align-items: flex-end;
+				background: url('../images/svg/credit-card-bg.svg') top left/cover
+					no-repeat $darkBlue;
+
+				input {
+					&::after {
+						border-color: #fff9ee;
+					}
+				}
+			}
+			input {
+				position: absolute;
+				top: 2.6rem;
+				right: 2.6rem;
+				width: 0;
+				z-index: 2;
+				height: 0;
+
+				&::after {
+					opacity: 1;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					position: absolute;
+					content: '';
+					border: 0.2rem solid #29354d;
+					width: 2rem;
+					height: 2rem;
+					border-radius: 50%;
+				}
+			}
+
+			input:checked {
+				&::after {
+					border-width: 0.6rem;
+				}
+			}
+		}
+	}
+}
