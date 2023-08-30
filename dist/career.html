@@ -1120,6 +1120,8 @@
 	</div>
 </footer>
 
+
+<!-- модалка фильтр "Новости" -->
 <div class="modal filter-modal-1">
 	<div class="modal__container">
 		<button class="modal__close-btn">
@@ -1236,7 +1238,7 @@
 		</div>
 	</div>
 </div>
-
+<!-- модалка фильтр "Категории" -->
 <div class="modal filter-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
@@ -1408,7 +1410,7 @@
 		</div>
 	</div>
 </div>
-
+<!-- модалка с картой -->
 <div class="modal map-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
@@ -2246,6 +2248,870 @@
 		</div>
 	</div>
 </div>
+<!-- модалка "Персональная информация" -->
+<div class="modal personal-info-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Персональная информация</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name"
+					class="input input-name"
+					placeholder="Имя" />
+				<label
+					for="name"
+					class="input-label">
+					Имя
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name1"
+					class="input input-name"
+					placeholder="Фамилия" />
+				<label
+					for="name1"
+					class="input-label">
+					Фамилия
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="email"
+					class="input input-email"
+					placeholder="Email" />
+				<label
+					for="email"
+					class="input-label">
+					Email
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="number"
+					id="email"
+					class="input input-tel"
+					placeholder="Телефон" />
+				<label
+					for="email"
+					class="input-label">
+					Телефон
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Добавить банковскую карту" -->
+<div class="modal add-card-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Добавить банковскую карту</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="card"
+					class="input input-card"
+					placeholder="Номер карты" />
+				<label
+					for="card"
+					class="input-label">
+					Номер карты
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name3"
+					class="input input-name"
+					placeholder="Держатель карты" />
+				<label
+					for="name3"
+					class="input-label">
+					Держатель карты
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="number3"
+					class="input input-card-date"
+					placeholder="Срок действия" />
+				<label
+					for="number3"
+					class="input-label">
+					Срок действия
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Изменить пароль" -->
+<div class="modal chage-password-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Изменить пароль</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="pass"
+					class="input"
+					placeholder="Старый пароль" />
+				<label
+					for="pass"
+					class="input-label">
+					Старый пароль
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+
+				<button class="password-btn icon">
+					<svg
+						class="password-btn__show"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g id="Group 34268">
+							<g id="Group 34259">
+								<path
+									id="Vector"
+									d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_2"
+									d="M17.8198 5.77047C16.0698 4.45047 14.0698 3.73047 11.9998 3.73047C8.46984 3.73047 5.17984 5.81047 2.88984 9.41047C1.98984 10.8205 1.98984 13.1905 2.88984 14.6005C3.67984 15.8405 4.59984 16.9105 5.59984 17.7705"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_3"
+									d="M8.41992 19.5297C9.55992 20.0097 10.7699 20.2697 11.9999 20.2697C15.5299 20.2697 18.8199 18.1897 21.1099 14.5897C22.0099 13.1797 22.0099 10.8097 21.1099 9.39969C20.7799 8.87969 20.4199 8.38969 20.0499 7.92969"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_4"
+									d="M15.5104 12.6992C15.2504 14.1092 14.1004 15.2592 12.6904 15.5192"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_5"
+									d="M9.47 14.5293L2 21.9993"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_6"
+									d="M22.0003 2L14.5303 9.47"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="password"
+					id="newpass"
+					class="input"
+					placeholder="Новый пароль" />
+				<label
+					for="newpass"
+					class="input-label">
+					Новый пароль
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+
+				<button class="password-btn icon">
+					<svg
+						class="password-btn__show"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g id="Group 34268">
+							<g id="Group 34259">
+								<path
+									id="Vector"
+									d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_2"
+									d="M17.8198 5.77047C16.0698 4.45047 14.0698 3.73047 11.9998 3.73047C8.46984 3.73047 5.17984 5.81047 2.88984 9.41047C1.98984 10.8205 1.98984 13.1905 2.88984 14.6005C3.67984 15.8405 4.59984 16.9105 5.59984 17.7705"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_3"
+									d="M8.41992 19.5297C9.55992 20.0097 10.7699 20.2697 11.9999 20.2697C15.5299 20.2697 18.8199 18.1897 21.1099 14.5897C22.0099 13.1797 22.0099 10.8097 21.1099 9.39969C20.7799 8.87969 20.4199 8.38969 20.0499 7.92969"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_4"
+									d="M15.5104 12.6992C15.2504 14.1092 14.1004 15.2592 12.6904 15.5192"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_5"
+									d="M9.47 14.5293L2 21.9993"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_6"
+									d="M22.0003 2L14.5303 9.47"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="password"
+					id="reppas"
+					class="input"
+					placeholder="Повторите пароль" />
+				<label
+					for="reppas"
+					class="input-label">
+					Повторите пароль
+				</label>
+
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<button class="password-btn icon">
+					<svg
+						class="password-btn__show"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g id="Group 34268">
+							<g id="Group 34259">
+								<path
+									id="Vector"
+									d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_2"
+									d="M17.8198 5.77047C16.0698 4.45047 14.0698 3.73047 11.9998 3.73047C8.46984 3.73047 5.17984 5.81047 2.88984 9.41047C1.98984 10.8205 1.98984 13.1905 2.88984 14.6005C3.67984 15.8405 4.59984 16.9105 5.59984 17.7705"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_3"
+									d="M8.41992 19.5297C9.55992 20.0097 10.7699 20.2697 11.9999 20.2697C15.5299 20.2697 18.8199 18.1897 21.1099 14.5897C22.0099 13.1797 22.0099 10.8097 21.1099 9.39969C20.7799 8.87969 20.4199 8.38969 20.0499 7.92969"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_4"
+									d="M15.5104 12.6992C15.2504 14.1092 14.1004 15.2592 12.6904 15.5192"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_5"
+									d="M9.47 14.5293L2 21.9993"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_6"
+									d="M22.0003 2L14.5303 9.47"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+
+			<div class="account-main__left-policy menu">
+				<a href="forget-password.html">Забыли пароль?</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- модалка "Добавить адрес" -->
+<div class="modal chage-password-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Добавить адрес</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="city"
+					class="input input-text"
+					placeholder="Город" />
+				<label
+					for="city"
+					class="input-label">
+					Город
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="street"
+					class="input input-text"
+					placeholder="Улица" />
+				<label
+					for="street"
+					class="input-label">
+					Улица
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-small">
+				<input
+					type="text"
+					id="h-block"
+					class="input"
+					placeholder="Дом" />
+				<label
+					for="h-block"
+					class="input-label">
+					Дом
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-small">
+				<input
+					type="number"
+					id="floor"
+					class="input"
+					placeholder="Этаж" />
+				<label
+					for="floor"
+					class="input-label">
+					Этаж
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-small">
+				<input
+					type="number"
+					id="apartment"
+					class="input"
+					placeholder="Квартира" />
+				<label
+					for="apartment"
+					class="input-label">
+					Квартира
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="order-comment"
+					class="input"
+					placeholder="Комментарий к адресу" />
+				<label
+					for="order-comment"
+					class="input-label">
+					Комментарий к адресу
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Отклик на вакансию" -->
+<div class="modal vacancy-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Отклик на вакансию</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name5"
+					class="input input-name"
+					placeholder="Имя" />
+				<label
+					for="name5"
+					class="input-label">
+					Имя
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="number"
+					id="vac-tel"
+					class="input input-tel"
+					placeholder="Номер телефона" />
+				<label
+					for="vac-tel"
+					class="input-label">
+					Номер телефона
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="vac-link"
+					class="input"
+					placeholder="Ссылка на резюме" />
+				<label
+					for="vac-link"
+					class="input-label">
+					Ссылка на резюме
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>отправить</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Сообщение отправлено" -->
+<div class="modal message-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Сообщение отправлено</p>
+
+		<p class="modal__message">
+			Мы ответим Вам в ближайщее время
+		</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Спасибо за отзыв!" -->
+<div class="modal feedback-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Спасибо за отзыв!</p>
+
+		<p class="modal__message">
+			Публикация отзыва может занять некоторое время
+		</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Заявка отправлена" -->
+<div class="modal request-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none">
+				<path
+					d="M1 1.5L19 19.5M19 1.5L1 19.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<p class="heading2">Заявка отправлена</p>
+
+		<p class="modal__message">
+			Мы ответим Вам в ближайщее время
+		</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
 
 <script
 	src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"
@@ -2258,6 +3124,7 @@
 <script src="./src/js/modal.js"></script>
 <script src="./src/js/chronology.js"></script>
 <script src="./src/js/map.js"></script>
+<script src="./src/js/inputs.js"></script>
 
 	</body>
 </html>

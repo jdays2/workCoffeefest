@@ -49,8 +49,8 @@
             color: $darkGrey;
 
             a {
-                text-decoration: underline;
-                text-underline-offset: 2px;
+                padding-bottom: 0.2rem;
+                border-bottom: 0.1rem solid #797979;
             }
         }
     }

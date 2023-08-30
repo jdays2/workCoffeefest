@@ -1155,6 +1155,18 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 }
 
+.password-btn {
+	&__show {
+		z-index: 20;
+		transition: 0.2s ease-in-out;
+		position: relative;
+		cursor: pointer;
+		&:active {
+			bottom: -0.1rem
+		}
+	}
+}
+
 .popup-block {
 	position: relative;
 	height: 5.6rem;
