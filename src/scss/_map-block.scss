@@ -1,6 +1,9 @@
 .map-block {
 	display: flex;
 	border-top: 0.2rem solid $light;
+	border-radius: 0 0 5rem 5rem;
+	overflow: hidden;
+	height: 85rem;
 
 	&__search-box {
 		padding: 4rem;
@@ -54,13 +57,17 @@
 		}
 
 		&-item {
-			border: 0.2rem solid #29354d;
 			background: #fff9ee;
 			height: 17.3rem;
 			padding: 2rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			border: 0.2rem solid rgba(0, 0, 0, 0);
+
+			&.active {
+				border: 0.2rem solid #29354d;
+			}
 
 			&-title {
 				color: #29354d;
@@ -82,18 +89,12 @@
 				width: fit-content;
 
 				svg {
-					width: 100%;
-					height: 100%;
-				}
-
-				span:first-child {
-					width: 2.4rem;
-					height: 2.4rem;
-					padding: 0.25rem 0.2rem 0.25rem 0.3rem;
+					width: 1.9rem;
+					height: 1.9rem;
 				}
 
 				span {
-					color: #797979;
+					color: #29354d;
 					font-family: Circe;
 					font-size: 1.8rem;
 					font-style: normal;
@@ -120,6 +121,7 @@
 
 				.arrow-link {
 					color: $darkBlue;
+					cursor: pointer;
 					svg {
 						path {
 							fill: $darkBlue;
@@ -139,5 +141,11 @@
 				}
 			}
 		}
+	}
+
+	&__map-box {
+		width: 100%;
+		height: 100%;
+		position: relative;
 	}
 }

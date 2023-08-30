@@ -40,6 +40,19 @@ $white20: rgba(255, 255, 255, 0.2);
 	background-color: $light;
 }
 
+.map-btn__wrapper {
+	padding: 1.4rem 3.6rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+
+	span {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+}
+
 .controlls {
 	display: flex;
 	align-items: center;
@@ -1142,13 +1155,26 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 }
 
+.password-btn {
+	&__show {
+		z-index: 20;
+		transition: 0.2s ease-in-out;
+		position: relative;
+		cursor: pointer;
+		&:active {
+			bottom: -0.1rem
+		}
+	}
+}
+
 .popup-block {
 	position: relative;
 	height: 5.6rem;
 	display: flex;
 	gap: 1.2rem;
-	width: 100%;
+	width: 36rem;
 	align-items: center;
+	justify-content: center;
 	cursor: pointer;
 	padding: 1.4rem 3.6rem;
 	border: 0.2rem solid #29354d;

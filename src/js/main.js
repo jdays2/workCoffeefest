@@ -185,33 +185,101 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	// валидация на имя
-	if (document.querySelector('.input#name')) {
-		const inputName = document.querySelector('.input#name');
-		const inputNameContainer = inputName.parentElement;
-		const regName = /^[A-zА-ё]+$/;
-		inputName.addEventListener('input', function (e) {
-			let inputClass = regName.test(e.target.value) ? 'success' : 'invalid';
-			inputNameContainer.classList.remove('success', 'invalid');
-			inputNameContainer.classList.add(inputClass);
-			if (e.target.value === '') {
-				inputNameContainer.classList.remove('success', 'invalid');
-			}
-		});
+	if (document.querySelector('.input-name')) {
+		const inputName = document.querySelectorAll('.input-name');
 
-		const inputEmail = document.querySelector('.input#email');
-		const inputEmailContainer = inputEmail.parentElement;
+		const regName = /^[A-zА-ё]+$/;
+		inputName.forEach((item) => {
+			const inputNameContainer = item.parentElement;
+			item.addEventListener('input', function (e) {
+				let inputClass = regName.test(e.target.value) ? 'success' : 'invalid';
+				inputNameContainer.classList.remove('success', 'invalid');
+				inputNameContainer.classList.add(inputClass);
+				if (e.target.value === '') {
+					inputNameContainer.classList.remove('success', 'invalid');
+				}
+			});
+		});
+		//валидация на почту
+		const inputEmail = document.querySelectorAll('.input-email');
+
 		const regNameEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/gim;
-		inputEmail.addEventListener('input', function (e) {
-			let inputClass = regNameEmail.test(e.target.value)
-				? 'success'
-				: 'invalid';
-			inputEmailContainer.classList.remove('success', 'invalid');
-			inputEmailContainer.classList.add(inputClass);
-			if (e.target.value === '') {
+		inputEmail.forEach((item) => {
+			const inputEmailContainer = item.parentElement;
+			item.addEventListener('input', function (e) {
+				let inputClass = regNameEmail.test(e.target.value)
+					? 'success'
+					: 'invalid';
 				inputEmailContainer.classList.remove('success', 'invalid');
-			}
+				inputEmailContainer.classList.add(inputClass);
+				if (e.target.value === '') {
+					inputEmailContainer.classList.remove('success', 'invalid');
+				}
+			});
 		});
 	}
+
+	//валидация телефонного номера
+	const inputPhone = document.querySelectorAll('.input-tel');
+
+	const regPhoneNumber =
+		/^\+?\d{1,4}[\s.-]?\(?\d{1,3}\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}$/;
+
+	inputPhone.forEach((item) => {
+		const inputPhoneContainer = item.parentElement;
+
+		item.addEventListener('input', function (e) {
+			let inputClass = regPhoneNumber.test(e.target.value)
+				? 'success'
+				: 'invalid';
+			inputPhoneContainer.classList.remove('success', 'invalid');
+			inputPhoneContainer.classList.add(inputClass);
+
+			if (e.target.value === '') {
+				inputPhoneContainer.classList.remove('success', 'invalid');
+			}
+		});
+	});
+
+	//валидация номера карты
+	const inputCard = document.querySelectorAll('.input-card');
+
+	const regCardNumber = /^(\d{4}\s?\d{4}\s?\d{4}\s?\d{4})$/;
+
+	inputCard.forEach((item) => {
+		const inputCardContainer = item.parentElement;
+
+		item.addEventListener('input', function (e) {
+			let inputClass = regCardNumber.test(e.target.value)
+				? 'success'
+				: 'invalid';
+			inputCardContainer.classList.remove('success', 'invalid');
+			inputCardContainer.classList.add(inputClass);
+
+			if (e.target.value === '') {
+				inputCardContainer.classList.remove('success', 'invalid');
+			}
+		});
+	});
+
+	//валидация даты карты
+	const inputCardDate = document.querySelectorAll('.input-card-date');
+
+	const regCardDate = /^(0[1-9]|1[0-2])\/([0-9]{2})$/;
+
+	inputCardDate.forEach((item) => {
+		const inputCardDateContainer = item.parentElement;
+
+		item.addEventListener('input', function (e) {
+			let inputClass = regCardDate.test(e.target.value) ? 'success' : 'invalid';
+			inputCardDateContainer.classList.remove('success', 'invalid');
+			inputCardDateContainer.classList.add(inputClass);
+
+			if (e.target.value === '') {
+				inputCardDateContainer.classList.remove('success', 'invalid');
+			}
+		});
+	});
 
 	// аккордеон на странице Доставка и оплата
 	if (document.querySelector('.delivery-main__accordion')) {
@@ -264,4 +332,3 @@ if (searchBtn && searchCloseBtn) {
 		headerList.classList.toggle(activeClass);
 	});
 }
-

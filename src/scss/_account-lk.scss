@@ -51,7 +51,7 @@
             &__link {
                 color: $darkGrey;
                 text-decoration: underline;
-                text-underline-offset: 4px;
+                text-underline-offset: 0.4rem;
             }
         }
     }
@@ -433,15 +433,15 @@
                         }
 
                         &.delivering {
-                            color: rgba($color: $darkBlue, $alpha: 0.9);
+                            color: rgba(41, 53, 77, 0.9);
                         }
 
                         &.delivered {
-                            color: rgba($color: $green, $alpha: 0.9);
+                            color: rgba(103, 167, 172, 0.9);
                         }
 
                         &.cancelled {
-                            color: rgba($color: $red, $alpha: 0.9);
+                            color: rgba(81, 40, 63, 0.9);
                         }
                     }
                 }
