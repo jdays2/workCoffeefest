@@ -82,6 +82,10 @@ $white20: rgba(255, 255, 255, 0.2);
 	&__count-btn {
 		width: 1.2rem;
 		cursor: pointer;
+		-webkit-user-select: none;
+		   -moz-user-select: none;
+		    -ms-user-select: none;
+		        user-select: none;
 		transition: 0.35s;
 		transform: scale(1);
 
@@ -1162,7 +1166,7 @@ $white20: rgba(255, 255, 255, 0.2);
 		position: relative;
 		cursor: pointer;
 		&:active {
-			bottom: -0.1rem
+			bottom: -0.1rem;
 		}
 	}
 }
