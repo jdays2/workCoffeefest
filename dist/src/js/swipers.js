@@ -209,6 +209,9 @@ document.addEventListener('DOMContentLoaded', function () {
 				slidesPerView: 4,
 				spaceBetween: rem(3.5)
 			}
+		},
+		pagination: {
+			el: '.services__swiper-pagination-1'
 		}
 	})
 
@@ -220,6 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		breakpoints: {
 			768: {
 				slidesPerView: 4,
+				slidesPerGroup: 4,
 				spaceBetween: rem(3.5)
 			}
 		},

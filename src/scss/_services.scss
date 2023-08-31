@@ -216,5 +216,31 @@
 				}
 			}
 		}
+
+		.services__swiper-pagination-1 {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			max-width: 67rem;
+
+			& .swiper-pagination-bullet {
+				width: 3rem;
+				height: 3rem;
+				border: 0.2rem solid #29354d;
+				border-radius: 50%;
+				background-color: transparent;
+				opacity: 1;
+
+				&-active {
+					background-color: #29354d;
+				}
+
+				&:not(:last-child) {
+					margin-right: 2.6rem;
+				}
+			}
+		}
 	}
 }
