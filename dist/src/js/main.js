@@ -288,13 +288,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	// аккордеон на странице корзина-оплата
-	if (document.querySelector('.ordering__orders-wrapper')) {
-		document.querySelectorAll('.ordering__orders-wrapper').forEach((acc) => {
-			initAccordion(acc);
-		});
-	}
-
 	// теги на странице Доставка и оплата
 	if (document.querySelector('.delivery-main .section-tags')) {
 		const deliveryMainTags = document.querySelectorAll(
