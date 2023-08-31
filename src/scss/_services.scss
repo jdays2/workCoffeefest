@@ -217,6 +217,26 @@
 			}
 		}
 
+		.services__swiper-slide {
+			&__text {
+				padding: 8rem 4rem;
+				height: calc(100% - 47.7rem);
+			}
+
+			&__text-description {
+				width: 59.2rem;
+				margin: 0 0 12rem 0;
+			}
+
+			&__text-link {
+				font-size: 3.2rem;
+			}
+
+			&__icon {
+				height: 50.4rem;
+			}
+		}
+
 		.services__swiper-pagination-1 {
 			display: flex;
 			align-items: center;
