@@ -178,11 +178,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const interiors = new Swiper('.interiors__swiper', {
-		slidesPerView: 1.8,
+		slidesPerView: 1,
+		slidesPerGroup: 1,
 		spaceBetween: rem(3),
-		centeredSlides: true,
-		loop: true,
 		speed: 600,
+		breakpoints: {
+			768: {
+				slidesPerView: 1.8,
+				spaceBetween: rem(3),
+				loop: true,
+				centeredSlides: true
+			}
+		},
 		pagination: {
 			el: '.interiors__swiper-controllers .swiper-pagination',
 		},
