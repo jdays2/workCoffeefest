@@ -202,5 +202,15 @@
 				}
 			}
 		}
+
+		.services__list-item {
+			&__text {
+				padding: 8rem 4rem 12rem 4rem;
+				height: auto;
+			}
+			&__icon {
+				height: 50.4rem;
+			}
+		}
 	}
 }
