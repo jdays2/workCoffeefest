@@ -237,6 +237,13 @@
 			}
 		}
 
+		.swiper-controllers {
+			.swiper-prev,
+			.swiper-next {
+				display: none;
+			}
+		}
+
 		.services__swiper-pagination-1 {
 			display: flex;
 			align-items: center;
