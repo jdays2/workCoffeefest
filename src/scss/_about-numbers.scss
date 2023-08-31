@@ -60,3 +60,27 @@
         }
     }
 }
+
+@media (max-width: 48em) {
+    .about-numbers {
+        &__container {
+            .top-left,
+            .top-right {
+                width: 9.8rem;
+                height: 5px;
+                top: -0.25rem;
+            }
+        }
+
+        &__heading {
+            margin: 0 0 8rem 0;
+        }
+
+        &__list {
+            &-item {
+                width: 100% !important;
+                text-align: center;
+            }
+        }
+    }
+}
