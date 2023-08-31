@@ -202,16 +202,20 @@ document.addEventListener('DOMContentLoaded', function () {
 				slidesPerView: 4,
 				spaceBetween: rem(3.5)
 			}
-		},
-		pagination: {
-			el: '.services__swiper-pagin',
 		}
 	})
 
 	const aboutTeamSwiper = new Swiper('.about-team__swiper', {
-		slidesPerView: 4,
+		slidesPerView: 1,
+		slidesPerGroup: 1,
 		spaceBetween: rem(3.5),
 		speed: 600,
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				spaceBetween: rem(3.5)
+			}
+		},
 		pagination: {
 			el: '.about-team__swiper-controllers .swiper-pagination',
 		},
