@@ -51,7 +51,7 @@
             &__link {
                 color: $darkGrey;
                 text-decoration: underline;
-                text-underline-offset: 4px;
+                text-underline-offset: 0.4rem;
             }
         }
     }
@@ -118,147 +118,7 @@
             }
         }
 
-        .cards-list {
-            display: flex;
-            gap: 3.4rem;
-
-            &__item {
-                padding: 2.2rem;
-                width: 34rem;
-                height: 19rem;
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                color: $white;
-                border-radius: 1rem;
-                -webkit-backdrop-filter: blur(3.5463px);
-                        backdrop-filter: blur(3.5463px);
-
-                &.red {
-                    background-color: $brightHeadlines;
-                }
-
-                &.dark-blue {
-                    background-color: $darkBlue;
-                }
-
-                &.add-more {
-                    width: 8rem;
-                    height: 19rem;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: $biege;
-
-                    .add-card {
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                        }
-
-                        img {
-                            width: 2.8rem;
-                            height: 2.8rem;
-                            -o-object-fit: contain;
-                               object-fit: contain;
-                        }
-                    }
-                }
-
-                &-bg {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    empty-cells: 100%;
-                    -o-object-fit: cover;
-                       object-fit: cover;
-                    z-index: -1;
-
-                    path {
-                        stroke: $light;
-                    }
-                }
-
-                &-name {
-                    margin-bottom: 1.6rem;
-                }
-
-                &-number {
-                    display: flex;
-                    align-items: center;
-                    gap: 0.7rem;
-
-                    p {
-                        display: flex;
-                        align-items: center;
-
-                        span {
-                            width: 0.4rem;
-                            height: 0.4rem;
-                            background-color: $white;
-                            border-radius: 50%;
-
-                            &:first-child {
-                                margin-left: 0.35rem;
-                            }
-
-                            &:not(:last-child) {
-                                margin-right: 0.35rem;
-                            }
-                        }
-                    }
-                }
-
-                &-date {
-                    margin-top: auto;
-                }
-
-                &-right {
-                    padding-top: 2rem;
-                    padding-bottom: 2.6rem;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 8rem;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                    background: rgba(234, 194, 178, 0.15);
-                    -webkit-backdrop-filter: blur(0.25rem);
-                            backdrop-filter: blur(0.25rem);
-                    border-radius: 0 1rem 1rem 0;
-
-                    &__btn {
-                        width: 2.8rem;
-                        height: 2.8rem;
-                        display: flex;
-                        gap: 0.3rem;
-                        align-items: center;
-                        justify-content: center;
-
-                        span {
-                            width: 0.4rem;
-                            height: 0.4rem;
-                            background-color: $white;
-                            border-radius: 50%;
-                        }
-                    }
-
-                    &__icon {
-                        width: 3rem;
-                        height: 1rem;
-                        -o-object-fit: contain;
-                           object-fit: contain;
-                    }
-                }
-            }
-        }
+        
 
         &-nav {
             margin-bottom: 6rem;
@@ -433,15 +293,15 @@
                         }
 
                         &.delivering {
-                            color: rgba($color: $darkBlue, $alpha: 0.9);
+                            color: rgba(41, 53, 77, 0.9);
                         }
 
                         &.delivered {
-                            color: rgba($color: $green, $alpha: 0.9);
+                            color: rgba(103, 167, 172, 0.9);
                         }
 
                         &.cancelled {
-                            color: rgba($color: $red, $alpha: 0.9);
+                            color: rgba(81, 40, 63, 0.9);
                         }
                     }
                 }
@@ -1145,6 +1005,149 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+.cards-list {
+    display: flex;
+    gap: 3.4rem;
+
+    &__item {
+        padding: 2.2rem;
+        width: 34rem;
+        height: 19rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color: $white;
+        border-radius: 1rem;
+        -webkit-backdrop-filter: blur(3.5463px);
+                backdrop-filter: blur(3.5463px);
+
+        &.red {
+            background-color: $brightHeadlines;
+        }
+
+        &.dark-blue {
+            background-color: $darkBlue;
+        }
+
+        &.add-more {
+            width: 8rem;
+            height: 19rem;
+            align-items: center;
+            justify-content: center;
+            background-color: $biege;
+
+            .add-card {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                img {
+                    width: 2.8rem;
+                    height: 2.8rem;
+                    -o-object-fit: contain;
+                       object-fit: contain;
+                }
+            }
+        }
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            empty-cells: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            z-index: -1;
+
+            path {
+                stroke: $light;
+            }
+        }
+
+        &-name {
+            margin-bottom: 1.6rem;
+        }
+
+        &-number {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+
+            p {
+                display: flex;
+                align-items: center;
+
+                span {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    background-color: $white;
+                    border-radius: 50%;
+
+                    &:first-child {
+                        margin-left: 0.35rem;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 0.35rem;
+                    }
+                }
+            }
+        }
+
+        &-date {
+            margin-top: auto;
+        }
+
+        &-right {
+            padding-top: 2rem;
+            padding-bottom: 2.6rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(234, 194, 178, 0.15);
+            -webkit-backdrop-filter: blur(0.25rem);
+                    backdrop-filter: blur(0.25rem);
+            border-radius: 0 1rem 1rem 0;
+
+            &__btn {
+                width: 2.8rem;
+                height: 2.8rem;
+                display: flex;
+                gap: 0.3rem;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    background-color: $white;
+                    border-radius: 50%;
+                }
+            }
+
+            &__icon {
+                width: 3rem;
+                height: 1rem;
+                -o-object-fit: contain;
+                   object-fit: contain;
             }
         }
     }

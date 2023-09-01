@@ -90,7 +90,6 @@ if (clearBtn) {
 	});
 }
 
-
 //обработка select-popup !общего! (изменение активного элемента в кнопке)
 const mainSelects = document.querySelectorAll('.popup-block__popup--select');
 
@@ -106,6 +105,23 @@ if (mainSelects) {
 					value.textContent = labelValue;
 				}
 			});
+		});
+	});
+}
+
+//обработка модалки персональная информация
+const cartBtnInputs = document.querySelectorAll('.cart-input');
+
+if (cartBtnInputs) {
+	cartBtnInputs.forEach((element) => {
+		element.addEventListener('input', () => {
+			const cartBtnWrapper = element.closest('.cart-input-wrapper');
+			if (cartBtnWrapper) {
+				console.log('Найден элемент:', cartBtnWrapper);
+			} else {
+				console.log('Элемент не найден');
+			}
+			cartBtnWrapper.classList.toggle('active');
 		});
 	});
 }
