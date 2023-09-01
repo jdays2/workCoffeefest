@@ -109,7 +109,6 @@ if (mainSelects) {
 	});
 }
 
-<<<<<<< HEAD
 //обработка модалки персональная информация
 const cartBtnInputs = document.querySelectorAll('.cart-input');
 
@@ -126,6 +125,3 @@ if (cartBtnInputs) {
 		});
 	});
 }
-=======
-//обработка модалки персональная информация
->>>>>>> 05aa945019508943e0a4c9240c7e446b0bae41f0

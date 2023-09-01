@@ -112,13 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			let accHead = item.querySelector('.acc-head');
 			let accContent = item.querySelector('.acc-content');
 			accHead.addEventListener('click', function () {
-				accItems.forEach((el) => {
-					if (item !== el) {
-						el.classList.remove('active');
-						el.querySelector('.acc-content').classList.toggle('active');
-					}
-				});
-
 				item.classList.toggle('active');
 				if (accContent.classList.contains('active')) {
 					accContent.classList.remove('active');
@@ -355,5 +348,55 @@ if (searchBtn && searchCloseBtn) {
 	searchCloseBtn.addEventListener('click', () => {
 		searchBlock.classList.toggle(activeClass);
 		headerList.classList.toggle(activeClass);
+	});
+}
+
+//отключение всплытия для календаря
+const popupBlocks = document.querySelectorAll('.popup-block');
+
+if (popupBlocks) {
+	popupBlocks.forEach((e) => {
+		e.addEventListener('click', function (event) {
+			if (event.target.closest('.calendar')) {
+				event.stopPropagation();
+				event.preventDefault();
+			}
+		});
+	});
+}
+
+//показ нужного блока (выбор медота доставки) в карточке товара при оплате
+const allItems = document.querySelectorAll('.delivery-method');
+const deliveryCheckers = document.querySelectorAll(
+	'.ordering__method-item input',
+);
+
+if (deliveryCheckers) {
+	deliveryCheckers.forEach((checker) => {
+		checker.addEventListener('input', () => {
+			const id = checker.id;
+			switch (id) {
+				case 'self-delivery':
+				case 'self-delivery-sdek':
+					allItems.forEach((item) => {
+						if (item.id === 'self-delivery-block') {
+							item.classList.add('active');
+						} else {
+							item.classList.remove('active');
+						}
+					});
+					break;
+				case 'curier-delivery':
+					allItems.forEach((item) => {
+						if (item.id === 'curier-delivery-block') {
+							item.classList.add('active');
+						} else {
+							item.classList.remove('active');
+						}
+					});
+					break;
+				default:
+			}
+		});
 	});
 }

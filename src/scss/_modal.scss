@@ -19,13 +19,17 @@
 		position: absolute;
 		padding: 0;
 
+		.modal__container {
+			width: 45.3rem;
+		}
+
 		&.active {
 			z-index: 1 !important;
 		}
 
 		&__swiper {
 			position: relative;
-			width: 45.3rem;
+			width: 100%;
 			height: 27.9rem;
 			overflow: hidden;
 

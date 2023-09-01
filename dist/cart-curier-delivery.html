@@ -14,7 +14,7 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
-		<title>Корзина</title>
+		<title>Корзина / Доставка курьером</title>
 	</head>
 
 	<body>
@@ -274,315 +274,357 @@
 		<main class="main cart">
 			<section class="section light-section-clear">
 				<div class="container card__container">
-					<div class="breadcrumbs__container container">
-						<ul class="breadcrumbs">
-							<li class="breadcrumbs__item">
-								<a
-									href="/dist/main.html"
-									class="breadcrumbs__item-link">
-									<svg
-										width="28"
-										height="28"
-										viewBox="0 0 28 28"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-linecap="round" />
-									</svg>
-								</a>
-							</li>
+					<a
+						href="/cart-ordering-final.html"
+						class="arrow-link">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="35"
+							height="26"
+							viewBox="0 0 35 26"
+							fill="none">
+							<path
+								d="M30.5 12.75C30.9142 12.75 31.25 13.0858 31.25 13.5C31.25 13.9142 30.9142 14.25 30.5 14.25L30.5 12.75ZM3.96967 14.0303C3.67678 13.7374 3.67678 13.2626 3.96967 12.9697L8.74264 8.1967C9.03553 7.90381 9.51041 7.90381 9.8033 8.1967C10.0962 8.48959 10.0962 8.96447 9.8033 9.25736L5.56066 13.5L9.8033 17.7426C10.0962 18.0355 10.0962 18.5104 9.8033 18.8033C9.51041 19.0962 9.03553 19.0962 8.74264 18.8033L3.96967 14.0303ZM30.5 14.25L4.5 14.25L4.5 12.75L30.5 12.75L30.5 14.25Z"
+								fill="#29354D" />
+						</svg>
+						<span>назад</span>
+					</a>
 
-							<li class="breadcrumbs__item">
-								<a
-									href="/dist/catalog.html"
-									class="breadcrumbs__item-link">
-									Меню кофеен
-								</a>
-							</li>
-							<li class="breadcrumbs__item">
-								<a
-									href="/dist/catalog.html"
-									class="breadcrumbs__item-link">
-									Корзина
-								</a>
-							</li>
-
-							<li class="breadcrumbs__item">
-								<a
-									href="/dist/catalog.html"
-									class="breadcrumbs__item-link">
-									Оформление заказа
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="cart__content">
-						<div class="cart__main">
-							<div class="cart__head">
-								<strong class="heading2">Оформление заказа</strong>
+					<div class="map-block map-block--self-delivery">
+						<div class="map-block__form">
+							<div class="map-block__form-head">
+								<p class="map-block__form-title heading2">Адрес доставки</p>
+								<p class="map-block__form-subtitle">
+									Укажите адрес на карте или используйте поиск
+								</p>
 							</div>
 
-							<div class="ordering-progres">
-								<a
-									href="/cart-ordering.html"
-									class="ordering-progres__return-btn active">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 70 70"
-										fill="none">
-										<rect
-											width="70"
-											height="70"
-											rx="35"
-											transform="matrix(-1 0 0 1 70 0)"
-											fill="#FFF9EE" />
-										<path
-											d="M48 34.25C48.4142 34.25 48.75 34.5858 48.75 35C48.75 35.4142 48.4142 35.75 48 35.75L48 34.25ZM21.4697 35.5303C21.1768 35.2374 21.1768 34.7626 21.4697 34.4697L26.2426 29.6967C26.5355 29.4038 27.0104 29.4038 27.3033 29.6967C27.5962 29.9896 27.5962 30.4645 27.3033 30.7574L23.0607 35L27.3033 39.2426C27.5962 39.5355 27.5962 40.0104 27.3033 40.3033C27.0104 40.5962 26.5355 40.5962 26.2426 40.3033L21.4697 35.5303ZM48 35.75L22 35.75L22 34.25L48 34.25L48 35.75Z"
-											fill="#29354D" />
-									</svg>
-								</a>
-								<div class="ordering-progres__box">
-									<div class="ordering-progres__phase done">
-										<span class="ordering-progres__phase-value">1</span>
-										<span class="ordering-progres__phase-done-icon">
+							<form class="map-block__form-box">
+								<div class="map-block__form-adress-wrapper">
+									<div class="map-block__form-adress">
+										<span class="map-block__form-adress-value">
+											Москва, ул. 1-й Старомытищенский пр-д, 15к1,
+										</span>
+
+										<div class="map-block__form-adress-remove">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 29 30"
+												viewBox="0 0 24 25"
 												fill="none">
 												<path
-													d="M9.35938 15.3961L12.779 18.8157L19.6302 11.9766"
-													stroke="white"
-													stroke-width="1.84375"
-													stroke-linecap="round"
-													stroke-linejoin="round" />
+													d="M3 4L21 22M21 4L3 22"
+													stroke="#29354D"
+													stroke-width="2"
+													stroke-linecap="round" />
 											</svg>
-										</span>
-										<span class="ordering-progres__phase-text">
-											Ваши данные
-										</span>
+										</div>
 									</div>
-									<span class="ordering-progres__line active"></span>
-									<div class="ordering-progres__phase active">
-										<span class="ordering-progres__phase-value">2</span>
-										<span class="ordering-progres__phase-done-icon">
+									<div class="map-block__identify-box">
+										<span>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 29 30"
+												viewBox="0 0 24 24"
 												fill="none">
 												<path
-													d="M9.35938 15.3961L12.779 18.8157L19.6302 11.9766"
-													stroke="white"
-													stroke-width="1.84375"
-													stroke-linecap="round"
-													stroke-linejoin="round" />
-											</svg>
-										</span>
-										<span class="ordering-progres__phase-text">
-											Способ оплаты
-										</span>
-									</div>
-									<span class="ordering-progres__line"></span>
-									<div class="ordering-progres__phase">
-										<span class="ordering-progres__phase-value">3</span>
-										<span class="ordering-progres__phase-done-icon">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 29 30"
-												fill="none">
+													d="M12.0028 13.4295C13.7259 13.4295 15.1228 12.0326 15.1228 10.3095C15.1228 8.58633 13.7259 7.18945 12.0028 7.18945C10.2797 7.18945 8.88281 8.58633 8.88281 10.3095C8.88281 12.0326 10.2797 13.4295 12.0028 13.4295Z"
+													stroke="#29354D"
+													stroke-width="1.5" />
 												<path
-													d="M9.35938 15.3961L12.779 18.8157L19.6302 11.9766"
-													stroke="white"
-													stroke-width="1.84375"
-													stroke-linecap="round"
-													stroke-linejoin="round" />
+													d="M3.61776 8.49C5.58776 -0.169998 18.4178 -0.159997 20.3778 8.5C21.5278 13.58 18.3678 17.88 15.5978 20.54C13.5878 22.48 10.4078 22.48 8.38776 20.54C5.62776 17.88 2.46776 13.57 3.61776 8.49Z"
+													stroke="#29354D"
+													stroke-width="1.5" />
 											</svg>
 										</span>
-										<span class="ordering-progres__phase-text">Ваш заказ</span>
+										<p>Определить местоположение</p>
 									</div>
 								</div>
-							</div>
 
-							<div class="ordering__box">
-								<div class="ordering__box-head">
-									<p class="heading4">Оплата</p>
-								</div>
-								<div class="ordering__box-content">
-									<div class="ordering__box-card-list">
-										<label class="ordering__box-card-item red">
-											<input
-												type="radio"
-												name="current-card" />
-											<div class="ordering__box-card-left">
-												<div class="cards-list__item-number ">
-													<p>4276</p>
-													<p>
-														22
-														<span>.</span>
-														<span>.</span>
-													</p>
-													<p>
-														<span>.</span>
-														<span>.</span>
-														<span>.</span>
-														<span>.</span>
-													</p>
-													<p>2467</p>
-												</div>
-												<span class="ordering__box-card-date">
-													09/25
-												</span>
-											</div>
-											<div class="ordering__box-card-right">
-												<span class="ordering__box-card-icon">
-													<img
-														src="./src/images/svg/visa-icon.svg"
-														alt="" />
-												</span>
-											</div>
+								<div class="map-block__row">
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="street2"
+											class="input"
+											placeholder="Улица" />
+										<label
+											for="floor2"
+											class="input-label">
+											Улица
 										</label>
-
-										<label class="ordering__box-card-item blue">
-											<input
-												type="radio"
-												name="current-card" />
-											<div class="ordering__box-card-left">
-												<div class="cards-list__item-number ">
-													<p>4276</p>
-													<p>
-														22
-														<span>.</span>
-														<span>.</span>
-													</p>
-													<p>
-														<span>.</span>
-														<span>.</span>
-														<span>.</span>
-														<span>.</span>
-													</p>
-													<p>2467</p>
-												</div>
-												<span class="ordering__box-card-date">
-													09/25
-												</span>
-											</div>
-											<div class="ordering__box-card-right">
-												<span class="ordering__box-card-icon">
-													<img
-														src="./src/images/svg/visa-icon.svg"
-														alt="" />
-												</span>
-											</div>
-										</label>
-
-										<label class="ordering__box-card-item">
-											<input
-												type="radio"
-												name="current-card" />
-											<div class="ordering__box-card-logo">
-												<img
-													src="./src/images/svg/mir-card.svg"
-													alt="" />
-											</div>
-										</label>
-
-										<label class="ordering__box-card-item">
-											<input
-												type="radio"
-												name="current-card" />
-											<div class="ordering__box-card-logo">
-												<img
-													src="./src/images/svg/sber-card.svg"
-													alt="" />
-											</div>
-										</label>
-
-										<label class="ordering__box-card-item">
-											<input
-												type="radio"
-												name="current-card" />
-											<div class="ordering__box-card-logo">
-												<img
-													src="./src/images/svg/sbp-card.svg"
-													alt="" />
-											</div>
-										</label>
-
-										<label class="ordering__box-card-item">
-											<input
-												type="radio"
-												name="current-card" />
-											<div class="ordering__box-card-logo">
-												<img
-													src="./src/images/svg/yumoney-card.svg"
-													alt="" />
-											</div>
-										</label>
+										<div class="icon">
+											<img
+												src="./src/images/svg/success-validation.svg"
+												alt=""
+												class="success" />
+										</div>
+										<div class="icon">
+											<img
+												src="./src/images/svg/invalid-validation.svg"
+												alt=""
+												class="invalid" />
+										</div>
 									</div>
 
-									<a
-										href="/cart-ordering-final.html"
-										class="arrow-link">
-										<span>Далее</span>
-										<svg
-											width="29"
-											height="13"
-											viewBox="0 0 29 13"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-											class="arrow-link__icon">
-											<path
-												d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-												fill="#1e283f" />
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="cart__aside">
-							<div class="box-blue">
-								<div class="cart__aside-row">
-									<p class="heading4 text-gold">Ваш заказ</p>
-									<span class="cart__aside-title">8 товаров</span>
-								</div>
-
-								<div class="cart__aside-row">
-									<p class="text2 text-white">Товары</p>
-									<span class="heading5 text-white">2 000₽</span>
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="house2"
+											class="input"
+											placeholder="Дом" />
+										<label
+											for="hous2"
+											class="input-label">
+											Дом
+										</label>
+										<div class="icon">
+											<img
+												src="./src/images/svg/success-validation.svg"
+												alt=""
+												class="success" />
+										</div>
+										<div class="icon">
+											<img
+												src="./src/images/svg/invalid-validation.svg"
+												alt=""
+												class="invalid" />
+										</div>
+									</div>
 								</div>
 
-								<div class="cart__aside-row">
-									<p class="text2 text-white">Скидка по бонусной программе</p>
-									<span class="heading5 text-gold">- 200₽</span>
+								<div class="map-block__row">
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="floor2"
+											class="input"
+											placeholder="Этаж" />
+										<label
+											for="floor2"
+											class="input-label">
+											Этаж
+										</label>
+										<div class="icon">
+											<img
+												src="./src/images/svg/success-validation.svg"
+												alt=""
+												class="success" />
+										</div>
+										<div class="icon">
+											<img
+												src="./src/images/svg/invalid-validation.svg"
+												alt=""
+												class="invalid" />
+										</div>
+									</div>
+
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="hous2"
+											class="input"
+											placeholder="Квартира" />
+										<label
+											for="hous2"
+											class="input-label">
+											Квартира
+										</label>
+										<div class="icon">
+											<img
+												src="./src/images/svg/success-validation.svg"
+												alt=""
+												class="success" />
+										</div>
+										<div class="icon">
+											<img
+												src="./src/images/svg/invalid-validation.svg"
+												alt=""
+												class="invalid" />
+										</div>
+									</div>
 								</div>
 
-								<div class="cart__aside-total">
-									<p class="cart__aside-total-title">Итоговая сумма</p>
-									<span class="cart__aside-total-value">1 800₽</span>
-								</div>
-
-								<div class="cart__aside-input">
+								<div class="input-container modal__input-large">
 									<input
 										type="text"
-										placeholder="Промокод"
-										class="cart__input-promo" />
-
-									<svg
-										class="cart__input-icon"
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 28 13"
-										fill="none">
-										<path
-											d="M1 5.75C0.585786 5.75 0.25 6.08579 0.25 6.5C0.25 6.91421 0.585786 7.25 1 7.25L1 5.75ZM27.5303 7.03033C27.8232 6.73744 27.8232 6.26257 27.5303 5.96967L22.7574 1.1967C22.4645 0.903808 21.9896 0.903808 21.6967 1.1967C21.4038 1.48959 21.4038 1.96447 21.6967 2.25736L25.9393 6.5L21.6967 10.7426C21.4038 11.0355 21.4038 11.5104 21.6967 11.8033C21.9896 12.0962 22.4645 12.0962 22.7574 11.8033L27.5303 7.03033ZM1 7.25L27 7.25L27 5.75L1 5.75L1 7.25Z"
-											fill="#29354D" />
-									</svg>
+										id="order-comment2"
+										class="input"
+										placeholder="Комментарий" />
+									<label
+										for="order-comment2"
+										class="input-label">
+										Комментарий
+									</label>
+									<div class="icon">
+										<img
+											src="./src/images/svg/success-validation.svg"
+											alt=""
+											class="success" />
+									</div>
+									<div class="icon">
+										<img
+											src="./src/images/svg/invalid-validation.svg"
+											alt=""
+											class="invalid" />
+									</div>
 								</div>
+							</form>
 
-								<button class="square-btn">Оформить</button>
+							<button class="square-btn blue-square-btn">
+								Сохранить и продолжить
+							</button>
+						</div>
+
+						<div
+							class="map-block__map-box"
+							id="root">
+							<div class="modal modal-map">
+								<div class="modal__container">
+									<button class="modal__close-btn">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none">
+											<path
+												d="M1 1.5L19 19.5M19 1.5L1 19.5"
+												stroke="#797979"
+												stroke-width="2"
+												stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="modal-map__swiper swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+										</div>
+										<div
+											class="swiper-pagination modal-map__swiper-pagination"></div>
+									</div>
+
+									<div class="modal-map__content">
+										<p class="modal-map__content-title">
+											Детская поликлиника № 118
+										</p>
+										<div class="modal-map__content-disc">
+											<div class="modal-map__content-adress">
+												<span class="modal-map__content-adress-icon">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 18 18"
+														fill="none">
+														<path
+															d="M1.97722 3.28558C2.54864 0.81415 6.27007 0.81415 6.83436 3.28558C7.17007 4.73558 6.24864 5.96415 5.44864 6.72843C4.86293 7.28558 3.9415 7.27843 3.35579 6.72843C2.56293 5.96415 1.6415 4.73558 1.97722 3.28558Z"
+															stroke="#797979"
+															stroke-width="1.5" />
+														<path
+															d="M11.2643 11.8571C11.8357 9.38568 15.5786 9.38568 16.15 11.8571C16.4857 13.3071 15.5643 14.5357 14.7571 15.3C14.1714 15.8571 13.2429 15.85 12.6571 15.3C11.85 14.5357 10.9286 13.3071 11.2643 11.8571Z"
+															stroke="#797979"
+															stroke-width="1.5" />
+														<path
+															d="M9.07149 3.57141H10.9858C12.3072 3.57141 12.9215 5.20713 11.9286 6.07855L6.22149 11.0714C5.22864 11.9357 5.84292 13.5714 7.15721 13.5714H9.07149"
+															stroke="#797979"
+															stroke-width="1.5"
+															stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M4.42117 3.92855H4.42942"
+															stroke="#797979"
+															stroke-width="1.5"
+															stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M13.7063 12.5H13.7146"
+															stroke="#797979"
+															stroke-width="1.5"
+															stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</span>
+
+												<p>
+													Москва, 2-й Старомытищинский пр-д., д, 123, корп. 1
+												</p>
+											</div>
+
+											<div class="modal-map__content-time">
+												<span>
+													<svg
+														viewBox="0 0 19 20"
+														xmlns="http://www.w3.org/2000/svg"
+														fill="none">
+														<path
+															d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+															stroke="#797979"
+															stroke-width="1.5"
+															stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+															stroke="#797979"
+															stroke-width="1.5"
+															stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</span>
+
+												<span>08-22</span>
+											</div>
+
+											<div class="modal-map__content-pass">
+												<span>Наличие пропуска:</span>
+												<strong>Нет</strong>
+											</div>
+
+											<a
+												href="tel:+74952121059"
+												class="modal-map__content-tel">
+												<span>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="17"
+														height="17"
+														viewBox="0 0 17 17"
+														fill="none">
+														<path
+															d="M14.8657 14.5012L14.8661 14.5009C15.1049 14.2374 15.2866 13.9562 15.4256 13.6618C15.5815 13.3318 15.6582 12.9847 15.6582 12.6408C15.6582 12.3459 15.5934 12.0901 15.5017 11.8608L15.4969 11.849L15.4918 11.8373C15.358 11.5332 15.1445 11.2962 14.8827 11.1141L12.7581 9.60568L12.7519 9.6013L12.7456 9.59704C12.557 9.46881 12.3623 9.35598 12.1579 9.27236C11.9387 9.18269 11.7138 9.13295 11.4817 9.13295C11.176 9.13295 10.9018 9.21965 10.6565 9.36459C10.4262 9.4886 10.2187 9.66125 10.034 9.84578L9.73482 10.141C9.59366 10.0506 9.4124 9.91722 9.18953 9.72866C8.87007 9.4574 8.55193 9.15816 8.21289 8.82553C7.89494 8.50121 7.59959 8.17525 7.32019 7.85248C7.13345 7.63161 6.99852 7.45262 6.90679 7.31476L7.20891 7.00071C7.3921 6.81679 7.55664 6.61465 7.68026 6.39867C7.83054 6.14792 7.91817 5.86392 7.91817 5.56294C7.91817 5.31741 7.85583 5.08309 7.77001 4.88118C7.68607 4.67747 7.57213 4.48071 7.43129 4.28481L5.94346 2.18775C5.74689 1.90539 5.49357 1.70809 5.21829 1.58006C4.9513 1.45291 4.66137 1.39294 4.37817 1.39294C3.67316 1.39294 3.04412 1.6941 2.52063 2.2071C2.10811 2.59773 1.80088 3.04623 1.60459 3.54423C1.41306 4.02384 1.32031 4.53621 1.32031 5.06152C1.32031 5.84709 1.50179 6.64685 1.84194 7.4547L1.84194 7.4547L1.84287 7.45688C2.17684 8.24312 2.63078 9.0242 3.18432 9.79375L3.18431 9.79376L3.18685 9.79725C3.74351 10.5618 4.3661 11.2913 5.05386 11.9857L5.05383 11.9857L5.05898 11.9908C5.75356 12.6787 6.48274 13.301 7.25293 13.8636L7.25387 13.8643C8.02763 14.4276 8.81599 14.8813 9.61275 15.2208C10.4273 15.5679 11.2281 15.7501 12.0025 15.7501C12.5469 15.7501 13.0624 15.6487 13.5423 15.449C14.0488 15.2411 14.4852 14.9206 14.8657 14.5012Z"
+															stroke="#797979"
+															stroke-width="1.5"
+															stroke-miterlimit="10" />
+													</svg>
+												</span>
+												<span>+7 (495) 212 10 59</span>
+											</a>
+										</div>
+
+										<a
+											href="#"
+											class="arrow-link">
+											<span>оставить отзыв</span>
+											<svg
+												viewBox="0 0 29 13"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="arrow-link__icon">
+												<path
+													d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+													fill="#1e283f" />
+											</svg>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
