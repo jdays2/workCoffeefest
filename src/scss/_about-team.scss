@@ -29,3 +29,28 @@
         }
     }
 }
+
+@media (max-width: 48em) {
+    .about-team {
+        &__description {
+            max-width: 67rem;
+        }
+
+        &__swiper {
+            &-slide {
+                height: 89.4rem;
+
+                &__img {
+                    height: auto;
+                }
+            }
+
+            &-controllers {
+                .swiper-prev,
+                .swiper-next {
+                    display: none;
+                }
+            }
+        }
+    }
+}
