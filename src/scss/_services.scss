@@ -237,6 +237,13 @@
 			}
 		}
 
+		.services__slide {
+			.services__list-item__text {
+				padding: 8rem 4rem;
+				height: calc(100% - 47.7rem);
+			}
+		}
+
 		.swiper-controllers {
 			.swiper-prev,
 			.swiper-next {
