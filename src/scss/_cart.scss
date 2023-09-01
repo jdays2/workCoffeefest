@@ -6,6 +6,18 @@
 		justify-content: space-between;
 	}
 
+	.arrow-link {
+		color: $darkBlue;
+	}
+
+	&__main-item-count {
+		color: #29354d;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 125%;
+	}
+
 	&__head {
 		width: 100%;
 		display: flex;
@@ -222,6 +234,10 @@
 
 			span {
 				margin-bottom: 1.2rem;
+			}
+
+			p {
+				font-weight: 400;
 			}
 		}
 	}

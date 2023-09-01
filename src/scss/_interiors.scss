@@ -35,3 +35,20 @@
         }
     }
 }
+
+@media (max-width: 48em) {
+    .interiors {
+        &__swiper {
+            &-slide {
+                height: 111rem;
+            }
+        }
+
+        &__swiper-controllers {
+            .swiper-prev,
+            .swiper-next {
+                display: none;
+            }
+        }
+    }
+}

@@ -16,6 +16,52 @@ $line: rgba(234, 194, 178, 0.25);
 $grey20: rgba(121, 121, 121, 0.2);
 $white20: rgba(255, 255, 255, 0.2);
 
+body {
+	&::-webkit-scrollbar {
+		width: 1.5rem;
+		right: 2rem;
+		padding-right: 2rem; /* Ширина скроллбара */
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $biege;
+		border-radius: 0.4rem; /* Закругление углов ползунка */
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: $darkBlue; /* Цвет ползунка при наведении */
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color:$light /* Цвет трека скроллбара */
+	}
+
+	&::-webkit-scrollbar-track:hover {
+		background-color: $light /* Цвет трека при наведении */
+	}
+
+	&::-webkit-scrollbar {
+		width:1.5rem; /* Ширина скроллбара для Firefox */
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $biege; /* Цвет ползунка скроллбара для Firefox */
+		border-radius: 0.4rem; /* Закругление углов ползунка для Firefox */
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: $darkBlue; /* Цвет ползунка при наведении для Firefox */
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: $light /* Цвет трека скроллбара для Firefox */
+	}
+
+	&::-webkit-scrollbar-track:hover {
+		background-color: $light;
+	}
+}
+
 .text-gray {
 	color: #797979;
 }
@@ -83,9 +129,9 @@ $white20: rgba(255, 255, 255, 0.2);
 		width: 1.2rem;
 		cursor: pointer;
 		-webkit-user-select: none;
-		   -moz-user-select: none;
-		    -ms-user-select: none;
-		        user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 		transition: 0.35s;
 		transform: scale(1);
 
@@ -297,6 +343,7 @@ $white20: rgba(255, 255, 255, 0.2);
 
 .arrow-link {
 	display: inline-flex;
+	cursor: pointer;
 	align-items: center;
 	gap: 1.4rem;
 	font-weight: 700;
@@ -407,6 +454,13 @@ $white20: rgba(255, 255, 255, 0.2);
 
 	@media (max-width: 48em) {
 		font-size: 2.8rem;
+	}
+}
+
+.filter-result-item {
+	display: none !important;
+	&.active {
+		display: flex !important;
 	}
 }
 
@@ -547,6 +601,7 @@ $white20: rgba(255, 255, 255, 0.2);
 		top: 2.5rem;
 		left: 3.5rem;
 		font-size: 2rem;
+		font-weight: 400;
 		line-height: 2.5rem;
 		color: $grey;
 		transition-property: transform;
@@ -1056,6 +1111,12 @@ $white20: rgba(255, 255, 255, 0.2);
 	&--borderless {
 		border: none;
 	}
+
+	@media (max-width: 48em) {
+		padding: 3.2rem 4rem;
+		font-size: 2.8rem;
+		line-height: 140%;
+	}
 }
 
 .settings-bar {
@@ -1168,204 +1229,6 @@ $white20: rgba(255, 255, 255, 0.2);
 		&:active {
 			bottom: -0.1rem;
 		}
-	}
-}
-
-.popup-block {
-	position: relative;
-	height: 5.6rem;
-	display: flex;
-	gap: 1.2rem;
-	width: 36rem;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	padding: 1.4rem 3.6rem;
-	border: 0.2rem solid #29354d;
-
-	&.active {
-		svg {
-			transform: rotate(-180deg);
-		}
-	}
-
-	svg {
-		display: block;
-		width: 2.4rem;
-		height: 2.4rem;
-		transition: 0.4s;
-	}
-
-	&--borderless {
-		border: none;
-	}
-
-	&__more-icon {
-		transition: 0.3s ease-in-out;
-	}
-
-	&__arrows-icon {
-		width: 2.4rem;
-		height: 2.4rem;
-	}
-
-	input {
-		opacity: 0;
-		right: 0;
-		top: 0;
-		position: absolute;
-
-		&:checked + .popup-block__popup {
-			opacity: 1;
-			z-index: 2;
-			transform: translateY(0);
-		}
-
-		&:checked ~ .popup-block__more-icon {
-			transform: rotate(180deg);
-		}
-	}
-
-	&__popup {
-		width: 37.6rem;
-		overflow-y: auto;
-		opacity: 0;
-		z-index: -1;
-		transform: translateY(-3rem);
-		transition: 0.3s ease-in-out;
-		height: -webkit-fit-content;
-		height: -moz-fit-content;
-		height: fit-content;
-
-		top: 8.35rem;
-		left: 0;
-		position: absolute;
-		padding: 2.4rem;
-		padding-top: 2.2rem;
-		padding-bottom: 2.2rem;
-		border-radius: 0 0 3rem 3rem;
-		border: 0.1rem solid #f1ded0;
-		background: #fff9ee;
-		box-shadow: 1.5rem 2.4rem 3.5rem 0 rgba(0, 0, 0, 0.07);
-
-		&--select {
-			width: 100%;
-
-			.popup-block__item {
-				border: none;
-				gap: 2rem;
-				padding: 0;
-				transition: 0.3s ease-in-out;
-
-				&:hover {
-					@media (hover: hover) {
-						span {
-							font-weight: 700;
-							line-height: 125%;
-						}
-					}
-				}
-
-				span {
-					width: 100%;
-					cursor: pointer;
-				}
-			}
-
-			input:checked + .popup-block__item-title {
-				font-weight: 700;
-				line-height: 125%;
-			}
-		}
-	}
-
-	&__list {
-		display: flex;
-		flex-direction: column;
-		gap: 1.6rem;
-		max-height: 43.3rem;
-		overflow-y: auto;
-		padding-right: 0.8rem;
-		padding-top: 0.2rem;
-		padding-bottom: 0.2rem;
-
-		&::-webkit-scrollbar {
-			width: 0.4rem;
-			right: 2rem;
-			padding-right: 2rem; /* Ширина скроллбара */
-		}
-
-		::-webkit-scrollbar-thumb {
-			background-color: #fff9ee; /* Цвет ползунка скроллбара */
-			border-radius: 0.4rem; /* Закругление углов ползунка */
-		}
-
-		::-webkit-scrollbar-thumb:hover {
-			background-color: #555; /* Цвет ползунка при наведении */
-		}
-
-		/* Стилизация трека (бара, по которому передвигается ползунок) */
-		&::-webkit-scrollbar-track {
-			background-color: #fff9ee; /* Цвет трека скроллбара */
-		}
-
-		&::-webkit-scrollbar-track:hover {
-			background-color: #ddd; /* Цвет трека при наведении */
-		}
-		scrollbar-width: thin; /* Ширина скроллбара */
-
-		&::-webkit-scrollbar {
-			width: 0.4rem; /* Ширина скроллбара для Firefox */
-		}
-
-		&::-webkit-scrollbar-thumb {
-			background-color: #f1ded0; /* Цвет ползунка скроллбара для Firefox */
-			border-radius: 0.4rem; /* Закругление углов ползунка для Firefox */
-		}
-
-		&::-webkit-scrollbar-thumb:hover {
-			background-color: #555; /* Цвет ползунка при наведении для Firefox */
-		}
-
-		&::-webkit-scrollbar-track {
-			background-color: #fff9ee; /* Цвет трека скроллбара для Firefox */
-		}
-
-		&::-webkit-scrollbar-track:hover {
-			background-color: #ddd;
-		}
-	}
-
-	&__item {
-		display: flex;
-
-		align-items: flex-end;
-		justify-content: space-between;
-		padding-bottom: 0.4rem;
-		border-bottom: 0.1rem solid rgba(121, 121, 121, 0.2);
-
-		span {
-			width: 15.8rem;
-		}
-
-		&--list {
-			border: none;
-			padding: 0;
-
-			span {
-				width: 100%;
-			}
-		}
-	}
-
-	&__item-title {
-		color: #29354d;
-		text-align: left;
-	}
-
-	&__item-value {
-		text-align: right;
-		color: #797979;
 	}
 }
 
@@ -1708,6 +1571,22 @@ $white20: rgba(255, 255, 255, 0.2);
 				transform: scaleY(-1);
 				transition: transform 0.3s ease-in-out;
 			}
+
+			&__box {
+				width: -webkit-fit-content;
+				width: -moz-fit-content;
+				width: fit-content;
+				align-items: flex-start;
+				display: flex;
+
+				&-text {
+					margin-right: 0.8rem;
+				}
+
+				.cart-icon {
+					margin-right: 3.2rem;
+				}
+			}
 		}
 
 		.acc-content {
@@ -1718,9 +1597,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			max-height: 0;
 			overflow: hidden;
 			opacity: 0;
-			transition-property: opacity, visibility, max-height, padding;
-			transition-duration: 0.3s;
-			transition-timing-function: ease-in-out;
+			transition: 0.3s ease-in-out;
 
 			.content {
 				padding: 4rem 6rem;

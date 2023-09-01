@@ -133,6 +133,9 @@
                     &:not(:last-child) {
                         margin-bottom: 2rem;
                     }
+                    &:last-child {
+                        margin-bottom: 8rem;
+                    }
                 }
             }
 
@@ -141,6 +144,14 @@
                 position: relative;
                 left: 100%;
                 transform: translateX(-100%);
+            }
+
+            .arrow-link {
+                width: 100%;
+                
+                span {
+                    margin-left: auto;
+                }
             }
         }
 
@@ -151,14 +162,18 @@
             &-img {
                 margin-right: 0;
                 width: 32.6rem;
-                height: 58.4rem;
+                height: 42rem;
                 border-radius: 0 0 5.2rem 5.2rem;
             }
 
             &-video {
                 width: 32.4rem;
-                height: 58.4rem;
+                height: 42rem;
                 border-radius: 0 0 5.2rem 5.2rem;
+
+                img {
+                    max-height: 42rem;
+                }
             }
         }
     }

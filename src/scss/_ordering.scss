@@ -58,12 +58,13 @@
 				object-fit: contain;
 			}
 		}
-    &-card-left {
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 3.77rem
-    }
+
+		&-card-left {
+			padding: 1.5rem;
+			display: flex;
+			flex-direction: column;
+			gap: 3.77rem;
+		}
 
 		&-card-right {
 			margin-left: auto;
@@ -116,13 +117,13 @@
 			}
 
 			&.red {
-        align-items: flex-end;
+				align-items: flex-end;
 				background: url('../images/svg/credit-card-bg-red.svg') top left/cover
 					no-repeat #e6af9a;
 			}
 
 			&.blue {
-        align-items: flex-end;
+				align-items: flex-end;
 				background: url('../images/svg/credit-card-bg.svg') top left/cover
 					no-repeat $darkBlue;
 
@@ -158,6 +159,240 @@
 				&::after {
 					border-width: 0.6rem;
 				}
+			}
+		}
+	}
+
+	&__orders-title {
+		margin-bottom: 6rem;
+		display: flex;
+		align-items: center;
+		gap: 6rem;
+
+		strong {
+			color: #29354d;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 125%;
+		}
+
+		span {
+			color: #797979;
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+		}
+	}
+
+	&__orders-wrapper {
+		.acc-item {
+			.acc-head {
+				height: 9.3rem;
+			}
+
+			.acc-content {
+				overflow: hidden;
+				max-height: 10.5rem;
+				opacity: 1;
+				&.active {
+					overflow: visible;
+					max-height: 100%;
+				}
+
+				p {
+					&:not(:last-child) {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__adress {
+		display: none;
+		flex-direction: column;
+		gap: 3.2rem;
+
+		&.active {
+			display: flex;
+		}
+	}
+
+	&__method {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		gap: 1.6rem;
+
+		&-item {
+			width: 49%;
+			position: relative;
+			justify-content: flex-start;
+			cursor: pointer;
+
+			input {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0rem;
+				width: 0;
+				z-index: 2;
+				height: 0;
+
+				&::after {
+					opacity: 1;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					position: absolute;
+					content: '';
+					border: 0.2rem solid #29354d;
+					width: 2rem;
+					height: 2rem;
+					border-radius: 50%;
+					margin-left: 1rem;
+				}
+			}
+
+			input:checked {
+				&::after {
+					border-width: 0.6rem;
+				}
+			}
+
+			input:checked ~ span {
+				font-weight: 700;
+			}
+
+			input:checked + strong {
+				font-weight: 700;
+			}
+
+			strong,
+			span {
+				font-family: Circe;
+				font-size: 2rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 125%;
+			}
+
+			strong {
+				color: #29354d;
+				margin-left: 3.5rem;
+				margin-right: 1.5rem;
+			}
+
+			span {
+				color: #e3bca0;
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 3.2rem;
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+		}
+	}
+
+	&__adress-head {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__shop-adress {
+		display: none;
+		flex-direction: column;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	&__shop-adress-card {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem;
+		background-color: #f1ded0;
+		width: 100%;
+		height: 13.6rem;
+		margin-top: 3.2rem;
+
+		strong {
+			color: #29354d;
+			font-family: Circe;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 125%;
+			margin-bottom: 0.6rem
+		}
+
+		p {
+			color: #29354d;
+			font-family: Circe;
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+			display: block;
+			margin-bottom: 1.6rem !important;
+		}
+	}
+
+	&__row {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 2.5rem;
+	}
+
+	&__adress-form {
+		flex-wrap: wrap;
+		gap: 2.4rem;
+		display: none;
+		display: flex;
+
+		.modal__input-medium {
+			width: 100%;
+		}
+
+		.input {
+			font-weight: 400;
+		}
+
+		.popup-block {
+			justify-content: space-between;
+			width: 100%;
+			height: 7.6rem;
+			padding: 2.4rem 3.5rem;
+			border-color: #f1ded0;
+			&__wrapper {
+				width: 100%;
+				transition: 0.3s ease-in-out;
+				&.active {
+					padding-bottom: 51.4rem;
+				}
+				&--time {
+					&.active {
+						padding-bottom: 25.4rem !important;
+					}
+				}
+			}
+
+			.popup-block__popup--ordering {
+				padding: 0;
+				box-shadow: none;
+				width: 100%;
+				border: none;
+				background-color: rgba(241, 222, 208, 0);
 			}
 		}
 	}

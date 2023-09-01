@@ -53,3 +53,47 @@
 		}
 	}
 }
+
+@media (max-width: 48em) {
+	.cooperation {
+		&__container {
+			flex-direction: column;
+		}
+
+		&__left {
+			width: auto;
+			max-width: 67rem;
+			border-radius: 0;
+			padding: 9.6rem 4rem 8rem 4rem;
+
+			.heading2,
+			.heading4 {
+				text-align: center;
+			}
+
+			.heading4 {
+				margin: 0 0 8rem 0;
+			}
+
+			&-form {
+				margin-bottom: 8rem;
+	
+				&__input-container {
+					&:not(:last-child) {
+						margin-bottom: 4rem;
+					}
+				}
+			}
+
+			&-btn {
+				padding: 2.8rem 11.66rem;
+			}
+		}
+
+		&__right {
+			width: auto;
+			max-width: 67rem;
+			border-radius: 0 0 7.2rem 7.2rem; 
+		}
+	}
+}

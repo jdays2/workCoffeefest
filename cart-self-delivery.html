@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -14,153 +14,31 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
-		<title>Контакты</title>
+		<title>Корзина / Самовывоз</title>
 	</head>
 
 	<body>
 		@@include('./templates/header.html')
-		<main>
-			<section class="main-banner">
-				<img
-					src="./src/images/contacts-banner.png"
-					alt=""
-					class="main-banner__swiper-slide__img" />
-				<a
-					href=""
-					class="banner-btns banner-btns--biege">
-					<span>Услуги</span>
-				</a>
-			</section>
+		<main class="main cart">
+			<section class="section light-section-clear">
+				<div class="container card__container">
+					<a
+						href="/cart-ordering-final.html"
+						class="arrow-link">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="35"
+							height="26"
+							viewBox="0 0 35 26"
+							fill="none">
+							<path
+								d="M30.5 12.75C30.9142 12.75 31.25 13.0858 31.25 13.5C31.25 13.9142 30.9142 14.25 30.5 14.25L30.5 12.75ZM3.96967 14.0303C3.67678 13.7374 3.67678 13.2626 3.96967 12.9697L8.74264 8.1967C9.03553 7.90381 9.51041 7.90381 9.8033 8.1967C10.0962 8.48959 10.0962 8.96447 9.8033 9.25736L5.56066 13.5L9.8033 17.7426C10.0962 18.0355 10.0962 18.5104 9.8033 18.8033C9.51041 19.0962 9.03553 19.0962 8.74264 18.8033L3.96967 14.0303ZM30.5 14.25L4.5 14.25L4.5 12.75L30.5 12.75L30.5 14.25Z"
+								fill="#29354D" />
+						</svg>
+						<span>назад</span>
+					</a>
 
-			<section class="contacts-info section biege-section">
-				<div class="container">
-					<ul class="breadcrumbs">
-						<li class="breadcrumbs__item">
-							<a
-								href="/dist/main.html"
-								class="breadcrumbs__item-link">
-								<svg
-									width="28"
-									height="28"
-									viewBox="0 0 28 28"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-linecap="round" />
-								</svg>
-							</a>
-						</li>
-
-						<li class="breadcrumbs__item">
-							<a
-								href="/dist/contacts.html"
-								class="breadcrumbs__item-link">
-								Контакты
-							</a>
-						</li>
-					</ul>
-
-					<div class="contacts-info__card">
-						<div class="contacts-info__card-left">
-							<p class="heading2">Телефон и почта для связи с нами</p>
-							<p class="heading4">контакты</p>
-
-							<ul class="contacts-info__card-left__list">
-								<li class="contacts-info__card-left__list-item">
-									<span class="contacts-info__card-left__list-link">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="49"
-											height="49"
-											viewBox="0 0 49 49"
-											fill="none">
-											<path
-												d="M37.1056 35.3745L37.106 35.374C37.5565 34.8769 37.899 34.3473 38.1617 33.7908C38.4469 33.1868 38.5856 32.5556 38.5856 31.9331C38.5856 31.4124 38.4719 30.9575 38.3041 30.538L38.2978 30.5222L38.2909 30.5066C38.0624 29.9872 37.6956 29.5756 37.2282 29.2508L32.8883 26.1696L32.88 26.1638L32.8717 26.1581C32.5064 25.9097 32.142 25.7001 31.7693 25.5476C31.3768 25.387 30.9859 25.3025 30.59 25.3025C30.0682 25.3025 29.5977 25.4502 29.1664 25.7069C28.7538 25.9274 28.3678 26.2446 28.0083 26.6037C28.0076 26.6045 28.0068 26.6052 28.006 26.606L27.111 27.4893C27.0914 27.4803 27.0684 27.47 27.0439 27.4594C26.6878 27.2657 26.197 26.9261 25.5666 26.3928C24.8993 25.8262 24.2383 25.2041 23.5403 24.5192C22.8796 23.8454 22.2673 23.1695 21.6898 22.5024C21.1632 21.8796 20.8162 21.396 20.6204 21.0529C20.609 21.024 20.5984 20.9986 20.5899 20.9784L21.4867 20.0462C21.8399 19.6921 22.1459 19.3133 22.3702 18.9202C22.6343 18.4813 22.7831 17.9933 22.7831 17.4825C22.7831 17.0684 22.6771 16.6603 22.5218 16.2957C22.3688 15.9237 22.1576 15.5566 21.888 15.1817L18.848 10.8969C18.5039 10.4019 18.0613 10.0568 17.5759 9.83145C17.106 9.60726 16.592 9.5 16.0869 9.5C14.8097 9.5 13.6522 10.0428 12.663 11.0136C11.8717 11.7621 11.289 12.615 10.918 13.5569C10.5533 14.4696 10.375 15.4487 10.375 16.4587C10.375 17.9798 10.7263 19.5424 11.3984 21.1387L11.3984 21.1387L11.3996 21.1416C12.0635 22.7045 12.9693 24.265 14.0807 25.8102L14.0807 25.8102L14.0841 25.8148C15.2042 27.3534 16.4578 28.8223 17.8439 30.2218L17.8438 30.2218L17.8507 30.2286C19.2504 31.6149 20.7189 32.868 22.2695 34.0006L22.2708 34.0016C23.8216 35.1306 25.3964 36.0361 26.9824 36.7118C28.5922 37.3978 30.1562 37.75 31.6531 37.75C32.6978 37.75 33.6813 37.5555 34.5945 37.1754C35.5474 36.7844 36.3751 36.1795 37.1056 35.3745Z"
-												stroke="#E6AF9A"
-												stroke-width="2"
-												stroke-miterlimit="10" />
-										</svg>
-
-										<span>8 (495) 212 10 59</span>
-									</span>
-								</li>
-
-								<li class="contacts-info__card-left__list-item">
-									<a
-										href="mailto:in@cofefest.ru"
-										class="contacts-info__card-left__list-link">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="46"
-											height="46"
-											viewBox="0 0 46 46"
-											fill="none">
-											<path
-												d="M31.2132 36.9643H14.7846C9.85603 36.9643 6.57031 34.5001 6.57031 28.7501V17.2501C6.57031 11.5001 9.85603 9.03577 14.7846 9.03577H31.2132C36.1417 9.03577 39.4275 11.5001 39.4275 17.2501V28.7501C39.4275 34.5001 36.1417 36.9643 31.2132 36.9643Z"
-												stroke="#E6AF9A"
-												stroke-width="2"
-												stroke-miterlimit="10"
-												stroke-linecap="round"
-												stroke-linejoin="round" />
-											<path
-												d="M31.2137 18.0715L26.0716 22.1787C24.3794 23.5258 21.603 23.5258 19.9109 22.1787L14.7852 18.0715"
-												stroke="#E6AF9A"
-												stroke-width="2"
-												stroke-miterlimit="10"
-												stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-
-										<span>По вопросам сотрудничества: in@cofefest.ru</span>
-									</a>
-								</li>
-
-								<li
-									class="contacts-info__card-left__list-item contacts-info__card-left__list-item--solo">
-									<a
-										href="mailto:in@cofefest.ru"
-										class="contacts-info__card-left__list-link">
-										<span>Отдел закупки: zakupka@cofefest.ru</span>
-									</a>
-								</li>
-
-								<li
-									class="contacts-info__card-left__list-item contacts-info__card-left__list-item--solo">
-									<a
-										href="mailto:in@cofefest.ru"
-										class="contacts-info__card-left__list-link">
-										<span>Обжарочный цех: b2b@cofefest.ru</span>
-									</a>
-								</li>
-
-								<li
-									class="contacts-info__card-left__list-item contacts-info__card-left__list-item--solo">
-									<a
-										href="mailto:in@cofefest.ru"
-										class="contacts-info__card-left__list-link">
-										<span>Отдел кадров: hr@cofefest.ru</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="contacts-info__card-right">
-							<img
-								src="./src/images/contacts-info-img.png"
-								alt=""
-								class="contacts-info__card-right__img" />
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="coffeeshops light-section section">
-				<div class="container">
-					<p class="coffeeshops__heading heading2">Наши кофейни</p>
-
-					<div class="map-block">
+					<div class="map-block map-block--self-delivery">
 						<div class="map-block__search-box">
 							<p class="heading4 map-block__search-title">
 								Выбрать пункт выдачи
@@ -197,7 +75,9 @@
 							<ul class="map-block__search-list">
 								<li class="map-block__search-item active">
 									<div class="map-block__search-item-top">
-										<p class="map-block__search-item-title">БЦ «Валлекс»</p>
+										<p class="map-block__search-item-title">
+											БЦ «Валлекс»
+										</p>
 										<p class="map-block__search-item-text">Москва,</p>
 										<p class="map-block__search-item-text">
 											Старокалужское ш. 62, 1ый этаж
@@ -364,7 +244,9 @@
 											Детская поликлиника № 148
 										</p>
 										<p class="map-block__search-item-text">Капотня,</p>
-										<p class="map-block__search-item-text">3-й квартал, д.27</p>
+										<p class="map-block__search-item-text">
+											3-й квартал, д.27
+										</p>
 									</div>
 
 									<div class="map-block__search-item-bottom">
@@ -933,7 +815,8 @@
 												</span>
 
 												<p>
-													Москва, 2-й Старомытищинский пр-д., д, 123, корп. 1
+													Москва, 2-й Старомытищинский пр-д., д, 123,
+													корп. 1
 												</p>
 											</div>
 
@@ -1006,182 +889,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
 
-			<section class="cooperation section biege-section">
-				<div class="container">
-					<div class="cooperation__container">
-						<div class="cooperation__left">
-							<p class="cooperation__left-heading heading2">
-								Свяжитесь со мной
-							</p>
-							<p class="cooperation__left-description heading4">
-								Оставьте заявку и наш менеджер свяжется с Вами в ближайшее
-								время!
-							</p>
-							<form
-								action="#"
-								class="cooperation__left-form">
-								<div
-									class="cooperation__left-form__input-container input-container">
-									<input
-										type="text"
-										id="name10"
-										class="input input-name"
-										placeholder="Имя" />
-									<label
-										for="name10"
-										class="input-label">
-										Имя
-									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
-								</div>
-								<div
-									class="cooperation__left-form__input-container input-container">
-									<input
-										type="text"
-										id="tel6"
-										class="input input-tel"
-										placeholder="Телефон" />
-									<label
-										for="tel6"
-										class="input-label">
-										Телефон
-									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
-								</div>
-							</form>
-							<button class="cooperation__left-btn square-btn">
-								<span>отправить заявку</span>
-							</button>
-						</div>
-						<div class="cooperation__right">
-							<img
-								src="./src/images/cooperation-img2.png"
-								alt=""
-								class="cooperation__right-img" />
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="light-section section manager-request">
-				<div class="container">
-					<div class="manager-request__container">
-						<div class="manager-request__left">
-							<p class="manager-request__left-heading heading2">
-								Написать руководителю
-							</p>
-							<p class="manager-request__left-description text1">
-								Вы можете написать руководству Ваши пожелания и предложения
-							</p>
-							<form
-								action="#"
-								class="manager-request__left-form">
-								<div class="input-container">
-									<input
-										type="text"
-										id="name-manager"
-										class="input input-name"
-										placeholder="Имя" />
-									<label
-										for="name-manager"
-										class="input-label">
-										Имя
-									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
-								</div>
-								<div class="input-container">
-									<input
-										type="text"
-										id="phone-manager"
-										class="input input-tel"
-										placeholder="Телефон" />
-									<label
-										for="phone-manager"
-										class="input-label">
-										Телефон
-									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
-								</div>
-								<div class="input-container">
-									<textarea
-										name=""
-										id="wishes-manager"
-										cols="30"
-										rows="10"
-										placeholder="Ваши пожелания"
-										class="input"></textarea>
-									<label
-										for="wishes-manager"
-										class="input-label">
-										Ваши пожелания
-									</label>
-								</div>
-							</form>
-							<button class="manager-request__left-btn square-btn blue-btn">
-								отправить
-							</button>
-						</div>
-
-						<div class="manager-request__right">
-							<img
-								src="./src/images/manager.png"
-								alt=""
-								class="manager-request__right-img" />
-							<p class="manager-request__right-name heading4">
-								Екатерина Федорова
-							</p>
-							<p class="manager-request__right-post text1">
-								Основатель сети кофеен CofeFest
-							</p>
-						</div>
-					</div>
+					<button class="square-btn blue-square-btn ">
+						Сохранить и продолжить
+					</button>
 				</div>
 			</section>
 		</main>

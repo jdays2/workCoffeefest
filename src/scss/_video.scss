@@ -91,3 +91,16 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+@media (max-width: 48em) {
+	.video {
+		.container {
+			padding: 0;
+		}
+	}
+
+	.video-js {
+		height: 148rem;
+		width: 75rem;
+	}
+}

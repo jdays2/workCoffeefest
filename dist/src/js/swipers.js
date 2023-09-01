@@ -178,11 +178,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const interiors = new Swiper('.interiors__swiper', {
-		slidesPerView: 1.8,
+		slidesPerView: 1,
+		slidesPerGroup: 1,
 		spaceBetween: rem(3),
-		centeredSlides: true,
-		loop: true,
 		speed: 600,
+		breakpoints: {
+			768: {
+				slidesPerView: 1.8,
+				spaceBetween: rem(3),
+				loop: true,
+				centeredSlides: true
+			}
+		},
 		pagination: {
 			el: '.interiors__swiper-controllers .swiper-pagination',
 		},
@@ -192,10 +199,34 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
-	const aboutTeamSwiper = new Swiper('.about-team__swiper', {
-		slidesPerView: 4,
+	const aboutValues = new Swiper('.services__swiper', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
 		spaceBetween: rem(3.5),
 		speed: 600,
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				spaceBetween: rem(3.5)
+			}
+		},
+		pagination: {
+			el: '.services__swiper-pagination-1'
+		}
+	})
+
+	const aboutTeamSwiper = new Swiper('.about-team__swiper', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: rem(3.5),
+		speed: 600,
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				slidesPerGroup: 4,
+				spaceBetween: rem(3.5)
+			}
+		},
 		pagination: {
 			el: '.about-team__swiper-controllers .swiper-pagination',
 		},

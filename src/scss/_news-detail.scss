@@ -113,3 +113,46 @@
 		}
 	}
 }
+
+@media (max-width: 48em) {
+	.news-detail {
+		.container {
+			flex-direction: column;
+		}
+
+		&__left {
+			order: 2;
+			max-width: 67rem;
+			margin: 0 0 10rem 0;
+
+			.social-list {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto;
+
+				&__item {
+					&:not(:last-child) {
+						margin: 0 3.2rem 0 0 !important;
+					}
+
+					img {
+						width: 9rem;
+						height: 9rem;
+					}
+				}
+			}
+		}
+
+		&__center {
+			order: 1;
+		}
+
+		&__right {
+			order: 3;
+			margin: 0;
+			width: auto;
+			max-width: 67rem;
+		}
+	}
+}

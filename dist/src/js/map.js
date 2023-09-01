@@ -31,7 +31,7 @@ if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
 			},
 		);
 
-    const myGreenIcon = new ymaps.Placemark(
+		const myGreenIcon = new ymaps.Placemark(
 			[55.820479, 37.578991],
 			{},
 			{
@@ -41,7 +41,7 @@ if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
 			},
 		);
 
-    myGreenIcon.events.add('click', () => {
+		myGreenIcon.events.add('click', () => {
 			mapModal.classList.add(activeClass);
 		});
 
@@ -55,7 +55,7 @@ if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
 
 		map.geoObjects.add(myBlueIcon);
 		map.geoObjects.add(myBiegeIcon);
-    map.geoObjects.add(myGreenIcon);
+		map.geoObjects.add(myGreenIcon);
 
 		// скрыть все элементы управления картой
 		map.options.set('suppressMapOpenBlock', true);

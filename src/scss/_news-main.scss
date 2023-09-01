@@ -131,3 +131,15 @@
 		}
 	}
 }
+
+@media (max-width: 48em) {
+	.news-main {
+		&__item {
+			width: 67rem;
+
+			&-text {
+				padding: 8rem 4rem;
+			}
+		}
+	}
+}
