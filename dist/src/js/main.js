@@ -400,3 +400,124 @@ if (deliveryCheckers) {
 		});
 	});
 }
+
+//обработка вставки изображения
+const fileInput = document.querySelector('.catalog-inputs__file');
+if (fileInput) {
+	const inputParent = fileInput.closest('.catalog-inputs');
+}
+
+const removeFiles = document.querySelector('.catalog-inputs__file-remove-icon');
+const fileName = document.querySelector('#file-name');
+const fileSize = document.querySelector('#file-size');
+//добавление
+if (fileInput) {
+	fileInput.addEventListener('input', function () {
+		if (fileInput.files.length > 0) {
+			inputParent.classList.add('active');
+			fileInput.disabled = true;
+			fileName.textContent = fileInput.files[0].name;
+			fileSize.textContent =
+				(fileInput.files[0].size / 1024).toFixed(2) + ' kb';
+		}
+	});
+}
+//удаление
+if (removeFiles) {
+	removeFiles.addEventListener('click', (e) => {
+		if (fileInput.files.length > 0) {
+			fileInput.value = '';
+			inputParent.classList.remove('active');
+			fileName.textContent = '';
+			fileSize.textContent = '';
+			fileInput.disabled = false;
+		}
+	});
+}
+
+//отображения текущего количества символов в textarea
+const textareaWrap = document.querySelectorAll('.input-textarea-wrapper');
+if (textareaWrap) {
+	textareaWrap.forEach((item) => {
+		const textarea = item.querySelector('textarea');
+		const valueLimits = item.querySelector('.modal__textarea-limits');
+		if (textarea && valueLimits) {
+			textarea.addEventListener('input', () => {
+				valueLimits.textContent = `${textarea.value.length}/1000`;
+				debugger;
+			});
+		}
+	});
+}
+
+//отображение :hover и постоянного выбранного состояния для иконок рейтинга
+const iconsWrappers = document.querySelectorAll('.rates__icons-wrapper');
+if (iconsWrappers) {
+	iconsWrappers.forEach((wrapper) => {
+		const icons = wrapper.querySelectorAll('.rates__icon');
+		icons.forEach((icon, id) => {
+			icon.addEventListener('click', () => {
+				icons.forEach((currentIcon, i) => {
+					if (i <= id) {
+						currentIcon.classList.add('active');
+					} else {
+						currentIcon.classList.remove('active');
+					}
+				});
+			});
+			icon.addEventListener('mouseover', () => {
+				icons.forEach((currentIcon, i) => {
+					currentIcon.classList.add('hover-zero');
+					if (i <= id) {
+						currentIcon.classList.add('hover-active');
+					} else {
+						currentIcon.classList.remove('hover-active');
+					}
+				});
+			});
+			wrapper.addEventListener('mouseout', () => {
+				icons.forEach((currentIcon) => {
+					currentIcon.classList.remove('hover-zero');
+					currentIcon.classList.remove('hover-active');
+				});
+			});
+		});
+	});
+}
+
+//загрузка изображений с превью в модалке
+const inputImg = document.querySelector('.upload__input');
+const previewImages = document.querySelectorAll('.upload__preview-box');
+if (inputImg) {
+	inputImg.addEventListener('change', function () {
+		const selectedFile = inputImg.files.item(0);
+		let imageAssigned = false;
+		const reader = new FileReader();
+		reader.readAsDataURL(selectedFile);
+		reader.onload = function (event) {
+			for (const item of previewImages) {
+				const img = item.querySelector('img');
+
+				if (!img.hasAttribute('src') || img.getAttribute('src') === '') {
+					item.classList.add('active');
+					img.src = event.target.result;
+					imageAssigned = true;
+					break;
+				}
+			}
+		};
+	});
+}
+
+// удаление картинки
+const removeBtns = document.querySelectorAll('.upload__preview-box-remove');
+if (removeBtns) {
+	removeBtns.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const wrapper = btn.closest('.upload__preview-box');
+			const img = wrapper.querySelector('img');
+			img.src = '';
+			wrapper.classList.remove('active');
+		});
+	});
+}
