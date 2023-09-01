@@ -149,3 +149,10 @@
 		position: relative;
 	}
 }
+
+@media (max-width: 48em) {
+	.map-block {
+		flex-direction: column;
+		height: auto;
+	}
+}
