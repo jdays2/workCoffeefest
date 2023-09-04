@@ -499,6 +499,19 @@
 			margin: 0 0 4rem 0;
 		}
 
+		&__content-box {
+			padding: 0 4rem;
+		}
+
+		&__subs-wrapper {
+			width: auto;
+			max-width: 67rem;
+
+			p {
+				width: auto;
+			}
+		}
+
 		&__main-box {
 			flex-direction: column;
 			width: auto;
@@ -519,7 +532,7 @@
 		}
 
 		&__stats-item {
-			flex: 0 1 48%;
+			flex: 0 1 47%;
 		}
 
 		&__right-side {
@@ -577,6 +590,10 @@
 			span {
 				font-size: 2.8rem;
 			}
+		}
+
+		&__popup {
+			width: 59rem;
 		}
 	}
 }
