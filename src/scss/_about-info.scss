@@ -61,4 +61,40 @@
 			}
 		}
 	}
+
+	.about-info__card.cakes__banner {
+		flex-direction: column-reverse;
+		padding: 21.6rem 4rem 10rem 4rem;
+		position: relative;
+
+		.section-info__card-left {
+			padding: 8rem 0rem 0rem 0rem;
+
+			&__heading {
+				position: absolute;
+				top: 10rem;
+				left: 4rem;
+			}
+
+			&__description {
+				p:first-child {
+					margin: 0 0 4rem 0;
+				}
+
+				.square-btn {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+
+		.section-info__card-right {
+			height: auto;
+
+			&__img {
+				width: 28.6rem;
+				height: 37rem;
+			}
+		}
+	}
 }
