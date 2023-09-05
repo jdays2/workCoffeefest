@@ -110,8 +110,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const formatsSwiper = new Swiper('.formats__swiper', {
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: rem(3.5),
+		breakpoints: {
+			768: {
+				slidesPerView: 3,
+				spaceBetween: rem(3.5)
+			}
+		},
 		pagination: {
 			el: '.formats__swiper-pagination',
 		},
@@ -122,8 +128,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const urMenuSwiper = new Swiper('.ur-menu__swiper', {
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: rem(3.5),
+		breakpoints: {
+			768: {
+				slidesPerView: 3,
+				spaceBetween: rem(3.5)
+			}
+		},
 		pagination: {
 			el: '.ur-menu__swiper-pagination',
 		},

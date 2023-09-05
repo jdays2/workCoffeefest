@@ -77,3 +77,23 @@
 		}
 	}
 }
+
+@media (max-width: 48em) {
+	.formats__swiper {
+		.proposal-card {
+			&__descr {
+				height: 85.6rem;
+				padding: 8rem 4rem 20rem 4rem;
+				background-size: 67rem 85.6rem;
+			}
+
+			&__title {
+				font-size: 3.6rem;
+			}
+
+			&__text {
+				font-size: 2.8rem;
+			}
+		}
+	}
+}
