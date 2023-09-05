@@ -134,10 +134,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const proposalSwiper = new Swiper('.proposal__swiper', {
-		slidesPerView: 3,
+		slidesPerView: 1,
+		slidesPerGroup: 1,
 		spaceBetween: rem(3.5),
+		breakpoints: {
+			768: {
+				slidesPerGroup: 1,
+				slidesPerView: 3,
+				spaceBetween: rem(3.5)
+			}
+		},
 		pagination: {
-			el: '.proposal__swiper-pagination',
+			el: '.proposal__swiper-pagination-1',
 		},
 		navigation: {
 			nextEl: '.proposal__swiper-next',
@@ -212,6 +220,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		pagination: {
 			el: '.services__swiper-pagination-1'
+		},
+		navigation: {
+			nextEl: '.serv__swiper-next',
+			prevEl: '.serv__swiper-prev'
 		}
 	})
 
@@ -237,9 +249,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const teamSwiper = new Swiper('.team__swiper', {
-		slidesPerView: 4,
+		slidesPerView: 1,
 		spaceBetween: rem(3.4),
 		speed: 600,
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				spaceBetween: rem(3.4)
+			}
+		},
 		pagination: {
 			el: '.team__swiper-pagination',
 		},
