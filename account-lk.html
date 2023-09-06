@@ -17,6 +17,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+			<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
 		<title>Личный кабинeт</title>
 	</head>
 
@@ -2737,27 +2740,17 @@
 							</p>
 
 							<div class="account-lk__right-video">
-								<img
-									src="./src/images/bonus-program-img.png"
-									alt="" />
-								<button class="account-lk__right-video__btn play-btn">
-									<svg
-										width="88"
-										height="88"
-										viewBox="0 0 88 88"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<circle
-											cx="43.5"
-											cy="43.5"
-											r="42.5"
-											stroke="#F1DED0"
-											stroke-width="2" />
-										<path
-											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-											fill="#F1DED0" />
-									</svg>
-								</button>
+								<video
+								id="my-video"
+								class="video-js video-js--medium video-js--light"
+								controls
+								preload="true"
+								poster="./src/images/lc-video-img.png"
+								data-setup="{}">
+								<source
+									src="./src/images/sample/sample.mp4"
+									type="video/mp4" />
+							</video>
 							</div>
 
 							<div class="account-lk__right-text">

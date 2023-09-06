@@ -43,6 +43,15 @@
 	height: 74.2rem;
 }
 
+.video-js--light {
+	.vjs-poster {
+		background-color: #fff9ee !important;
+		img {
+			background-color: #fff9ee !important;
+		}
+	}
+}
+
 .video-js--medium {
 	width: 100%;
 	height: 100%;
