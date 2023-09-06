@@ -5,6 +5,8 @@
 		display: flex;
 		align-items: center;
 		gap: 1.2rem;
+		margin-left: 2.5rem;
+		margin-bottom: 2.4rem;
 	}
 
 	&__return-btn {
@@ -12,8 +14,9 @@
 		height: 7rem;
 		cursor: pointer;
 		display: none;
-		margin-right: 1.45rem;
-		margin-left: -2.1rem;
+		margin-bottom: 1.5rem;
+    margin-right: -1rem;
+    margin-left: -2.1rem;
 
 		svg {
 			width: 100%;
@@ -112,5 +115,15 @@
 			height: 0.2rem;
 			background-color: #29354d;
 		}
+	}
+}
+
+.ordering {
+	.cart__aside {
+		margin-top: 28.6rem;
+	}
+
+	.input-container {
+		height: 7.4rem;
 	}
 }

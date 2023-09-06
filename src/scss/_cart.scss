@@ -22,11 +22,16 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-end;
+
+		.heading2 {
+			line-height: 0.7;
+		}
 	}
 
 	&__aside-input {
 		position: relative;
-		margin-bottom: 3.2rem;
+		margin-bottom: 2.7rem;
 	}
 
 	&__input-icon {
@@ -135,7 +140,7 @@
 
 	&__aside {
 		width: 51rem;
-		margin-top: 14rem;
+		margin-top: 12rem;
 	}
 
 	&__main-head {
@@ -148,7 +153,7 @@
 	&__main-head-row {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
+		align-items: center;
 	}
 
 	&__main-title {
@@ -163,7 +168,8 @@
 		width: -moz-fit-content;
 		width: fit-content;
 		align-items: center;
-		gap: 3.8rem;
+		gap: 4rem;
+		padding-right: 1.4rem;
 	}
 
 	&__head-item {
@@ -178,7 +184,7 @@
 	}
 
 	&__main-list {
-		gap: 2rem;
+		gap: 1.7rem;
 		display: flex;
 		flex-direction: column;
 	}
@@ -189,8 +195,10 @@
 
 	&__main-item-box {
 		width: 100%;
+		padding-right: 4rem;
 		display: flex;
 		align-items: center;
+		margin-bottom: 1rem;
 	}
 
 	&__main-item {
@@ -218,7 +226,7 @@
 			display: flex;
 			flex-direction: column;
 			width: 42.8rem;
-			margin-right: 3.35rem;
+			margin-right: 4.35rem;
 
 			a {
 				color: #29354d;
@@ -283,5 +291,11 @@
 		.square-btn {
 			text-align: center;
 		}
+	}
+}
+
+@media (hover: hover) {
+	.cart .arrow-link:hover {
+		color: #e3bca0;
 	}
 }

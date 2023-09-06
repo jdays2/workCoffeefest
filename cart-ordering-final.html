@@ -14,12 +14,12 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
-		<title>Корзина</title>
+		<title>Корзина / Ваш заказ</title>
 	</head>
 
 	<body>
 		@@include('./templates/header.html')
-		<main class="main cart">
+		<main class="main cart ordering">
 			<section class="section light-section-clear">
 				<div class="container card__container">
 					<div class="breadcrumbs__container container">
@@ -155,6 +155,9 @@
 							</div>
 
 							<div class="ordering__orders-wrapper accordion active">
+								<p class="ordering__subtitle">
+									Выберите способ доставки в каждом заказе.
+								</p>
 								<div class="ordering__orders-item acc-item">
 									<div class="acc-head">
 										<p class="heading4">Курьерская доставка</p>
@@ -440,7 +443,8 @@
 												<p class="heading4">Выберите вариант доставки</p>
 												<div class="ordering__method">
 													<label class="ordering__method-item">
-														<input id="curier-delivery"
+														<input
+															id="curier-delivery"
 															checked
 															type="radio"
 															name="delivery-method" />
@@ -448,14 +452,16 @@
 														<span>от 200₽</span>
 													</label>
 													<label class="ordering__method-item">
-														<input id="self-delivery-sdek"
+														<input
+															id="self-delivery-sdek"
 															type="radio"
 															name="delivery-method" />
 														<strong>Самовывоз из ПВЗ (СДЭК)</strong>
 														<span>от 100₽</span>
 													</label>
 													<label class="ordering__method-item">
-														<input id="self-delivery"
+														<input
+															id="self-delivery"
 															type="radio"
 															name="delivery-method" />
 														<strong>Самовывоз</strong>
@@ -464,7 +470,9 @@
 												</div>
 											</div>
 
-											<div class="ordering__adress delivery-method active" id="curier-delivery-block">
+											<div
+												class="ordering__adress delivery-method active"
+												id="curier-delivery-block">
 												<div class="ordering__adress-head">
 													<p class="heading4">Адрес и время доставки</p>
 													<a
@@ -963,7 +971,9 @@
 												</form>
 											</div>
 
-											<div class="ordering__shop-adress delivery-method" id="self-delivery-block">
+											<div
+												class="ordering__shop-adress delivery-method"
+												id="self-delivery-block">
 												<div class="ordering__adress-head">
 													<p class="heading4">Пункт выдачи</p>
 													<a
@@ -1301,7 +1311,8 @@
 												<p class="heading4">Выберите вариант доставки</p>
 												<div class="ordering__method">
 													<label class="ordering__method-item">
-														<input id="curier-delivery"
+														<input
+															id="curier-delivery"
 															checked
 															type="radio"
 															name="delivery-method2" />
@@ -1309,14 +1320,16 @@
 														<span>от 200₽</span>
 													</label>
 													<label class="ordering__method-item">
-														<input id="self-delivery-sdek"
+														<input
+															id="self-delivery-sdek"
 															type="radio"
 															name="delivery-method2" />
 														<strong>Самовывоз из ПВЗ (СДЭК)</strong>
 														<span>от 100₽</span>
 													</label>
 													<label class="ordering__method-item">
-														<input id="self-delivery"
+														<input
+															id="self-delivery"
 															type="radio"
 															name="delivery-method2" />
 														<strong>Самовывоз</strong>
@@ -1325,7 +1338,9 @@
 												</div>
 											</div>
 
-											<div class="ordering__adress delivery-method active" id="curier-delivery-block">
+											<div
+												class="ordering__adress delivery-method active"
+												id="curier-delivery-block">
 												<div class="ordering__adress-head">
 													<p class="heading4">Адрес и время доставки</p>
 													<a
@@ -1824,7 +1839,9 @@
 												</form>
 											</div>
 
-											<div class="ordering__shop-adress delivery-method" id="self-delivery-block">
+											<div
+												class="ordering__shop-adress delivery-method"
+												id="self-delivery-block">
 												<div class="ordering__adress-head">
 													<p class="heading4">Пункт выдачи</p>
 													<a

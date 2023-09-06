@@ -14,6 +14,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+		<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
 		<title>Авторский кофе</title>
 	</head>
 
@@ -286,15 +289,6 @@
 								href=""
 								class="banner-btns banner-btns--light">
 								<span>Посмотреть меню</span>
-								<span class="banner-btns__icon">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none">
-										<path
-											d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-											fill="#FFFCF8" />
-									</svg>
-								</span>
 							</a>
 						</div>
 						<div
@@ -382,7 +376,7 @@
 				</div>
 			</section>
 
-			<section class="about-info section">
+			<section class="about-info section section--small">
 				<div class="container">
 					<ul class="breadcrumbs">
 						<li class="breadcrumbs__item">
@@ -443,27 +437,17 @@
 
 						<div class="section-info__card-right">
 							<div class="section-info__card-right__large">
-								<img
-									src="./src/images/authorcoffee-img4.png"
-									alt="" />
-								<button class="play-btn">
-									<svg
-										width="88"
-										height="88"
-										viewBox="0 0 88 88"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<circle
-											cx="43.5"
-											cy="43.5"
-											r="42.5"
-											stroke="#F1DED0"
-											stroke-width="2" />
-										<path
-											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-											fill="#F1DED0" />
-									</svg>
-								</button>
+								<video
+									id="my-video"
+									class="video-js video-js--medium"
+									controls
+									preload="true"
+									poster="./src/images/authorcoffee-video-img.png"
+									data-setup="{}">
+									<source
+										src="./src/images/sample/sample.mp4"
+										type="video/mp4" />
+								</video>
 							</div>
 						</div>
 					</div>
@@ -481,27 +465,32 @@
 											class="authorcoffee-types__swiper-slide__left-heading heading2">
 											Кофе по-генуэзки
 										</p>
-										<p
-											class="authorcoffee-types__swiper-slide__left-subheading heading4">
-											Подается в объеме 200 мл и 300 мл
-										</p>
+
 										<div
 											class="authorcoffee-types__swiper-slide__left-description menu">
 											<p>
-												Чтобы выйти за грани привычного вкуса, требуется
-												вдохновение. В кофе по-генуэзски такой музой является
-												сироп 1883 Maison Routin с полнотелым вкусом аниса и
-												утонченным характерным ароматом.
+												В нашей палитре авторского кофе мы собрали несколько
+												уникальных рецептов, которые перенесут вас на север или
+												юг Италии, в жаркое тропическое лето, в сердце
+												вьетнамского мегаполиса, в высокогорное поселение в
+												Андах или на пропитанный специями восточный базар.
 											</p>
 											<p>
-												Смешанный с эспрессо и молоком в тщательно выверенных
-												пропорциях, этот кофейный напиток покоряет своей
-												декадентской нежностью с анисовыми нотками и
-												завораживает абсолютным балансом вкуса, букета и
-												аромата. Нюансы кофе по-генуэзски раскрываются с каждым
-												новым глотком всё больше и больше, а последний глоток
-												этого кофейного коктейля оставляет во рту пряный и чуть
-												сливочный шлейф послевкусия.
+												Авторский кофе, собранный в нашей коллекции, путешествие
+												по далеким мирам, где аутентичная кофейная культура
+												покоряет своей многогранностью и глубиной.
+											</p>
+											<p>
+												Создавая авторский COFEFEST, мы используем только
+												высококачественное зерно свежей обжарки и натуральные
+												ингредиенты, которые ложатся в основу сиропов
+												собственного производства.
+											</p>
+											<p>
+												Отправляйтесь в путешествие на фестиваль кофейных
+												напитков вместе с нашими бариста и наполняйте каждый
+												свой день целой вечностью, от которой вас отделяет всего
+												один глоток авторского кофе COFEFEST!
 											</p>
 										</div>
 										<a
@@ -1109,15 +1098,9 @@
 <div class="modal filter-modal-1">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<div class="teg-list">
@@ -1128,9 +1111,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1145,9 +1129,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1162,9 +1147,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1179,9 +1165,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1196,9 +1183,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1227,15 +1215,9 @@
 <div class="modal filter-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<div class="teg-list">
@@ -1246,9 +1228,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1263,9 +1246,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1280,9 +1264,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1297,9 +1282,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1318,9 +1304,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1335,9 +1322,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1352,9 +1340,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1369,9 +1358,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -1399,15 +1389,9 @@
 <div class="modal map-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<div class="map-block">
@@ -2237,15 +2221,9 @@
 <div class="modal personal-info-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Персональная информация</p>
@@ -2363,15 +2341,9 @@
 <div class="modal add-card-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Добавить банковскую карту</p>
@@ -2464,15 +2436,9 @@
 <div class="modal chage-password-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Изменить пароль</p>
@@ -2740,15 +2706,9 @@
 <div class="modal add-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Добавить адрес</p>
@@ -2917,15 +2877,9 @@
 <div class="modal vacancy-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Отклик на вакансию</p>
@@ -3019,15 +2973,9 @@
 <div class="modal message-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Сообщение отправлено</p>
@@ -3045,15 +2993,9 @@
 <div class="modal feedback-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Спасибо за отзыв!</p>
@@ -3071,15 +3013,9 @@
 <div class="modal request-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Заявка отправлена</p>
@@ -3098,15 +3034,9 @@
 <div class="modal unavailable-products-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<div class="modal__content-box">
@@ -3386,15 +3316,9 @@
 <div class="modal text-us">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Напишите нам</p>
@@ -3495,15 +3419,9 @@
 <div class="modal feedback">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Отзыв к кофейне в БЦ «Валлекс»</p>
@@ -3773,15 +3691,9 @@
 <div class="modal is-correct-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Вы здесь находитесь?</p>

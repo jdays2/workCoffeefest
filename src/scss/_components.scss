@@ -33,15 +33,15 @@ body {
 	}
 
 	&::-webkit-scrollbar-track {
-		background-color:$light /* Цвет трека скроллбара */
+		background-color: $light; /* Цвет трека скроллбара */
 	}
 
 	&::-webkit-scrollbar-track:hover {
-		background-color: $light /* Цвет трека при наведении */
+		background-color: $light; /* Цвет трека при наведении */
 	}
 
 	&::-webkit-scrollbar {
-		width:1.5rem; /* Ширина скроллбара для Firefox */
+		width: 1.5rem; /* Ширина скроллбара для Firefox */
 	}
 
 	&::-webkit-scrollbar-thumb {
@@ -54,7 +54,7 @@ body {
 	}
 
 	&::-webkit-scrollbar-track {
-		background-color: $light /* Цвет трека скроллбара для Firefox */
+		background-color: $light; /* Цвет трека скроллбара для Firefox */
 	}
 
 	&::-webkit-scrollbar-track:hover {
@@ -105,7 +105,7 @@ body {
 	gap: 3.3rem;
 	height: 5.1rem;
 
-	margin-bottom: 2.9rem;
+	margin-bottom: 0.9rem;
 
 	&:focus {
 		outline: none;
@@ -224,6 +224,11 @@ body {
 	@media (max-width: 48em) {
 		padding-top: 12rem;
 		padding-bottom: 12rem;
+	}
+
+	&--small {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
 	}
 }
 
@@ -559,6 +564,7 @@ body {
 	.input {
 		padding: 3.7rem 7.2rem 1.2rem 3.5rem;
 		width: 100%;
+		height: 7.4rem;
 		font-size: 2rem;
 		line-height: 2.5rem;
 		border: 0.2rem solid $biege;
@@ -618,7 +624,7 @@ body {
 	.icon {
 		position: absolute;
 		top: 50%;
-		right: 3.5rem;
+		right: 4rem;
 		width: 2.4rem;
 		height: 2.4rem;
 		-o-object-fit: contain;
@@ -1119,107 +1125,6 @@ body {
 	}
 }
 
-.settings-bar {
-	display: flex;
-	flex-direction: column;
-	gap: 2.4rem;
-	margin-bottom: 8rem;
-
-	&__row {
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	&__box {
-		display: flex;
-		align-items: center;
-		gap: 2.4rem;
-	}
-}
-
-.category-block {
-	width: 100%;
-	display: flex;
-	align-items: center;
-
-	&__btn {
-		&.swiper-button-disabled {
-			display: none;
-		}
-		&-left {
-			transform: rotate(-180deg);
-			padding-left: 3rem;
-			svg {
-				width: 3.2rem;
-				height: 1.3rem;
-			}
-		}
-
-		&-right {
-			padding-left: 3rem;
-			svg {
-				width: 3.2rem;
-				height: 1.3rem;
-			}
-		}
-	}
-
-	.swiper {
-		overflow: hidden;
-		width: 148.5rem;
-		z-index: 0;
-	}
-	.swiper-wrapper {
-		padding-right: 10rem;
-	}
-	&__item {
-		cursor: pointer;
-		position: relative;
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
-		color: #29354d;
-		display: flex;
-		text-align: center;
-		height: 3.6rem;
-
-		span {
-			font-family: Circe;
-			font-size: 2rem;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 1;
-			transition: 0.2s ease-in-out;
-			text-align: center;
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		label {
-			position: relative;
-		}
-
-		input {
-			position: absolute;
-			top: 0;
-			right: 0;
-			opacity: 0;
-			pointer-events: none;
-		}
-
-		input:checked + span {
-			font-size: 3rem;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 1;
-		}
-	}
-}
-
 .password-btn {
 	&__show {
 		z-index: 20;
@@ -1286,9 +1191,13 @@ body {
 		display: flex !important;
 	}
 	&--big-right-part {
+		height: 59rem;
 		padding: 0;
+		overflow: auto;
+		border-radius: 0rem 0rem 0rem 5rem;
 		.section-info__card-left {
-			padding: 9rem 7rem;
+			padding: 8rem 6rem;
+			padding-right: 4rem;
 			width: 50%;
 		}
 		.section-info__card-right {
@@ -1298,7 +1207,7 @@ body {
 		.section-info__card-right__img {
 			width: 100%;
 			height: 100%;
-			border-radius: 0rem 0px 5rem 0rem;
+			border-radius: 0rem 0px 0rem 0rem;
 			position: relative;
 
 			img {
@@ -1317,8 +1226,8 @@ body {
 		}
 
 		&__heading {
-			margin-bottom: 4.5rem;
-			width: 64.4rem;
+			margin-bottom: 2.5rem;
+			width: 67.4rem;
 			color: $light;
 		}
 
@@ -1347,6 +1256,11 @@ body {
 		height: 47.5rem;
 		display: flex;
 		justify-content: space-between;
+
+		&__large {
+			width: 100%;
+			height: 100%;
+		}
 
 		&__img {
 			width: 36.2rem;
@@ -1426,7 +1340,7 @@ body {
 		}
 
 		.acc-head {
-			padding: 5.2rem 6rem;
+			padding: 3.2rem 6rem;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -1554,7 +1468,7 @@ body {
 		}
 
 		.acc-head {
-			padding: 5.2rem 6rem;
+			padding: 3.2rem 6rem;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;

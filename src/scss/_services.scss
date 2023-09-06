@@ -1,6 +1,15 @@
 .services {
 	&__heading {
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
+	}
+
+	.swiper-controllers {
+		margin-top: 5rem;
+		.serv__swiper-pagination,
+		.formats__swiper-pagination,
+		.proposal__swiper-pagination {
+			top: 0;
+		}
 	}
 
 	&__link {
@@ -31,14 +40,27 @@
 		justify-content: space-between;
 
 		&-item {
-			width: 36.2rem;
+			width: 37.2rem;
 			display: flex;
 			flex-direction: column;
 			height: auto;
+			&--small {
+				.services__list-item__text {
+					min-height: 22rem;
+				}
+				.services__list-item__text-description {
+					width: 100%;
+				}
+			}
+			&--medium {
+				.services__list-item__text {
+					min-height: 30rem;
+				}
+			}
 
 			&__text {
 				padding: 5rem 3rem 2rem 3rem;
-				min-height: 29rem;
+				min-height: 27rem;
 				height: calc(100% - 27.2rem);
 				background-color: $biege;
 
@@ -109,8 +131,6 @@
 	}
 
 	&__swiper {
-		margin-bottom: 5rem;
-
 		.swiper-wrapper {
 			align-items: stretch;
 		}
@@ -131,7 +151,7 @@
 				}
 
 				&-description {
-					width: 27.7rem;
+					width: 100%;
 				}
 			}
 
@@ -171,10 +191,6 @@
 		&__heading {
 			margin-bottom: 8rem;
 		}
-
-		&__list {
-		}
-
 		&__swiper {
 			&-slide {
 				&__icon {
