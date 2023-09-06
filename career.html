@@ -14,7 +14,7 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
-			<link
+		<link
 			href="https://vjs.zencdn.net/8.5.2/video-js.css"
 			rel="stylesheet" />
 		<title>Карьера</title>
@@ -29,7 +29,7 @@
 						src="./src/images/career-baner.png"
 						alt=""
 						class="main-banner__swiper-slide__img" />
-				
+
 					<a
 						href=""
 						class="banner-btns banner-btns--biege banner-btns--bottom">
@@ -38,7 +38,7 @@
 				</div>
 			</section>
 
-			<section class="about-info section">
+			<section class="about-info section section--small">
 				<div class="container">
 					<ul class="breadcrumbs">
 						<li class="breadcrumbs__item">
@@ -118,7 +118,7 @@
 					<p class="services__heading heading2">Наши ценности</p>
 
 					<div class="services__list">
-						<div class="services__list-item">
+						<div class="services__list-item services__list-item--small">
 							<div class="services__list-item__text">
 								<p class="services__list-item__text-heading heading4">
 									Открытость
@@ -134,7 +134,7 @@
 									alt="" />
 							</div>
 						</div>
-						<div class="services__list-item">
+						<div class="services__list-item services__list-item--small">
 							<div class="services__list-item__text">
 								<p class="services__list-item__text-heading heading4">
 									вовлеченность
@@ -150,7 +150,7 @@
 									alt="" />
 							</div>
 						</div>
-						<div class="services__list-item">
+						<div class="services__list-item services__list-item--small">
 							<div class="services__list-item__text">
 								<p class="services__list-item__text-heading heading4">
 									Лидерство и ответственность
@@ -166,7 +166,7 @@
 									alt="" />
 							</div>
 						</div>
-						<div class="services__list-item">
+						<div class="services__list-item services__list-item--small">
 							<div class="services__list-item__text">
 								<p class="services__list-item__text-heading heading4">
 									Развитие и рост
@@ -205,9 +205,35 @@
 				<div class="container">
 					<p class="carrer-vacancies__heading heading2">Вакансии компании</p>
 
+					<div class="section-tags__container">
+						<ul class="section-tags">
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn active"
+									data-path="coffee-shops">
+									Кофейни
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn"
+									data-path="office">
+									Офис
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn"
+									data-path="production">
+									Производство
+								</button>
+							</li>
+						</ul>
+					</div>
+
 					<div
 						class="carrer-vacancies__accordion accordion active"
-						data-target="delivery">
+						data-target="coffee-shops">
 						<div class="acc-item">
 							<div class="acc-head">
 								<p class="heading4">БАРИСТА</p>
@@ -309,6 +335,138 @@
 							<div class="acc-content menu">
 								<div class="content">
 									<p>Подробнее о вакансии</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">ПЕКАРЬ</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 1 свободное место</p>
+									<img
+										src="./src/images/svg/blue-arrow-up.svg"
+										alt=""
+										class="arrow" />
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>Подробнее о вакансии</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="carrer-vacancies__accordion accordion hide"
+						data-target="office">
+
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">ПЕКАРЬ</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 1 свободное место</p>
+									<img
+										src="./src/images/svg/blue-arrow-up.svg"
+										alt=""
+										class="arrow" />
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>Подробнее о вакансии</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="carrer-vacancies__accordion accordion hide"
+						data-target="production">
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">БАРИСТА</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 5 свободных мест</p>
+									<img
+										src="./src/images/svg/blue-arrow-up.svg"
+										alt=""
+										class="arrow" />
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p class="heading">Обязанности:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Приветствие гостей, консультирование при выборе,
+											приготовление напитков, выдача готовой еды и напитков
+										</li>
+										<li class="acc-content__list-item">
+											Составление заказов на продукцию, прием товара (выпечка,
+											снеки, кофе)
+										</li>
+										<li class="acc-content__list-item">Общение с гостями</li>
+										<li class="acc-content__list-item">
+											Кассовая дисциплина, соблюдение отчетов и требований сети,
+											соблюдение норм индустрии торговли и законодательства
+										</li>
+										<li class="acc-content__list-item">
+											Соблюдение правил и норм кофейной культуры, настройка
+											помола, контроль качества каждой чашки кофе
+										</li>
+									</ul>
+
+									<p class="heading">Требования:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Умение общаться, рекомендовать и помогать в выборе
+										</li>
+										<li class="acc-content__list-item">Грамотная речь</li>
+										<li class="acc-content__list-item">
+											Искренность и доброжелательность
+										</li>
+										<li class="acc-content__list-item">
+											Скорость и эффективность в обслуживании
+										</li>
+										<li class="acc-content__list-item">Искренний сервис</li>
+										<li class="acc-content__list-item">Пунктуальность</li>
+										<li class="acc-content__list-item">Чистоплотность</li>
+										<li class="acc-content__list-item">Ответсвенность</li>
+									</ul>
+
+									<p class="heading">Условия работы:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Оформление согласно ТК РФ
+										</li>
+										<li class="acc-content__list-item">Графики: 5/2 или 2/2</li>
+										<li class="acc-content__list-item">
+											Вкусное питание и напитки в рамках регламента
+										</li>
+										<li class="acc-content__list-item">
+											Возможность роста и развития вместе с проектом
+										</li>
+										<li class="acc-content__list-item">
+											Пешая доступность от метро до кофейни
+										</li>
+									</ul>
+
+									<p class="heading">География вакансий:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">м. Савеловская</li>
+										<li class="acc-content__list-item">м. Спортивная</li>
+										<li class="acc-content__list-item">м. Нагатинская</li>
+										<li class="acc-content__list-item">м. Калужская</li>
+										<li class="acc-content__list-item">
+											м. Бауманская / Красносельская
+										</li>
+									</ul>
+
+									<button class="request-vacancy-btn square-btn blue-btn">
+										откликнуться
+									</button>
 								</div>
 							</div>
 						</div>

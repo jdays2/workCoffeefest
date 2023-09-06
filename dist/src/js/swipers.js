@@ -307,6 +307,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(5),
 		slidesPerView: 'auto',
 		updateOnWindowResize: true,
+		rebuildOnUpdate: true,
 		navigation: {
 			nextEl: '.category-block__btn-right',
 			prevEl: '.category-block__btn-left',

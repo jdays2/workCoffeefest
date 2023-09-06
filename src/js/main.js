@@ -328,9 +328,25 @@ document.addEventListener('DOMContentLoaded', function () {
 		initTags(aboutInfoTags, aboutInfoTagsBlock);
 	}
 
+	//теги на странице Вакансии
+	if (document.querySelector('.carrer-vacancies .section-tags')) {
+		const aboutInfoTags = document.querySelectorAll(
+			'.carrer-vacancies .section-tags__item-btn',
+		);
+		const aboutInfoTagsBlock = document.querySelectorAll(
+			'.carrer-vacancies .carrer-vacancies__accordion',
+		);
+		initTags(aboutInfoTags, aboutInfoTagsBlock);
+	}
+
 	// аккордеон на странице Карьера
 	if (document.querySelector('.carrer-vacancies__accordion')) {
-		initAccordion(document.querySelector('.carrer-vacancies__accordion'));
+		const careerBlocks = document.querySelectorAll(
+			'.carrer-vacancies__accordion',
+		);
+		careerBlocks.forEach((block) => {
+			initAccordion(block);
+		});
 	}
 });
 
@@ -414,6 +430,7 @@ const fileSize = document.querySelector('#file-size');
 if (fileInput) {
 	fileInput.addEventListener('input', function () {
 		if (fileInput.files.length > 0) {
+			const inputParent = fileInput.closest('.input-container');
 			inputParent.classList.add('active');
 			fileInput.disabled = true;
 			fileName.textContent = fileInput.files[0].name;
@@ -426,6 +443,7 @@ if (fileInput) {
 if (removeFiles) {
 	removeFiles.addEventListener('click', (e) => {
 		if (fileInput.files.length > 0) {
+			const inputParent = fileInput.closest('.input-container');
 			fileInput.value = '';
 			inputParent.classList.remove('active');
 			fileName.textContent = '';
@@ -518,6 +536,22 @@ if (removeBtns) {
 			const img = wrapper.querySelector('img');
 			img.src = '';
 			wrapper.classList.remove('active');
+		});
+	});
+}
+
+//показ попап блока для банковской карточки в личном кабинете
+const creditCardBtn = document.querySelectorAll('.cards-list__item-right__btn');
+if (creditCardBtn) {
+	creditCardBtn.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const popup = btn.querySelector(
+				'.cards-list__item-right__btn-popup',
+			);
+			if (!popup) {
+				return;
+			}
+			popup.classList.toggle('active');
 		});
 	});
 }

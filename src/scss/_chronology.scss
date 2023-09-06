@@ -47,11 +47,9 @@
 		position: relative;
 		left: 2.2rem;
 
-		&-img {
-			width: 161.8rem;
-			height: 20.8rem;
-			-o-object-fit: contain;
-			object-fit: contain;
+		svg {
+			width: 157.8rem;
+			height: 16.4rem;
 		}
 
 		&-active {
@@ -250,7 +248,7 @@
 					flex-direction: column;
 					align-items: center;
 					position: absolute;
-					bottom: 19.9rem;
+					bottom: 20.2rem;
 					cursor: pointer;
 					transition: 0.2s ease-in-out;
 
