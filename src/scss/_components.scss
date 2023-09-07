@@ -555,9 +555,16 @@ body {
 		}
 
 		.icon {
+			top: 40%;
+
 			img.invalid {
 				opacity: 1;
 			}
+		}
+
+		.input-status {
+			display: block;
+			color: $brightHeadlines;
 		}
 	}
 
@@ -639,6 +646,13 @@ body {
 			opacity: 0;
 			transition: opacity 0.2s ease-in-out;
 		}
+	}
+
+	.input-status {
+		margin: 0.4rem 0 0 3.5rem;
+		font-size: 1.8rem;
+		line-height: 140%; 
+		display: none;
 	}
 
 	@media (max-width: 48em) {
