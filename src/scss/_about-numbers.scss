@@ -23,7 +23,8 @@
     }
 
     &__heading {
-        margin-bottom: 15rem;
+        margin-top: 1.8rem; 
+        margin-bottom: 11rem;
         text-align: center;
         transform: translateY(-50%);
     }
@@ -31,8 +32,9 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 15rem;
+        margin-left: 6rem;
+        
+        gap: 12rem 24rem;
 
         &-item {
             &:nth-child(3n + 1) {
@@ -40,7 +42,7 @@
             }
 
             &:nth-child(3n + 2) {
-                width: 38.6rem;
+                width: 30.6rem;
             }
 
             &:nth-child(3n + 3) {

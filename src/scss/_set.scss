@@ -122,9 +122,9 @@ input[type='number'] {
 
 button {
 	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 @media (max-width: 48em) {

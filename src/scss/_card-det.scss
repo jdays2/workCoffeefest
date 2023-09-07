@@ -3,6 +3,7 @@
 	gap: 3.5rem;
 	position: relative;
 	z-index: 2;
+	padding-bottom: 7rem;
 
 	&__container {
 		padding-top: 8.1rem;
@@ -23,14 +24,14 @@
 
 	&__content-box {
 		display: flex;
-		gap: 5.3rem;
+		gap: 3.5rem;
 		flex-direction: column;
 	}
 
 	&__heading {
 		display: flex;
 		flex-direction: column;
-		gap: 3.2rem;
+		gap: 4.5rem;
 	}
 
 	&__subtitle {
@@ -109,19 +110,31 @@
 	}
 
 	&__right-side {
+		position: absolute;
+		right: 0;
+		bottom: 7rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 
 		width: 37.4rem;
-		padding: 2.1rem 4.7rem 4.5rem 4.7rem;
+		padding: 2.8rem 5.6rem 4.7rem;
 		border-radius: 0 0 3rem 3rem;
 		border: 0.1rem solid #f1ded0;
+		margin-top: 0.5rem;
 		background: #fff9ee;
 		box-shadow: 1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.05);
 
+		.controlls {
+			margin-bottom: 0.6rem;
+		}
+
 		&:focus {
 			outline: none;
+		}
+
+		.card-det__more {
+			margin-bottom: -1.5rem;
 		}
 
 		.card-det__item-value {
@@ -154,7 +167,7 @@
 		gap: 4.4rem;
 
 		height: 5.7rem;
-		margin-bottom: 4rem;
+		margin-bottom: 3.3rem;
 	}
 
 	&__main-box {
@@ -209,7 +222,7 @@
 
 	&__more {
 		position: relative;
-		height: 5.6rem;
+		height: 8rem;
 		display: flex;
 		input {
 			opacity: 0;
@@ -286,7 +299,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.6rem;
-		max-height: 43.3rem;
+		max-height: 24.7rem;
 		overflow-y: auto;
 		padding-right: 0.8rem;
 		padding-top: 0.2rem;
@@ -405,7 +418,7 @@
 	}
 
 	&__price {
-		margin-bottom: 4.3rem;
+		margin-bottom: 3.9rem;
 		display: flex;
 		align-items: flex-end;
 		gap: 0.7rem;

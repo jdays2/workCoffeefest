@@ -28,10 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		speed: 700,
 		spaceBetween: rem(3),
 		autoplay: {
-			delay: 7000, // Интервал между сменой слайдов в миллисекундах
-			disableOnInteraction: false, // Остановка автопрокрутки при взаимодействии пользователя
+			delay: 7000,
+			disableOnInteraction: false,
 		},
 		pagination: {
+			clickable: true,
 			el: '.main-banner__swiper-controllers .swiper-pagination',
 		},
 		navigation: {
@@ -70,8 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			const slider = item.querySelector('.services__swiper');
 			const servicesSwiper = new Swiper(slider, {
 				spaceBetween: rem(3.4),
+				loop: true,
 				pagination: {
 					el: pagination,
+					clickable: true,
 				},
 				navigation: {
 					nextEl: next,
@@ -93,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesPerView: 3,
 		spaceBetween: rem(3.5),
 		pagination: {
+			clickable: true,
 			el: '.services__swiper-pagination',
 		},
 		navigation: {
@@ -101,10 +105,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
-
 	const modalMapSwiper = new Swiper('.modal-map__swiper', {
 		slidesPerView: 1,
 		pagination: {
+			clickable: true,
 			el: '.modal-map__swiper-pagination',
 		},
 	});
@@ -119,6 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		},
 		pagination: {
+			clickable: true,
 			el: '.formats__swiper-pagination',
 		},
 		navigation: {
@@ -137,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		},
 		pagination: {
+			clickable: true,
 			el: '.ur-menu__swiper-pagination',
 		},
 		navigation: {
@@ -157,7 +163,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		},
 		pagination: {
-			el: '.proposal__swiper-pagination-1',
+			clickable: true,
+			// el: '.proposal__swiper-pagination-1',
+			el: '.proposal__swiper-pagination',
 		},
 		navigation: {
 			nextEl: '.proposal__swiper-next',
@@ -168,6 +176,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const newsSwiper = new Swiper('.news__swiper', {
 		spaceBetween: rem(3.5),
 		pagination: {
+			clickable: true,
 			el: '.news__swiper-controllers .swiper-pagination',
 		},
 		navigation: {
@@ -189,6 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(3.5),
 		speed: 600,
 		pagination: {
+			clickable: true,
 			el: '.events__swiper-controllers .swiper-pagination',
 		},
 		navigation: {
@@ -207,10 +217,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				slidesPerView: 1.8,
 				spaceBetween: rem(3),
 				loop: true,
-				centeredSlides: true
-			}
+				centeredSlides: true,
+			},
 		},
 		pagination: {
+			clickable: true,
 			el: '.interiors__swiper-controllers .swiper-pagination',
 		},
 		navigation: {
@@ -224,20 +235,26 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesPerGroup: 1,
 		spaceBetween: rem(3.5),
 		speed: 600,
+		loop: true,
 		breakpoints: {
 			768: {
 				slidesPerView: 4,
-				spaceBetween: rem(3.5)
-			}
+				spaceBetween: rem(3.5),
+			},
 		},
 		pagination: {
-			el: '.services__swiper-pagination-1'
+	// 	el: '.services__swiper-pagination-1'
+	// 	},
+	// 	navigation: {
+	// 		nextEl: '.serv__swiper-next',
+	// 		prevEl: '.serv__swiper-prev'
+	// 	}
+	// })
+			
+			clickable: true,
+			el: '.services__swiper-pagination-1',
 		},
-		navigation: {
-			nextEl: '.serv__swiper-next',
-			prevEl: '.serv__swiper-prev'
-		}
-	})
+	});
 
 	const aboutTeamSwiper = new Swiper('.about-team__swiper', {
 		slidesPerView: 1,
@@ -248,10 +265,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			768: {
 				slidesPerView: 4,
 				slidesPerGroup: 4,
-				spaceBetween: rem(3.5)
-			}
+				spaceBetween: rem(3.5),
+			},
 		},
 		pagination: {
+			clickable: true,
 			el: '.about-team__swiper-controllers .swiper-pagination',
 		},
 		navigation: {
@@ -271,6 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		},
 		pagination: {
+			clickable: true,
 			el: '.team__swiper-pagination',
 		},
 		navigation: {
@@ -284,6 +303,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(3.4),
 		speed: 600,
 		pagination: {
+			clickable: true,
 			el: '.service__swiper-pagination',
 		},
 		navigation: {
@@ -297,6 +317,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(3.4),
 		speed: 600,
 		pagination: {
+			clickable: true,
 			el: '.serv__swiper-pagination',
 		},
 		navigation: {
@@ -310,6 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(3.5),
 		speed: 600,
 		pagination: {
+			clickable: true,
 			el: '.authorcoffee-types__swiper-controllers .swiper-pagination',
 		},
 		navigation: {
@@ -325,6 +347,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(3),
 		effect: 'fade',
 		pagination: {
+			clickable: true,
 			el: '.catalog-hero__swiper-controllers .swiper-pagination',
 		},
 		navigation: {
@@ -337,38 +360,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(5),
 		slidesPerView: 'auto',
 		updateOnWindowResize: true,
+		rebuildOnUpdate: true,
 		navigation: {
 			nextEl: '.category-block__btn-right',
 			prevEl: '.category-block__btn-left',
 		},
 	});
-
-	// const checkContentFits = () => {
-	// 	const container = document.querySelector('.category-block__swiper');
-	// 	if (!container) {
-	// 		return;
-	// 	}
-
-	// 	const wrapper = container.querySelector('.swiper-wrapper');
-	// 	const slides = wrapper.querySelectorAll('.swiper-slide');
-
-	// 	const totalWidth = Array.from(slides).reduce(
-	// 		(acc, slide) => acc + slide.offsetWidth,
-	// 		0,
-	// 	);
-
-	// 	if (totalWidth <= container.offsetWidth) {
-	// 		categoryBlockSwiper.params.allowSlideNext = false;
-	// 		categoryBlockSwiper.params.allowSlidePrev = false;
-	// 		categoryBlockSwiper.navigation.hide();
-	// 	} else {
-	// 		categoryBlockSwiper.params.allowSlideNext = true;
-	// 		categoryBlockSwiper.params.allowSlidePrev = true;
-	// 		categoryBlockSwiper.navigation.show();
-	// 	}
-
-	// 	categoryBlockSwiper.update();
-	// };
-
-	// checkContentFits();
 });

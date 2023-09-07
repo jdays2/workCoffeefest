@@ -14,6 +14,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+		<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
 		<title>Каталог / Торты</title>
 	</head>
 
@@ -174,11 +177,18 @@
 									src="./src/images/catalog-cake-img-1.png"
 									alt="" />
 							</div>
-							<div class="section-info__card-right__img">
-								<img
-									src="./src/images/catalog-cake-img-2.png"
-									alt="" />
-							</div>
+
+							<video
+								id="my-video"
+								class="video-js video-js--small"
+								controls
+								preload="true"
+								poster="./src/images/player-sample.png"
+								data-setup="{}">
+								<source
+									src="./src/images/sample/sample.mp4"
+									type="video/mp4" />
+							</video>
 						</div>
 					</div>
 				</div>
@@ -923,7 +933,7 @@
 										type="text"
 										id="name"
 										class="input input-name"
-										placeholder="Имя"									placeholder="Email"/>
+										placeholder="Имя" />
 									<label
 										for="name"
 										class="input-label">
@@ -983,27 +993,28 @@
 									</label>
 								</div>
 								<div
-									class="cooperation__left-form__input-container input-container catalog-inputs catalog-inputs--succes">
+									class="cooperation__left-form__input-container input-container catalog-inputs">
 									<input
 										type="file"
 										id="attach"
+										accept="image/*"
 										class="catalog-inputs__file" />
 									<label
-										for="wishes"
-										class="catalog-inputs__file-label">
+										for="attach"
+										class="catalog-inputs__file-label catalog-inputs__file-label-static">
 										Прикрепить фото
 									</label>
-									<label
-										for="wishes"
+									<div
+										for="attach"
 										class="catalog-inputs__file-label catalog-inputs__file-label-succes">
-										<strong>Фото торта.jpg</strong>
-										<span>32 kb</span>
+										<strong id="file-name"></strong>
+										<span id="file-size"></span>
 										<div class="catalog-inputs__file-remove-icon">
 											<img
 												src="./src/images/svg/remove-icon.svg"
 												alt="" />
 										</div>
-									</label>
+									</div>
 									<div class="icon">
 										<img
 											src="./src/images/svg/success-validation.svg"

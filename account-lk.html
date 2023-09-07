@@ -17,6 +17,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+			<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
 		<title>Личный кабинeт</title>
 	</head>
 
@@ -128,7 +131,11 @@
 									<p class="block-top__heading heading4">
 										Персональная информация
 									</p>
-									<button class="btns-caps">редактировать</button>
+									<button
+										class="btns-caps"
+										id="red-prof">
+										редактировать
+									</button>
 								</div>
 								<ul class="block-list">
 									<li class="block-list__item">
@@ -157,8 +164,8 @@
 									</li>
 								</ul>
 								<div class="block-bottom">
-									<a
-										href="#"
+									<div
+										id="change-pass"
 										class="arrow-link">
 										<span>сменить пароль</span>
 										<svg
@@ -172,7 +179,7 @@
 												d="M1 5.75C0.585786 5.75 0.25 6.08579 0.25 6.5C0.25 6.91421 0.585786 7.25 1 7.25L1 5.75ZM27.5303 7.03033C27.8232 6.73744 27.8232 6.26257 27.5303 5.96967L22.7574 1.1967C22.4645 0.903808 21.9896 0.903808 21.6967 1.1967C21.4038 1.48959 21.4038 1.96447 21.6967 2.25736L25.9393 6.5L21.6967 10.7426C21.4038 11.0355 21.4038 11.5104 21.6967 11.8033C21.9896 12.0962 22.4645 12.0962 22.7574 11.8033L27.5303 7.03033ZM1 7.25L27 7.25L27 5.75L1 5.75L1 7.25Z"
 												fill="#29354D" />
 										</svg>
-									</a>
+									</div>
 								</div>
 							</div>
 
@@ -218,8 +225,8 @@
 									</li>
 								</ul>
 								<div class="block-bottom">
-									<a
-										href="#"
+									<div
+										id="add-adress"
 										class="arrow-link">
 										<span>добавить адрес</span>
 										<svg
@@ -233,7 +240,7 @@
 												d="M1 5.75C0.585786 5.75 0.25 6.08579 0.25 6.5C0.25 6.91421 0.585786 7.25 1 7.25L1 5.75ZM27.5303 7.03033C27.8232 6.73744 27.8232 6.26257 27.5303 5.96967L22.7574 1.1967C22.4645 0.903808 21.9896 0.903808 21.6967 1.1967C21.4038 1.48959 21.4038 1.96447 21.6967 2.25736L25.9393 6.5L21.6967 10.7426C21.4038 11.0355 21.4038 11.5104 21.6967 11.8033C21.9896 12.0962 22.4645 12.0962 22.7574 11.8033L27.5303 7.03033ZM1 7.25L27 7.25L27 5.75L1 5.75L1 7.25Z"
 												fill="#29354D" />
 										</svg>
-									</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -253,19 +260,21 @@
 							<div class="cards-list">
 								<div class="cards-list__item red">
 									<p class="cards-list__item-name menu">Ivan Ivanov</p>
-									<div class="cards-list__item-number menu">
+									<div class="cards-list__item-number">
 										<p>4276</p>
-										<p>
-											22
-											<span></span>
-											<span></span>
-										</p>
-										<p>
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span>
-										</p>
+										<div>
+											<p>22</p>
+
+											<div>
+												<span>.</span>
+												<span>.</span>
+
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+											</div>
+										</div>
 										<p>2467</p>
 									</div>
 									<p class="cards-list__item-date menu">09/25</p>
@@ -274,6 +283,10 @@
 											<span></span>
 											<span></span>
 											<span></span>
+											<div class="cards-list__item-right__btn-popup">
+												<span>Удалить карту</span>
+												<span>Редактировать</span>
+											</div>
 										</button>
 										<img
 											src="./src/images/svg/visa.svg"
@@ -1034,19 +1047,21 @@
 
 								<div class="cards-list__item dark-blue">
 									<p class="cards-list__item-name menu">Ivan Ivanov</p>
-									<div class="cards-list__item-number menu">
+									<div class="cards-list__item-number">
 										<p>4276</p>
-										<p>
-											22
-											<span></span>
-											<span></span>
-										</p>
-										<p>
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span>
-										</p>
+										<div>
+											<p>22</p>
+
+											<div>
+												<span>.</span>
+												<span>.</span>
+
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+											</div>
+										</div>
 										<p>2467</p>
 									</div>
 									<p class="cards-list__item-date menu">09/25</p>
@@ -1055,6 +1070,10 @@
 											<span></span>
 											<span></span>
 											<span></span>
+											<div class="cards-list__item-right__btn-popup">
+												<span>Удалить карту</span>
+												<span>Редактировать</span>
+											</div>
 										</button>
 										<img
 											src="./src/images/svg/visa.svg"
@@ -2120,7 +2139,7 @@
 										</div>
 									</div>
 
-                                    <div class="order-table__item acc-item">
+									<div class="order-table__item acc-item">
 										<div class="order-table__item-head acc-head">
 											<div class="order-table__item-cell number">
 												<p>№123456</p>
@@ -2729,27 +2748,17 @@
 							</p>
 
 							<div class="account-lk__right-video">
-								<img
-									src="./src/images/bonus-program-img.png"
-									alt="" />
-								<button class="account-lk__right-video__btn play-btn">
-									<svg
-										width="88"
-										height="88"
-										viewBox="0 0 88 88"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<circle
-											cx="43.5"
-											cy="43.5"
-											r="42.5"
-											stroke="#F1DED0"
-											stroke-width="2" />
-										<path
-											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-											fill="#F1DED0" />
-									</svg>
-								</button>
+								<video
+								id="my-video"
+								class="video-js video-js--medium video-js--light"
+								controls
+								preload="true"
+								poster="./src/images/lc-video-img.png"
+								data-setup="{}">
+								<source
+									src="./src/images/sample/sample.mp4"
+									type="video/mp4" />
+							</video>
 							</div>
 
 							<div class="account-lk__right-text">

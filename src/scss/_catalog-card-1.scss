@@ -251,4 +251,30 @@
 			right: 2rem;
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+	.catalog-card-1__descr {
+		padding: 6rem 4rem 4rem 4rem;
+		border-radius: 0 0 7.2rem 7.2rem;
+		border: 0.3rem solid $line;
+		max-width: none;
+	}
+	.catalog-card-1__title {
+		max-width: 52rem;
+		margin: 0 0 4rem 0;
+	}
+	.catalog-card-1__add-to-cart {
+		left: 56.6rem;
+		top: 22rem;
+	}
+}
+
+@media (hover:hover) {
+	.catalog-card-1__link:hover {
+		color: #E3BCA0;
+		border-color: #E3BCA0;
+	}
+	
+}
+>>>>>>> upstream/dev2

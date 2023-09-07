@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		});
 	}
-	// аккордеоны
 
+	// аккордеоны
 	function initAccordion(accordion) {
 		let accItems = accordion.querySelectorAll('.acc-item');
 		accItems.forEach((item) => {
@@ -99,6 +99,24 @@ document.addEventListener('DOMContentLoaded', function () {
 					accContent.style.maxHeight = null;
 				} else {
 					accContent.style.maxHeight = accContent.scrollHeight / 5 + 'rem';
+				}
+			});
+		});
+	}
+
+	//показ и скрытие блока с информацией по заказу (корзина, после выбора карты)
+	const ordersList = document.querySelector('.ordering__orders-wrapper');
+	if (ordersList) {
+		let accItems = ordersList.querySelectorAll('.acc-item');
+		accItems.forEach((item) => {
+			let accHead = item.querySelector('.acc-head');
+			let accContent = item.querySelector('.acc-content');
+			accHead.addEventListener('click', function () {
+				item.classList.toggle('active');
+				if (accContent.classList.contains('active')) {
+					accContent.classList.remove('active');
+				} else {
+					accContent.classList.add('active');
 				}
 			});
 		});
@@ -316,9 +334,25 @@ document.addEventListener('DOMContentLoaded', function () {
 		initTags(aboutInfoTags, aboutInfoTagsBlock);
 	}
 
+	//теги на странице Вакансии
+	if (document.querySelector('.carrer-vacancies .section-tags')) {
+		const aboutInfoTags = document.querySelectorAll(
+			'.carrer-vacancies .section-tags__item-btn',
+		);
+		const aboutInfoTagsBlock = document.querySelectorAll(
+			'.carrer-vacancies .carrer-vacancies__accordion',
+		);
+		initTags(aboutInfoTags, aboutInfoTagsBlock);
+	}
+
 	// аккордеон на странице Карьера
 	if (document.querySelector('.carrer-vacancies__accordion')) {
-		initAccordion(document.querySelector('.carrer-vacancies__accordion'));
+		const careerBlocks = document.querySelectorAll(
+			'.carrer-vacancies__accordion',
+		);
+		careerBlocks.forEach((block) => {
+			initAccordion(block);
+		});
 	}
 });
 
@@ -336,5 +370,194 @@ if (searchBtn && searchCloseBtn) {
 	searchCloseBtn.addEventListener('click', () => {
 		searchBlock.classList.toggle(activeClass);
 		headerList.classList.toggle(activeClass);
+	});
+}
+
+//отключение всплытия для календаря
+const popupBlocks = document.querySelectorAll('.popup-block');
+
+if (popupBlocks) {
+	popupBlocks.forEach((e) => {
+		e.addEventListener('click', function (event) {
+			if (event.target.closest('.calendar')) {
+				event.stopPropagation();
+				event.preventDefault();
+			}
+		});
+	});
+}
+
+//показ нужного блока (выбор медота доставки) в карточке товара при оплате
+const allItems = document.querySelectorAll('.delivery-method');
+const deliveryCheckers = document.querySelectorAll(
+	'.ordering__method-item input',
+);
+
+if (deliveryCheckers) {
+	deliveryCheckers.forEach((checker) => {
+		checker.addEventListener('input', () => {
+			const id = checker.id;
+			switch (id) {
+				case 'self-delivery':
+				case 'self-delivery-sdek':
+					allItems.forEach((item) => {
+						if (item.id === 'self-delivery-block') {
+							item.classList.add('active');
+						} else {
+							item.classList.remove('active');
+						}
+					});
+					break;
+				case 'curier-delivery':
+					allItems.forEach((item) => {
+						if (item.id === 'curier-delivery-block') {
+							item.classList.add('active');
+						} else {
+							item.classList.remove('active');
+						}
+					});
+					break;
+				default:
+			}
+		});
+	});
+}
+
+//обработка вставки изображения
+const fileInput = document.querySelector('.catalog-inputs__file');
+if (fileInput) {
+	const inputParent = fileInput.closest('.catalog-inputs');
+}
+
+const removeFiles = document.querySelector('.catalog-inputs__file-remove-icon');
+const fileName = document.querySelector('#file-name');
+const fileSize = document.querySelector('#file-size');
+//добавление
+if (fileInput) {
+	fileInput.addEventListener('input', function () {
+		if (fileInput.files.length > 0) {
+			const inputParent = fileInput.closest('.input-container');
+			inputParent.classList.add('active');
+			fileInput.disabled = true;
+			fileName.textContent = fileInput.files[0].name;
+			fileSize.textContent =
+				(fileInput.files[0].size / 1024).toFixed(2) + ' kb';
+		}
+	});
+}
+//удаление
+if (removeFiles) {
+	removeFiles.addEventListener('click', (e) => {
+		if (fileInput.files.length > 0) {
+			const inputParent = fileInput.closest('.input-container');
+			fileInput.value = '';
+			inputParent.classList.remove('active');
+			fileName.textContent = '';
+			fileSize.textContent = '';
+			fileInput.disabled = false;
+		}
+	});
+}
+
+//отображения текущего количества символов в textarea
+const textareaWrap = document.querySelectorAll('.input-textarea-wrapper');
+if (textareaWrap) {
+	textareaWrap.forEach((item) => {
+		const textarea = item.querySelector('textarea');
+		const valueLimits = item.querySelector('.modal__textarea-limits');
+		if (textarea && valueLimits) {
+			textarea.addEventListener('input', () => {
+				valueLimits.textContent = `${textarea.value.length}/1000`;
+				debugger;
+			});
+		}
+	});
+}
+
+//отображение :hover и постоянного выбранного состояния для иконок рейтинга
+const iconsWrappers = document.querySelectorAll('.rates__icons-wrapper');
+if (iconsWrappers) {
+	iconsWrappers.forEach((wrapper) => {
+		const icons = wrapper.querySelectorAll('.rates__icon');
+		icons.forEach((icon, id) => {
+			icon.addEventListener('click', () => {
+				icons.forEach((currentIcon, i) => {
+					if (i <= id) {
+						currentIcon.classList.add('active');
+					} else {
+						currentIcon.classList.remove('active');
+					}
+				});
+			});
+			icon.addEventListener('mouseover', () => {
+				icons.forEach((currentIcon, i) => {
+					currentIcon.classList.add('hover-zero');
+					if (i <= id) {
+						currentIcon.classList.add('hover-active');
+					} else {
+						currentIcon.classList.remove('hover-active');
+					}
+				});
+			});
+			wrapper.addEventListener('mouseout', () => {
+				icons.forEach((currentIcon) => {
+					currentIcon.classList.remove('hover-zero');
+					currentIcon.classList.remove('hover-active');
+				});
+			});
+		});
+	});
+}
+
+//загрузка изображений с превью в модалке
+const inputImg = document.querySelector('.upload__input');
+const previewImages = document.querySelectorAll('.upload__preview-box');
+if (inputImg) {
+	inputImg.addEventListener('change', function () {
+		const selectedFile = inputImg.files.item(0);
+		let imageAssigned = false;
+		const reader = new FileReader();
+		reader.readAsDataURL(selectedFile);
+		reader.onload = function (event) {
+			for (const item of previewImages) {
+				const img = item.querySelector('img');
+
+				if (!img.hasAttribute('src') || img.getAttribute('src') === '') {
+					item.classList.add('active');
+					img.src = event.target.result;
+					imageAssigned = true;
+					break;
+				}
+			}
+		};
+	});
+}
+
+// удаление картинки
+const removeBtns = document.querySelectorAll('.upload__preview-box-remove');
+if (removeBtns) {
+	removeBtns.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const wrapper = btn.closest('.upload__preview-box');
+			const img = wrapper.querySelector('img');
+			img.src = '';
+			wrapper.classList.remove('active');
+		});
+	});
+}
+
+//показ попап блока для банковской карточки в личном кабинете
+const creditCardBtn = document.querySelectorAll('.cards-list__item-right__btn');
+if (creditCardBtn) {
+	creditCardBtn.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const popup = btn.querySelector(
+				'.cards-list__item-right__btn-popup',
+			);
+			if (!popup) {
+				return;
+			}
+			popup.classList.toggle('active');
+		});
 	});
 }

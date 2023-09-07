@@ -1,50 +1,98 @@
 .manager-request {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &__left {
-        width: 65.6rem;
+	&__left {
+		width: 65.6rem;
 
-        &-heading {
-            margin-bottom: 4.5rem;
-        }
+		textarea {
+			resize: none;
+			overflow: auto;
+			&::-webkit-scrollbar {
+				width: 0.4rem;
+				right: 2rem;
+				padding-right: 2rem; /* Ширина скроллбара */
+			}
 
-        &-description {
-            margin-bottom: 3rem;
-            color: $darkGrey;
-        }
+			&::-webkit-scrollbar-thumb {
+				background-color: #fff9ee; /* Цвет ползунка скроллбара */
+				border-radius: 0.4rem; /* Закругление углов ползунка */
+			}
 
-        &-form {
-            margin-bottom: 4.5rem;
-            width: 54.5rem;
-            .input-container {
-                &:not(:last-of-type) {
-                    margin-bottom: 3rem;
-                }
+			&::-webkit-scrollbar-thumb:hover {
+				background-color: #555; /* Цвет ползунка при наведении */
+			}
 
-                textarea {
-                    height: 16.5rem;
-                }
-            }
-        }
-    }
+			&::-webkit-scrollbar-track {
+				background-color: #fff9ee; /* Цвет трека скроллбара */
+			}
 
-    &__right {
-        width: 78.2rem;
+			&::-webkit-scrollbar-track:hover {
+				background-color: #ddd; /* Цвет трека при наведении */
+			}
 
-        &-img {
-            margin-bottom: 2.8rem;
-            width: 100%;
-            height: 52.5rem;
-            border-radius: 0 0 5rem 5rem;
-        }
+			&::-webkit-scrollbar {
+				width: 0.4rem; /* Ширина скроллбара для Firefox */
+			}
 
-        &-name {
-            margin-bottom: 0.4rem;
-        }
-    }
+			&::-webkit-scrollbar-thumb {
+				background-color: #f1ded0; /* Цвет ползунка скроллбара для Firefox */
+				border-radius: 0.4rem; /* Закругление углов ползунка для Firefox */
+			}
+
+			&::-webkit-scrollbar-thumb:hover {
+				background-color: #555; /* Цвет ползунка при наведении для Firefox */
+			}
+
+			&::-webkit-scrollbar-track {
+				background-color: #fff9ee; /* Цвет трека скроллбара для Firefox */
+			}
+
+			&::-webkit-scrollbar-track:hover {
+				background-color: #ddd;
+			}
+		}
+
+		&-heading {
+			margin-bottom: 2.5rem;
+		}
+
+		&-description {
+			margin-bottom: 3rem;
+			color: $darkGrey;
+		}
+
+		&-form {
+			margin-bottom: 4.5rem;
+			width: 54.5rem;
+			.input-container {
+				&:not(:last-of-type) {
+					margin-bottom: 3rem;
+				}
+
+				textarea {
+					height: 16.5rem;
+				}
+			}
+		}
+	}
+
+	&__right {
+		width: 78.2rem;
+
+		&-img {
+			margin-bottom: 2.8rem;
+			width: 100%;
+			height: 52.5rem;
+			border-radius: 0 0 5rem 5rem;
+		}
+
+		&-name {
+			margin-bottom: 0.4rem;
+		}
+	}
 }
 
 @media (max-width: 48em) {

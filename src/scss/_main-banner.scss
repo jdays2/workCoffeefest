@@ -1,6 +1,6 @@
 .main-banner {
 	margin-top: 14.4rem;
-	height: 79.7rem;
+	height: 78.2rem;
 	position: relative;
 
 	.next,
@@ -8,7 +8,10 @@
 		position: relative;
 		top: 0.2rem;
 		svg {
-			transition: fill 0.2s ease;
+			path {
+				transition: fill 0.45s ease;
+			}
+			
 		}
 	}
 

@@ -14,6 +14,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+		<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
 		<title>Для бизнеса</title>
 	</head>
 
@@ -130,7 +133,7 @@
 				</div>
 			</section>
 
-			<section class="about-info section">
+			<section class="about-info section section--small">
 				<div class="container">
 					<ul class="breadcrumbs">
 						<li class="breadcrumbs__item">
@@ -440,22 +443,21 @@
 					<div class="section-banner__container">
 						<div class="section-banner__left">
 							<p class="section-banner__left-heading heading2">
-								Cofefest в вашем бизнес-центре
+								Разместить у себя кофейню
+							</p>
+
+							<p class="section-info__card-left__subheading heading4">
+								в бизнес-центре или медицинском учреждении
 							</p>
 							<div class="section-banner__left-description menu">
 								<p>
-									В настоящее время мы выросли до 90 уютных кафе разного
-									формата, c посадочными местами и с едой навынос, двух
-									корпоративных столовых и нескольких буфетов в медицинских
-									учреждениях и государственных больницах столицы.
-								</p>
-								<p>
-									Чтобы поддерживать стабильное качество и натуральность нашего
-									продукта по доступным ценам, будь то обеды, завтраки или
-									сладости к кофе, мы создали в 2019 году собственное
-									производство полного цикла, с современным технологичным
-									оборудованием и соблюдением всех последних стандартов
-									безопасности.
+									Сеть кофеен COFEFEST – это более 130 успешных кофеен, которые
+									функционируют в бизнес-центрах, городских больницах,
+									поликлиниках и научных центрах, а также в торговых центрах. У
+									нас устойчивая бизнес-модель и большие планы по расширению
+									сети. Мы всегда готовы к новым предложениям и с удовольствием
+									рассмотрим вашу территорию для нашей сети. Приглашаем вас
+									стать частью нашего проекта!
 								</p>
 							</div>
 							<a
@@ -483,29 +485,17 @@
 									alt="" />
 							</div>
 
-							<div class="section-banner__right-video">
-								<img
-									src="./src/images/team-img2.png"
-									alt="section-banner__right-video__content" />
-								<button class="play-btn">
-									<svg
-										width="88"
-										height="88"
-										viewBox="0 0 88 88"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<circle
-											cx="43.5"
-											cy="43.5"
-											r="42.5"
-											stroke="#F1DED0"
-											stroke-width="2" />
-										<path
-											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-											fill="#F1DED0" />
-									</svg>
-								</button>
-							</div>
+							<video
+								id="my-video"
+								class="video-js video-js--small"
+								controls
+								preload="true"
+								poster="./src/images/main-video-sample.png"
+								data-setup="{}">
+								<source
+									src="./src/images/sample/sample.mp4"
+									type="video/mp4" />
+							</video>
 						</div>
 					</div>
 				</div>
@@ -513,7 +503,7 @@
 
 			<section class="section services light-section">
 				<div class="container">
-					<p class="services__heading heading2">Арендодателям</p>
+					<p class="services__heading heading2">Арендодателям и партнерам</p>
 					<div class="services__container">
 						<div class="swiper-container services__swiper">
 							<div class="swiper-wrapper">
@@ -729,14 +719,15 @@
 							</p>
 							<form
 								action="#"
-								class="cooperation__left-form">
+								class="cooperation__left-form cooperation__left-form--short">
 								<div
 									class="cooperation__left-form__input-container input-container">
 									<input
 										type="text"
 										id="name"
 										class="input input-name"
-										placeholder="Имя"									placeholder="Email"/>
+										placeholder="Имя"
+										placeholder="Email" />
 									<label
 										for="name"
 										class="input-label">
@@ -759,13 +750,13 @@
 									class="cooperation__left-form__input-container input-container">
 									<input
 										type="text"
-										id="email"
-										class="input input-email"
-										placeholder="Email" />
+										id="tel7"
+										class="input input-tel"
+										placeholder="Телефон" />
 									<label
-										for="email"
+										for="tel7"
 										class="input-label">
-										Email
+										Телефон
 									</label>
 									<div class="icon">
 										<img

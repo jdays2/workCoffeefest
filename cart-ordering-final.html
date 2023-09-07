@@ -14,12 +14,12 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
-		<title>Корзина</title>
+		<title>Корзина / Ваш заказ</title>
 	</head>
 
 	<body>
 		@@include('./templates/header.html')
-		<main class="main cart">
+		<main class="main cart ordering">
 			<section class="section light-section-clear">
 				<div class="container card__container">
 					<div class="breadcrumbs__container container">
@@ -155,26 +155,1741 @@
 							</div>
 
 							<div class="ordering__orders-wrapper accordion active">
-								<div class="acc-item">
+								<p class="ordering__subtitle">
+									Выберите способ доставки в каждом заказе.
+								</p>
+								<div class="ordering__orders-item acc-item">
 									<div class="acc-head">
 										<p class="heading4">Курьерская доставка</p>
-										<img
-											src="./src/images/svg/blue-arrow-up.svg"
-											alt=""
-											class="arrow" />
+
+										<div class="acc-head__box">
+											<span class="acc-head__box-text text1">
+												Меню кулинарии
+											</span>
+											<span class="cart-icon">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 28 28"
+													fill="none">
+													<path
+														d="M8.75 8.94908V7.81741C8.75 5.19241 10.8617 2.61408 13.4867 2.36908C16.6133 2.06574 19.25 4.52741 19.25 7.59574V9.20574"
+														stroke="#29354D"
+														stroke-width="1.5"
+														stroke-miterlimit="10"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M10.4983 25.6673H17.4983C22.1883 25.6673 23.0283 23.789 23.2733 21.5023L24.1483 14.5023C24.4633 11.6557 23.6467 9.33398 18.665 9.33398H9.33167C4.35 9.33398 3.53333 11.6557 3.84833 14.5023L4.72333 21.5023C4.96833 23.789 5.80833 25.6673 10.4983 25.6673Z"
+														stroke="#29354D"
+														stroke-width="1.5"
+														stroke-miterlimit="10"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M18.0769 13.9993H18.0874"
+														stroke="#29354D"
+														stroke-width="2"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M9.90896 13.9993H9.91944"
+														stroke="#29354D"
+														stroke-width="2"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+												<div class="cart-icon__value">
+													<span>10</span>
+												</div>
+											</span>
+											<img
+												src="./src/images/svg/blue-arrow-up.svg"
+												alt=""
+												class="arrow" />
+										</div>
 									</div>
-									<div class="acc-content menu">
+									<div class="acc-content">
 										<div class="content">
-											<p>
-												Заказ будет доставлен по указанному адресу после
-												предварительного звонка оператора.
-											</p>
-											<p>
-												Мы осуществляем курьерскую доставку по России. Стоимость
-												будет рассчитана автоматически при оформлении заказа в
-												корзине (при стоимости заказа от 1500 рублей доставка по
-												Москве бесплатная)
-											</p>
+											<div class="ordering__orders-title">
+												<strong>Сможем доставить 01.05.23</strong>
+												<span>Курьером быстрее всего!</span>
+											</div>
+
+											<ul class="cart__main-list">
+												<li class="cart__main-item">
+													<div class="cart__main-item-img">
+														<img
+															src="./src/images/cart-sample-img.png"
+															alt="" />
+													</div>
+													<div class="cart__main-item-box">
+														<div class="cart__main-item-text">
+															<a href="">Espresso Seasonal</a>
+															<span class="text1">500 г</span>
+															<p class="text1">Дополнительный текст</p>
+														</div>
+
+														<div class="controlls">
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 12 39"
+																	fill="none">
+																	<g clip-path="url(#clip0_4785_18988)">
+																		<path
+																			d="M0 19.5H12"
+																			stroke="#29354D"
+																			stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</g>
+																	<defs>
+																		<clipPath id="clip0_4785_18988">
+																			<rect
+																				width="12"
+																				height="39"
+																				fill="white" />
+																		</clipPath>
+																	</defs>
+																</svg>
+															</div>
+															<div class="controlls__count-value">1</div>
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 14 29"
+																	fill="none">
+																	<path
+																		d="M1 14.5H13"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																	<path
+																		d="M7 20.5L7 8.5"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																</svg>
+															</div>
+														</div>
+
+														<div class="cart__main-item-price">
+															<div class="cart__main-item-value">
+																<strong class="heading4">600</strong>
+																<span class="text2">₽</span>
+															</div>
+
+															<span class="cart__main-cart-item">
+																<img
+																	src="./src/images/cart-icon.png"
+																	alt="" />
+															</span>
+														</div>
+													</div>
+												</li>
+
+												<li class="cart__main-item">
+													<div class="cart__main-item-img">
+														<img
+															src="./src/images/cart-sample-img.png"
+															alt="" />
+													</div>
+													<div class="cart__main-item-box">
+														<div class="cart__main-item-text">
+															<a href="">Espresso Seasonal</a>
+															<span class="text1">500 г</span>
+															<p class="text1">Дополнительный текст</p>
+														</div>
+
+														<div class="controlls">
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 12 39"
+																	fill="none">
+																	<g clip-path="url(#clip0_4785_18988)">
+																		<path
+																			d="M0 19.5H12"
+																			stroke="#29354D"
+																			stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</g>
+																	<defs>
+																		<clipPath id="clip0_4785_18988">
+																			<rect
+																				width="12"
+																				height="39"
+																				fill="white" />
+																		</clipPath>
+																	</defs>
+																</svg>
+															</div>
+															<div class="controlls__count-value">1</div>
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 14 29"
+																	fill="none">
+																	<path
+																		d="M1 14.5H13"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																	<path
+																		d="M7 20.5L7 8.5"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																</svg>
+															</div>
+														</div>
+
+														<div class="cart__main-item-price">
+															<div class="cart__main-item-value">
+																<strong class="heading4">600</strong>
+																<span class="text2">₽</span>
+															</div>
+
+															<span class="cart__main-cart-item">
+																<img
+																	src="./src/images/cart-icon.png"
+																	alt="" />
+															</span>
+														</div>
+													</div>
+												</li>
+
+												<li class="cart__main-item">
+													<div class="cart__main-item-img">
+														<img
+															src="./src/images/cart-sample-img.png"
+															alt="" />
+													</div>
+													<div class="cart__main-item-box">
+														<div class="cart__main-item-text">
+															<a href="">Espresso Seasonal</a>
+															<span class="text1">500 г</span>
+															<p class="text1">Дополнительный текст</p>
+														</div>
+
+														<div class="controlls">
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 12 39"
+																	fill="none">
+																	<g clip-path="url(#clip0_4785_18988)">
+																		<path
+																			d="M0 19.5H12"
+																			stroke="#29354D"
+																			stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</g>
+																	<defs>
+																		<clipPath id="clip0_4785_18988">
+																			<rect
+																				width="12"
+																				height="39"
+																				fill="white" />
+																		</clipPath>
+																	</defs>
+																</svg>
+															</div>
+															<div class="controlls__count-value">1</div>
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 14 29"
+																	fill="none">
+																	<path
+																		d="M1 14.5H13"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																	<path
+																		d="M7 20.5L7 8.5"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																</svg>
+															</div>
+														</div>
+
+														<div class="cart__main-item-price">
+															<div class="cart__main-item-value">
+																<strong class="heading4">600</strong>
+																<span class="text2">₽</span>
+															</div>
+
+															<span class="cart__main-cart-item">
+																<img
+																	src="./src/images/cart-icon.png"
+																	alt="" />
+															</span>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+											<div class="ordering__method-wrapper">
+												<p class="heading4">Выберите вариант доставки</p>
+												<div class="ordering__method">
+													<label class="ordering__method-item">
+														<input
+															id="curier-delivery"
+															checked
+															type="radio"
+															name="delivery-method" />
+														<strong>Курьер</strong>
+														<span>от 200₽</span>
+													</label>
+													<label class="ordering__method-item">
+														<input
+															id="self-delivery-sdek"
+															type="radio"
+															name="delivery-method" />
+														<strong>Самовывоз из ПВЗ (СДЭК)</strong>
+														<span>от 100₽</span>
+													</label>
+													<label class="ordering__method-item">
+														<input
+															id="self-delivery"
+															type="radio"
+															name="delivery-method" />
+														<strong>Самовывоз</strong>
+														<span>Бесплатно</span>
+													</label>
+												</div>
+											</div>
+
+											<div
+												class="ordering__adress delivery-method active"
+												id="curier-delivery-block">
+												<div class="ordering__adress-head">
+													<p class="heading4">Адрес и время доставки</p>
+													<a
+														href="/cart-curier-delivery.html"
+														class="arrow-link">
+														<span>выбрать на карте</span>
+														<svg
+															width="29"
+															height="13"
+															viewBox="0 0 29 13"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+															class="arrow-link__icon">
+															<path
+																d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+																fill="#1e283f" />
+														</svg>
+													</a>
+												</div>
+
+												<form class="ordering__adress-form">
+													<div class="ordering__row">
+														<div class="popup-block__wrapper">
+															<label class="popup-block">
+																<input type="checkbox" />
+																<div
+																	class="popup-block__popup popup-block__popup--select">
+																	<div class="popup-block__list">
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				1 адрес
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				2 адрес
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				3 адрес
+																			</span>
+																		</label>
+																	</div>
+																</div>
+																<span class="text2 popup-block__select-value">
+																	Выберите адрес
+																</span>
+
+																<svg
+																	class="popup-block__more-icon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 24 24"
+																	fill="none">
+																	<path
+																		d="M6.5 9L12.5 15L18.5 9"
+																		stroke="#29354D"
+																		stroke-width="1.5" />
+																</svg>
+															</label>
+														</div>
+
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="city4"
+																class="input"
+																placeholder="Город" />
+															<label
+																for="city4"
+																class="input-label">
+																Город
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+													</div>
+
+													<div class="ordering__row">
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="street2"
+																class="input"
+																placeholder="Улица" />
+															<label
+																for="floor2"
+																class="input-label">
+																Улица
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="house2"
+																class="input"
+																placeholder="Дом" />
+															<label
+																for="hous2"
+																class="input-label">
+																Дом
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+													</div>
+
+													<div class="ordering__row">
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="floor2"
+																class="input"
+																placeholder="Этаж" />
+															<label
+																for="floor2"
+																class="input-label">
+																Этаж
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="hous2"
+																class="input"
+																placeholder="Квартира" />
+															<label
+																for="hous2"
+																class="input-label">
+																Квартира
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+													</div>
+
+													<div class="input-container modal__input-large">
+														<input
+															type="text"
+															id="order-comment2"
+															class="input"
+															placeholder="Комментарий" />
+														<label
+															for="order-comment2"
+															class="input-label">
+															Комментарий
+														</label>
+														<div class="icon">
+															<img
+																src="./src/images/svg/success-validation.svg"
+																alt=""
+																class="success" />
+														</div>
+														<div class="icon">
+															<img
+																src="./src/images/svg/invalid-validation.svg"
+																alt=""
+																class="invalid" />
+														</div>
+													</div>
+
+													<div class="ordering__row">
+														<div
+															class="popup-block__wrapper cart-input-wrapper">
+															<label class="popup-block">
+																<input
+																	class="cart-input"
+																	type="checkbox" />
+																<div
+																	class="popup-block__popup popup-block__popup--ordering">
+																	<div class="calendar">
+																		<div class="calendar__head">
+																			<div class="calendar__head-date">
+																				<span class="calendar__month">
+																					Апрель
+																				</span>
+																				<span class="calendar__year">2023</span>
+																			</div>
+
+																			<div class="calendar__head-controlls">
+																				<span>
+																					<svg
+																						xmlns="http://www.w3.org/2000/svg"
+																						viewBox="0 0 36 27"
+																						fill="none">
+																						<path
+																							d="M30.75 12.7754C31.1642 12.7754 31.5 13.1112 31.5 13.5254C31.5 13.9396 31.1642 14.2754 30.75 14.2754L30.75 12.7754ZM4.21967 14.0557C3.92678 13.7628 3.92678 13.288 4.21967 12.9951L8.99264 8.22209C9.28553 7.9292 9.76041 7.9292 10.0533 8.22209C10.3462 8.51498 10.3462 8.98986 10.0533 9.28275L5.81066 13.5254L10.0533 17.768C10.3462 18.0609 10.3462 18.5358 10.0533 18.8287C9.76041 19.1216 9.28553 19.1216 8.99264 18.8287L4.21967 14.0557ZM30.75 14.2754L4.75 14.2754L4.75 12.7754L30.75 12.7754L30.75 14.2754Z"
+																							fill="#E6AF9A" />
+																					</svg>
+																				</span>
+																				<span>
+																					<svg
+																						xmlns="http://www.w3.org/2000/svg"
+																						viewBox="0 0 36 27"
+																						fill="none">
+																						<path
+																							d="M4.75 12.7754C4.33579 12.7754 4 13.1112 4 13.5254C4 13.9396 4.33579 14.2754 4.75 14.2754L4.75 12.7754ZM31.2803 14.0557C31.5732 13.7628 31.5732 13.288 31.2803 12.9951L26.5074 8.22209C26.2145 7.9292 25.7396 7.9292 25.4467 8.22209C25.1538 8.51498 25.1538 8.98986 25.4467 9.28275L29.6893 13.5254L25.4467 17.768C25.1538 18.0609 25.1538 18.5358 25.4467 18.8287C25.7396 19.1216 26.2145 19.1216 26.5074 18.8287L31.2803 14.0557ZM4.75 14.2754L30.75 14.2754L30.75 12.7754L4.75 12.7754L4.75 14.2754Z"
+																							fill="#E6AF9A" />
+																					</svg>
+																				</span>
+																			</div>
+																		</div>
+
+																		<div class="calendar__board">
+																			<div class="calendar__board-days">
+																				<span>пн</span>
+																				<span>вт</span>
+																				<span>ср</span>
+																				<span>чт</span>
+																				<span>пт</span>
+																				<span>сб</span>
+																				<span>вс</span>
+																			</div>
+
+																			<div class="calendar__board-list">
+																				<div class="calendar__board-cell">
+																					<span>1</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>2</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>3</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>4</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>5</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>6</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>7</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>8</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>9</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>10</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>11</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>12</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>13</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell current">
+																					<span>14</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>15</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>16</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>17</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>18</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>19</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>20</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>21</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>22</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>23</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>24</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>25</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>26</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>27</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>28</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>29</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>30</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>31</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="calendar__info">
+																		<div class="calendar__board-cell active">
+																			<span>2</span>
+																		</div>
+																	</div>
+																</div>
+																<span class="text2 popup-block__select-value">
+																	Выберите адрес
+																</span>
+
+																<svg
+																	class="popup-block__more-icon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 24 24"
+																	fill="none">
+																	<path
+																		d="M6.5 9L12.5 15L18.5 9"
+																		stroke="#29354D"
+																		stroke-width="1.5" />
+																</svg>
+															</label>
+														</div>
+
+														<div
+															class="popup-block__wrapper cart-input-wrapper popup-block__wrapper--time">
+															<label class="popup-block">
+																<input
+																	type="checkbox"
+																	class="cart-input" />
+																<div
+																	class="popup-block__popup popup-block__popup--select popup-block__popup--ordering">
+																	<div
+																		class="popup-block__list popup-block__list--blue">
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				10:00 - 11:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				11:00 - 12:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				12:00 - 13:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				15:00 - 16:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				17:00 - 18:00
+																			</span>
+																		</label>
+																	</div>
+																</div>
+																<span class="text2 popup-block__select-value">
+																	Время
+																</span>
+
+																<svg
+																	class="popup-block__more-icon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 24 24"
+																	fill="none">
+																	<path
+																		d="M6.5 9L12.5 15L18.5 9"
+																		stroke="#29354D"
+																		stroke-width="1.5" />
+																</svg>
+															</label>
+														</div>
+													</div>
+												</form>
+											</div>
+
+											<div
+												class="ordering__shop-adress delivery-method"
+												id="self-delivery-block">
+												<div class="ordering__adress-head">
+													<p class="heading4">Пункт выдачи</p>
+													<a
+														href="/cart-self-delivery.html"
+														class="arrow-link">
+														<span>выбрать на карте</span>
+														<svg
+															width="29"
+															height="13"
+															viewBox="0 0 29 13"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+															class="arrow-link__icon">
+															<path
+																d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+																fill="#1e283f" />
+														</svg>
+													</a>
+												</div>
+
+												<div class="ordering__shop-adress-card">
+													<strong>БЦ «Валлекс»</strong>
+													<p>Москва, Старокалужское ш. 62, 1ый этаж</p>
+													<div class="map-block__search-item-time">
+														<span>
+															<svg
+																viewBox="0 0 19 20"
+																xmlns="http://www.w3.org/2000/svg"
+																fill="none">
+																<path
+																	d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+																	stroke="#797979"
+																	stroke-width="1.5"
+																	stroke-linecap="round"
+																	stroke-linejoin="round" />
+																<path
+																	d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+																	stroke="#797979"
+																	stroke-width="1.5"
+																	stroke-linecap="round"
+																	stroke-linejoin="round" />
+															</svg>
+														</span>
+
+														<span>08-22</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="ordering__orders-item acc-item">
+									<div class="acc-head">
+										<p class="heading4">Курьерская доставка</p>
+
+										<div class="acc-head__box">
+											<span class="acc-head__box-text text1">
+												Меню кулинарии
+											</span>
+											<span class="cart-icon">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 28 28"
+													fill="none">
+													<path
+														d="M8.75 8.94908V7.81741C8.75 5.19241 10.8617 2.61408 13.4867 2.36908C16.6133 2.06574 19.25 4.52741 19.25 7.59574V9.20574"
+														stroke="#29354D"
+														stroke-width="1.5"
+														stroke-miterlimit="10"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M10.4983 25.6673H17.4983C22.1883 25.6673 23.0283 23.789 23.2733 21.5023L24.1483 14.5023C24.4633 11.6557 23.6467 9.33398 18.665 9.33398H9.33167C4.35 9.33398 3.53333 11.6557 3.84833 14.5023L4.72333 21.5023C4.96833 23.789 5.80833 25.6673 10.4983 25.6673Z"
+														stroke="#29354D"
+														stroke-width="1.5"
+														stroke-miterlimit="10"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M18.0769 13.9993H18.0874"
+														stroke="#29354D"
+														stroke-width="2"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M9.90896 13.9993H9.91944"
+														stroke="#29354D"
+														stroke-width="2"
+														stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+												<div class="cart-icon__value">
+													<span>10</span>
+												</div>
+											</span>
+											<img
+												src="./src/images/svg/blue-arrow-up.svg"
+												alt=""
+												class="arrow" />
+										</div>
+									</div>
+									<div class="acc-content">
+										<div class="content">
+											<div class="ordering__orders-title">
+												<strong>Сможем доставить 01.05.23</strong>
+												<span>Курьером быстрее всего!</span>
+											</div>
+
+											<ul class="cart__main-list">
+												<li class="cart__main-item">
+													<div class="cart__main-item-img">
+														<img
+															src="./src/images/cart-sample-img.png"
+															alt="" />
+													</div>
+													<div class="cart__main-item-box">
+														<div class="cart__main-item-text">
+															<a href="">Espresso Seasonal</a>
+															<span class="text1">500 г</span>
+															<p class="text1">Дополнительный текст</p>
+														</div>
+
+														<div class="controlls">
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 12 39"
+																	fill="none">
+																	<g clip-path="url(#clip0_4785_18988)">
+																		<path
+																			d="M0 19.5H12"
+																			stroke="#29354D"
+																			stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</g>
+																	<defs>
+																		<clipPath id="clip0_4785_18988">
+																			<rect
+																				width="12"
+																				height="39"
+																				fill="white" />
+																		</clipPath>
+																	</defs>
+																</svg>
+															</div>
+															<div class="controlls__count-value">1</div>
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 14 29"
+																	fill="none">
+																	<path
+																		d="M1 14.5H13"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																	<path
+																		d="M7 20.5L7 8.5"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																</svg>
+															</div>
+														</div>
+
+														<div class="cart__main-item-price">
+															<div class="cart__main-item-value">
+																<strong class="heading4">600</strong>
+																<span class="text2">₽</span>
+															</div>
+
+															<span class="cart__main-cart-item">
+																<img
+																	src="./src/images/cart-icon.png"
+																	alt="" />
+															</span>
+														</div>
+													</div>
+												</li>
+
+												<li class="cart__main-item">
+													<div class="cart__main-item-img">
+														<img
+															src="./src/images/cart-sample-img.png"
+															alt="" />
+													</div>
+													<div class="cart__main-item-box">
+														<div class="cart__main-item-text">
+															<a href="">Espresso Seasonal</a>
+															<span class="text1">500 г</span>
+															<p class="text1">Дополнительный текст</p>
+														</div>
+
+														<div class="controlls">
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 12 39"
+																	fill="none">
+																	<g clip-path="url(#clip0_4785_18988)">
+																		<path
+																			d="M0 19.5H12"
+																			stroke="#29354D"
+																			stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</g>
+																	<defs>
+																		<clipPath id="clip0_4785_18988">
+																			<rect
+																				width="12"
+																				height="39"
+																				fill="white" />
+																		</clipPath>
+																	</defs>
+																</svg>
+															</div>
+															<div class="controlls__count-value">1</div>
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 14 29"
+																	fill="none">
+																	<path
+																		d="M1 14.5H13"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																	<path
+																		d="M7 20.5L7 8.5"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																</svg>
+															</div>
+														</div>
+
+														<div class="cart__main-item-price">
+															<div class="cart__main-item-value">
+																<strong class="heading4">600</strong>
+																<span class="text2">₽</span>
+															</div>
+
+															<span class="cart__main-cart-item">
+																<img
+																	src="./src/images/cart-icon.png"
+																	alt="" />
+															</span>
+														</div>
+													</div>
+												</li>
+
+												<li class="cart__main-item">
+													<div class="cart__main-item-img">
+														<img
+															src="./src/images/cart-sample-img.png"
+															alt="" />
+													</div>
+													<div class="cart__main-item-box">
+														<div class="cart__main-item-text">
+															<a href="">Espresso Seasonal</a>
+															<span class="text1">500 г</span>
+															<p class="text1">Дополнительный текст</p>
+														</div>
+
+														<div class="controlls">
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 12 39"
+																	fill="none">
+																	<g clip-path="url(#clip0_4785_18988)">
+																		<path
+																			d="M0 19.5H12"
+																			stroke="#29354D"
+																			stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</g>
+																	<defs>
+																		<clipPath id="clip0_4785_18988">
+																			<rect
+																				width="12"
+																				height="39"
+																				fill="white" />
+																		</clipPath>
+																	</defs>
+																</svg>
+															</div>
+															<div class="controlls__count-value">1</div>
+															<div class="controlls__count-btn">
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 14 29"
+																	fill="none">
+																	<path
+																		d="M1 14.5H13"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																	<path
+																		d="M7 20.5L7 8.5"
+																		stroke="#29354D"
+																		stroke-width="1.5"
+																		stroke-linecap="round"
+																		stroke-linejoin="round" />
+																</svg>
+															</div>
+														</div>
+
+														<div class="cart__main-item-price">
+															<div class="cart__main-item-value">
+																<strong class="heading4">600</strong>
+																<span class="text2">₽</span>
+															</div>
+
+															<span class="cart__main-cart-item">
+																<img
+																	src="./src/images/cart-icon.png"
+																	alt="" />
+															</span>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+											<div class="ordering__method-wrapper">
+												<p class="heading4">Выберите вариант доставки</p>
+												<div class="ordering__method">
+													<label class="ordering__method-item">
+														<input
+															id="curier-delivery"
+															checked
+															type="radio"
+															name="delivery-method2" />
+														<strong>Курьер</strong>
+														<span>от 200₽</span>
+													</label>
+													<label class="ordering__method-item">
+														<input
+															id="self-delivery-sdek"
+															type="radio"
+															name="delivery-method2" />
+														<strong>Самовывоз из ПВЗ (СДЭК)</strong>
+														<span>от 100₽</span>
+													</label>
+													<label class="ordering__method-item">
+														<input
+															id="self-delivery"
+															type="radio"
+															name="delivery-method2" />
+														<strong>Самовывоз</strong>
+														<span>Бесплатно</span>
+													</label>
+												</div>
+											</div>
+
+											<div
+												class="ordering__adress delivery-method active"
+												id="curier-delivery-block">
+												<div class="ordering__adress-head">
+													<p class="heading4">Адрес и время доставки</p>
+													<a
+														href="/cart-curier-delivery.html"
+														class="arrow-link">
+														<span>выбрать на карте</span>
+														<svg
+															width="29"
+															height="13"
+															viewBox="0 0 29 13"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+															class="arrow-link__icon">
+															<path
+																d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+																fill="#1e283f" />
+														</svg>
+													</a>
+												</div>
+
+												<form class="ordering__adress-form">
+													<div class="ordering__row">
+														<div class="popup-block__wrapper">
+															<label class="popup-block">
+																<input type="checkbox" />
+																<div
+																	class="popup-block__popup popup-block__popup--select">
+																	<div class="popup-block__list">
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				1 адрес
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				2 адрес
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				3 адрес
+																			</span>
+																		</label>
+																	</div>
+																</div>
+																<span class="text2 popup-block__select-value">
+																	Выберите адрес
+																</span>
+
+																<svg
+																	class="popup-block__more-icon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 24 24"
+																	fill="none">
+																	<path
+																		d="M6.5 9L12.5 15L18.5 9"
+																		stroke="#29354D"
+																		stroke-width="1.5" />
+																</svg>
+															</label>
+														</div>
+
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="city4"
+																class="input"
+																placeholder="Город" />
+															<label
+																for="city4"
+																class="input-label">
+																Город
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+													</div>
+
+													<div class="ordering__row">
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="street2"
+																class="input"
+																placeholder="Улица" />
+															<label
+																for="floor2"
+																class="input-label">
+																Улица
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="house2"
+																class="input"
+																placeholder="Дом" />
+															<label
+																for="hous2"
+																class="input-label">
+																Дом
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+													</div>
+
+													<div class="ordering__row">
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="floor2"
+																class="input"
+																placeholder="Этаж" />
+															<label
+																for="floor2"
+																class="input-label">
+																Этаж
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+
+														<div class="input-container modal__input-medium">
+															<input
+																type="text"
+																id="hous2"
+																class="input"
+																placeholder="Квартира" />
+															<label
+																for="hous2"
+																class="input-label">
+																Квартира
+															</label>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/success-validation.svg"
+																	alt=""
+																	class="success" />
+															</div>
+															<div class="icon">
+																<img
+																	src="./src/images/svg/invalid-validation.svg"
+																	alt=""
+																	class="invalid" />
+															</div>
+														</div>
+													</div>
+
+													<div class="input-container modal__input-large">
+														<input
+															type="text"
+															id="order-comment2"
+															class="input"
+															placeholder="Комментарий" />
+														<label
+															for="order-comment2"
+															class="input-label">
+															Комментарий
+														</label>
+														<div class="icon">
+															<img
+																src="./src/images/svg/success-validation.svg"
+																alt=""
+																class="success" />
+														</div>
+														<div class="icon">
+															<img
+																src="./src/images/svg/invalid-validation.svg"
+																alt=""
+																class="invalid" />
+														</div>
+													</div>
+
+													<div class="ordering__row">
+														<div
+															class="popup-block__wrapper cart-input-wrapper">
+															<label class="popup-block">
+																<input
+																	class="cart-input"
+																	type="checkbox" />
+																<div
+																	class="popup-block__popup popup-block__popup--ordering">
+																	<div class="calendar">
+																		<div class="calendar__head">
+																			<div class="calendar__head-date">
+																				<span class="calendar__month">
+																					Апрель
+																				</span>
+																				<span class="calendar__year">2023</span>
+																			</div>
+
+																			<div class="calendar__head-controlls">
+																				<span>
+																					<svg
+																						xmlns="http://www.w3.org/2000/svg"
+																						viewBox="0 0 36 27"
+																						fill="none">
+																						<path
+																							d="M30.75 12.7754C31.1642 12.7754 31.5 13.1112 31.5 13.5254C31.5 13.9396 31.1642 14.2754 30.75 14.2754L30.75 12.7754ZM4.21967 14.0557C3.92678 13.7628 3.92678 13.288 4.21967 12.9951L8.99264 8.22209C9.28553 7.9292 9.76041 7.9292 10.0533 8.22209C10.3462 8.51498 10.3462 8.98986 10.0533 9.28275L5.81066 13.5254L10.0533 17.768C10.3462 18.0609 10.3462 18.5358 10.0533 18.8287C9.76041 19.1216 9.28553 19.1216 8.99264 18.8287L4.21967 14.0557ZM30.75 14.2754L4.75 14.2754L4.75 12.7754L30.75 12.7754L30.75 14.2754Z"
+																							fill="#E6AF9A" />
+																					</svg>
+																				</span>
+																				<span>
+																					<svg
+																						xmlns="http://www.w3.org/2000/svg"
+																						viewBox="0 0 36 27"
+																						fill="none">
+																						<path
+																							d="M4.75 12.7754C4.33579 12.7754 4 13.1112 4 13.5254C4 13.9396 4.33579 14.2754 4.75 14.2754L4.75 12.7754ZM31.2803 14.0557C31.5732 13.7628 31.5732 13.288 31.2803 12.9951L26.5074 8.22209C26.2145 7.9292 25.7396 7.9292 25.4467 8.22209C25.1538 8.51498 25.1538 8.98986 25.4467 9.28275L29.6893 13.5254L25.4467 17.768C25.1538 18.0609 25.1538 18.5358 25.4467 18.8287C25.7396 19.1216 26.2145 19.1216 26.5074 18.8287L31.2803 14.0557ZM4.75 14.2754L30.75 14.2754L30.75 12.7754L4.75 12.7754L4.75 14.2754Z"
+																							fill="#E6AF9A" />
+																					</svg>
+																				</span>
+																			</div>
+																		</div>
+
+																		<div class="calendar__board">
+																			<div class="calendar__board-days">
+																				<span>пн</span>
+																				<span>вт</span>
+																				<span>ср</span>
+																				<span>чт</span>
+																				<span>пт</span>
+																				<span>сб</span>
+																				<span>вс</span>
+																			</div>
+
+																			<div class="calendar__board-list">
+																				<div class="calendar__board-cell">
+																					<span>1</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>2</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>3</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>4</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>5</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>6</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>7</span>
+																				</div>
+
+																				<div
+																					class="calendar__board-cell active">
+																					<span>8</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>9</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>10</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>11</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>12</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>13</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell current">
+																					<span>14</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>15</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>16</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>17</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>18</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>19</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>20</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>21</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>22</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>23</span>
+																				</div>
+																				<div
+																					class="calendar__board-cell active">
+																					<span>24</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>25</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>26</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>27</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>28</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>29</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>30</span>
+																				</div>
+																				<div class="calendar__board-cell">
+																					<span>31</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="calendar__info">
+																		<div class="calendar__board-cell active">
+																			<span>2</span>
+																		</div>
+																	</div>
+																</div>
+																<span class="text2 popup-block__select-value">
+																	Выберите адрес
+																</span>
+
+																<svg
+																	class="popup-block__more-icon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 24 24"
+																	fill="none">
+																	<path
+																		d="M6.5 9L12.5 15L18.5 9"
+																		stroke="#29354D"
+																		stroke-width="1.5" />
+																</svg>
+															</label>
+														</div>
+
+														<div
+															class="popup-block__wrapper cart-input-wrapper popup-block__wrapper--time">
+															<label class="popup-block">
+																<input
+																	type="checkbox"
+																	class="cart-input" />
+																<div
+																	class="popup-block__popup popup-block__popup--select popup-block__popup--ordering">
+																	<div
+																		class="popup-block__list popup-block__list--blue">
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				10:00 - 11:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				11:00 - 12:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				12:00 - 13:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				15:00 - 16:00
+																			</span>
+																		</label>
+
+																		<label class="popup-block__item">
+																			<input
+																				type="radio"
+																				name="popup-block__item" />
+																			<span
+																				class="popup-block__item-title text2">
+																				17:00 - 18:00
+																			</span>
+																		</label>
+																	</div>
+																</div>
+																<span class="text2 popup-block__select-value">
+																	Время
+																</span>
+
+																<svg
+																	class="popup-block__more-icon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	viewBox="0 0 24 24"
+																	fill="none">
+																	<path
+																		d="M6.5 9L12.5 15L18.5 9"
+																		stroke="#29354D"
+																		stroke-width="1.5" />
+																</svg>
+															</label>
+														</div>
+													</div>
+												</form>
+											</div>
+
+											<div
+												class="ordering__shop-adress delivery-method"
+												id="self-delivery-block">
+												<div class="ordering__adress-head">
+													<p class="heading4">Пункт выдачи</p>
+													<a
+														href="/cart-self-delivery.html"
+														class="arrow-link">
+														<span>выбрать на карте</span>
+														<svg
+															width="29"
+															height="13"
+															viewBox="0 0 29 13"
+															fill="none"
+															xmlns="http://www.w3.org/2000/svg"
+															class="arrow-link__icon">
+															<path
+																d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+																fill="#1e283f" />
+														</svg>
+													</a>
+												</div>
+
+												<div class="ordering__shop-adress-card">
+													<strong>БЦ «Валлекс»</strong>
+													<p>Москва, Старокалужское ш. 62, 1ый этаж</p>
+													<div class="map-block__search-item-time">
+														<span>
+															<svg
+																viewBox="0 0 19 20"
+																xmlns="http://www.w3.org/2000/svg"
+																fill="none">
+																<path
+																	d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+																	stroke="#797979"
+																	stroke-width="1.5"
+																	stroke-linecap="round"
+																	stroke-linejoin="round" />
+																<path
+																	d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+																	stroke="#797979"
+																	stroke-width="1.5"
+																	stroke-linecap="round"
+																	stroke-linejoin="round" />
+															</svg>
+														</span>
+
+														<span>08-22</span>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>

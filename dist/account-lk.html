@@ -17,6 +17,9 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
+			<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
 		<title>Личный кабинeт</title>
 	</head>
 
@@ -62,6 +65,13 @@
 						class="header__top-list__item-link menu">
 						Услуги
 					</a>
+
+					<nav class="services-popup-list">
+						<a href="/franchise.html"><span>Франшиза</span></a>
+						<a href="/away.html"><span>Выездной бариста</span></a>
+						<a href="/corpo-food.html"><span>Корпоративное питание</span></a>
+						<a href="/catering.html"><span>Кейтеринг</span></a>
+					</nav>
 				</li>
 				<li class="header__top-list__item">
 					<a
@@ -130,6 +140,7 @@
 					<button class="header__search-icon">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 30 30"
 							fill="none">
 							<path
 								d="M4.14466 17.2263L4.87484 17.055L4.14466 17.2263ZM4.14466 10.405L4.87484 10.5763L4.14466 10.405ZM23.4867 10.405L24.2168 10.2337L23.4867 10.405ZM23.4867 17.2263L24.2168 17.3976L23.4867 17.2263ZM17.2263 23.4867L17.055 22.7565L17.2263 23.4867ZM10.405 23.4867L10.2337 24.2168L10.405 23.4867ZM10.405 4.14466L10.2337 3.41448L10.405 4.14466ZM17.2263 4.14466L17.3976 3.41448L17.2263 4.14466ZM25.7197 26.7803C26.0126 27.0732 26.4874 27.0732 26.7803 26.7803C27.0732 26.4874 27.0732 26.0126 26.7803 25.7197L25.7197 26.7803ZM4.87484 17.055C4.37505 14.9244 4.37505 12.7069 4.87484 10.5763L3.41448 10.2337C2.86184 12.5897 2.86184 15.0416 3.41448 17.3976L4.87484 17.055ZM22.7565 10.5763C23.2563 12.7069 23.2563 14.9244 22.7565 17.055L24.2168 17.3976C24.7695 15.0416 24.7695 12.5897 24.2168 10.2337L22.7565 10.5763ZM17.055 22.7565C14.9244 23.2563 12.7069 23.2563 10.5763 22.7565L10.2337 24.2168C12.5897 24.7695 15.0416 24.7695 17.3976 24.2168L17.055 22.7565ZM10.5763 4.87484C12.7069 4.37505 14.9244 4.37505 17.055 4.87484L17.3976 3.41448C15.0416 2.86184 12.5897 2.86184 10.2337 3.41448L10.5763 4.87484ZM10.5763 22.7565C7.74731 22.0929 5.53843 19.884 4.87484 17.055L3.41448 17.3976C4.20817 20.7812 6.85012 23.4231 10.2337 24.2168L10.5763 22.7565ZM17.3976 24.2168C20.7812 23.4231 23.4231 20.7812 24.2168 17.3976L22.7565 17.055C22.0929 19.884 19.884 22.0929 17.055 22.7565L17.3976 24.2168ZM17.055 4.87484C19.884 5.53843 22.0929 7.74731 22.7565 10.5763L24.2168 10.2337C23.4231 6.85012 20.7812 4.20817 17.3976 3.41448L17.055 4.87484ZM10.2337 3.41448C6.85012 4.20817 4.20817 6.85011 3.41448 10.2337L4.87484 10.5763C5.53843 7.74731 7.74731 5.53843 10.5763 4.87484L10.2337 3.41448ZM21.1386 22.1993L25.7197 26.7803L26.7803 25.7197L22.1993 21.1386L21.1386 22.1993Z"
@@ -140,6 +151,7 @@
 					<button class="header__search-enter-icon">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 35 26"
 							fill="none">
 							<path
 								d="M4.5 12.75C4.08579 12.75 3.75 13.0858 3.75 13.5C3.75 13.9142 4.08579 14.25 4.5 14.25L4.5 12.75ZM31.0303 14.0303C31.3232 13.7374 31.3232 13.2626 31.0303 12.9697L26.2574 8.1967C25.9645 7.90381 25.4896 7.90381 25.1967 8.1967C24.9038 8.48959 24.9038 8.96447 25.1967 9.25736L29.4393 13.5L25.1967 17.7426C24.9038 18.0355 24.9038 18.5104 25.1967 18.8033C25.4896 19.0962 25.9645 19.0962 26.2574 18.8033L31.0303 14.0303ZM4.5 14.25L30.5 14.25L30.5 12.75L4.5 12.75L4.5 14.25Z"
@@ -150,9 +162,10 @@
 					<button class="header__search-close-icon">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 20 21"
 							fill="none">
 							<path
-								d="M3 3.5L21 21.5M21 3.5L3 21.5"
+								d="M1 1.5L19 19.5M19 1.5L1 19.5"
 								stroke="#FFF9EE"
 								stroke-width="2"
 								stroke-linecap="round" />
@@ -193,82 +206,102 @@
 			</ul>
 		</nav>
 		<div class="header__right">
-			<button class="header__search desktop" id="header-search">
+			<div class="header__right-btns-wrapper">
+				<button
+					class="header__search desktop"
+					id="header-search">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="29"
+						viewBox="0 0 28 29"
+						fill="none">
+						<path
+							d="M12.8333 22.6667C17.988 22.6667 22.1667 18.488 22.1667 13.3333C22.1667 8.17868 17.988 4 12.8333 4C7.67868 4 3.5 8.17868 3.5 13.3333C3.5 18.488 7.67868 22.6667 12.8333 22.6667Z"
+							stroke="#E6AF9A"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M24.5008 25.0008L19.4258 19.9258"
+							stroke="#E6AF9A"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<a
+					href="#"
+					class="header__account">
+					<svg
+						width="28"
+						height="29"
+						viewBox="0 0 28 29"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M19.0448 7.88444C19.0448 10.755 16.8373 13.0189 14.1904 13.0189C11.5434 13.0189 9.33594 10.755 9.33594 7.88444C9.33594 5.01389 11.5434 2.75 14.1904 2.75C16.8373 2.75 19.0448 5.01389 19.0448 7.88444Z"
+							stroke="#E6AF9A"
+							stroke-width="1.5" />
+						<path
+							d="M23.6258 25.3762H4.75189C4.85244 21.086 8.94798 17.4611 14.1888 17.4611C19.4297 17.4611 23.5252 21.086 23.6258 25.3762Z"
+							stroke="#E6AF9A"
+							stroke-width="1.5" />
+					</svg>
+				</a>
+				<a
+					href="#"
+					class="header__cart">
+					<svg
+						width="28"
+						height="29"
+						viewBox="0 0 28 29"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M8.74963 9.44834V8.31668C8.74963 5.69168 10.8613 3.11334 13.4863 2.86834C16.613 2.56501 19.2496 5.02668 19.2496 8.09501V9.70501"
+							stroke="#E6AF9A"
+							stroke-width="1.5"
+							stroke-miterlimit="10"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M10.4997 26.1666H17.4997C22.1897 26.1666 23.0297 24.2883 23.2747 22.0016L24.1497 15.0016C24.4647 12.1549 23.648 9.83325 18.6663 9.83325H9.33301C4.35134 9.83325 3.53468 12.1549 3.84968 15.0016L4.72468 22.0016C4.96968 24.2883 5.80968 26.1666 10.4997 26.1666Z"
+							stroke="#E6AF9A"
+							stroke-width="1.5"
+							stroke-miterlimit="10"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M18.078 14.5H18.0885"
+							stroke="#E6AF9A"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path
+							d="M9.90993 14.5H9.92041"
+							stroke="#E6AF9A"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</a>
+			</div>
+
+			<a
+				href="tel:84952121059"
+				class="header__right-tel-link">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="28"
-					height="29"
-					viewBox="0 0 28 29"
+					viewBox="0 0 22 23"
 					fill="none">
 					<path
-						d="M12.8333 22.6667C17.988 22.6667 22.1667 18.488 22.1667 13.3333C22.1667 8.17868 17.988 4 12.8333 4C7.67868 4 3.5 8.17868 3.5 13.3333C3.5 18.488 7.67868 22.6667 12.8333 22.6667Z"
-						stroke="#E6AF9A"
+						d="M21 17.83C21 18.19 20.9199 18.56 20.7496 18.92C20.5794 19.28 20.359 19.62 20.0686 19.94C19.5779 20.48 19.0371 20.87 18.4261 21.12C17.8252 21.37 17.1743 21.5 16.4732 21.5C15.4517 21.5 14.36 21.26 13.2083 20.77C12.0566 20.28 10.9049 19.62 9.76314 18.79C8.61142 17.95 7.51978 17.02 6.47822 15.99C5.44667 14.95 4.51527 13.86 3.68403 12.72C2.86279 11.58 2.2018 10.44 1.72108 9.31C1.24036 8.17 1 7.08 1 6.04C1 5.36 1.12018 4.71 1.36054 4.11C1.6009 3.5 1.98147 2.94 2.51227 2.44C3.15323 1.81 3.85428 1.5 4.59539 1.5C4.87581 1.5 5.15623 1.56 5.40661 1.68C5.667 1.8 5.89735 1.98 6.07762 2.24L8.4011 5.51C8.58137 5.76 8.71157 5.99 8.8017 6.21C8.89184 6.42 8.94191 6.63 8.94191 6.82C8.94191 7.06 8.87181 7.3 8.7316 7.53C8.6014 7.76 8.41112 8 8.17076 8.24L7.40961 9.03C7.29945 9.14 7.24937 9.27 7.24937 9.43C7.24937 9.51 7.25939 9.58 7.27942 9.66C7.30946 9.74 7.33951 9.8 7.35954 9.86C7.53981 10.19 7.85028 10.62 8.29094 11.14C8.74161 11.66 9.22233 12.19 9.74311 12.72C10.2839 13.25 10.8047 13.74 11.3355 14.19C11.8563 14.63 12.2869 14.93 12.6274 15.11C12.6775 15.13 12.7376 15.16 12.8077 15.19C12.8878 15.22 12.968 15.23 13.0581 15.23C13.2283 15.23 13.3585 15.17 13.4687 15.06L14.2298 14.31C14.4802 14.06 14.7206 13.87 14.9509 13.75C15.1813 13.61 15.4116 13.54 15.662 13.54C15.8523 13.54 16.0526 13.58 16.2729 13.67C16.4932 13.76 16.7236 13.89 16.974 14.06L20.2889 16.41C20.5493 16.59 20.7296 16.8 20.8398 17.05C20.9399 17.3 21 17.55 21 17.83Z"
+						stroke="#FFF9EE"
 						stroke-width="1.5"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
-					<path
-						d="M24.5008 25.0008L19.4258 19.9258"
-						stroke="#E6AF9A"
-						stroke-width="1.5"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
+						stroke-miterlimit="10" />
 				</svg>
-			</button>
-			<a
-				href="#"
-				class="header__account">
-				<svg
-					width="28"
-					height="29"
-					viewBox="0 0 28 29"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M19.0448 7.88444C19.0448 10.755 16.8373 13.0189 14.1904 13.0189C11.5434 13.0189 9.33594 10.755 9.33594 7.88444C9.33594 5.01389 11.5434 2.75 14.1904 2.75C16.8373 2.75 19.0448 5.01389 19.0448 7.88444Z"
-						stroke="#E6AF9A"
-						stroke-width="1.5" />
-					<path
-						d="M23.6258 25.3762H4.75189C4.85244 21.086 8.94798 17.4611 14.1888 17.4611C19.4297 17.4611 23.5252 21.086 23.6258 25.3762Z"
-						stroke="#E6AF9A"
-						stroke-width="1.5" />
-				</svg>
-			</a>
-			<a
-				href="#"
-				class="header__cart">
-				<svg
-					width="28"
-					height="29"
-					viewBox="0 0 28 29"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M8.74963 9.44834V8.31668C8.74963 5.69168 10.8613 3.11334 13.4863 2.86834C16.613 2.56501 19.2496 5.02668 19.2496 8.09501V9.70501"
-						stroke="#E6AF9A"
-						stroke-width="1.5"
-						stroke-miterlimit="10"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
-					<path
-						d="M10.4997 26.1666H17.4997C22.1897 26.1666 23.0297 24.2883 23.2747 22.0016L24.1497 15.0016C24.4647 12.1549 23.648 9.83325 18.6663 9.83325H9.33301C4.35134 9.83325 3.53468 12.1549 3.84968 15.0016L4.72468 22.0016C4.96968 24.2883 5.80968 26.1666 10.4997 26.1666Z"
-						stroke="#E6AF9A"
-						stroke-width="1.5"
-						stroke-miterlimit="10"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
-					<path
-						d="M18.078 14.5H18.0885"
-						stroke="#E6AF9A"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
-					<path
-						d="M9.90993 14.5H9.92041"
-						stroke="#E6AF9A"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round" />
-				</svg>
+				<span>8 495 212 10 59</span>
 			</a>
 		</div>
 	</div>
@@ -380,7 +413,11 @@
 									<p class="block-top__heading heading4">
 										Персональная информация
 									</p>
-									<button class="btns-caps">редактировать</button>
+									<button
+										class="btns-caps"
+										id="red-prof">
+										редактировать
+									</button>
 								</div>
 								<ul class="block-list">
 									<li class="block-list__item">
@@ -409,8 +446,8 @@
 									</li>
 								</ul>
 								<div class="block-bottom">
-									<a
-										href="#"
+									<div
+										id="change-pass"
 										class="arrow-link">
 										<span>сменить пароль</span>
 										<svg
@@ -424,7 +461,7 @@
 												d="M1 5.75C0.585786 5.75 0.25 6.08579 0.25 6.5C0.25 6.91421 0.585786 7.25 1 7.25L1 5.75ZM27.5303 7.03033C27.8232 6.73744 27.8232 6.26257 27.5303 5.96967L22.7574 1.1967C22.4645 0.903808 21.9896 0.903808 21.6967 1.1967C21.4038 1.48959 21.4038 1.96447 21.6967 2.25736L25.9393 6.5L21.6967 10.7426C21.4038 11.0355 21.4038 11.5104 21.6967 11.8033C21.9896 12.0962 22.4645 12.0962 22.7574 11.8033L27.5303 7.03033ZM1 7.25L27 7.25L27 5.75L1 5.75L1 7.25Z"
 												fill="#29354D" />
 										</svg>
-									</a>
+									</div>
 								</div>
 							</div>
 
@@ -470,8 +507,8 @@
 									</li>
 								</ul>
 								<div class="block-bottom">
-									<a
-										href="#"
+									<div
+										id="add-adress"
 										class="arrow-link">
 										<span>добавить адрес</span>
 										<svg
@@ -485,7 +522,7 @@
 												d="M1 5.75C0.585786 5.75 0.25 6.08579 0.25 6.5C0.25 6.91421 0.585786 7.25 1 7.25L1 5.75ZM27.5303 7.03033C27.8232 6.73744 27.8232 6.26257 27.5303 5.96967L22.7574 1.1967C22.4645 0.903808 21.9896 0.903808 21.6967 1.1967C21.4038 1.48959 21.4038 1.96447 21.6967 2.25736L25.9393 6.5L21.6967 10.7426C21.4038 11.0355 21.4038 11.5104 21.6967 11.8033C21.9896 12.0962 22.4645 12.0962 22.7574 11.8033L27.5303 7.03033ZM1 7.25L27 7.25L27 5.75L1 5.75L1 7.25Z"
 												fill="#29354D" />
 										</svg>
-									</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -505,19 +542,21 @@
 							<div class="cards-list">
 								<div class="cards-list__item red">
 									<p class="cards-list__item-name menu">Ivan Ivanov</p>
-									<div class="cards-list__item-number menu">
+									<div class="cards-list__item-number">
 										<p>4276</p>
-										<p>
-											22
-											<span></span>
-											<span></span>
-										</p>
-										<p>
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span>
-										</p>
+										<div>
+											<p>22</p>
+
+											<div>
+												<span>.</span>
+												<span>.</span>
+
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+											</div>
+										</div>
 										<p>2467</p>
 									</div>
 									<p class="cards-list__item-date menu">09/25</p>
@@ -526,6 +565,10 @@
 											<span></span>
 											<span></span>
 											<span></span>
+											<div class="cards-list__item-right__btn-popup">
+												<span>Удалить карту</span>
+												<span>Редактировать</span>
+											</div>
 										</button>
 										<img
 											src="./src/images/svg/visa.svg"
@@ -1286,19 +1329,21 @@
 
 								<div class="cards-list__item dark-blue">
 									<p class="cards-list__item-name menu">Ivan Ivanov</p>
-									<div class="cards-list__item-number menu">
+									<div class="cards-list__item-number">
 										<p>4276</p>
-										<p>
-											22
-											<span></span>
-											<span></span>
-										</p>
-										<p>
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span>
-										</p>
+										<div>
+											<p>22</p>
+
+											<div>
+												<span>.</span>
+												<span>.</span>
+
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+												<span>.</span>
+											</div>
+										</div>
 										<p>2467</p>
 									</div>
 									<p class="cards-list__item-date menu">09/25</p>
@@ -1307,6 +1352,10 @@
 											<span></span>
 											<span></span>
 											<span></span>
+											<div class="cards-list__item-right__btn-popup">
+												<span>Удалить карту</span>
+												<span>Редактировать</span>
+											</div>
 										</button>
 										<img
 											src="./src/images/svg/visa.svg"
@@ -2372,7 +2421,7 @@
 										</div>
 									</div>
 
-                                    <div class="order-table__item acc-item">
+									<div class="order-table__item acc-item">
 										<div class="order-table__item-head acc-head">
 											<div class="order-table__item-cell number">
 												<p>№123456</p>
@@ -2981,27 +3030,17 @@
 							</p>
 
 							<div class="account-lk__right-video">
-								<img
-									src="./src/images/bonus-program-img.png"
-									alt="" />
-								<button class="account-lk__right-video__btn play-btn">
-									<svg
-										width="88"
-										height="88"
-										viewBox="0 0 88 88"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<circle
-											cx="43.5"
-											cy="43.5"
-											r="42.5"
-											stroke="#F1DED0"
-											stroke-width="2" />
-										<path
-											d="M54.5 41.9019C56.5 43.0566 56.5 45.9434 54.5 47.0981L41 54.8923C39 56.047 36.5 54.6036 36.5 52.2942V36.7058C36.5 34.3964 39 32.953 41 34.1077L54.5 41.9019Z"
-											fill="#F1DED0" />
-									</svg>
-								</button>
+								<video
+								id="my-video"
+								class="video-js video-js--medium video-js--light"
+								controls
+								preload="true"
+								poster="./src/images/lc-video-img.png"
+								data-setup="{}">
+								<source
+									src="./src/images/sample/sample.mp4"
+									type="video/mp4" />
+							</video>
 							</div>
 
 							<div class="account-lk__right-text">
@@ -3665,33 +3704,27 @@
 	</div>
 </footer>
 
-
 <!-- модалка фильтр "Новости" -->
 <div class="modal filter-modal-1">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<div class="teg-list">
-			<p class="heading3">Теги</p>
+			<p class="heading2">Теги</p>
 
 			<label class="teg-list__item">
 				<input type="checkbox" />
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3706,9 +3739,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3723,9 +3757,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3740,9 +3775,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3757,9 +3793,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3783,19 +3820,14 @@
 		</div>
 	</div>
 </div>
+
 <!-- модалка фильтр "Категории" -->
 <div class="modal filter-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<div class="teg-list">
@@ -3806,9 +3838,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3823,9 +3856,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3840,9 +3874,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3857,9 +3892,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3878,9 +3914,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3895,9 +3932,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3912,9 +3950,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3929,9 +3968,10 @@
 				<button class="teg-list__check-btn">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
 						fill="none">
 						<path
-							d="M11.3333 4L4.91667 10.875L2 7.75"
+							d="M10.3333 1L3.91667 7.875L1 4.75"
 							stroke="#29354D"
 							stroke-width="1.5"
 							stroke-linecap="round"
@@ -3959,15 +3999,9 @@
 <div class="modal map-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<div class="map-block">
@@ -4797,15 +4831,9 @@
 <div class="modal personal-info-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Персональная информация</p>
@@ -4923,15 +4951,9 @@
 <div class="modal add-card-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Добавить банковскую карту</p>
@@ -5024,15 +5046,9 @@
 <div class="modal chage-password-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Изменить пароль</p>
@@ -5297,18 +5313,12 @@
 	</div>
 </div>
 <!-- модалка "Добавить адрес" -->
-<div class="modal chage-password-modal">
+<div class="modal add-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Добавить адрес</p>
@@ -5472,19 +5482,14 @@
 		</div>
 	</div>
 </div>
+
 <!-- модалка "Отклик на вакансию" -->
 <div class="modal vacancy-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Отклик на вакансию</p>
@@ -5573,26 +5578,19 @@
 		</div>
 	</div>
 </div>
+
 <!-- модалка "Сообщение отправлено" -->
 <div class="modal message-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Сообщение отправлено</p>
 
-		<p class="modal__message">
-			Мы ответим Вам в ближайщее время
-		</p>
+		<p class="modal__message">Мы ответим Вам в ближайщее время</p>
 
 		<div class="modal__btns modal__btns--center">
 			<button class="square-btn blue-square-btn">
@@ -5605,22 +5603,14 @@
 <div class="modal feedback-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Спасибо за отзыв!</p>
 
-		<p class="modal__message">
-			Публикация отзыва может занять некоторое время
-		</p>
+		<p class="modal__message">Публикация отзыва может занять некоторое время</p>
 
 		<div class="modal__btns modal__btns--center">
 			<button class="square-btn blue-square-btn">
@@ -5633,26 +5623,737 @@
 <div class="modal request-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none">
-				<path
-					d="M1 1.5L19 19.5M19 1.5L1 19.5"
-					stroke="#797979"
-					stroke-width="2"
-					stroke-linecap="round" />
-			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
 		</button>
 
 		<p class="heading2">Заявка отправлена</p>
 
-		<p class="modal__message">
-			Мы ответим Вам в ближайщее время
-		</p>
+		<p class="modal__message">Мы ответим Вам в ближайщее время</p>
 
 		<div class="modal__btns modal__btns--center">
 			<button class="square-btn blue-square-btn">
 				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Товары недоступны" -->
+<div class="modal unavailable-products-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<div class="modal__content-box">
+			<p class="heading2">Данные товары недоступны для заказа</p>
+			<div class="modal__beige-box">
+				<li class="cart__main-item">
+					<div class="cart__main-item-img">
+						<img
+							src="./src/images/cart-sample-img.png"
+							alt="" />
+					</div>
+
+					<div class="cart__main-item-text">
+						<a href="">Espresso Seasonal</a>
+						<span class="text1">500 г</span>
+						<p class="text1">Дополнительный текст</p>
+					</div>
+
+					<div class="cart__main-item-count">1 шт</div>
+
+					<div class="cart__main-item-price">
+						<div class="cart__main-item-value">
+							<strong class="heading4">600</strong>
+							<span class="text2">₽</span>
+						</div>
+
+						<span class="cart__main-cart-item">
+							<img
+								src="./src/images/cart-icon.png"
+								alt="" />
+						</span>
+					</div>
+				</li>
+
+				<li class="cart__main-item">
+					<div class="cart__main-item-img">
+						<img
+							src="./src/images/cart-sample-img.png"
+							alt="" />
+					</div>
+
+					<div class="cart__main-item-text">
+						<a href="">Espresso Seasonal</a>
+						<span class="text1">500 г</span>
+						<p class="text1">Дополнительный текст</p>
+					</div>
+
+					<div class="cart__main-item-count">1 шт</div>
+
+					<div class="cart__main-item-price">
+						<div class="cart__main-item-value">
+							<strong class="heading4">600</strong>
+							<span class="text2">₽</span>
+						</div>
+
+						<span class="cart__main-cart-item">
+							<img
+								src="./src/images/cart-icon.png"
+								alt="" />
+						</span>
+					</div>
+				</li>
+
+				<li class="cart__main-item">
+					<div class="cart__main-item-img">
+						<img
+							src="./src/images/cart-sample-img.png"
+							alt="" />
+					</div>
+
+					<div class="cart__main-item-text">
+						<a href="">Espresso Seasonal</a>
+						<span class="text1">500 г</span>
+						<p class="text1">Дополнительный текст</p>
+					</div>
+
+					<div class="cart__main-item-count">1 шт</div>
+
+					<div class="cart__main-item-price">
+						<div class="cart__main-item-value">
+							<strong class="heading4">600</strong>
+							<span class="text2">₽</span>
+						</div>
+
+						<span class="cart__main-cart-item">
+							<img
+								src="./src/images/cart-icon.png"
+								alt="" />
+						</span>
+					</div>
+				</li>
+			</div>
+		</div>
+
+		<div class="modal__content-box">
+			<p class="heading2">Похожие товары</p>
+			<div class="catalog__content-box">
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-1.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «Фруктовое»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-2.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «Фруктовое»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-3.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «Шоколадное»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__main-price">
+									800
+									<span>₽</span>
+								</div>
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-4.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «сливочное»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Напишите нам" -->
+<div class="modal text-us">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Напишите нам</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="name5"
+					class="input input-name"
+					placeholder="Ваше Имя" />
+				<label
+					for="name5"
+					class="input-label">
+					Ваше Имя
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="email6"
+					class="input input-email"
+					placeholder="Email" />
+				<label
+					for="email6"
+					class="input-label">
+					Email
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+
+			<div
+				class="input-container modal__textarea-medium input-textarea-wrapper">
+				<textarea
+					type="text"
+					id="textarea2"
+					class="input input-textarea"
+					placeholder="Комментарий"
+					maxlength="1000"></textarea>
+				<label
+					for="textarea2"
+					class="input-label">
+					Комментарий
+				</label>
+				<span class="modal__textarea-limits">0/1000</span>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--between">
+			<div class="account-main__left-policy menu">
+				<p>Нажимая на кнопку, вы принимаете</p>
+				<a href="#">условия пользовательского соглашения</a>
+			</div>
+			<button class="square-btn blue-square-btn">
+				<span>отправить</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Отзыв о кофейне" -->
+<div class="modal feedback">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Отзыв к кофейне в БЦ «Валлекс»</p>
+
+		<div class="rates">
+			<p class="rates__title">Оцените</p>
+
+			<div class="rates__icons-wrapper">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+
+		<form class="modal__form">
+			<div
+				class="input-container modal__textarea-medium input-textarea-wrapper">
+				<textarea
+					type="text"
+					id="textarea3"
+					class="input input-textarea"
+					placeholder="Расскажите о продукте"
+					maxlength="1000"></textarea>
+				<label
+					for="textarea3"
+					class="input-label">
+					Расскажите о продукте
+				</label>
+				<span class="modal__textarea-limits">0/1000</span>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="upload">
+			<p class="upload__title">Загрузите до 5 фотографий</p>
+			<div class="upload__content">
+				<div class="upload__box">
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__input-label">
+						<input
+							type="file"
+							class="upload__input"
+							accept="image/*" />
+
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="none">
+							<path
+								d="M6.76017 22H17.2402C20.0002 22 21.1002 20.31 21.2302 18.25L21.7502 9.99C21.8902 7.83 20.1702 6 18.0002 6C17.3902 6 16.8302 5.65 16.5502 5.11L15.8302 3.66C15.3702 2.75 14.1702 2 13.1502 2H10.8602C9.83017 2 8.63017 2.75 8.17017 3.66L7.45017 5.11C7.17017 5.65 6.61017 6 6.00017 6C3.83017 6 2.11017 7.83 2.25017 9.99L2.77017 18.25C2.89017 20.31 4.00017 22 6.76017 22Z"
+								stroke="#BABABA"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M10.5 8H13.5"
+								stroke="#BABABA"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z"
+								stroke="#BABABA"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</div>
+				</div>
+
+				<div class="upload__info">
+					<strong>Нажмите на область с иконкой</strong>
+					<span>Формат JPG, JPEG, PNG, BMP, GIF</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>отправить</span>
+			</button>
+
+			<button class="arrow-link">
+				<span>Отменить</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Вы здесь находитесь?" -->
+<div class="modal is-correct-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Вы здесь находитесь?</p>
+
+		<div class="map-block__form-adress-wrapper">
+			<div class="map-block__form-adress">
+				<span class="map-block__form-adress-value">
+					Москва, ул. 1-й Старомытищенский пр-д, 15к1,
+				</span>
+
+				<div class="map-block__form-adress-remove">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 25"
+						fill="none">
+						<path
+							d="M3 4L21 22M21 4L3 22"
+							stroke="#29354D"
+							stroke-width="2"
+							stroke-linecap="round" />
+					</svg>
+				</div>
+			</div>
+			<div class="map-block__identify-box">
+				<span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none">
+						<path
+							d="M12.0028 13.4295C13.7259 13.4295 15.1228 12.0326 15.1228 10.3095C15.1228 8.58633 13.7259 7.18945 12.0028 7.18945C10.2797 7.18945 8.88281 8.58633 8.88281 10.3095C8.88281 12.0326 10.2797 13.4295 12.0028 13.4295Z"
+							stroke="#29354D"
+							stroke-width="1.5" />
+						<path
+							d="M3.61776 8.49C5.58776 -0.169998 18.4178 -0.159997 20.3778 8.5C21.5278 13.58 18.3678 17.88 15.5978 20.54C13.5878 22.48 10.4078 22.48 8.38776 20.54C5.62776 17.88 2.46776 13.57 3.61776 8.49Z"
+							stroke="#29354D"
+							stroke-width="1.5" />
+					</svg>
+				</span>
+				<p>Определить местоположение</p>
+			</div>
+		</div>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>да</span>
+			</button>
+
+			<button class="arrow-link">
+				<span>другое местоположение</span>
 			</button>
 		</div>
 	</div>
@@ -5670,6 +6371,7 @@
 <script src="./src/js/chronology.js"></script>
 <script src="./src/js/map.js"></script>
 <script src="./src/js/inputs.js"></script>
+<script src="./src/js/modals-connections.js"></script>
 
 	</body>
 </html>

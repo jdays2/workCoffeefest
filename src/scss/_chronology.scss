@@ -47,11 +47,9 @@
 		position: relative;
 		left: 2.2rem;
 
-		&-img {
-			width: 161.8rem;
-			height: 20.8rem;
-			-o-object-fit: contain;
-			object-fit: contain;
+		svg {
+			width: 157.8rem;
+			height: 16.4rem;
 		}
 
 		&-active {
@@ -176,6 +174,7 @@
 				}
 
 				&-bottom {
+					margin-top: auto;
 					display: flex;
 					flex-direction: column;
 					gap: 1.4rem;
@@ -191,9 +190,12 @@
 					color: $light;
 					text-align: center;
 					opacity: 0;
+					position: absolute;
+					top: 0;
 					touch-action: none;
 					transition: 0.2s ease-in-out;
 					transform: translateY(-5rem);
+					width: 38rem;
 				}
 
 				&-number {
@@ -246,7 +248,7 @@
 					flex-direction: column;
 					align-items: center;
 					position: absolute;
-					bottom: 19.9rem;
+					bottom: 20.2rem;
 					cursor: pointer;
 					transition: 0.2s ease-in-out;
 

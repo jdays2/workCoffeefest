@@ -15,7 +15,9 @@
 				background-color: $biege;
 				border-radius: 0 0 0 5rem;
 
-				&-heading,
+				&-heading {
+					margin-bottom: 2.5rem;
+				}
 				&-subheading,
 				&-description {
 					margin-bottom: 4.5rem;
