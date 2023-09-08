@@ -72,13 +72,19 @@
 		&__swiper {
 			margin-bottom: 8rem;
 			&-slide {
+				height: auto;
+
 				&__img {
 					height: 58rem;
 				}
 
 				&__text {
 					padding: 8rem 4rem;
-					min-height: auto;
+					height: calc(100% - 58rem);
+
+					&-heading {
+						height: auto;
+					}
 
 					&-description {
 						margin-bottom: 8rem;
