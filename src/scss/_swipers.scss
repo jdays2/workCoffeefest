@@ -39,3 +39,58 @@
 		}
 	}
 }
+
+.swiper-pagination-styles {
+	width: 100%;
+	margin: 5rem 0 0 0;
+
+	span {
+		width: 1.3rem;
+		height: 1.3rem;
+		border-radius: 50%;
+		opacity: 1;
+		background-color: transparent;
+		border: 0.2rem solid #29354d;
+
+		&:not(:last-child) {
+			margin-right: 1.3rem;
+		}
+
+		&.swiper-pagination-bullet-active {
+			background-color: $darkBlue;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.swiper-pagination-styles {
+		span {
+			width: 3rem;
+			height: 3rem;
+		}
+
+		&:not(:last-child) {
+			margin-right: 2.6rem;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.formats__swiper {
+		.proposal-card {
+			&__descr {
+				height: 85.6rem;
+				padding: 8rem 4rem 20rem 4rem;
+				background-size: 67rem 85.6rem;
+			}
+
+			&__title {
+				font-size: 3.6rem;
+			}
+
+			&__text {
+				font-size: 2.8rem;
+			}
+		}
+	}
+}

@@ -24,3 +24,10 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 48em) {
+	.proposal__swiper-prev,
+	.proposal__swiper-next {
+		display: none !important;
+	}
+}
