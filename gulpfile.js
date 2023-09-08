@@ -17,9 +17,7 @@ const clean = () => {
 
 const html = () => {
     return src('*.html')
-        // .pipe(htmlMin({
-        //     collapseWhitespace: true,
-        // }))
+
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
