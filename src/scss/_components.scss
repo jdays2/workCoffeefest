@@ -607,6 +607,10 @@ body {
 		&-webkit-autofill + .input-label {
 			transform: translateY(-1.3rem);
 		}
+
+		@media (max-width: 48em) {
+			height: 10rem;
+		}
 	}
 
 	.input-label {

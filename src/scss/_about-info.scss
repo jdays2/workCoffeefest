@@ -7,10 +7,10 @@
 }
 
 @media (max-width: 48em) {
-	.section-info__card {
+	.about-info__card {
 		flex-direction: column-reverse;
 		
-		&-left {
+		.section-info__card-left {
 			width: auto;
 			position: relative;
 
@@ -21,13 +21,17 @@
 			}
 		}
 
-		&-right {
+		.section-info__card-right {
 			width: auto;
 			height: auto;
 			margin: 12rem 0 8rem 0;
 			column-gap: 1rem;
 
-			&__img,
+			&__img {
+				width: 28.4rem;
+				height: 37rem;
+			}
+
 			.video-js {
 				width: 28.4rem;
 				height: 37rem;
