@@ -17,7 +17,14 @@
 			&__heading {
 				position: absolute;
 				top: -58rem;
-				left: 0;
+				left: -1rem;
+				leading-trim: both;
+				text-edge: cap;
+			}
+
+			&__link{
+				width: 100%;
+				text-align: center;
 			}
 		}
 
@@ -35,6 +42,13 @@
 			.video-js {
 				width: 28.4rem;
 				height: 37rem;
+			}
+
+			&__large {
+				.video-js {
+					width: 55rem;
+					height: 36.6rem;
+				}
 			}
 		}
 	}
