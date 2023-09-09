@@ -423,4 +423,49 @@
 			}
 		}
 	}
+
+	@media (max-width: 48em) {
+		&-progres {
+			&__box {
+				position: relative;
+				width: 100%;
+				justify-content: flex-end;
+			}
+
+			&__line {
+				position: absolute;
+				bottom: -2rem;
+				left: 0;
+
+				&:nth-child(4) {
+					left: 32rem;
+				}
+			}
+
+			&__phase {
+				&-text {
+					display: none;
+				}
+			}
+
+			&__phase.active {
+				margin-right: auto;
+				position: relative;
+
+				.ordering-progres__phase-text {
+					text-align: center;
+					display: block;
+					position: absolute;
+					left: 17rem;
+					top: 1.2rem;
+					font-size: 2.8rem;
+					width: 19rem;
+				}
+			}
+		}
+
+		.cart__aside {
+			margin-top: 10rem;
+		}
+	}
 }

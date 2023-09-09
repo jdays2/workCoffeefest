@@ -549,12 +549,14 @@
 		}
 
 		&__right-side {
+			position: static;
 			background: none;
 			box-shadow: none;
 			border: none;
 			width: auto;
 			max-width: 67rem;
 			padding: 0;
+			row-gap: 5rem;
 
 			.controlls {
 				width: 22rem;
@@ -569,6 +571,7 @@
 		&__stats-weight-list {
 			width: 45.4rem;
 			justify-content: space-between;
+			margin: 0;
 
 			label {
 				span {
@@ -581,8 +584,16 @@
 			}
 		}
 
+		&__more-wrapper {
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
 		&__more {
-			margin: 0 0 5rem 0;
+
+			&:not(:last-child) {
+				margin: 0 5rem 0 0;
+			}
 		}
 
 		&__current-price-box {
