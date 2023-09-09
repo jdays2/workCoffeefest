@@ -105,6 +105,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 	});
 
+	const chronologySwiper = new Swiper('.chronology-swiper', {
+		slidesPerView: 1,
+		simulateTouch: true,
+		breakpoints: {
+			768: {
+				slidesPerView: 6,
+				simulateTouch: false
+			}
+		},
+		pagination: {
+			el: '.chronology__swiper-pagination',
+			clickable: true
+		}
+	})
+
 	const modalMapSwiper = new Swiper('.modal-map__swiper', {
 		slidesPerView: 1,
 		pagination: {

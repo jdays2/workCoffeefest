@@ -150,7 +150,10 @@
 	}
 
 	.video-js {
-		height: 148rem;
-		width: 75rem;
+		max-width: 75rem;
+	}
+
+	.video-js .vjs-big-play-button {
+		left: calc(50% + 3.5rem) !important;
 	}
 }

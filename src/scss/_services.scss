@@ -211,5 +211,18 @@
 				}
 			}
 		}
+
+		&__list-item {
+			&--small {
+				.services__list-item__text {
+					padding: 8rem 4rem 12rem 4rem;
+					height: calc(100% - 50.4rem);
+				}
+
+				.services__list-item__icon {
+					height: 50.4rem;
+				}
+			}
+		}
 	}
 }
