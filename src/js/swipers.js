@@ -1,3 +1,5 @@
+const { default: Swiper } = require("swiper");
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Пересчет rem в px
 	const rem = function (rem) {
@@ -380,5 +382,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			nextEl: '.category-block__btn-right',
 			prevEl: '.category-block__btn-left',
 		},
+	});
+
+	// КОРЗИНА
+
+	const orderingSwiper = new Swiper('.ordering__card-swiper', {
+		spaceBetween: rem(3),
+		slidesPerView: 1.25,
+		slidesPerGroup: 1,
+		speed: 600,
 	});
 });
