@@ -76,6 +76,12 @@ body {
 
 .biege-section {
 	background-color: $biege;
+
+	@media (max-width: 48em) {
+		.text-container {
+			margin-top: 11rem;
+		}
+	}
 }
 
 .light-section-clear {

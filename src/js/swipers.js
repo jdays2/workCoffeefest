@@ -1,4 +1,4 @@
-const { default: Swiper } = require("swiper");
+// const { default: Swiper } = require("swiper");
 
 document.addEventListener('DOMContentLoaded', function () {
 	// Пересчет rem в px
@@ -387,9 +387,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	// КОРЗИНА
 
 	const orderingSwiper = new Swiper('.ordering__card-swiper', {
-		spaceBetween: rem(3),
-		slidesPerView: 1.25,
+		spaceBetween: rem(2.4),
+		slidesPerView: 1.4,
+		slidesPerColumn: 0,
 		slidesPerGroup: 1,
-		speed: 600,
+		slidesPerColumnFill: 'row',
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				slidesPerGroup: 4,
+				slidesPerColumn: 4,
+				slidesPerColumnFill: 'row',
+				spaceBetween: rem(1.3),
+				simulateTouch: false
+			}
+		}
 	});
 });
