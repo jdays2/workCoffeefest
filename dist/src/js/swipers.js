@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 
 	// ГЛАВНАЯ
-
 	const mainHeroBanner = new Swiper('.main-banner__swiper', {
 		slidesPerView: 1,
 		speed: 700,
