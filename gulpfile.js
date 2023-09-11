@@ -10,6 +10,20 @@ const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const fileinclude = require('gulp-file-include');
 const del = require('del');
+const svgSprite = require('gulp-svg-sprite');
+const multiDest = require('gulp-multi-dest');
+
+const createSvgSprite = () => {
+	return src('src/images/svg/icons/*.svg')
+			.pipe(svgSprite({
+					mode: {
+							symbol: {
+									sprite: 'sprite.svg',
+							},
+					},
+			}))
+			.pipe(multiDest(['src/images/svg', 'dist/src/images/svg']));
+};
 
 const clean = () => {
     return del(['dist'])
@@ -78,6 +92,7 @@ watch('./templates/*.html', html);
 watch('./src/scss/**/*.scss', scssStyles);
 watch('./src/js/**', files);
 watch('./src/images/**', files)
+watch('./src/images/svg/icons/**', createSvgSprite)
 
 exports.scssStyles = scssStyles;
 exports.cssStyles = cssStyles;
@@ -85,4 +100,4 @@ exports.html = html;
 exports.clean = clean;
 exports.files = files;
 exports.fonts = fonts;
-exports.default = series(clean, files, html, fonts, scssStyles, cssStyles, watchFiles);
+exports.default = series(clean, files, html, fonts, scssStyles, cssStyles, watchFiles, createSvgSprite);

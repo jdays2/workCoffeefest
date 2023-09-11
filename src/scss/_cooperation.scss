@@ -7,6 +7,31 @@
 		overflow: hidden;
 	}
 
+	&__btns {
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+	}
+
+	&__download-btn {
+		color: #e3bca0;
+		font-family: Circe;
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 130%;
+		letter-spacing: 0.09rem;
+		text-transform: uppercase;
+		border-bottom: 0.1rem solid #e3bca0;
+
+		&:hover {
+			@media (hover: hover) {
+				color: #fff9ee;
+				border-color: #fff9ee;
+			}
+		}
+	}
+
 	&__left {
 		padding: 8rem 6rem;
 		width: 82rem;
@@ -83,7 +108,7 @@
 			&-form {
 				margin-bottom: 8rem;
 				margin-right: 0;
-	
+
 				&__input-container {
 					&:not(:last-child) {
 						margin-bottom: 4rem;
@@ -131,7 +156,7 @@
 		&__right {
 			width: auto;
 			max-width: 67rem;
-			border-radius: 0 0 7.2rem 7.2rem; 
+			border-radius: 0 0 7.2rem 7.2rem;
 		}
 	}
 }

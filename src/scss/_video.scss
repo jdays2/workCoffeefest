@@ -131,13 +131,13 @@
 	background-color: #ffffff00 !important;
 	width: 8.8rem !important;
 	height: 8.8rem !important;
-	background-image: url('../images/svg/big-play.svg') !important;
+	background-image: url('../images/svg/generic/player-icon.svg') !important;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
 }
 
 .video-js .vjs-big-play-button:hover {
-	background-image: url('../images/svg/big-play-hover.svg') !important;
+	background-image: url('../images/svg/generic/player-icon-hover.svg') !important;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
