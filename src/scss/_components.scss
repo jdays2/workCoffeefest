@@ -184,11 +184,8 @@ body {
 }
 
 .light-section {
-	background: url(../images/svg/services-ornament.svg) top left/cover no-repeat;
-}
-
-.light-section {
-	background: url(../images/svg/services-ornament.svg) top left/cover no-repeat;
+	background: url(../images/svg/bg/background-pattern.svg) top left/cover
+		no-repeat;
 }
 
 .white-arrow-btn {
@@ -197,15 +194,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: $light;
 	border-radius: 50%;
 	transition: background-color 0.2s ease-in-out;
+	background: $light url(../images/svg/symbol/sprite.svg#short-arrow-right)
+		center/40% no-repeat;
 
-	img {
+	svg {
 		width: 2.8rem;
-		height: 1.6rem;
-		-o-object-fit: contain;
-		object-fit: contain;
+		height: 1.2rem;
 	}
 
 	&:hover {
@@ -215,11 +211,6 @@ body {
 	@media (max-width: 48em) {
 		width: 14rem;
 		height: 14rem;
-
-		img {
-			width: 5.6rem;
-			height: 3.2rem;
-		}
 	}
 }
 
@@ -363,12 +354,11 @@ body {
 	letter-spacing: 0.9px;
 	text-transform: uppercase;
 	color: $black;
-	transition: color 0.2s ease-in-out;
 
 	&:hover {
 		@media (hover: hover) {
 			color: #e3bca0;
-			path {
+			.arrow-link__icon {
 				fill: #e3bca0;
 			}
 		}
@@ -380,10 +370,6 @@ body {
 		-o-object-fit: contain;
 		object-fit: contain;
 		transform: translateY(-0.2rem);
-
-		path {
-			transition: fill 0.2s ease-in-out;
-		}
 	}
 
 	@media (max-width: 48em) {
@@ -549,22 +535,28 @@ body {
 		}
 
 		.icon {
-			img.success {
+			.invalid {
+				opacity: 0;
+			}
+			.success {
 				opacity: 1;
 			}
 		}
 	}
 
 	&.invalid {
+		
 		.input {
 			border-color: $darkBlue;
 		}
 
 		.icon {
-			top: 40%;
-
-			img.invalid {
+			top: 37%;
+			.invalid {
 				opacity: 1;
+			}
+			.success {
+				opacity: 0;
 			}
 		}
 
@@ -648,20 +640,17 @@ body {
 		object-fit: contain;
 		transform: translateY(-50%);
 
-		img {
-			width: 100%;
-			height: 100%;
-			-o-object-fit: contain;
-			object-fit: contain;
+		svg {
+			width: 2.4rem;
+			height: 2.4rem;
 			opacity: 0;
-			transition: opacity 0.2s ease-in-out;
 		}
 	}
 
 	.input-status {
 		margin: 0.4rem 0 0 3.5rem;
 		font-size: 1.8rem;
-		line-height: 140%; 
+		line-height: 140%;
 		display: none;
 	}
 
@@ -898,12 +887,6 @@ body {
 		transition: background-color 0.2s ease-in-out;
 		cursor: pointer;
 
-		svg,
-		img {
-			width: 2.8rem;
-			height: 1.6rem;
-		}
-
 		&:hover {
 			background-color: $biege-btn;
 		}
@@ -911,17 +894,20 @@ body {
 
 	.swiper-prev {
 		left: 0;
-		transform: translate(-50%, -50%);
-
-		svg,
-		img {
-			transform: scaleX(-1);
-		}
+		transform: translate(-50%, -50%) scaleX(-1);
+		background-image: url(../images/svg/bg/left-arrow.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40%;
 	}
 
 	.swiper-next {
 		right: 0;
 		transform: translate(50%, -50%);
+		background-image: url(../images/svg/bg/left-arrow.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40%;
 	}
 
 	.swiper-pagination {
@@ -1134,8 +1120,11 @@ body {
 	svg {
 		width: 2.4rem;
 		height: 2.4rem;
-		-o-object-fit: contain;
-		object-fit: contain;
+	}
+
+	.crest {
+		width: 2.4rem;
+		height: 2.4rem;
 	}
 
 	&--borderless {
@@ -1530,7 +1519,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/acc-head-ornament.svg) top left/cover
+			background: url(../images/svg/generic/acc-head-ornament.svg) top left/cover
 					no-repeat,
 				$biege;
 			cursor: pointer;
@@ -1658,7 +1647,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/acc-head-ornament.svg) top left/cover
+			background: url(../images/svg/generic/acc-head-ornament.svg) top left/cover
 					no-repeat,
 				$biege;
 			cursor: pointer;

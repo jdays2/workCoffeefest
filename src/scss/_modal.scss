@@ -18,7 +18,7 @@
 	text-align: center;
 	vertical-align: middle;
 
-	.map-block__form-adress-wrapper{
+	.map-block__form-adress-wrapper {
 		margin-bottom: 3.2rem;
 	}
 
@@ -186,18 +186,15 @@
 			text-transform: uppercase;
 		}
 
-		&__content-adress-icon {
-			svg {
-				margin-top: 0.3rem;
-				width: 1.7rem;
-				height: 1.7rem;
-			}
-		}
-
 		&__content-adress {
 			display: flex;
 			align-items: flex-start;
-			gap: 1.3rem;
+			padding-left: 3rem;
+			background-image: url(../images/svg/generic/geo.svg);
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-size: 2rem;
+
 			p {
 				width: 36.6rem;
 				color: #29354d;
@@ -206,6 +203,8 @@
 				font-style: normal;
 				font-weight: 400;
 				line-height: 140%;
+				text-align: left;
+				text-align: start;
 			}
 		}
 
@@ -216,11 +215,11 @@
 			width: -webkit-fit-content;
 			width: -moz-fit-content;
 			width: fit-content;
-
-			svg {
-				width: 1.9rem;
-				height: 1.9rem;
-			}
+			padding-left: 3rem;
+			background-image: url(../images/svg/generic/clock.svg);
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: contain;
 
 			span {
 				color: #29354d;
@@ -228,7 +227,7 @@
 				font-size: 1.8rem;
 				font-style: normal;
 				font-weight: 400;
-				line-height: 135%;
+				line-height: 1;
 			}
 		}
 
@@ -239,11 +238,11 @@
 			width: -webkit-fit-content;
 			width: -moz-fit-content;
 			width: fit-content;
-
-			svg {
-				width: 1.54rem;
-				height: 1.54rem;
-			}
+			padding-left: 3rem;
+			background-image: url(../images/svg/generic/tel.svg);
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: contain;
 
 			span {
 				color: #67a7ac;
@@ -251,7 +250,7 @@
 				font-size: 1.8rem;
 				font-style: normal;
 				font-weight: 400;
-				line-height: 135%;
+				line-height: 1;
 			}
 		}
 

@@ -36,9 +36,7 @@
 						color: $light;
 
 						.arrow-link__icon {
-							path {
-								fill: $light;
-							}
+							fill: $light;
 						}
 					}
 				}
@@ -80,7 +78,8 @@
 				max-width: 67rem;
 
 				img {
-					object-fit: cover;
+					-o-object-fit: cover;
+					   object-fit: cover;
 				}
 			}
 		}

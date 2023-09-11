@@ -177,11 +177,11 @@
 				width: -webkit-fit-content;
 				width: -moz-fit-content;
 				width: fit-content;
-
-				svg {
-					width: 1.9rem;
-					height: 1.9rem;
-				}
+				padding-left: 3rem;
+				background-image: url(../images/svg/generic/clock.svg);
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
 
 				span {
 					color: #29354d;
@@ -189,7 +189,7 @@
 					font-size: 1.8rem;
 					font-style: normal;
 					font-weight: 400;
-					line-height: 135%;
+					line-height: 1;
 				}
 			}
 
@@ -201,7 +201,6 @@
 				font-weight: 400;
 				line-height: 1.2;
 				margin-bottom: 0rem !important;
-
 			}
 
 			&-bottom {

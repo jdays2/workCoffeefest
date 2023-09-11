@@ -136,8 +136,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		breakpoints: {
 			768: {
 				slidesPerView: 3,
-				spaceBetween: rem(3.5)
-			}
+				spaceBetween: rem(3.5),
+			},
 		},
 		pagination: {
 			clickable: true,
@@ -155,8 +155,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		breakpoints: {
 			768: {
 				slidesPerView: 3,
-				spaceBetween: rem(3.5)
-			}
+				spaceBetween: rem(3.5),
+			},
 		},
 		pagination: {
 			clickable: true,
@@ -176,8 +176,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			768: {
 				slidesPerGroup: 1,
 				slidesPerView: 3,
-				spaceBetween: rem(3.5)
-			}
+				spaceBetween: rem(3.5),
+			},
 		},
 		pagination: {
 			clickable: true,
@@ -260,14 +260,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		},
 		pagination: {
-	// 	el: '.services__swiper-pagination-1'
-	// 	},
-	// 	navigation: {
-	// 		nextEl: '.serv__swiper-next',
-	// 		prevEl: '.serv__swiper-prev'
-	// 	}
-	// })
-			
+			// 	el: '.services__swiper-pagination-1'
+			// 	},
+			// 	navigation: {
+			// 		nextEl: '.serv__swiper-next',
+			// 		prevEl: '.serv__swiper-prev'
+			// 	}
+			// })
+
 			clickable: true,
 			el: '.services__swiper-pagination-1',
 		},
@@ -302,8 +302,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		breakpoints: {
 			768: {
 				slidesPerView: 4,
-				spaceBetween: rem(3.4)
-			}
+				spaceBetween: rem(3.4),
+			},
 		},
 		pagination: {
 			clickable: true,
