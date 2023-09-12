@@ -104,7 +104,6 @@ body {
 	align-items: center;
 	gap: 3.3rem;
 	height: 5.1rem;
-
 	margin-bottom: 0.9rem;
 
 	&:focus {
@@ -125,8 +124,25 @@ body {
 		}
 	}
 
-	&__count-btn {
+	&__count-btn:first-child {
+		background-image: url(../images/svg/generic/minus.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
 		width: 1.2rem;
+		height: 1.2rem;
+	}
+
+	&__count-btn:last-child {
+		background-image: url(../images/svg/generic/plus.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+
+	&__count-btn {
 		cursor: pointer;
 		-webkit-user-select: none;
 		-moz-user-select: none;
@@ -144,6 +160,11 @@ body {
 .card-det-section {
 	position: relative;
 	padding-bottom: 0 !important;
+	background-image: url(../images/svg/bg/border-card-det-bg.svg),
+		url(../images/svg/bg/border-card-det-bg-right.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center, right center;
 	&__bg-right {
 		position: absolute;
 		bottom: 0rem;
@@ -539,7 +560,6 @@ body {
 	}
 
 	&.invalid {
-		
 		.input {
 			border-color: $darkBlue;
 		}
@@ -1183,7 +1203,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	border-radius: 0 0 5rem 5rem;
-	background: url(../images/svg/section-info-ornament.svg) top left/cover
+	background: url(../images/svg/bg/big-background-pattern.svg) top left/cover
 			no-repeat,
 		$darkBlue;
 	&.hide {
@@ -1494,7 +1514,6 @@ body {
 
 		&.active {
 			.acc-content {
-				overflow: visible;
 				opacity: 1;
 			}
 
@@ -1510,8 +1529,8 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/generic/acc-head-ornament.svg) top left/cover
-					no-repeat,
+			background: url(../images/svg/generic/acc-head-ornament.svg) top
+					left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
@@ -1544,7 +1563,7 @@ body {
 			overflow: hidden;
 			opacity: 0;
 			transition-property: opacity, visibility, max-height, padding;
-			transition-duration: 0.3s;
+			transition-duration: 0.5s;
 			transition-timing-function: ease-in-out;
 
 			.content {
@@ -1622,7 +1641,8 @@ body {
 
 		&.active {
 			.acc-content {
-				overflow: visible;
+				transition: 0.7s ease-in-out;
+				max-height: 200rem !important;
 				opacity: 1;
 			}
 
@@ -1638,8 +1658,8 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/generic/acc-head-ornament.svg) top left/cover
-					no-repeat,
+			background: url(../images/svg/generic/acc-head-ornament.svg) top
+					left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
@@ -1677,7 +1697,7 @@ body {
 			max-height: 0;
 			overflow: hidden;
 			opacity: 0;
-			transition: 0.3s ease-in-out;
+			transition: 0.5s ease-in-out;
 
 			.content {
 				padding: 4rem 6rem;

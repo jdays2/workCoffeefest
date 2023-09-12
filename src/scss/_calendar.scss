@@ -1,6 +1,6 @@
 .calendar {
 	background-color: $darkBlue;
-  overflow: hidden;
+	overflow: hidden;
 	border-radius: 0rem 0rem 2.5rem 2.5rem;
 	padding: 2rem 3rem;
 	&__head {
@@ -27,11 +27,19 @@
 				width: 3.5rem;
 				height: 2.6rem;
 				cursor: pointer;
+			}
 
-				svg {
-					width: 100%;
-					height: 100%;
-				}
+			span:first-child {
+				background-image: url(../images/svg/generic/date-arrow-left.svg);
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			span:last-child {
+				background-image: url(../images/svg/generic/date-arrow-right.svg);
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
 			}
 		}
 	}
@@ -78,7 +86,6 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 1.6rem 2.5rem;
-
 		}
 
 		&-cell {
@@ -88,7 +95,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-      border: 0.1rem solid $darkBlue;
+			border: 0.1rem solid $darkBlue;
 			span {
 				color: #fff9ee;
 				text-align: center;
@@ -96,28 +103,28 @@
 				font-style: normal;
 				font-weight: 400;
 				line-height: 125%;
-        position: relative;
-        bottom: -0.1rem
+				position: relative;
+				bottom: -0.1rem;
 			}
 
-      &.current {
-        border-radius: 50%;
-        border: 0.1rem solid #E6AF9A;
+			&.current {
+				border-radius: 50%;
+				border: 0.1rem solid #e6af9a;
 
-        span {
-          color: #E6AF9A;
-        }
-      }
-      &.active {
-        border-radius: 50%;
-        border: 0.1rem solid #E6AF9A;
-        background-color: #E6AF9A;
-      }
+				span {
+					color: #e6af9a;
+				}
+			}
+			&.active {
+				border-radius: 50%;
+				border: 0.1rem solid #e6af9a;
+				background-color: #e6af9a;
+			}
 		}
 	}
 
-  &__info {
-    padding-top: 2.4rem;
-    padding-bottom: 4rem;
-  }
+	&__info {
+		padding-top: 2.4rem;
+		padding-bottom: 4rem;
+	}
 }

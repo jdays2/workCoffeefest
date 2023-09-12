@@ -194,14 +194,14 @@
 				<a
 					href="#"
 					class="header__account">
-					<svg>
+					<svg class="profile">
 						<use xlink:href="./src/images/svg/symbol/sprite.svg#profile" />
 					</svg>
 				</a>
 				<a
 					href="#"
 					class="header__cart">
-					<svg>
+					<svg class="bag">
 						<use xlink:href="./src/images/svg/symbol/sprite.svg#bag" />
 					</svg>
 				</a>
@@ -399,8 +399,8 @@
 									href="/dist/main.html"
 									class="breadcrumbs__item-link">
 									<svg class="home">
-								<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
-							</svg>
+										<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
+									</svg>
 								</a>
 							</li>
 
@@ -408,7 +408,7 @@
 								<a
 									href="/dist/catalog.html"
 									class="breadcrumbs__item-link">
-									Каталог
+									<span>Каталог</span>
 								</a>
 							</li>
 						</ul>
@@ -458,54 +458,8 @@
 							<button
 								class="tag-btn"
 								id="filter">
-								<svg
-									width="24"
-									height="25"
-									viewBox="0 0 24 25"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M22 18H15"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-									<path
-										d="M5 18H2"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-									<path
-										d="M22 7H19"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-									<path
-										d="M9 7H2"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-									<path
-										d="M7 15H13C14.1 15 15 15.5 15 17V19C15 20.5 14.1 21 13 21H7C5.9 21 5 20.5 5 19V17C5 15.5 5.9 15 7 15Z"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-									<path
-										d="M11 4H17C18.1 4 19 4.5 19 6V8C19 9.5 18.1 10 17 10H11C9.9 10 9 9.5 9 8V6C9 4.5 9.9 4 11 4Z"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
+								<svg class="filter">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#filter" />
 								</svg>
 								<span>Фильтры</span>
 							</button>
@@ -517,24 +471,16 @@
 										type="text"
 										placeholder="Поиск" />
 									<button class="search-block__main-icon">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 24 24"
-											fill="none">
-											<path
-												d="M1.14466 14.2263L1.87484 14.055L1.14466 14.2263ZM1.14466 7.405L1.87484 7.57628L1.14466 7.405ZM20.4867 7.405L21.2168 7.23373L20.4867 7.405ZM20.4867 14.2263L21.2168 14.3976L20.4867 14.2263ZM14.2263 20.4867L14.055 19.7565L14.2263 20.4867ZM7.405 20.4867L7.23373 21.2168L7.405 20.4867ZM7.405 1.14466L7.23372 0.414479L7.405 1.14466ZM14.2263 1.14466L14.3976 0.414478L14.2263 1.14466ZM22.7197 23.7803C23.0126 24.0732 23.4874 24.0732 23.7803 23.7803C24.0732 23.4874 24.0732 23.0126 23.7803 22.7197L22.7197 23.7803ZM1.87484 14.055C1.37505 11.9244 1.37505 9.70695 1.87484 7.57628L0.41448 7.23372C-0.13816 9.5897 -0.13816 12.0416 0.41448 14.3976L1.87484 14.055ZM19.7565 7.57628C20.2563 9.70695 20.2563 11.9244 19.7565 14.055L21.2168 14.3976C21.7695 12.0416 21.7695 9.58971 21.2168 7.23373L19.7565 7.57628ZM14.055 19.7565C11.9244 20.2563 9.70695 20.2563 7.57628 19.7565L7.23373 21.2168C9.58971 21.7695 12.0416 21.7695 14.3976 21.2168L14.055 19.7565ZM7.57628 1.87484C9.70695 1.37505 11.9244 1.37505 14.055 1.87484L14.3976 0.414478C12.0416 -0.13816 9.58971 -0.138159 7.23372 0.414479L7.57628 1.87484ZM7.57628 19.7565C4.74731 19.0929 2.53843 16.884 1.87484 14.055L0.41448 14.3976C1.20817 17.7812 3.85012 20.4231 7.23373 21.2168L7.57628 19.7565ZM14.3976 21.2168C17.7812 20.4231 20.4231 17.7812 21.2168 14.3976L19.7565 14.055C19.0929 16.884 16.884 19.0929 14.055 19.7565L14.3976 21.2168ZM14.055 1.87484C16.884 2.53843 19.0929 4.74731 19.7565 7.57628L21.2168 7.23373C20.4231 3.85012 17.7812 1.20817 14.3976 0.414478L14.055 1.87484ZM7.23372 0.414479C3.85012 1.20817 1.20817 3.85011 0.41448 7.23372L1.87484 7.57628C2.53843 4.74731 4.74731 2.53843 7.57628 1.87484L7.23372 0.414479ZM18.1386 19.1993L22.7197 23.7803L23.7803 22.7197L19.1993 18.1386L18.1386 19.1993Z"
-												fill="#29354D" />
+										<svg class="search-icon--dark">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#search" />
 										</svg>
 									</button>
 
 									<button class="search-block__enter-icon">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 28 12"
-											fill="none">
-											<path
-												d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM27.5303 6.53033C27.8232 6.23744 27.8232 5.76257 27.5303 5.46967L22.7574 0.696701C22.4645 0.403808 21.9896 0.403808 21.6967 0.696701C21.4038 0.989594 21.4038 1.46447 21.6967 1.75736L25.9393 6L21.6967 10.2426C21.4038 10.5355 21.4038 11.0104 21.6967 11.3033C21.9896 11.5962 22.4645 11.5962 22.7574 11.3033L27.5303 6.53033ZM1 6.75L27 6.75L27 5.25L1 5.25L1 6.75Z"
-												fill="#29354D" />
+										<svg class="search-arrow--dark">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#search-arrow" />
 										</svg>
 									</button>
 								</label>
@@ -544,34 +490,9 @@
 						<button class="popup-block__wrapper">
 							<label class="popup-block">
 								<span class="popup-block__arrows-icon">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 24 24"
-										fill="none">
-										<path
-											d="M10.45 6.71997L6.72998 3L3.01001 6.71997"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M6.72998 21V3"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M13.55 17.2812L17.2701 21.0012L20.9901 17.2812"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M17.27 3V21"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
+									<svg>
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#arrow-up-and-down" />
 									</svg>
 								</span>
 								<input type="checkbox" />
@@ -605,19 +526,11 @@
 										</label>
 									</div>
 								</div>
-								<span class="text2 popup-block__select-value">
-									Сортировать
-								</span>
+								<span class="text2 popup-block__select-value">Сортировать</span>
 
-								<svg
-									class="popup-block__more-icon"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M6.5 9L12.5 15L18.5 9"
-										stroke="#29354D"
-										stroke-width="1.5" />
+								<svg class="popup-block__more-icon">
+									<use
+										xlink:href="./src/images/svg/symbol/sprite.svg#popup-icon" />
 								</svg>
 							</label>
 						</button>
@@ -628,63 +541,24 @@
 							<button
 								class="tag-btn tag-btn--borderless filter-result-item active">
 								<span>Новости кофе</span>
-								<svg
-									width="24"
-									height="25"
-									viewBox="0 0 24 25"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<g
-										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-										<path
-											id="Vector"
-											d="M3 4L21 22M21 4L3 22"
-											stroke="#29354D"
-											stroke-width="2"
-											stroke-linecap="round" />
-									</g>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
 								</svg>
 							</button>
 
 							<button
 								class="tag-btn tag-btn--borderless filter-result-item active">
 								<span>Новости кофеен</span>
-								<svg
-									width="24"
-									height="25"
-									viewBox="0 0 24 25"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<g
-										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-										<path
-											id="Vector"
-											d="M3 4L21 22M21 4L3 22"
-											stroke="#29354D"
-											stroke-width="2"
-											stroke-linecap="round" />
-									</g>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
 								</svg>
 							</button>
 
 							<button
 								class="tag-btn tag-btn--borderless filter-result-item active">
 								<span>События</span>
-								<svg
-									width="24"
-									height="25"
-									viewBox="0 0 24 25"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<g
-										id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-										<path
-											id="Vector"
-											d="M3 4L21 22M21 4L3 22"
-											stroke="#29354D"
-											stroke-width="2"
-											stroke-linecap="round" />
-									</g>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
 								</svg>
 							</button>
 						</div>
@@ -693,24 +567,17 @@
 					<div class="settings-bar__row">
 						<div class="category-block">
 							<button class="category-block__btn-left">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 70 70"
-									fill="none">
-									<rect
-										width="70"
-										height="70"
-										rx="35"
-										fill="#FFF9EE" />
-									<path
-										d="M22 34.25C21.5858 34.25 21.25 34.5858 21.25 35C21.25 35.4142 21.5858 35.75 22 35.75L22 34.25ZM48.5303 35.5303C48.8232 35.2374 48.8232 34.7626 48.5303 34.4697L43.7574 29.6967C43.4645 29.4038 42.9896 29.4038 42.6967 29.6967C42.4038 29.9896 42.4038 30.4645 42.6967 30.7574L46.9393 35L42.6967 39.2426C42.4038 39.5355 42.4038 40.0104 42.6967 40.3033C42.9896 40.5962 43.4645 40.5962 43.7574 40.3033L48.5303 35.5303ZM22 35.75L48 35.75L48 34.25L22 34.25L22 35.75Z"
-										fill="#29354D" />
+								<svg>
+									<use
+										xlink:href="./src/images/svg/symbol/sprite.svg#catalog-arrow-left" />
 								</svg>
 							</button>
 							<div class="category-block category-block__swiper swiper">
 								<div class="swiper-wrapper">
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Все</span>
 											<span class="category-block__value-show">Все</span>
@@ -718,7 +585,9 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Завтраки</span>
 											<span class="category-block__value-show">Завтраки</span>
@@ -726,7 +595,9 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Салаты</span>
 											<span class="category-block__value-show">Салаты</span>
@@ -734,39 +605,65 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Супы и блюда</span>
-											<span class="category-block__value-show">Супы и блюда</span>
+											<span class="category-block__value-hidden">
+												Супы и блюда
+											</span>
+											<span class="category-block__value-show">
+												Супы и блюда
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Сендвичи и бургеры</span>
-											<span class="category-block__value-show">Сендвичи и бургеры</span>
+											<span class="category-block__value-hidden">
+												Сендвичи и бургеры
+											</span>
+											<span class="category-block__value-show">
+												Сендвичи и бургеры
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Зерновой кофе</span>
-											<span class="category-block__value-show">Зерновой кофе</span>
+											<span class="category-block__value-hidden">
+												Зерновой кофе
+											</span>
+											<span class="category-block__value-show">
+												Зерновой кофе
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Горячие напитки</span>
-											<span class="category-block__value-show">Горячие напитки</span>
+											<span class="category-block__value-hidden">
+												Горячие напитки
+											</span>
+											<span class="category-block__value-show">
+												Горячие напитки
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Выпечка</span>
 											<span class="category-block__value-show">Выпечка</span>
@@ -774,7 +671,9 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Десерты</span>
 											<span class="category-block__value-show">Десерты</span>
@@ -782,15 +681,21 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Кофе и чай</span>
+											<span class="category-block__value-hidden">
+												Кофе и чай
+											</span>
 											<span class="category-block__value-show">Кофе и чай</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Завтраки</span>
 											<span class="category-block__value-show">Завтракий</span>
@@ -798,23 +703,37 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Зерновой кофе</span>
-											<span class="category-block__value-show">Зерновой кофе</span>
+											<span class="category-block__value-hidden">
+												Зерновой кофе
+											</span>
+											<span class="category-block__value-show">
+												Зерновой кофе
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Горячие напитки</span>
-											<span class="category-block__value-show">Горячие напитки</span>
+											<span class="category-block__value-hidden">
+												Горячие напитки
+											</span>
+											<span class="category-block__value-show">
+												Горячие напитки
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Кулич</span>
 											<span class="category-block__value-show">Кулич</span>
@@ -824,18 +743,9 @@
 							</div>
 
 							<button class="category-block__btn-right">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 70 70"
-									fill="none">
-									<rect
-										width="70"
-										height="70"
-										rx="35"
-										fill="#FFF9EE" />
-									<path
-										d="M22 34.25C21.5858 34.25 21.25 34.5858 21.25 35C21.25 35.4142 21.5858 35.75 22 35.75L22 34.25ZM48.5303 35.5303C48.8232 35.2374 48.8232 34.7626 48.5303 34.4697L43.7574 29.6967C43.4645 29.4038 42.9896 29.4038 42.6967 29.6967C42.4038 29.9896 42.4038 30.4645 42.6967 30.7574L46.9393 35L42.6967 39.2426C42.4038 39.5355 42.4038 40.0104 42.6967 40.3033C42.9896 40.5962 43.4645 40.5962 43.7574 40.3033L48.5303 35.5303ZM22 35.75L48 35.75L48 34.25L22 34.25L22 35.75Z"
-										fill="#29354D" />
+								<svg>
+									<use
+										xlink:href="./src/images/svg/symbol/sprite.svg#catalog-arrow-right" />
 								</svg>
 							</button>
 						</div>
@@ -882,11 +792,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -928,11 +834,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -974,11 +876,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1020,11 +918,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1066,11 +960,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1112,11 +1002,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1158,11 +1044,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1205,11 +1087,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 					</div>
@@ -1217,16 +1095,9 @@
 						href="#"
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
-						<svg
-							width="29"
-							height="13"
-							viewBox="0 0 29 13"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							class="arrow-link__icon">
-							<path
-								d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-								fill="#1e283f" />
+						<svg class="arrow-link__icon">
+							<use
+								xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1274,11 +1145,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1320,11 +1187,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1366,11 +1229,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1412,11 +1271,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1458,11 +1313,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1504,11 +1355,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1550,11 +1397,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1597,11 +1440,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 					</div>
@@ -1609,16 +1448,9 @@
 						href="#"
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
-						<svg
-							width="29"
-							height="13"
-							viewBox="0 0 29 13"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							class="arrow-link__icon">
-							<path
-								d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-								fill="#1e283f" />
+						<svg class="arrow-link__icon">
+							<use
+								xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1761,11 +1593,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1902,11 +1730,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -2043,11 +1867,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -2184,11 +2004,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -2325,11 +2141,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -2467,11 +2279,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -2608,11 +2416,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -2749,11 +2553,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 					</div>
@@ -2761,16 +2561,9 @@
 						href="#"
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
-						<svg
-							width="29"
-							height="13"
-							viewBox="0 0 29 13"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							class="arrow-link__icon">
-							<path
-								d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-								fill="#1e283f" />
+						<svg class="arrow-link__icon">
+							<use
+								xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -3126,9 +2919,16 @@
 <div class="modal filter-modal-1">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="teg-list">
@@ -3243,9 +3043,16 @@
 <div class="modal filter-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="teg-list">
@@ -3417,9 +3224,16 @@
 <div class="modal map-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="map-block">
@@ -4249,9 +4063,16 @@
 <div class="modal personal-info-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Персональная информация</p>
@@ -4268,18 +4089,8 @@
 					class="input-label">
 					Имя
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4294,18 +4105,8 @@
 					class="input-label">
 					Фамилия
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4320,18 +4121,8 @@
 					class="input-label">
 					Email
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4346,18 +4137,8 @@
 					class="input-label">
 					Телефон
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 		</form>
@@ -4373,9 +4154,16 @@
 <div class="modal add-card-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Добавить банковскую карту</p>
@@ -4392,18 +4180,8 @@
 					class="input-label">
 					Номер карты
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4418,18 +4196,8 @@
 					class="input-label">
 					Держатель карты
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4444,18 +4212,8 @@
 					class="input-label">
 					Срок действия
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 		</form>
@@ -4471,9 +4229,16 @@
 <div class="modal chage-password-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Изменить пароль</p>
@@ -4490,18 +4255,8 @@
 					class="input-label">
 					Старый пароль
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 
 				<button class="password-btn icon">
@@ -4573,18 +4328,8 @@
 					class="input-label">
 					Новый пароль
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 
 				<button class="password-btn icon">
@@ -4658,18 +4403,8 @@
 				</label>
 				<div class="input-status">Неверный формат</div>
 
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<button class="password-btn icon">
 					<svg
 						class="password-btn__show"
@@ -4744,9 +4479,16 @@
 <div class="modal add-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Добавить адрес</p>
@@ -4763,18 +4505,8 @@
 					class="input-label">
 					Город
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4789,18 +4521,8 @@
 					class="input-label">
 					Улица
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4815,18 +4537,8 @@
 					class="input-label">
 					Дом
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4841,18 +4553,8 @@
 					class="input-label">
 					Этаж
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4867,18 +4569,8 @@
 					class="input-label">
 					Квартира
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4893,18 +4585,8 @@
 					class="input-label">
 					Комментарий к адресу
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 			</div>
 		</form>
 
@@ -4920,9 +4602,16 @@
 <div class="modal vacancy-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Отклик на вакансию</p>
@@ -4939,18 +4628,8 @@
 					class="input-label">
 					Имя
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4965,18 +4644,8 @@
 					class="input-label">
 					Номер телефона
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -4991,18 +4660,8 @@
 					class="input-label">
 					Ссылка на резюме
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 		</form>
@@ -5019,9 +4678,16 @@
 <div class="modal message-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Сообщение отправлено</p>
@@ -5039,9 +4705,16 @@
 <div class="modal feedback-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Спасибо за отзыв!</p>
@@ -5059,9 +4732,16 @@
 <div class="modal request-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Заявка отправлена</p>
@@ -5080,9 +4760,16 @@
 <div class="modal unavailable-products-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="modal__content-box">
@@ -5362,9 +5049,16 @@
 <div class="modal text-us">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Напишите нам</p>
@@ -5381,18 +5075,8 @@
 					class="input-label">
 					Ваше Имя
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -5407,18 +5091,8 @@
 					class="input-label">
 					Email
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -5436,18 +5110,8 @@
 					Комментарий
 				</label>
 				<span class="modal__textarea-limits">0/1000</span>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 			</div>
 		</form>
 
@@ -5467,9 +5131,16 @@
 <div class="modal feedback">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Отзыв к кофейне в БЦ «Валлекс»</p>
@@ -5560,18 +5231,8 @@
 					Расскажите о продукте
 				</label>
 				<span class="modal__textarea-limits">0/1000</span>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 			</div>
 		</form>
 
@@ -5739,9 +5400,16 @@
 <div class="modal is-correct-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Вы здесь находитесь?</p>
