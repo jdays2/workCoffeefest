@@ -292,16 +292,16 @@
 // 	}
 // }
 
-// @media (hover: hover) {
-// .catalog-card-2:hover {
-// 	.catalog-card-2__details {
-// 		max-height: 32.7rem;
-// 		opacity: 1;
-// 		height: 32.7rem;
-// 		padding-bottom: 3rem;
-// 	}
-// }
-// }
+@media (hover: hover) {
+.catalog-card-2:hover {
+	.catalog-card-2__details {
+		max-height: 32.7rem;
+		opacity: 1;
+		height: 32.7rem;
+		padding-bottom: 3rem;
+	}
+}
+}
 
 @media (max-width: 48em) {
 	.catalog-card-2 {

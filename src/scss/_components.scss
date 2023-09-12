@@ -104,7 +104,6 @@ body {
 	align-items: center;
 	gap: 3.3rem;
 	height: 5.1rem;
-
 	margin-bottom: 0.9rem;
 
 	&:focus {
@@ -125,8 +124,25 @@ body {
 		}
 	}
 
-	&__count-btn {
+	&__count-btn:first-child {
+		background-image: url(../images/svg/generic/minus.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
 		width: 1.2rem;
+		height: 1.2rem;
+	}
+
+	&__count-btn:last-child {
+		background-image: url(../images/svg/generic/plus.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+
+	&__count-btn {
 		cursor: pointer;
 		-webkit-user-select: none;
 		-moz-user-select: none;
@@ -144,6 +160,11 @@ body {
 .card-det-section {
 	position: relative;
 	padding-bottom: 0 !important;
+	background-image: url(../images/svg/bg/border-card-det-bg.svg),
+		url(../images/svg/bg/border-card-det-bg-right.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center, right center;
 	&__bg-right {
 		position: absolute;
 		bottom: 0rem;
@@ -539,7 +560,6 @@ body {
 	}
 
 	&.invalid {
-		
 		.input {
 			border-color: $darkBlue;
 		}
@@ -1347,8 +1367,8 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/generic/acc-head-ornament.svg) top left/cover
-					no-repeat,
+			background: url(../images/svg/generic/acc-head-ornament.svg) top
+					left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
@@ -1475,8 +1495,8 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/generic/acc-head-ornament.svg) top left/cover
-					no-repeat,
+			background: url(../images/svg/generic/acc-head-ornament.svg) top
+					left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
