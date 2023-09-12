@@ -6,8 +6,7 @@
 		font-weight: 700;
 		line-height: 125%;
 		margin-top: -1.6rem;
-    margin-bottom: 4.8rem;
-
+		margin-bottom: 4.8rem;
 	}
 
 	&__box {
@@ -18,7 +17,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/acc-head-ornament.svg) top left/cover
+			background: url(../images/svg/bg/acc-head-ornament.svg) top left/cover
 					no-repeat,
 				#f1ded0;
 			cursor: pointer;
@@ -220,12 +219,12 @@
 			}
 
 			.acc-content {
+				transition: 0.5s ease-in-out;
 				overflow: hidden;
 				max-height: 10.5rem;
 				opacity: 1;
 				&.active {
-					overflow: visible;
-					max-height: 100%;
+					max-height: 200rem;
 				}
 
 				p {

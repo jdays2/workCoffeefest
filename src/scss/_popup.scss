@@ -67,15 +67,15 @@
         }
 
         &__close {
-            top: 14rem;
+            top: 31rem;
             right: 3rem;
             width: 13.4rem;
             height: 13.4rem;
-            background-color: $white;
+            background-color: $light;
 
             svg {
-                width: 11.4rem;
-                height: 11.4rem;
+                width: 4.8rem;
+                height: 4.8rem;
             }
         }
 
@@ -86,11 +86,18 @@
 }
 
 .order-popup {
+    .popup__body {
+        background-color: $light;
+        padding: 9.6rem 4rem 8rem;
+    }
+
     .order-info {
         margin-bottom: 4.8rem;
         padding: 3rem 2rem;
-        border-radius: 3rem;
-        background-color: rgba($color: $darkGrey, $alpha: 0.1);
+        border-radius: 0rem;
+        border: 0.1rem solid $biege;
+        background-color: rgba($color: $light, $alpha: 0.1);
+        margin: 0 0 8rem 0;
 
         &__cell {
             display: flex;
@@ -164,14 +171,14 @@
     }
 
     .details-table {
-        margin-bottom: 4.8rem;
+        margin-bottom: 8rem;
 
         &__item {
             padding: 3rem 2rem;
             flex-direction: column;
             align-items: flex-start;
             border: none;
-            background-color: rgba($color: $darkGrey, $alpha: 0.1);
+            background-color: $light;
 
             &:first-child {
                 border-top-left-radius: 3rem;
@@ -184,7 +191,7 @@
             }
 
             &:not(:last-child) {
-                margin-bottom: 0.4rem;
+                margin-bottom: 8rem;
             }
 
             &-cell {
@@ -255,5 +262,21 @@
         font-size: 2.8rem;
         line-height: 4.2rem;
         letter-spacing: 0.1em;
+    }
+
+    .repeat-order-btn {
+        background: none;
+        border-radius: 0;
+        border: 0.2rem solid $darkBlue;
+        color: $darkBlue;
+        padding: 3rem 13.3rem;
+
+        span {
+            margin: 0;
+        }
+
+        svg {
+            display: none;
+        }
     }
 }

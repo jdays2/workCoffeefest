@@ -60,3 +60,53 @@
         }
     }
 }
+
+@media (max-width: 48em) {
+    .request-employees {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__left {
+            width: auto;
+            max-width: 67rem;
+
+            &-description {
+                font-size: 2.8rem;
+                margin: 0 0 8rem 0;
+            }
+
+            &-form {
+                .input-container {
+                    margin: 0 0 5rem 0;
+
+                    &:nth-child(2) {
+                        margin: 0 0 8rem 0;
+                    }
+                }
+            }
+
+            &-bottom {
+                flex-direction: column;
+                margin: 0 0 4rem 0;
+
+                &__btn {
+                    margin: 0 0 8rem 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                &__policy {
+                    width: auto;
+                }
+            }
+        }
+
+        &__right {
+            width: auto;
+            height: 62.4rem;
+            max-width: 67rem;
+            border-radius: 0 0 7.2rem 7.2rem;
+        }
+    }
+}

@@ -45,17 +45,8 @@
 							<a
 								href="/dist/main.html"
 								class="breadcrumbs__item-link">
-								<svg
-									width="28"
-									height="28"
-									viewBox="0 0 28 28"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-linecap="round" />
+								<svg class="home">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
 								</svg>
 							</a>
 						</li>
@@ -117,6 +108,25 @@
 				<div class="container">
 					<p class="services__heading heading2">Наши ценности</p>
 
+					<!-- <div class="services__list services__swiper swiper">
+						<div class="services__swiper-wrapper swiper-wrapper">
+							<div class="services__list-item services__slide swiper-slide">
+								<div class="services__list-item__text">
+									<p class="services__list-item__text-heading heading4">
+										Открытость
+									</p>
+									<p class="services__list-item__text-description text1">
+										Мы всегда открыты к диалогу и обратной связи, как внутри
+										команды, так и с гостями
+									</p>
+								</div>
+								<div class="services__list-item__icon catering">
+								 <svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
+								</div> -->
+
 					<div class="services__list">
 						<div class="services__list-item services__list-item--small">
 							<div class="services__list-item__text">
@@ -129,9 +139,10 @@
 								</p>
 							</div>
 							<div class="services__list-item__icon catering">
-								<img
-									src="./src/images/svg/catering-icon.svg"
-									alt="" />
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
 							</div>
 						</div>
 						<div class="services__list-item services__list-item--small">
@@ -145,27 +156,30 @@
 								</p>
 							</div>
 							<div class="services__list-item__icon organization">
-								<img
-									src="./src/images/svg/catering-icon.svg"
-									alt="" />
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
 							</div>
 						</div>
+
 						<div class="services__list-item services__list-item--small">
 							<div class="services__list-item__text">
 								<p class="services__list-item__text-heading heading4">
 									Лидерство и ответственность
 								</p>
 								<p class="services__list-item__text-description text1">
-									Растим сотрудников, готовых брать ответственность за
-									обязанности и результаты в команде
+									Растим сотрудников, готовых брать ответственность за обязанности и результаты в команде
 								</p>
 							</div>
 							<div class="services__list-item__icon corporate">
-								<img
-									src="./src/images/svg/catering-icon.svg"
-									alt="" />
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
 							</div>
 						</div>
+
 						<div class="services__list-item services__list-item--small">
 							<div class="services__list-item__text">
 								<p class="services__list-item__text-heading heading4">
@@ -175,13 +189,16 @@
 									Наши сотрудники развиваются и растут вместе с компанией
 								</p>
 							</div>
+
 							<div class="services__list-item__icon barista">
-								<img
-									src="./src/images/svg/catering-icon.svg"
-									alt="" />
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
 							</div>
 						</div>
 					</div>
+					<div class="services__swiper-pagination-1 swiper-pagination"></div>
 				</div>
 			</section>
 
@@ -239,10 +256,10 @@
 								<p class="heading4">БАРИСТА</p>
 								<div class="acc-head__right">
 									<p class="text1">Доступно 5 свободных мест</p>
-									<img
-										src="./src/images/svg/blue-arrow-up.svg"
-										alt=""
-										class="arrow" />
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
 								</div>
 							</div>
 							<div class="acc-content menu">
@@ -326,10 +343,10 @@
 								<p class="heading4">ПОВАР</p>
 								<div class="acc-head__right">
 									<p class="text1">Доступно 2 свободных места</p>
-									<img
-										src="./src/images/svg/blue-arrow-up.svg"
-										alt=""
-										class="arrow" />
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
 								</div>
 							</div>
 							<div class="acc-content menu">
@@ -344,10 +361,10 @@
 								<p class="heading4">ПЕКАРЬ</p>
 								<div class="acc-head__right">
 									<p class="text1">Доступно 1 свободное место</p>
-									<img
-										src="./src/images/svg/blue-arrow-up.svg"
-										alt=""
-										class="arrow" />
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
 								</div>
 							</div>
 							<div class="acc-content menu">
@@ -361,16 +378,15 @@
 					<div
 						class="carrer-vacancies__accordion accordion hide"
 						data-target="office">
-
 						<div class="acc-item">
 							<div class="acc-head">
 								<p class="heading4">ПЕКАРЬ</p>
 								<div class="acc-head__right">
 									<p class="text1">Доступно 1 свободное место</p>
-									<img
-										src="./src/images/svg/blue-arrow-up.svg"
-										alt=""
-										class="arrow" />
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
 								</div>
 							</div>
 							<div class="acc-content menu">
@@ -389,10 +405,10 @@
 								<p class="heading4">БАРИСТА</p>
 								<div class="acc-head__right">
 									<p class="text1">Доступно 5 свободных мест</p>
-									<img
-										src="./src/images/svg/blue-arrow-up.svg"
-										alt=""
-										class="arrow" />
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
 								</div>
 							</div>
 							<div class="acc-content menu">
@@ -476,10 +492,10 @@
 								<p class="heading4">ПЕКАРЬ</p>
 								<div class="acc-head__right">
 									<p class="text1">Доступно 1 свободное место</p>
-									<img
-										src="./src/images/svg/blue-arrow-up.svg"
-										alt=""
-										class="arrow" />
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
 								</div>
 							</div>
 							<div class="acc-content menu">
@@ -516,18 +532,9 @@
 										class="input-label">
 										ФИО сотрудника
 									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
+									<div class="icon success"></div>
+														<div class="icon invalid"></div>
+									<div class="input-status">Неверный формат</div>
 								</div>
 								<div class="input-container">
 									<input
@@ -540,18 +547,9 @@
 										class="input-label">
 										Ваш номер для связи
 									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
+									<div class="icon success"></div>
+														<div class="icon invalid"></div>
+									<div class="input-status">Неверный формат</div>
 								</div>
 								<div class="request-employees__left-bottom">
 									<button

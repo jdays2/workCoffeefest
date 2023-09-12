@@ -126,18 +126,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	if (document.querySelector('.order-table__item-head')) {
 		let orderTable = document.querySelector('.order-table');
+		const orderPopup = document.querySelector('.order-popup');
+		const popupClose = document.querySelector('.popup__close');
+
 		if (window.innerWidth > 768) {
 			initAccordion(orderTable);
 		} else {
 			let orderTableItems = orderTable.querySelectorAll('.order-table__item');
 			orderTableItems.forEach((item) => {
 				let accHead = item.querySelector('.acc-head');
-				let orderPopup = document.querySelector('.order-popup');
 				accHead.addEventListener('click', function () {
 					openPopupElement(orderPopup);
 				});
 			});
 		}
+
+		popupClose.addEventListener('click', () => {
+			orderPopup.classList.remove('active');
+		})
 	}
 
 	// табы

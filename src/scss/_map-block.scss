@@ -56,8 +56,7 @@
 			position: relative;
 			width: 100%;
 			height: 7.3rem;
-			padding: 2.4rem 3.5rem;
-			padding-right: 5rem;
+			padding: 2.4rem 6rem 2.4rem 3.5rem;
 			border: 0.2rem solid #f1ded0;
 			overflow: hidden;
 			font-family: Circe;
@@ -177,11 +176,11 @@
 				width: -webkit-fit-content;
 				width: -moz-fit-content;
 				width: fit-content;
-
-				svg {
-					width: 1.9rem;
-					height: 1.9rem;
-				}
+				padding-left: 3rem;
+				background-image: url(../images/svg/generic/clock.svg);
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
 
 				span {
 					color: #29354d;
@@ -189,7 +188,7 @@
 					font-size: 1.8rem;
 					font-style: normal;
 					font-weight: 400;
-					line-height: 135%;
+					line-height: 1;
 				}
 			}
 
@@ -201,7 +200,6 @@
 				font-weight: 400;
 				line-height: 1.2;
 				margin-bottom: 0rem !important;
-
 			}
 
 			&-bottom {
@@ -238,5 +236,12 @@
 		width: 100%;
 		height: 100%;
 		position: relative;
+	}
+}
+
+@media (max-width: 48em) {
+	.map-block {
+		flex-direction: column;
+		height: auto;
 	}
 }

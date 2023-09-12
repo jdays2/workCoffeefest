@@ -36,9 +36,7 @@
 						color: $light;
 
 						.arrow-link__icon {
-							path {
-								fill: $light;
-							}
+							fill: $light;
 						}
 					}
 				}
@@ -56,6 +54,40 @@
 					object-fit: cover;
 					border-radius: inherit;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.authorcoffee-types {
+		&__swiper-slide {
+			flex-direction: column;
+
+			&__left {
+				width: auto;
+				max-width: 67rem;
+				border-radius: 0;
+			}
+
+			&__right {
+				height: 82rem;
+				border-radius: 0 0 7.2rem 7.2rem;
+				overflow: hidden;
+				width: auto;
+				max-width: 67rem;
+
+				img {
+					-o-object-fit: cover;
+					   object-fit: cover;
+				}
+			}
+		}
+
+		&__swiper-controllers {
+			.swiper-prev,
+			.swiper-next {
+				display: none;
 			}
 		}
 	}

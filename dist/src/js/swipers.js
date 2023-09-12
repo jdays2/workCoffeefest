@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 
 	// ГЛАВНАЯ
-
 	const mainHeroBanner = new Swiper('.main-banner__swiper', {
 		slidesPerView: 1,
 		speed: 700,
@@ -114,8 +113,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const formatsSwiper = new Swiper('.formats__swiper', {
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: rem(3.5),
+		breakpoints: {
+			768: {
+				slidesPerView: 3,
+				spaceBetween: rem(3.5),
+			},
+		},
 		pagination: {
 			clickable: true,
 			el: '.formats__swiper-pagination',
@@ -127,8 +132,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const urMenuSwiper = new Swiper('.ur-menu__swiper', {
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: rem(3.5),
+		breakpoints: {
+			768: {
+				slidesPerView: 3,
+				spaceBetween: rem(3.5),
+			},
+		},
 		pagination: {
 			clickable: true,
 			el: '.ur-menu__swiper-pagination',
@@ -140,10 +151,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const proposalSwiper = new Swiper('.proposal__swiper', {
-		slidesPerView: 3,
+		slidesPerView: 1,
+		slidesPerGroup: 1,
 		spaceBetween: rem(3.5),
+		breakpoints: {
+			768: {
+				slidesPerGroup: 1,
+				slidesPerView: 3,
+				spaceBetween: rem(3.5),
+			},
+		},
 		pagination: {
 			clickable: true,
+			// el: '.proposal__swiper-pagination-1',
 			el: '.proposal__swiper-pagination',
 		},
 		navigation: {
@@ -222,6 +242,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		},
 		pagination: {
+			// 	el: '.services__swiper-pagination-1'
+			// 	},
+			// 	navigation: {
+			// 		nextEl: '.serv__swiper-next',
+			// 		prevEl: '.serv__swiper-prev'
+			// 	}
+			// })
+
 			clickable: true,
 			el: '.services__swiper-pagination-1',
 		},
@@ -250,9 +278,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const teamSwiper = new Swiper('.team__swiper', {
-		slidesPerView: 4,
+		slidesPerView: 1,
 		spaceBetween: rem(3.4),
 		speed: 600,
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				spaceBetween: rem(3.4),
+			},
+		},
 		pagination: {
 			clickable: true,
 			el: '.team__swiper-pagination',

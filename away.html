@@ -43,17 +43,8 @@
 							<a
 								href="/dist/main.html"
 								class="breadcrumbs__item-link">
-								<svg
-									width="28"
-									height="28"
-									viewBox="0 0 28 28"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-linecap="round" />
+								<svg class="home">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
 								</svg>
 							</a>
 						</li>
@@ -62,19 +53,19 @@
 							<a
 								href="/dist/about.html"
 								class="breadcrumbs__item-link">
-								Для бизнеса
+								<span>Для бизнеса</span>
 							</a>
 						</li>
 						<li class="breadcrumbs__item">
 							<a
 								href="/dist/about.html"
 								class="breadcrumbs__item-link">
-								Выездной бариста
+								<span>Выездной бариста</span>
 							</a>
 						</li>
 					</ul>
 
-					<div class="about-info__card section-info__card">
+					<div class="about-info__card section-info__card franchise-banner">
 						<div class="section-info__card-left">
 							<p class="section-info__card-left__heading heading2">
 								Выездной бариста
@@ -136,9 +127,10 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon catering">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
@@ -157,9 +149,10 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon organization">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
@@ -177,9 +170,10 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon corporate">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
@@ -197,12 +191,14 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon barista">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
+
 								<div class="swiper-slide services__swiper-slide">
 									<div class="services__list-item services__list-item--medium">
 										<div class="services__list-item__text">
@@ -217,9 +213,10 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon catering">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
@@ -237,9 +234,10 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon organization">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
@@ -255,9 +253,10 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon corporate">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
@@ -276,9 +275,10 @@
 											</p>
 										</div>
 										<div class="services__list-item__icon barista">
-											<img
-												src="./src/images/svg/catering-icon.svg"
-												alt="" />
+											<svg class="composition">
+												<use
+													xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+											</svg>
 										</div>
 									</div>
 								</div>
@@ -286,17 +286,10 @@
 						</div>
 
 						<div class="swiper-controllers">
-							<div class="swiper-prev serv__swiper-prev">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
-							<div class="swiper-next serv__swiper-next">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
-							<div class="swiper-pagination serv__swiper-pagination"></div>
+							<div class="swiper-prev serv__swiper-prev"></div>
+							<div class="swiper-next serv__swiper-next"></div>
+							<div
+								class="services__swiper-pagination-1 swiper-pagination"></div>
 						</div>
 					</div>
 				</div>
@@ -326,11 +319,23 @@
 													напитков
 												</p>
 											</div>
-
-											<div class="proposal-card__descr-bg">
-												<img
-													src="./src/images/svg/proposal-card-bg.svg"
-													alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="proposal-card">
+										<div class="proposal-card__img">
+											<img
+												src="./src/images/proposal-card-img.png"
+												alt="card-img" />
+										</div>
+										<div class="proposal-card__descr">
+											<div class="proposal-card__head">
+												<p class="proposal-card__title">Напитки</p>
+												<p class="proposal-card__text">
+													Время меориприятия 2 часа, до 25 человек, до 100
+													напитков
+												</p>
 											</div>
 										</div>
 									</div>
@@ -350,11 +355,23 @@
 													напитков
 												</p>
 											</div>
-
-											<div class="proposal-card__descr-bg">
-												<img
-													src="./src/images/svg/proposal-card-bg.svg"
-													alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="proposal-card">
+										<div class="proposal-card__img">
+											<img
+												src="./src/images/proposal-card-img.png"
+												alt="card-img" />
+										</div>
+										<div class="proposal-card__descr">
+											<div class="proposal-card__head">
+												<p class="proposal-card__title">Напитки</p>
+												<p class="proposal-card__text">
+													Время меориприятия 2 часа, до 25 человек, до 100
+													напитков
+												</p>
 											</div>
 										</div>
 									</div>
@@ -374,12 +391,6 @@
 													напитков
 												</p>
 											</div>
-
-											<div class="proposal-card__descr-bg">
-												<img
-													src="./src/images/svg/proposal-card-bg.svg"
-													alt="" />
-											</div>
 										</div>
 									</div>
 								</div>
@@ -397,60 +408,6 @@
 													Время меориприятия 2 часа, до 25 человек, до 100
 													напитков
 												</p>
-											</div>
-
-											<div class="proposal-card__descr-bg">
-												<img
-													src="./src/images/svg/proposal-card-bg.svg"
-													alt="" />
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide services__swiper-slide">
-									<div class="proposal-card">
-										<div class="proposal-card__img">
-											<img
-												src="./src/images/proposal-card-img.png"
-												alt="card-img" />
-										</div>
-										<div class="proposal-card__descr">
-											<div class="proposal-card__head">
-												<p class="proposal-card__title">Напитки</p>
-												<p class="proposal-card__text">
-													Время меориприятия 2 часа, до 25 человек, до 100
-													напитков
-												</p>
-											</div>
-
-											<div class="proposal-card__descr-bg">
-												<img
-													src="./src/images/svg/proposal-card-bg.svg"
-													alt="" />
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide services__swiper-slide">
-									<div class="proposal-card">
-										<div class="proposal-card__img">
-											<img
-												src="./src/images/proposal-card-img.png"
-												alt="card-img" />
-										</div>
-										<div class="proposal-card__descr">
-											<div class="proposal-card__head">
-												<p class="proposal-card__title">Напитки</p>
-												<p class="proposal-card__text">
-													Время меориприятия 2 часа, до 25 человек, до 100
-													напитков
-												</p>
-											</div>
-
-											<div class="proposal-card__descr-bg">
-												<img
-													src="./src/images/svg/proposal-card-bg.svg"
-													alt="" />
 											</div>
 										</div>
 									</div>
@@ -459,18 +416,14 @@
 						</div>
 
 						<div class="swiper-controllers">
-							<div class="swiper-prev proposal__swiper-prev">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
-							<div class="swiper-next proposal__swiper-next">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
+							<div class="swiper-prev proposal__swiper-prev"></div>
+
+							<div class="swiper-next proposal__swiper-next"></div>
 							<div class="swiper-pagination proposal__swiper-pagination"></div>
 						</div>
+
+						<div
+							class="proposal__swiper-pagination-1 swiper-pagination-styles swiper-pagination"></div>
 					</div>
 				</div>
 			</section>
@@ -480,14 +433,6 @@
 					<p class="services__heading heading2">Готовые предложения</p>
 					<div class="three-item-container">
 						<div class="catalog-card-1 catalog-card-1--big">
-							<!-- <a
-								href="/"
-								class="catalog-card-1__img">
-								<img
-									src="./src/images/sandwichwithcofee.png"
-									alt="" />
-							</a> -->
-
 							<div class="catalog-card-1__descr">
 								<div class="catalog-card-1__imgless">
 									<div class="catalog-card-1__imgless-box">
@@ -530,7 +475,7 @@
 						<div class="catalog-card-1 catalog-card-1--big">
 							<a
 								href="/"
-								class="catalog-card-1__img">
+								class="catalog-card-1__img three-card-img">
 								<img
 									src="./src/images/sandwichwithcofee.png"
 									alt="" />
@@ -578,7 +523,7 @@
 						<div class="catalog-card-1 catalog-card-1--big">
 							<a
 								href="/"
-								class="catalog-card-1__img">
+								class="catalog-card-1__img three-card-img">
 								<img
 									src="./src/images/sandwichwithcofee.png"
 									alt="" />
@@ -711,16 +656,8 @@
 						</div>
 
 						<div class="about-team__swiper-controllers swiper-controllers">
-							<div class="swiper-prev services__swiper-prev">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
-							<div class="swiper-next services__swiper-next">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
+							<div class="swiper-prev services__swiper-prev"></div>
+							<div class="swiper-next services__swiper-next"></div>
 							<div class="swiper-pagination team__swiper-pagination"></div>
 						</div>
 					</div>
@@ -754,16 +691,8 @@
 							</div>
 						</div>
 						<div class="interiors__swiper-controllers swiper-controllers">
-							<div class="swiper-prev">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
-							<div class="swiper-next">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
+							<div class="swiper-prev"></div>
+							<div class="swiper-next"></div>
 							<div class="swiper-pagination services__swiper-pagination"></div>
 						</div>
 					</div>
@@ -794,18 +723,9 @@
 										class="input-label">
 										Имя
 									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
+									<div class="icon success"></div>
+														<div class="icon invalid"></div>
+									<div class="input-status">Неверный формат</div>
 								</div>
 								<div
 									class="cooperation__left-form__input-container input-container">
@@ -819,18 +739,9 @@
 										class="input-label">
 										Телефон
 									</label>
-									<div class="icon">
-										<img
-											src="./src/images/svg/success-validation.svg"
-											alt=""
-											class="success" />
-									</div>
-									<div class="icon">
-										<img
-											src="./src/images/svg/invalid-validation.svg"
-											alt=""
-											class="invalid" />
-									</div>
+									<div class="icon success"></div>
+														<div class="icon invalid"></div>
+									<div class="input-status">Неверный формат</div>
 								</div>
 							</form>
 							<button class="square-btn">отправить заявку</button>

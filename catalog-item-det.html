@@ -21,18 +21,6 @@
 		@@include('./templates/header.html')
 		<main class="main catalog catalog-det">
 			<section class="section light-section-clear card-det-section">
-				<div class="card-det-section__bg-left">
-					<img
-						src="./src/images/svg/border-card-det-bg.svg"
-						alt="" />
-				</div>
-
-				<div class="card-det-section__bg-right">
-					<img
-						src="./src/images/svg/border-card-det-bg.svg"
-						alt="" />
-				</div>
-
 				<div class="container card-det__container">
 					<div class="breadcrumbs__container container">
 						<ul class="breadcrumbs">
@@ -40,17 +28,8 @@
 								<a
 									href="/dist/main.html"
 									class="breadcrumbs__item-link">
-									<svg
-										width="28"
-										height="28"
-										viewBox="0 0 28 28"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-linecap="round" />
+									<svg class="home">
+										<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
 									</svg>
 								</a>
 							</li>
@@ -59,14 +38,14 @@
 								<a
 									href="/dist/catalog.html"
 									class="breadcrumbs__item-link">
-									Зерновой кофе
+									<span>Зерновой кофе</span>
 								</a>
 							</li>
 							<li class="breadcrumbs__item">
 								<a
 									href="/dist/catalog.html"
 									class="breadcrumbs__item-link">
-									Espresso Seasonal
+									<span>Espresso Seasonal</span>
 								</a>
 							</li>
 						</ul>
@@ -206,15 +185,9 @@
 								</div>
 								<span class="heading4">ПОДРОБНЕЕ</span>
 
-								<svg
-									class="card-det__more-icon"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M6.5 9L12.5 15L18.5 9"
-										stroke="#29354D"
-										stroke-width="1.5" />
+								<svg class="card-det__more-icon">
+									<use
+										xlink:href="./src/images/svg/symbol/sprite.svg#popup-icon" />
 								</svg>
 							</label>
 							<div class="card-det__main-box">
@@ -286,49 +259,9 @@
 									</div>
 
 									<div class="controlls">
-										<div class="controlls__count-btn">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 12 39"
-												fill="none">
-												<g clip-path="url(#clip0_4785_18988)">
-													<path
-														d="M0 19.5H12"
-														stroke="#29354D"
-														stroke-width="1.5"
-														stroke-linecap="round"
-														stroke-linejoin="round" />
-												</g>
-												<defs>
-													<clipPath id="clip0_4785_18988">
-														<rect
-															width="12"
-															height="39"
-															fill="white" />
-													</clipPath>
-												</defs>
-											</svg>
-										</div>
+										<div class="controlls__count-btn"></div>
 										<div class="controlls__count-value">1</div>
-										<div class="controlls__count-btn">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 14 29"
-												fill="none">
-												<path
-													d="M1 14.5H13"
-													stroke="#29354D"
-													stroke-width="1.5"
-													stroke-linecap="round"
-													stroke-linejoin="round" />
-												<path
-													d="M7 20.5L7 8.5"
-													stroke="#29354D"
-													stroke-width="1.5"
-													stroke-linecap="round"
-													stroke-linejoin="round" />
-											</svg>
-										</div>
+										<div class="controlls__count-btn"></div>
 									</div>
 
 									<label class="card-det__more">
@@ -458,15 +391,9 @@
 											В каком виде доставить
 										</span>
 
-										<svg
-											class="card-det__more-icon"
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 24 24"
-											fill="none">
-											<path
-												d="M6.5 9L12.5 15L18.5 9"
-												stroke="#29354D"
-												stroke-width="1.5" />
+										<svg class="card-det__more-icon">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#popup-icon" />
 										</svg>
 									</label>
 
@@ -631,11 +558,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -773,11 +696,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -914,11 +833,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1055,11 +970,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
 							</div>
 						</div>
 					</div>
@@ -1067,16 +978,9 @@
 						href="#"
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
-						<svg
-							width="29"
-							height="13"
-							viewBox="0 0 29 13"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							class="arrow-link__icon">
-							<path
-								d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-								fill="#1e283f" />
+						<svg class="arrow-link__icon">
+							<use
+								xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>

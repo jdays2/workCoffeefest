@@ -7,35 +7,129 @@
 }
 
 @media (max-width: 48em) {
-	.about-info {
-		&__card {
-			position: relative;
-			flex-direction: column;
+	// .about-info {
+	// 	&__card {
+	// 		position: relative;
+	// 		flex-direction: column-reverse;
 
-			.section-info__card {
-				&-left {
-					width: auto;
-					order: 2;
+	// 		.section-info__card {
+	// 			&-left {
+	// 				width: auto;
+	// 				order: 2;
 
-					&__heading {
-						position: absolute;
-						top: 9.6rem;
-						left: 5.5rem;
-					}
+	// 				&__heading {
+	// 					position: absolute;
+	// 					top: 9.6rem;
+	// 					left: 5.5rem;
+	// 				}
+	// 			}
+
+	// 			&-right {
+	// 				order: 1;
+	// 				width: auto;
+	// 				height: 37rem;
+	// 				margin: 11.6rem 0 8rem 0;
+
+	// 				&__img {
+	// 					&:first-child {
+	// 						margin: 0 2rem 0 0;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	.about-info__card {
+		flex-direction: column;
+
+
+		.section-info__card-left {
+			width: auto;
+			padding: 10rem 4rem 8rem;
+		}
+
+		.section-info__card-right {
+			width: auto;
+
+			&__img {
+				height: 50rem;
+				border-radius: 0 0 7.2rem 7.2rem;
+			}
+		}
+	}
+
+	.about-info__card.cakes__banner {
+		flex-direction: column-reverse;
+		padding: 21.6rem 4rem 10rem 4rem;
+		position: relative;
+
+		.section-info__card-left {
+			padding: 8rem 0rem 0rem 0rem;
+
+			&__heading {
+				position: absolute;
+				top: 10rem;
+				left: 4rem;
+			}
+
+			&__description {
+				p:first-child {
+					margin: 0 0 4rem 0;
 				}
 
-				&-right {
-					order: 1;
-					width: auto;
-					height: 37rem;
-					margin: 11.6rem 0 8rem 0;
-
-					&__img {
-						&:first-child {
-							margin: 0 2rem 0 0;
-						}
-					}
+				.square-btn {
+					width: 100%;
+					text-align: center;
 				}
+			}
+		}
+
+		.section-info__card-right {
+			height: auto;
+
+			&__img {
+				width: 28.6rem;
+				height: 37rem;
+			}
+		}
+	}
+
+	.about-info__card.franchise-banner {
+		padding: 0;
+		padding-top: 28rem;
+		flex-direction: column-reverse;
+		position: relative;
+
+		.section-info__card-left {
+			padding-top: 0rem;
+
+			&__heading {
+				position: absolute;
+				top: 10rem;
+				left: 4rem;
+			}
+
+			&__description {
+				button {
+					width: 100%;
+					text-align: center;
+				}
+			}
+
+			.square-btn {
+				width: 100%;
+				text-align: center;
+				padding: 2.8rem 6.7rem;
+			}
+		}
+
+		.section-info__card-right {
+			padding: 0 4rem 0;
+
+			&__img {
+				width: 28.6rem;
+				height: 36.8rem;
 			}
 		}
 	}

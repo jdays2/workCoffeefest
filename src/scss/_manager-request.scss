@@ -94,3 +94,33 @@
 		}
 	}
 }
+
+@media (max-width: 48em) {
+    .manager-request {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__left {
+            &-form {
+                width: auto;
+                max-width: 67rem;
+            }
+
+            &-btn {
+                padding: 3rem 22.4rem;
+                margin: 0 0 8rem 0;
+            }
+        }
+
+        &__right {
+            width: auto;
+            max-width: 67rem;
+            height: 61.2rem;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

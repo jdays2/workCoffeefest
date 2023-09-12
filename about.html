@@ -43,17 +43,8 @@
 							<a
 								href="/dist/main.html"
 								class="breadcrumbs__item-link">
-								<svg
-									width="28"
-									height="28"
-									viewBox="0 0 28 28"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12 20.5H16M18.1804 24.5H9.81965C7.5109 24.5 5.6393 22.714 5.6393 20.5108V15.633C5.6393 14.9248 5.34447 14.2456 4.81969 13.7448C3.60381 12.5845 3.76187 10.662 5.15251 9.69692L11.5412 5.263C13.0071 4.24567 14.9929 4.24567 16.4588 5.263L22.8475 9.69691C24.2381 10.662 24.3962 12.5845 23.1803 13.7448C22.6555 14.2456 22.3607 14.9248 22.3607 15.633V20.5108C22.3607 22.714 20.4891 24.5 18.1804 24.5Z"
-										stroke="#29354D"
-										stroke-width="1.5"
-										stroke-linecap="round" />
+								<svg class="home">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
 								</svg>
 							</a>
 						</li>
@@ -416,44 +407,24 @@
 				<div class="container">
 					<div class="chronology__container">
 						<div class="chronology__borders">
-							<img
-								src="./src/images/svg/border-top-left.svg"
-								alt=""
-								class="chronology__borders-item top-left" />
-							<img
-								src="./src/images/svg/border-top-right.svg"
-								alt=""
-								class="chronology__borders-item top-right" />
-							<img
-								src="./src/images/svg/border-bottom-left.svg"
-								alt=""
-								class="chronology__borders-item bottom-left" />
-							<img
-								src="./src/images/svg/border-bottom-right.svg"
-								alt=""
-								class="chronology__borders-item bottom-right" />
+							<svg class="chronology__borders-item top-left">
+								<use xlink:href="./src/images/svg/symbol/sprite.svg#angle-1" />
+							</svg>
+							<svg class="chronology__borders-item top-right">
+								<use xlink:href="./src/images/svg/symbol/sprite.svg#angle-2" />
+							</svg>
+							<svg class="chronology__borders-item bottom-left">
+								<use xlink:href="./src/images/svg/symbol/sprite.svg#angle-3" />
+							</svg>
+							<svg class="chronology__borders-item bottom-right">
+								<use xlink:href="./src/images/svg/symbol/sprite.svg#angle-4" />
+							</svg>
 						</div>
 
 						<p class="chronology__heading heading2">Путь CofeFest</p>
 						<div class="chronology__timeline">
-							<svg
-								viewBox="0 0 1599 170"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								class="chronology__timeline__img">
-								<path
-									d="M133.82 81.0534C98.8571 77.7031 71.5873 47.4464 71.5873 11.8355C71.5873 9.27845 71.7215 6.70052 72.0003 4.15391L72.4546 0L68.3967 0.793208C28.7567 8.52699 0 43.9187 0 84.9568C0 125.995 28.7567 160.927 68.3863 168.651L72.4443 169.444L71.99 165.29C71.7215 162.754 71.5769 160.165 71.5769 157.608C71.5769 121.998 98.8468 91.7408 133.809 88.3905M65.5984 7.72334C64.0393 37.3852 80.4982 65.7424 106.281 79.2165C75.8621 71.8793 50.4198 49.7321 38.9274 20.2268C47.064 14.3195 56.0266 10.1134 65.5984 7.71291V7.72334ZM65.4848 157.608C65.4848 158.965 65.5261 160.343 65.5984 161.721C56.0266 159.331 47.0537 155.135 38.9068 149.248C50.3785 119.733 75.8311 97.5751 106.261 90.2274C81.6547 103.086 65.4952 129.439 65.4952 157.608H65.4848ZM33.8886 145.324C30.0371 142.036 26.5058 138.384 23.3771 134.459C12.2358 120.453 6.09209 102.867 6.09209 84.9568C6.09209 67.047 12.2255 49.2207 23.3771 35.1308C26.5058 31.1752 30.0474 27.4909 33.9092 24.1824C46.176 54.1469 71.7628 76.5655 102.863 84.7272C71.7421 92.8889 46.145 115.339 33.8886 145.335V145.324Z"
-									fill="#EAB7A1" />
-								<path
-									d="M1525.49 84.5876H133.493"
-									stroke="#EAB7A1"
-									stroke-width="7"
-									stroke-miterlimit="10" />
-								<path
-									d="M1525.94 44.3986L1591.74 85.8959L1525.94 127.393V44.3986Z"
-									stroke="#EAB7A1"
-									stroke-width="7"
-									stroke-miterlimit="10" />
+							<svg class="chronology__timeline__img">
+								<use xlink:href="./src/images/svg/symbol/sprite.svg#timeline" />
 							</svg>
 
 							<ul class="chronology__timeline-list">
@@ -779,12 +750,13 @@
 			</section>
 
 			<section class="section services light-section">
-				<div class="container">
+				<div class="container services__container">
 					<p class="services__heading heading2">Наши ценности</p>
 
-					<div class="services__list services__swiper swiper">
-						<div class="services__swiper-wrapper swiper-wrapper">
-							<div class="services__list-item services__list-item--small services__slide swiper-slide">
+					<div class="swiper-container services__swiper">
+						<div class="swiper-wrapper">
+							<div
+								class="services__list-item services__list-item--small swiper-slide services__swiper-slide">
 								<div class="services__list-item__text">
 									<p class="services__list-item__text-heading heading4">
 										Качество
@@ -800,7 +772,8 @@
 										alt="" />
 								</div>
 							</div>
-							<div class="services__list-item services__list-item--small services__slide swiper-slide">
+							<div
+								class="services__list-item services__list-item--small swiper-slide services__swiper-slide">
 								<div class="services__list-item__text">
 									<p class="services__list-item__text-heading heading4">
 										Забота
@@ -816,7 +789,8 @@
 										alt="" />
 								</div>
 							</div>
-							<div class="services__list-item services__list-item--small services__slide swiper-slide">
+							<div
+								class="services__list-item services__list-item--small swiper-slide services__swiper-slide">
 								<div class="services__list-item__text">
 									<p class="services__list-item__text-heading heading4">
 										Надежность
@@ -832,7 +806,8 @@
 										alt="" />
 								</div>
 							</div>
-							<div class="services__list-item services__list-item--small services__slide swiper-slide">
+							<div
+								class="services__list-item services__list-item--small swiper-slide services__swiper-slide">
 								<div class="services__list-item__text">
 									<p class="services__list-item__text-heading heading4">
 										Развитие
@@ -851,7 +826,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="services__swiper-pagination-1 swiper-pagination"></div>
+					<div class="swiper-controllers">
+						<div class="swiper-prev services__swiper-prev desktop"></div>
+						<div class="swiper-next services__swiper-next desktop"></div>
+						<div class="swiper-pagination services__swiper-pagination"></div>
+					</div>
 				</div>
 			</section>
 
@@ -946,16 +925,8 @@
 							</div>
 						</div>
 						<div class="about-team__swiper-controllers swiper-controllers">
-							<div class="swiper-prev services__swiper-prev">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
-							<div class="swiper-next services__swiper-next">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
+							<div class="swiper-prev services__swiper-prev"></div>
+							<div class="swiper-next services__swiper-next"></div>
 							<div class="swiper-pagination services__swiper-pagination"></div>
 						</div>
 					</div>
@@ -989,16 +960,8 @@
 							</div>
 						</div>
 						<div class="interiors__swiper-controllers swiper-controllers">
-							<div class="swiper-prev">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
-							<div class="swiper-next">
-								<img
-									src="./src/images/svg/arrow28-right.svg"
-									alt="" />
-							</div>
+							<div class="swiper-prev"></div>
+							<div class="swiper-next"></div>
 							<div class="swiper-pagination services__swiper-pagination"></div>
 						</div>
 					</div>
