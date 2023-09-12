@@ -164,8 +164,9 @@
 				height: 42rem;
 				border-radius: 0 0 5.2rem 5.2rem;
 
-				img {
-					max-height: 42rem;
+				.video-js {
+					width: 100%;
+					height: 100%;
 				}
 			}
 		}

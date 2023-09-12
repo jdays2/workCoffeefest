@@ -104,6 +104,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	// Аккордион header
+
+	const burgerMenuAccordion = document.querySelector('.burger-menu__accordion');
+	initAccordion(burgerMenuAccordion);
+
 	//показ и скрытие блока с информацией по заказу (корзина, после выбора карты)
 	const ordersList = document.querySelector('.ordering__orders-wrapper');
 	if (ordersList) {
@@ -355,6 +360,19 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 });
+
+// Открытие и закрытие burger-menu header
+const toggleBurgerMenuBtn = document.querySelector('.header__burger'),
+	  burgerMenu = document.querySelector('.header__burger-menu');
+
+toggleBurgerMenuBtn.addEventListener('click', () => {
+	toggleBurgerMenuBtn.classList.toggle('active');
+	burgerMenu.classList.toggle('active');
+
+	burgerMenu.classList.contains('active') 
+		? document.querySelector('body').style.overflow = 'hidden'
+		: document.querySelector('body').style.overflow = 'visible';
+})
 
 //показ и скрытие header__search-block
 const searchBtn = document.querySelector('#header-search');
