@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
+		<title>Карьера</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="main-banner">
+				<div class="main-banner__swiper-slide">
+					<img
+						src="./src/images/career-baner.png"
+						alt=""
+						class="main-banner__swiper-slide__img" />
+
+					<a
+						href=""
+						class="banner-btns banner-btns--biege banner-btns--bottom">
+						<span>Заполнить анкету</span>
+					</a>
+				</div>
+			</section>
+
+			<section class="about-info section section--small">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg class="home">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/career.html"
+								class="breadcrumbs__item-link">
+								Карьера
+							</a>
+						</li>
+					</ul>
+
+					<div class="about-info__card section-info__card active">
+						<div class="section-info__card-left">
+							<p class="section-info__card-left__heading heading2">
+								Стань частью команды!
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									Сеть кофеен CofeFest м это более 100 заведений разного
+									формата: от кофеен в бизнес-центрах, городских больницах и
+									поликлиниках до полноценных городских кафе. Мы активно растем,
+									открываем новые кофейни, запускаем новые услуги и проекты, и
+									вместе с этим расширяется и наша команда.
+								</p>
+								<p>
+									Мы ценим активных и инициативных сотрудников, готовых быстро
+									развиваться вместе с нами. Мы всегда открыты к диалогу, у
+									каждого нашего сотрудника есть возможность внести предложение
+									и быть услышанным. Наша цель — стать лучшей командой в
+									индустрии. У нас большие планы — присоединяйтесь к нам!
+								</p>
+								<a
+									href="#"
+									class="section-info__card-left__link square-btn">
+									к вакансиям
+								</a>
+							</div>
+						</div>
+
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/carrer-img1.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/carrer-img2.png"
+									alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section services light-section">
+				<div class="container">
+					<p class="services__heading heading2">Наши ценности</p>
+
+					<!-- <div class="services__list services__swiper swiper">
+						<div class="services__swiper-wrapper swiper-wrapper">
+							<div class="services__list-item services__slide swiper-slide">
+								<div class="services__list-item__text">
+									<p class="services__list-item__text-heading heading4">
+										Открытость
+									</p>
+									<p class="services__list-item__text-description text1">
+										Мы всегда открыты к диалогу и обратной связи, как внутри
+										команды, так и с гостями
+									</p>
+								</div>
+								<div class="services__list-item__icon catering">
+									<img
+										src="./src/images/svg/catering-icon.svg"
+										alt="" />
+								</div> -->
+
+					<div class="services__list">
+						<div class="services__list-item services__list-item--small">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">
+									Открытость
+								</p>
+								<p class="services__list-item__text-description text1">
+									Мы всегда открыты к диалогу и обратной связи, как внутри
+									команды, так и с гостями
+								</p>
+							</div>
+							<div class="services__list-item__icon catering">
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
+							</div>
+						</div>
+						<div class="services__list-item services__list-item--small">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">
+									вовлеченность
+								</p>
+								<p class="services__list-item__text-description text1">
+									У каждого сотрудника есть возможность внести предложение и
+									быть услышанным
+								</p>
+							</div>
+							<div class="services__list-item__icon organization">
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
+							</div>
+						</div>
+
+						<div class="services__list-item services__list-item--small">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">
+									Лидерство и ответственность
+								</p>
+								<p class="services__list-item__text-description text1">
+									Растим сотрудников, готовых брать ответственность за обязанности и результаты в команде
+								</p>
+							</div>
+							<div class="services__list-item__icon corporate">
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
+							</div>
+						</div>
+
+						<div class="services__list-item services__list-item--small">
+							<div class="services__list-item__text">
+								<p class="services__list-item__text-heading heading4">
+									Развитие и рост
+								</p>
+								<p class="services__list-item__text-description text1">
+									Наши сотрудники развиваются и растут вместе с компанией
+								</p>
+							</div>
+
+							<div class="services__list-item__icon barista">
+								<svg class="composition">
+									<use
+										xlink:href="/src/images/svg/symbol/sprite.svg#composition-1" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="services__swiper-pagination-1 swiper-pagination"></div>
+				</div>
+			</section>
+
+			<section class="video">
+				<div class="container">
+					<video
+						id="my-video"
+						class="video-js"
+						controls
+						preload="true"
+						poster="./src/images/sample-for-video.png"
+						data-setup="{}">
+						<source
+							src="./src/images/sample/sample.mp4"
+							type="video/mp4" />
+					</video>
+				</div>
+			</section>
+
+			<section class="carrer-vacancies section">
+				<div class="container">
+					<p class="carrer-vacancies__heading heading2">Вакансии компании</p>
+
+					<div class="section-tags__container">
+						<ul class="section-tags">
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn active"
+									data-path="coffee-shops">
+									Кофейни
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn"
+									data-path="office">
+									Офис
+								</button>
+							</li>
+							<li class="section-tags__item">
+								<button
+									class="section-tags__item-btn"
+									data-path="production">
+									Производство
+								</button>
+							</li>
+						</ul>
+					</div>
+
+					<div
+						class="carrer-vacancies__accordion accordion active"
+						data-target="coffee-shops">
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">БАРИСТА</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 5 свободных мест</p>
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p class="heading">Обязанности:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Приветствие гостей, консультирование при выборе,
+											приготовление напитков, выдача готовой еды и напитков
+										</li>
+										<li class="acc-content__list-item">
+											Составление заказов на продукцию, прием товара (выпечка,
+											снеки, кофе)
+										</li>
+										<li class="acc-content__list-item">Общение с гостями</li>
+										<li class="acc-content__list-item">
+											Кассовая дисциплина, соблюдение отчетов и требований сети,
+											соблюдение норм индустрии торговли и законодательства
+										</li>
+										<li class="acc-content__list-item">
+											Соблюдение правил и норм кофейной культуры, настройка
+											помола, контроль качества каждой чашки кофе
+										</li>
+									</ul>
+
+									<p class="heading">Требования:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Умение общаться, рекомендовать и помогать в выборе
+										</li>
+										<li class="acc-content__list-item">Грамотная речь</li>
+										<li class="acc-content__list-item">
+											Искренность и доброжелательность
+										</li>
+										<li class="acc-content__list-item">
+											Скорость и эффективность в обслуживании
+										</li>
+										<li class="acc-content__list-item">Искренний сервис</li>
+										<li class="acc-content__list-item">Пунктуальность</li>
+										<li class="acc-content__list-item">Чистоплотность</li>
+										<li class="acc-content__list-item">Ответсвенность</li>
+									</ul>
+
+									<p class="heading">Условия работы:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Оформление согласно ТК РФ
+										</li>
+										<li class="acc-content__list-item">Графики: 5/2 или 2/2</li>
+										<li class="acc-content__list-item">
+											Вкусное питание и напитки в рамках регламента
+										</li>
+										<li class="acc-content__list-item">
+											Возможность роста и развития вместе с проектом
+										</li>
+										<li class="acc-content__list-item">
+											Пешая доступность от метро до кофейни
+										</li>
+									</ul>
+
+									<p class="heading">География вакансий:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">м. Савеловская</li>
+										<li class="acc-content__list-item">м. Спортивная</li>
+										<li class="acc-content__list-item">м. Нагатинская</li>
+										<li class="acc-content__list-item">м. Калужская</li>
+										<li class="acc-content__list-item">
+											м. Бауманская / Красносельская
+										</li>
+									</ul>
+
+									<button class="request-vacancy-btn square-btn blue-btn">
+										откликнуться
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">ПОВАР</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 2 свободных места</p>
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>Подробнее о вакансии</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">ПЕКАРЬ</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 1 свободное место</p>
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>Подробнее о вакансии</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="carrer-vacancies__accordion accordion hide"
+						data-target="office">
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">ПЕКАРЬ</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 1 свободное место</p>
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>Подробнее о вакансии</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="carrer-vacancies__accordion accordion hide"
+						data-target="production">
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">БАРИСТА</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 5 свободных мест</p>
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p class="heading">Обязанности:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Приветствие гостей, консультирование при выборе,
+											приготовление напитков, выдача готовой еды и напитков
+										</li>
+										<li class="acc-content__list-item">
+											Составление заказов на продукцию, прием товара (выпечка,
+											снеки, кофе)
+										</li>
+										<li class="acc-content__list-item">Общение с гостями</li>
+										<li class="acc-content__list-item">
+											Кассовая дисциплина, соблюдение отчетов и требований сети,
+											соблюдение норм индустрии торговли и законодательства
+										</li>
+										<li class="acc-content__list-item">
+											Соблюдение правил и норм кофейной культуры, настройка
+											помола, контроль качества каждой чашки кофе
+										</li>
+									</ul>
+
+									<p class="heading">Требования:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Умение общаться, рекомендовать и помогать в выборе
+										</li>
+										<li class="acc-content__list-item">Грамотная речь</li>
+										<li class="acc-content__list-item">
+											Искренность и доброжелательность
+										</li>
+										<li class="acc-content__list-item">
+											Скорость и эффективность в обслуживании
+										</li>
+										<li class="acc-content__list-item">Искренний сервис</li>
+										<li class="acc-content__list-item">Пунктуальность</li>
+										<li class="acc-content__list-item">Чистоплотность</li>
+										<li class="acc-content__list-item">Ответсвенность</li>
+									</ul>
+
+									<p class="heading">Условия работы:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">
+											Оформление согласно ТК РФ
+										</li>
+										<li class="acc-content__list-item">Графики: 5/2 или 2/2</li>
+										<li class="acc-content__list-item">
+											Вкусное питание и напитки в рамках регламента
+										</li>
+										<li class="acc-content__list-item">
+											Возможность роста и развития вместе с проектом
+										</li>
+										<li class="acc-content__list-item">
+											Пешая доступность от метро до кофейни
+										</li>
+									</ul>
+
+									<p class="heading">География вакансий:</p>
+									<ul class="acc-content__list text">
+										<li class="acc-content__list-item">м. Савеловская</li>
+										<li class="acc-content__list-item">м. Спортивная</li>
+										<li class="acc-content__list-item">м. Нагатинская</li>
+										<li class="acc-content__list-item">м. Калужская</li>
+										<li class="acc-content__list-item">
+											м. Бауманская / Красносельская
+										</li>
+									</ul>
+
+									<button class="request-vacancy-btn square-btn blue-btn">
+										откликнуться
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="acc-item">
+							<div class="acc-head">
+								<p class="heading4">ПЕКАРЬ</p>
+								<div class="acc-head__right">
+									<p class="text1">Доступно 1 свободное место</p>
+									<svg class="arrow">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow" />
+									</svg>
+								</div>
+							</div>
+							<div class="acc-content menu">
+								<div class="content">
+									<p>Подробнее о вакансии</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section biege-section request-employees">
+				<div class="container">
+					<div class="request-employees__container">
+						<div class="request-employees__left">
+							<p class="request-employees__left-heading heading2">
+								Запросить рекомендацию о сотруднике, который у нас работал
+							</p>
+							<p class="request-employees__left-description">
+								Мы обмениваемся информацией о наших сотрудниках
+							</p>
+							<form
+								action="#"
+								class="request-employees__left-form">
+								<div class="input-container">
+									<input
+										type="text"
+										id="fullname"
+										class="input"
+										placeholder="ФИО сотрудника" />
+									<label
+										for="fullname"
+										class="input-label">
+										ФИО сотрудника
+									</label>
+									<div class="icon">
+										<svg class="success">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#valid-validation" />
+										</svg>
+									</div>
+									<div class="icon">
+										<svg class="invalid">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#invalid-validation" />
+										</svg>
+									</div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+								<div class="input-container">
+									<input
+										type="tel"
+										id="phone11"
+										class="input input-tel"
+										placeholder="Ваш номер для связи" />
+									<label
+										for="phone11"
+										class="input-label">
+										Ваш номер для связи
+									</label>
+									<div class="icon">
+										<svg class="success">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#valid-validation" />
+										</svg>
+									</div>
+									<div class="icon">
+										<svg class="invalid">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#invalid-validation" />
+										</svg>
+									</div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+								<div class="request-employees__left-bottom">
+									<button
+										class="request-employees__left-bottom__btn square-btn blue-btn">
+										отправить
+									</button>
+									<p class="request-employees__left-bottom__policy menu">
+										Нажимая на кнопку, вы соглашаетесь
+										<a href="#">с обработкой персональных данных</a>
+									</p>
+								</div>
+							</form>
+						</div>
+						<div class="request-employees__right">
+							<img
+								src="./src/images/request-employees-img.png"
+								alt=""
+								class="request-employees__right-img" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
+</html>

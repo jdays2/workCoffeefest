@@ -1,0 +1,166 @@
+.news-detail {
+	background-color: $light;
+
+	.container {
+		display: flex;
+		width: 132rem;
+	}
+
+	&__left {
+		margin-right: 9.2rem;
+		.social-list {
+			&__item {
+				&:not(:last-child) {
+					margin-bottom: 1.6rem;
+				}
+
+				&-link {
+					img {
+						width: 4.5rem;
+						height: 4.5rem;
+						-o-object-fit: contain;
+						object-fit: contain;
+					}
+				}
+			}
+		}
+	}
+
+	&__center {
+		width: 64.6rem;
+
+		&-block {
+			margin-bottom: 5rem;
+
+			.heading4 {
+				margin-bottom: 2.4rem;
+			}
+
+			&__description {
+				&:not(:last-child) {
+					margin-bottom: 2.4rem;
+				}
+
+				p {
+					&:not(:last-child) {
+						margin-bottom: 1rem;
+					}
+				}
+			}
+
+			&__img {
+				width: 100%;
+				height: 55.6rem;
+				-o-object-fit: cover;
+				object-fit: cover;
+				border-radius: 0 0 5rem 5rem;
+			}
+		}
+	}
+
+	&__right {
+		margin-left: auto;
+		width: 37.5rem;
+
+		&-heading {
+			margin-bottom: 3rem;
+		}
+
+		&-list {
+			&__item {
+				padding: 4rem 3.5rem;
+				position: relative;
+				width: 100%;
+				background: url(../images/svg/other-news-ornament.svg) top left/cover
+						no-repeat,
+					$biege;
+				border-radius: 0 0 5rem 5rem;
+
+				&:not(:last-child) {
+					margin-bottom: 3.6rem;
+				}
+
+				.arrow-link {
+					margin-left: auto;
+					width: -webkit-fit-content;
+					width: -moz-fit-content;
+					width: fit-content;
+					display: flex;
+				}
+
+				.heading4 {
+					margin-bottom: 1.6rem;
+				}
+
+				.menu {
+					margin-bottom: 3.4rem;
+				}
+
+				.arrow-link {
+					&::after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						border-radius: inherit;
+					}
+
+					&:hover:not(:focus-visible) {
+						color: $biege-btn;
+
+						.arrow-link__icon {
+							path {
+								fill: $biege-btn;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.news-detail {
+		.container {
+			flex-direction: column;
+		}
+
+		&__left {
+			order: 2;
+			max-width: 67rem;
+			margin: 0 0 10rem 0;
+
+			.social-list {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto;
+
+				&__item {
+					&:not(:last-child) {
+						margin: 0 3.2rem 0 0 !important;
+					}
+
+					img {
+						width: 9rem;
+						height: 9rem;
+					}
+				}
+			}
+		}
+
+		&__center {
+			order: 1;
+		}
+
+		&__right {
+			order: 3;
+			margin: 0;
+			width: auto;
+			max-width: 67rem;
+		}
+	}
+}

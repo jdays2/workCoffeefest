@@ -1,0 +1,58 @@
+.interiors {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: $biege;
+
+    .services__swiper-pagination {
+        top: 0;
+    }
+
+    &__heading {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__swiper {
+        margin-bottom: 4rem;
+
+        &-slide {
+            width: 78.2rem;
+            height: 64rem;
+            border-radius: 0 0 5rem 5rem;
+
+            &.swiper-slide-prev,
+            &.swiper-slide-next {
+                width: 37.4rem;
+            }
+
+            &__img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                   object-fit: cover;
+                border-radius: inherit;
+            }
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .interiors {
+        &__swiper {
+            &-slide {
+                height: 111rem;
+            }
+        }
+
+        &__swiper-controllers {
+            .swiper-prev,
+            .swiper-next {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.catalog-main-block {
+    background-color: $light;
+    padding-bottom: 0;
+
+    &:nth-child(2) {
+        padding-top: 8rem;
+    }
+}
+.catalog-main-block__container {
+    display: flex;
+    flex-direction: column;
+}
+.catalog-main-block__title {
+    margin: 0 0 5rem 0;
+}
+.catalog-main-block__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.75rem 5rem -1.75rem;
+    row-gap: 3.5rem;
+}
+.catalog-main-block__more {
+    margin: 0 0 0 auto;
+}
+
+@media (max-width: 48em) {
+    .catalog-main-block:last-child {
+        padding: 0 0 10rem 0;
+    }
+    .catalog-main-block__title {
+        margin: 0 0 8rem 0;
+    }
+    .catalog-main-block__row {
+        margin: 0 0rem 6.4rem 0rem;
+        row-gap: 4.8rem;
+    }
+
+    .catalog-main-block.cakes {
+        .catalog-card-1 {
+            &__descr {
+                height: 70rem;
+            }
+
+            .catalog-card__main-price {
+                position: absolute;
+                top: 55.7rem;
+                left: 2rem;
+            }
+
+            &__title {
+                margin: 0 0 14.9rem 0;
+            }
+        }
+    }
+}

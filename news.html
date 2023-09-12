@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Новости</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="main-banner">
+				<div class="main-banner__swiper-slide">
+					<img
+						src="./src/images/news-banner.png"
+						alt=""
+						class="main-banner__swiper-slide__img" />
+					<a
+						href=""
+						class="banner-btns banner-btns--biege">
+						<span>Зарегестрироваться</span>
+					</a>
+				</div>
+			</section>
+
+			<section class="news-main">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg class="home">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/news.html"
+								class="breadcrumbs__item-link">
+								<span>Новости</span>
+								</a>
+						</li>
+					</ul>
+
+					<p class="news-main__heading heading2">Последние новости</p>
+
+					<div class="settings-bar">
+						<div class="filter__tag-list">
+							<button
+								class="tag-btn"
+								id="filter-1">
+								<svg class="filter">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#filter" />
+								</svg>
+								<span>Фильтры</span>
+							</button>
+
+							<button
+								class="tag-btn tag-btn--borderless filter-result-item active">
+								<span>Новости кофе</span>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+								</svg>
+							</button>
+
+							<button
+								class="tag-btn tag-btn--borderless filter-result-item active">
+								<span>Новости кофеен</span>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+								</svg>
+							</button>
+
+							<button
+								class="tag-btn tag-btn--borderless filter-result-item active">
+								<span>События</span>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="news-main__list">
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-main__list-bottom">
+						<button class="arrow-link">
+							<span>показать ещё</span>
+							<svg class="arrow-link__icon">
+								<use
+									xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Контакты</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="main-banner">
+				<img
+					src="./src/images/contacts-banner.png"
+					alt=""
+					class="main-banner__swiper-slide__img" />
+				<a
+					href=""
+					class="banner-btns banner-btns--biege">
+					<span>Услуги</span>
+				</a>
+			</section>
+
+			<section class="contacts-info section section--small biege-section">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg class="home">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/contacts.html"
+								class="breadcrumbs__item-link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+
+					<div class="contacts-info__card">
+						<div class="contacts-info__card-left">
+							<p class="heading2">Контакты</p>
+
+							<ul class="contacts-info__card-left__list">
+								<li class="contacts-info__card-left__list-item">
+									<a
+										href=""
+										class="contacts-info__card-left__list-link">
+										<svg class="phone-icon--biege">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#phone" />
+										</svg>
+
+										<span>8 (495) 212 10 59</span>
+									</a>
+								</li>
+
+								<li class="contacts-info__card-left__list-item">
+									<svg class="email">
+										<use
+											xlink:href="./src/images/svg/symbol/sprite.svg#email" />
+									</svg>
+									<div class="contacts-info__card-left__list-item-links">
+										<a
+											href="mailto:in@cofefest.ru"
+											class="contacts-info__card-left__list-link">
+											<span>По вопросам сотрудничества: in@cofefest.ru</span>
+										</a>
+
+										<a
+											class="contacts-info__card-left__list-link"
+											href="mailto:zakupka@cofefest.ru">
+											<span>Отдел закупки: zakupka@cofefest.ru</span>
+										</a>
+
+										<a
+											class="contacts-info__card-left__list-link"
+											href="mailto:b2b@cofefest.ru">
+											<span>Обжарочный цех: b2b@cofefest.ru</span>
+										</a>
+
+										<a
+											class="contacts-info__card-left__list-link"
+											href="mailto:hr@cofefest.ru">
+											<span>Отдел кадров: hr@cofefest.ru</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="contacts-info__card-right">
+							<img
+								src="./src/images/contacts-info-img.png"
+								alt=""
+								class="contacts-info__card-right__img" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="coffeeshops light-section section">
+				<div class="container">
+					<p class="coffeeshops__heading heading2">Наши кофейни</p>
+
+					<div class="map-block">
+						<div class="map-block__search-box">
+							<div class="search-block search-block--long">
+								<label>
+									<input
+										class="search-block__input"
+										type="text"
+										placeholder="Поиск" />
+									<button class="search-block__main-icon">
+										<svg class="search-icon--dark">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#search" />
+										</svg>
+									</button>
+
+									<button class="search-block__enter-icon">
+										<svg class="search-arrow--dark">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#search-arrow" />
+										</svg>
+									</button>
+								</label>
+							</div>
+
+							<ul class="map-block__search-list">
+								<li class="map-block__search-item active">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">БЦ «Валлекс»</p>
+										<p class="map-block__search-item-text">Москва,</p>
+										<p class="map-block__search-item-text">
+											Старокалужское ш. 62, 1ый этаж
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Москва,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 69
+										</p>
+										<p class="map-block__search-item-text">Москва,</p>
+										<p class="map-block__search-item-text">
+											Севастопольский пр-д, д.40, с.1
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 148
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">3-й квартал, д.27</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+
+								<li class="map-block__search-item">
+									<div class="map-block__search-item-top">
+										<p class="map-block__search-item-title">
+											Детская поликлиника № 130
+										</p>
+										<p class="map-block__search-item-text">Капотня,</p>
+										<p class="map-block__search-item-text">
+											ул.Крылатские Холмы, 5
+										</p>
+									</div>
+
+									<div class="map-block__search-item-bottom">
+										<div class="map-block__search-item-time">
+											<span>08-22</span>
+										</div>
+
+										<div
+											href="#"
+											class="arrow-link">
+											<span>на карте</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div
+							class="map-block__map-box"
+							id="root">
+							<div class="modal modal-map">
+								<div class="modal__container">
+									<button class="modal__close-btn">
+										<svg class="crest">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+										</svg>
+									</button>	
+
+									<div class="modal-map__swiper swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+										</div>
+										<div
+											class="swiper-pagination modal-map__swiper-pagination"></div>
+									</div>
+
+									<div class="modal-map__content">
+										<p class="modal-map__content-title">
+											Детская поликлиника № 118
+										</p>
+										<div class="modal-map__content-disc">
+											<div class="modal-map__content-adress">
+												<p>
+													Москва, 2-й Старомытищинский пр-д., д, 123, корп. 1
+												</p>
+											</div>
+
+											<div class="modal-map__content-time">
+												<span>08-22</span>
+											</div>
+
+											<div class="modal-map__content-pass">
+												<span>Наличие пропуска:</span>
+												<strong>Нет</strong>
+											</div>
+
+											<a
+												href="tel:+74952121059"
+												class="modal-map__content-tel">
+												<span>+7 (495) 212 10 59</span>
+											</a>
+										</div>
+
+										<a
+											href="#"
+											class="arrow-link">
+											<span>оставить отзыв</span>
+											<svg class="arrow-link__icon">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cooperation section biege-section">
+				<div class="container">
+					<div class="cooperation__container">
+						<div class="cooperation__left">
+							<p class="cooperation__left-heading heading2">
+								Свяжитесь со мной
+							</p>
+							<p class="cooperation__left-description heading4">
+								Оставьте заявку и наш менеджер свяжется с Вами в ближайшее
+								время!
+							</p>
+							<form
+								action="#"
+								class="cooperation__left-form cooperation__left-form--short">
+								<div
+									class="cooperation__left-form__input-container input-container">
+									<input
+										type="text"
+										id="name10"
+										class="input input-name"
+										placeholder="Имя" />
+									<label
+										for="name10"
+										class="input-label">
+										Имя
+									</label>
+									<div class="icon">
+										<svg class="success">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#valid-validation" />
+										</svg>
+									</div>
+									<div class="icon">
+										<svg class="invalid">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#invalid-validation" />
+										</svg>
+									</div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+								<div
+									class="cooperation__left-form__input-container input-container">
+									<input
+										type="text"
+										id="tel6"
+										class="input input-tel"
+										placeholder="Телефон" />
+									<label
+										for="tel6"
+										class="input-label">
+										Телефон
+									</label>
+									<div class="icon">
+										<svg class="success">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#valid-validation" />
+										</svg>
+									</div>
+									<div class="icon">
+										<svg class="invalid">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#invalid-validation" />
+										</svg>
+									</div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+							</form>
+							<button class="cooperation__left-btn square-btn">
+								<span>отправить заявку</span>
+							</button>
+						</div>
+						<div class="cooperation__right">
+							<img
+								src="./src/images/cooperation-img2.png"
+								alt=""
+								class="cooperation__right-img" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="light-section section manager-request">
+				<div class="container">
+					<div class="manager-request__container">
+						<div class="manager-request__left">
+							<p class="manager-request__left-heading heading2">
+								Написать руководителю
+							</p>
+							<p class="manager-request__left-description text1">
+								Вы можете написать руководству Ваши пожелания и предложения
+							</p>
+							<form
+								action="#"
+								class="manager-request__left-form">
+								<div class="input-container">
+									<input
+										type="text"
+										id="name-manager"
+										class="input input-name"
+										placeholder="Имя" />
+									<label
+										for="name-manager"
+										class="input-label">
+										Имя
+									</label>
+									<div class="icon">
+										<svg class="success">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#valid-validation" />
+										</svg>
+									</div>
+									<div class="icon">
+										<svg class="invalid">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#invalid-validation" />
+										</svg>
+									</div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+								<div class="input-container">
+									<input
+										type="text"
+										id="phone-manager"
+										class="input input-tel"
+										placeholder="Телефон" />
+									<label
+										for="phone-manager"
+										class="input-label">
+										Телефон
+									</label>
+									<div class="icon">
+										<svg class="success">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#valid-validation" />
+										</svg>
+									</div>
+									<div class="icon">
+										<svg class="invalid">
+											<use
+												xlink:href="./src/images/svg/symbol/sprite.svg#invalid-validation" />
+										</svg>
+									</div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+								<div class="input-container">
+									<textarea
+										name=""
+										id="wishes-manager"
+										cols="30"
+										rows="10"
+										placeholder="Ваши пожелания"
+										class="input"></textarea>
+									<label
+										for="wishes-manager"
+										class="input-label">
+										Ваши пожелания
+									</label>
+								</div>
+							</form>
+							<button class="manager-request__left-btn square-btn blue-btn">
+								отправить
+							</button>
+						</div>
+
+						<div class="manager-request__right">
+							<img
+								src="./src/images/manager.png"
+								alt=""
+								class="manager-request__right-img" />
+							<p class="manager-request__right-name heading4">
+								Екатерина Федорова
+							</p>
+							<p class="manager-request__right-post text1">
+								Основатель сети кофеен CofeFest
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
+</html>
