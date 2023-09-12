@@ -1,0 +1,235 @@
+.main-banner {
+	margin-top: 14.4rem;
+	height: 78.2rem;
+	position: relative;
+
+	.next,
+	.prev {
+		position: relative;
+		top: 0.2rem;
+		svg {
+			path {
+				transition: fill 0.45s ease;
+			}
+			
+		}
+	}
+
+	&--light {
+		.main-banner__swiper-controllers {
+			.swiper-pagination {
+				&-bullet {
+					border-color: $light !important;
+
+					&.swiper-pagination-bullet-active {
+						border-color: $light;
+						background-color: $light !important;
+					}
+				}
+			}
+			.next,
+			.prev {
+				position: relative;
+				top: 0.2rem;
+				path {
+					fill: $light !important;
+				}
+			}
+		}
+	}
+
+	&--dark-blue {
+		.main-banner__swiper-controllers {
+			.swiper-pagination {
+				&-bullet {
+					border-color: $darkBlue !important;
+
+					&.swiper-pagination-bullet-active {
+						border-color: $darkBlue !important;
+						background-color: $darkBlue !important;
+					}
+				}
+			}
+			.next,
+			.prev {
+				position: relative;
+				top: 0.2rem;
+				path {
+					fill: $darkBlue !important;
+				}
+			}
+		}
+	}
+
+	&--biege {
+		.main-banner__swiper-controllers {
+			.swiper-pagination {
+				&-bullet {
+					border-color: $biege !important;
+
+					&.swiper-pagination-bullet-active {
+						border-color: $biege !important;
+						background-color: $biege !important;
+					}
+				}
+			}
+			.next,
+			.prev {
+				position: relative;
+				top: 0.2rem;
+				path {
+					fill: $biege !important;
+				}
+			}
+		}
+	}
+
+	&--red {
+		.main-banner__swiper-controllers {
+			.swiper-pagination {
+				&-bullet {
+					border-color: $red !important;
+
+					&.swiper-pagination-bullet-active {
+						border-color: $red !important;
+						background-color: $red !important;
+					}
+				}
+			}
+			.next,
+			.prev {
+				position: relative;
+				top: 0.2rem;
+				path {
+					fill: $red !important;
+				}
+			}
+		}
+	}
+
+	&__swiper {
+		height: 100%;
+
+		&-slide {
+			position: relative;
+			height: 100%;
+			&__img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+				position: relative;
+				z-index: -1;
+			}
+		}
+
+		&-controllers {
+			width: 100%;
+			position: absolute;
+			bottom: 5.1rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 1;
+
+			.prev,
+			.next {
+				cursor: pointer;
+				transition: opacity 0.2s ease-in-out;
+				svg,
+				img {
+					width: 2.8rem;
+					height: 1.6rem;
+					-o-object-fit: contain;
+					object-fit: contain;
+				}
+
+				path {
+					fill: $darkBlue;
+				}
+
+				&.swiper-button-disabled {
+					opacity: 0;
+				}
+			}
+
+			.prev {
+				svg,
+				img {
+					transform: scale(-1);
+				}
+			}
+
+			.swiper-pagination {
+				margin: 0 1.6rem;
+				position: relative;
+				display: flex;
+				align-items: center;
+
+				.swiper-pagination-bullet {
+					width: 1.5rem;
+					height: 1.5rem;
+					border-radius: 50%;
+					border: 2px solid $darkBlue;
+					background-color: transparent;
+					opacity: 1;
+
+					&:not(:last-child) {
+						margin-right: 1.6rem;
+					}
+
+					&.swiper-pagination-bullet-active {
+						background-color: $darkBlue;
+					}
+				}
+			}
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+
+	@media (max-width: 48em) {
+		margin-top: 18.2rem;
+		height: calc(100vh - 18.2rem);
+
+		&__swiper {
+			&-slide {
+				&__img {
+					-o-object-position: center;
+					object-position: center;
+				}
+			}
+
+			&-controllers {
+				bottom: 8rem;
+				.prev,
+				.next {
+					svg,
+					img {
+						width: 5.6rem;
+						height: 2.6rem;
+					}
+				}
+
+				.swiper-pagination {
+					margin: 0 4rem;
+
+					.swiper-pagination-bullet {
+						width: 3rem;
+						height: 3rem;
+
+						&:not(:last-child) {
+							margin-right: 3.2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

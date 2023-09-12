@@ -1,0 +1,3504 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Новости</title>
+	</head>
+
+	<body>
+		<header class="header">
+	<div class="container">
+		<button class="header__burger mobile">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="28"
+				height="17"
+				viewBox="0 0 28 17"
+				fill="none">
+				<path
+					d="M1 8.44336H26"
+					stroke="#FFF9EE"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+				<path
+					d="M1 0.568359H26"
+					stroke="#FFF9EE"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+				<path
+					d="M1 16.3184H26"
+					stroke="#FFF9EE"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</button>
+		<a
+			href="#"
+			class="header__logo">
+			<svg>
+				<use xlink:href="./src/images/svg/symbol/sprite.svg#logo" />
+			</svg>
+		</a>
+		<nav class="header__nav desktop">
+			<ul class="header__top-list">
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Услуги
+					</a>
+
+					<nav class="services-popup-list">
+						<a href="/franchise.html"><span>Франшиза</span></a>
+						<a href="/away.html"><span>Выездной бариста</span></a>
+						<a href="/corpo-food.html"><span>Корпоративное питание</span></a>
+						<a href="/catering.html"><span>Кейтеринг</span></a>
+					</nav>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Акции
+					</a>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="/dist/about.html"
+						class="header__top-list__item-link menu">
+						О компании
+					</a>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Авторский кофе
+					</a>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Для бизнеса
+					</a>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Доставка и оплата
+					</a>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Карьера
+					</a>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Новости
+					</a>
+				</li>
+				<li class="header__top-list__item">
+					<a
+						href="#"
+						class="header__top-list__item-link menu">
+						Контакты
+					</a>
+				</li>
+			</ul>
+
+			<div class="header__search-block">
+				<label>
+					<input
+						class="header__search-input"
+						type="text"
+						placeholder="Поиск" />
+					<button class="header__search-icon">
+						<svg class="search-icon">
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#search" />
+						</svg>
+					</button>
+
+					<button class="header__search-enter-icon">
+						<svg  class="search-arrow">
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#search-arrow" />
+						</svg>
+					</button>
+					
+					<button class="header__search-close-icon">
+						<svg class="crest">
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+						</svg>
+					</button>
+				</label>
+			</div>
+
+			<ul class="header__bottom-list">
+				<li class="header__bottom-list__item">
+					<a
+						href="#"
+						class="header__bottom-list__item-link heading5">
+						Зерновой кофе
+					</a>
+				</li>
+				<li class="header__bottom-list__item">
+					<a
+						href="#"
+						class="header__bottom-list__item-link heading5">
+						меню кофеен
+					</a>
+				</li>
+				<li class="header__bottom-list__item">
+					<a
+						href="#"
+						class="header__bottom-list__item-link heading5">
+						меню кулинарии
+					</a>
+				</li>
+				<li class="header__bottom-list__item">
+					<a
+						href="#"
+						class="header__bottom-list__item-link heading5">
+						торты на заказ
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__right">
+			<div class="header__right-btns-wrapper">
+				<button
+					class="header__search desktop"
+					id="header-search">
+					<svg class="search-icon">
+						<use xlink:href="./src/images/svg/symbol/sprite.svg#search" />
+					</svg>
+				</button>
+				<a
+					href="#"
+					class="header__account">
+					<svg>
+						<use xlink:href="./src/images/svg/symbol/sprite.svg#profile" />
+					</svg>
+				</a>
+				<a
+					href="#"
+					class="header__cart">
+					<svg>
+						<use xlink:href="./src/images/svg/symbol/sprite.svg#bag" />
+					</svg>
+				</a>
+			</div>
+
+			<a
+				href="tel:84952121059"
+				class="header__right-tel-link">
+				<svg class="phone-icon">
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#phone" />
+				</svg>
+				<span>8 495 212 10 59</span>
+			</a>
+		</div>
+	</div>
+</header>
+
+		<main>
+			<section class="main-banner">
+				<div class="main-banner__swiper-slide">
+					<img
+						src="./src/images/news-banner.png"
+						alt=""
+						class="main-banner__swiper-slide__img" />
+					<a
+						href=""
+						class="banner-btns banner-btns--biege">
+						<span>Зарегестрироваться</span>
+					</a>
+				</div>
+			</section>
+
+			<section class="news-main">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg class="home">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/news.html"
+								class="breadcrumbs__item-link">
+								<span>Новости</span>
+								</a>
+						</li>
+					</ul>
+
+					<p class="news-main__heading heading2">Последние новости</p>
+
+					<div class="settings-bar">
+						<div class="filter__tag-list">
+							<button
+								class="tag-btn"
+								id="filter-1">
+								<svg class="filter">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#filter" />
+								</svg>
+								<span>Фильтры</span>
+							</button>
+
+							<button
+								class="tag-btn tag-btn--borderless filter-result-item active">
+								<span>Новости кофе</span>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+								</svg>
+							</button>
+
+							<button
+								class="tag-btn tag-btn--borderless filter-result-item active">
+								<span>Новости кофеен</span>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+								</svg>
+							</button>
+
+							<button
+								class="tag-btn tag-btn--borderless filter-result-item active">
+								<span>События</span>
+								<svg class="crest--dark">
+									<use xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="news-main__list">
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img1.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									Ежедневные загрузки
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="news-main__item">
+							<img
+								src="./src/images/news-img2.png"
+								alt=""
+								class="news-main__item-img" />
+							<div class="news-main__item-text">
+								<p class="news-main__item-heading heading4">
+									НАШ КОФЕ ТЕПЕРЬ В МАГАЗИНАХ «ВКУСВИЛЛ»!
+								</p>
+								<p class="news-main__item-description menu">
+									Наше производство и офис возвращаются к привычному графику и
+									ежедневным отгрузкам. Наше производство и офис возвращаются к
+									привычному графику и ежедневным отгрузкам.Наше производство и
+									офис возвращаются к привычному графику и ежедневным отгрузкам.
+								</p>
+								<div class="news-main__item-bottom">
+									<p class="news-main__item-date btns-caps">01.12.23</p>
+									<a
+										href="#"
+										class="news-main__item-name btns-caps">
+										НОВОСТИ КОФЕ
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-main__list-bottom">
+						<button class="arrow-link">
+							<span>показать ещё</span>
+							<svg class="arrow-link__icon">
+								<use
+									xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__top">
+		<div class="container">
+			<a
+				href="#"
+				class="footer__top-logo">
+				<svg>
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#logo" />
+				</svg>
+			</a>
+			<div class="footer__top-block block1">
+				<p class="footer__top-block__heading heading5">Меню</p>
+				<ul class="footer__top-block__list">
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Акции и бонусы
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Авторский кофе
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Новости
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Доставка и оплата
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Карьера
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Контакты
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							О компании
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__top-block block2">
+				<p class="footer__top-block__heading heading5">Для бизнеса</p>
+				<ul class="footer__top-block__list">
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Франшиза
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Партнерство
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Арендодателям
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Выездной бариста
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Кейтеринг
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Организация мероприятий
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Бизнес завтраки и бранчи
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Корпоративное питание
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Открыть кофейню в мед. учреждении
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__top-block block3">
+				<p class="footer__top-block__heading heading5">Каталог</p>
+				<ul class="footer__top-block__list">
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Кулинария
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Меню кофеен
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Торты на заказ
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Кофе в зернах
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__top-block block4">
+				<p class="footer__top-block__heading heading5">Поддержка</p>
+				<ul class="footer__top-block__list">
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Оставить отзыв
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Написать в поддержку
+						</a>
+					</li>
+					<li class="footer__top-block__list-item">
+						<a
+							href="#"
+							class="menu">
+							Написать руководству
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__top-right">
+				<div class="footer__top-block block6">
+					<p class="footer__top-block__heading heading5">Документация</p>
+					<ul class="footer__top-block__list">
+						<li class="footer__top-block__list-item">
+							<a
+								href="#"
+								class="menu">
+								Политика конфиденциальности
+							</a>
+						</li>
+						<li class="footer__top-block__list-item">
+							<a
+								href="#"
+								class="menu">
+								Договор оферты
+							</a>
+						</li>
+						<li class="footer__top-block__list-item">
+							<a
+								href="#"
+								class="menu">
+								Согласие на обработку персональных данных
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__top-block block5">
+					<p class="footer__top-block__heading heading5">Контакты</p>
+					<ul class="footer__top-block__list">
+						<li class="footer__top-block__list-item">
+							<a
+								href="tel:+74952121059"
+								class="menu">
+								8 495 212 10 59
+							</a>
+						</li>
+						<li class="footer__top-block__list-item">
+							<a
+								href="mailto:in@cofefest.ru"
+								class="menu">
+								in@cofefest.ru
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="footer__top-social">
+				<li class="footer__top-social__item">
+					<a
+						href="#"
+						class="footer__top-social__item-link">
+						<svg>
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#vk" />
+						</svg>
+					</a>
+				</li>
+				<li class="footer__top-social__item">
+					<a
+						href="#"
+						class="footer__top-social__item-link">
+						<svg>
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#telegram" />
+						</svg>
+					</a>
+				</li>
+				<li class="footer__top-social__item">
+					<a
+						href="#"
+						class="footer__top-social__item-link">
+						<svg>
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#telegram" />
+						</svg>
+					</a>
+				</li>
+				<li class="footer__top-social__item">
+					<a
+						href="#"
+						class="footer__top-social__item-link">
+						<svg>
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#telegram" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__bottom menu">
+		<div class="container">
+			<p class="footer__bottom-left">&copy; 2023 CofeFest</p>
+			<p class="footer__bottom-center">
+				Информация, размещенная на сайте, не является публичной офертой
+			</p>
+			<div class="footer__bottom-right">
+				<div class="footer__bottom-right__text">
+					<p>Разработано</p>
+					<p>
+						<span>Request</span>
+						Design
+					</p>
+				</div>
+				<svg
+					width="97"
+					height="97"
+					viewBox="0 0 97 97"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					class="footer__bottom-right__logo">
+					<rect
+						y="48.1094"
+						width="68.0366"
+						height="68.0366"
+						rx="5"
+						transform="rotate(-45 0 48.1094)"
+						fill="#101010" />
+					<rect
+						x="8.52344"
+						y="48.1094"
+						width="55.982"
+						height="55.982"
+						rx="27.991"
+						transform="rotate(-45 8.52344 48.1094)"
+						fill="#FFFFFF" />
+					<rect
+						x="30.9258"
+						y="30.9258"
+						width="34.6368"
+						height="34.6368"
+						rx="3"
+						fill="#101010" />
+					<rect
+						x="29.5547"
+						y="48.1094"
+						width="26.2418"
+						height="26.2418"
+						rx="13.1209"
+						transform="rotate(-45 29.5547 48.1094)"
+						fill="#FFFFFF" />
+					<rect
+						x="40.8203"
+						y="48.2441"
+						width="10.4967"
+						height="10.4967"
+						rx="2"
+						transform="rotate(-45 40.8203 48.2441)"
+						fill="#101010" />
+				</svg>
+				<a
+					href="#"
+					class="footer__bottom-right__link"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- модалка фильтр "Новости" -->
+<div class="modal filter-modal-1">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<div class="teg-list">
+			<p class="heading2">Теги</p>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Новости кофе</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Кофейная культура</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">События</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Новости кофеен</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Полезные советы</span>
+			</label>
+		</div>
+
+		<div class="modal__btns">
+			<button class="square-btn blue-square-btn">
+				<span>Применить</span>
+			</button>
+
+			<button
+				class="btn"
+				id="clear-filter">
+				<span>Очистить</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка фильтр "Категории" -->
+<div class="modal filter-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<div class="teg-list">
+			<p class="heading3">Способ заваривания</p>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Фильтр</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Эспрессо</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Френч-пресс</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Турка</span>
+			</label>
+		</div>
+
+		<div class="teg-list">
+			<p class="heading3">Страна происхождения</p>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Эфиопия</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Бразилия</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Колумбия</span>
+			</label>
+
+			<label class="teg-list__item">
+				<input type="checkbox" />
+				<button class="teg-list__check-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 12 9"
+						fill="none">
+						<path
+							d="M10.3333 1L3.91667 7.875L1 4.75"
+							stroke="#29354D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+				<span class="text1">Индонезия</span>
+			</label>
+		</div>
+
+		<div class="modal__btns">
+			<button class="square-btn blue-square-btn">
+				<span>Применить</span>
+			</button>
+
+			<button
+				class="btn"
+				id="clear-filter">
+				<span>Очистить</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка с картой -->
+<div class="modal map-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<div class="map-block">
+			<div class="map-block__search-box">
+				<p class="heading4 map-block__search-title">Адреса ресторанов</p>
+
+				<div class="search-block search-block--long">
+					<label>
+						<input
+							class="search-block__input"
+							type="text"
+							placeholder="Поиск" />
+						<button class="search-block__main-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none">
+								<path
+									d="M4.14466 17.2263L4.87484 17.055L4.14466 17.2263ZM4.14466 10.405L4.87484 10.5763L4.14466 10.405ZM23.4867 10.405L24.2168 10.2337L23.4867 10.405ZM23.4867 17.2263L24.2168 17.3976L23.4867 17.2263ZM17.2263 23.4867L17.055 22.7565L17.2263 23.4867ZM10.405 23.4867L10.2337 24.2168L10.405 23.4867ZM10.405 4.14466L10.2337 3.41448L10.405 4.14466ZM17.2263 4.14466L17.3976 3.41448L17.2263 4.14466ZM25.7197 26.7803C26.0126 27.0732 26.4874 27.0732 26.7803 26.7803C27.0732 26.4874 27.0732 26.0126 26.7803 25.7197L25.7197 26.7803ZM4.87484 17.055C4.37505 14.9244 4.37505 12.7069 4.87484 10.5763L3.41448 10.2337C2.86184 12.5897 2.86184 15.0416 3.41448 17.3976L4.87484 17.055ZM22.7565 10.5763C23.2563 12.7069 23.2563 14.9244 22.7565 17.055L24.2168 17.3976C24.7695 15.0416 24.7695 12.5897 24.2168 10.2337L22.7565 10.5763ZM17.055 22.7565C14.9244 23.2563 12.7069 23.2563 10.5763 22.7565L10.2337 24.2168C12.5897 24.7695 15.0416 24.7695 17.3976 24.2168L17.055 22.7565ZM10.5763 4.87484C12.7069 4.37505 14.9244 4.37505 17.055 4.87484L17.3976 3.41448C15.0416 2.86184 12.5897 2.86184 10.2337 3.41448L10.5763 4.87484ZM10.5763 22.7565C7.74731 22.0929 5.53843 19.884 4.87484 17.055L3.41448 17.3976C4.20817 20.7812 6.85012 23.4231 10.2337 24.2168L10.5763 22.7565ZM17.3976 24.2168C20.7812 23.4231 23.4231 20.7812 24.2168 17.3976L22.7565 17.055C22.0929 19.884 19.884 22.0929 17.055 22.7565L17.3976 24.2168ZM17.055 4.87484C19.884 5.53843 22.0929 7.74731 22.7565 10.5763L24.2168 10.2337C23.4231 6.85012 20.7812 4.20817 17.3976 3.41448L17.055 4.87484ZM10.2337 3.41448C6.85012 4.20817 4.20817 6.85011 3.41448 10.2337L4.87484 10.5763C5.53843 7.74731 7.74731 5.53843 10.5763 4.87484L10.2337 3.41448ZM21.1386 22.1993L25.7197 26.7803L26.7803 25.7197L22.1993 21.1386L21.1386 22.1993Z"
+									fill="#29354D" />
+							</svg>
+						</button>
+
+						<button class="search-block__enter-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none">
+								<path
+									d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM27.5303 6.53033C27.8232 6.23744 27.8232 5.76257 27.5303 5.46967L22.7574 0.696701C22.4645 0.403808 21.9896 0.403808 21.6967 0.696701C21.4038 0.989594 21.4038 1.46447 21.6967 1.75736L25.9393 6L21.6967 10.2426C21.4038 10.5355 21.4038 11.0104 21.6967 11.3033C21.9896 11.5962 22.4645 11.5962 22.7574 11.3033L27.5303 6.53033ZM1 6.75L27 6.75L27 5.25L1 5.25L1 6.75Z"
+									fill="#29354D" />
+							</svg>
+						</button>
+					</label>
+				</div>
+
+				<ul class="map-block__search-list">
+					<li class="map-block__search-item active">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">БЦ «Валлекс»</p>
+							<p class="map-block__search-item-text">Москва,</p>
+							<p class="map-block__search-item-text">
+								Старокалужское ш. 62, 1ый этаж
+							</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Москва,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 69
+							</p>
+							<p class="map-block__search-item-text">Москва,</p>
+							<p class="map-block__search-item-text">
+								Севастопольский пр-д, д.40, с.1
+							</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 148
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">3-й квартал, д.27</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="map-block__search-item">
+						<div class="map-block__search-item-top">
+							<p class="map-block__search-item-title">
+								Детская поликлиника № 130
+							</p>
+							<p class="map-block__search-item-text">Капотня,</p>
+							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
+						</div>
+
+						<div class="map-block__search-item-bottom">
+							<div class="map-block__search-item-time">
+								<span>
+									<svg
+										viewBox="0 0 19 20"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none">
+										<path
+											d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+											stroke="#797979"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</span>
+
+								<span>08-22</span>
+							</div>
+
+							<div
+								href="#"
+								class="arrow-link">
+								<span>на карте</span>
+								<svg
+									width="29"
+									height="13"
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div
+				class="map-block__map-box"
+				id="root">
+				<div class="modal modal-map">
+					<div class="modal__container">
+						<button class="modal__close-btn">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none">
+								<path
+									d="M1 1.5L19 19.5M19 1.5L1 19.5"
+									stroke="#797979"
+									stroke-width="2"
+									stroke-linecap="round" />
+							</svg>
+						</button>
+						<div class="modal-map__swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide modal-map__swiper-item">
+									<img
+										src="./src/images/modal-map-img-1.png"
+										alt="" />
+								</div>
+
+								<div class="swiper-slide modal-map__swiper-item">
+									<img
+										src="./src/images/modal-map-img-1.png"
+										alt="" />
+								</div>
+
+								<div class="swiper-slide modal-map__swiper-item">
+									<img
+										src="./src/images/modal-map-img-1.png"
+										alt="" />
+								</div>
+							</div>
+							<div class="swiper-pagination modal-map__swiper-pagination"></div>
+						</div>
+
+						<div class="modal-map__content">
+							<p class="modal-map__content-title">Детская поликлиника № 118</p>
+							<div class="modal-map__content-disc">
+								<div class="modal-map__content-adress">
+									<span class="modal-map__content-adress-icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 18 18"
+											fill="none">
+											<path
+												d="M1.97722 3.28558C2.54864 0.81415 6.27007 0.81415 6.83436 3.28558C7.17007 4.73558 6.24864 5.96415 5.44864 6.72843C4.86293 7.28558 3.9415 7.27843 3.35579 6.72843C2.56293 5.96415 1.6415 4.73558 1.97722 3.28558Z"
+												stroke="#797979"
+												stroke-width="1.5" />
+											<path
+												d="M11.2643 11.8571C11.8357 9.38568 15.5786 9.38568 16.15 11.8571C16.4857 13.3071 15.5643 14.5357 14.7571 15.3C14.1714 15.8571 13.2429 15.85 12.6571 15.3C11.85 14.5357 10.9286 13.3071 11.2643 11.8571Z"
+												stroke="#797979"
+												stroke-width="1.5" />
+											<path
+												d="M9.07149 3.57141H10.9858C12.3072 3.57141 12.9215 5.20713 11.9286 6.07855L6.22149 11.0714C5.22864 11.9357 5.84292 13.5714 7.15721 13.5714H9.07149"
+												stroke="#797979"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M4.42117 3.92855H4.42942"
+												stroke="#797979"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M13.7063 12.5H13.7146"
+												stroke="#797979"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+
+									<p>Москва, 2-й Старомытищинский пр-д., д, 123, корп. 1</p>
+								</div>
+
+								<div class="modal-map__content-time">
+									<span>
+										<svg
+											viewBox="0 0 19 20"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none">
+											<path
+												d="M17.4173 9.9998C17.4173 14.3698 13.8707 17.9165 9.50065 17.9165C5.13065 17.9165 1.58398 14.3698 1.58398 9.9998C1.58398 5.6298 5.13065 2.08313 9.50065 2.08313C13.8707 2.08313 17.4173 5.6298 17.4173 9.9998Z"
+												stroke="#797979"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M12.437 12.5174L9.98286 11.0528C9.55536 10.7995 9.20703 10.1899 9.20703 9.69115V6.44531"
+												stroke="#797979"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+
+									<span>08-22</span>
+								</div>
+
+								<div class="modal-map__content-pass">
+									<span>Наличие пропуска:</span>
+									<strong>Нет</strong>
+								</div>
+
+								<a
+									href="tel:+74952121059"
+									class="modal-map__content-tel">
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="17"
+											height="17"
+											viewBox="0 0 17 17"
+											fill="none">
+											<path
+												d="M14.8657 14.5012L14.8661 14.5009C15.1049 14.2374 15.2866 13.9562 15.4256 13.6618C15.5815 13.3318 15.6582 12.9847 15.6582 12.6408C15.6582 12.3459 15.5934 12.0901 15.5017 11.8608L15.4969 11.849L15.4918 11.8373C15.358 11.5332 15.1445 11.2962 14.8827 11.1141L12.7581 9.60568L12.7519 9.6013L12.7456 9.59704C12.557 9.46881 12.3623 9.35598 12.1579 9.27236C11.9387 9.18269 11.7138 9.13295 11.4817 9.13295C11.176 9.13295 10.9018 9.21965 10.6565 9.36459C10.4262 9.4886 10.2187 9.66125 10.034 9.84578L9.73482 10.141C9.59366 10.0506 9.4124 9.91722 9.18953 9.72866C8.87007 9.4574 8.55193 9.15816 8.21289 8.82553C7.89494 8.50121 7.59959 8.17525 7.32019 7.85248C7.13345 7.63161 6.99852 7.45262 6.90679 7.31476L7.20891 7.00071C7.3921 6.81679 7.55664 6.61465 7.68026 6.39867C7.83054 6.14792 7.91817 5.86392 7.91817 5.56294C7.91817 5.31741 7.85583 5.08309 7.77001 4.88118C7.68607 4.67747 7.57213 4.48071 7.43129 4.28481L5.94346 2.18775C5.74689 1.90539 5.49357 1.70809 5.21829 1.58006C4.9513 1.45291 4.66137 1.39294 4.37817 1.39294C3.67316 1.39294 3.04412 1.6941 2.52063 2.2071C2.10811 2.59773 1.80088 3.04623 1.60459 3.54423C1.41306 4.02384 1.32031 4.53621 1.32031 5.06152C1.32031 5.84709 1.50179 6.64685 1.84194 7.4547L1.84194 7.4547L1.84287 7.45688C2.17684 8.24312 2.63078 9.0242 3.18432 9.79375L3.18431 9.79376L3.18685 9.79725C3.74351 10.5618 4.3661 11.2913 5.05386 11.9857L5.05383 11.9857L5.05898 11.9908C5.75356 12.6787 6.48274 13.301 7.25293 13.8636L7.25387 13.8643C8.02763 14.4276 8.81599 14.8813 9.61275 15.2208C10.4273 15.5679 11.2281 15.7501 12.0025 15.7501C12.5469 15.7501 13.0624 15.6487 13.5423 15.449C14.0488 15.2411 14.4852 14.9206 14.8657 14.5012Z"
+												stroke="#797979"
+												stroke-width="1.5"
+												stroke-miterlimit="10" />
+										</svg>
+									</span>
+									<span>+7 (495) 212 10 59</span>
+								</a>
+							</div>
+
+							<a
+								href="#"
+								class="arrow-link">
+								<span>оставить отзыв</span>
+								<svg
+									viewBox="0 0 29 13"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="arrow-link__icon">
+									<path
+										d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
+										fill="#1e283f" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- модалка "Персональная информация" -->
+<div class="modal personal-info-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Персональная информация</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name"
+					class="input input-name"
+					placeholder="Имя" />
+				<label
+					for="name"
+					class="input-label">
+					Имя
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name1"
+					class="input input-name"
+					placeholder="Фамилия" />
+				<label
+					for="name1"
+					class="input-label">
+					Фамилия
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="email"
+					class="input input-email"
+					placeholder="Email" />
+				<label
+					for="email"
+					class="input-label">
+					Email
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="number"
+					id="email"
+					class="input input-tel"
+					placeholder="Телефон" />
+				<label
+					for="email"
+					class="input-label">
+					Телефон
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Добавить банковскую карту" -->
+<div class="modal add-card-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Добавить банковскую карту</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="card"
+					class="input input-card"
+					placeholder="Номер карты" />
+				<label
+					for="card"
+					class="input-label">
+					Номер карты
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name3"
+					class="input input-name"
+					placeholder="Держатель карты" />
+				<label
+					for="name3"
+					class="input-label">
+					Держатель карты
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="number3"
+					class="input input-card-date"
+					placeholder="Срок действия" />
+				<label
+					for="number3"
+					class="input-label">
+					Срок действия
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Изменить пароль" -->
+<div class="modal chage-password-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Изменить пароль</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="pass"
+					class="input"
+					placeholder="Старый пароль" />
+				<label
+					for="pass"
+					class="input-label">
+					Старый пароль
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+
+				<button class="password-btn icon">
+					<svg
+						class="password-btn__show"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g id="Group 34268">
+							<g id="Group 34259">
+								<path
+									id="Vector"
+									d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_2"
+									d="M17.8198 5.77047C16.0698 4.45047 14.0698 3.73047 11.9998 3.73047C8.46984 3.73047 5.17984 5.81047 2.88984 9.41047C1.98984 10.8205 1.98984 13.1905 2.88984 14.6005C3.67984 15.8405 4.59984 16.9105 5.59984 17.7705"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_3"
+									d="M8.41992 19.5297C9.55992 20.0097 10.7699 20.2697 11.9999 20.2697C15.5299 20.2697 18.8199 18.1897 21.1099 14.5897C22.0099 13.1797 22.0099 10.8097 21.1099 9.39969C20.7799 8.87969 20.4199 8.38969 20.0499 7.92969"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_4"
+									d="M15.5104 12.6992C15.2504 14.1092 14.1004 15.2592 12.6904 15.5192"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_5"
+									d="M9.47 14.5293L2 21.9993"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_6"
+									d="M22.0003 2L14.5303 9.47"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="password"
+					id="newpass"
+					class="input"
+					placeholder="Новый пароль" />
+				<label
+					for="newpass"
+					class="input-label">
+					Новый пароль
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+
+				<button class="password-btn icon">
+					<svg
+						class="password-btn__show"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g id="Group 34268">
+							<g id="Group 34259">
+								<path
+									id="Vector"
+									d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_2"
+									d="M17.8198 5.77047C16.0698 4.45047 14.0698 3.73047 11.9998 3.73047C8.46984 3.73047 5.17984 5.81047 2.88984 9.41047C1.98984 10.8205 1.98984 13.1905 2.88984 14.6005C3.67984 15.8405 4.59984 16.9105 5.59984 17.7705"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_3"
+									d="M8.41992 19.5297C9.55992 20.0097 10.7699 20.2697 11.9999 20.2697C15.5299 20.2697 18.8199 18.1897 21.1099 14.5897C22.0099 13.1797 22.0099 10.8097 21.1099 9.39969C20.7799 8.87969 20.4199 8.38969 20.0499 7.92969"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_4"
+									d="M15.5104 12.6992C15.2504 14.1092 14.1004 15.2592 12.6904 15.5192"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_5"
+									d="M9.47 14.5293L2 21.9993"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_6"
+									d="M22.0003 2L14.5303 9.47"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="password"
+					id="reppas"
+					class="input"
+					placeholder="Повторите пароль" />
+				<label
+					for="reppas"
+					class="input-label">
+					Повторите пароль
+				</label>
+				<div class="input-status">Неверный формат</div>
+
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<button class="password-btn icon">
+					<svg
+						class="password-btn__show"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g id="Group 34268">
+							<g id="Group 34259">
+								<path
+									id="Vector"
+									d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_2"
+									d="M17.8198 5.77047C16.0698 4.45047 14.0698 3.73047 11.9998 3.73047C8.46984 3.73047 5.17984 5.81047 2.88984 9.41047C1.98984 10.8205 1.98984 13.1905 2.88984 14.6005C3.67984 15.8405 4.59984 16.9105 5.59984 17.7705"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_3"
+									d="M8.41992 19.5297C9.55992 20.0097 10.7699 20.2697 11.9999 20.2697C15.5299 20.2697 18.8199 18.1897 21.1099 14.5897C22.0099 13.1797 22.0099 10.8097 21.1099 9.39969C20.7799 8.87969 20.4199 8.38969 20.0499 7.92969"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_4"
+									d="M15.5104 12.6992C15.2504 14.1092 14.1004 15.2592 12.6904 15.5192"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_5"
+									d="M9.47 14.5293L2 21.9993"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									id="Vector_6"
+									d="M22.0003 2L14.5303 9.47"
+									stroke="#E6AF9A"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</g>
+						</g>
+					</svg>
+				</button>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+
+			<div class="account-main__left-policy menu">
+				<a href="forget-password.html">Забыли пароль?</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- модалка "Добавить адрес" -->
+<div class="modal add-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Добавить адрес</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="city"
+					class="input input-text"
+					placeholder="Город" />
+				<label
+					for="city"
+					class="input-label">
+					Город
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="street"
+					class="input input-text"
+					placeholder="Улица" />
+				<label
+					for="street"
+					class="input-label">
+					Улица
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-small">
+				<input
+					type="text"
+					id="h-block"
+					class="input"
+					placeholder="Дом" />
+				<label
+					for="h-block"
+					class="input-label">
+					Дом
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-small">
+				<input
+					type="number"
+					id="floor"
+					class="input"
+					placeholder="Этаж" />
+				<label
+					for="floor"
+					class="input-label">
+					Этаж
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-small">
+				<input
+					type="number"
+					id="apartment"
+					class="input"
+					placeholder="Квартира" />
+				<label
+					for="apartment"
+					class="input-label">
+					Квартира
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="order-comment"
+					class="input"
+					placeholder="Комментарий к адресу" />
+				<label
+					for="order-comment"
+					class="input-label">
+					Комментарий к адресу
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>сохранить изменения</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Отклик на вакансию" -->
+<div class="modal vacancy-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Отклик на вакансию</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-medium">
+				<input
+					type="text"
+					id="name5"
+					class="input input-name"
+					placeholder="Имя" />
+				<label
+					for="name5"
+					class="input-label">
+					Имя
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-medium">
+				<input
+					type="number"
+					id="vac-tel"
+					class="input input-tel"
+					placeholder="Номер телефона" />
+				<label
+					for="vac-tel"
+					class="input-label">
+					Номер телефона
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="vac-link"
+					class="input"
+					placeholder="Ссылка на резюме" />
+				<label
+					for="vac-link"
+					class="input-label">
+					Ссылка на резюме
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>отправить</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Сообщение отправлено" -->
+<div class="modal message-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Сообщение отправлено</p>
+
+		<p class="modal__message">Мы ответим Вам в ближайщее время</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Спасибо за отзыв!" -->
+<div class="modal feedback-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Спасибо за отзыв!</p>
+
+		<p class="modal__message">Публикация отзыва может занять некоторое время</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- модалка "Заявка отправлена" -->
+<div class="modal request-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Заявка отправлена</p>
+
+		<p class="modal__message">Мы ответим Вам в ближайщее время</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Товары недоступны" -->
+<div class="modal unavailable-products-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<div class="modal__content-box">
+			<p class="heading2">Данные товары недоступны для заказа</p>
+			<div class="modal__beige-box">
+				<li class="cart__main-item">
+					<div class="cart__main-item-img">
+						<img
+							src="./src/images/cart-sample-img.png"
+							alt="" />
+					</div>
+
+					<div class="cart__main-item-text">
+						<a href="">Espresso Seasonal</a>
+						<span class="text1">500 г</span>
+						<p class="text1">Дополнительный текст</p>
+					</div>
+
+					<div class="cart__main-item-count">1 шт</div>
+
+					<div class="cart__main-item-price">
+						<div class="cart__main-item-value">
+							<strong class="heading4">600</strong>
+							<span class="text2">₽</span>
+						</div>
+
+						<span class="cart__main-cart-item">
+							<img
+								src="./src/images/cart-icon.png"
+								alt="" />
+						</span>
+					</div>
+				</li>
+
+				<li class="cart__main-item">
+					<div class="cart__main-item-img">
+						<img
+							src="./src/images/cart-sample-img.png"
+							alt="" />
+					</div>
+
+					<div class="cart__main-item-text">
+						<a href="">Espresso Seasonal</a>
+						<span class="text1">500 г</span>
+						<p class="text1">Дополнительный текст</p>
+					</div>
+
+					<div class="cart__main-item-count">1 шт</div>
+
+					<div class="cart__main-item-price">
+						<div class="cart__main-item-value">
+							<strong class="heading4">600</strong>
+							<span class="text2">₽</span>
+						</div>
+
+						<span class="cart__main-cart-item">
+							<img
+								src="./src/images/cart-icon.png"
+								alt="" />
+						</span>
+					</div>
+				</li>
+
+				<li class="cart__main-item">
+					<div class="cart__main-item-img">
+						<img
+							src="./src/images/cart-sample-img.png"
+							alt="" />
+					</div>
+
+					<div class="cart__main-item-text">
+						<a href="">Espresso Seasonal</a>
+						<span class="text1">500 г</span>
+						<p class="text1">Дополнительный текст</p>
+					</div>
+
+					<div class="cart__main-item-count">1 шт</div>
+
+					<div class="cart__main-item-price">
+						<div class="cart__main-item-value">
+							<strong class="heading4">600</strong>
+							<span class="text2">₽</span>
+						</div>
+
+						<span class="cart__main-cart-item">
+							<img
+								src="./src/images/cart-icon.png"
+								alt="" />
+						</span>
+					</div>
+				</li>
+			</div>
+		</div>
+
+		<div class="modal__content-box">
+			<p class="heading2">Похожие товары</p>
+			<div class="catalog__content-box">
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-1.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «Фруктовое»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-2.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «Фруктовое»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-3.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «Шоколадное»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__main-price">
+									800
+									<span>₽</span>
+								</div>
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog-card-1">
+					<a
+						href="/"
+						class="catalog-card-1__img">
+						<img
+							src="./src/images/lil-cake-sample-4.png"
+							alt="" />
+					</a>
+					<div class="catalog-card-1__descr">
+						<div class="catalog-card-1__imgless">
+							<div class="catalog-card-1__imgless-box">
+								<span>новинка</span>
+								<strong>Блюдо на фотосессии прямо сейчас</strong>
+							</div>
+						</div>
+
+						<div class="catalog-card-1__info">
+							<a
+								href="/"
+								class="catalog-card-1__title heading4">
+								Пироженое «сливочное»
+							</a>
+
+							<div class="catalog-card__price">
+								<div class="catalog-card__sale">
+									<div class="catalog-card__sale-price">
+										240
+										<span>₽</span>
+									</div>
+									<div class="catalog-card__weight">/ 100 г</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+							<img
+								src="./src/images/svg/black-cart.svg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Напишите нам" -->
+<div class="modal text-us">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Напишите нам</p>
+
+		<form class="modal__form">
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="name5"
+					class="input input-name"
+					placeholder="Ваше Имя" />
+				<label
+					for="name5"
+					class="input-label">
+					Ваше Имя
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div class="input-container modal__input-large">
+				<input
+					type="text"
+					id="email6"
+					class="input input-email"
+					placeholder="Email" />
+				<label
+					for="email6"
+					class="input-label">
+					Email
+				</label>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+				<div class="input-status">Неверный формат</div>
+			</div>
+
+			<div
+				class="input-container modal__textarea-medium input-textarea-wrapper">
+				<textarea
+					type="text"
+					id="textarea2"
+					class="input input-textarea"
+					placeholder="Комментарий"
+					maxlength="1000"></textarea>
+				<label
+					for="textarea2"
+					class="input-label">
+					Комментарий
+				</label>
+				<span class="modal__textarea-limits">0/1000</span>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="modal__btns modal__btns--between">
+			<div class="account-main__left-policy menu">
+				<p>Нажимая на кнопку, вы принимаете</p>
+				<a href="#">условия пользовательского соглашения</a>
+			</div>
+			<button class="square-btn blue-square-btn">
+				<span>отправить</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Отзыв о кофейне" -->
+<div class="modal feedback">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Отзыв к кофейне в БЦ «Валлекс»</p>
+
+		<div class="rates">
+			<p class="rates__title">Оцените</p>
+
+			<div class="rates__icons-wrapper">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="rates__icon"
+					viewBox="0 0 20 20"
+					fill="none">
+					<path
+						d="M11.4416 2.9252L12.9083 5.85853C13.1083 6.26686 13.6416 6.65853 14.0916 6.73353L16.7499 7.1752C18.4499 7.45853 18.8499 8.69186 17.6249 9.90853L15.5583 11.9752C15.2083 12.3252 15.0166 13.0002 15.1249 13.4835L15.7166 16.0419C16.1833 18.0669 15.1083 18.8502 13.3166 17.7919L10.8249 16.3169C10.3749 16.0502 9.63326 16.0502 9.17492 16.3169L6.68326 17.7919C4.89992 18.8502 3.81659 18.0585 4.28326 16.0419L4.87492 13.4835C4.98326 13.0002 4.79159 12.3252 4.44159 11.9752L2.37492 9.90853C1.15826 8.69186 1.54992 7.45853 3.24992 7.1752L5.90826 6.73353C6.34992 6.65853 6.88326 6.26686 7.08326 5.85853L8.54992 2.9252C9.34992 1.33353 10.6499 1.33353 11.4416 2.9252Z"
+						stroke="#29354D"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+
+		<form class="modal__form">
+			<div
+				class="input-container modal__textarea-medium input-textarea-wrapper">
+				<textarea
+					type="text"
+					id="textarea3"
+					class="input input-textarea"
+					placeholder="Расскажите о продукте"
+					maxlength="1000"></textarea>
+				<label
+					for="textarea3"
+					class="input-label">
+					Расскажите о продукте
+				</label>
+				<span class="modal__textarea-limits">0/1000</span>
+				<div class="icon">
+					<img
+						src="./src/images/svg/success-validation.svg"
+						alt=""
+						class="success" />
+				</div>
+				<div class="icon">
+					<img
+						src="./src/images/svg/invalid-validation.svg"
+						alt=""
+						class="invalid" />
+				</div>
+			</div>
+		</form>
+
+		<div class="upload">
+			<p class="upload__title">Загрузите до 5 фотографий</p>
+			<div class="upload__content">
+				<div class="upload__box">
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove">
+							<svg
+								viewBox="0 0 21 21"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle
+									cx="10.5"
+									cy="10.5"
+									r="10.5"
+									fill="#FFF9EE" />
+								<path
+									d="M3.1875 3.59375L17.8125 18.2188M17.8125 3.59375L3.1875 18.2188"
+									stroke="#797979"
+									stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</span>
+					</div>
+
+					<div class="upload__input-label">
+						<input
+							type="file"
+							class="upload__input"
+							accept="image/*" />
+
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							fill="none">
+							<path
+								d="M6.76017 22H17.2402C20.0002 22 21.1002 20.31 21.2302 18.25L21.7502 9.99C21.8902 7.83 20.1702 6 18.0002 6C17.3902 6 16.8302 5.65 16.5502 5.11L15.8302 3.66C15.3702 2.75 14.1702 2 13.1502 2H10.8602C9.83017 2 8.63017 2.75 8.17017 3.66L7.45017 5.11C7.17017 5.65 6.61017 6 6.00017 6C3.83017 6 2.11017 7.83 2.25017 9.99L2.77017 18.25C2.89017 20.31 4.00017 22 6.76017 22Z"
+								stroke="#BABABA"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M10.5 8H13.5"
+								stroke="#BABABA"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z"
+								stroke="#BABABA"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</div>
+				</div>
+
+				<div class="upload__info">
+					<strong>Нажмите на область с иконкой</strong>
+					<span>Формат JPG, JPEG, PNG, BMP, GIF</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>отправить</span>
+			</button>
+
+			<button class="arrow-link">
+				<span>Отменить</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- модалка "Вы здесь находитесь?" -->
+<div class="modal is-correct-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
+</svg>
+		</button>
+
+		<p class="heading2">Вы здесь находитесь?</p>
+
+		<div class="map-block__form-adress-wrapper">
+			<div class="map-block__form-adress">
+				<span class="map-block__form-adress-value">
+					Москва, ул. 1-й Старомытищенский пр-д, 15к1,
+				</span>
+
+				<div class="map-block__form-adress-remove">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 25"
+						fill="none">
+						<path
+							d="M3 4L21 22M21 4L3 22"
+							stroke="#29354D"
+							stroke-width="2"
+							stroke-linecap="round" />
+					</svg>
+				</div>
+			</div>
+			<div class="map-block__identify-box">
+				<span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none">
+						<path
+							d="M12.0028 13.4295C13.7259 13.4295 15.1228 12.0326 15.1228 10.3095C15.1228 8.58633 13.7259 7.18945 12.0028 7.18945C10.2797 7.18945 8.88281 8.58633 8.88281 10.3095C8.88281 12.0326 10.2797 13.4295 12.0028 13.4295Z"
+							stroke="#29354D"
+							stroke-width="1.5" />
+						<path
+							d="M3.61776 8.49C5.58776 -0.169998 18.4178 -0.159997 20.3778 8.5C21.5278 13.58 18.3678 17.88 15.5978 20.54C13.5878 22.48 10.4078 22.48 8.38776 20.54C5.62776 17.88 2.46776 13.57 3.61776 8.49Z"
+							stroke="#29354D"
+							stroke-width="1.5" />
+					</svg>
+				</span>
+				<p>Определить местоположение</p>
+			</div>
+		</div>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>да</span>
+			</button>
+
+			<button class="arrow-link">
+				<span>другое местоположение</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<script
+	src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"
+	type="text/javascript"></script>
+<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+<script src="./src/js/swiper-bundle.min.js"></script>
+<script src="./src/js/swipers.js"></script>
+<script src="./src/js/main.js"></script>
+<script src="./src/js/card-det.js"></script>
+<script src="./src/js/modal.js"></script>
+<script src="./src/js/chronology.js"></script>
+<script src="./src/js/map.js"></script>
+<script src="./src/js/inputs.js"></script>
+<script src="./src/js/modals-connections.js"></script>
+
+	</body>
+</html>

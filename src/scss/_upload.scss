@@ -1,0 +1,113 @@
+.upload {
+  margin-bottom: 3.2rem;
+  
+	&__title {
+		color: #29354d;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 125%;
+    margin-bottom: 2rem;
+	}
+
+	&__content {
+		display: flex;
+		gap: 2rem;
+    align-items: center;
+	}
+
+	&__info {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.4rem;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+
+		strong {
+			color: #29354d;
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+		}
+
+		span {
+			color: #797979;
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+		}
+	}
+
+	&__box {
+		display: flex;
+		gap: 1.2rem;
+		align-content: center;
+	}
+
+	&__input {
+		width: 100%;
+		height: 100%;
+    position: absolute;
+		opacity: 0;
+	}
+
+	&__input-label {
+		cursor: pointer;
+		border: 0.1rem solid #f1ded0;
+		background: #fff9ee;
+		width: 8rem;
+		height: 8rem;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		svg {
+			width: 2.4rem;
+			height: 2.4rem;
+		}
+	}
+
+	&__input-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+
+	&__preview-box {
+		width: 8rem;
+		height: 8rem;
+		position: relative;
+    display: none;
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+
+    &.active {
+      display: flex;
+    }
+	}
+
+	&__preview-box-remove {
+		width: 2.1rem;
+		height: 2.1rem;
+		cursor: pointer;
+		position: absolute;
+		top: 0.25rem;
+		right: 0.25rem;
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
