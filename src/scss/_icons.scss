@@ -65,11 +65,13 @@
 	height: 4.3rem;
 	&--dark {
 		stroke: #29354d;
-
+		width: 2.4rem;
+    height: 2.4rem;
 		stroke-width: 2;
 		stroke-linecap: 'round';
 	}
 }
+
 
 .vk--dark {
 	width: 4.5rem;
@@ -79,4 +81,24 @@
 .telegram--dark {
 	width: 4.5rem;
 	height: 4.5rem;
+}
+
+.geo,
+.delivery {
+	stroke-width: 1.5;
+	stroke: $darkBlue;
+	width: 2.4rem;
+	height: 2.4rem;
+	fill: transparent;
+}
+
+.profile {
+	width: 2.4rem;
+	height: 2.4rem;
+	stroke-width: 1.5;
+	fill: transparent;
+	stroke: #e6af9a;
+	&--dark {
+		stroke: $darkBlue;
+	}
 }

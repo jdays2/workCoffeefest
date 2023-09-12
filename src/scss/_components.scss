@@ -1351,7 +1351,6 @@ body {
 
 		&.active {
 			.acc-content {
-				overflow: visible;
 				opacity: 1;
 			}
 
@@ -1401,7 +1400,7 @@ body {
 			overflow: hidden;
 			opacity: 0;
 			transition-property: opacity, visibility, max-height, padding;
-			transition-duration: 0.3s;
+			transition-duration: 0.5s;
 			transition-timing-function: ease-in-out;
 
 			.content {
@@ -1479,7 +1478,8 @@ body {
 
 		&.active {
 			.acc-content {
-				overflow: visible;
+				transition: 0.7s ease-in-out;
+				max-height: 200rem !important;
 				opacity: 1;
 			}
 
@@ -1534,7 +1534,7 @@ body {
 			max-height: 0;
 			overflow: hidden;
 			opacity: 0;
-			transition: 0.3s ease-in-out;
+			transition: 0.5s ease-in-out;
 
 			.content {
 				padding: 4rem 6rem;

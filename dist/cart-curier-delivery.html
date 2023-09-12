@@ -194,7 +194,7 @@
 				<a
 					href="#"
 					class="header__account">
-					<svg>
+					<svg class="profile">
 						<use xlink:href="./src/images/svg/symbol/sprite.svg#profile" />
 					</svg>
 				</a>
@@ -225,16 +225,11 @@
 					<a
 						href="/cart-ordering-final.html"
 						class="arrow-link">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="35"
-							height="26"
-							viewBox="0 0 35 26"
-							fill="none">
-							<path
-								d="M30.5 12.75C30.9142 12.75 31.25 13.0858 31.25 13.5C31.25 13.9142 30.9142 14.25 30.5 14.25L30.5 12.75ZM3.96967 14.0303C3.67678 13.7374 3.67678 13.2626 3.96967 12.9697L8.74264 8.1967C9.03553 7.90381 9.51041 7.90381 9.8033 8.1967C10.0962 8.48959 10.0962 8.96447 9.8033 9.25736L5.56066 13.5L9.8033 17.7426C10.0962 18.0355 10.0962 18.5104 9.8033 18.8033C9.51041 19.0962 9.03553 19.0962 8.74264 18.8033L3.96967 14.0303ZM30.5 14.25L4.5 14.25L4.5 12.75L30.5 12.75L30.5 14.25Z"
-								fill="#29354D" />
+						<svg class="arrow-link__icon">
+							<use
+								xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-left" />
 						</svg>
+
 						<span>назад</span>
 					</a>
 
@@ -255,32 +250,17 @@
 										</span>
 
 										<div class="map-block__form-adress-remove">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 24 25"
-												fill="none">
-												<path
-													d="M3 4L21 22M21 4L3 22"
-													stroke="#29354D"
-													stroke-width="2"
-													stroke-linecap="round" />
+											<svg class="crest--dark">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#crest" />
 											</svg>
 										</div>
 									</div>
 									<div class="map-block__identify-box">
 										<span>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 24 24"
-												fill="none">
-												<path
-													d="M12.0028 13.4295C13.7259 13.4295 15.1228 12.0326 15.1228 10.3095C15.1228 8.58633 13.7259 7.18945 12.0028 7.18945C10.2797 7.18945 8.88281 8.58633 8.88281 10.3095C8.88281 12.0326 10.2797 13.4295 12.0028 13.4295Z"
-													stroke="#29354D"
-													stroke-width="1.5" />
-												<path
-													d="M3.61776 8.49C5.58776 -0.169998 18.4178 -0.159997 20.3778 8.5C21.5278 13.58 18.3678 17.88 15.5978 20.54C13.5878 22.48 10.4078 22.48 8.38776 20.54C5.62776 17.88 2.46776 13.57 3.61776 8.49Z"
-													stroke="#29354D"
-													stroke-width="1.5" />
+											<svg class="geo">
+												<use
+													xlink:href="./src/images/svg/symbol/sprite.svg#geo" />
 											</svg>
 										</span>
 										<p>Определить местоположение</p>
@@ -299,18 +279,8 @@
 											class="input-label">
 											Улица
 										</label>
-										<div class="icon">
-											<img
-												src="./src/images/svg/success-validation.svg"
-												alt=""
-												class="success" />
-										</div>
-										<div class="icon">
-											<img
-												src="./src/images/svg/invalid-validation.svg"
-												alt=""
-												class="invalid" />
-										</div>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
 									</div>
 
 									<div class="input-container modal__input-medium">
@@ -324,18 +294,8 @@
 											class="input-label">
 											Дом
 										</label>
-										<div class="icon">
-											<img
-												src="./src/images/svg/success-validation.svg"
-												alt=""
-												class="success" />
-										</div>
-										<div class="icon">
-											<img
-												src="./src/images/svg/invalid-validation.svg"
-												alt=""
-												class="invalid" />
-										</div>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
 									</div>
 								</div>
 
@@ -351,18 +311,8 @@
 											class="input-label">
 											Этаж
 										</label>
-										<div class="icon">
-											<img
-												src="./src/images/svg/success-validation.svg"
-												alt=""
-												class="success" />
-										</div>
-										<div class="icon">
-											<img
-												src="./src/images/svg/invalid-validation.svg"
-												alt=""
-												class="invalid" />
-										</div>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
 									</div>
 
 									<div class="input-container modal__input-medium">
@@ -376,18 +326,8 @@
 											class="input-label">
 											Квартира
 										</label>
-										<div class="icon">
-											<img
-												src="./src/images/svg/success-validation.svg"
-												alt=""
-												class="success" />
-										</div>
-										<div class="icon">
-											<img
-												src="./src/images/svg/invalid-validation.svg"
-												alt=""
-												class="invalid" />
-										</div>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
 									</div>
 								</div>
 
@@ -402,16 +342,8 @@
 										class="input-label">
 										Комментарий
 									</label>
-									<div class="icon">
-										<svg class="success">
-												<use xlink:href="./src/images/svg/symbol/sprite.svg#valid-validation" />
-											</svg>
-									</div>
-									<div class="icon">
-										<svg class="invalid">
-											<use xlink:href="./src/images/svg/symbol/sprite.svg#invalid-validation" />
-										</svg>
-									</div>
+									<div class="icon success"></div>
+									<div class="icon invalid"></div>
 								</div>
 							</form>
 
@@ -466,7 +398,7 @@
 												</p>
 											</div>
 
-<div class="modal-map__content-time">
+											<div class="modal-map__content-time">
 												<span>08-22</span>
 											</div>
 
@@ -475,15 +407,14 @@
 												<strong>Нет</strong>
 											</div>
 
-												<a
+											<a
 												href="tel:+74952121059"
 												class="modal-map__content-tel">
-
 												<span>+7 (495) 212 10 59</span>
 											</a>
 										</div>
 
-											<a
+										<a
 											href="#"
 											class="arrow-link">
 											<span>оставить отзыв</span>
@@ -850,9 +781,16 @@
 <div class="modal filter-modal-1">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="teg-list">
@@ -967,9 +905,16 @@
 <div class="modal filter-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="teg-list">
@@ -1141,9 +1086,16 @@
 <div class="modal map-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="map-block">
@@ -1973,9 +1925,16 @@
 <div class="modal personal-info-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Персональная информация</p>
@@ -1992,18 +1951,8 @@
 					class="input-label">
 					Имя
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2018,18 +1967,8 @@
 					class="input-label">
 					Фамилия
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2044,18 +1983,8 @@
 					class="input-label">
 					Email
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2070,18 +1999,8 @@
 					class="input-label">
 					Телефон
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 		</form>
@@ -2097,9 +2016,16 @@
 <div class="modal add-card-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Добавить банковскую карту</p>
@@ -2116,18 +2042,8 @@
 					class="input-label">
 					Номер карты
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2142,18 +2058,8 @@
 					class="input-label">
 					Держатель карты
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2168,18 +2074,8 @@
 					class="input-label">
 					Срок действия
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 		</form>
@@ -2195,9 +2091,16 @@
 <div class="modal chage-password-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Изменить пароль</p>
@@ -2214,18 +2117,8 @@
 					class="input-label">
 					Старый пароль
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 
 				<button class="password-btn icon">
@@ -2297,18 +2190,8 @@
 					class="input-label">
 					Новый пароль
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 
 				<button class="password-btn icon">
@@ -2382,18 +2265,8 @@
 				</label>
 				<div class="input-status">Неверный формат</div>
 
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<button class="password-btn icon">
 					<svg
 						class="password-btn__show"
@@ -2468,9 +2341,16 @@
 <div class="modal add-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Добавить адрес</p>
@@ -2487,18 +2367,8 @@
 					class="input-label">
 					Город
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2513,18 +2383,8 @@
 					class="input-label">
 					Улица
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2539,18 +2399,8 @@
 					class="input-label">
 					Дом
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2565,18 +2415,8 @@
 					class="input-label">
 					Этаж
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2591,18 +2431,8 @@
 					class="input-label">
 					Квартира
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2617,18 +2447,8 @@
 					class="input-label">
 					Комментарий к адресу
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 			</div>
 		</form>
 
@@ -2644,9 +2464,16 @@
 <div class="modal vacancy-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Отклик на вакансию</p>
@@ -2663,18 +2490,8 @@
 					class="input-label">
 					Имя
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2689,18 +2506,8 @@
 					class="input-label">
 					Номер телефона
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -2715,18 +2522,8 @@
 					class="input-label">
 					Ссылка на резюме
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 		</form>
@@ -2743,9 +2540,16 @@
 <div class="modal message-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Сообщение отправлено</p>
@@ -2763,9 +2567,16 @@
 <div class="modal feedback-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Спасибо за отзыв!</p>
@@ -2783,9 +2594,16 @@
 <div class="modal request-sended-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Заявка отправлена</p>
@@ -2804,9 +2622,16 @@
 <div class="modal unavailable-products-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<div class="modal__content-box">
@@ -3086,9 +2911,16 @@
 <div class="modal text-us">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Напишите нам</p>
@@ -3105,18 +2937,8 @@
 					class="input-label">
 					Ваше Имя
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -3131,18 +2953,8 @@
 					class="input-label">
 					Email
 				</label>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 				<div class="input-status">Неверный формат</div>
 			</div>
 
@@ -3160,18 +2972,8 @@
 					Комментарий
 				</label>
 				<span class="modal__textarea-limits">0/1000</span>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 			</div>
 		</form>
 
@@ -3191,9 +2993,16 @@
 <div class="modal feedback">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Отзыв к кофейне в БЦ «Валлекс»</p>
@@ -3284,18 +3093,8 @@
 					Расскажите о продукте
 				</label>
 				<span class="modal__textarea-limits">0/1000</span>
-				<div class="icon">
-					<img
-						src="./src/images/svg/success-validation.svg"
-						alt=""
-						class="success" />
-				</div>
-				<div class="icon">
-					<img
-						src="./src/images/svg/invalid-validation.svg"
-						alt=""
-						class="invalid" />
-				</div>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
 			</div>
 		</form>
 
@@ -3463,9 +3262,16 @@
 <div class="modal is-correct-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-<path d="M3 3.5L21 21.5M21 3.5L3 21.5" stroke="#797979" stroke-width="2" stroke-linecap="round"/>
-</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M3 3.5L21 21.5M21 3.5L3 21.5"
+					stroke="#797979"
+					stroke-width="2"
+					stroke-linecap="round" />
+			</svg>
 		</button>
 
 		<p class="heading2">Вы здесь находитесь?</p>
