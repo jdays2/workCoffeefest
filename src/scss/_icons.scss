@@ -8,6 +8,19 @@
 	}
 }
 
+.bag {
+	width: 2.8rem;
+	height: 2.8rem;
+	stroke: #e6af9a;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	&--dark {
+		stroke-width: 1.7;
+		stroke: $darkBlue;
+	}
+}
+
 .email {
 	width: 3.94rem;
 	height: 3.94rem;

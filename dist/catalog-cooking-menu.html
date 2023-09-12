@@ -201,7 +201,7 @@
 				<a
 					href="#"
 					class="header__cart">
-					<svg>
+					<svg class="bag">
 						<use xlink:href="./src/images/svg/symbol/sprite.svg#bag" />
 					</svg>
 				</a>
@@ -218,7 +218,8 @@
 		</div>
 	</div>
 </header>
-<main class="main catalog">
+
+		<main class="main catalog">
 			<section class="main-banner">
 				<div class="swiper-container main-banner__swiper">
 					<div class="swiper-wrapper">
@@ -302,8 +303,8 @@
 									href="/dist/main.html"
 									class="breadcrumbs__item-link">
 									<svg class="home">
-								<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
-							</svg>
+										<use xlink:href="./src/images/svg/symbol/sprite.svg#home" />
+									</svg>
 								</a>
 							</li>
 
@@ -311,7 +312,7 @@
 								<a
 									href="/dist/catalog.html"
 									class="breadcrumbs__item-link">
-									Каталог
+									<span>Каталог</span>
 								</a>
 							</li>
 						</ul>
@@ -509,9 +510,7 @@
 										</label>
 									</div>
 								</div>
-								<span class="text2 popup-block__select-value">
-									Сортировать
-								</span>
+								<span class="text2 popup-block__select-value">Сортировать</span>
 
 								<svg
 									class="popup-block__more-icon"
@@ -614,7 +613,9 @@
 							<div class="category-block category-block__swiper swiper">
 								<div class="swiper-wrapper">
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Все</span>
 											<span class="category-block__value-show">Все</span>
@@ -622,7 +623,9 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Завтраки</span>
 											<span class="category-block__value-show">Завтраки</span>
@@ -630,7 +633,9 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Салаты</span>
 											<span class="category-block__value-show">Салаты</span>
@@ -638,39 +643,65 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Супы и блюда</span>
-											<span class="category-block__value-show">Супы и блюда</span>
+											<span class="category-block__value-hidden">
+												Супы и блюда
+											</span>
+											<span class="category-block__value-show">
+												Супы и блюда
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Сендвичи и бургеры</span>
-											<span class="category-block__value-show">Сендвичи и бургеры</span>
+											<span class="category-block__value-hidden">
+												Сендвичи и бургеры
+											</span>
+											<span class="category-block__value-show">
+												Сендвичи и бургеры
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Зерновой кофе</span>
-											<span class="category-block__value-show">Зерновой кофе</span>
+											<span class="category-block__value-hidden">
+												Зерновой кофе
+											</span>
+											<span class="category-block__value-show">
+												Зерновой кофе
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Горячие напитки</span>
-											<span class="category-block__value-show">Горячие напитки</span>
+											<span class="category-block__value-hidden">
+												Горячие напитки
+											</span>
+											<span class="category-block__value-show">
+												Горячие напитки
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Выпечка</span>
 											<span class="category-block__value-show">Выпечка</span>
@@ -678,7 +709,9 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Десерты</span>
 											<span class="category-block__value-show">Десерты</span>
@@ -686,15 +719,21 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Кофе и чай</span>
+											<span class="category-block__value-hidden">
+												Кофе и чай
+											</span>
 											<span class="category-block__value-show">Кофе и чай</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Завтраки</span>
 											<span class="category-block__value-show">Завтракий</span>
@@ -702,23 +741,37 @@
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Зерновой кофе</span>
-											<span class="category-block__value-show">Зерновой кофе</span>
+											<span class="category-block__value-hidden">
+												Зерновой кофе
+											</span>
+											<span class="category-block__value-show">
+												Зерновой кофе
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Горячие напитки</span>
-											<span class="category-block__value-show">Горячие напитки</span>
+											<span class="category-block__value-hidden">
+												Горячие напитки
+											</span>
+											<span class="category-block__value-show">
+												Горячие напитки
+											</span>
 										</div>
 									</label>
 
 									<label class="category-block__item swiper-slide">
-										<input name="categories-item" type="radio" />
+										<input
+											name="categories-item"
+											type="radio" />
 										<div class="category-block__value-wrapper">
 											<span class="category-block__value-hidden">Кулич</span>
 											<span class="category-block__value-show">Кулич</span>
@@ -786,11 +839,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -832,11 +881,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -878,11 +923,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -924,11 +965,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -970,11 +1007,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1016,11 +1049,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1062,11 +1091,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 
@@ -1108,11 +1133,7 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-									<img
-										src="./src/images/svg/black-cart.svg"
-										alt="" />
-								</div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
 							</div>
 						</div>
 					</div>
@@ -2287,7 +2308,7 @@
 				</div>
 			</section>
 		</main>
-		
+
 		<footer class="footer">
 	<div class="footer__top">
 		<div class="container">
@@ -5325,4 +5346,3 @@
 
 	</body>
 </html>
-
