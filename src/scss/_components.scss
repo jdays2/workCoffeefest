@@ -471,6 +471,12 @@ body {
 
 .filter-result-item {
 	display: none !important;
+	padding-right: 3.4rem;
+	background-image: url(../images/svg/generic/close-dark.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 2.4rem;
+
 	&.active {
 		display: flex !important;
 	}
@@ -480,7 +486,7 @@ body {
 	font-size: 2rem;
 
 	font-weight: 400;
-	line-height: 125%;
+	line-height: 1;
 
 	@media (max-width: 48em) {
 		font-size: 2.8rem;
@@ -539,6 +545,16 @@ body {
 	}
 }
 
+.filter-btn {
+	span {
+		padding-left: 3.6rem;
+		background-image: url(../images/svg/generic/filter.svg);
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: contain;
+	}
+}
+
 .input-container {
 	position: relative;
 	width: 100%;
@@ -555,7 +571,7 @@ body {
 			width: 30%;
 			height: 100%;
 			content: '';
-			background-color: #FFF9EE;
+			background-color: #fff9ee;
 			right: 0;
 			position: absolute;
 		}
