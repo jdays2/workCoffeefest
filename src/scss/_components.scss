@@ -543,6 +543,24 @@ body {
 	position: relative;
 	width: 100%;
 
+	input[type='date'] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none; /* Убрать стандартный стиль элемента */
+		background-image: none;
+		padding-right: 0.5em;
+
+		position: relative;
+		&::after {
+			width: 30%;
+			height: 100%;
+			content: '';
+			background-color: #FFF9EE;
+			right: 0;
+			position: absolute;
+		}
+	}
+
 	&.success {
 		.input {
 			width: 100%;
@@ -550,10 +568,10 @@ body {
 		}
 
 		.icon {
-			.invalid {
+			&.invalid {
 				opacity: 0;
 			}
-			.success {
+			&.success {
 				opacity: 1;
 			}
 		}
@@ -566,10 +584,10 @@ body {
 
 		.icon {
 			top: 37%;
-			.invalid {
+			&.invalid {
 				opacity: 1;
 			}
-			.success {
+			&.success {
 				opacity: 0;
 			}
 		}
@@ -650,10 +668,19 @@ body {
 		object-fit: contain;
 		transform: translateY(-50%);
 
-		svg {
-			width: 2.4rem;
-			height: 2.4rem;
+		&.invalid {
 			opacity: 0;
+			background-image: url(../images/svg/generic/invalid.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 92%;
+		}
+		&.success {
+			opacity: 0;
+			background-image: url(../images/svg/generic/succes.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 100%;
 		}
 	}
 
@@ -814,8 +841,6 @@ body {
 				margin-right: 1.6rem;
 				width: 2.8rem;
 				height: 2.8rem;
-				-o-object-fit: contain;
-				object-fit: contain;
 			}
 		}
 	}
