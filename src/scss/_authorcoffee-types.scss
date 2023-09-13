@@ -63,9 +63,11 @@
 	.authorcoffee-types {
 		&__swiper-slide {
 			flex-direction: column;
+			height: auto;
 
 			&__left {
 				width: auto;
+				height: calc(100% - 82rem);
 				max-width: 67rem;
 				border-radius: 0;
 			}
