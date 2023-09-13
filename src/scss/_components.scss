@@ -670,6 +670,7 @@ body {
 			font-size: 2.8rem;
 			line-height: 4rem;
 			border-width: 0.2rem;
+			height: auto;
 
 			&:focus-visible + .input-label,
 			&:not(:placeholder-shown) + .input-label,
