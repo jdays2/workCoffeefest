@@ -15,5 +15,16 @@
 		display: flex;
 		align-items: center;
 		gap: 2.4rem;
+
+		.geo-btn {
+			border: none;
+			span {
+				padding-left: 3.4rem;
+				background-image: url(../images/svg/generic/geo-single.svg);
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
+			}
+		}
 	}
 }

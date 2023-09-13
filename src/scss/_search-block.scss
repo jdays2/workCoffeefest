@@ -28,6 +28,10 @@
 		height: -moz-fit-content;
 		height: fit-content;
 		display: block;
+		background-image: url(../images/svg/generic/search.svg);
+		background-size: 3rem;
+		background-repeat: no-repeat;
+		background-position: 1.6rem center;
 	}
 
 	&__main-icon {
@@ -50,5 +54,9 @@
 		right: 1.6rem;
 		width: 2.6rem;
 		height: 2rem;
+		background-image: url(../images/svg/generic/search-arrow.svg);
+		background-size: 97%;
+    background-repeat: no-repeat;
+    background-position: center;
 	}
 }

@@ -34,6 +34,11 @@
 	&__arrows-icon {
 		width: 2.4rem;
 		height: 2.4rem;
+		padding-left:3.6rem;
+		background-image: url(../images/svg/generic/filter-arrows.svg);
+		background-position: left center;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	input {
@@ -63,6 +68,7 @@
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
 		height: fit-content;
+		cursor: default;
 
 		top: 8.35rem;
 		left: 0;
@@ -88,7 +94,6 @@
 					@media (hover: hover) {
 						span {
 							font-weight: 700;
-							line-height: 125%;
 						}
 					}
 				}
@@ -101,7 +106,7 @@
 
 			input:checked + .popup-block__item-title {
 				font-weight: 700;
-				line-height: 125%;
+				line-height: 1;
 			}
 		}
 	}
@@ -121,18 +126,18 @@
 			background-color: $darkBlue;
 			border-radius: 0 0 2.5rem 2.5rem;
 			.popup-block__item {
-        display: flex;
-        align-items: center;
+				display: flex;
+				align-items: center;
 				input {
-          display: block;
+					display: block;
 					position: relative;
 					top: 50%;
-          transform: translateY(-50%);
+					transform: translateY(-50%);
 					right: 0;
 					width: 2rem;
 					z-index: 2;
 					height: 0;
-          opacity: 1;
+					opacity: 1;
 
 					&::after {
 						opacity: 1;
@@ -141,7 +146,7 @@
 						transform: translate(-50%, -50%);
 						position: absolute;
 						content: '';
-						border: 0.2rem solid #FFF9EE;
+						border: 0.2rem solid #fff9ee;
 						width: 2rem;
 						height: 2rem;
 						border-radius: 50%;
@@ -156,7 +161,7 @@
 			}
 			.popup-block__item-title {
 				color: #fff9ee;
-        font-weight: 400;
+				font-weight: 400;
 			}
 		}
 
@@ -232,6 +237,7 @@
 	&__item-title {
 		color: #29354d;
 		text-align: left;
+		transition: 0.4s ease-in-out;
 	}
 
 	&__item-value {
