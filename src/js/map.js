@@ -16,7 +16,7 @@ if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
 			{},
 			{
 				iconLayout: 'default#image',
-				iconImageHref: './src/images/svg/geo-icon-blue.svg',
+				iconImageHref: './src/images/svg/generic/geo-map-blue.svg',
 				iconImageSize: [66, 74],
 			},
 		);
@@ -26,7 +26,7 @@ if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
 			{},
 			{
 				iconLayout: 'default#image',
-				iconImageHref: './src/images/svg/geo-icon-biege.svg',
+				iconImageHref: './src/images/svg/generic/geo-map-biege.svg',
 				iconImageSize: [66, 74],
 			},
 		);
@@ -36,7 +36,7 @@ if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
 			{},
 			{
 				iconLayout: 'default#image',
-				iconImageHref: './src/images/svg/geo-icon-green.svg',
+				iconImageHref: './src/images/svg/generic/geo-map-green.svg',
 				iconImageSize: [66, 74],
 			},
 		);

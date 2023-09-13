@@ -471,6 +471,12 @@ body {
 
 .filter-result-item {
 	display: none !important;
+	padding-right: 3.4rem;
+	background-image: url(../images/svg/generic/close-dark.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 2.4rem;
+
 	&.active {
 		display: flex !important;
 	}
@@ -480,7 +486,7 @@ body {
 	font-size: 2rem;
 
 	font-weight: 400;
-	line-height: 125%;
+	line-height: 1;
 
 	@media (max-width: 48em) {
 		font-size: 2.8rem;
@@ -539,9 +545,37 @@ body {
 	}
 }
 
+.filter-btn {
+	span {
+		padding-left: 3.6rem;
+		background-image: url(../images/svg/generic/filter.svg);
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: contain;
+	}
+}
+
 .input-container {
 	position: relative;
 	width: 100%;
+
+	input[type='date'] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none; /* Убрать стандартный стиль элемента */
+		background-image: none;
+		padding-right: 0.5em;
+
+		position: relative;
+		&::after {
+			width: 30%;
+			height: 100%;
+			content: '';
+			background-color: #fff9ee;
+			right: 0;
+			position: absolute;
+		}
+	}
 
 	&.success {
 		.input {
@@ -550,10 +584,10 @@ body {
 		}
 
 		.icon {
-			.invalid {
+			&.invalid {
 				opacity: 0;
 			}
-			.success {
+			&.success {
 				opacity: 1;
 			}
 		}
@@ -566,10 +600,10 @@ body {
 
 		.icon {
 			top: 37%;
-			.invalid {
+			&.invalid {
 				opacity: 1;
 			}
-			.success {
+			&.success {
 				opacity: 0;
 			}
 		}
@@ -650,10 +684,19 @@ body {
 		object-fit: contain;
 		transform: translateY(-50%);
 
-		svg {
-			width: 2.4rem;
-			height: 2.4rem;
+		&.invalid {
 			opacity: 0;
+			background-image: url(../images/svg/generic/invalid.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 92%;
+		}
+		&.success {
+			opacity: 0;
+			background-image: url(../images/svg/generic/succes.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 100%;
 		}
 	}
 
@@ -815,8 +858,6 @@ body {
 				margin-right: 1.6rem;
 				width: 2.8rem;
 				height: 2.8rem;
-				-o-object-fit: contain;
-				object-fit: contain;
 			}
 		}
 	}
