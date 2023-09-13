@@ -21,11 +21,11 @@
 		align-items: center;
 		margin-top: 1.2rem;
 		cursor: pointer;
-
-		span {
-			width: 2.4rem;
-			height: 2.4rem;
-		}
+		background-image: url(../images/svg/generic/geo-single.svg);
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: contain;
+		padding-left: 3.4rem;
 
 		p {
 			color: #29354d;
@@ -74,6 +74,11 @@
 			right: 3.5rem;
 			top: 50%;
 			transform: translateY(-50%);
+
+			background-image: url(../images/svg/generic/close-dark.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
 		}
 	}
 
@@ -97,7 +102,7 @@
 		padding: 4rem;
 		background-color: $biege;
 	}
-	.search-block__input {
+	label {
 		background-color: #fff9ee;
 	}
 	&__search {

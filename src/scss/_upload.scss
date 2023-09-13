@@ -1,19 +1,19 @@
 .upload {
-  margin-bottom: 3.2rem;
-  
+	margin-bottom: 3.2rem;
+
 	&__title {
 		color: #29354d;
 		font-size: 2rem;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 125%;
-    margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	&__content {
 		display: flex;
 		gap: 2rem;
-    align-items: center;
+		align-items: center;
 	}
 
 	&__info {
@@ -51,25 +51,25 @@
 	&__input {
 		width: 100%;
 		height: 100%;
-    position: absolute;
+		position: absolute;
 		opacity: 0;
 	}
 
 	&__input-label {
 		cursor: pointer;
 		border: 0.1rem solid #f1ded0;
-		background: #fff9ee;
+		max-height: 8rem;
 		width: 8rem;
 		height: 8rem;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-		svg {
-			width: 2.4rem;
-			height: 2.4rem;
-		}
+		background-image: url(../images/svg/generic/upload.svg);
+		background-repeat: no-repeat;
+		background-size: 30%;
+		background-position: center;
+		background-color: #fff9ee;
 	}
 
 	&__input-icon {
@@ -85,16 +85,12 @@
 		width: 8rem;
 		height: 8rem;
 		position: relative;
-    display: none;
+		display: none;
+		background-color: #797979;
 
-		svg {
-			width: 100%;
-			height: 100%;
+		&.active {
+			display: flex;
 		}
-
-    &.active {
-      display: flex;
-    }
 	}
 
 	&__preview-box-remove {
@@ -104,10 +100,9 @@
 		position: absolute;
 		top: 0.25rem;
 		right: 0.25rem;
-
-		svg {
-			width: 100%;
-			height: 100%;
-		}
+		background-image: url(../images/svg/generic/remove-image.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
 	}
 }

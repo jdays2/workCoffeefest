@@ -37,9 +37,7 @@
 			top: 0;
       
 			&:checked ~ .teg-list__check-btn {
-				svg {
-					display: block;
-				}
+				background-image: url(../images/svg/generic/checked.svg);
 			}
 		}
 
@@ -61,11 +59,8 @@
 		justify-content: center;
 		align-items: center;
     z-index: -1;
-
-		svg {
-			display: none;
-			width: 1.4rem;
-			height: 1.5rem;
-		}
+		background-size:45%;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 }
