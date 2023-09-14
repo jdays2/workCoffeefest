@@ -279,6 +279,19 @@
 					p {
 						transition: font 0.3s ease-in-out;
 					}
+
+					svg {
+						position: absolute;
+						top: 4.5rem;
+						right: 4rem;
+						width: 5.2rem;
+						height: 1rem;
+
+						use {
+							width: 5.2rem;
+							height: 1rem;
+						}
+					}
 				}
 
 				&-open {
@@ -798,6 +811,7 @@
 								height: 11.2rem;
 								-o-object-fit: contain;
 								object-fit: contain;
+								background-color: $white;
 							}
 						}
 
@@ -1033,12 +1047,85 @@
 						margin-bottom: 4.8rem;
 					}
 
-					.qr-code {
+					&-video {
+						.video-js {
+							width: 100%;
+							height: 100%;
+						}
+					}
+
+					.qr {
 						height: 71rem;
 
 						&__value {
 							width: 57rem;
 							height: 57rem;
+						}
+					}
+				}
+
+				// &__right.bonus-program {
+				// 	width: 100%;
+
+				// 	&-heading {
+				// 		margin-bottom: 4.8rem;
+				// 	}
+
+				// 	.qr-code {
+				// 		height: 71rem;
+
+				// 		&__value {
+				// 			width: 57rem;
+				// 			height: 57rem;
+				// 		}
+				// 	}
+				// }
+			}
+		}
+	}
+
+	@media (max-width: 48em) {
+		& {
+			&__left {
+				&-logout {
+					margin: 8rem 0 0 0;
+					width: 100%;
+
+					span {
+						margin-left: auto;
+					}
+				} 
+			}
+
+			&__right {
+				&-content {
+					padding-left: 4rem;
+					padding-right: 4rem;
+					background: $light;
+
+					.square-btn {
+						width: 100%;
+						text-align: center;
+					}
+
+					.order-table {
+						&__body {
+							padding: 0;
+							border-radius: 0;
+							border: none;
+						}
+
+						&__item {
+							&:not(:last-child) {
+								margin-bottom: 0;
+							}
+
+							&-head {
+								padding: 4rem;
+								border-radius: 0;
+								background: $light;
+								border: 1px solid $biege;
+							}
 						}
 					}
 				}
@@ -1235,6 +1322,44 @@
 				height: 1rem;
 				-o-object-fit: contain;
 				object-fit: contain;
+			}
+		}
+	}
+
+	@media (max-width: 48em) {
+		& {
+			flex-direction: column;
+
+			&__item {
+				width: auto;
+				height: 38rem;
+				padding: 4rem;
+
+				&.add-more {
+					width: auto;
+					height: 10rem;
+				}
+
+				&-right {
+					width: 16rem;
+					padding-top: 4rem;
+					padding-bottom: 4rem;
+
+					&__btn {
+						width: 6rem;
+						height: 6rem;
+
+						span {
+							width: 0.8rem;
+							height: 0.8rem;
+						}
+					}
+
+					img {
+						width: 6rem;
+						height: 2rem;
+					}
+				}
 			}
 		}
 	}
