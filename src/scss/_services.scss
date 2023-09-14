@@ -223,6 +223,37 @@
 					height: 50.4rem;
 				}
 			}
+
+			&--medium {
+				.services__list-item__text {
+					min-height: 50rem;
+					height: calc(100% - 54.4rem);
+				}
+
+				.services__list-item__icon {
+					height: 54.4rem;
+				}
+			}
+
+			&__text {
+				padding: 8rem 4rem;
+				height: calc(100% - 50.4rem);
+
+				&-description {
+					width: auto;
+				}
+			}
+
+			&__icon {
+				height: 50.4rem;
+
+				&-heading {
+					display: none;
+				}
+				&-description {
+					display: none;
+				}
+			}
 		}
 
 		.three-item-container {

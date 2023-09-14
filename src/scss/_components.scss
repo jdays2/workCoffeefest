@@ -508,7 +508,7 @@ body {
 	}
 
 	@media (max-width: 48em) {
-		margin-top: 29.6rem;
+		margin-top: 11rem;
 		flex-direction: column;
 		gap: 5rem;
 
@@ -1392,6 +1392,12 @@ body {
 			flex-direction: column;
 			justify-content: flex-start;
 		}
+
+		&-left {
+			&__heading {
+				max-width: 59rem;
+			}
+		}
 	
 		&__left {
 			margin-bottom: 8rem;
@@ -1463,10 +1469,17 @@ body {
 	}
 }
 
-
 @media (max-width: 48em) {
 	.about-info__card {
 		flex-direction: column-reverse;
+
+		&.section-info__card-big-padding {
+			padding-top: 14rem;
+
+			.section-info__card-left__heading {
+				top: -61rem;
+			}
+		}
 		
 		.section-info__card-left {
 			width: auto;
@@ -1475,7 +1488,7 @@ body {
 			&__heading {
 				position: absolute;
 				top: -58rem;
-				left: -1rem;
+				left: 0rem;
 				leading-trim: both;
 				text-edge: cap;
 			}
