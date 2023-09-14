@@ -337,6 +337,127 @@
 			}
 		}
 	}
+
+	@media (max-width: 48em) {
+		padding-top: 4.8rem;
+		padding-bottom: 4.8rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $darkBlue;
+			z-index: -1;
+		}
+
+		&__burger {
+			svg.open {
+				width: 5.6rem;
+				height: 3.4rem;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+			svg.close {
+				display: none;
+			}
+
+			&.active {
+				svg.open  {
+					display: none;
+				}
+				svg.close {
+					display: block;
+					width: 5.4rem;
+					height: 5.4rem;
+					-o-object-fit: contain;
+					object-fit: contain;
+				}
+			}
+		}
+
+		.container {
+			justify-content: space-between;
+		}
+
+		&__logo {
+			margin-right: 0;
+
+			img {
+				width: 18.6rem;
+				height: 8.6rem;
+			}
+		}
+
+		&__right {
+			margin-left: 0;
+			align-self: center;
+		}
+
+		&__account,
+		&__cart {
+			svg {
+				width: 5.4rem;
+				height: 5.4rem;
+				
+				path {
+					stroke: $light;
+				}
+			}
+		}
+
+		&__burger-menu {
+			position: fixed;
+			top: 17.6rem;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $light;
+			padding: 6rem 4rem 7rem;
+			transform: translateY(-200%);
+			transition: transform 0.8s;
+			z-index: -2;
+
+			&.active {
+				transform: translateX(0%);
+			}
+
+			.search-block {
+				max-height: 9.6rem;
+				height: 9.6rem;
+				font-size: 2.8rem;
+				margin: 0 0 5rem 0;
+
+				label {
+					height: 100%;
+				}
+
+				&__main-icon {
+					width: 3.2rem;
+					height: 3.2rem;
+					margin: 0;
+
+					svg {
+						width: 3.2rem;
+						height: 3.2rem;
+					}
+				}
+			}
+		}
+
+		.burger-menu {
+			&__accordion {
+				.content {
+					display: flex;
+					flex-direction: column;
+					color: $darkBlue;
+					row-gap: 4rem;
+				}
+			}
+		}
+	}
 }
 
 .header__bottom-list__item-link:hover {

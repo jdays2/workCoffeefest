@@ -297,6 +297,149 @@
 			text-align: center;
 		}
 	}
+
+	@media (max-width: 48em) {
+		&__content {
+			flex-direction: column;
+		}
+
+		&__main {
+			width: auto;
+
+			.box-biege {
+				padding: 8rem 4rem 4rem 4rem;
+			}
+
+			&-head {
+				row-gap: 4rem;
+				margin: 0 0 8rem 0;
+
+				&-row {
+					flex-direction: column;
+					align-items: flex-start;
+					row-gap: 4rem;
+
+					.cart__main-title {
+						align-items: baseline;
+					}
+				}
+			}
+
+			&-item {
+				padding: 11.4rem 0 19.2rem 0;
+				position: relative;
+				align-items: flex-start;
+
+				&:not(:last-child) {
+					padding: 11.4rem 0 19.2rem 0;
+				}
+
+				&-img {
+					width: 19rem;
+					height: 16.2rem;
+				}
+
+				&-text {
+					width: auto;
+
+					a {
+						position: absolute;
+						top: 4rem;
+						left: 0;
+						font-size: 2.8rem;
+					}
+
+					span.text1 {
+						margin: 0.85rem 0 3rem 9.4rem;
+					}
+				}
+
+				&-value {
+					position: absolute;
+					top: 11.4rem;
+					left: 21.4rem;
+				}
+
+				.controlls {
+					position: absolute;
+					left: 0;
+					bottom: 6rem;
+
+					&__count-btn {
+						width: 2.8rem;
+						height: 2.8rem;
+					}
+
+					&__count-value {
+						font-size: 2.8rem;
+					}
+				}
+				
+				.cart__main-cart-item {
+					position: absolute;
+					right: 3rem;
+					bottom: 6.8rem;
+					width: 5rem;
+					height: 5rem;
+				}
+			}
+		}
+
+		&__head {
+			flex-direction: column;
+			align-items: flex-start;
+
+			& > *:not(:last-child) {
+				margin: 0 0 5rem 0;
+			}
+
+			
+			&-item {
+				&-icon {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__aside {
+		width: auto;
+
+		.box-blue {
+			padding: 8rem 4rem;
+		}
+
+		&-title {
+			font-size: 2.8rem;
+		}
+
+		&-row {
+			margin: 0 0 3.2rem 0;
+
+			&:nth-child(3) {
+				margin: 0 0 5rem 0;
+			}
+		}
+
+		&-total {
+			padding: 5rem 0 0 0;
+			margin: 0 0 8rem 0;
+
+			p,
+			span {
+				font-size: 3.6rem;
+			}
+		}
+
+		&-input {
+			margin: 0 0 5rem 0;
+
+			input {
+				height: 10rem;
+				font-size: 2.8rem;
+			}
+		}
+	}
 }
 
 @media (hover: hover) {
