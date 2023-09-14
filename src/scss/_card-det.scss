@@ -273,7 +273,6 @@
 					@media (hover: hover) {
 						span {
 							font-weight: 700;
-							line-height: 125%;
 						}
 					}
 				}
@@ -286,7 +285,6 @@
 
 			input:checked + .card-det__item-title {
 				font-weight: 700;
-				line-height: 125%;
 			}
 		}
 	}
@@ -352,8 +350,10 @@
 
 		align-items: flex-end;
 		justify-content: space-between;
-		padding-bottom: 0.4rem;
-		border-bottom: 0.1rem solid rgba(121, 121, 121, 0.2);
+		&:not(:last-child) {
+			padding-bottom: 0.4rem;
+			border-bottom: 0.1rem solid rgba(121, 121, 121, 0.2);
+		}
 
 		span {
 			width: 15.8rem;
