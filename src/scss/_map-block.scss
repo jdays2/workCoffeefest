@@ -10,7 +10,6 @@
 		margin-bottom: 6rem;
 
 		.map-block__map-box {
-			border-radius: 0 0 5rem 5rem;
 			overflow: hidden;
 		}
 	}
@@ -246,7 +245,170 @@
 
 @media (max-width: 48em) {
 	.map-block {
+		height: 251.8rem;
 		flex-direction: column;
-		height: auto;
+
+		&__search-box {
+			padding: 8rem 4rem;
+
+			.search-block {
+				height: auto;
+				max-height: none;
+
+				&__input {
+					padding: 3rem 7.2rem;
+					font-size: 2.8rem;
+				}
+			}
+		}
+
+		&__search-list {
+			width: auto;
+			max-width: 67rem;
+			height: auto;
+			max-height: 160rem;
+		}
+
+		&__search-item {
+			width: auto;
+			height: auto;
+			flex: 0 1 100%;
+			padding: 2rem 4rem;
+
+			&-top {
+				margin: 0 0 2.4rem 0;
+
+				& > * {
+					font-size: 2.8rem;
+				}
+			}
+
+			&-time {
+				span {
+					font-size: 2.8rem;
+				}
+			}
+		}
+
+		&__map-box {
+			.modal-map.active {
+				position: fixed;
+				left: 0;
+				z-index: 5 !important;
+				
+				.modal__container {
+					margin-top: 5rem;
+					width: 67rem;
+
+					.modal-map__swiper {
+						height: 55.8rem;
+						width: 67rem;
+					}
+
+					.modal-map__content {
+						padding: 4rem 4rem 6rem;
+
+						&-title {
+							font-size: 3.6rem;
+							text-align: left;
+						}
+
+						&-disc {
+							row-gap: 1.6rem;
+							-moz-column-gap: 0;
+							     column-gap: 0;
+
+							& > * {
+								font-size: 2.8rem;
+							}
+						}
+
+						&-adress {
+							order: 1;
+
+							p {
+								font-size: 2.8rem;
+								text-align: left;
+							}
+
+							svg {
+								width: 3rem;
+								height: 3rem;
+							}
+						}
+
+						&-time {
+							order: 4;
+
+							span {
+								font-size: 2.8rem;
+							}
+
+							svg {
+								width: 3rem;
+								height: 3rem;
+							}
+						}
+
+						&-pass {
+							order: 2;
+						}
+
+						&-tel {
+							order: 3;
+
+							span {
+								font-size: 2.8rem;
+							}
+
+							svg {
+								width: 3rem;
+								height: 3rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.map-block--self-delivery {
+		flex-direction: column-reverse;
+		height: 173.8rem;
+		position: relative;
+		margin-bottom: 0;
+		border-radius: 0;
+
+		.map-block__map-box {
+			width: 67rem;
+			height: 76rem;
+		}
+
+		.map-block__form {
+			margin-right: 0;
+
+			&-head {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			&-box {
+				width: auto;
+				margin: 8rem 0;
+				row-gap: 5rem;
+			}
+
+			&-subtitle {
+				margin: 5rem 0 0 0;
+				font-size: 2.8rem;
+			}
+
+			.square-btn {
+				border-radius: 0;
+			}
+		}
 	}
 }

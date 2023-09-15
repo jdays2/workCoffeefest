@@ -209,12 +209,71 @@
 
 			<a
 				href="tel:84952121059"
-				class="header__right-tel-link">
+				class="header__right-tel-link desktop">
 				<svg class="phone-icon">
 					<use xlink:href="./src/images/svg/symbol/sprite.svg#phone" />
 				</svg>
 				<span>8 495 212 10 59</span>
 			</a>
+		</div>
+		<div class="header__burger-menu mobile">
+			<div class="search-block search-block--long">
+				<label>
+					<input
+						class="search-block__input"
+						type="text"
+						placeholder="Поиск" />
+					<button class="search-block__main-icon">
+						<svg 
+							xmlns="http://www.w3.org/2000/svg" 
+							width="16" 
+							height="16" 
+							viewBox="0 0 16 16" 
+							fill="none">
+							<path 
+								d="M2.21049 9.18737L2.69727 9.07318L2.21049 9.18737ZM2.21049 5.54933L2.69727 5.66352L2.21049 5.54933ZM12.5262 5.54934L13.013 5.43515L12.5262 5.54934ZM12.5262 9.18737L13.013 9.30155L12.5262 9.18737ZM9.18737 12.5262L9.07318 12.0394L9.18737 12.5262ZM5.54934 12.5262L5.43515 13.013L5.54934 12.5262ZM5.54933 2.21049L5.43515 1.7237L5.54933 2.21049ZM9.18737 2.21048L9.30155 1.7237L9.18737 2.21048ZM13.6464 14.3536C13.8417 14.5488 14.1583 14.5488 14.3536 14.3536C14.5488 14.1583 14.5488 13.8417 14.3536 13.6464L13.6464 14.3536ZM2.69727 9.07318C2.43424 7.95185 2.43424 6.78485 2.69727 5.66352L1.7237 5.43515C1.42543 6.70669 1.42543 8.03001 1.7237 9.30155L2.69727 9.07318ZM12.0394 5.66352C12.3025 6.78486 12.3025 7.95185 12.0394 9.07318L13.013 9.30155C13.3113 8.03001 13.3113 6.70669 13.013 5.43515L12.0394 5.66352ZM9.07318 12.0394C7.95185 12.3025 6.78486 12.3025 5.66352 12.0394L5.43515 13.013C6.70669 13.3113 8.03001 13.3113 9.30155 13.013L9.07318 12.0394ZM5.66352 2.69727C6.78485 2.43424 7.95185 2.43424 9.07318 2.69727L9.30155 1.7237C8.03001 1.42543 6.70669 1.42543 5.43515 1.7237L5.66352 2.69727ZM5.66352 12.0394C4.19171 11.6942 3.04251 10.545 2.69727 9.07318L1.7237 9.30155C2.15567 11.1431 3.59358 12.581 5.43515 13.013L5.66352 12.0394ZM9.30155 13.013C11.1431 12.581 12.581 11.1431 13.013 9.30155L12.0394 9.07318C11.6942 10.545 10.545 11.6942 9.07318 12.0394L9.30155 13.013ZM9.07318 2.69727C10.545 3.04251 11.6942 4.19171 12.0394 5.66352L13.013 5.43515C12.581 3.59358 11.1431 2.15567 9.30155 1.7237L9.07318 2.69727ZM5.43515 1.7237C3.59358 2.15567 2.15567 3.59358 1.7237 5.43515L2.69727 5.66352C3.04251 4.19171 4.19171 3.04251 5.66352 2.69727L5.43515 1.7237ZM11.2032 11.9103L13.6464 14.3536L14.3536 13.6464L11.9103 11.2032L11.2032 11.9103Z" 
+								fill="#29354D"/>
+						</svg>
+					</button>
+				</label>
+			</div>
+			<div class="burger-menu__accordion accordion">
+				<div class="acc-item">
+					<div class="acc-head">
+						<p class="heading4">Меню</p>
+						<svg class="arrow">
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow"></use>
+						</svg>
+					</div>
+					<div class="acc-content menu">
+						<div class="content">
+							<a href="#" class="burger-menu__link">Услуги</a>
+							<a href="#" class="burger-menu__link">О нас</a>
+							<a href="#" class="burger-menu__link">О кофе</a>
+							<a href="#" class="burger-menu__link">Для бизнеса</a>
+							<a href="#" class="burger-menu__link">Доставка и оплата</a>
+							<a href="#" class="burger-menu__link">Вакансии</a>
+							<a href="#" class="burger-menu__link">Контакты</a>
+						</div>
+					</div>
+				</div>
+				<div class="acc-item">
+					<div class="acc-head">
+						<p class="heading4">Каталог</p>
+						<svg class="arrow">
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#vertical-arrow"></use>
+						</svg>
+					</div>
+					<div class="acc-content menu">
+						<div class="content">
+							<a href="#" class="burger-menu__link">Зерновой кофе</a>
+							<a href="#" class="burger-menu__link">Меню кофеен</a>
+							<a href="#" class="burger-menu__link">Меню кулинарии</a>
+							<a href="#" class="burger-menu__link">Торты на заказ</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -283,16 +342,9 @@
 										</span>
 									</div>
 									<span class="ordering-progres__line active"></span>
-									<div class="ordering-progres__phase done">
-										<span class="ordering-progres__phase-value">2</span>
-										<span class="ordering-progres__phase-done-icon"></span>
-										<span class="ordering-progres__phase-text">
-											Способ оплаты
-										</span>
-									</div>
-									<span class="ordering-progres__line active"></span>
+
 									<div class="ordering-progres__phase active">
-										<span class="ordering-progres__phase-value">3</span>
+										<span class="ordering-progres__phase-value">2</span>
 										<span class="ordering-progres__phase-done-icon"></span>
 										<span class="ordering-progres__phase-text">Ваш заказ</span>
 									</div>
@@ -1498,7 +1550,11 @@
 									</svg>
 								</div>
 
-								<button class="square-btn">Оформить</button>
+								<button
+									class="square-btn"
+									id="unavailable-btn">
+									Оформить
+								</button>
 							</div>
 						</div>
 					</div>
@@ -1851,1446 +1907,108 @@
 	</div>
 </footer>
 
-<!-- модалка фильтр "Новости" -->
 <div class="modal filter-modal-1">
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
-
-		<div class="teg-list">
-			<p class="heading2">Теги</p>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Новости кофе</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Кофейная культура</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">События</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Новости кофеен</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Полезные советы</span>
-			</label>
-		</div>
-
-		<div class="modal__btns">
-			<button class="square-btn blue-square-btn">
-				<span>Применить</span>
-			</button>
-
-			<button
-				class="btn"
-				id="clear-filter">
-				<span>Очистить</span>
-			</button>
-		</div>
+		<div class="modal__root"></div>
 	</div>
 </div>
 
-<!-- модалка фильтр "Категории" -->
 <div class="modal filter-modal">
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
-
-		<div class="teg-list">
-			<p class="heading3">Способ заваривания</p>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Фильтр</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Эспрессо</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Френч-пресс</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Турка</span>
-			</label>
-		</div>
-
-		<div class="teg-list">
-			<p class="heading3">Страна происхождения</p>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Эфиопия</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Бразилия</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Колумбия</span>
-			</label>
-
-			<label class="teg-list__item">
-				<input type="checkbox" />
-				<button class="teg-list__check-btn"></button>
-				<span class="text1">Индонезия</span>
-			</label>
-		</div>
-
-		<div class="modal__btns">
-			<button class="square-btn blue-square-btn">
-				<span>Применить</span>
-			</button>
-
-			<button
-				class="btn"
-				id="clear-filter">
-				<span>Очистить</span>
-			</button>
-		</div>
-	</div>
-</div>
-<!-- модалка с картой -->
-<div class="modal map-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<div class="map-block">
-			<div class="map-block__search-box">
-				<p class="heading4 map-block__search-title">Адреса ресторанов</p>
-				<div class="search-block search-block--long">
-					<label>
-						<input
-							class="search-block__input"
-							type="text"
-							placeholder="Поиск" />
-						<button class="search-block__enter-icon"></button>
-					</label>
-				</div>
-
-				<ul class="map-block__search-list">
-					<li class="map-block__search-item active">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">БЦ «Валлекс»</p>
-							<p class="map-block__search-item-text">Москва,</p>
-							<p class="map-block__search-item-text">
-								Старокалужское ш. 62, 1ый этаж
-							</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Москва,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 69
-							</p>
-							<p class="map-block__search-item-text">Москва,</p>
-							<p class="map-block__search-item-text">
-								Севастопольский пр-д, д.40, с.1
-							</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 148
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">3-й квартал, д.27</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-
-					<li class="map-block__search-item">
-						<div class="map-block__search-item-top">
-							<p class="map-block__search-item-title">
-								Детская поликлиника № 130
-							</p>
-							<p class="map-block__search-item-text">Капотня,</p>
-							<p class="map-block__search-item-text">ул.Крылатские Холмы, 5</p>
-						</div>
-
-						<div class="map-block__search-item-bottom">
-							<div class="map-block__search-item-time">
-								<span>08-22</span>
-							</div>
-
-							<div
-								href="#"
-								class="arrow-link">
-								<span>на карте</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div
-				class="map-block__map-box"
-				id="root">
-				<div class="modal modal-map">
-					<div class="modal__container">
-						<button class="modal__close-btn"></button>
-						<div class="modal-map__swiper swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide modal-map__swiper-item">
-									<img
-										src="./src/images/modal-map-img-1.png"
-										alt="" />
-								</div>
-
-								<div class="swiper-slide modal-map__swiper-item">
-									<img
-										src="./src/images/modal-map-img-1.png"
-										alt="" />
-								</div>
-
-								<div class="swiper-slide modal-map__swiper-item">
-									<img
-										src="./src/images/modal-map-img-1.png"
-										alt="" />
-								</div>
-							</div>
-							<div class="swiper-pagination modal-map__swiper-pagination"></div>
-						</div>
-
-						<div class="modal-map__content">
-							<p class="modal-map__content-title">Детская поликлиника № 118</p>
-							<div class="modal-map__content-disc">
-								<div class="modal-map__content-adress">
-									<p>Москва, 2-й Старомытищинский пр-д., д, 123, корп. 1</p>
-								</div>
-
-								<div class="modal-map__content-time">
-									<span>08-22</span>
-								</div>
-
-								<div class="modal-map__content-pass">
-									<span>Наличие пропуска:</span>
-									<strong>Нет</strong>
-								</div>
-
-								<a
-									href="tel:+74952121059"
-									class="modal-map__content-tel">
-									<span>+7 (495) 212 10 59</span>
-								</a>
-							</div>
-
-							<a
-								href="#"
-								class="arrow-link">
-								<span>оставить отзыв</span>
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- модалка "Персональная информация" -->
-<div class="modal personal-info-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Персональная информация</p>
-
-		<form class="modal__form">
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="name"
-					class="input input-name"
-					placeholder="Имя" />
-				<label
-					for="name"
-					class="input-label">
-					Имя
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="name1"
-					class="input input-name"
-					placeholder="Фамилия" />
-				<label
-					for="name1"
-					class="input-label">
-					Фамилия
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="email"
-					class="input input-email"
-					placeholder="Email" />
-				<label
-					for="email"
-					class="input-label">
-					Email
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="number"
-					id="email"
-					class="input input-tel"
-					placeholder="Телефон" />
-				<label
-					for="email"
-					class="input-label">
-					Телефон
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-		</form>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>сохранить изменения</span>
-			</button>
-		</div>
-	</div>
-</div>
-<!-- модалка "Добавить банковскую карту" -->
-<div class="modal add-card-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Добавить банковскую карту</p>
-
-		<form class="modal__form">
-			<div class="input-container modal__input-large">
-				<input
-					type="text"
-					id="card"
-					class="input input-card"
-					placeholder="Номер карты" />
-				<label
-					for="card"
-					class="input-label">
-					Номер карты
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="name3"
-					class="input input-name"
-					placeholder="Держатель карты" />
-				<label
-					for="name3"
-					class="input-label">
-					Держатель карты
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="number3"
-					class="input input-card-date"
-					placeholder="Срок действия" />
-				<label
-					for="number3"
-					class="input-label">
-					Срок действия
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-		</form>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>сохранить изменения</span>
-			</button>
-		</div>
-	</div>
-</div>
-<!-- модалка "Изменить пароль" -->
-<div class="modal chage-password-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Изменить пароль</p>
-
-		<form class="modal__form">
-			<div class="input-container modal__input-large">
-				<input
-					type="text"
-					id="pass"
-					class="input"
-					placeholder="Старый пароль" />
-				<label
-					for="pass"
-					class="input-label">
-					Старый пароль
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-
-				<button class="password-btn icon">
-					<svg class="password">
-						<use xlink:href="./src/images/svg/symbol/sprite.svg#password" />
-					</svg>
-				</button>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="password"
-					id="newpass"
-					class="input"
-					placeholder="Новый пароль" />
-				<label
-					for="newpass"
-					class="input-label">
-					Новый пароль
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-
-				<button class="password-btn icon">
-					<svg class="password">
-						<use xlink:href="./src/images/svg/symbol/sprite.svg#password" />
-					</svg>
-				</button>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="password"
-					id="reppas"
-					class="input"
-					placeholder="Повторите пароль" />
-				<label
-					for="reppas"
-					class="input-label">
-					Повторите пароль
-				</label>
-				<div class="input-status">Неверный формат</div>
-
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<button class="password-btn icon">
-					<svg class="password">
-						<use xlink:href="./src/images/svg/symbol/sprite.svg#password" />
-					</svg>
-				</button>
-			</div>
-		</form>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>сохранить изменения</span>
-			</button>
-
-			<div class="account-main__left-policy menu">
-				<a href="forget-password.html">Забыли пароль?</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- модалка "Добавить адрес" -->
-<div class="modal add-adress">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Добавить адрес</p>
-
-		<form class="modal__form">
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="city"
-					class="input input-text"
-					placeholder="Город" />
-				<label
-					for="city"
-					class="input-label">
-					Город
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="street"
-					class="input input-text"
-					placeholder="Улица" />
-				<label
-					for="street"
-					class="input-label">
-					Улица
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-small">
-				<input
-					type="text"
-					id="h-block"
-					class="input"
-					placeholder="Дом" />
-				<label
-					for="h-block"
-					class="input-label">
-					Дом
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-small">
-				<input
-					type="number"
-					id="floor"
-					class="input"
-					placeholder="Этаж" />
-				<label
-					for="floor"
-					class="input-label">
-					Этаж
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-small">
-				<input
-					type="number"
-					id="apartment"
-					class="input"
-					placeholder="Квартира" />
-				<label
-					for="apartment"
-					class="input-label">
-					Квартира
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-large">
-				<input
-					type="text"
-					id="order-comment"
-					class="input"
-					placeholder="Комментарий к адресу" />
-				<label
-					for="order-comment"
-					class="input-label">
-					Комментарий к адресу
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-			</div>
-		</form>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>сохранить изменения</span>
-			</button>
-		</div>
+		<div class="modal__root"></div>
 	</div>
 </div>
 
-<!-- модалка "Отклик на вакансию" -->
-<div class="modal vacancy-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Отклик на вакансию</p>
-
-		<form class="modal__form">
-			<div class="input-container modal__input-medium">
-				<input
-					type="text"
-					id="name5"
-					class="input input-name"
-					placeholder="Имя" />
-				<label
-					for="name5"
-					class="input-label">
-					Имя
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-medium">
-				<input
-					type="number"
-					id="vac-tel"
-					class="input input-tel"
-					placeholder="Номер телефона" />
-				<label
-					for="vac-tel"
-					class="input-label">
-					Номер телефона
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-large">
-				<input
-					type="text"
-					id="vac-link"
-					class="input"
-					placeholder="Ссылка на резюме" />
-				<label
-					for="vac-link"
-					class="input-label">
-					Ссылка на резюме
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-		</form>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>отправить</span>
-			</button>
-		</div>
-	</div>
-</div>
-
-<!-- модалка "Сообщение отправлено" -->
-<div class="modal message-sended-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Сообщение отправлено</p>
-
-		<p class="modal__message">Мы ответим Вам в ближайщее время</p>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>закрыть</span>
-			</button>
-		</div>
-	</div>
-</div>
-<!-- модалка "Спасибо за отзыв!" -->
-<div class="modal feedback-sended-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Спасибо за отзыв!</p>
-
-		<p class="modal__message">Публикация отзыва может занять некоторое время</p>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>закрыть</span>
-			</button>
-		</div>
-	</div>
-</div>
-<!-- модалка "Заявка отправлена" -->
-<div class="modal request-sended-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Заявка отправлена</p>
-
-		<p class="modal__message">Мы ответим Вам в ближайщее время</p>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>закрыть</span>
-			</button>
-		</div>
-	</div>
-</div>
-
-<!-- модалка "Товары недоступны" -->
-<div class="modal unavailable-products-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<div class="modal__content-box">
-			<p class="heading2">Данные товары недоступны для заказа</p>
-			<div class="modal__beige-box">
-				<li class="cart__main-item">
-					<div class="cart__main-item-img">
-						<img
-							src="./src/images/cart-sample-img.png"
-							alt="" />
-					</div>
-
-					<div class="cart__main-item-text">
-						<a href="">Espresso Seasonal</a>
-						<span class="text1">500 г</span>
-						<p class="text1">Дополнительный текст</p>
-					</div>
-
-					<div class="cart__main-item-count">1 шт</div>
-
-					<div class="cart__main-item-price">
-						<div class="cart__main-item-value">
-							<strong class="heading4">600</strong>
-							<span class="text2">₽</span>
-						</div>
-
-						<span class="cart__main-cart-item"></span>
-					</div>
-				</li>
-
-				<li class="cart__main-item">
-					<div class="cart__main-item-img">
-						<img
-							src="./src/images/cart-sample-img.png"
-							alt="" />
-					</div>
-
-					<div class="cart__main-item-text">
-						<a href="">Espresso Seasonal</a>
-						<span class="text1">500 г</span>
-						<p class="text1">Дополнительный текст</p>
-					</div>
-
-					<div class="cart__main-item-count">1 шт</div>
-
-					<div class="cart__main-item-price">
-						<div class="cart__main-item-value">
-							<strong class="heading4">600</strong>
-							<span class="text2">₽</span>
-						</div>
-
-						<span class="cart__main-cart-item"></span>
-					</div>
-				</li>
-
-				<li class="cart__main-item">
-					<div class="cart__main-item-img">
-						<img
-							src="./src/images/cart-sample-img.png"
-							alt="" />
-					</div>
-
-					<div class="cart__main-item-text">
-						<a href="">Espresso Seasonal</a>
-						<span class="text1">500 г</span>
-						<p class="text1">Дополнительный текст</p>
-					</div>
-
-					<div class="cart__main-item-count">1 шт</div>
-
-					<div class="cart__main-item-price">
-						<div class="cart__main-item-value">
-							<strong class="heading4">600</strong>
-							<span class="text2">₽</span>
-						</div>
-
-						<span class="cart__main-cart-item"></span>
-					</div>
-				</li>
-			</div>
-		</div>
-
-		<div class="modal__content-box">
-			<p class="heading2">Похожие товары</p>
-			<div class="catalog__content-box">
-				<div class="catalog-card-1">
-					<a
-						href="/"
-						class="catalog-card-1__img">
-						<img
-							src="./src/images/lil-cake-sample-1.png"
-							alt="" />
-					</a>
-					<div class="catalog-card-1__descr">
-						<div class="catalog-card-1__imgless">
-							<div class="catalog-card-1__imgless-box">
-								<span>новинка</span>
-								<strong>Блюдо на фотосессии прямо сейчас</strong>
-							</div>
-						</div>
-
-						<div class="catalog-card-1__info">
-							<a
-								href="/"
-								class="catalog-card-1__title heading4">
-								Пироженое «Фруктовое»
-							</a>
-
-							<div class="catalog-card__price">
-								<div class="catalog-card__sale">
-									<div class="catalog-card__sale-price">
-										240
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__weight">/ 100 г</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
-					</div>
-				</div>
-
-				<div class="catalog-card-1">
-					<a
-						href="/"
-						class="catalog-card-1__img">
-						<img
-							src="./src/images/lil-cake-sample-2.png"
-							alt="" />
-					</a>
-					<div class="catalog-card-1__descr">
-						<div class="catalog-card-1__imgless">
-							<div class="catalog-card-1__imgless-box">
-								<span>новинка</span>
-								<strong>Блюдо на фотосессии прямо сейчас</strong>
-							</div>
-						</div>
-
-						<div class="catalog-card-1__info">
-							<a
-								href="/"
-								class="catalog-card-1__title heading4">
-								Пироженое «Фруктовое»
-							</a>
-
-							<div class="catalog-card__price">
-								<div class="catalog-card__sale">
-									<div class="catalog-card__sale-price">
-										240
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__weight">/ 100 г</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
-					</div>
-				</div>
-
-				<div class="catalog-card-1">
-					<a
-						href="/"
-						class="catalog-card-1__img">
-						<img
-							src="./src/images/lil-cake-sample-3.png"
-							alt="" />
-					</a>
-					<div class="catalog-card-1__descr">
-						<div class="catalog-card-1__imgless">
-							<div class="catalog-card-1__imgless-box">
-								<span>новинка</span>
-								<strong>Блюдо на фотосессии прямо сейчас</strong>
-							</div>
-						</div>
-
-						<div class="catalog-card-1__info">
-							<a
-								href="/"
-								class="catalog-card-1__title heading4">
-								Пироженое «Шоколадное»
-							</a>
-
-							<div class="catalog-card__price">
-								<div class="catalog-card__sale">
-									<div class="catalog-card__sale-price">
-										240
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__weight">/ 100 г</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
-					</div>
-				</div>
-
-				<div class="catalog-card-1">
-					<a
-						href="/"
-						class="catalog-card-1__img">
-						<img
-							src="./src/images/lil-cake-sample-4.png"
-							alt="" />
-					</a>
-					<div class="catalog-card-1__descr">
-						<div class="catalog-card-1__imgless">
-							<div class="catalog-card-1__imgless-box">
-								<span>новинка</span>
-								<strong>Блюдо на фотосессии прямо сейчас</strong>
-							</div>
-						</div>
-
-						<div class="catalog-card-1__info">
-							<a
-								href="/"
-								class="catalog-card-1__title heading4">
-								Пироженое «сливочное»
-							</a>
-
-							<div class="catalog-card__price">
-								<div class="catalog-card__sale">
-									<div class="catalog-card__sale-price">
-										240
-										<span>₽</span>
-									</div>
-									<div class="catalog-card__weight">/ 100 г</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>закрыть</span>
-			</button>
-		</div>
-	</div>
-</div>
-
-<!-- модалка "Напишите нам" -->
-<div class="modal text-us">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Напишите нам</p>
-
-		<form class="modal__form">
-			<div class="input-container modal__input-large">
-				<input
-					type="text"
-					id="name5"
-					class="input input-name"
-					placeholder="Ваше Имя" />
-				<label
-					for="name5"
-					class="input-label">
-					Ваше Имя
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div class="input-container modal__input-large">
-				<input
-					type="text"
-					id="email6"
-					class="input input-email"
-					placeholder="Email" />
-				<label
-					for="email6"
-					class="input-label">
-					Email
-				</label>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-				<div class="input-status">Неверный формат</div>
-			</div>
-
-			<div
-				class="input-container modal__textarea-medium input-textarea-wrapper">
-				<textarea
-					type="text"
-					id="textarea2"
-					class="input input-textarea"
-					placeholder="Комментарий"
-					maxlength="1000"></textarea>
-				<label
-					for="textarea2"
-					class="input-label">
-					Комментарий
-				</label>
-				<span class="modal__textarea-limits">0/1000</span>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-			</div>
-		</form>
-
-		<div class="modal__btns modal__btns--between">
-			<div class="account-main__left-policy menu">
-				<p>Нажимая на кнопку, вы принимаете</p>
-				<a href="#">условия пользовательского соглашения</a>
-			</div>
-			<button class="square-btn blue-square-btn">
-				<span>отправить</span>
-			</button>
-		</div>
-	</div>
-</div>
-
-<!-- модалка "Отзыв о кофейне" -->
-<div class="modal feedback">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-
-		<p class="heading2">Отзыв к кофейне в БЦ «Валлекс»</p>
-
-		<div class="rates">
-			<p class="rates__title">Оцените</p>
-
-			<div class="rates__icons-wrapper">
-				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
-				</svg>
-				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
-				</svg>
-				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
-				</svg>
-				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
-				</svg>
-				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
-				</svg>
-			</div>
-		</div>
-
-		<form class="modal__form">
-			<div
-				class="input-container modal__textarea-medium input-textarea-wrapper">
-				<textarea
-					type="text"
-					id="textarea3"
-					class="input input-textarea"
-					placeholder="Расскажите о продукте"
-					maxlength="1000"></textarea>
-				<label
-					for="textarea3"
-					class="input-label">
-					Расскажите о продукте
-				</label>
-				<span class="modal__textarea-limits">0/1000</span>
-				<div class="icon success"></div>
-				<div class="icon invalid"></div>
-			</div>
-		</form>
-
-		<div class="upload">
-			<p class="upload__title">Загрузите до 5 фотографий</p>
-			<div class="upload__content">
-				<div class="upload__box">
-					<div class="upload__preview-box">
-						<img alt="" />
-						<span class="upload__preview-box-remove"></span>
-					</div>
-
-					<div class="upload__preview-box">
-						<img alt="" />
-						<span class="upload__preview-box-remove"></span>
-					</div>
-
-					<div class="upload__preview-box">
-						<img alt="" />
-						<span class="upload__preview-box-remove"></span>
-					</div>
-
-					<div class="upload__preview-box">
-						<img alt="" />
-						<span class="upload__preview-box-remove"></span>
-					</div>
-
-					<div class="upload__preview-box">
-						<img alt="" />
-						<span class="upload__preview-box-remove"></span>
-					</div>
-
-					<div class="upload__input-label">
-						<input
-							type="file"
-							class="upload__input"
-							accept="image/*" />
-					</div>
-				</div>
-
-				<div class="upload__info">
-					<strong>Нажмите на область с иконкой</strong>
-					<span>Формат JPG, JPEG, PNG, BMP, GIF</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>отправить</span>
-			</button>
-
-			<button class="arrow-link">
-				<span>Отменить</span>
-			</button>
-		</div>
-	</div>
-</div>
-
-<!-- модалка "Вы здесь находитесь?" -->
 <div class="modal is-correct-adress">
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
 
-		<p class="heading2">Вы здесь находитесь?</p>
+<div class="modal map-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
 
-		<div class="map-block__form-adress-wrapper">
-			<div class="map-block__form-adress">
-				<span class="map-block__form-adress-value">
-					Москва, ул. 1-й Старомытищенский пр-д, 15к1,
-				</span>
+<div class="modal personal-info-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
 
-				<div class="map-block__form-adress-remove"></div>
-			</div>
-			<div class="map-block__identify-box">
-				<p>Определить местоположение</p>
-			</div>
-		</div>
+<div class="modal chage-password-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
 
-		<div class="modal__btns modal__btns--center">
-			<button class="square-btn blue-square-btn">
-				<span>да</span>
-			</button>
+<div class="modal add-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
 
-			<button class="arrow-link">
-				<span>другое местоположение</span>
-			</button>
-		</div>
+<div class="modal feedback-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal feedback-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal text-us">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal request-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal vacancy-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal message-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal request-sended-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal unavailable-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
 	</div>
 </div>
 

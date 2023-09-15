@@ -17,79 +17,6 @@ if (selects) {
 	});
 }
 
-//обработка смежной кнопки закрытия модалки
-const modals = document.querySelectorAll('.modal');
-const activeClass = 'active';
-if (modals) {
-	modals.forEach((item) => {
-		const closeBtn = item.querySelector('.modal__close-btn');
-		closeBtn.addEventListener('click', () => {
-			item.classList.remove(activeClass);
-		});
-	});
-}
-
-//обработка закрытия модалки при клике вне элемента
-if (modals) {
-	modals.forEach((item) => {
-		item.addEventListener('click', (e) => {
-			if (e.target === item) {
-				item.classList.remove(activeClass);
-			}
-		});
-	});
-}
-
-//обработка модалки для фильтра
-const filterBtn = document.querySelectorAll('#filter');
-const filterModal = document.querySelector('.filter-modal');
-
-if (filterBtn) {
-	filterBtn.forEach((item) => {
-		item.addEventListener('click', () => {
-			filterModal.classList.toggle(activeClass);
-		});
-	});
-}
-
-//обработка модалки для фильтра (news)
-const filterBtnNews = document.querySelectorAll('#filter-1');
-const filterModalNews = document.querySelector('.filter-modal-1');
-
-if (filterBtnNews) {
-	filterBtnNews.forEach((item) => {
-		item.addEventListener('click', () => {
-			filterModalNews.classList.toggle(activeClass);
-		});
-	});
-}
-
-//очистка фильтра
-const clearBtn = document.querySelectorAll('#clear-filter');
-
-if (clearBtn) {
-	clearBtn.forEach((item) => {
-		item.addEventListener('click', () => {
-			const inputs = filterModal.querySelectorAll('input');
-			inputs.forEach((item) => {
-				item.checked = false;
-			});
-		});
-	});
-}
-
-//очистка фильтра (news)
-if (clearBtn) {
-	clearBtn.forEach((item) => {
-		item.addEventListener('click', () => {
-			const inputs = filterModalNews.querySelectorAll('input');
-			inputs.forEach((item) => {
-				item.checked = false;
-			});
-		});
-	});
-}
-
 //обработка select-popup !общего! (изменение активного элемента в кнопке)
 const mainSelects = document.querySelectorAll('.popup-block__popup--select');
 
@@ -116,12 +43,38 @@ if (cartBtnInputs) {
 	cartBtnInputs.forEach((element) => {
 		element.addEventListener('input', () => {
 			const cartBtnWrapper = element.closest('.cart-input-wrapper');
-			if (cartBtnWrapper) {
-				console.log('Найден элемент:', cartBtnWrapper);
-			} else {
-				console.log('Элемент не найден');
-			}
 			cartBtnWrapper.classList.toggle('active');
+		});
+	});
+}
+
+//обработка смежной кнопки закрытия модалки
+const modal = document.querySelectorAll('.modal');
+
+if (modal) {
+	modal.forEach((item) => {
+		const closeBtn = item.querySelector('.modal__close-btn');
+		const root = item.querySelector('.modal__root');
+
+		const transitionHandler = () => {
+			while (root.firstChild) {
+				root.removeChild(root.firstChild);
+			}
+			item.classList.remove('active');
+			item.removeEventListener('transitionend', transitionHandler);
+		};
+
+		closeBtn.addEventListener('click', () => {
+			item.classList.remove('active');
+			item.addEventListener('transitionend', transitionHandler);
+		});
+
+		//обработка клика вне модалки, для закрытия
+		item.addEventListener('click', (e) => {
+			if (e.target === item) {
+				item.classList.remove('active');
+				item.addEventListener('transitionend', transitionHandler);
+			}
 		});
 	});
 }

@@ -211,7 +211,7 @@ body {
 	justify-content: center;
 	border-radius: 50%;
 	transition: background-color 0.2s ease-in-out;
-	background: $light url(../images/svg/symbol/sprite.svg#short-arrow-right)
+	background: $light url(../images/svg/generic/short-arrow-right.svg)
 		center/40% no-repeat;
 
 	svg {
@@ -486,7 +486,7 @@ body {
 	font-size: 2rem;
 
 	font-weight: 400;
-	line-height: 1;
+	line-height: 1.25;
 
 	@media (max-width: 48em) {
 		font-size: 2.8rem;
@@ -508,7 +508,7 @@ body {
 	}
 
 	@media (max-width: 48em) {
-		margin-top: 29.6rem;
+		margin-top: 11rem;
 		flex-direction: column;
 		gap: 5rem;
 
@@ -713,6 +713,7 @@ body {
 			font-size: 2.8rem;
 			line-height: 4rem;
 			border-width: 0.2rem;
+			height: auto;
 
 			&:focus-visible + .input-label,
 			&:not(:placeholder-shown) + .input-label,
@@ -1382,6 +1383,182 @@ body {
 			transform: translate(-50%, -50%);
 		}
 	}
+
+	@media (max-width: 48em) {
+		padding-top: 12rem;
+		padding-bottom: 12rem;
+	
+		&__container {
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+
+		&-left {
+			&__heading {
+				max-width: 59rem;
+			}
+		}
+	
+		&__left {
+			margin-bottom: 8rem;
+			width: 100%;
+	
+			&-heading {
+				margin-bottom: 8rem;
+			}
+	
+			&-description {
+				margin-bottom: 0;
+				p {
+					&:not(:last-child) {
+						margin-bottom: 2rem;
+					}
+					&:last-child {
+						margin-bottom: 8rem;
+					}
+				}
+			}
+	
+			&-link {
+				margin-top: 8rem;
+				position: relative;
+				left: 100%;
+				transform: translateX(-100%);
+			}
+	
+			.arrow-link {
+				width: 100%;
+				
+				span {
+					margin-left: auto;
+				}
+			}
+		}
+	
+		&__right {
+			width: 100%;
+			justify-content: space-between;
+	
+			&-img {
+				margin-right: 0;
+				width: 32.6rem;
+				height: 42rem;
+				border-radius: 0 0 5.2rem 5.2rem;
+			}
+	
+			&-video {
+				width: 32.4rem;
+				height: 42rem;
+				border-radius: 0 0 5.2rem 5.2rem;
+	
+				img {
+					max-height: 42rem;
+				}
+			}
+	
+			.video-js {
+				width: 32.6rem;
+				height: 42rem;
+			}
+		}
+	
+		.square-btn {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.about-info__card {
+		flex-direction: column-reverse;
+
+		&.section-info__card-big-padding {
+			padding-top: 14rem;
+
+			.section-info__card-left__heading {
+				top: -61rem;
+			}
+		}
+		
+		.section-info__card-left {
+			width: auto;
+			position: relative;
+
+			&__heading {
+				position: absolute;
+				top: -58rem;
+				left: 0rem;
+				leading-trim: both;
+				text-edge: cap;
+			}
+
+			&__link{
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+		.section-info__card-right {
+			width: auto;
+			height: auto;
+			margin: 12rem 0 8rem 0;
+			column-gap: 1rem;
+
+			&__img {
+				width: 28.4rem;
+				height: 37rem;
+			}
+
+			.video-js {
+				width: 28.4rem;
+				height: 37rem;
+			}
+
+			&__large {
+				.video-js {
+					width: 55rem;
+					height: 36.6rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.section-info__card--big-right-part {
+		overflow: hidden;
+		height: auto;
+		flex-direction: column;
+		padding-top: 0;
+		padding-bottom: 0;
+		border-radius: 0 0 7.2rem 7.2rem;
+
+		.section-info__card-left {
+			padding: 10rem 4rem 8rem;
+
+			&__heading {
+				margin: 0 0 8rem 0;
+				position: static;
+			}
+		}
+
+		.section-info__card-right {
+			margin: 0;
+			height: 50rem;
+			border-radius: 0;
+
+			&__img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.video-js {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 }
 
 .accordion {
@@ -1407,7 +1584,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/generic/acc-head-ornament.svg) top
+			background: url(../images/svg/bg/acc-head-ornament.svg) top
 					left/cover no-repeat,
 				$biege;
 			cursor: pointer;
@@ -1520,7 +1697,7 @@ body {
 		&.active {
 			.acc-content {
 				transition: 0.7s ease-in-out;
-				max-height: 200rem !important;
+				// max-height: 200rem !important;
 				opacity: 1;
 			}
 
@@ -1536,7 +1713,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/generic/acc-head-ornament.svg) top
+			background: url(../images/svg/bg/acc-head-ornament.svg) top
 					left/cover no-repeat,
 				$biege;
 			cursor: pointer;

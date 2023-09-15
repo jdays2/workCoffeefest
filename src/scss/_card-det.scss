@@ -273,7 +273,6 @@
 					@media (hover: hover) {
 						span {
 							font-weight: 700;
-							line-height: 125%;
 						}
 					}
 				}
@@ -286,7 +285,6 @@
 
 			input:checked + .card-det__item-title {
 				font-weight: 700;
-				line-height: 125%;
 			}
 		}
 	}
@@ -352,8 +350,10 @@
 
 		align-items: flex-end;
 		justify-content: space-between;
-		padding-bottom: 0.4rem;
-		border-bottom: 0.1rem solid rgba(121, 121, 121, 0.2);
+		&:not(:last-child) {
+			padding-bottom: 0.4rem;
+			border-bottom: 0.1rem solid rgba(121, 121, 121, 0.2);
+		}
 
 		span {
 			width: 15.8rem;
@@ -580,6 +580,127 @@
 
 		&__more {
 			margin: 0 0 5rem 0;
+		}
+
+		&__current-price-box {
+			strong {
+				font-size: 6rem;
+			}
+
+			span {
+				font-size: 4rem;
+			}
+		}
+
+		&__discount-price-box {
+			strong {
+				font-size: 3.8rem;
+			}
+
+			span {
+				font-size: 2.8rem;
+			}
+		}
+
+		&__popup {
+			width: 59rem;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.card-det {
+		flex-direction: column;
+
+		&__img {
+			width: 67rem;
+			height: 72.4rem;
+			margin: 0 0 4rem 0;
+		}
+
+		&__content-box {
+			padding: 0 4rem;
+		}
+
+		&__subs-wrapper {
+			width: auto;
+			max-width: 67rem;
+
+			p {
+				width: auto;
+			}
+		}
+
+		&__main-box {
+			flex-direction: column;
+			width: auto;
+		}
+
+		&__left-side {
+			margin: 0 0 5rem 0;
+		}
+
+		&__stats-featurs {
+			width: auto;
+		}
+
+		&__stats-list {
+			flex-direction: row;
+			max-width: 67rem;
+			flex-wrap: wrap;
+		}
+
+		&__stats-item {
+			flex: 0 1 47%;
+		}
+
+		&__right-side {
+			position: static;
+			background: none;
+			box-shadow: none;
+			border: none;
+			width: auto;
+			max-width: 67rem;
+			padding: 0;
+			row-gap: 5rem;
+
+			.controlls {
+				width: 22rem;
+				justify-content: space-between;
+
+				&__count-btn {
+					width: 2.4rem;
+					height: 2.4rem;
+				}
+			}
+		}
+
+		&__stats-weight-list {
+			width: 45.4rem;
+			justify-content: space-between;
+			margin: 0;
+
+			label {
+				span {
+					font-size: 2.8rem;
+				}
+
+				input:checked + span {
+					font-size: 5.2rem;
+				}
+			}
+		}
+
+		&__more-wrapper {
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
+		&__more {
+
+			&:not(:last-child) {
+				margin: 0 5rem 0 0;
+			}
 		}
 
 		&__current-price-box {

@@ -186,49 +186,72 @@
 			}
 		}
 	}
+}
 
-	@media (max-width: 48em) {
-		&__heading {
-			margin-bottom: 8rem;
-		}
-		&__swiper {
-			&-slide {
-				&__icon {
-					padding: 8rem 4rem;
-					flex-direction: column;
-					align-items: flex-start;
-					height: auto;
-					border-radius: 0 0 7.2rem 7.2rem;
+@media (max-width: 48em) {
+	.services {
+		.services__swiper-slide {
+			&__text {
+				padding: 8rem 4rem;
+				height: calc(100% - 50.4rem);
 
-					img {
-						margin-bottom: 2.4rem;
-						width: 18rem;
-						height: 19.2rem;
-						align-self: center;
-					}
+				&-description {
+					width: auto;
+				}
+			}
 
-					&-heading {
-						margin-bottom: 2.4rem;
-					}
+			&__icon {
+				height: 50.4rem;
 
-					&-heading,
-					&-description {
-						color: $light;
-					}
+				&-heading {
+					display: none;
+				}
+				&-description {
+					display: none;
 				}
 			}
 		}
 
-		.services__list {
-			overflow: hidden;
-
-			&-item {
-				&__text {
+		&__list-item {
+			&--small {
+				.services__list-item__text {
 					padding: 8rem 4rem 12rem 4rem;
-					height: auto;
+					height: calc(100% - 50.4rem);
 				}
-				&__icon {
+
+				.services__list-item__icon {
 					height: 50.4rem;
+				}
+			}
+
+			&--medium {
+				.services__list-item__text {
+					min-height: 50rem;
+					height: calc(100% - 54.4rem);
+				}
+
+				.services__list-item__icon {
+					height: 54.4rem;
+				}
+			}
+
+			&__text {
+				padding: 8rem 4rem;
+				height: calc(100% - 50.4rem);
+
+				&-description {
+					width: auto;
+				}
+			}
+
+			&__icon {
+				height: 50.4rem;
+
+				&-heading {
+					display: none;
+				}
+				&-description {
+					display: none;
 				}
 			}
 		}
@@ -240,7 +263,7 @@
 				width: auto;
 				flex: 0 1 100%;
 
-				&__imgless {
+				&__img {
 					height: 50.6rem;
 				}
 
@@ -248,115 +271,42 @@
 					height: auto;
 				}
 
-				.three-card-img {
-					height: 51rem !important;
+				&__imgless {
+					height: 50.6rem;
 				}
 
 				&__info {
 					padding: 8rem 4rem;
+					row-gap: 2.4rem;
 					height: auto;
 
 					&-block-title {
 						font-size: 3.6rem;
-						line-height: 150%; 
-						margin: 0 0 2.4rem 0;
-					}
-
-					&-row {
-						margin: 0 0 2.4rem 0;
-
-						&:nth-child(3) {
-							margin: 0 0 5rem 0;
-						}
 					}
 
 					&-item {
+						strong,
 						span {
-							font-size: 2.8rem;
-						}
-
-						strong {
 							font-size: 2.8rem;
 						}
 					}
 
 					&-price {
+						margin-top: 2.6rem;
 						font-size: 5.2rem;
-						margin: 0 0 7rem auto;
 					}
 				}
 
 				&__link {
-					margin: 0 auto;
-					margin-left: -1.5rem;
+					padding: 0;
+					margin-top: 4.6rem;
+					margin-left: -1rem;
+					margin-right: -1rem;
+					text-align: center;
 
 					span {
-						display: inline-block;
 						font-size: 3.6rem;
-						width: 62rem;
-						margin: 0 auto;
-						text-align: center;
 					}
-				}
-			}
-		}
-
-		.services__swiper-slide {
-			&__text {
-				padding: 8rem 4rem;
-				height: calc(100% - 47.7rem);
-			}
-
-			&__text-description {
-				width: 59.2rem;
-				margin: 0 0 12rem 0;
-			}
-
-			&__text-link {
-				font-size: 3.2rem;
-			}
-
-			&__icon {
-				height: 50.4rem;
-			}
-		}
-
-		.services__slide {
-			.services__list-item__text {
-				padding: 8rem 4rem;
-				height: calc(100% - 47.7rem);
-			}
-		}
-
-		.swiper-controllers {
-			.swiper-prev,
-			.swiper-next {
-				display: none;
-			}
-		}
-
-		.services__swiper-pagination-1 {
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-			justify-content: center;
-			width: 100%;
-			max-width: 67rem;
-
-			& .swiper-pagination-bullet {
-				width: 3rem;
-				height: 3rem;
-				border: 0.2rem solid #29354d;
-				border-radius: 50%;
-				background-color: transparent;
-				opacity: 1;
-
-				&-active {
-					background-color: #29354d;
-				}
-
-				&:not(:last-child) {
-					margin-right: 2.6rem;
 				}
 			}
 		}

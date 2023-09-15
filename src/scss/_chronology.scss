@@ -5,6 +5,12 @@
 	&__container {
 		position: relative;
 		padding-bottom: 24rem;
+		background-image: url(../images/svg/bg/angle-1.svg),
+			url(../images/svg/bg/angle-2.svg), url(../images/svg/bg/angle-3.svg),
+			url(../images/svg/bg/angle-4.svg);
+		background-size: 12.9rem;
+		background-repeat: no-repeat;
+		background-position: top left, top right, bottom left, bottom right;
 	}
 
 	&__borders {
@@ -125,9 +131,6 @@
 
 						svg {
 							transform: scale(1.1);
-						}
-
-						path {
 							stroke: $light;
 						}
 					}
@@ -155,8 +158,6 @@
 					.chronology__timeline-list__item-icon-wrapper {
 						svg {
 							transform: scale(1.25);
-						}
-						path {
 							stroke: $light;
 						}
 
