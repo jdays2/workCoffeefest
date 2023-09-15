@@ -10,7 +10,6 @@
 		margin-bottom: 6rem;
 
 		.map-block__map-box {
-			border-radius: 0 0 5rem 5rem;
 			overflow: hidden;
 		}
 	}
@@ -316,7 +315,8 @@
 
 						&-disc {
 							row-gap: 1.6rem;
-							column-gap: 0;
+							-moz-column-gap: 0;
+							     column-gap: 0;
 
 							& > * {
 								font-size: 2.8rem;

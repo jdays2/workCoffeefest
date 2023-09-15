@@ -3,9 +3,10 @@ const mapInitSecond = () => {
 	const searchItems = document.querySelectorAll('.map-block__search-item');
 	const mapModal = document.querySelector('.modal-map');
 	const activeClass = 'active';
+	const root = document.querySelector('#root');
 
 	//яндекс карта
-	if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
+	if (root) {
 		const init = () => {
 			const map = new ymaps.Map('root', {
 				center: [55.807749, 37.570141],
@@ -71,7 +72,8 @@ const mapInitSecond = () => {
 		const activeClass = 'active';
 		searchItems.forEach((item, id) => {
 			const link = item.querySelector('.arrow-link');
-			link.addEventListener('click', () => {
+
+			const linkClickHandler = () => {
 				mapModal.classList.add(activeClass);
 
 				if (item.classList.contains(activeClass)) {
@@ -87,11 +89,13 @@ const mapInitSecond = () => {
 						}
 					});
 				}
-			});
+			};
+			link.removeEventListener('click', linkClickHandler);
+			link.addEventListener('click', linkClickHandler);
 		});
 	}
 
-	//инициируем слайдер для модалки внутри карты 
+	//инициируем слайдер для модалки внутри карты
 	const modalMapSwiper = new Swiper('.modal-map__swiper', {
 		slidesPerView: 1,
 		pagination: {
@@ -99,68 +103,60 @@ const mapInitSecond = () => {
 			el: '.modal-map__swiper-pagination',
 		},
 	});
+
+	closeMapModal();
 };
 
-// const connect = (btn, modal) => {
-// 	btn.addEventListener('click', () => {
-// 		modal.classList.add('active');
-// 	});
-// };
+//закрытие модалки для карты клик вне поля и по кнопке
+const closeMapModal = () => {
+	const madals = document.querySelectorAll('.modal-map');
+	madals.forEach((block) => {
+		const buttons = block.querySelectorAll('.modal__close-btn');
+		const removeActiveClass = () => {
+			block.classList.remove('active');
+		};
 
-// const requestBtn = document.querySelectorAll('.request-vacancy-btn');
-// const requestModal = document.querySelector('.vacancy-modal');
+		buttons.forEach((btn) => {
+			btn.removeEventListener('click', removeActiveClass);
+			btn.addEventListener('click', removeActiveClass);
+		});
 
-// if (requestBtn) {
-// 	requestBtn.forEach((btn) => {
-// 		connect(btn, requestModal);
-// 	});
-// }
-
-// const redactProfBtns = document.querySelectorAll('#red-prof');
-// const redactProfModal = document.querySelector('.personal-info-modal');
-
-// if (redactProfBtns) {
-// 	redactProfBtns.forEach((btn) => {
-// 		connect(btn, redactProfModal);
-// 	});
-// }
-
-// const changePasswordBtn = document.querySelectorAll('#change-pass');
-// const changePasswordModal = document.querySelector('.chage-password-modal');
-
-// if (changePasswordBtn) {
-// 	changePasswordBtn.forEach((btn) => {
-// 		connect(btn, changePasswordModal);
-// 	});
-// }
-
-// const addAdressBtn = document.querySelectorAll('#add-adress');
-// const addAdressModal = document.querySelector('.add-adress');
-
-// if (addAdressBtn) {
-// 	addAdressBtn.forEach((btn) => {
-// 		connect(btn, addAdressModal);
-// 	});
-// }
-
-// const addCreditCardBtns = document.querySelectorAll('.add-card');
-// const addCreditCardModal = document.querySelector('.add-card-modal');
-
-// if (addCreditCardBtns) {
-// 	addCreditCardBtns.forEach((btn) => {
-// 		connect(btn, addCreditCardModal);
-// 	});
-// }
+		block.addEventListener('click', (e) => {
+			if (e.target === block) {
+				block.classList.remove('active');
+			}
+		});
+	});
+};
+closeMapModal();
 
 //ВЫВОД МОДАЛОК ИЗ JS!!!
 
 //модалка фильтр1 (новости)
-const addModal = (name, child) => {
+const addModal = (name, child, name1, child2, btn) => {
 	const wrapper = document.querySelector(`.${name}`);
 	if (!wrapper) return;
+
 	const wrapperRoot = wrapper.querySelector('.modal__root');
 	wrapper.classList.add('active');
 	wrapperRoot.innerHTML = child;
+
+	if (document.querySelector('#root')) {
+		mapInitSecond();
+		initFeedbackHandler();
+	}
+
+	if (name1 && child2) {
+		const feedbackConfirmationBtn = document.querySelector(`${btn}`);
+
+		const feedbackLickHandler = () => {
+			wrapper.classList.remove('active');
+			addModal(name1, child2);
+		};
+
+		feedbackConfirmationBtn.removeEventListener('click', feedbackLickHandler);
+		feedbackConfirmationBtn.addEventListener('click', feedbackLickHandler);
+	}
 };
 
 const modalFilterFirst = `
@@ -325,43 +321,7 @@ if (filterBtnCategory) {
 	});
 }
 
-//модалка с уточнением геолокации "Вы здесь находитесь?"
-const geoContent = `<p class="heading2">Вы здесь находитесь?</p>
-<div class="map-block__form-adress-wrapper">
-	<div class="map-block__form-adress">
-		<span class="map-block__form-adress-value">
-			Москва, ул. 1-й Старомытищенский пр-д, 15к1,
-		</span>
-
-		<div class="map-block__form-adress-remove"></div>
-	</div>
-	<div class="map-block__identify-box">
-		<p>Определить местоположение</p>
-	</div>
-</div>
-
-<div class="modal__btns modal__btns--center">
-	<button class="square-btn blue-square-btn">
-		<span>да</span>
-	</button>
-
-	<button class="arrow-link">
-		<span>другое местоположение</span>
-	</button>
-</div>
-`;
-
-const geoBtn = document.querySelector('#geo');
-if (geoBtn) {
-	const modalClass = 'is-correct-adress';
-
-	geoBtn.addEventListener('click', () => {
-		addModal(modalClass, geoContent);
-		clearFilter();
-	});
-}
-
-//модалка с картой "Карта?" (находиться на странице)
+//модалка с уточнением геолокации "Вы здесь находитесь? + модалка карты"
 const mapContent = `<div class="map-block">
 <div class="map-block__search-box">
 	<p class="heading4 map-block__search-title">Адреса ресторанов</p>
@@ -743,28 +703,958 @@ const mapContent = `<div class="map-block">
 					</a>
 				</div>
 
-				<a
-					href="#"
-					class="arrow-link">
+				<button
+					class="arrow-link left-feedback">
 					<span>оставить отзыв</span>
 					<svg class="arrow-link__icon">
 						<use
 							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
 					</svg>
-				</a>
+				</button>
 			</div>
 		</div>
 	</div>
 </div>
 </div>`;
+const geoContent = `<p class="heading2">Вы здесь находитесь?</p>
+<div class="map-block__form-adress-wrapper">
+	<div class="map-block__form-adress">
+		<span class="map-block__form-adress-value">
+			Москва, ул. 1-й Старомытищенский пр-д, 15к1,
+		</span>
 
-const mapBtn = document.querySelector('#map');
-if (mapBtn) {
-	const modalClass = 'map-modal';
+		<div class="map-block__form-adress-remove"></div>
+	</div>
+	<div class="map-block__identify-box">
+		<p>Определить местоположение</p>
+	</div>
+</div>
 
-	mapBtn.addEventListener('click', () => {
-		addModal(modalClass, mapContent);
-		clearFilter();
-		mapInitSecond();
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn">
+		<span>да</span>
+	</button>
+
+	<button class="arrow-link" id="map">
+		<span>другое местоположение</span>
+	</button>
+</div>
+`;
+
+const geoBtn = document.querySelectorAll('.geo-btn');
+
+if (geoBtn) {
+	const modalClass = 'is-correct-adress';
+	const mapClass = 'map-modal';
+	const secondBtn = '#map';
+
+	geoBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, geoContent, mapClass, mapContent, secondBtn);
+		}),
+	);
+}
+
+//модалка "персональная информация"
+const personalInfoContent = `<p class="heading2">Персональная информация</p>
+<form class="modal__form">
+	<div class="input-container modal__input-medium">
+		<input
+			type="text"
+			id="name"
+			class="input input-name"
+			placeholder="Имя" />
+		<label
+			for="name"
+			class="input-label">
+			Имя
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-medium">
+		<input
+			type="text"
+			id="name1"
+			class="input input-name"
+			placeholder="Фамилия" />
+		<label
+			for="name1"
+			class="input-label">
+			Фамилия
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-medium">
+		<input
+			type="text"
+			id="email"
+			class="input input-email"
+			placeholder="Email" />
+		<label
+			for="email"
+			class="input-label">
+			Email
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-medium">
+		<input
+			type="number"
+			id="email"
+			class="input input-tel"
+			placeholder="Телефон" />
+		<label
+			for="email"
+			class="input-label">
+			Телефон
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+</form>
+
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn">
+		<span>сохранить изменения</span>
+	</button>
+</div>`;
+
+const personalBtn = document.querySelector('#red-prof');
+
+if (personalBtn) {
+	const modalClass = 'personal-info-modal';
+	personalBtn.addEventListener('click', () => {
+		addModal(modalClass, personalInfoContent);
 	});
+}
+
+//модалка "сменить пароль"
+const changePasswordContent = `
+	<p class="heading2">Изменить пароль</p>
+
+	<form class="modal__form">
+		<div class="input-container modal__input-large">
+			<input
+				type="text"
+				id="pass"
+				class="input"
+				placeholder="Старый пароль" />
+			<label
+				for="pass"
+				class="input-label">
+				Старый пароль
+			</label>
+			<div class="icon success"></div>
+			<div class="icon invalid"></div>
+			<div class="input-status">Неверный формат</div>
+
+			
+		</div>
+
+		<div class="input-container modal__input-medium">
+			<input
+				type="text"
+				id="newpass"
+				class="input"
+				placeholder="Новый пароль" />
+			<label
+				for="newpass"
+				class="input-label">
+				Новый пароль
+			</label>
+			<div class="icon success"></div>
+			<div class="icon invalid"></div>
+			<div class="input-status">Неверный формат</div>
+
+			
+		</div>
+
+		<div class="input-container modal__input-medium">
+			<input
+				type="text"
+				id="reppas"
+				class="input"
+				placeholder="Повторите пароль" />
+			<label
+				for="reppas"
+				class="input-label">
+				Повторите пароль
+			</label>
+			<div class="input-status">Неверный формат</div>
+
+			<div class="icon success"></div>
+			<div class="icon invalid"></div>
+			
+		</div>
+	</form>
+
+	<div class="modal__btns modal__btns--center">
+		<button class="square-btn blue-square-btn">
+			<span>сохранить изменения</span>
+		</button>
+
+		<div class="account-main__left-policy menu">
+			<a href="forget-password.html">Забыли пароль?</a>
+		</div>
+	</div>`;
+
+const changeBtn = document.querySelector('#change-pass');
+
+if (changeBtn) {
+	const modalClass = 'chage-password-modal';
+	changeBtn.addEventListener('click', () => {
+		addModal(modalClass, changePasswordContent);
+	});
+}
+
+//модалка "оставить отзыв"
+const initFeedbackHandler = () => {
+	const feedbackContent = `
+		<p class="heading2">Отзыв к кофейне в БЦ «Валлекс»</p>
+
+		<div class="rates">
+			<p class="rates__title">Оцените</p>
+
+			<div class="rates__icons-wrapper">
+				<svg class="rates__icon">
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+				</svg>
+				<svg class="rates__icon">
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+				</svg>
+				<svg class="rates__icon">
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+				</svg>
+				<svg class="rates__icon">
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+				</svg>
+				<svg class="rates__icon">
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+				</svg>
+			</div>
+		</div>
+
+		<form class="modal__form">
+			<div
+				class="input-container modal__textarea-medium input-textarea-wrapper">
+				<textarea
+					type="text"
+					id="textarea3"
+					class="input input-textarea"
+					placeholder="Расскажите о продукте"
+					maxlength="1000"></textarea>
+				<label
+					for="textarea3"
+					class="input-label">
+					Расскажите о продукте
+				</label>
+				<span class="modal__textarea-limits">0/1000</span>
+				<div class="icon success"></div>
+				<div class="icon invalid"></div>
+			</div>
+		</form>
+
+		<div class="upload">
+			<p class="upload__title">Загрузите до 5 фотографий</p>
+			<div class="upload__content">
+				<div class="upload__box">
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove"></span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove"></span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove"></span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove"></span>
+					</div>
+
+					<div class="upload__preview-box">
+						<img alt="" />
+						<span class="upload__preview-box-remove"></span>
+					</div>
+
+					<div class="upload__input-label">
+						<input
+							type="file"
+							class="upload__input"
+							accept="image/*" />
+					</div>
+				</div>
+
+				<div class="upload__info">
+					<strong>Нажмите на область с иконкой</strong>
+					<span>Формат JPG, JPEG, PNG, BMP, GIF</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn" id="feedback-confirmation">
+				<span>отправить</span>
+			</button>
+
+			<button class="arrow-link" id="remove-feedback-data">
+				<span>Отменить</span>
+			</button>
+		</div>`;
+	const feedbackConfirmationContent = `
+<p class="heading2">Спасибо за отзыв!</p>
+<p class="modal__message">Публикация отзыва может занять некоторое время</p>
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn">
+		<span>закрыть</span>
+	</button>
+		</div>`;
+	const feedbackBtn = document.querySelectorAll('.left-feedback');
+
+	///инициализация счетчика для textarea
+	const initTextvalueCounter = () => {
+		const textareaWrap = document.querySelectorAll('.input-textarea-wrapper');
+		if (textareaWrap) {
+			textareaWrap.forEach((item) => {
+				const textarea = item.querySelector('textarea');
+				const valueLimits = item.querySelector('.modal__textarea-limits');
+				if (textarea && valueLimits) {
+					const counterUpload = () => {
+						valueLimits.textContent = `${textarea.value.length}/1000`;
+					};
+					textarea.removeEventListener('input', counterUpload);
+					textarea.addEventListener('input', counterUpload);
+				}
+			});
+		}
+	};
+	///инициализация звезд с оценкой
+	const initStarsRate = () => {
+		const mainWrapper = document.querySelector('.feedback');
+		const iconsWrapper = document.querySelector('.rates__icons-wrapper');
+		const inputImg = document.querySelector('.upload__input');
+		const inputLabel = document.querySelector('.upload__input-label');
+		const inputText = document.querySelector('.upload__info');
+		const previewImages = document.querySelectorAll('.upload__preview-box');
+		const removeBtns = document.querySelectorAll('.upload__preview-box-remove');
+		const removeDataBtn = document.querySelector('#remove-feedback-data');
+
+		// добавляем счетчик на символы
+		initTextvalueCounter();
+
+		const imagesCounter = () => {
+			let validImageCount = 0;
+			for (const item of previewImages) {
+				const img = item.querySelector('img');
+				if (img.getAttribute('src')?.length) {
+					validImageCount++;
+				}
+			}
+
+			if (validImageCount === 5) {
+				inputLabel.style.display = 'none';
+				inputText.style.display = 'none';
+			} else {
+				inputLabel.style.display = 'block';
+				inputText.style.display = 'flex';
+			}
+		};
+
+		if (iconsWrapper && inputImg && removeBtns && removeDataBtn) {
+			//отображение :hover и постоянного выбранного состояния для иконок рейтинга
+
+			const icons = iconsWrapper.querySelectorAll('.rates__icon');
+			icons.forEach((icon, id) => {
+				const eventHandler = () => {
+					icons.forEach((currentIcon, i) => {
+						if (i <= id) {
+							currentIcon.classList.add('active');
+						} else {
+							currentIcon.classList.remove('active');
+						}
+					});
+				};
+				icon.removeEventListener('click', eventHandler);
+				icon.addEventListener('click', eventHandler);
+
+				const mouseOverHandler = () => {
+					icons.forEach((currentIcon, i) => {
+						currentIcon.classList.add('hover-zero');
+						if (i <= id) {
+							currentIcon.classList.add('hover-active');
+						} else {
+							currentIcon.classList.remove('hover-active');
+						}
+					});
+				};
+				const mouseOutHandler = () => {
+					icons.forEach((currentIcon) => {
+						currentIcon.classList.remove('hover-zero');
+						currentIcon.classList.remove('hover-active');
+					});
+				};
+				icon.removeEventListener('mouseover', mouseOverHandler);
+				icon.addEventListener('mouseover', mouseOverHandler);
+
+				iconsWrapper.removeEventListener('mouseout', mouseOutHandler);
+				iconsWrapper.addEventListener('mouseout', mouseOutHandler);
+			});
+
+			//загрузка изображений с превью в модалке
+			inputImg.addEventListener('change', function () {
+				const selectedFile = inputImg.files.item(0);
+				const reader = new FileReader();
+				reader.readAsDataURL(selectedFile);
+				reader.onload = function (event) {
+					for (const item of previewImages) {
+						const img = item.querySelector('img');
+
+						if (!img.hasAttribute('src') || img.getAttribute('src') === '') {
+							item.classList.add('active');
+							img.src = event.target.result;
+							imagesCounter();
+							break;
+						}
+					}
+				};
+			});
+
+			// удаление одного изображения
+			removeBtns.forEach((btn) => {
+				btn.addEventListener('click', () => {
+					const wrapper = btn.closest('.upload__preview-box');
+					const img = wrapper.querySelector('img');
+					img.removeAttribute('src');
+					console.log(img);
+					imagesCounter();
+					wrapper.classList.remove('active');
+				});
+			});
+
+			removeDataBtn.addEventListener('click', () => {
+				const allTextareas = document.querySelectorAll('textarea');
+				const icons = document.querySelectorAll('.rates__icon');
+				const inputImg = document.querySelector('.upload__input');
+				const textareaCounter = document.querySelector(
+					'.modal__textarea-limits',
+				);
+				//чистка всех input & textarea
+				inputImg.value = '';
+
+				allTextareas.forEach((element) => {
+					element.value = '';
+					textareaCounter.textContent = '0/1000';
+				});
+				//чистка всех star-icons
+				icons.forEach((element) => {
+					element.classList = 'rates__icon';
+				});
+				//удаление всех изображений
+				previewImages.forEach((image) => {
+					image.classList.remove('active');
+					const tag = image.querySelector('img');
+					tag.src = '';
+				});
+				imagesCounter();
+			});
+		}
+	};
+
+	if (feedbackBtn) {
+		const modalClass = 'feedback-modal';
+		const confirmationClass = 'feedback-sended-modal';
+		const secondBtn = '#feedback-confirmation';
+		feedbackBtn.forEach((btn) =>
+			btn.addEventListener('click', () => {
+				addModal(
+					modalClass,
+					feedbackContent,
+					confirmationClass,
+					feedbackConfirmationContent,
+					secondBtn,
+				);
+				initStarsRate();
+			}),
+		);
+	}
+};
+
+initFeedbackHandler();
+
+//модалка "Связаться с нами"
+const textUsContent = `
+<p class="heading2">Напишите нам</p>
+<form class="modal__form">
+	<div class="input-container modal__input-large">
+		<input
+			type="text"
+			id="name5"
+			class="input input-name"
+			placeholder="Ваше Имя" />
+		<label
+			for="name5"
+			class="input-label">
+			Ваше Имя
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-large">
+		<input
+			type="text"
+			id="email6"
+			class="input input-email"
+			placeholder="Email" />
+		<label
+			for="email6"
+			class="input-label">
+			Email
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div
+		class="input-container modal__textarea-medium input-textarea-wrapper">
+		<textarea
+			type="text"
+			id="textarea2"
+			class="input input-textarea"
+			placeholder="Комментарий"
+			maxlength="1000"></textarea>
+		<label
+			for="textarea2"
+			class="input-label">
+			Комментарий
+		</label>
+		<span class="modal__textarea-limits">0/1000</span>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+	</div>
+</form>
+
+<div class="modal__btns modal__btns--between">
+	<div class="account-main__left-policy menu">
+		<p>Нажимая на кнопку, вы принимаете</p>
+		<a href="#">условия пользовательского соглашения</a>
+	</div>
+	<button class="square-btn blue-square-btn" id='text-us-confirmation'>
+		<span>отправить</span>
+	</button>
+</div>`;
+const textUsConfirmationContent = `
+<p class="heading2">Заявка отправлена</p>
+<p class="modal__message">Мы ответим Вам в ближайщее время</p>
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn">
+		<span>закрыть</span>
+	</button>
+</div>`;
+
+const textUsBtn = document.querySelectorAll('#text-us');
+
+if (textUsBtn) {
+	const modalClass = 'text-us';
+	const confirmationClass = 'request-sended-modal';
+	const secondBtn = '#text-us-confirmation';
+
+	textUsBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(
+				modalClass,
+				textUsContent,
+				confirmationClass,
+				textUsConfirmationContent,
+				secondBtn,
+			);
+			initTextvalueCounter();
+		}),
+	);
+}
+
+//модалка "Отзыв на вакансию"
+const vacancyContent = `<button class="modal__close-btn"></button>
+
+<p class="heading2">Отклик на вакансию</p>
+
+<form class="modal__form">
+	<div class="input-container modal__input-medium">
+		<input
+			type="text"
+			id="name5"
+			class="input input-name"
+			placeholder="Имя" />
+		<label
+			for="name5"
+			class="input-label">
+			Имя
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-medium">
+		<input
+			type="number"
+			id="vac-tel"
+			class="input input-tel"
+			placeholder="Номер телефона" />
+		<label
+			for="vac-tel"
+			class="input-label">
+			Номер телефона
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-large">
+		<input
+			type="text"
+			id="vac-link"
+			class="input"
+			placeholder="Ссылка на резюме" />
+		<label
+			for="vac-link"
+			class="input-label">
+			Ссылка на резюме
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+</form>
+
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn" id="vacancy-confirmation-btn">
+		<span>отправить</span>
+	</button>
+</div>`;
+const vacancyConfirmationContent = `
+		<p class="heading2">Сообщение отправлено</p>
+
+		<p class="modal__message">Мы ответим Вам в ближайщее время</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+</div>`;
+
+const vacancyBtn = document.querySelectorAll('.vacancy-btn');
+
+if (vacancyBtn) {
+	const modalClass = 'vacancy-modal';
+	const confirmationClass = 'message-sended-modal';
+	const secondBtn = '#vacancy-confirmation-btn';
+
+	vacancyBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(
+				modalClass,
+				vacancyContent,
+				confirmationClass,
+				vacancyConfirmationContent,
+				secondBtn,
+			);
+		}),
+	);
+}
+
+//модалка "ответ на заявку"
+const requestContent = `<p class="heading2">Заявка отправлена!</p>
+<p class="modal__message">Мы ответим Вам в ближайщее время</p>
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn">
+		<span>закрыть</span>
+	</button>
+</div>`;
+
+const requestBtn = document.querySelectorAll('#request-btn');
+
+if (requestBtn) {
+	const modalClass = 'request-sended-modal';
+
+	requestBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, requestContent);
+		}),
+	);
+}
+
+//модалка "недоступные товары"
+const unavailableContent = `<div class="modal__content-box">
+<p class="heading2">Данные товары недоступны для заказа</p>
+<div class="modal__beige-box">
+	<li class="cart__main-item">
+		<div class="cart__main-item-img">
+			<img
+				src="./src/images/cart-sample-img.png"
+				alt="" />
+		</div>
+
+		<div class="cart__main-item-text">
+			<a href="">Espresso Seasonal</a>
+			<span class="text1">500 г</span>
+			<p class="text1">Дополнительный текст</p>
+		</div>
+
+		<div class="cart__main-item-count">1 шт</div>
+
+		<div class="cart__main-item-price">
+			<div class="cart__main-item-value">
+				<strong class="heading4">600</strong>
+				<span class="text2">₽</span>
+			</div>
+
+			<span class="cart__main-cart-item"></span>
+		</div>
+	</li>
+
+	<li class="cart__main-item">
+		<div class="cart__main-item-img">
+			<img
+				src="./src/images/cart-sample-img.png"
+				alt="" />
+		</div>
+
+		<div class="cart__main-item-text">
+			<a href="">Espresso Seasonal</a>
+			<span class="text1">500 г</span>
+			<p class="text1">Дополнительный текст</p>
+		</div>
+
+		<div class="cart__main-item-count">1 шт</div>
+
+		<div class="cart__main-item-price">
+			<div class="cart__main-item-value">
+				<strong class="heading4">600</strong>
+				<span class="text2">₽</span>
+			</div>
+
+			<span class="cart__main-cart-item"></span>
+		</div>
+	</li>
+
+	<li class="cart__main-item">
+		<div class="cart__main-item-img">
+			<img
+				src="./src/images/cart-sample-img.png"
+				alt="" />
+		</div>
+
+		<div class="cart__main-item-text">
+			<a href="">Espresso Seasonal</a>
+			<span class="text1">500 г</span>
+			<p class="text1">Дополнительный текст</p>
+		</div>
+
+		<div class="cart__main-item-count">1 шт</div>
+
+		<div class="cart__main-item-price">
+			<div class="cart__main-item-value">
+				<strong class="heading4">600</strong>
+				<span class="text2">₽</span>
+			</div>
+
+			<span class="cart__main-cart-item"></span>
+		</div>
+	</li>
+</div>
+</div>
+
+<div class="modal__content-box">
+<p class="heading2">Похожие товары</p>
+<div class="catalog__content-box">
+	<div class="catalog-card-1">
+		<a
+			href="/"
+			class="catalog-card-1__img">
+			<img
+				src="./src/images/lil-cake-sample-1.png"
+				alt="" />
+		</a>
+		<div class="catalog-card-1__descr">
+			<div class="catalog-card-1__imgless">
+				<div class="catalog-card-1__imgless-box">
+					<span>новинка</span>
+					<strong>Блюдо на фотосессии прямо сейчас</strong>
+				</div>
+			</div>
+
+			<div class="catalog-card-1__info">
+				<a
+					href="/"
+					class="catalog-card-1__title heading4">
+					Пироженое «Фруктовое»
+				</a>
+
+				<div class="catalog-card__price">
+					<div class="catalog-card__sale">
+						<div class="catalog-card__sale-price">
+							240
+							<span>₽</span>
+						</div>
+						<div class="catalog-card__weight">/ 100 г</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+		</div>
+	</div>
+
+	<div class="catalog-card-1">
+		<a
+			href="/"
+			class="catalog-card-1__img">
+			<img
+				src="./src/images/lil-cake-sample-2.png"
+				alt="" />
+		</a>
+		<div class="catalog-card-1__descr">
+			<div class="catalog-card-1__imgless">
+				<div class="catalog-card-1__imgless-box">
+					<span>новинка</span>
+					<strong>Блюдо на фотосессии прямо сейчас</strong>
+				</div>
+			</div>
+
+			<div class="catalog-card-1__info">
+				<a
+					href="/"
+					class="catalog-card-1__title heading4">
+					Пироженое «Фруктовое»
+				</a>
+
+				<div class="catalog-card__price">
+					<div class="catalog-card__sale">
+						<div class="catalog-card__sale-price">
+							240
+							<span>₽</span>
+						</div>
+						<div class="catalog-card__weight">/ 100 г</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+		</div>
+	</div>
+
+	<div class="catalog-card-1">
+		<a
+			href="/"
+			class="catalog-card-1__img">
+			<img
+				src="./src/images/lil-cake-sample-3.png"
+				alt="" />
+		</a>
+		<div class="catalog-card-1__descr">
+			<div class="catalog-card-1__imgless">
+				<div class="catalog-card-1__imgless-box">
+					<span>новинка</span>
+					<strong>Блюдо на фотосессии прямо сейчас</strong>
+				</div>
+			</div>
+
+			<div class="catalog-card-1__info">
+				<a
+					href="/"
+					class="catalog-card-1__title heading4">
+					Пироженое «Шоколадное»
+				</a>
+
+				<div class="catalog-card__price">
+					<div class="catalog-card__sale">
+						<div class="catalog-card__sale-price">
+							240
+							<span>₽</span>
+						</div>
+						<div class="catalog-card__weight">/ 100 г</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+		</div>
+	</div>
+
+	<div class="catalog-card-1">
+		<a
+			href="/"
+			class="catalog-card-1__img">
+			<img
+				src="./src/images/lil-cake-sample-4.png"
+				alt="" />
+		</a>
+		<div class="catalog-card-1__descr">
+			<div class="catalog-card-1__imgless">
+				<div class="catalog-card-1__imgless-box">
+					<span>новинка</span>
+					<strong>Блюдо на фотосессии прямо сейчас</strong>
+				</div>
+			</div>
+
+			<div class="catalog-card-1__info">
+				<a
+					href="/"
+					class="catalog-card-1__title heading4">
+					Пироженое «сливочное»
+				</a>
+
+				<div class="catalog-card__price">
+					<div class="catalog-card__sale">
+						<div class="catalog-card__sale-price">
+							240
+							<span>₽</span>
+						</div>
+						<div class="catalog-card__weight">/ 100 г</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="modal__btns modal__btns--center">
+<button class="square-btn blue-square-btn">
+	<span>закрыть</span>
+</button>
+</div>`;
+
+const unavailableBtn = document.querySelectorAll('#unavailable-btn');
+
+if (unavailableBtn) {
+	const modalClass = 'unavailable-modal';
+
+	unavailableBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, unavailableContent);
+		}),
+	);
 }

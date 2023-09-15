@@ -1,9 +1,9 @@
 const mapInit = () => {
 	const searchItems = document.querySelectorAll('.map-block__search-item');
 	const mapModal = document.querySelector('.modal-map');
-
+	const root = document.querySelector('#root');
 	//яндекс карта
-	if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null') {
+	if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null' && root) {
 		const init = () => {
 			const map = new ymaps.Map('root', {
 				center: [55.807749, 37.570141],
