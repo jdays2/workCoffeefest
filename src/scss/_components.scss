@@ -201,6 +201,11 @@ body {
 .light-section {
 	background: url(../images/svg/bg/background-pattern.svg) top left/cover
 		no-repeat;
+
+	@media (max-width: 48em) {
+		background-image: url('../images/svg/bg/background-pattern-mobile.svg');
+		background-size: 100% 100%;
+	}
 }
 
 .white-arrow-btn {
@@ -1387,6 +1392,7 @@ body {
 	@media (max-width: 48em) {
 		padding-top: 12rem;
 		padding-bottom: 12rem;
+		background-image: url('../images/svg/bg/big-background-pattern-mobile.svg');
 	
 		&__container {
 			flex-direction: column;
@@ -1785,6 +1791,15 @@ body {
 				&:not(:last-child) {
 					margin-bottom: 1rem;
 				}
+			}
+		}
+	}
+
+	@media (max-width: 48em) {
+		.acc-item {
+			.acc-head {
+				background-image: url('../images/svg/bg/acc-head-ornament-mobile.svg');
+				background-size: 100% 100%;
 			}
 		}
 	}

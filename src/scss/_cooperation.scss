@@ -86,11 +86,13 @@
 
 @media (max-width: 48em) {
 	.cooperation {
+
 		&__container {
 			flex-direction: column;
 		}
 
 		&__left {
+			background-image: url('../images/svg/bg/medium-background-pattern-mobile.svg');
 			width: auto;
 			max-width: 67rem;
 			border-radius: 0;

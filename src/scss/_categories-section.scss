@@ -107,6 +107,10 @@
 		&__list {
 			display: block;
 
+			&-item__text {
+				background-image: url('../images/svg/bg/main-cards-bg-mobile.svg');
+			}
+
 			&-item {
 				&:not(:last-child) {
 					margin-bottom: 4.8rem;
