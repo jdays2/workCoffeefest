@@ -204,7 +204,6 @@ body {
 
 	@media (max-width: 48em) {
 		background-image: url('../images/svg/bg/background-pattern-mobile.svg');
-		background-size: 100% 100%;
 	}
 }
 
@@ -1051,6 +1050,31 @@ body {
 			}
 		}
 	}
+
+	@media (max-width: 48em) {
+		&__item {
+			&:not(:last-child) {
+				&::after {
+					width: 1.6rem;
+					height: 4rem;
+					right: -2rem;
+					top: 1.5rem;
+					text-align: center;
+				}
+			}
+
+			&-link {
+				font-size: 2.8rem;
+				line-height: 140%;
+				height: 100%;
+
+				svg {
+					width: 5.6rem;
+					height: 5.6rem;
+				}
+			}
+		}
+	}
 }
 
 .filters-search-sorting {
@@ -1800,6 +1824,11 @@ body {
 			.acc-head {
 				background-image: url('../images/svg/bg/acc-head-ornament-mobile.svg');
 				background-size: 100% 100%;
+
+				.arrow {
+					height: 3.8rem;
+					width: 2.5rem;
+				}
 			}
 		}
 	}

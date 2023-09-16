@@ -117,6 +117,20 @@
 				text-align: center;
 				margin: 0 0 4rem 0;
 			}
+
+			.input-container {
+				.email,
+				.profile,
+				.password {
+					width: 4.8rem;
+					height: 4.8rem;
+				}
+			}
+
+			.password-btn.icon {
+				width: auto;
+				right: 3.5rem;
+			}
 		}
 
 		&__right {

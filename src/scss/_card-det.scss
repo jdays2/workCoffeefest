@@ -580,6 +580,11 @@
 
 		&__more {
 			margin: 0 0 5rem 0;
+
+			svg {
+				width: 5rem;
+				height: 5rem;
+			}
 		}
 
 		&__current-price-box {
