@@ -1833,3 +1833,14 @@ body {
 		}
 	}
 }
+
+@media (max-width: 48em) {
+	.card__container:first-child {
+		margin-top: 6rem;
+
+		.square-btn {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
