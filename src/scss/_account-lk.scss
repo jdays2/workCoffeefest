@@ -997,6 +997,11 @@
 			&-video {
 				margin-bottom: 8rem;
 				height: 41.6rem;
+
+				.video-js {
+					width: 100%;
+					height: 100%;
+				}
 			}
 
 			&-text {
@@ -1051,7 +1056,9 @@
 					}
 
 					.qr {
-						height: 71rem;
+						height: 30rem;
+						width: 30rem;
+						margin: 0 0 0 18.6rem;
 
 						&__value {
 							width: 57rem;
