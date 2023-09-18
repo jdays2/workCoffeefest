@@ -16,12 +16,12 @@
 
 	&__img {
 		width: 100%;
-		height: auto;
 		display: block;
 		position: absolute;
-		height: 32.5rem;
+		height: 37.4rem;
 		z-index: 3;
-		& img {
+
+		img {
 			width: 100%;
 			height: 100%;
 			-o-object-fit: cover;
@@ -38,7 +38,7 @@
 	}
 
 	&__descr {
-		height: 53.3rem;
+		height: 58.3rem;
 
 		border-radius: 0 0 5rem 5rem;
 		border: 0.15rem solid $line;
@@ -56,7 +56,7 @@
 
 	&__imgless {
 		width: 100%;
-		height: 32.5rem;
+		height: 37.4rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -204,12 +204,13 @@
 	}
 }
 
+.catalog-card-1__img {
+	height: 37.4rem;
+}
 
-
-@media (hover:hover) {
+@media (hover: hover) {
 	.catalog-card-1__link:hover {
-		color: #E3BCA0;
-		border-color: #E3BCA0;
+		color: #e3bca0;
+		border-color: #e3bca0;
 	}
-	
 }

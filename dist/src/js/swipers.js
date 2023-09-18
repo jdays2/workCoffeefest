@@ -207,16 +207,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const interiors = new Swiper('.interiors__swiper', {
-		slidesPerView: 1,
-		slidesPerGroup: 1,
 		spaceBetween: rem(3),
 		speed: 600,
 		breakpoints: {
 			768: {
-				slidesPerView: 1.8,
-				spaceBetween: rem(3),
+				slidesPerView: 2.35,
+				spaceBetween: rem(3.5),
 				loop: true,
-				centeredSlides: true,
 			},
 		},
 		pagination: {

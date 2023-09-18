@@ -1349,9 +1349,7 @@ body {
 	}
 
 	&-right {
-		width: -webkit-fit-content;
-		width: -moz-fit-content;
-		width: fit-content;
+		min-width: 74.4rem;
 		gap: 3.2rem;
 		height: 49.6rem;
 		display: flex;
