@@ -9,12 +9,14 @@
 		grid-template-areas:
 			'A A B B'
 			'A A C D';
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 26.2rem 26.1rem;
+		grid-template-columns: repeat(4, 37.5rem);
+		grid-template-rows: 24.6rem;
 
 		&-item__text {
-			background: url(../images/svg/bg/main-cards-bg.svg) top left/cover no-repeat,
+			background: url(../images/svg/bg/main-cards-bg.svg) top left/cover
+					no-repeat,
 				$darkBlue;
+			height: 100%;
 		}
 		&-item {
 			&:nth-child(1) {
@@ -23,11 +25,16 @@
 				.categories-section__list-item__img {
 					width: 100%;
 					height: 29.4rem;
-					-o-object-fit: cover;
-					object-fit: cover;
+					img {
+						width: 100%;
+						height: 100%;
+						-o-object-fit: cover;
+						object-fit: cover;
+					}
 				}
 
 				.categories-section__list-item__text {
+					height: 26.1rem;
 					&-description {
 						width: 32.3rem;
 					}
@@ -37,18 +44,26 @@
 			&:nth-child(2) {
 				grid-area: B;
 				display: flex;
+				height: 100%;
 
 				.categories-section__list-item__img {
-					width: 41rem;
-					height: 100%;
-					-o-object-fit: cover;
-					object-fit: cover;
+					width: 41.2rem;
+					height: 24.6rem;
 					border-radius: 0 0 5rem 0;
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: 100%;
+						-o-object-fit: cover;
+						object-fit: cover;
+					}
 				}
 
 				.categories-section__list-item__text {
 					border-radius: 0 0 0 5rem;
-					width: 37.2rem;
+					width: 37.1rem;
+					min-height: 100%;
 					&-description {
 						width: 26rem;
 					}

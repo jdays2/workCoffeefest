@@ -13,9 +13,14 @@
 		&-slide {
 			&__img {
 				width: 100%;
-				height: 35.5rem;
-				-o-object-fit: cover;
-				object-fit: cover;
+				height: 38.25rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+					-o-object-fit: cover;
+					object-fit: cover;
+				}
 			}
 
 			&__text {

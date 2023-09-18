@@ -72,10 +72,14 @@
 
 	&__right {
 		display: flex;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		display: flex;
+		gap: 3.2rem;
 
 		&-img {
-			margin-right: 3.2rem;
-			width: 36rem;
+			width: 37.2rem;
 			height: 49.6rem;
 			border-radius: 0 0 5rem 5rem;
 

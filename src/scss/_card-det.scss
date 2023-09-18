@@ -485,18 +485,16 @@
 	}
 }
 
-@media (hover: hover) {
-	.controlls__count-btn:hover {
-		transform: scale(1.3);
-	}
-	.controlls__count-btn:active {
-		transform: scale(0.9);
-	}
-	.card-det__popup-point:hover .card-det__popup {
-		opacity: 1;
-		z-index: 2;
-		transform: translateY(0);
-	}
+.controlls__count-btn:hover {
+	transform: scale(1.3);
+}
+.controlls__count-btn:active {
+	transform: scale(0.9);
+}
+.card-det__popup-point:hover .card-det__popup {
+	opacity: 1;
+	z-index: 2;
+	transform: translateY(0);
 }
 
 @media (max-width: 48em) {
@@ -702,7 +700,6 @@
 		}
 
 		&__more {
-
 			&:not(:last-child) {
 				margin: 0 5rem 0 0;
 			}
