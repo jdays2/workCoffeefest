@@ -80,7 +80,7 @@
 	}
 
 	&__right {
-		width: 78.2rem;
+		width: 78.75rem;
 
 		&-img {
 			margin-bottom: 2.8rem;
@@ -119,7 +119,8 @@
             height: 61.2rem;
 
             img {
-                object-fit: cover;
+                -o-object-fit: cover;
+                   object-fit: cover;
             }
         }
     }

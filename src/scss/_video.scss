@@ -65,7 +65,7 @@
 }
 
 .video-js--slim {
-	width: 31rem;
+	width: 37.2rem;
 	height: 100%;
 	.vjs-poster {
 		background-color: #29354d;
@@ -77,7 +77,7 @@
 }
 
 .video-js--small {
-	width: 34.5rem;
+	width: 37.2rem;
 	height: 100%;
 
 	.vjs-poster {
@@ -152,5 +152,9 @@
 	.video-js {
 		height: 148rem;
 		width: 75rem;
+	}
+
+	.video-js .vjs-big-play-button {
+		left: calc(50% + 3.5rem) !important;
 	}
 }

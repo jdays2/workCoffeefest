@@ -168,4 +168,18 @@
 			}
 		}
 	}
+
+	@media (max-width: 48em) {
+		&__file {
+			&-label {
+				left: 6rem;
+
+				&::before {
+					left: -5.6rem;
+					width: 4.8rem;
+					height: 4.8rem;
+				}
+			}
+		}
+	}
 }

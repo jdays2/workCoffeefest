@@ -400,12 +400,12 @@
 				}
 			}
 		}
-	}
 
-	&__aside {
+			&__aside {
 		width: auto;
 
 		.box-blue {
+			margin: 0;
 			padding: 8rem 4rem;
 		}
 
@@ -439,6 +439,7 @@
 				font-size: 2.8rem;
 			}
 		}
+	}
 	}
 }
 

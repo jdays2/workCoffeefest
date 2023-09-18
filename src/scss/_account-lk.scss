@@ -285,12 +285,7 @@
 						top: 4.5rem;
 						right: 4rem;
 						width: 5.2rem;
-						height: 1rem;
-
-						use {
-							width: 5.2rem;
-							height: 1rem;
-						}
+						height: 2rem;
 					}
 				}
 
@@ -438,7 +433,7 @@
 		&-video {
 			margin-bottom: 6rem;
 			width: 100%;
-			height: 65rem;
+			height: 73.9333rem;
 			position: relative;
 			border-radius: 0 0 5rem 5rem;
 
@@ -586,6 +581,7 @@
 			&-block {
 				padding: 4rem;
 				border-width: 0.2rem;
+				background-image: url('../images/svg/bg/account-lk-ornament-mobile.svg');
 
 				&:not(:last-child) {
 					margin-bottom: 4.8rem;
@@ -1001,6 +997,11 @@
 			&-video {
 				margin-bottom: 8rem;
 				height: 41.6rem;
+
+				.video-js {
+					width: 100%;
+					height: 100%;
+				}
 			}
 
 			&-text {
@@ -1055,7 +1056,9 @@
 					}
 
 					.qr {
-						height: 71rem;
+						height: 30rem;
+						width: 30rem;
+						margin: 0 0 0 18.6rem;
 
 						&__value {
 							width: 57rem;

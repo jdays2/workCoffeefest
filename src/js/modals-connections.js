@@ -107,6 +107,58 @@ const mapInitSecond = () => {
 	closeMapModal();
 };
 
+//функция валидации форм
+const initValidation = () => {
+	const validateInput = (inputElement, regex) => {
+		const inputContainer = inputElement.parentElement;
+
+		const inputHandler = (e) => {
+			let inputClass = regex.test(e.target.value) ? 'success' : 'invalid';
+			inputContainer.classList.remove('success', 'invalid');
+			inputContainer.classList.add(inputClass);
+
+			if (e.target.value === '') {
+				inputContainer.classList.remove('success', 'invalid');
+			}
+		};
+
+		inputElement.removeEventListener('input', inputHandler);
+		inputElement.addEventListener('input', inputHandler);
+	};
+
+	// Валидация имени
+	const inputName = document.querySelectorAll('.input-name');
+	if (inputName.length > 0) {
+		const regName = /^[A-zА-яё]+$/;
+		inputName.forEach((item) => {
+			validateInput(item, regName);
+		});
+	}
+
+	// Валидация почты
+	const inputEmail = document.querySelectorAll('.input-email');
+	if (inputEmail.length > 0) {
+		const regEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/gim;
+		inputEmail.forEach((item) => {
+			validateInput(item, regEmail);
+		});
+	}
+
+	// Валидация телефонного номера
+	const inputPhone = document.querySelectorAll('.input-tel');
+	if (inputPhone.length > 0) {
+		const regPhone =
+			/^\+?\d{1,4}[\s.-]?\(?\d{1,3}\)?[\s.-]?\d{1,4}[\s.-]?\d{1,4}$/;
+		inputPhone.forEach((item) => {
+			validateInput(item, regPhone);
+		});
+	}
+};
+
+// Вызов функции для инициализации валидации
+initValidation();
+document.addEventListener('DOMContentLoaded', initValidation);
+
 //закрытие модалки для карты клик вне поля и по кнопке
 const closeMapModal = () => {
 	const madals = document.querySelectorAll('.modal-map');
@@ -136,10 +188,12 @@ closeMapModal();
 const addModal = (name, child, name1, child2, btn) => {
 	const wrapper = document.querySelector(`.${name}`);
 	if (!wrapper) return;
+	document.removeEventListener('DOMContentLoaded', initValidation);
 
 	const wrapperRoot = wrapper.querySelector('.modal__root');
 	wrapper.classList.add('active');
 	wrapperRoot.innerHTML = child;
+	initValidation();
 
 	if (document.querySelector('#root')) {
 		mapInitSecond();
@@ -917,6 +971,24 @@ if (changeBtn) {
 	});
 }
 
+///инициализация счетчика для textarea
+const initTextvalueCounter = () => {
+	const textareaWrap = document.querySelectorAll('.input-textarea-wrapper');
+	if (textareaWrap) {
+		textareaWrap.forEach((item) => {
+			const textarea = item.querySelector('textarea');
+			const valueLimits = item.querySelector('.modal__textarea-limits');
+			if (textarea && valueLimits) {
+				const counterUpload = () => {
+					valueLimits.textContent = `${textarea.value.length}/1000`;
+				};
+				textarea.removeEventListener('input', counterUpload);
+				textarea.addEventListener('input', counterUpload);
+			}
+		});
+	}
+};
+
 //модалка "оставить отзыв"
 const initFeedbackHandler = () => {
 	const feedbackContent = `
@@ -1027,23 +1099,6 @@ const initFeedbackHandler = () => {
 		</div>`;
 	const feedbackBtn = document.querySelectorAll('.left-feedback');
 
-	///инициализация счетчика для textarea
-	const initTextvalueCounter = () => {
-		const textareaWrap = document.querySelectorAll('.input-textarea-wrapper');
-		if (textareaWrap) {
-			textareaWrap.forEach((item) => {
-				const textarea = item.querySelector('textarea');
-				const valueLimits = item.querySelector('.modal__textarea-limits');
-				if (textarea && valueLimits) {
-					const counterUpload = () => {
-						valueLimits.textContent = `${textarea.value.length}/1000`;
-					};
-					textarea.removeEventListener('input', counterUpload);
-					textarea.addEventListener('input', counterUpload);
-				}
-			});
-		}
-	};
 	///инициализация звезд с оценкой
 	const initStarsRate = () => {
 		const mainWrapper = document.querySelector('.feedback');

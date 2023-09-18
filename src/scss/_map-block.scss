@@ -259,6 +259,10 @@
 					padding: 3rem 7.2rem;
 					font-size: 2.8rem;
 				}
+
+				&__enter-icon {
+					display: none;
+				} 
 			}
 		}
 
@@ -284,6 +288,8 @@
 			}
 
 			&-time {
+				padding-left: 4rem;
+
 				span {
 					font-size: 2.8rem;
 				}
@@ -370,6 +376,20 @@
 				}
 			}
 		}
+
+		&__form-adress-remove {
+			width: 3.6rem;
+			height: 3.6rem;
+			right: 1.5rem;
+		}
+
+		&__identify-box {
+			background-size: 4rem 4rem;
+			margin-top: 2.4rem;
+			height: 5rem;
+			padding-left: 4.4rem;
+			font-size: 2.8rem;
+		}
 	}
 }
 
@@ -410,5 +430,13 @@
 				border-radius: 0;
 			}
 		}
+	}
+}
+
+@media (max-width: 48em) {
+	.map-block--cart-selfdelivery {
+		flex-direction: column;
+		height: 253.2rem;
+		margin: 6rem 0 8rem 0;
 	}
 }

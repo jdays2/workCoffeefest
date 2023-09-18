@@ -32,7 +32,8 @@
 				width="28"
 				height="17"
 				viewBox="0 0 28 17"
-				fill="none">
+				fill="none"
+				class="open">
 				<path
 					d="M1 8.44336H26"
 					stroke="#FFF9EE"
@@ -48,6 +49,17 @@
 					stroke="#FFF9EE"
 					stroke-linecap="round"
 					stroke-linejoin="round" />
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" class="close">
+				<g clip-path="url(#clip0_5736_97052)">
+				  <path d="M4.66113 4.66116L22.3388 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
+				  <path d="M22.3389 4.66116L4.6612 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
+				</g>
+				<defs>
+				  <clipPath id="clip0_5736_97052">
+					<rect width="27" height="27" fill="white"/>
+				  </clipPath>
+				</defs>
 			</svg>
 		</button>
 		<a
@@ -305,16 +317,7 @@
 									<span>Личные данные</span>
 								</button>
 							</li>
-							<li class="sidebar-tabs__item">
-								<button
-									class="sidebar-tabs__item-btn"
-									data-path="bank-cards">
-									<svg class="card sidebar-tabs__item-btn__icon">
-										<use xlink:href="./src/images/svg/symbol/sprite.svg#card" />
-									</svg>
-									<span>Банковские карты</span>
-								</button>
-							</li>
+							
 							<li class="sidebar-tabs__item">
 								<button
 									class="sidebar-tabs__item-btn"
@@ -478,95 +481,6 @@
 												xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
 										</svg>
 									</div>
-								</div>
-							</div>
-						</div>
-
-						<div
-							class="account-lk__right-content"
-							data-target="bank-cards">
-							<button class="account-lk__right-back arrow-link mobile">
-								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-left" />
-								</svg>
-								<span>назад</span>
-							</button>
-							<p class="account-lk__right-heading heading2">Банковские карты</p>
-
-							<div class="cards-list">
-								<div class="cards-list__item red">
-									<p class="cards-list__item-name menu">Ivan Ivanov</p>
-									<div class="cards-list__item-number">
-										<p>4276</p>
-										<div>
-											<p>22</p>
-
-											<div>
-												<span>.</span>
-												<span>.</span>
-
-												<span>.</span>
-												<span>.</span>
-												<span>.</span>
-												<span>.</span>
-											</div>
-										</div>
-										<p>2467</p>
-									</div>
-									<p class="cards-list__item-date menu">09/25</p>
-									<div class="cards-list__item-right">
-										<button class="cards-list__item-right__btn">
-											<span></span>
-											<span></span>
-											<span></span>
-											<div class="cards-list__item-right__btn-popup">
-												<span>Удалить карту</span>
-												<span>Редактировать</span>
-											</div>
-										</button>
-										<img
-											src="./src/images/svg/visa.svg"
-											alt=""
-											class="cards-list__item-right__icon" />
-									</div>
-								</div>
-
-								<div class="cards-list__item dark-blue">
-									<p class="cards-list__item-name menu">Ivan Ivanov</p>
-									<div class="cards-list__item-number">
-										<p>4276</p>
-										<div>
-											<p>22</p>
-
-											<div>
-												<span>.</span>
-												<span>.</span>
-
-												<span>.</span>
-												<span>.</span>
-												<span>.</span>
-												<span>.</span>
-											</div>
-										</div>
-										<p>2467</p>
-									</div>
-									<p class="cards-list__item-date menu">09/25</p>
-									<div class="cards-list__item-right">
-										<button class="cards-list__item-right__btn">
-											<span></span>
-											<span></span>
-											<span></span>
-											<div class="cards-list__item-right__btn-popup">
-												<span>Удалить карту</span>
-												<span>Редактировать</span>
-											</div>
-										</button>
-									</div>
-								</div>
-
-								<div class="cards-list__item add-more">
-									<button class="add-card"></button>
 								</div>
 							</div>
 						</div>
@@ -1908,7 +1822,7 @@
 					<a
 						href="#"
 						class="footer__top-social__item-link">
-						<svg>
+						<svg class="icon-link telegram">
 							<use xlink:href="./src/images/svg/symbol/sprite.svg#telegram" />
 						</svg>
 					</a>
@@ -1917,8 +1831,8 @@
 					<a
 						href="#"
 						class="footer__top-social__item-link">
-						<svg>
-							<use xlink:href="./src/images/svg/symbol/sprite.svg#telegram" />
+						<svg class="icon-link">
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#youtube" />
 						</svg>
 					</a>
 				</li>
@@ -1926,8 +1840,8 @@
 					<a
 						href="#"
 						class="footer__top-social__item-link">
-						<svg>
-							<use xlink:href="./src/images/svg/symbol/sprite.svg#telegram" />
+						<svg class="icon-link">
+							<use xlink:href="./src/images/svg/symbol/sprite.svg#dzen" />
 						</svg>
 					</a>
 				</li>
@@ -1948,51 +1862,8 @@
 						Design
 					</p>
 				</div>
-				<svg
-					width="97"
-					height="97"
-					viewBox="0 0 97 97"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-					class="footer__bottom-right__logo">
-					<rect
-						y="48.1094"
-						width="68.0366"
-						height="68.0366"
-						rx="5"
-						transform="rotate(-45 0 48.1094)"
-						fill="#101010" />
-					<rect
-						x="8.52344"
-						y="48.1094"
-						width="55.982"
-						height="55.982"
-						rx="27.991"
-						transform="rotate(-45 8.52344 48.1094)"
-						fill="#FFFFFF" />
-					<rect
-						x="30.9258"
-						y="30.9258"
-						width="34.6368"
-						height="34.6368"
-						rx="3"
-						fill="#101010" />
-					<rect
-						x="29.5547"
-						y="48.1094"
-						width="26.2418"
-						height="26.2418"
-						rx="13.1209"
-						transform="rotate(-45 29.5547 48.1094)"
-						fill="#FFFFFF" />
-					<rect
-						x="40.8203"
-						y="48.2441"
-						width="10.4967"
-						height="10.4967"
-						rx="2"
-						transform="rotate(-45 40.8203 48.2441)"
-						fill="#101010" />
+				<svg class="request-logo">
+					<use xlink:href="./src/images/svg/symbol/sprite.svg#request-logo" />
 				</svg>
 				<a
 					href="#"

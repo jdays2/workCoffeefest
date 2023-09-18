@@ -48,7 +48,7 @@
 
 		&-img {
 			width: 100%;
-			height: 44rem;
+			height: 46.98rem;
 			-o-object-fit: cover;
 			object-fit: cover;
 		}
@@ -154,6 +154,10 @@
 		&__item {
 			&-description {
 				margin: 0 0 4rem 0;
+			}
+
+			&-text {
+				background-image: url('../images/svg/bg/news-item-ornament-mobile.svg');
 			}
 
 			&-date {

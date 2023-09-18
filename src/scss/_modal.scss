@@ -98,7 +98,7 @@
 	&__root {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 	}
 
 	.map-block__form-adress-wrapper {
@@ -118,12 +118,13 @@
 	}
 
 	&__textarea-medium {
-		width: 100%;
 		height: 16.8rem;
+		width: 100%;
 
 		.input-textarea {
 			height: 16.8rem;
 		}
+		
 		textarea {
 			width: 100%;
 			height: 100%;
@@ -503,7 +504,18 @@
 		margin-top: 3.2rem;
 	}
 
+	&.feedback-modal {
+		.modal__root {
+			align-items: flex-start;
+		}
+	}
+
 	@media (max-width: 48em) {
+		&.request-sended-modal {
+			.heading2 {
+				margin: 0;
+			}
+		}
 		&.filter-modal-1 {
 			.modal__container {
 				width: 55.8rem;
@@ -656,8 +668,6 @@
 				text-align: left;
 			}
 		}
-
-		
 
 		&__beige-box {
 			width: auto;

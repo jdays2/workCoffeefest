@@ -2,7 +2,9 @@
 const chronItems = document.querySelectorAll('.chronology__timeline-list__item');
 
 if(chronItems) {
+  
   chronItems.forEach((item, id) => {
+    const activeClass = 'active'
     item.addEventListener('click', ()=> {
       if(item.classList.contains(activeClass)) {
         return

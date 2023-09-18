@@ -22,10 +22,11 @@
 @media (max-width: 48em) {
 	.carrer-vacancies {
 		&__accordion {
+			.acc-head {
+				padding: 4rem !important;
+			}
+
 			.acc-item:first-child {
-				.acc-head {
-					padding: 4rem !important;
-				}
 	
 				.acc-content {
 					&__list {
