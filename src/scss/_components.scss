@@ -153,7 +153,7 @@ $white20: rgba(255, 255, 255, 0.2);
 }
 
 .light-section {
-	background: url(../images/svg/bg/background-pattern.svg) top left/cover
+	background: url(../images/symbol/stack/sprite.svg#background-pattern) top left/cover
 		no-repeat;
 
 	@media (max-width: 48em) {
@@ -169,7 +169,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	justify-content: center;
 	border-radius: 50%;
 	transition: background-color 0.2s ease-in-out;
-	background: $light url(../images/svg/generic/short-arrow-right.svg) center/40%
+	background: $light url(../images/symbol/stack/sprite.svg#generic--short-arrow-right) center/40%
 		no-repeat;
 
 	svg {
@@ -906,7 +906,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	.swiper-prev {
 		left: 0;
 		transform: translate(-50%, -50%) scaleX(-1);
-		background-image: url(../images/svg/bg/left-arrow.svg);
+		background-image: url(../images/symbol/stack/sprite.svg#left-arrow);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40%;
@@ -915,7 +915,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	.swiper-next {
 		right: 0;
 		transform: translate(50%, -50%);
-		background-image: url(../images/svg/bg/left-arrow.svg);
+		background-image: url(../images/symbol/stack/sprite.svg#left-arrow);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40%;
