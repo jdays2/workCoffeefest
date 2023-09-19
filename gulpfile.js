@@ -14,85 +14,91 @@ const svgSprite = require('gulp-svg-sprite');
 const multiDest = require('gulp-multi-dest');
 
 const createSvgSprite = () => {
-	return src('src/images/svg/icons/*.svg')
-			.pipe(svgSprite({
-					mode: {
-							symbol: {
-									sprite: 'sprite.svg',
-							},
+	return src('src/images/svg/**/*.svg')
+		.on('data', (file) => {
+			console.log(`Processing ${file.relative}`);
+		})
+		.pipe(
+			svgSprite({
+				mode: {
+					stack: {
+						sprite: 'sprite.svg',
 					},
-			}))
-			.pipe(multiDest(['src/images/svg', 'dist/src/images/svg']));
+				},
+			}),
+		)
+
+		.pipe(multiDest(['src/images/symbol', 'dist/src/symbol']));
 };
 
 const clean = () => {
-    return del(['dist'])
-}
+	return del(['dist']);
+};
 
 const html = () => {
-    return src('*.html')
-
-        .pipe(fileinclude({
-            prefix: '@@',
-            basepath: '@file'
-        }))
-        .pipe(dest('dist'))
-        .pipe(browserSync.stream())
-}
+	return src('*.html')
+		.pipe(
+			fileinclude({
+				prefix: '@@',
+				basepath: '@file',
+			}),
+		)
+		.pipe(dest('dist'))
+		.pipe(browserSync.stream());
+};
 
 const files = () => {
-    return src([
-        'src/fonts/*.woff',
-        'src/fonts/*.woff2',
-        'src/images/**',
-        'src/js/**',
-    ], {
-        base: 'src'
-    })
-        .pipe(dest('dist/src'))
-}
+	return src(
+		['src/fonts/*.woff', 'src/fonts/*.woff2', 'src/images/**', 'src/js/**'],
+		{
+			base: 'src',
+		},
+	).pipe(dest('dist/src'));
+};
 
 const scssStyles = () => {
-    return src('./src/scss/style.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass()) // компилируем SASS в CSS
-        .pipe(sourcemaps.write())
-        .pipe(concat('main.css'))
-        .pipe(autoprefixer({
-            cascade: false
-        }))
-        .pipe(cleanCSS({
-            level: 2
-        }))
-        .pipe(dest('dist/src/css'))
-        .pipe(dest('src/css'))
-        .pipe(browserSync.stream())
-}
+	return src('./src/scss/style.scss')
+		.pipe(sourcemaps.init())
+		.pipe(sass()) // компилируем SASS в CSS
+		.pipe(sourcemaps.write())
+		.pipe(concat('main.css'))
+		.pipe(
+			autoprefixer({
+				cascade: false,
+			}),
+		)
+		.pipe(
+			cleanCSS({
+				level: 2,
+			}),
+		)
+		.pipe(dest('dist/src/css'))
+		.pipe(dest('src/css'))
+		.pipe(browserSync.stream());
+};
 
 const fonts = () => {
-    return src('./src/fonts/fonts.css')
-        .pipe(dest('dist/src/fonts'))
-}
+	return src('./src/fonts/fonts.css').pipe(dest('dist/src/fonts'));
+};
 
 const cssStyles = () => {
-    return src('./src/css/*.css')
-        .pipe(dest('dist/src/css'))
-}
+	return src('./src/css/*.css').pipe(dest('dist/src/css'));
+};
 
 const watchFiles = () => {
-    browserSync.init({
-        server: {
-            baseDir: 'dist/'
-        }
-    });
-}
+	browserSync.init({
+		server: {
+			baseDir: 'dist/',
+		},
+	});
+};
 
 watch(['./*.html'], html);
 watch('./templates/*.html', html);
 watch('./src/scss/**/*.scss', scssStyles);
 watch('./src/js/**', files);
-watch('./src/images/**', files)
-watch('./src/images/svg/icons/**', createSvgSprite)
+watch('./src/images/**', files);
+watch('./src/images/svg/**', createSvgSprite);
 
 exports.scssStyles = scssStyles;
 exports.cssStyles = cssStyles;
@@ -100,4 +106,13 @@ exports.html = html;
 exports.clean = clean;
 exports.files = files;
 exports.fonts = fonts;
-exports.default = series(clean, files, html, fonts, scssStyles, cssStyles, watchFiles, createSvgSprite);
+exports.default = series(
+	clean,
+	files,
+	html,
+	fonts,
+	scssStyles,
+	cssStyles,
+	watchFiles,
+	createSvgSprite,
+);

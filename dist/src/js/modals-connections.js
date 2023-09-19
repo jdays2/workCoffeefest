@@ -410,7 +410,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -436,7 +436,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -464,7 +464,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -490,7 +490,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -516,7 +516,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -542,7 +542,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -568,7 +568,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -594,7 +594,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -620,7 +620,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -646,7 +646,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -672,7 +672,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -698,7 +698,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -762,7 +762,7 @@ const mapContent = `<div class="map-block">
 					<span>оставить отзыв</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/svg/symbol/sprite.svg#standart-arrow-right" />
+							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
 					</svg>
 				</button>
 			</div>
@@ -999,19 +999,19 @@ const initFeedbackHandler = () => {
 
 			<div class="rates__icons-wrapper">
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/svg/symbol/sprite.svg#star" />
+					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
 				</svg>
 			</div>
 		</div>
