@@ -604,7 +604,7 @@ body {
 		}
 
 		.icon {
-			top: 37%;
+			// top: 37%;
 			&.invalid {
 				opacity: 1;
 			}
@@ -1840,6 +1840,11 @@ body {
 			.acc-head {
 				background-image: url('../images/svg/bg/acc-head-ornament-mobile.svg');
 				background-size: 100% 100%;
+				padding: 4rem;
+
+				.heading4 {
+					max-width: 50rem;
+				}
 
 				.arrow {
 					height: 3.8rem;

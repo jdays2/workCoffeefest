@@ -42,7 +42,11 @@
 	.interiors {
 		&__swiper {
 			&-slide {
-				height: 111rem;
+				height: 67rem;
+
+				img {
+					width: 100%;
+				}
 			}
 		}
 

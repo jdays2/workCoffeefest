@@ -408,7 +408,7 @@
 				}
 				&--time {
 					&.active {
-						padding-bottom: 25.4rem !important;
+						padding-bottom: 25.4rem;
 					}
 				}
 			}
@@ -424,6 +424,12 @@
 	}
 
 	@media (max-width: 48em) {
+		.acc-content.active {
+			& > .content {
+				padding: 5rem 4rem;
+			}
+		}
+
 		&__box {
 			&-input-list {
 				.input-container {
@@ -437,12 +443,14 @@
 				position: relative;
 				width: 100%;
 				justify-content: flex-end;
+				margin-left: 0;
 			}
 
 			&__line {
 				position: absolute;
 				bottom: -2rem;
 				left: 0;
+				width: 100%;
 
 				&:nth-child(4) {
 					left: 32rem;
@@ -463,10 +471,18 @@
 					text-align: center;
 					display: block;
 					position: absolute;
-					left: 17rem;
+					left: 15.5rem;
 					top: 1.2rem;
 					font-size: 2.8rem;
 					width: 19rem;
+				}
+			}
+
+			&__return-btn {
+				display: none;
+
+				&.active {
+					display: none;
 				}
 			}
 		}
@@ -550,6 +566,10 @@
 				max-height: 15.5rem;
 				padding-bottom: 1rem;
 
+				&.active {
+					max-height: 1000rem;
+				}
+
 				.ordering__orders-title {
 					flex-direction: column;
 					align-items: flex-start;
@@ -558,6 +578,14 @@
 					strong,
 					span {
 						font-size: 2.8rem;
+					}
+				}
+
+				.cart__main-item {
+					border-bottom: 0.1rem solid $biege;
+
+					&:first-child {
+						border-top: 0.1rem solid $biege;
 					}
 				}
 			}
@@ -632,5 +660,104 @@
 		.cart__aside {
 			margin-top: 10rem;
 		}
+
+		&__method-wrapper {
+			margin-top: 8rem;
+			row-gap: 8rem;
+		}
+
+		&__adress {
+			row-gap: 5rem;
+
+			.popup-block {
+				height: 10.4rem;
+			}
+
+			.ordering__row {
+				&:first-child,
+				&:last-child {
+					row-gap: 5rem;
+				}
+
+				&:last-child {
+					.popup-block__wrapper.active {
+						padding-bottom: 81.6rem;
+
+						.popup-block__popup {
+							top: 11.5rem;
+
+							.calendar {
+								padding: 4rem 2rem;
+
+								&__head {
+									margin: 0 0 3rem 0;
+								}
+
+								&__month,
+								&__year {
+									font-size: 2.8rem;
+								}
+
+								&__head-controlls {
+									span {
+										width: 7rem;
+										height: 5rem;
+									}
+								}
+
+								&__board-days {
+									gap: 1.2rem;
+
+									span {
+										width: 6.8rem;
+										height: 4rem;
+										font-size: 2.8rem;
+									}
+								}
+
+								&__board-list {
+									column-gap: 1.1rem;
+									row-gap: 3.2rem;
+								}
+
+								&__board-cell {
+									width: 6.8rem;
+									height: 6.8rem;
+									font-size: 2.8rem;
+								}
+
+								&__info {
+									display: none;
+								}
+							}
+						}
+
+						&:last-child {
+							padding-bottom: 61.4rem;
+
+							.popup-block__list {
+								padding: 4rem;
+								row-gap: 5rem;
+								max-height: none;
+
+								.popup-block__item {
+									input::after {
+										width: 4rem;
+										height: 4rem;
+									}
+
+									& > span {
+										font-size: 2.8rem;
+										margin-left: 4rem;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
 	}
 }

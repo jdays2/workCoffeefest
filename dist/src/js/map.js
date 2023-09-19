@@ -1,4 +1,5 @@
 const mapInit = () => {
+	const activeClass = 'active';
 	const searchItems = document.querySelectorAll('.map-block__search-item');
 	const mapModal = document.querySelector('.modal-map');
 	const root = document.querySelector('#root');
@@ -66,7 +67,6 @@ const mapInit = () => {
 
 	//открыть модалку по клику по карточке в списке адресов
 	if (searchItems && mapModal) {
-		const activeClass = 'active';
 		searchItems.forEach((item, id) => {
 			const link = item.querySelector('.arrow-link');
 			link.addEventListener('click', () => {

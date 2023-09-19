@@ -206,15 +206,33 @@
 		.services__swiper-slide {
 			&__text {
 				padding: 8rem 4rem;
-				height: calc(100% - 50.4rem);
+				min-height: 49.2rem;
+				height: auto;
+
+				&-link {
+					margin-top: 0;
+				}
+
+				&-heading {
+					max-width: 59.2rem;
+				}
 
 				&-description {
 					width: auto;
+					max-width: 59.2rem;
+
+					&:not(:last-child) {
+						margin: 0 0 12.2rem 0;
+					}
 				}
 			}
 
-			&__icon {
+			&__image {
 				height: 50.4rem;
+
+				img {
+					object-fit: cover;
+				}
 
 				&-heading {
 					display: none;
