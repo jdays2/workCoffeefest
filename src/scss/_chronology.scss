@@ -293,6 +293,10 @@
 		overflow: hidden;
 		padding: 0;
 
+		&-swiper {
+			overflow: hidden;
+		}
+
 		&__container {
 			padding-bottom: 0;
 			background-image: none;
@@ -383,9 +387,29 @@
 							left: -22.4rem;
 							overflow: hidden;
 
-							& > svg {
-								width: auto;
-								height: auto;
+							.about-arrow-first-end-part {
+								width: 18rem;
+								height: 22.8rem;
+							}
+
+							.about-arrrow-first-middle-part {
+								width: 36.2rem;
+								height: 1.2rem;
+							}
+
+							.about-arrow-first-start-part {
+								width: 8.8rem;
+								height: 11.2rem;
+							}
+
+							.about-arrow-second-end-part {
+								width: 50.4rem;
+								height: 1.2rem;
+							}
+
+							.about-arrow-second-start-part {
+								width: 8.8rem;
+								height: 11.2rem;
 							}
 						}
 					}
