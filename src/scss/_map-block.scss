@@ -406,10 +406,43 @@
 		.map-block__map-box {
 			width: 67rem;
 			height: 76rem;
+			border-radius: 0 0 7.2rem 7.2rem;
+			overflow: hidden;
 		}
 
 		.map-block__form {
 			margin-right: 0;
+
+			&-adress {
+				height: 10.2rem;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+
+				span {
+					font-size: 2.8rem;
+					display: block;
+					width: 47rem;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					text-wrap: nowrap;
+					line-height: normal;
+				}
+			}
+
+			.map-block__identify-box {
+				p {
+					font-size: 2.8rem;
+				}
+			}
+
+			.map-block__row {
+				gap: 4rem;
+			}
+
+			.input-container {
+				height: auto;
+			}
 
 			&-head {
 				position: absolute;

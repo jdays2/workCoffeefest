@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				breakpoints: {
 					769: {
 						slidesPerView: 4,
-						spaceBetween: rem(3.4)
+						// spaceBetween: rem(3.4)
 					},
 					320: {
 						slidesPerView: 1,
-						spaceBetween: rem(3.55)
+						// spaceBetween: rem(3.55)
 					},
 				},
 			});
@@ -372,13 +372,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const categoryBlockSwiper = new Swiper('.category-block__swiper', {
-		spaceBetween: rem(5),
 		slidesPerView: 'auto',
+		spaceBetween: rem(2.4),
 		updateOnWindowResize: true,
 		rebuildOnUpdate: true,
+		observer: true,
 		navigation: {
 			nextEl: '.category-block__btn-right',
 			prevEl: '.category-block__btn-left',
 		},
+		breakpoints: {
+			768: {
+				spaceBetween: rem(5),
+				slidesPerView: 'auto',
+			}
+		}
 	});
 });
