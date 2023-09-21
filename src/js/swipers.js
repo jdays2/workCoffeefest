@@ -1,3 +1,5 @@
+// const { default: Swiper } = require("swiper");
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Пересчет rem в px
 	const rem = function (rem) {
@@ -82,14 +84,30 @@ document.addEventListener('DOMContentLoaded', function () {
 				breakpoints: {
 					769: {
 						slidesPerView: 4,
+						// spaceBetween: rem(3.4)
 					},
 					320: {
 						slidesPerView: 1,
+						// spaceBetween: rem(3.55)
 					},
 				},
 			});
 		});
 	}
+
+	const chronologySwiper = new Swiper('.chronology-swiper', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		breakpoints: {
+			768: {
+				slidesPerView: 5.8,
+				slidesPerGroup: 5.8
+			}
+		},
+		pagination: {
+			el: '.chronology__swiper-pagination'
+		}
+	})
 
 	const awaySwiper = new Swiper('.away__swiper', {
 		slidesPerView: 3,
@@ -106,6 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const modalMapSwiper = new Swiper('.modal-map__swiper', {
 		slidesPerView: 1,
+		spaceBetween: 20,
 		pagination: {
 			clickable: true,
 			el: '.modal-map__swiper-pagination',
@@ -353,13 +372,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const categoryBlockSwiper = new Swiper('.category-block__swiper', {
-		spaceBetween: rem(5),
 		slidesPerView: 'auto',
+		spaceBetween: rem(2.4),
 		updateOnWindowResize: true,
 		rebuildOnUpdate: true,
+		observer: true,
 		navigation: {
 			nextEl: '.category-block__btn-right',
 			prevEl: '.category-block__btn-left',
 		},
+		breakpoints: {
+			768: {
+				spaceBetween: rem(5),
+				slidesPerView: 'auto',
+			}
+		}
 	});
 });

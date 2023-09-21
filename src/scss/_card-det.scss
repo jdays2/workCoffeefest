@@ -656,6 +656,33 @@
 
 		&__stats-item {
 			flex: 0 1 47%;
+
+			.card-det__popup {
+				padding: 4rem;
+				font-size: 2.8rem;
+			}
+		}
+
+		&__more {
+			&:not(:last-child) {
+				margin: 0 5rem 0 0;
+			}
+
+			.card-det__popup {
+				width: 59rem;
+				padding: 4rem;
+	
+				&-list {
+					max-height: 80.8rem;
+					gap: 3.2rem;
+				}
+	
+				&-item {
+					.card-det__item-value {
+						width: 31.4rem;
+					}
+				}
+			}
 		}
 
 		&__right-side {
@@ -675,6 +702,18 @@
 				&__count-btn {
 					width: 2.4rem;
 					height: 2.4rem;
+				}
+			}
+
+			.card-det__popup {
+				z-index: 10;
+
+				&-list {
+					row-gap: 4rem;
+				}
+
+				&-item {
+					border-bottom: none;
 				}
 			}
 		}
@@ -700,12 +739,6 @@
 			align-items: flex-start;
 		}
 
-		&__more {
-			&:not(:last-child) {
-				margin: 0 5rem 0 0;
-			}
-		}
-
 		&__current-price-box {
 			strong {
 				font-size: 6rem;
@@ -726,8 +759,10 @@
 			}
 		}
 
-		&__popup {
-			width: 59rem;
+		.stroke-btn {
+			width: 100%;
+			text-align: center;
+			height: 9.8rem;
 		}
 	}
 }

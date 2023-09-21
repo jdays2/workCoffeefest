@@ -137,10 +137,14 @@
 	@media (max-width: 48em) {
 		&__title {
 			font-size: 3.6rem;
+			margin-bottom: 2.4rem;
 		}
 
 		&__descr {
 			background-image: url('../images/svg/bg/proposal-card-bg-mobile.svg');
+			background-position: 0 0;
+			min-height: 33.8rem;
+			padding: 8rem 4rem 10rem 4rem;
 		}
 
 		&__text {
