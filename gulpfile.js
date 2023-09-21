@@ -14,7 +14,7 @@ const svgSprite = require('gulp-svg-sprite');
 const multiDest = require('gulp-multi-dest');
 
 const createSvgSprite = () => {
-	return src('src/images/svg/icons/*.svg')
+	return src('src/images/svg/**.svg')
 			.pipe(svgSprite({
 					mode: {
 							symbol: {
@@ -92,7 +92,7 @@ watch('./templates/*.html', html);
 watch('./src/scss/**/*.scss', scssStyles);
 watch('./src/js/**', files);
 watch('./src/images/**', files)
-watch('./src/images/svg/icons/**', createSvgSprite)
+watch('./src/images/svg/**', createSvgSprite)
 
 exports.scssStyles = scssStyles;
 exports.cssStyles = cssStyles;
