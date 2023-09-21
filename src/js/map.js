@@ -1,7 +1,20 @@
 const mapInit = () => {
+	const activeClass = 'active';
 	const searchItems = document.querySelectorAll('.map-block__search-item');
 	const mapModal = document.querySelector('.modal-map');
 	const root = document.querySelector('#root');
+
+	let iconWidth = 0,
+		iconHeight = 0;
+
+	if (window.screen.width > 768) {
+		iconWidth = 66;
+		iconHeight = 74;
+	} else {
+		iconWidth = 31;
+		iconHeight = 35;
+	}
+
 	//яндекс карта
 	if (typeof ymaps !== 'undefined' && typeof ymaps !== 'null' && root) {
 		const init = () => {
@@ -18,7 +31,7 @@ const mapInit = () => {
 				{
 					iconLayout: 'default#image',
 					iconImageHref: './src/images/svg/generic/geo-map-blue.svg',
-					iconImageSize: [66, 74],
+					iconImageSize: [iconWidth, iconHeight],
 				},
 			);
 
@@ -28,7 +41,7 @@ const mapInit = () => {
 				{
 					iconLayout: 'default#image',
 					iconImageHref: './src/images/svg/generic/geo-map-biege.svg',
-					iconImageSize: [66, 74],
+					iconImageSize: [iconWidth, iconHeight],
 				},
 			);
 
@@ -38,7 +51,7 @@ const mapInit = () => {
 				{
 					iconLayout: 'default#image',
 					iconImageHref: './src/images/svg/generic/geo-map-green.svg',
-					iconImageSize: [66, 74],
+					iconImageSize: [iconWidth, iconHeight],
 				},
 			);
 
@@ -66,7 +79,6 @@ const mapInit = () => {
 
 	//открыть модалку по клику по карточке в списке адресов
 	if (searchItems && mapModal) {
-		const activeClass = 'active';
 		searchItems.forEach((item, id) => {
 			const link = item.querySelector('.arrow-link');
 			link.addEventListener('click', () => {

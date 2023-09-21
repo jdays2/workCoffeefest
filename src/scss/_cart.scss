@@ -332,6 +332,7 @@
 
 				&:not(:last-child) {
 					padding: 11.4rem 0 19.2rem 0;
+					border-bottom: 0.2rem solid $light;
 				}
 
 				&-img {
@@ -364,6 +365,7 @@
 					position: absolute;
 					left: 0;
 					bottom: 6rem;
+					column-gap: 5rem;
 
 					&__count-btn {
 						width: 2.8rem;
@@ -377,11 +379,17 @@
 				
 				.cart__main-cart-item {
 					position: absolute;
-					right: 3rem;
-					bottom: 6.8rem;
-					width: 5rem;
-					height: 5rem;
+					display: block;
+					right: 0rem;
+					bottom: 4rem;
+					width: 10rem;
+					height: 10rem;
+					background-color: $light;
+					background-size: 5rem 5rem;
+					border-radius: 50%;
 				}
+
+
 			}
 		}
 
@@ -401,45 +409,49 @@
 			}
 		}
 
-			&__aside {
-		width: auto;
+		&__aside {
+			width: auto;
 
-		.box-blue {
-			margin: 0;
-			padding: 8rem 4rem;
-		}
-
-		&-title {
-			font-size: 2.8rem;
-		}
-
-		&-row {
-			margin: 0 0 3.2rem 0;
-
-			&:nth-child(3) {
-				margin: 0 0 5rem 0;
+			.box-blue {
+				margin: 0;
+				padding: 8rem 4rem;
 			}
-		}
 
-		&-total {
-			padding: 5rem 0 0 0;
-			margin: 0 0 8rem 0;
-
-			p,
-			span {
-				font-size: 3.6rem;
-			}
-		}
-
-		&-input {
-			margin: 0 0 5rem 0;
-
-			input {
-				height: 10rem;
+			&-title {
 				font-size: 2.8rem;
 			}
+
+			&-row {
+				margin: 0 0 3.2rem 0;
+
+				&:nth-child(3) {
+					margin: 0 0 5rem 0;
+				}
+			}
+
+			&-total {
+				padding: 5rem 0 0 0;
+				margin: 0 0 8rem 0;
+
+				p,
+				span {
+					font-size: 3.6rem;
+				}
+			}
+
+			&-input {
+				margin: 0 0 5rem 0;
+
+				input {
+					height: 10rem;
+					font-size: 2.8rem;
+				}
+
+				.cart__input-icon {
+					display: none;
+				}
+			}
 		}
-	}
 	}
 }
 
