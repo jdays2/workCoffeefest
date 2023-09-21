@@ -390,7 +390,7 @@ if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
 		let swiperControlls = swiper.nextElementSibling;
 		let swiperElements = swiper.querySelectorAll('.swiper-slide');
 
-		console.log(swiper.params);
+		// console.log(swiper.params);
 
 		// if (swiperElements.length <= 4) {
 		// 	swiperControlls.style.display = "none";
