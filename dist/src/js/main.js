@@ -382,16 +382,18 @@ if (removeFiles) {
 
 // 
 
-// if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
-// 	const swiperWrappers = document.querySelectorAll('.swiper-wrapper');
+if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
+	const swiperWrappers = document.querySelectorAll('.swiper-wrapper');
 
-// 	swiperWrappers.forEach(swiperWrapper => {
-// 		let swiper = swiperWrapper.parentElement;
-// 		let swiperControlls = swiper.nextElementSibling;
-// 		let swiperElements = swiper.querySelectorAll('.swiper-slide');
+	swiperWrappers.forEach(swiperWrapper => {
+		let swiper = swiperWrapper.parentElement;
+		let swiperControlls = swiper.nextElementSibling;
+		let swiperElements = swiper.querySelectorAll('.swiper-slide');
 
-// 		if (swiperElements.length <= 4) {
-// 			swiperControlls.style.display = "none";
-// 		}
-// 	})
-// }
+		console.log(swiper.params);
+
+		// if (swiperElements.length <= 4) {
+		// 	swiperControlls.style.display = "none";
+		// }
+	})
+}

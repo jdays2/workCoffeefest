@@ -16,52 +16,6 @@ $line: rgba(234, 194, 178, 0.25);
 $grey20: rgba(121, 121, 121, 0.2);
 $white20: rgba(255, 255, 255, 0.2);
 
-body {
-	&::-webkit-scrollbar {
-		width: 1.5rem;
-		right: 2rem;
-		padding-right: 2rem; /* Ширина скроллбара */
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background-color: $biege;
-		border-radius: 0.4rem; /* Закругление углов ползунка */
-	}
-
-	&::-webkit-scrollbar-thumb:hover {
-		background-color: $darkBlue; /* Цвет ползунка при наведении */
-	}
-
-	&::-webkit-scrollbar-track {
-		background-color: $light; /* Цвет трека скроллбара */
-	}
-
-	&::-webkit-scrollbar-track:hover {
-		background-color: $light; /* Цвет трека при наведении */
-	}
-
-	&::-webkit-scrollbar {
-		width: 1.5rem; /* Ширина скроллбара для Firefox */
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background-color: $biege; /* Цвет ползунка скроллбара для Firefox */
-		border-radius: 0.4rem; /* Закругление углов ползунка для Firefox */
-	}
-
-	&::-webkit-scrollbar-thumb:hover {
-		background-color: $darkBlue; /* Цвет ползунка при наведении для Firefox */
-	}
-
-	&::-webkit-scrollbar-track {
-		background-color: $light; /* Цвет трека скроллбара для Firefox */
-	}
-
-	&::-webkit-scrollbar-track:hover {
-		background-color: $light;
-	}
-}
-
 .text-gray {
 	color: #797979;
 }
@@ -199,7 +153,7 @@ body {
 }
 
 .light-section {
-	background: url(../images/svg/bg/background-pattern.svg) top left/cover
+	background: url(../images/symbol/stack/sprite.svg#background-pattern) top left/cover
 		no-repeat;
 
 	@media (max-width: 48em) {
@@ -215,7 +169,7 @@ body {
 	justify-content: center;
 	border-radius: 50%;
 	transition: background-color 0.2s ease-in-out;
-	background: $light url(../images/svg/generic/short-arrow-right.svg) center/40%
+	background: $light url(../images/symbol/stack/sprite.svg#generic--short-arrow-right) center/40%
 		no-repeat;
 
 	svg {
@@ -961,7 +915,7 @@ body {
 	.swiper-prev {
 		left: 0;
 		transform: translate(-50%, -50%) scaleX(-1);
-		background-image: url(../images/svg/bg/left-arrow.svg);
+		background-image: url(../images/symbol/stack/sprite.svg#left-arrow);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40%;
@@ -970,7 +924,7 @@ body {
 	.swiper-next {
 		right: 0;
 		transform: translate(50%, -50%);
-		background-image: url(../images/svg/bg/left-arrow.svg);
+		background-image: url(../images/symbol/stack/sprite.svg#left-arrow);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40%;
