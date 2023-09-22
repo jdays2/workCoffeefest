@@ -25,7 +25,7 @@ const createSvgSprite = () => {
 			}),
 		)
 
-		.pipe(multiDest(['src/symbol', 'dist/src/symbol']));
+		.pipe(multiDest(['src/images/symbol', 'dist/src/images/symbol']));
 };
 
 const clean = () => {
