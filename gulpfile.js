@@ -15,9 +15,6 @@ const multiDest = require('gulp-multi-dest');
 
 const createSvgSprite = () => {
 	return src('src/images/svg/**/*.svg')
-		.on('data', (file) => {
-			console.log(`Processing ${file.relative}`);
-		})
 		.pipe(
 			svgSprite({
 				mode: {
@@ -28,7 +25,7 @@ const createSvgSprite = () => {
 			}),
 		)
 
-		.pipe(multiDest(['src/images/symbol', 'dist/src/symbol']));
+		.pipe(multiDest(['src/symbol', 'dist/src/symbol']));
 };
 
 const clean = () => {
