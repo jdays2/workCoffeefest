@@ -153,11 +153,12 @@ $white20: rgba(255, 255, 255, 0.2);
 }
 
 .light-section {
-	background: url(../images/symbol/stack/sprite.svg#background-pattern) top left/cover
+	background: url(../images/symbol/stack/sprite.svg#bg--background-pattern) top left/cover
 		no-repeat;
 
 	@media (max-width: 48em) {
-		background-image: url('../images/svg/bg/background-pattern-mobile.svg');
+		background-image: url(../images/symbol/stack/sprite.svg#bg--background-pattern-mobile);
+		background-position: center;
 	}
 }
 
@@ -431,10 +432,10 @@ $white20: rgba(255, 255, 255, 0.2);
 .filter-result-item {
 	display: none !important;
 	padding-right: 3.4rem;
-	background-image: url(../images/svg/generic/close-dark.svg);
+	background-image: url(../images/symbol/stack/sprite.svg#generic--close-dark);
 	background-repeat: no-repeat;
 	background-position: right center;
-	background-size: 2.4rem;
+	background-size: 2.4rem 2.4rem;
 
 	&.active {
 		display: flex !important;
@@ -507,10 +508,10 @@ $white20: rgba(255, 255, 255, 0.2);
 .filter-btn {
 	span {
 		padding-left: 3.6rem;
-		background-image: url(../images/svg/generic/filter.svg);
+		background-image: url(../images/symbol/stack/sprite.svg#generic--filter);
 		background-repeat: no-repeat;
-		background-position: left center;
-		background-size: contain;
+		background-position: -1.5rem center;
+		background-size: cover;
 	}
 }
 
@@ -915,7 +916,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	.swiper-prev {
 		left: 0;
 		transform: translate(-50%, -50%) scaleX(-1);
-		background-image: url(../images/symbol/stack/sprite.svg#left-arrow);
+		background-image: url(../images/symbol/stack/sprite.svg#bg--left-arrow);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40%;
@@ -924,7 +925,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	.swiper-next {
 		right: 0;
 		transform: translate(50%, -50%);
-		background-image: url(../images/symbol/stack/sprite.svg#left-arrow);
+		background-image: url(../images/symbol/stack/sprite.svg#bg--left-arrow);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40%;
