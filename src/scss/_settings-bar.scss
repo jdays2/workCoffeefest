@@ -31,8 +31,16 @@
 	@media (max-width: 48em) {
 		padding: 0;
 
+		&.container {
+			padding: 0 4rem;
+		}
+
 		&__box {
 			gap: 1.6rem;
+
+			.tag-btn.geo-btn {
+				display: none;
+			}
 		}
 
 		.filter-btn {

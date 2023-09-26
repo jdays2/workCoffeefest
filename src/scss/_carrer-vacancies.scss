@@ -21,6 +21,20 @@
 
 @media (max-width: 48em) {
 	.carrer-vacancies {
+		.section-tags {
+			column-gap: 12.6rem;
+
+			&__item-btn {
+				font-size: 2.8rem;
+				line-height: 140%;
+
+				&.active {
+					font-size: 4rem;
+					line-height: 120%;
+				}
+			}
+		}
+
 		&__accordion {
 			.acc-head {
 				padding: 4rem !important;

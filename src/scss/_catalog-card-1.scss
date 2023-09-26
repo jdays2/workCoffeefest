@@ -204,8 +204,16 @@
 	}
 }
 
-.catalog-card-1__img {
-	height: 37.4rem;
+// .catalog-card-1__img {
+// 	height: 37.4rem;
+// }
+
+@media (max-width: 48em) {
+	.catalog-main-block.cakes {
+		.catalog-card-1__img {
+			height: 31.7rem;
+		}
+	}
 }
 
 @media (hover: hover) {

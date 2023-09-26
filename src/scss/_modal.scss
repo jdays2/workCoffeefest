@@ -850,6 +850,18 @@
 			align-items: center;
 		}
 	}
+
+	.chage-password-modal {
+		.account-main__left-policy {
+			margin: 0 auto;
+		}
+	}
+
+	.filter-modal {
+		.modal__btns {
+			align-items: center;
+		}
+	}
 }
 
 .modal-map {
@@ -861,5 +873,14 @@
 		width: 2.4rem;
 		height: 2.4rem;
 		background-image: url(../images/svg/generic/close-light.svg);
+	}
+
+	@media (max-width: 48em) {
+		.modal__close-btn {
+			top: 4rem;
+			right: 4rem;
+			width: 3.6rem;
+			height: 3.6rem;
+		}
 	}
 }

@@ -154,6 +154,18 @@
 				width: 100%;
 				text-align: center;
 			}
+
+			.catalog-inputs__file{
+				height: 10.4rem;
+			}
+
+			.catalog-inputs__file-label {
+				left: 7rem;
+
+				&::before {
+					left: -6.4rem;
+				}
+			}
 		}
 
 		&__right {

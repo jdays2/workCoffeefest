@@ -84,6 +84,7 @@
 	.account-main {
 		&__container {
 			flex-direction: column;
+			max-height: none;
 		}
 
 		&__left {
