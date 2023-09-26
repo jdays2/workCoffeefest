@@ -1563,6 +1563,24 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 }
 
+@media (max-width: 48em) {
+	.franchise-banner {
+		&.franchise-banner__activities {
+			.section-info__card-right {
+				margin-top: 17rem;
+			}
+
+			.section-info__card-left__heading {
+				top: -63rem;
+			}
+		}
+
+		.square-btn {
+			padding: 2.8rem 6.7rem;
+		}
+	}
+}
+
 .accordion {
 	.acc-item {
 		&:not(:last-child) {
