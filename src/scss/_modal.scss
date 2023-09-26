@@ -786,6 +786,70 @@
 			width: 100%;
 		}
 	}
+
+	.modal.filter-modal-1 {
+		.teg-list {
+			width: 100%;
+			margin: 0 0 8rem 0;
+		}
+	}
+
+	.feedback-modal {
+		.heading2 {
+			max-width: 42.2rem;
+			margin: 0 auto;
+		}
+
+		.rates {
+			margin: 5rem 0;
+
+			&__title {
+				font-size: 2.8rem;
+				line-height: 140%;
+			}
+		}
+
+		.input-textarea-wrapper {
+			height: 46rem;
+
+			.input-textarea {
+				height: 46rem;
+			}
+		}
+
+		.upload {
+			margin: 0 0 6.4rem 0;
+
+			&__title {
+				font-size: 2.8rem;
+				line-height: 140%;
+				margin: 0 0 3.2rem 0;
+			}
+
+			&__content {
+				column-gap: 3.2rem;
+			}
+
+			&__input-label {
+				width: 11.2rem;
+				height: 11.2rem;
+				max-height: 11.2rem;
+				background-size: 42.857%;
+			}
+
+			&__info {
+				strong,
+				span {
+					font-size: 2.8rem;
+					line-height: 140%;
+				}
+			}
+		}
+
+		.modal__btns {
+			align-items: center;
+		}
+	}
 }
 
 .modal-map {

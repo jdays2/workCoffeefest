@@ -163,5 +163,38 @@
 			width: auto;
 			max-width: 67rem;
 		}
+
+		&__hero-content {
+			padding-top: 9.6rem;
+			padding-bottom: 27rem;
+
+			&__right {
+				height: auto;
+	
+				&-img,
+				&-video {
+					width: 32.4rem;
+					height: 43.2rem;
+				}
+
+				&-text {
+					bottom: -17.4rem;
+					left: 0;
+
+					.name {
+						font-family: 'Circe';
+						font-size: 3.6rem;
+						line-height: 150%;
+					}
+
+					.post {
+						font-family: 'Circe';
+						font-size: 2.8rem;
+						line-height: 140%; 
+						font-weight: 400;
+					}
+				}
+			}
+		}
 	}
 }
