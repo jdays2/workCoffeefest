@@ -284,6 +284,7 @@ const searchBlock = document.querySelector('.header__search-block');
 const headerList = document.querySelector('.header__top-list');
 
 if (searchBtn && searchCloseBtn) {
+	const activeClass = 'active';
 	searchBtn.addEventListener('click', () => {
 		searchBlock.classList.toggle(activeClass);
 		headerList.classList.toggle(activeClass);
