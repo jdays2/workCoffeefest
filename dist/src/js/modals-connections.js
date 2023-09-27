@@ -1713,3 +1713,48 @@ if (unavailableBtn) {
 		}),
 	);
 }
+
+//добавление модалки "Акция"
+//пока кнопки не существует, добавьте нужный id к нужной кнопке или перепишите вызов функции addModal
+const promotionContent = `
+<p class="heading2">Акция</p>
+			<div class="news-main__item">
+				<img
+					src="./src/images/news-img2.png"
+					alt=""
+					class="news-main__item-img" />
+				<div class="news-main__item-text">
+					<p class="news-main__item-heading heading4">
+						Скидка для второго и следующего заказов
+					</p>
+					<div class="news-main__item-description menu">
+						<p>
+							Только в течение ограниченного времени мы предлагаем вам
+							адреналиновую акцию: купите одну и получите вторую бесплатно на
+							любой кофе среднего размера на ваш выбор! Пришло время действовать
+							и погрузиться в мир смелых вкусов и бодрящих ароматов.
+						</p>
+					</div>
+					<div class="news-main__item-bottom">
+						<p class="news-main__item-date btns-caps">до 01.12.23</p>
+						<a
+							href="#"
+							class="news-main__item-name btns-caps">
+							Акции
+						</a>
+					</div>
+				</div>
+			</div>
+`;
+
+const promotionBtn = document.querySelectorAll('#promotion-btn');
+
+if (promotionBtn) {
+	const modalClass = 'promotion-modal';
+
+	promotionBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, promotionContent);
+		}),
+	);
+}

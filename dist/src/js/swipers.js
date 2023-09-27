@@ -98,14 +98,21 @@ document.addEventListener('DOMContentLoaded', function () {
 	const chronologySwiper = new Swiper('.chronology-swiper', {
 		slidesPerView: 1,
 		slidesPerGroup: 1,
+		allowTouchMove: true,
+		allowSlidePrev: true,
+		allowSlideNext: true,
 		breakpoints: {
 			768: {
 				slidesPerView: 5.8,
 				slidesPerGroup: 5.8,
+				allowTouchMove: false,
+				allowSlidePrev: false,
+				allowSlideNext: false,
 			},
 		},
 		pagination: {
 			el: '.chronology__swiper-pagination',
+			clickable: true,
 		},
 	});
 
@@ -226,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const interiors = new Swiper('.interiors__swiper', {
-		slidesPerView: 1.8,
+		slidesPerView: 1,
 		spaceBetween: rem(3),
 		centeredSlides: true,
 		speed: 600,
