@@ -166,6 +166,10 @@
             }
 
             &-block {
+                overflow: hidden;
+                max-height: 5rem;
+                transition: 0.4s;
+
                 &.block1,
                 &.block2,
                 &.block3,
@@ -233,6 +237,10 @@
                         }
                     }
                 }
+            }
+
+            &-right {
+                max-width: none;
             }
         }
 
