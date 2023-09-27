@@ -390,11 +390,10 @@ if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
 		let swiper = swiperWrapper.parentElement;
 		let swiperControlls = swiper.nextElementSibling;
 		let swiperElements = swiper.querySelectorAll('.swiper-slide');
+		let swiperWrapperWidth = swiperWrapper.clientWidth;
 
-		// console.log(swiper.params);
-
-		// if (swiperElements.length <= 4) {
-		// 	swiperControlls.style.display = "none";
-		// }
+		if ((swiperElements[0].clientWidth * swiperElements.length) <= swiperWrapperWidth) {
+			swiperControlls.style.display = "none";
+		}
 	})
 }

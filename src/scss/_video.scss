@@ -134,6 +134,8 @@
 	background-image: url('../images/svg/generic/player-icon.svg') !important;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
+	right: 37% !important;
+	left: auto !important;
 }
 
 .video-js .vjs-big-play-button:hover {
@@ -155,6 +157,6 @@
 	}
 
 	.video-js .vjs-big-play-button {
-		left: calc(50% + 4rem) !important;
+		right: 37% !important;
 	}
 }
