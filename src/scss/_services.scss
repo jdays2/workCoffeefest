@@ -20,7 +20,7 @@
 		width: fit-content;
 		border-bottom: 0.1rem solid;
 
-		color: #29354d;
+		color: #35415C;
 		font-family: Circe;
 		font-size: 1.8rem;
 		font-style: normal;
@@ -43,26 +43,13 @@
 			width: 37.2rem;
 			display: flex;
 			flex-direction: column;
-			height: auto;
-			&--small {
-				.services__list-item__text {
-					min-height: 22rem;
-				}
-				.services__list-item__text-description {
-					width: 100%;
-				}
-			}
-			&--medium {
-				.services__list-item__text {
-					min-height: 30rem;
-				}
-			}
+			height: 100%;
+
 
 			&__text {
-				padding: 5rem 3rem 2rem 3rem;
-				min-height: 27rem;
-				height: calc(100% - 27.2rem);
+				padding: 5rem 3rem 3rem;
 				background-color: $biege;
+				flex-grow: 1;
 
 				&-heading {
 					margin-bottom: 1.2rem;
@@ -206,11 +193,11 @@
 		.services__swiper-slide {
 			&__text {
 				padding: 8rem 4rem;
-				min-height: 49.2rem;
+				min-height: 52.2rem;
 				height: auto;
 
 				&-link {
-					margin-top: 0;
+					margin-top: auto;
 				}
 
 				&-heading {
@@ -231,7 +218,8 @@
 				height: 50.4rem;
 
 				img {
-					object-fit: cover;
+					-o-object-fit: cover;
+					   object-fit: cover;
 				}
 
 				&-heading {

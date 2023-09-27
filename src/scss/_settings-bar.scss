@@ -20,7 +20,7 @@
 			border: none;
 			span {
 				padding-left: 3.4rem;
-				background-image: url(../images/svg/generic/geo-single.svg);
+				background-image: url(../images/symbil/stack/sprite.svg#generic--geo-single);
 				background-repeat: no-repeat;
 				background-position: left center;
 				background-size: contain;
@@ -31,8 +31,16 @@
 	@media (max-width: 48em) {
 		padding: 0;
 
+		&.container {
+			padding: 0 4rem;
+		}
+
 		&__box {
 			gap: 1.6rem;
+
+			.tag-btn.geo-btn {
+				display: none;
+			}
 		}
 
 		.filter-btn {

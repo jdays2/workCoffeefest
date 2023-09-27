@@ -263,7 +263,7 @@
 		}
 
 		&__content-title {
-			color: #29354d;
+			color: #35415C;
 			font-family: Circe;
 			font-size: 1.8rem;
 			font-style: normal;
@@ -284,7 +284,7 @@
 
 			p {
 				width: 36.6rem;
-				color: #29354d;
+				color: #35415C;
 				font-family: Circe;
 				font-size: 1.8rem;
 				font-style: normal;
@@ -309,7 +309,7 @@
 			background-size: contain;
 
 			span {
-				color: #29354d;
+				color: #35415C;
 				font-family: Circe;
 				font-size: 1.8rem;
 				font-style: normal;
@@ -354,7 +354,7 @@
 			}
 
 			strong {
-				color: #29354d;
+				color: #35415C;
 			}
 		}
 
@@ -786,6 +786,82 @@
 			width: 100%;
 		}
 	}
+
+	.modal.filter-modal-1 {
+		.teg-list {
+			width: 100%;
+			margin: 0 0 8rem 0;
+		}
+	}
+
+	.feedback-modal {
+		.heading2 {
+			max-width: 42.2rem;
+			margin: 0 auto;
+		}
+
+		.rates {
+			margin: 5rem 0;
+
+			&__title {
+				font-size: 2.8rem;
+				line-height: 140%;
+			}
+		}
+
+		.input-textarea-wrapper {
+			height: 46rem;
+
+			.input-textarea {
+				height: 46rem;
+			}
+		}
+
+		.upload {
+			margin: 0 0 6.4rem 0;
+
+			&__title {
+				font-size: 2.8rem;
+				line-height: 140%;
+				margin: 0 0 3.2rem 0;
+			}
+
+			&__content {
+				column-gap: 3.2rem;
+			}
+
+			&__input-label {
+				width: 11.2rem;
+				height: 11.2rem;
+				max-height: 11.2rem;
+				background-size: 42.857%;
+			}
+
+			&__info {
+				strong,
+				span {
+					font-size: 2.8rem;
+					line-height: 140%;
+				}
+			}
+		}
+
+		.modal__btns {
+			align-items: center;
+		}
+	}
+
+	.chage-password-modal {
+		.account-main__left-policy {
+			margin: 0 auto;
+		}
+	}
+
+	.filter-modal {
+		.modal__btns {
+			align-items: center;
+		}
+	}
 }
 
 .modal-map {
@@ -797,5 +873,14 @@
 		width: 2.4rem;
 		height: 2.4rem;
 		background-image: url(../images/svg/generic/close-light.svg);
+	}
+
+	@media (max-width: 48em) {
+		.modal__close-btn {
+			top: 4rem;
+			right: 4rem;
+			width: 3.6rem;
+			height: 3.6rem;
+		}
 	}
 }

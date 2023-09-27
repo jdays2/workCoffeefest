@@ -100,7 +100,7 @@
 		display: block;
 		background-color: #f1ded0;
 		&.active {
-			background-color: #29354d;
+			background-color: #35415C;
 		}
 	}
 
@@ -371,7 +371,7 @@
 	}
 
 	&__item-title {
-		color: #29354d;
+		color: #35415C;
 		text-align: left;
 	}
 
@@ -390,7 +390,7 @@
 		}
 
 		input:checked + span {
-			color: #29354d;
+			color: #35415C;
 			font-family: Circe;
 			font-size: 3rem;
 			font-style: normal;
@@ -403,7 +403,7 @@
 				outline: none;
 			}
 
-			color: #29354d;
+			color: #35415C;
 			font-family: Circe;
 			font-size: 1.8rem;
 			font-style: normal;
@@ -427,7 +427,7 @@
 		align-items: flex-end;
 		strong {
 			display: block;
-			color: #29354d;
+			color: #35415C;
 			font-family: Circe;
 			font-size: 3rem;
 			font-style: normal;
@@ -438,7 +438,7 @@
 		span {
 			display: block;
 			margin-left: 0.6rem;
-			color: #29354d;
+			color: #35415C;
 			font-family: Circe;
 			font-size: 2rem;
 			font-style: normal;
@@ -763,6 +763,11 @@
 			width: 100%;
 			text-align: center;
 			height: 9.8rem;
+		}
+
+		.time-icon {
+			width: 4rem;
+			height: 4rem;
 		}
 	}
 }

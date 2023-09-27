@@ -69,7 +69,7 @@
 			width: 19.8rem;
 
 			span {
-				color: #29354d;
+				color: #35415C;
 				font-family: Circe;
 				font-size: 1.8rem;
 				font-style: normal;
@@ -81,7 +81,7 @@
 			}
 
 			strong {
-				color: #29354d;
+				color: #35415C;
 				text-align: center;
 				font-family: Circe;
 				font-size: 2rem;
@@ -168,7 +168,7 @@
 	&__link {
 		padding-top: 1.4rem;
 		margin-left: auto;
-		border-bottom: 0.1rem solid #29354d;
+		border-bottom: 0.1rem solid #35415C;
 		transition: 0.2s ease-in-out;
 		span {
 			font-size: 1.8rem;
@@ -204,8 +204,16 @@
 	}
 }
 
-.catalog-card-1__img {
-	height: 37.4rem;
+// .catalog-card-1__img {
+// 	height: 37.4rem;
+// }
+
+@media (max-width: 48em) {
+	.catalog-main-block.cakes {
+		.catalog-card-1__img {
+			height: 31.7rem;
+		}
+	}
 }
 
 @media (hover: hover) {

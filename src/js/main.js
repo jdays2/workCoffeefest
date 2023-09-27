@@ -284,6 +284,7 @@ const searchBlock = document.querySelector('.header__search-block');
 const headerList = document.querySelector('.header__top-list');
 
 if (searchBtn && searchCloseBtn) {
+	const activeClass = 'active';
 	searchBtn.addEventListener('click', () => {
 		searchBlock.classList.toggle(activeClass);
 		headerList.classList.toggle(activeClass);
@@ -382,16 +383,18 @@ if (removeFiles) {
 
 // 
 
-// if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
-// 	const swiperWrappers = document.querySelectorAll('.swiper-wrapper');
+if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
+	const swiperWrappers = document.querySelectorAll('.swiper-wrapper');
 
-// 	swiperWrappers.forEach(swiperWrapper => {
-// 		let swiper = swiperWrapper.parentElement;
-// 		let swiperControlls = swiper.nextElementSibling;
-// 		let swiperElements = swiper.querySelectorAll('.swiper-slide');
+	swiperWrappers.forEach(swiperWrapper => {
+		let swiper = swiperWrapper.parentElement;
+		let swiperControlls = swiper.nextElementSibling;
+		let swiperElements = swiper.querySelectorAll('.swiper-slide');
 
-// 		if (swiperElements.length <= 4) {
-// 			swiperControlls.style.display = "none";
-// 		}
-// 	})
-// }
+		// console.log(swiper.params);
+
+		// if (swiperElements.length <= 4) {
+		// 	swiperControlls.style.display = "none";
+		// }
+	})
+}

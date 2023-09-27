@@ -48,6 +48,11 @@
 		transform: translateX(-50%);
 	}
 
+	&--left {
+		left: 10rem;
+		transform: translateY(-50%);
+	}
+
 	&--bottom {
 		top: auto;
 		bottom: 25.8rem;
