@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		breakpoints: {
 			768: {
 				slidesPerView: 5.8,
-				slidesPerGroup: 5.8
-			}
+				slidesPerGroup: 5.8,
+			},
 		},
 		pagination: {
-			el: '.chronology__swiper-pagination'
-		}
-	})
+			el: '.chronology__swiper-pagination',
+		},
+	});
 
 	const awaySwiper = new Swiper('.away__swiper', {
 		slidesPerView: 3,
@@ -226,7 +226,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	const interiors = new Swiper('.interiors__swiper', {
+		slidesPerView: 1.8,
 		spaceBetween: rem(3),
+		centeredSlides: true,
 		speed: 600,
 		breakpoints: {
 			768: {
@@ -385,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			768: {
 				spaceBetween: rem(5),
 				slidesPerView: 'auto',
-			}
-		}
+			},
+		},
 	});
 });
