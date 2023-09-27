@@ -67,7 +67,7 @@
 			&__left {
 				width: auto;
 				height: calc(100% - 82rem);
-				max-width: 67rem;
+				width: 67rem;
 				border-radius: 0;
 			}
 
@@ -76,11 +76,12 @@
 				border-radius: 0 0 7.2rem 7.2rem;
 				overflow: hidden;
 				width: auto;
-				max-width: 67rem;
+				width: 67rem;
 
 				img {
 					-o-object-fit: cover;
 					   object-fit: cover;
+					width: 100%;
 				}
 			}
 		}
