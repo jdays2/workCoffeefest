@@ -57,20 +57,20 @@
 		padding: 0.6rem 1.6rem 0.2rem 1.6rem;
 
 		&.active {
-			background-color: #29354d;
-			border: 0.1rem solid #29354d;
+			background-color: #35415C;
+			border: 0.1rem solid #35415C;
 			.ordering-progres__phase-value {
 				color: #fff9ee;
 			}
 			.ordering-progres__phase-text {
-				color: #29354d;
+				color: #35415C;
 				font-weight: 700;
 			}
 		}
 		&.done {
 			padding: 0.6rem 1.2rem;
-			background-color: #29354d;
-			border: 0.1rem solid #29354d;
+			background-color: #35415C;
+			border: 0.1rem solid #35415C;
 			.ordering-progres__phase-value {
 				display: none;
 			}
@@ -78,7 +78,7 @@
 				display: block;
 			}
 			.ordering-progres__phase-text {
-				color: #29354d;
+				color: #35415C;
 				font-weight: 700;
 			}
 		}
@@ -97,7 +97,7 @@
 
 	&__phase-value {
 		display: block;
-		color: #29354d;
+		color: #35415C;
 		font-family: Circe;
 		font-size: 2rem;
 		font-style: normal;
@@ -114,7 +114,7 @@
 
 		&.active {
 			height: 0.2rem;
-			background-color: #29354d;
+			background-color: #35415C;
 		}
 	}
 }
