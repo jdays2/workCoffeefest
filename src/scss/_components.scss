@@ -6,7 +6,7 @@ $grey: #bababa;
 $red: #51283f;
 $green: #203d3c;
 $blue: #67a7ac;
-$darkBlue: #35415C;
+$darkBlue: #35415c;
 $brightHeadlines: #e6af9a;
 $biege: #f1ded0;
 $biege-btn: #e3bca0;
@@ -65,7 +65,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 
 	&__count-value {
-		color: #35415C;
+		color: #35415c;
 		font-family: Circe;
 		font-size: 3rem;
 		font-style: normal;
@@ -153,8 +153,8 @@ $white20: rgba(255, 255, 255, 0.2);
 }
 
 .light-section {
-	background: url(../images/symbol/stack/sprite.svg#bg--background-pattern) top left/cover
-		no-repeat;
+	background: url(../images/symbol/stack/sprite.svg#bg--background-pattern) top
+		left/cover no-repeat;
 
 	@media (max-width: 48em) {
 		background-image: url(../images/symbol/stack/sprite.svg#bg--background-pattern-mobile);
@@ -170,7 +170,8 @@ $white20: rgba(255, 255, 255, 0.2);
 	justify-content: center;
 	border-radius: 50%;
 	transition: background-color 0.2s ease-in-out;
-	background: $light url(../images/symbol/stack/sprite.svg#generic--short-arrow-right) center/40%
+	background: $light
+		url(../images/symbol/stack/sprite.svg#generic--short-arrow-right) center/40%
 		no-repeat;
 
 	svg {
@@ -880,7 +881,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			transition: 0.2s ease-in-out;
 
 			&.active {
-				color: #35415C;
+				color: #35415c;
 				font-family: Circe;
 				font-size: 3rem;
 				font-style: normal;
@@ -1255,7 +1256,6 @@ $white20: rgba(255, 255, 255, 0.2);
 		height: 59rem;
 		padding: 0;
 		overflow: auto;
-		border-radius: 0rem 0rem 0rem 5rem;
 		.section-info__card-left {
 			padding: 8rem 6rem;
 			padding-right: 4rem;
@@ -1339,8 +1339,24 @@ $white20: rgba(255, 255, 255, 0.2);
 			}
 		}
 
+		&__med-img {
+			width: 74.4rem;
+			height: 49.6rem;
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+
+			@media (max-width: 48em) {
+				width: 59rem;
+				height: 39.2rem;
+			}
+		}
+
 		position: relative;
-		border-radius: 0 0 5rem 5rem;
 
 		& > img {
 			width: 100%;
