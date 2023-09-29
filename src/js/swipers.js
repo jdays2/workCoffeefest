@@ -213,8 +213,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		},
 		pagination: {
 			clickable: true,
-			// el: '.proposal__swiper-pagination-1',
-			el: '.proposal__swiper-pagination',
+			el: '.proposal__swiper-pagination-1',
+			// el: '.proposal__swiper-pagination',
 		},
 		navigation: {
 			nextEl: '.proposal__swiper-next',
