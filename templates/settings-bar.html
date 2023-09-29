@@ -1,0 +1,285 @@
+<div class="settings-bar container">
+  <div class="settings-bar__row">
+    <div class="settings-bar__box">
+      <button
+        class="tag-btn filter-btn"
+        id="filter">
+        <span>Фильтры</span>
+      </button>
+
+      <div class="search-block">
+        <label>
+          <input
+            class="search-block__input"
+            type="text"
+            placeholder="Поиск" />
+
+          <button class="search-block__enter-icon"></button>
+        </label>
+      </div>
+    </div>
+
+    <div class="settings-bar__box">
+      <button
+        class="tag-btn geo-btn"
+        id="geo-btn">
+        <span>Выбрать адрес</span>
+        <svg class="popup-block__more-icon">
+          <use
+            xlink:href="sprite.svg#filter" />
+        </svg>
+      </button>
+
+      <button class="popup-block__wrapper">
+        <label class="popup-block">
+          <span class="popup-block__arrows-icon"></span>
+          <input type="checkbox" />
+          <div class="popup-block__popup popup-block__popup--select">
+            <div class="popup-block__list">
+              <label class="popup-block__item">
+                <input
+                  type="radio"
+                  name="popup-block__item" />
+                <span class="popup-block__item-title text2">
+                  Сначала новые
+                </span>
+              </label>
+
+              <label class="popup-block__item">
+                <input
+                  type="radio"
+                  name="popup-block__item" />
+                <span class="popup-block__item-title text2">
+                  Сначала недорогие
+                </span>
+              </label>
+
+              <label class="popup-block__item">
+                <input
+                  type="radio"
+                  name="popup-block__item" />
+                <span class="popup-block__item-title text2">
+                  Сначала дорогие
+                </span>
+              </label>
+            </div>
+          </div>
+          <span class="text2 popup-block__select-value">
+            Сортировать
+          </span>
+
+          <svg class="popup-block__more-icon">
+            <use
+              xlink:href="sprite.svg#popup" />
+          </svg>
+        </label>
+      </button>
+    </div>
+  </div>
+
+  <div class="settings-bar__row">
+    <div class="filter__tag-list">
+      <button
+        class="tag-btn tag-btn--borderless filter-result-item active">
+        <span>Новости кофе</span>
+      </button>
+
+      <button
+        class="tag-btn tag-btn--borderless filter-result-item active">
+        <span>Новости кофеен</span>
+      </button>
+
+      <button
+        class="tag-btn tag-btn--borderless filter-result-item active">
+        <span>События</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="settings-bar__row">
+    <div class="category-block">
+      <button class="category-block__btn-left">
+        <svg>
+          <use
+            xlink:href="./src/images/symbol/stack/sprite.svg#bg--catalog-arrow-left" />
+        </svg>
+      </button>
+      <div class="category-block category-block__swiper swiper">
+        <div class="swiper-wrapper">
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">Все</span>
+              <span class="category-block__value-show">Все</span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">Завтраки</span>
+              <span class="category-block__value-show">Завтраки</span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">Салаты</span>
+              <span class="category-block__value-show">Салаты</span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">
+                Супы и блюда
+              </span>
+              <span class="category-block__value-show">
+                Супы и блюда
+              </span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">
+                Сендвичи и бургеры
+              </span>
+              <span class="category-block__value-show">
+                Сендвичи и бургеры
+              </span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">
+                Зерновой кофе
+              </span>
+              <span class="category-block__value-show">
+                Зерновой кофе
+              </span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">
+                Горячие напитки
+              </span>
+              <span class="category-block__value-show">
+                Горячие напитки
+              </span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">Выпечка</span>
+              <span class="category-block__value-show">Выпечка</span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">Десерты</span>
+              <span class="category-block__value-show">Десерты</span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">
+                Кофе и чай
+              </span>
+              <span class="category-block__value-show">Кофе и чай</span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">Завтраки</span>
+              <span class="category-block__value-show">Завтракий</span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">
+                Зерновой кофе
+              </span>
+              <span class="category-block__value-show">
+                Зерновой кофе
+              </span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">
+                Горячие напитки
+              </span>
+              <span class="category-block__value-show">
+                Горячие напитки
+              </span>
+            </div>
+          </label>
+
+          <label class="category-block__item swiper-slide">
+            <input
+              name="categories-item"
+              type="radio" />
+            <div class="category-block__value-wrapper">
+              <span class="category-block__value-hidden">Кулич</span>
+              <span class="category-block__value-show">Кулич</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <button class="category-block__btn-right">
+        <svg>
+          <use
+            xlink:href="./src/images/symbol/stack/sprite.svg#bg--catalog-arrow-right" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
