@@ -56,9 +56,9 @@
 	width: 100%;
 	height: 100%;
 	.vjs-poster {
-		background-color: #35415C;
+		background-color: #35415c;
 		img {
-			background-color: #35415C;
+			background-color: #35415c;
 			border-radius: 0px 0px 5rem 5rem;
 		}
 	}
@@ -68,9 +68,9 @@
 	width: 37.2rem;
 	height: 100%;
 	.vjs-poster {
-		background-color: #35415C;
+		background-color: #35415c;
 		img {
-			background-color: #35415C;
+			background-color: #35415c;
 			border-radius: 0px 0px 5rem 5rem;
 		}
 	}
@@ -81,9 +81,9 @@
 	height: 100%;
 
 	.vjs-poster {
-		background-color: #35415C;
+		background-color: #35415c;
 		img {
-			background-color: #35415C;
+			background-color: #35415c;
 			border-radius: 0px 0px 5rem 5rem;
 		}
 	}
@@ -134,8 +134,12 @@
 	background-image: url('../images/svg/generic/player-icon.svg') !important;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
-	right: 37% !important;
-	left: auto !important;
+	right: 50% !important;
+	top: 50% !important;
+	left: auto;
+	bottom: auto;
+	transform: translate(-50%, -50%);
+	margin: 0 !important;
 }
 
 .video-js .vjs-big-play-button:hover {
@@ -156,7 +160,7 @@
 		width: 75rem;
 	}
 
-	.video-js .vjs-big-play-button {
-		right: 37% !important;
-	}
+	// .video-js .vjs-big-play-button {
+	// 	right: 37% !important;
+	// }
 }
