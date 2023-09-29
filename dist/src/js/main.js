@@ -1,17 +1,17 @@
+// Пересчет rem в px
+const rem = function (rem) {
+	if (window.innerWidth > 768) {
+		return 0.005208335 * window.innerWidth * rem;
+	} else {
+		// где 375 это ширина моб версии макета
+		return (100 / 375) * (0.1 * window.innerWidth) * rem;
+	}
+};
+
 document.addEventListener('DOMContentLoaded', function () {
 	const header = document.querySelector('header');
 	const body = document.body;
 	const html = document.documentElement;
-
-	// Пересчет rem в px
-	const rem = function (rem) {
-		if (window.innerWidth > 768) {
-			return 0.005208335 * window.innerWidth * rem;
-		} else {
-			// где 375 это ширина моб версии макета
-			return (100 / 375) * (0.1 * window.innerWidth) * rem;
-		}
-	};
 
 	// функция клика вне элемента
 	function clickOutside(elem, needToClose) {
@@ -395,5 +395,23 @@ if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
 		if ((swiperElements[0].clientWidth * swiperElements.length) <= swiperWrapperWidth) {
 			swiperControlls.style.display = "none";
 		}
+	})
+}
+
+// Аккордион в футере 
+
+if (window.screen.width <= 768) {
+	const foterBlocks = document.querySelectorAll('.footer__top-block');
+
+	let blockMaxHeight = '5rem';
+
+	foterBlocks.forEach(block => {
+		block.addEventListener('click', () => {
+			block.classList.toggle('active');
+
+			block.classList.contains('active') ? blockMaxHeight = `${block.scrollHeight / 5}rem` : blockMaxHeight = '5rem';
+
+			block.style.maxHeight = blockMaxHeight;
+		})
 	})
 }
