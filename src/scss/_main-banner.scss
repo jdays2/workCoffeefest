@@ -11,7 +11,6 @@
 			path {
 				transition: fill 0.45s ease;
 			}
-			
 		}
 	}
 
@@ -231,5 +230,26 @@
 				}
 			}
 		}
+	}
+}
+
+.main-banner-mobile__swiper {
+	display: none;
+}
+
+@media (max-width: 48em) {
+	.main-banner {
+		height: calc(100dvh - 18.2rem);
+	}
+	.main-banner__swiper {
+		display: none;
+	}
+	.main-banner-mobile__swiper {
+		display: block;
+		height: 100%;
+	}
+
+	.main-banner__swiper-controllers {
+		bottom: 4.95%;
 	}
 }

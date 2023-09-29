@@ -20,20 +20,7 @@
 		letter-spacing: 0.09rem;
 		text-transform: uppercase;
 		transition: 0.2s ease-in-out;
-	}
-
-	&:hover {
-		@media (hover: hover) {
-			border: 0.2rem solid #fff9ee;
-			background-color: #fff9ee;
-			span {
-				color: $darkBlue;
-			}
-
-			path {
-				fill: $darkBlue;
-			}
-		}
+		line-height: 1;
 	}
 
 	&__icon {
@@ -61,10 +48,22 @@
 
 	&--light {
 		border: 0.2rem solid #f5f5f5;
-		background: rgba(35, 41, 62, 0.3);
+		background: $red;
 
 		span {
 			color: #f5f5f5;
+		}
+
+		&:hover {
+			border: 0.2rem solid #fff9ee;
+			background-color: #f5f5f5;
+			span {
+				color: $red;
+			}
+
+			svg {
+				fill: #f5f5f5;
+			}
 		}
 	}
 
@@ -85,10 +84,41 @@
 	}
 
 	&--red {
-		border: 0.2rem solid $red;
-		background: rgba(230, 176, 154, 0.2);
+		border: 0.2rem solid #65324e;
+		background: #fffaf1;
 		span {
 			color: $red;
+		}
+
+		&:hover {
+			border: 0.2rem solid #fff9ee;
+			background-color: $red;
+			span {
+				color: #fffaf1;
+			}
+
+			svg {
+				fill: $red;
+			}
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.banner-btns {
+		top: auto;
+		transform: translateX(-50%);
+		bottom: 11.98%;
+
+		padding: 3.1rem 7.2rem;
+		height: 10rem;
+		span {
+			font-size: 3.2rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: 0.096rem;
+			white-space: nowrap;
 		}
 	}
 }
