@@ -8,12 +8,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: $light;
+	background-color: $light;
 	transition: 0.2s ease-in-out;
-	background-image: url(../images/svg/generic/bag.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 40%;
+
 }
 
 @media (max-width: 48em) {

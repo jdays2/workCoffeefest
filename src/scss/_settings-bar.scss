@@ -32,14 +32,16 @@
 		padding: 0;
 
 		&.container {
-			padding: 0 4rem;
+			padding: 0rem;
 		}
 
 		&__box {
 			gap: 1.6rem;
 
-			.tag-btn.geo-btn {
-				display: none;
+			.tag-btn {
+				.geo-btn {
+					display: none;
+				}
 			}
 		}
 
@@ -47,18 +49,20 @@
 			padding: 4.7rem 3.5rem;
 
 			span {
-			font-size: 0;
+				font-size: 0;
 			}
 		}
 
 		.search-block {
-			height: 9.6rem;
 			max-height: 9.6rem;
+			border: 0.4rem solid #35415c;
+			height: 9.6rem;
 
 			label {
 				height: 100%;
 				font-size: 2.8rem;
 				background-size: 3.2rem 3.2rem;
+				background-position: 1.6rem center;
 
 				button {
 					display: none;
@@ -69,6 +73,7 @@
 		.popup-block {
 			width: auto;
 			padding: 4.7rem 3.5rem;
+			border: 0.4rem solid #35415c;
 
 			&__arrows-icon {
 				padding-left: 0;
@@ -101,7 +106,6 @@
 		}
 
 		&__row {
-
 			&:last-child {
 				.category-block {
 					&__btn-left,

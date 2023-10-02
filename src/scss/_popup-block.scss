@@ -18,8 +18,8 @@
 
 	svg {
 		display: block;
-		width: 2.4rem;
-		height: 2.4rem;
+		width: 1.4rem;
+		height: 1rem;
 		transition: 0.4s;
 	}
 
@@ -35,7 +35,7 @@
 		width: 2.4rem;
 		height: 2.4rem;
 		padding-left:3.6rem;
-		background-image: url(../images/svg/generic/filter-arrows.svg);
+		background-image: url('/sprite.svg#double-arrows');
 		background-position: left center;
 		background-size: contain;
 		background-repeat: no-repeat;
