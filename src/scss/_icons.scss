@@ -15,8 +15,12 @@
 	stroke-width: 2;
 	stroke-linecap: round;
 	stroke-linejoin: round;
+	fill: none;
 	&--dark {
+		width: 2.3rem;
+		height: 2.6rem;
 		stroke-width: 1.7;
+
 		stroke: $darkBlue;
 	}
 
@@ -29,6 +33,14 @@
 .email {
 	width: 3.94rem;
 	height: 3.94rem;
+}
+
+.arrow-right {
+	width: 2.8rem;
+	height: 1.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .search-icon {
@@ -60,6 +72,8 @@
 .home {
 	stroke: $darkBlue;
 	fill: transparent;
+	width: 2.4rem;
+	height: 2.4rem;
 }
 
 .crest {
@@ -69,7 +83,7 @@
 	width: 4.3rem;
 	height: 4.3rem;
 	&--dark {
-		stroke: #35415C;
+		stroke: #35415c;
 		width: 2.4rem;
 		height: 2.4rem;
 		stroke-width: 2;

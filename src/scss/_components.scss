@@ -433,7 +433,7 @@ $white20: rgba(255, 255, 255, 0.2);
 .filter-result-item {
 	display: none !important;
 	padding-right: 3.4rem;
-	background-image: url(../images/symbol/stack/sprite.svg#generic--close-dark);
+	background-image: url('sprite.svg#dark-crest');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1011,13 +1011,6 @@ $white20: rgba(255, 255, 255, 0.2);
 			position: relative;
 			align-items: center;
 			display: flex;
-
-			svg {
-				width: 2.8rem;
-				height: 2.8rem;
-				-o-object-fit: contain;
-				object-fit: contain;
-			}
 		}
 	}
 
