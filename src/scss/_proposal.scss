@@ -55,17 +55,11 @@
 		position: relative;
 		overflow: hidden;
 		background-color: #35415c;
-		background-image: url('../images/svg/bg/proposal-card-bg.svg');
+		background-image: url('../images/background-7.webp');
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: 0rem -6.8rem;
+		background-position: center top;
 		flex: 1;
-
-		&--large {
-			background-image: url('../images/svg/bg/proposal-card-bg.svg');
-			background-repeat: no-repeat;
-			background-position: 0rem 0rem;
-		}
 
 		&--mega-large {
 			background-size: contain;
@@ -146,8 +140,9 @@
 		}
 
 		&__descr {
-			background-image: url('../images/svg/bg/proposal-card-bg-mobile.svg');
-			background-position: 0 0;
+			background-image: url('../images/background-7-mobile.webp');
+			background-size: cover;
+			background-position: center top;
 			min-height: 33.8rem;
 			padding: 8rem 4rem 10rem 4rem;
 		}

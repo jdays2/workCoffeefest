@@ -157,11 +157,10 @@ $white20: rgba(255, 255, 255, 0.2);
 }
 
 .light-section {
-	background: url(../images/symbol/stack/sprite.svg#bg--background-pattern) top
-		left/cover no-repeat;
+	background: url(../images/background-2.webp) center/cover no-repeat;
 
 	@media (max-width: 48em) {
-		background-image: url(../images/symbol/stack/sprite.svg#bg--background-pattern-mobile);
+		background-image: url(../images/background-2-mobile.webp);
 		background-position: center;
 	}
 }
@@ -174,13 +173,13 @@ $white20: rgba(255, 255, 255, 0.2);
 	justify-content: center;
 	border-radius: 50%;
 	transition: background-color 0.2s ease-in-out;
-	background: $light
-		url(../images/symbol/stack/sprite.svg#generic--short-arrow-right) center/40%
-		no-repeat;
+	background: $light;
 
-	svg {
-		width: 2.8rem;
-		height: 1.2rem;
+	.arrow-link__icon {
+		width: 2.9rem;
+		height: 1.3rem;
+		fill: #29354d;
+		transform: translateY(0);
 	}
 
 	&:hover {
@@ -190,6 +189,14 @@ $white20: rgba(255, 255, 255, 0.2);
 	@media (max-width: 48em) {
 		width: 14rem;
 		height: 14rem;
+
+		.arrow-link__icon {
+			display: block;
+			width: 5.2rem;
+			height: auto;
+			fill: #29354d;
+			transform: translateY(0);
+		}
 	}
 }
 
@@ -651,14 +658,14 @@ $white20: rgba(255, 255, 255, 0.2);
 
 		&.invalid {
 			opacity: 0;
-			background-image: url(../images/svg/generic/invalid.svg);
+			background-image: url(/sprite.svg#invalid);
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 92%;
 		}
 		&.success {
 			opacity: 0;
-			background-image: url(../images/svg/generic/succes.svg);
+			background-image: url(/sprite.svg#succes);
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 100%;
@@ -917,6 +924,10 @@ $white20: rgba(255, 255, 255, 0.2);
 		transition: background-color 0.2s ease-in-out;
 		cursor: pointer;
 
+		.arrow-link__icon {
+			transform: translate(0);
+		}
+
 		&:hover {
 			background-color: $biege-btn;
 		}
@@ -925,19 +936,11 @@ $white20: rgba(255, 255, 255, 0.2);
 	.swiper-prev {
 		left: 0;
 		transform: translate(-50%, -50%) scaleX(-1);
-		background-image: url(../images/symbol/stack/sprite.svg#bg--left-arrow);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 40%;
 	}
 
 	.swiper-next {
 		right: 0;
 		transform: translate(50%, -50%);
-		background-image: url(../images/symbol/stack/sprite.svg#bg--left-arrow);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 40%;
 	}
 
 	.swiper-pagination {
@@ -1243,8 +1246,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	display: flex;
 	justify-content: space-between;
 	border-radius: 0 0 5rem 5rem;
-	background: url(../images/svg/bg/big-background-pattern.svg) top left/cover
-			no-repeat,
+	background: url(../images/background-6.webp) top left/cover no-repeat,
 		$darkBlue;
 	&.hide {
 		display: none;
@@ -1400,7 +1402,9 @@ $white20: rgba(255, 255, 255, 0.2);
 
 	@media (max-width: 48em) {
 		padding: 9.6rem 4rem;
-		background-image: url('../images/svg/bg/big-background-pattern-mobile.svg');
+		background-image: url(../images/background-6-mobile.webp);
+		background-position: center top;
+		background-size: cover;
 
 		&__container {
 			flex-direction: column;

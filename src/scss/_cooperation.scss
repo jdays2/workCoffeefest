@@ -35,7 +35,7 @@
 	&__left {
 		padding: 8rem 6rem;
 		width: 82rem;
-		background: url(../images/svg/bg/medium-background-pattern.svg) top left/cover
+		background: url(../images/background-6.webp) top left/cover
 				no-repeat,
 			$darkBlue;
 		border-radius: 0 0 0 5rem;
@@ -93,7 +93,7 @@
 		}
 
 		&__left {
-			background-image: url('../images/svg/bg/medium-background-pattern-mobile.svg');
+			background-image: url('../images/background-6-mobile.webp');
 			width: auto;
 			max-width: 67rem;
 			border-radius: 0;

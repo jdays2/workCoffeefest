@@ -9,7 +9,7 @@
 			width: 78rem;
 			display: flex;
 			flex-direction: column;
-			background: url(../images/svg/bg/medium-background-pattern.svg) top left/cover
+			background: url(../images/background-6.webp) top left/cover
 					no-repeat,
 				$darkBlue;
 			border-radius: 0 0 0 5rem;
@@ -126,7 +126,7 @@
 				width: auto;
 				border-radius: 0;
 				padding: 10rem 4rem 8rem 4rem;
-				background-image: url('../images/svg/bg/medium-background-pattern-mobile.svg');
+				background-image: url('../images/background-6-mobile.webp');
 				background-size: 100% 100%;
 
 				&__list-item {
