@@ -29,7 +29,7 @@
 				display: flex;
 				flex-direction: column;
 				min-height: 29.4rem;
-				background: url(../images/symbol/stack/sprite.svg#categories-ornament1) top
+				background: url(../images/background-3.webp) top
 						left/cover no-repeat,
 					$darkBlue;
 				border-radius: 0 0 5rem 5rem;
@@ -85,8 +85,9 @@
 					padding: 8rem 4rem;
 					min-height: 49.2rem;
 
-					background-image: url('../images/svg/bg/categories-ornament1-mobile.svg');
-					background-size: 100% 100%;
+					background-image: url('../images/background-1-mobile.webp');
+					background-size: cover;
+					background-position: center;
 
 					&-description {
 						margin-bottom: 8rem;

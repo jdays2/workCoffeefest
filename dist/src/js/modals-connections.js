@@ -385,7 +385,11 @@ const mapContent = `<div class="map-block">
 				class="search-block__input"
 				type="text"
 				placeholder="Поиск" />
-			<button class="search-block__enter-icon"></button>
+			<button class="search-block__enter-icon">
+						<svg class="arrow-right">
+							<use xlink:href="sprite.svg#arrow-right" />
+						</svg>
+					</button>
 		</label>
 	</div>
 

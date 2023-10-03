@@ -1,5 +1,7 @@
 .phone-icon {
 	stroke: #fff9ee;
+	stroke-width: 1.5;
+	stroke-miterlimit: 10;
 
 	&--biege {
 		stroke: #e6af9a;
@@ -142,6 +144,10 @@
 	height: 0.6rem;
 }
 
+.mobile {
+	fill: #35415c;
+}
+
 .password {
 	width: 2.4rem;
 	height: 2.4rem;
@@ -166,3 +172,4 @@
 	width: 4.5rem;
 	height: 4.5rem;
 }
+

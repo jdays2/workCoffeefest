@@ -60,7 +60,7 @@
 			href="#"
 			class="header__logo">
 			<svg>
-				<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+				<use xlink:href="/sprite.svg#logo" />
 			</svg>
 		</a>
 		<nav class="header__nav desktop">
@@ -207,14 +207,14 @@
 					href="#"
 					class="header__account">
 					<svg class="profile">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--profile" />
+						<use xlink:href="/sprite.svg#profile" />
 					</svg>
 				</a>
 				<a
 					href="#"
 					class="header__cart">
 					<svg class="bag">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--bag" />
+						<use xlink:href="/sprite.svg#bag" />
 					</svg>
 				</a>
 			</div>
@@ -243,7 +243,7 @@
 					<div class="acc-head">
 						<p class="heading4">Меню</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="/sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -262,7 +262,7 @@
 					<div class="acc-head">
 						<p class="heading4">Каталог</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="/sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -420,328 +420,271 @@
 			<section class="catalog-main-block breakfasts section">
 				<div class="catalog-main-block__container container">
 					<div class="settings-bar container">
-						<div class="settings-bar__row">
-							<div class="settings-bar__box">
-								<button
-									class="tag-btn"
-									id="filter">
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M22 18H15"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M5 18H2"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M22 7H19"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M9 7H2"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M7 15H13C14.1 15 15 15.5 15 17V19C15 20.5 14.1 21 13 21H7C5.9 21 5 20.5 5 19V17C5 15.5 5.9 15 7 15Z"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-										<path
-											d="M11 4H17C18.1 4 19 4.5 19 6V8C19 9.5 18.1 10 17 10H11C9.9 10 9 9.5 9 8V6C9 4.5 9.9 4 11 4Z"
-											stroke="#29354D"
-											stroke-width="1.5"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-									<span>Фильтры</span>
-								</button>
+	<div class="settings-bar__row">
+		<div class="settings-bar__box">
+			<button
+				class="tag-btn filter-btn"
+				id="filter">
+				<span>Фильтры</span>
+			</button>
 
-								<div class="search-block">
-									<label>
-										<input
-											class="search-block__input"
-											type="text"
-											placeholder="Поиск" />
-										<button class="search-block__main-icon">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none">
-												<path
-													d="M4.14466 17.2263L4.87484 17.055L4.14466 17.2263ZM4.14466 10.405L4.87484 10.5763L4.14466 10.405ZM23.4867 10.405L24.2168 10.2337L23.4867 10.405ZM23.4867 17.2263L24.2168 17.3976L23.4867 17.2263ZM17.2263 23.4867L17.055 22.7565L17.2263 23.4867ZM10.405 23.4867L10.2337 24.2168L10.405 23.4867ZM10.405 4.14466L10.2337 3.41448L10.405 4.14466ZM17.2263 4.14466L17.3976 3.41448L17.2263 4.14466ZM25.7197 26.7803C26.0126 27.0732 26.4874 27.0732 26.7803 26.7803C27.0732 26.4874 27.0732 26.0126 26.7803 25.7197L25.7197 26.7803ZM4.87484 17.055C4.37505 14.9244 4.37505 12.7069 4.87484 10.5763L3.41448 10.2337C2.86184 12.5897 2.86184 15.0416 3.41448 17.3976L4.87484 17.055ZM22.7565 10.5763C23.2563 12.7069 23.2563 14.9244 22.7565 17.055L24.2168 17.3976C24.7695 15.0416 24.7695 12.5897 24.2168 10.2337L22.7565 10.5763ZM17.055 22.7565C14.9244 23.2563 12.7069 23.2563 10.5763 22.7565L10.2337 24.2168C12.5897 24.7695 15.0416 24.7695 17.3976 24.2168L17.055 22.7565ZM10.5763 4.87484C12.7069 4.37505 14.9244 4.37505 17.055 4.87484L17.3976 3.41448C15.0416 2.86184 12.5897 2.86184 10.2337 3.41448L10.5763 4.87484ZM10.5763 22.7565C7.74731 22.0929 5.53843 19.884 4.87484 17.055L3.41448 17.3976C4.20817 20.7812 6.85012 23.4231 10.2337 24.2168L10.5763 22.7565ZM17.3976 24.2168C20.7812 23.4231 23.4231 20.7812 24.2168 17.3976L22.7565 17.055C22.0929 19.884 19.884 22.0929 17.055 22.7565L17.3976 24.2168ZM17.055 4.87484C19.884 5.53843 22.0929 7.74731 22.7565 10.5763L24.2168 10.2337C23.4231 6.85012 20.7812 4.20817 17.3976 3.41448L17.055 4.87484ZM10.2337 3.41448C6.85012 4.20817 4.20817 6.85011 3.41448 10.2337L4.87484 10.5763C5.53843 7.74731 7.74731 5.53843 10.5763 4.87484L10.2337 3.41448ZM21.1386 22.1993L25.7197 26.7803L26.7803 25.7197L22.1993 21.1386L21.1386 22.1993Z"
-													fill="#29354D" />
-											</svg>
-										</button>
+			<div class="search-block">
+				<label>
+					<input
+						class="search-block__input"
+						type="text"
+						placeholder="Поиск" />
 
-										<button class="search-block__enter-icon">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none">
-												<path
-													d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM27.5303 6.53033C27.8232 6.23744 27.8232 5.76257 27.5303 5.46967L22.7574 0.696701C22.4645 0.403808 21.9896 0.403808 21.6967 0.696701C21.4038 0.989594 21.4038 1.46447 21.6967 1.75736L25.9393 6L21.6967 10.2426C21.4038 10.5355 21.4038 11.0104 21.6967 11.3033C21.9896 11.5962 22.4645 11.5962 22.7574 11.3033L27.5303 6.53033ZM1 6.75L27 6.75L27 5.25L1 5.25L1 6.75Z"
-													fill="#29354D" />
-											</svg>
-										</button>
-									</label>
-								</div>
-							</div>
+					<button class="search-block__enter-icon">
+						<svg class="arrow-right">
+							<use xlink:href="sprite.svg#arrow-right" />
+						</svg>
+					</button>
+				</label>
+			</div>
+		</div>
 
-							<button class="popup-block__wrapper">
-								<label class="popup-block">
-									<span class="popup-block__arrows-icon">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											fill="none">
-											<path
-												d="M10.4498 6.71997L6.72974 3L3.00977 6.71997"
-												stroke="#29354D"
-												stroke-width="1.5"
-												stroke-linecap="round"
-												stroke-linejoin="round" />
-											<path
-												d="M6.72949 21V3"
-												stroke="#29354D"
-												stroke-width="1.5"
-												stroke-linecap="round"
-												stroke-linejoin="round" />
-											<path
-												d="M13.5498 17.2812L17.2698 21.0012L20.9898 17.2812"
-												stroke="#29354D"
-												stroke-width="1.5"
-												stroke-linecap="round"
-												stroke-linejoin="round" />
-											<path
-												d="M17.2695 3V21"
-												stroke="#29354D"
-												stroke-width="1.5"
-												stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-									</span>
-									<input type="checkbox" />
-									<div class="popup-block__popup popup-block__popup--select">
-										<div class="popup-block__list">
-											<label class="popup-block__item">
-												<input
-													type="radio"
-													name="popup-block__item" />
-												<span class="popup-block__item-title text2">
-													Сначала новые
-												</span>
-											</label>
+		<div class="settings-bar__box">
+			<button
+				class="tag-btn geo-btn"
+				id="geo-btn">
+				<span>Выбрать адрес</span>
+				<svg class="popup-block__more-icon">
+					<use xlink:href="sprite.svg#geo-icon" />
+				</svg>
+			</button>
 
-											<label class="popup-block__item">
-												<input
-													type="radio"
-													name="popup-block__item" />
-												<span class="popup-block__item-title text2">
-													Сначала недорогие
-												</span>
-											</label>
+			<button class="popup-block__wrapper">
+				<label class="popup-block">
+					<span class="popup-block__arrows-icon"></span>
+					<input type="checkbox" />
+					<div class="popup-block__popup popup-block__popup--select">
+						<div class="popup-block__list">
+							<label class="popup-block__item">
+								<input
+									type="radio"
+									name="popup-block__item" />
+								<span class="popup-block__item-title text2">Сначала новые</span>
+							</label>
 
-											<label class="popup-block__item">
-												<input
-													type="radio"
-													name="popup-block__item" />
-												<span class="popup-block__item-title text2">
-													Сначала дорогие
-												</span>
-											</label>
-										</div>
-									</div>
-									<span class="text2 popup-block__select-value">
-										В каком виде доставить
-									</span>
+							<label class="popup-block__item">
+								<input
+									type="radio"
+									name="popup-block__item" />
+								<span class="popup-block__item-title text2">
+									Сначала недорогие
+								</span>
+							</label>
 
-									<svg
-										class="popup-block__more-icon"
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 24 24"
-										fill="none">
-										<path
-											d="M6.5 9L12.5 15L18.5 9"
-											stroke="#29354D"
-											stroke-width="1.5" />
-									</svg>
-								</label>
-							</button>
-						</div>
-
-						<div class="settings-bar__row">
-							<div class="filter__tag-list">
-								<button class="tag-btn tag-btn--borderless">
-									<span>Новости кофе</span>
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g
-											id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-											<path
-												id="Vector"
-												d="M3 4L21 22M21 4L3 22"
-												stroke="#29354D"
-												stroke-width="2"
-												stroke-linecap="round" />
-										</g>
-									</svg>
-								</button>
-
-								<button class="tag-btn tag-btn--borderless">
-									<span>Новости кофеен</span>
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g
-											id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-											<path
-												id="Vector"
-												d="M3 4L21 22M21 4L3 22"
-												stroke="#29354D"
-												stroke-width="2"
-												stroke-linecap="round" />
-										</g>
-									</svg>
-								</button>
-
-								<button class="tag-btn tag-btn--borderless">
-									<span>События</span>
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g
-											id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-											<path
-												id="Vector"
-												d="M3 4L21 22M21 4L3 22"
-												stroke="#29354D"
-												stroke-width="2"
-												stroke-linecap="round" />
-										</g>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="settings-bar__row">
-							<div class="category-block">
-								<button class="category-block__btn-left">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
-<rect width="70" height="70" rx="35" fill="#FFF9EE"/>
-<path d="M48 34.25C48.4142 34.25 48.75 34.5858 48.75 35C48.75 35.4142 48.4142 35.75 48 35.75L48 34.25ZM21.4697 35.5303C21.1768 35.2374 21.1768 34.7626 21.4697 34.4697L26.2426 29.6967C26.5355 29.4038 27.0104 29.4038 27.3033 29.6967C27.5962 29.9896 27.5962 30.4645 27.3033 30.7574L23.0607 35L27.3033 39.2426C27.5962 39.5355 27.5962 40.0104 27.3033 40.3033C27.0104 40.5962 26.5355 40.5962 26.2426 40.3033L21.4697 35.5303ZM48 35.75L22 35.75L22 34.25L48 34.25L48 35.75Z" fill="#29354D"/>
-</svg>
-								</button>
-								<div class="category-block category-block__swiper swiper">
-									<div class="swiper-wrapper">
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Все</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Завтраки</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Салаты</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Супы и блюда</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Сэндвичи и бургеры</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Зерновой кофе</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Горячие напитки</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Выпечка</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Десерты</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Кофе и чай</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Завтраки</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Зерновой кофе</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Горячие напитки</span>
-										</label>
-
-										<label class="category-block__item swiper-slide">
-											<input type="checkbox" />
-											<span>Кулич</span>
-										</label>
-									</div>
-								</div>
-
-								<button class="category-block__btn-right">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
-<rect width="70" height="70" rx="35" fill="#FFF9EE"/>
-<path d="M48 34.25C48.4142 34.25 48.75 34.5858 48.75 35C48.75 35.4142 48.4142 35.75 48 35.75L48 34.25ZM21.4697 35.5303C21.1768 35.2374 21.1768 34.7626 21.4697 34.4697L26.2426 29.6967C26.5355 29.4038 27.0104 29.4038 27.3033 29.6967C27.5962 29.9896 27.5962 30.4645 27.3033 30.7574L23.0607 35L27.3033 39.2426C27.5962 39.5355 27.5962 40.0104 27.3033 40.3033C27.0104 40.5962 26.5355 40.5962 26.2426 40.3033L21.4697 35.5303ZM48 35.75L22 35.75L22 34.25L48 34.25L48 35.75Z" fill="#29354D"/>
-</svg>
-								</button>
-							</div>
+							<label class="popup-block__item">
+								<input
+									type="radio"
+									name="popup-block__item" />
+								<span class="popup-block__item-title text2">
+									Сначала дорогие
+								</span>
+							</label>
 						</div>
 					</div>
+					<span class="text2 popup-block__select-value">Сортировать</span>
+
+					<svg class="popup-block__more-icon">
+						<use xlink:href="sprite.svg#popup" />
+					</svg>
+				</label>
+			</button>
+		</div>
+	</div>
+
+	<div class="settings-bar__row">
+		<div class="filter__tag-list">
+			<button class="tag-btn tag-btn--borderless filter-result-item active">
+				<span>Новости кофе</span>
+				<svg class="crest crest--dark">
+					<use xlink:href="sprite.svg#dark-crest" />
+				</svg>
+			</button>
+
+			<button class="tag-btn tag-btn--borderless filter-result-item active">
+				<span>Новости кофеен</span>
+				<svg class="crest crest--dark">
+					<use xlink:href="sprite.svg#dark-crest" />
+				</svg>
+			</button>
+
+			<button class="tag-btn tag-btn--borderless filter-result-item active">
+				<span>События</span>
+				<svg class="crest crest--dark">
+					<use xlink:href="sprite.svg#dark-crest" />
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="settings-bar__row">
+		<div class="category-block">
+			<button class="category-block__btn-left">
+				<svg>
+					<use
+						xlink:href="./src/images/symbol/stack/sprite.svg#bg--catalog-arrow-left" />
+				</svg>
+			</button>
+			<div class="category-block category-block__swiper swiper">
+				<div class="swiper-wrapper">
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Все</span>
+							<span class="category-block__value-show">Все</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Завтраки</span>
+							<span class="category-block__value-show">Завтраки</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Салаты</span>
+							<span class="category-block__value-show">Салаты</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Супы и блюда</span>
+							<span class="category-block__value-show">Супы и блюда</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">
+								Сендвичи и бургеры
+							</span>
+							<span class="category-block__value-show">Сендвичи и бургеры</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Зерновой кофе</span>
+							<span class="category-block__value-show">Зерновой кофе</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Горячие напитки</span>
+							<span class="category-block__value-show">Горячие напитки</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Выпечка</span>
+							<span class="category-block__value-show">Выпечка</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Десерты</span>
+							<span class="category-block__value-show">Десерты</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Кофе и чай</span>
+							<span class="category-block__value-show">Кофе и чай</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Завтраки</span>
+							<span class="category-block__value-show">Завтракий</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Зерновой кофе</span>
+							<span class="category-block__value-show">Зерновой кофе</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Горячие напитки</span>
+							<span class="category-block__value-show">Горячие напитки</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Кулич</span>
+							<span class="category-block__value-show">Кулич</span>
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<button class="category-block__btn-right">
+				<svg>
+					<use
+						xlink:href="./src/images/symbol/stack/sprite.svg#bg--catalog-arrow-right" />
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+
 					<div class="catalog-main-block__title heading2">Завтраки</div>
 					<div class="catalog__content-box">
 						<div class="catalog-card-1">
@@ -1843,7 +1786,7 @@
 				href="#"
 				class="footer__top-logo">
 				<svg>
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+					<use xlink:href="/sprite.svg#logo" />
 				</svg>
 			</a>
 			<div class="footer__top-block block1">
@@ -2080,7 +2023,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg>
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vk" />
+							<use xlink:href="/sprite.svg#vk" />
 						</svg>
 					</a>
 				</li>
@@ -2090,7 +2033,7 @@
 						class="footer__top-social__item-link">
 						<svg class="icon-link telegram">
 							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--telegram" />
+								xlink:href="/sprite.svg#telegram" />
 						</svg>
 					</a>
 				</li>
@@ -2100,7 +2043,7 @@
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
 							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--youtube" />
+								xlink:href="/sprite.svg#youtube" />
 						</svg>
 					</a>
 				</li>
@@ -2109,7 +2052,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--dzen" />
+							<use xlink:href="/sprite.svg#dzen" />
 						</svg>
 					</a>
 				</li>
@@ -2132,7 +2075,7 @@
 				</div>
 				<svg class="request-logo">
 					<use
-						xlink:href="./src/images/symbol/stack/sprite.svg#bg--request-logo" />
+						xlink:href="/sprite.svg#request" />
 				</svg>
 				<a
 					href="#"
