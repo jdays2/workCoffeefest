@@ -25,24 +25,23 @@
 		}
 	}
 	&__btn {
-		&.swiper-button-disabled {
-			display: none;
-		}
+		
 		&-left {
-			transform: rotate(-180deg);
-			padding-left: 3rem;
+			padding-right: 3rem;
 			svg {
-				width: 7rem;
-				height: 7rem;
+				width: 2.8rem;
+				fill: #35415c;
 			}
+			
 		}
 
 		&-right {
 			padding-left: 3rem;
 			svg {
-				width: 7rem;
-				height: 7rem;
+				width: 2.8rem;
+				fill: #35415c;
 			}
+			
 		}
 	}
 

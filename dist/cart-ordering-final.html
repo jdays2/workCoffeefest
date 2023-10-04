@@ -21,39 +21,11 @@
 		<header class="header">
 	<div class="container">
 		<button class="header__burger mobile">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="28"
-				height="17"
-				viewBox="0 0 28 17"
-				fill="none"
-				class="open">
-				<path
-					d="M1 8.44336H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 0.568359H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 16.3184H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
+			<svg class="open">
+				<use xlink:href="/sprite.svg#burger-btn" />
 			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" class="close">
-				<g clip-path="url(#clip0_5736_97052)">
-				  <path d="M4.66113 4.66116L22.3388 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				  <path d="M22.3389 4.66116L4.6612 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				</g>
-				<defs>
-				  <clipPath id="clip0_5736_97052">
-					<rect width="27" height="27" fill="white"/>
-				  </clipPath>
-				</defs>
+			<svg class="close">
+				<use xlink:href="/sprite.svg#burger-close" />
 			</svg>
 		</button>
 		<a
@@ -143,21 +115,17 @@
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					<button class="header__search-icon">
-						<svg class="search-icon">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
-						</svg>
-					</button>
+					
 
 					<button class="header__search-enter-icon">
 						<svg  class="search-arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search-arrow" />
+							<use xlink:href="/sprite.svg#slim-arrow" />
 						</svg>
 					</button>
 					
 					<button class="header__search-close-icon">
 						<svg class="crest">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--crest" />
+							<use xlink:href="/sprite.svg#crest" />
 						</svg>
 					</button>
 				</label>
@@ -200,7 +168,7 @@
 					class="header__search desktop"
 					id="header-search">
 					<svg class="search-icon">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
+						<use xlink:href="/sprite.svg#search-header" />
 					</svg>
 				</button>
 				<a
@@ -223,7 +191,7 @@
 				href="tel:84952121059"
 				class="header__right-tel-link desktop">
 				<svg class="phone-icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--phone" />
+					<use xlink:href="/sprite.svg#phone" />
 				</svg>
 				<span>8 495 212 10 59</span>
 			</a>
@@ -330,8 +298,7 @@
 									href="/cart-ordering-payment.html"
 									class="ordering-progres__return-btn active">
 									<svg>
-										<use
-											xlink:href="./src/images/symbol/stack/sprite.svg#bg--catalog-arrow-left" />
+										<use xlink:href="/sprite.svg#standart-arrow-left" />
 									</svg>
 								</a>
 								<div class="ordering-progres__box">
@@ -366,16 +333,14 @@
 											</span>
 											<span class="cart-icon">
 												<svg class="bag bag--dark">
-													<use
-														xlink:href="/sprite.svg#bag" />
+													<use xlink:href="/sprite.svg#bag" />
 												</svg>
 												<div class="cart-icon__value">
 													<span>10</span>
 												</div>
 											</span>
 											<svg class="arrow">
-												<use
-													xlink:href="/sprite.svg#arrow" />
+												<use xlink:href="/sprite.svg#arrow" />
 											</svg>
 										</div>
 									</div>
@@ -401,9 +366,17 @@
 														</div>
 
 														<div class="controlls">
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="plus">
+																	<use xlink:href="/sprite.svg#plus" />
+																</svg>
+															</div>
 															<div class="controlls__count-value">1</div>
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="minus">
+																	<use xlink:href="/sprite.svg#minus" />
+																</svg>
+															</div>
 														</div>
 
 														<div class="cart__main-item-price">
@@ -431,9 +404,17 @@
 														</div>
 
 														<div class="controlls">
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="plus">
+																	<use xlink:href="/sprite.svg#plus" />
+																</svg>
+															</div>
 															<div class="controlls__count-value">1</div>
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="minus">
+																	<use xlink:href="/sprite.svg#minus" />
+																</svg>
+															</div>
 														</div>
 
 														<div class="cart__main-item-price">
@@ -461,9 +442,17 @@
 														</div>
 
 														<div class="controlls">
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="plus">
+																	<use xlink:href="/sprite.svg#plus" />
+																</svg>
+															</div>
 															<div class="controlls__count-value">1</div>
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="minus">
+																	<use xlink:href="/sprite.svg#minus" />
+																</svg>
+															</div>
 														</div>
 
 														<div class="cart__main-item-price">
@@ -569,8 +558,7 @@
 																</span>
 
 																<svg class="popup-block__more-icon">
-																	<use
-																		xlink:href="/sprite.svg#popup" />
+																	<use xlink:href="/sprite.svg#popup" />
 																</svg>
 															</label>
 														</div>
@@ -689,8 +677,18 @@
 																			</div>
 
 																			<div class="calendar__head-controlls">
-																				<span></span>
-																				<span></span>
+																				<span>
+																					<svg class="calendar-arrow">
+																						<use
+																							xlink:href="/sprite.svg#slim-arrow" />
+																					</svg>
+																				</span>
+																				<span>
+																					<svg class="calendar-arrow">
+																						<use
+																							xlink:href="/sprite.svg#slim-arrow" />
+																					</svg>
+																				</span>
 																			</div>
 																		</div>
 
@@ -826,8 +824,7 @@
 																</span>
 
 																<svg class="popup-block__more-icon">
-																	<use
-																		xlink:href="/sprite.svg#popup" />
+																	<use xlink:href="/sprite.svg#popup" />
 																</svg>
 															</label>
 														</div>
@@ -898,8 +895,7 @@
 																</span>
 
 																<svg class="popup-block__more-icon">
-																	<use
-																		xlink:href="/sprite.svg#popup" />
+																	<use xlink:href="/sprite.svg#popup" />
 																</svg>
 															</label>
 														</div>
@@ -945,8 +941,7 @@
 											</span>
 											<span class="cart-icon">
 												<svg class="bag bag--dark">
-													<use
-														xlink:href="/sprite.svg#bag" />
+													<use xlink:href="/sprite.svg#bag" />
 												</svg>
 												<div class="cart-icon__value">
 													<span>10</span>
@@ -954,8 +949,7 @@
 											</span>
 
 											<svg class="arrow">
-												<use
-													xlink:href="/sprite.svg#arrow" />
+												<use xlink:href="/sprite.svg#arrow" />
 											</svg>
 										</div>
 									</div>
@@ -981,9 +975,17 @@
 														</div>
 
 														<div class="controlls">
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="plus">
+																	<use xlink:href="/sprite.svg#plus" />
+																</svg>
+															</div>
 															<div class="controlls__count-value">1</div>
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="minus">
+																	<use xlink:href="/sprite.svg#minus" />
+																</svg>
+															</div>
 														</div>
 
 														<div class="cart__main-item-price">
@@ -1011,9 +1013,17 @@
 														</div>
 
 														<div class="controlls">
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="plus">
+																	<use xlink:href="/sprite.svg#plus" />
+																</svg>
+															</div>
 															<div class="controlls__count-value">1</div>
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="minus">
+																	<use xlink:href="/sprite.svg#minus" />
+																</svg>
+															</div>
 														</div>
 
 														<div class="cart__main-item-price">
@@ -1041,9 +1051,17 @@
 														</div>
 
 														<div class="controlls">
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="plus">
+																	<use xlink:href="/sprite.svg#plus" />
+																</svg>
+															</div>
 															<div class="controlls__count-value">1</div>
-															<div class="controlls__count-btn"></div>
+															<div class="controlls__count-btn">
+																<svg class="minus">
+																	<use xlink:href="/sprite.svg#minus" />
+																</svg>
+															</div>
 														</div>
 
 														<div class="cart__main-item-price">
@@ -1149,8 +1167,7 @@
 																</span>
 
 																<svg class="popup-block__more-icon">
-																	<use
-																		xlink:href="/sprite.svg#popup" />
+																	<use xlink:href="/sprite.svg#popup" />
 																</svg>
 															</label>
 														</div>
@@ -1268,10 +1285,18 @@
 																				<span class="calendar__year">2023</span>
 																			</div>
 
-																			<div class="calendar__head-controlls">
-																				<span></span>
-																				<span></span>
-																			</div>
+																			<span>
+																				<svg class="calendar-arrow">
+																					<use
+																						xlink:href="/sprite.svg#slim-arrow" />
+																				</svg>
+																			</span>
+																			<span>
+																				<svg class="calendar-arrow">
+																					<use
+																						xlink:href="/sprite.svg#slim-arrow" />
+																				</svg>
+																			</span>
 																		</div>
 
 																		<div class="calendar__board">
@@ -1406,8 +1431,7 @@
 																</span>
 
 																<svg class="popup-block__more-icon">
-																	<use
-																		xlink:href="/sprite.svg#popup" />
+																	<use xlink:href="/sprite.svg#popup" />
 																</svg>
 															</label>
 														</div>
@@ -1478,8 +1502,7 @@
 																</span>
 
 																<svg class="popup-block__more-icon">
-																	<use
-																		xlink:href="/sprite.svg#popup" />
+																	<use xlink:href="/sprite.svg#popup" />
 																</svg>
 															</label>
 														</div>
@@ -1546,8 +1569,7 @@
 										class="cart__input-promo" />
 
 									<svg class="cart__input-icon">
-										<use
-											xlink:href="sprite.svg#standart-arrow-right" />
+										<use xlink:href="sprite.svg#standart-arrow-right" />
 									</svg>
 								</div>
 

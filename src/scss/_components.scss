@@ -92,7 +92,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 
 	&__count-btn:last-child {
-		background-image: url(../images/svg/generic/plus.svg);
+		background-image: url(/sprite.svg#plus);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -118,8 +118,8 @@ $white20: rgba(255, 255, 255, 0.2);
 .card-det-section {
 	position: relative;
 	padding-bottom: 0 !important;
-	background-image: url(../images/svg/bg/border-card-det-bg.svg),
-		url(../images/svg/bg/border-card-det-bg-right.svg);
+	background-image: url(../images/background-card-det-left.webp),
+		url(../images/background-card-det-right.webp);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: left center, right center;
@@ -1626,7 +1626,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/bg/acc-head-ornament.svg) top left/cover
+			background: url(../images/background-head.webp) top left/cover
 					no-repeat,
 				$biege;
 			cursor: pointer;
@@ -1755,7 +1755,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/bg/acc-head-ornament.svg) top left/cover
+			background: url(../images/background-head.webp) top left/cover
 					no-repeat,
 				$biege;
 			cursor: pointer;
@@ -1834,7 +1834,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	@media (max-width: 48em) {
 		.acc-item {
 			.acc-head {
-				background-image: url('../images/svg/bg/acc-head-ornament-mobile.svg');
+				background-image: url('../images/background-head-mobile.webp');
 				background-size: 100% 100%;
 				padding: 4rem;
 
