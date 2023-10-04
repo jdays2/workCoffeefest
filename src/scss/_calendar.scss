@@ -27,19 +27,14 @@
 				width: 3.5rem;
 				height: 2.6rem;
 				cursor: pointer;
-			}
 
-			span:first-child {
-				background-image: url(../images/svg/generic/date-arrow-left.svg);
-				background-size: contain;
-				background-position: center;
-				background-repeat: no-repeat;
-			}
-			span:last-child {
-				background-image: url(../images/svg/generic/date-arrow-right.svg);
-				background-size: contain;
-				background-position: center;
-				background-repeat: no-repeat;
+				&:first-child {
+					transform: scaleX(-1);
+				}
+
+				svg {
+					width: 100%;
+				}
 			}
 		}
 	}

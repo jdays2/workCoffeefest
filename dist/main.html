@@ -33,39 +33,11 @@
 		<header class="header">
 	<div class="container">
 		<button class="header__burger mobile">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="28"
-				height="17"
-				viewBox="0 0 28 17"
-				fill="none"
-				class="open">
-				<path
-					d="M1 8.44336H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 0.568359H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 16.3184H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
+			<svg class="open">
+				<use xlink:href="/sprite.svg#burger-btn" />
 			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" class="close">
-				<g clip-path="url(#clip0_5736_97052)">
-				  <path d="M4.66113 4.66116L22.3388 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				  <path d="M22.3389 4.66116L4.6612 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				</g>
-				<defs>
-				  <clipPath id="clip0_5736_97052">
-					<rect width="27" height="27" fill="white"/>
-				  </clipPath>
-				</defs>
+			<svg class="close">
+				<use xlink:href="/sprite.svg#burger-close" />
 			</svg>
 		</button>
 		<a
@@ -155,21 +127,17 @@
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					<button class="header__search-icon">
-						<svg class="search-icon">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
-						</svg>
-					</button>
+					
 
 					<button class="header__search-enter-icon">
 						<svg  class="search-arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search-arrow" />
+							<use xlink:href="/sprite.svg#slim-arrow" />
 						</svg>
 					</button>
 					
 					<button class="header__search-close-icon">
 						<svg class="crest">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--crest" />
+							<use xlink:href="/sprite.svg#crest" />
 						</svg>
 					</button>
 				</label>
@@ -212,7 +180,7 @@
 					class="header__search desktop"
 					id="header-search">
 					<svg class="search-icon">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
+						<use xlink:href="/sprite.svg#search-header" />
 					</svg>
 				</button>
 				<a
@@ -235,7 +203,7 @@
 				href="tel:84952121059"
 				class="header__right-tel-link desktop">
 				<svg class="phone-icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--phone" />
+					<use xlink:href="/sprite.svg#phone" />
 				</svg>
 				<span>8 495 212 10 59</span>
 			</a>

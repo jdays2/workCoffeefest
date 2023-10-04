@@ -2,15 +2,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem 2rem;
-  width: 67rem;
-  padding: 3.2rem;
-  &:not(:last-child) {
-    margin-bottom: 2.4rem;
-  }
+	width: 67rem;
+	padding: 3.2rem;
+	&:not(:last-child) {
+		margin-bottom: 2.4rem;
+	}
 
-  p {
-    width: 100%;
-  }
+	p {
+		width: 100%;
+	}
 
 	&__item {
 		display: flex;
@@ -22,29 +22,29 @@
 		height: -webkit-fit-content;
 		height: -moz-fit-content;
 		height: fit-content;
-    justify-content: flex-start;
+		justify-content: flex-start;
 		position: relative;
 		cursor: pointer;
 		-webkit-user-select: none;
-		   -moz-user-select: none;
-		    -ms-user-select: none;
-		        user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 
 		input {
 			opacity: 0;
 			position: absolute;
 			right: 0;
 			top: 0;
-      
+
 			&:checked ~ .teg-list__check-btn {
-				background-image: url(../images/svg/generic/checked.svg);
+				background-image: url(/sprite.svg#checked);
 			}
 		}
 
 		&:hover {
 			.teg-list__check-btn {
 				@media (hover: hover) {
-					border: 0.2rem solid #35415C;
+					border: 0.2rem solid #35415c;
 				}
 			}
 		}
@@ -58,9 +58,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-    z-index: -1;
-		background-size:45%;
-		background-position: center;
+		z-index: -1;
 		background-repeat: no-repeat;
+		background-size: 2.5rem;
+		background-position: 1.2rem 1.2rem;
 	}
 }

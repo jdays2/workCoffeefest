@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	// Пересчет rem в px
 	const rem = function (rem) {
-		if (window.innerWidth > 768) {
+		if (window.innerWidth > 769) {
 			return 0.005208335 * window.innerWidth * rem;
 		} else {
 			// где 375 это ширина моб версии макета
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		allowSlidePrev: true,
 		allowSlideNext: true,
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerView: 5.8,
 				slidesPerGroup: 5.8,
 				allowTouchMove: false,
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesPerView: 1,
 		spaceBetween: rem(3.5),
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerView: 3,
 				spaceBetween: rem(3.5),
 			},
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesPerView: 1,
 		spaceBetween: rem(3.5),
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerView: 3,
 				spaceBetween: rem(3.5),
 			},
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		slidesPerGroup: 1,
 		spaceBetween: rem(3.5),
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerGroup: 1,
 				slidesPerView: 3,
 				spaceBetween: rem(3.5),
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		centeredSlides: true,
 		speed: 600,
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerView: 2.35,
 				spaceBetween: rem(3.5),
 				loop: true,
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		speed: 600,
 		loop: true,
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerView: 4,
 				spaceBetween: rem(3.5),
 			},
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(3.5),
 		speed: 600,
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerView: 4,
 				slidesPerGroup: 4,
 				spaceBetween: rem(3.5),
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		spaceBetween: rem(3.4),
 		speed: 600,
 		breakpoints: {
-			768: {
+			769: {
 				slidesPerView: 4,
 				spaceBetween: rem(3.4),
 			},
@@ -407,17 +407,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	const categoryBlockSwiper = new Swiper('.category-block__swiper', {
 		slidesPerView: 'auto',
 		spaceBetween: rem(2.4),
-		updateOnWindowResize: true,
-		rebuildOnUpdate: true,
-		observer: true,
 		navigation: {
 			nextEl: '.category-block__btn-right',
 			prevEl: '.category-block__btn-left',
 		},
 		breakpoints: {
-			768: {
+			769: {
 				spaceBetween: rem(5),
-				slidesPerView: 'auto',
 			},
 		},
 	});

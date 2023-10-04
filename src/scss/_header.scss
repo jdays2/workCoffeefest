@@ -33,6 +33,10 @@
 			width: 103.2rem;
 			max-width: 24rem;
 			transition: 0.6s ease-out;
+			background-image: url(/sprite.svg#search-light);
+			background-repeat: no-repeat;
+			background-position: 1.9rem center;
+			background-size: 2.4rem;
 		}
 
 		&.active {

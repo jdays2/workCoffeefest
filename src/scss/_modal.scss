@@ -303,7 +303,7 @@
 		&__content-adress {
 			display: flex;
 			align-items: flex-start;
-			padding-left: 3rem;
+			padding-left: 2.4rem;
 			background-image: url(/sprite.svg#geograph);
 			background-repeat: no-repeat;
 			background-position: left top;
@@ -329,7 +329,7 @@
 			width: -webkit-fit-content;
 			width: -moz-fit-content;
 			width: fit-content;
-			padding-left: 3rem;
+			padding-left: 2.4rem;
 			background-image: url(/sprite.svg#clock);
 			background-repeat: no-repeat;
 			background-position: left center;
@@ -352,7 +352,7 @@
 			width: -webkit-fit-content;
 			width: -moz-fit-content;
 			width: fit-content;
-			padding-left: 3rem;
+			padding-left: 2.4rem;
 			background-image: url(/sprite.svg#tel);
 			background-repeat: no-repeat;
 			background-position: left center;
@@ -521,7 +521,7 @@
 		width: 2.4rem;
 		height: 2.4rem;
 
-		background-image: url(../images/svg/generic/close.svg);
+		background-image: url(/sprite.svg#close);
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
@@ -938,7 +938,7 @@
 		right: 2rem;
 		width: 2.4rem;
 		height: 2.4rem;
-		background-image: url(../images/svg/generic/close-light.svg);
+		background-image: url(/sprite.svg#close-light);
 	}
 
 	@media (max-width: 48em) {

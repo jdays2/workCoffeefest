@@ -64,10 +64,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-image: url(../images/svg/generic/upload.svg);
+		background-image: url(/sprite.svg#photo-app);
 		background-repeat: no-repeat;
 		background-size: 30%;
-		background-position: center;
+		background-position: 51% 49%;
 		background-color: #fff9ee;
 	}
 
@@ -99,7 +99,7 @@
 		position: absolute;
 		top: 0.25rem;
 		right: 0.25rem;
-		background-image: url(../images/svg/generic/remove-image.svg);
+		background-image: url(/sprite.svg#invalid);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;

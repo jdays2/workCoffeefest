@@ -383,20 +383,20 @@ if (removeFiles) {
 
 // 
 
-if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
-	const swiperWrappers = document.querySelectorAll('.swiper-wrapper');
+// if (document.querySelector('.swiper-wrapper') && window.screen.width > 768) {
+// 	const swiperWrappers = document.querySelectorAll('.swiper-wrapper');
 
-	swiperWrappers.forEach(swiperWrapper => {
-		let swiper = swiperWrapper.parentElement;
-		let swiperControlls = swiper.nextElementSibling;
-		let swiperElements = swiper.querySelectorAll('.swiper-slide');
-		let swiperWrapperWidth = swiperWrapper.clientWidth;
+// 	swiperWrappers.forEach(swiperWrapper => {
+// 		let swiper = swiperWrapper.parentElement;
+// 		let swiperControlls = swiper.nextElementSibling;
+// 		let swiperElements = swiper.querySelectorAll('.swiper-slide');
+// 		let swiperWrapperWidth = swiperWrapper.clientWidth;
 
-		if ((swiperElements[0].clientWidth * swiperElements.length) <= swiperWrapperWidth) {
-			swiperControlls.style.display = "none";
-		}
-	})
-}
+// 		if ((swiperElements[0].clientWidth * swiperElements.length) <= swiperWrapperWidth) {
+// 			swiperControlls.style.display = "none";
+// 		}
+// 	})
+// }
 
 // Аккордион в футере 
 
