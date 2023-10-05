@@ -53,6 +53,11 @@
 		position: relative;
 		left: 2.2rem;
 
+		&__img--mobile {
+			width: 100% !important;
+			height: 100% !important;
+		}
+
 		svg {
 			width: 157.8rem;
 			height: 16.4rem;
@@ -334,7 +339,7 @@
 					& > .heading2 {
 						display: block;
 					}
-					
+
 					&:not(:last-child) {
 						margin: 0;
 					}
@@ -389,7 +394,7 @@
 						}
 
 						.chronology__timeline-list__item-arrow-wrapper {
-							width: 59.4rem;
+							width: 62.4rem;
 							height: 22.8rem;
 							display: flex;
 							align-items: center;
@@ -455,3 +460,4 @@
 		}
 	}
 }
+
