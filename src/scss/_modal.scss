@@ -228,6 +228,13 @@
 		}
 	}
 
+	.section-tags__container {
+		margin-top: 4rem;
+		display: flex;
+		width: 100%;
+		align-items: flex-start;
+	}
+
 	&-map {
 		position: absolute;
 		padding: 0;

@@ -1764,3 +1764,371 @@ if (promotionBtn) {
 		}),
 	);
 }
+
+//добавить адресс
+const adressContent = `
+<p class="heading2">Добавить адрес</p>
+
+			<form class="modal__form">
+				<div class="input-container modal__input-medium">
+					<input
+						type="text"
+						id="city"
+						class="input"
+						placeholder="Город" />
+					<label
+						for="city"
+						class="input-label">
+						Город
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-medium">
+					<input
+						type="text"
+						id="street"
+						class="input"
+						placeholder="Улица" />
+					<label
+						for="street"
+						class="input-label">
+						Улица
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-small">
+					<input
+						type="text"
+						id="block"
+						class="input"
+						placeholder="Дом" />
+					<label
+						for="block"
+						class="input-label">
+						Дом
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-small">
+					<input
+						type="text"
+						id="flor"
+						class="input"
+						placeholder="Этаж" />
+					<label
+						for="flor"
+						class="input-label">
+						Этаж
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-small">
+					<input
+						type="text"
+						id="apart"
+						class="input"
+						placeholder="Квартира" />
+					<label
+						for="apart"
+						class="input-label">
+						Квартира
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-large">
+					<input
+						type="text"
+						id="description"
+						class="input"
+						placeholder="Комментарий к адресу" />
+					<label
+						for="description"
+						class="input-label">
+						Комментарий к адресу
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+			</form>
+
+			<div class="modal__btns modal__btns--center">
+				<button class="square-btn blue-square-btn">
+					<span>сохранить изменения</span>
+				</button>
+			</div>`;
+
+const addAdressBtn = document.querySelectorAll('#add-adress');
+
+if (addAdressBtn) {
+	const modalClass = 'add-adress';
+
+	addAdressBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, adressContent);
+		}),
+	);
+}
+
+//редактировать адресс
+const editAdressContent = `
+<p class="heading2">Редактировать адрес</p>
+
+			<div class="section-tags__container">
+				<ul class="section-tags">
+					<li class="section-tags__item">
+						<button
+							class="section-tags__item-btn active"
+							data-path="address-1">
+							адрес 1
+						</button>
+					</li>
+					<li class="section-tags__item">
+						<button
+							class="section-tags__item-btn"
+							data-path="address-2">
+							адрес 2
+						</button>
+					</li>
+				</ul>
+			</div>
+
+			<div
+				class="delivery-main__accordion accordion active"
+				data-target="address-1">
+				<form class="modal__form">
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="city"
+							class="input"
+							placeholder="Город" />
+						<label
+							for="city"
+							class="input-label">
+							Город
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="street"
+							class="input"
+							placeholder="Улица" />
+						<label
+							for="street"
+							class="input-label">
+							Улица
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="block"
+							class="input"
+							placeholder="Дом" />
+						<label
+							for="block"
+							class="input-label">
+							Дом
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="flor"
+							class="input"
+							placeholder="Этаж" />
+						<label
+							for="flor"
+							class="input-label">
+							Этаж
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="apart"
+							class="input"
+							placeholder="Квартира" />
+						<label
+							for="apart"
+							class="input-label">
+							Квартира
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-large">
+						<input
+							type="text"
+							id="description"
+							class="input"
+							placeholder="Комментарий к адресу" />
+						<label
+							for="description"
+							class="input-label">
+							Комментарий к адресу
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+				</form>
+			</div>
+
+			<div
+				class="delivery-main__accordion accordion"
+				data-target="address-2">
+				<form class="modal__form">
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="city"
+							class="input"
+							placeholder="Город" />
+						<label
+							for="city"
+							class="input-label">
+							Город
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="street"
+							class="input"
+							placeholder="Улица" />
+						<label
+							for="street"
+							class="input-label">
+							Улица
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="block"
+							class="input"
+							placeholder="Дом" />
+						<label
+							for="block"
+							class="input-label">
+							Дом
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="flor"
+							class="input"
+							placeholder="Этаж" />
+						<label
+							for="flor"
+							class="input-label">
+							Этаж
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="apart"
+							class="input"
+							placeholder="Квартира" />
+						<label
+							for="apart"
+							class="input-label">
+							Квартира
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-large">
+						<input
+							type="text"
+							id="description"
+							class="input"
+							placeholder="Комментарий к адресу" />
+						<label
+							for="description"
+							class="input-label">
+							Комментарий к адресу
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal__btns modal__btns--center">
+				<button class="square-btn blue-square-btn">
+					<span>сохранить изменения</span>
+				</button>
+				<button class="arrow-link">
+					<span>Удалить</span>
+				</button>
+			</div>`;
+
+const editAdressBtn = document.querySelectorAll('#edit-adress');
+
+if (editAdressBtn) {
+	const modalClass = 'edit-adress';
+
+	editAdressBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, editAdressContent);
+		}),
+	);
+}
