@@ -2129,6 +2129,31 @@ if (editAdressBtn) {
 	editAdressBtn.forEach((btn) =>
 		btn.addEventListener('click', () => {
 			addModal(modalClass, editAdressContent);
+
+			const wrapper = document.querySelector('.edit-adress');
+			const tagButtons = wrapper.querySelectorAll('.section-tags__item-btn');
+			const tagBlocks = wrapper.querySelectorAll('.delivery-main__accordion');
+
+			const tabsHandler = (btn) => {
+				btn.removeEventListener('click', tabsHandler);
+				tagButtons.forEach((el) => el.classList.remove('active'));
+				tagBlocks.forEach((el) => {
+					el.classList.remove('active');
+					el.classList.add('hide');
+				});
+				btn.classList.add('active');
+				const path = btn.dataset.path;
+				tagBlocks.forEach((block) => {
+					if (block.dataset.target === path) {
+						block.classList.add('active');
+						block.classList.remove('hide');
+					}
+				});
+			};
+
+			tagButtons.forEach((btn) => {
+				btn.addEventListener('click', () => tabsHandler(btn));
+			});
 		}),
 	);
 }

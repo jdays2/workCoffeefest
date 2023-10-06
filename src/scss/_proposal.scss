@@ -46,7 +46,6 @@
 
 	&__descr {
 		width: 100%;
-		min-height: 26.4rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -60,13 +59,6 @@
 		background-repeat: no-repeat;
 		background-position: center top;
 		flex: 1;
-
-		&--mega-large {
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: 0px -3.8rem;
-			height: 51rem;
-		}
 	}
 
 	&__descr-bg {
@@ -81,7 +73,8 @@
 	&__head {
 		display: flex;
 		flex-direction: column;
-		gap: 1.6rem;
+		height: 100%;
+		
 	}
 
 	&__title {
@@ -92,6 +85,7 @@
 		font-weight: 700;
 		line-height: 130%;
 		text-transform: uppercase;
+		margin-bottom: 1.6rem
 	}
 
 	&__text {
@@ -101,11 +95,13 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: 125%;
+		margin-bottom: auto;
 	}
 
 	&__price {
 		display: flex;
 		align-items: center;
+		
 		gap: 2.4rem;
 		margin-left: auto;
 	}
@@ -143,12 +139,22 @@
 			background-image: url('../images/background-7-mobile.webp');
 			background-size: cover;
 			background-position: center top;
-			min-height: 33.8rem;
+		
 			padding: 8rem 4rem 10rem 4rem;
+		}
+
+		&__price-value {
+			margin-top: auto;
+			font-size: 2.8rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			letter-spacing: 0.084rem;
 		}
 
 		&__text {
 			font-size: 2.4rem;
+			margin-bottom: 3rem;
 		}
 
 		&__link {
