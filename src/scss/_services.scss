@@ -41,10 +41,9 @@
 
 		&-item {
 			width: 37.2rem;
+			
 			display: flex;
 			flex-direction: column;
-			height: 100%;
-
 
 			&__text {
 				padding: 5rem 3rem 3rem;
@@ -124,8 +123,8 @@
 
 		&-slide {
 			display: flex;
-			flex-direction: column;
 			height: auto;
+			flex-direction: column;
 
 			&__image {
 				width: 100%;

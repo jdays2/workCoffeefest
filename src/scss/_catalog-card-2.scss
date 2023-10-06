@@ -2,7 +2,7 @@
 	max-width: 100%;
 	position: relative;
 	max-height: 74.8rem;
-	height:74.8rem;
+	height: 74.8rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -31,7 +31,7 @@
 			width: 19.8rem;
 
 			span {
-				color: #35415C;
+				color: #35415c;
 				font-family: Circe;
 				font-size: 1.8rem;
 				font-style: normal;
@@ -43,7 +43,7 @@
 			}
 
 			strong {
-				color: #35415C;
+				color: #35415c;
 				text-align: center;
 				font-family: Circe;
 				font-size: 2rem;
@@ -114,7 +114,6 @@
 	}
 }
 
-
 .catalog-card-2__price-package {
 	position: relative;
 	left: -0.2rem;
@@ -136,7 +135,7 @@
 	z-index: 3;
 	border-radius: 0 0 5rem 5rem;
 	border: 0.15rem solid $line;
-	background: url('../images/svg/bg/card-2-backgrnd.svg') top left/cover no-repeat
+	background: url('../images/background-10.webp') top center/cover no-repeat
 		$biege;
 }
 .catalog-card-2__title {
@@ -160,7 +159,7 @@
 	display: flex;
 	& span {
 		display: block;
-		width: 3.5rem;
+		width: 4.65rem;
 		height: 0.4rem;
 		background: $light;
 	}
@@ -199,14 +198,14 @@
 	}
 
 	input:checked + .catalog-card-2__weight {
-		color: #35415C;
+		color: #35415c;
 		font-size: 2.2rem;
 		font-weight: 700;
 		line-height: 2.8rem;
 		color: $darkBlue;
 
 		span {
-			color: #35415C;
+			color: #35415c;
 			line-height: 120%;
 			letter-spacing: 0.11rem;
 		}
@@ -230,6 +229,8 @@
 	cursor: pointer;
 	right: 2rem;
 }
+
+
 
 // @media (max-width: 48em) {
 // 	.catalog-card-2 {
@@ -293,18 +294,15 @@
 // 	}
 // }
 
-
-
 @media (hover: hover) {
 	.catalog-card-2:hover {
-	.catalog-card-2__details {
-			max-height: 39.7rem;
+		.catalog-card-2__details {
+			max-height: 39.8rem;
 			opacity: 1;
-			height: 39.7rem;
+			height: 39.8rem;
 			padding-bottom: 3rem;
 		}
 	}
-	
 }
 
 @media (max-width: 48em) {
@@ -322,7 +320,7 @@
 				width: 100%;
 				height: 100%;
 				-o-object-fit: cover;
-				   object-fit: cover;
+				object-fit: cover;
 			}
 		}
 
@@ -337,8 +335,8 @@
 			.catalog-card-2__characteristic {
 				&-lines {
 					span {
-						width: 6.6rem;
-						height: 0.8rem;
+						width: 9.34rem;
+						height: 0.8rem;	
 					}
 				}
 			}
@@ -357,7 +355,7 @@
 				font-size: 2.8rem;
 			}
 
-			input:checked+.catalog-card-2__weight {
+			input:checked + .catalog-card-2__weight {
 				font-size: 3.6rem;
 			}
 

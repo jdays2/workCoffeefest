@@ -5,9 +5,9 @@
 	&__container {
 		position: relative;
 		padding-bottom: 24rem;
-		background-image: url(../images/svg/bg/angle-1.svg),
-			url(../images/svg/bg/angle-2.svg), url(../images/svg/bg/angle-3.svg),
-			url(../images/svg/bg/angle-4.svg);
+		background-image: url(../images/about-border-1.webp),
+			url(../images/about-border-2.webp), url(../images/about-border-3.webp),
+			url(../images/about-border-4.webp);
 		background-size: 12.9rem;
 		background-repeat: no-repeat;
 		background-position: top left, top right, bottom left, bottom right;
@@ -52,6 +52,11 @@
 	&__timeline {
 		position: relative;
 		left: 2.2rem;
+
+		&__img--mobile {
+			width: 100% !important;
+			height: 100% !important;
+		}
 
 		svg {
 			width: 157.8rem;
@@ -334,7 +339,7 @@
 					& > .heading2 {
 						display: block;
 					}
-					
+
 					&:not(:last-child) {
 						margin: 0;
 					}
@@ -389,7 +394,7 @@
 						}
 
 						.chronology__timeline-list__item-arrow-wrapper {
-							width: 59.4rem;
+							width: 62.4rem;
 							height: 22.8rem;
 							display: flex;
 							align-items: center;
@@ -455,3 +460,4 @@
 		}
 	}
 }
+

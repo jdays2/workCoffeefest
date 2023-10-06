@@ -42,7 +42,7 @@
 								href="/dist/main.html"
 								class="breadcrumbs__item-link">
 								<svg class="home">
-									<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--home" />
+									<use xlink:href="./sprite.svg#home" />
 								</svg>
 							</a>
 						</li>
@@ -94,7 +94,8 @@
 								</p>
 							</div>
 
-							<button id="text-us"
+							<button
+								id="text-us"
 								class="square-btn">
 								<span>оставить заявку</span>
 							</button>
@@ -123,7 +124,8 @@
 					<div class="services__container">
 						<div class="services__list swiper-container services__swiper">
 							<div class="swiper-wrapper">
-								<div class="services__list-item swiper-slide services__swiper-slide">
+								<div
+									class="services__list-item swiper-slide services__swiper-slide">
 									<div class="services__list-item__text">
 										<p class="services__list-item__text-heading heading4">
 											Бесплатная дегустация
@@ -141,15 +143,16 @@
 									</div>
 								</div>
 
-								<div class="services__list-item swiper-slide services__swiper-slide">
+								<div
+									class="services__list-item swiper-slide services__swiper-slide">
 									<div class="services__list-item__text">
 										<p class="services__list-item__text-heading heading4">
 											Широкий выбор блюд
 										</p>
 										<p class="services__list-item__text-description text1">
-											Профессиональный бариста с большим опытом работы приготовит
-											для ваших гостей любой вид кофе от традиционного эспрессо до
-											авторских напитков CofeFest
+											Профессиональный бариста с большим опытом работы
+											приготовит для ваших гостей любой вид кофе от
+											традиционного эспрессо до авторских напитков CofeFest
 										</p>
 									</div>
 									<div class="services__swiper-slide__image">
@@ -159,15 +162,16 @@
 									</div>
 								</div>
 
-								<div class="services__list-item swiper-slide services__swiper-slide">
+								<div
+									class="services__list-item swiper-slide services__swiper-slide">
 									<div class="services__list-item__text">
 										<p class="services__list-item__text-heading heading4">
 											Собственное производство
 										</p>
 										<p class="services__list-item__text-description text1">
-											Мы всегда учитываем вкусовые предпочтения и ваши пожелания,
-											поэтому специально для Вас разработаем и предложим
-											индивидуальную кофейную карту
+											Мы всегда учитываем вкусовые предпочтения и ваши
+											пожелания, поэтому специально для Вас разработаем и
+											предложим индивидуальную кофейную карту
 										</p>
 									</div>
 									<div class="services__swiper-slide__image">
@@ -176,7 +180,8 @@
 											alt="" />
 									</div>
 								</div>
-								<div class="services__list-item swiper-slide services__swiper-slide">
+								<div
+									class="services__list-item swiper-slide services__swiper-slide">
 									<div class="services__list-item__text">
 										<p class="services__list-item__text-heading heading4">
 											Специальное меню
@@ -197,13 +202,20 @@
 						</div>
 
 						<div class="swiper-controllers">
-							<div class="swiper-prev services__swiper-prev desktop"></div>
-	
-							<div class="swiper-next services__swiper-next desktop"></div>
+							<div class="swiper-prev services__swiper-prev desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
+
+							<div class="swiper-next services__swiper-next desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
 							<div class="swiper-pagination services__swiper-pagination"></div>
 						</div>
 					</div>
-
 				</div>
 			</section>
 
@@ -366,8 +378,16 @@
 						</div>
 
 						<div class="swiper-controllers">
-							<div class="swiper-prev proposal__swiper-prev"></div>
-							<div class="swiper-next proposal__swiper-next"></div>
+							<div class="swiper-prev proposal__swiper-prev">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
+							<div class="swiper-next proposal__swiper-next">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
 						</div>
 
 						<div
@@ -458,7 +478,7 @@
 										Имя
 									</label>
 									<div class="icon success"></div>
-														<div class="icon invalid"></div>
+									<div class="icon invalid"></div>
 									<div class="input-status">Неверный формат</div>
 								</div>
 								<div
@@ -474,13 +494,15 @@
 										Телефон
 									</label>
 									<div class="icon success"></div>
-														<div class="icon invalid"></div>
+									<div class="icon invalid"></div>
 									<div class="input-status">Неверный формат</div>
 								</div>
 							</form>
-							<button class="cooperation__left-btn square-btn" id="request-btn">
-									отправить заявку
-								</button>
+							<button
+								class="cooperation__left-btn square-btn"
+								id="request-btn">
+								отправить заявку
+							</button>
 						</div>
 						<div class="cooperation__right">
 							<img

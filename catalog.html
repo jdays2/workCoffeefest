@@ -60,43 +60,20 @@
 								href=""
 								class="banner-btns banner-btns--light">
 								<span>Подробнее о нас</span>
-								<span class="banner-btns__icon">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none">
-										<path
-											d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-											fill="#FFFCF8" />
-									</svg>
-								</span>
 							</a>
 						</div>
 					</div>
 
 					<div class="main-banner__swiper-controllers">
 						<div class="prev">
-							<svg
-								width="28"
-								height="16"
-								viewBox="0 0 28 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-									fill="#e3bca0" />
+							<svg>
+								<use xlink:href="sprite.svg#prev" />
 							</svg>
 						</div>
 						<div class="swiper-pagination"></div>
 						<div class="next">
-							<svg
-								width="28"
-								height="16"
-								viewBox="0 0 28 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-									fill="#e3bca0" />
+							<svg>
+								<use xlink:href="sprite.svg#next" />
 							</svg>
 						</div>
 					</div>
@@ -112,7 +89,7 @@
 									href="/dist/main.html"
 									class="breadcrumbs__item-link">
 									<svg class="home">
-										<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--home" />
+										<use xlink:href="./sprite.svg#home" />
 									</svg>
 								</a>
 							</li>
@@ -127,6 +104,7 @@
 						</ul>
 					</div>
 
+<<<<<<< HEAD
 					<div class="settings-bar container">
 						<div class="settings-bar__row">
 							<div class="settings-bar__box">
@@ -414,6 +392,9 @@
 							</div>
 						</div>
 					</div>
+=======
+					@@include('./templates/settings-bar.html')
+>>>>>>> 262badde59cc3db538ba7315f3ba7367808de505
 
 					<div class="catalog-main-block__container">
 						<div class="catalog-main-block__title heading2">Завтраки</div>
@@ -456,7 +437,11 @@
 										</div>
 									</div>
 									<div
-										class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+										class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+									</div>
 								</div>
 							</div>
 
@@ -498,7 +483,11 @@
 										</div>
 									</div>
 									<div
-										class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+										class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+									</div>
 								</div>
 							</div>
 
@@ -540,7 +529,11 @@
 										</div>
 									</div>
 									<div
-										class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+										class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+									</div>
 								</div>
 							</div>
 
@@ -583,7 +576,11 @@
 										</div>
 									</div>
 									<div
-										class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+										class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -592,8 +589,7 @@
 							class="catalog-main-block__more arrow-link">
 							<span>Загрузить ещё</span>
 							<svg class="arrow-link__icon">
-								<use
-									xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+								<use xlink:href="sprite.svg#standart-arrow-right" />
 							</svg>
 						</a>
 					</div>
@@ -642,7 +638,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -685,7 +685,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -727,7 +731,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -769,7 +777,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -778,8 +790,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -827,7 +838,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -869,7 +884,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -911,7 +930,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -954,7 +977,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -963,8 +990,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1014,7 +1040,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1056,7 +1086,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1098,7 +1132,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1141,7 +1179,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1150,8 +1192,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1199,7 +1240,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1241,7 +1286,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1283,7 +1332,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1325,7 +1378,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1334,8 +1391,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1383,7 +1439,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1425,7 +1485,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1467,7 +1531,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1510,7 +1578,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1519,8 +1591,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1568,7 +1639,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1610,7 +1685,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1652,7 +1731,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1695,7 +1778,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1704,8 +1791,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1763,7 +1849,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -1773,7 +1859,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1785,7 +1871,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -1795,7 +1881,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1848,7 +1934,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1901,7 +1991,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -1911,7 +2001,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1923,7 +2013,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -1933,7 +2023,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1986,7 +2076,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -2038,7 +2132,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -2048,7 +2142,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2060,7 +2154,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -2070,7 +2164,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2123,7 +2217,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -2175,7 +2273,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -2185,7 +2283,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2197,7 +2295,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -2207,7 +2305,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2260,7 +2358,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -2269,8 +2371,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>

@@ -21,46 +21,18 @@
 		<header class="header">
 	<div class="container">
 		<button class="header__burger mobile">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="28"
-				height="17"
-				viewBox="0 0 28 17"
-				fill="none"
-				class="open">
-				<path
-					d="M1 8.44336H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 0.568359H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 16.3184H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
+			<svg class="open">
+				<use xlink:href="./sprite.svg#burger-btn" />
 			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" class="close">
-				<g clip-path="url(#clip0_5736_97052)">
-				  <path d="M4.66113 4.66116L22.3388 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				  <path d="M22.3389 4.66116L4.6612 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				</g>
-				<defs>
-				  <clipPath id="clip0_5736_97052">
-					<rect width="27" height="27" fill="white"/>
-				  </clipPath>
-				</defs>
+			<svg class="close">
+				<use xlink:href="./sprite.svg#burger-close" />
 			</svg>
 		</button>
 		<a
 			href="#"
 			class="header__logo">
 			<svg>
-				<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+				<use xlink:href="./sprite.svg#logo" />
 			</svg>
 		</a>
 		<nav class="header__nav desktop">
@@ -143,21 +115,17 @@
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					<button class="header__search-icon">
-						<svg class="search-icon">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
-						</svg>
-					</button>
+					
 
 					<button class="header__search-enter-icon">
 						<svg  class="search-arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search-arrow" />
+							<use xlink:href="./sprite.svg#slim-arrow" />
 						</svg>
 					</button>
 					
 					<button class="header__search-close-icon">
 						<svg class="crest">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--crest" />
+							<use xlink:href="./sprite.svg#crest" />
 						</svg>
 					</button>
 				</label>
@@ -200,21 +168,21 @@
 					class="header__search desktop"
 					id="header-search">
 					<svg class="search-icon">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
+						<use xlink:href="./sprite.svg#search-header" />
 					</svg>
 				</button>
 				<a
 					href="#"
 					class="header__account">
 					<svg class="profile">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--profile" />
+						<use xlink:href="./sprite.svg#profile" />
 					</svg>
 				</a>
 				<a
 					href="#"
 					class="header__cart">
 					<svg class="bag">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--bag" />
+						<use xlink:href="./sprite.svg#bag" />
 					</svg>
 				</a>
 			</div>
@@ -223,7 +191,7 @@
 				href="tel:84952121059"
 				class="header__right-tel-link desktop">
 				<svg class="phone-icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--phone" />
+					<use xlink:href="./sprite.svg#phone" />
 				</svg>
 				<span>8 495 212 10 59</span>
 			</a>
@@ -243,7 +211,7 @@
 					<div class="acc-head">
 						<p class="heading4">Меню</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -262,7 +230,7 @@
 					<div class="acc-head">
 						<p class="heading4">Каталог</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -363,28 +331,14 @@
 
 					<div class="main-banner__swiper-controllers">
 						<div class="prev">
-							<svg
-								width="28"
-								height="16"
-								viewBox="0 0 28 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-									fill="#e3bca0" />
+							<svg>
+								<use xlink:href="sprite.svg#prev" />
 							</svg>
 						</div>
 						<div class="swiper-pagination"></div>
 						<div class="next">
-							<svg
-								width="28"
-								height="16"
-								viewBox="0 0 28 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-									fill="#e3bca0" />
+							<svg>
+								<use xlink:href="sprite.svg#next" />
 							</svg>
 						</div>
 					</div>
@@ -400,7 +354,7 @@
 									href="/dist/main.html"
 									class="breadcrumbs__item-link">
 									<svg class="home">
-										<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--home" />
+										<use xlink:href="./sprite.svg#home" />
 									</svg>
 								</a>
 							</li>
@@ -454,290 +408,269 @@
 
 			<section class="catalog-main-block grain-coffee section">
 				<div class="settings-bar container">
-					<div class="settings-bar__row">
-						<div class="settings-bar__box">
-							<button
-								class="tag-btn filter-btn"
-								id="filter">
-								<span>Фильтры</span>
-							</button>
+	<div class="settings-bar__row">
+		<div class="settings-bar__box">
+			<button
+				class="tag-btn filter-btn"
+				id="filter">
+				<span>Фильтры</span>
+			</button>
 
-							<div class="search-block">
-								<label>
-									<input
-										class="search-block__input"
-										type="text"
-										placeholder="Поиск" />
+			<div class="search-block">
+				<label>
+					<input
+						class="search-block__input"
+						type="text"
+						placeholder="Поиск" />
 
-									<button class="search-block__enter-icon"></button>
-								</label>
-							</div>
-						</div>
+					<button class="search-block__enter-icon">
+						<svg class="arrow-right">
+							<use xlink:href="sprite.svg#arrow-right" />
+						</svg>
+					</button>
+				</label>
+			</div>
+		</div>
 
-						<div class="settings-bar__box">
-							<button
-								class="tag-btn geo-btn"
-								id="geo-btn">
-								<span>Выбрать адрес</span>
-								<svg class="popup-block__more-icon">
-									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--popup-icon" />
-								</svg>
-							</button>
+		<div class="settings-bar__box">
+			<button
+				class="tag-btn geo-btn"
+				id="geo-btn">
+				<span>Выбрать адрес</span>
+				<svg class="popup-block__more-icon">
+					<use xlink:href="sprite.svg#geo-icon" />
+				</svg>
+			</button>
 
-							<button class="popup-block__wrapper">
-								<label class="popup-block">
-									<span class="popup-block__arrows-icon"></span>
-									<input type="checkbox" />
-									<div class="popup-block__popup popup-block__popup--select">
-										<div class="popup-block__list">
-											<label class="popup-block__item">
-												<input
-													type="radio"
-													name="popup-block__item" />
-												<span class="popup-block__item-title text2">
-													Сначала новые
-												</span>
-											</label>
+			<button class="popup-block__wrapper">
+				<label class="popup-block">
+					<span class="popup-block__arrows-icon"></span>
+					<input type="checkbox" />
+					<div class="popup-block__popup popup-block__popup--select">
+						<div class="popup-block__list">
+							<label class="popup-block__item">
+								<input
+									type="radio"
+									name="popup-block__item" />
+								<span class="popup-block__item-title text2">Сначала новые</span>
+							</label>
 
-											<label class="popup-block__item">
-												<input
-													type="radio"
-													name="popup-block__item" />
-												<span class="popup-block__item-title text2">
-													Сначала недорогие
-												</span>
-											</label>
+							<label class="popup-block__item">
+								<input
+									type="radio"
+									name="popup-block__item" />
+								<span class="popup-block__item-title text2">
+									Сначала недорогие
+								</span>
+							</label>
 
-											<label class="popup-block__item">
-												<input
-													type="radio"
-													name="popup-block__item" />
-												<span class="popup-block__item-title text2">
-													Сначала дорогие
-												</span>
-											</label>
-										</div>
-									</div>
-									<span class="text2 popup-block__select-value">
-										Сортировать
-									</span>
-
-									<svg class="popup-block__more-icon">
-										<use
-											xlink:href="./src/images/symbol/stack/sprite.svg#bg--popup-icon" />
-									</svg>
-								</label>
-							</button>
+							<label class="popup-block__item">
+								<input
+									type="radio"
+									name="popup-block__item" />
+								<span class="popup-block__item-title text2">
+									Сначала дорогие
+								</span>
+							</label>
 						</div>
 					</div>
+					<span class="text2 popup-block__select-value">Сортировать</span>
 
-					<div class="settings-bar__row">
-						<div class="filter__tag-list">
-							<button
-								class="tag-btn tag-btn--borderless filter-result-item active">
-								<span>Новости кофе</span>
-							</button>
+					<svg class="popup-block__more-icon">
+						<use xlink:href="sprite.svg#popup" />
+					</svg>
+				</label>
+			</button>
+		</div>
+	</div>
 
-							<button
-								class="tag-btn tag-btn--borderless filter-result-item active">
-								<span>Новости кофеен</span>
-							</button>
+	<div class="settings-bar__row">
+		<div class="filter__tag-list">
+			<button class="tag-btn tag-btn--borderless filter-result-item active">
+				<span>Новости кофе</span>
+				<svg class="crest crest--dark">
+					<use xlink:href="sprite.svg#dark-crest" />
+				</svg>
+			</button>
 
-							<button
-								class="tag-btn tag-btn--borderless filter-result-item active">
-								<span>События</span>
-							</button>
+			<button class="tag-btn tag-btn--borderless filter-result-item active">
+				<span>Новости кофеен</span>
+				<svg class="crest crest--dark">
+					<use xlink:href="sprite.svg#dark-crest" />
+				</svg>
+			</button>
+
+			<button class="tag-btn tag-btn--borderless filter-result-item active">
+				<span>События</span>
+				<svg class="crest crest--dark">
+					<use xlink:href="sprite.svg#dark-crest" />
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<div class="settings-bar__row">
+		<div class="category-block">
+			<button class="category-block__btn-left">
+				<svg>
+					<use xlink:href="./sprite.svg#standart-arrow-left" />
+				</svg>
+			</button>
+			<div class="category-block category-block__swiper swiper">
+				<div class="swiper-wrapper">
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Все</span>
+							<span class="category-block__value-show">Все</span>
 						</div>
-					</div>
+					</label>
 
-					<div class="settings-bar__row">
-						<div class="category-block">
-							<button class="category-block__btn-left">
-								<svg>
-									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--catalog-arrow-left" />
-								</svg>
-							</button>
-							<div class="category-block category-block__swiper swiper">
-								<div class="swiper-wrapper">
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Все</span>
-											<span class="category-block__value-show">Все</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Завтраки</span>
-											<span class="category-block__value-show">Завтраки</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Салаты</span>
-											<span class="category-block__value-show">Салаты</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">
-												Супы и блюда
-											</span>
-											<span class="category-block__value-show">
-												Супы и блюда
-											</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">
-												Сендвичи и бургеры
-											</span>
-											<span class="category-block__value-show">
-												Сендвичи и бургеры
-											</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">
-												Зерновой кофе
-											</span>
-											<span class="category-block__value-show">
-												Зерновой кофе
-											</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">
-												Горячие напитки
-											</span>
-											<span class="category-block__value-show">
-												Горячие напитки
-											</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Выпечка</span>
-											<span class="category-block__value-show">Выпечка</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Десерты</span>
-											<span class="category-block__value-show">Десерты</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">
-												Кофе и чай
-											</span>
-											<span class="category-block__value-show">Кофе и чай</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Завтраки</span>
-											<span class="category-block__value-show">Завтракий</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">
-												Зерновой кофе
-											</span>
-											<span class="category-block__value-show">
-												Зерновой кофе
-											</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">
-												Горячие напитки
-											</span>
-											<span class="category-block__value-show">
-												Горячие напитки
-											</span>
-										</div>
-									</label>
-
-									<label class="category-block__item swiper-slide">
-										<input
-											name="categories-item"
-											type="radio" />
-										<div class="category-block__value-wrapper">
-											<span class="category-block__value-hidden">Кулич</span>
-											<span class="category-block__value-show">Кулич</span>
-										</div>
-									</label>
-								</div>
-							</div>
-
-							<button class="category-block__btn-right">
-								<svg>
-									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--catalog-arrow-right" />
-								</svg>
-							</button>
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Завтраки</span>
+							<span class="category-block__value-show">Завтраки</span>
 						</div>
-					</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Салаты</span>
+							<span class="category-block__value-show">Салаты</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Супы и блюда</span>
+							<span class="category-block__value-show">Супы и блюда</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">
+								Сендвичи и бургеры
+							</span>
+							<span class="category-block__value-show">Сендвичи и бургеры</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Зерновой кофе</span>
+							<span class="category-block__value-show">Зерновой кофе</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Горячие напитки</span>
+							<span class="category-block__value-show">Горячие напитки</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Выпечка</span>
+							<span class="category-block__value-show">Выпечка</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Десерты</span>
+							<span class="category-block__value-show">Десерты</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Кофе и чай</span>
+							<span class="category-block__value-show">Кофе и чай</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Завтраки</span>
+							<span class="category-block__value-show">Завтракий</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Зерновой кофе</span>
+							<span class="category-block__value-show">Зерновой кофе</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Горячие напитки</span>
+							<span class="category-block__value-show">Горячие напитки</span>
+						</div>
+					</label>
+
+					<label class="category-block__item swiper-slide">
+						<input
+							name="categories-item"
+							type="radio" />
+						<div class="category-block__value-wrapper">
+							<span class="category-block__value-hidden">Кулич</span>
+							<span class="category-block__value-show">Кулич</span>
+						</div>
+					</label>
 				</div>
+			</div>
+
+			<button class="category-block__btn-right">
+				<svg>
+					<use xlink:href="./sprite.svg#standart-arrow-right" />
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+
 				<div class="catalog-main-block__container container">
 					<div class="catalog-main-block__title heading2">Каша</div>
 					<div class="catalog__content-box">
@@ -779,7 +712,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -821,7 +758,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -863,7 +804,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -905,7 +850,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -947,7 +896,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -989,7 +942,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1031,7 +988,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1074,7 +1035,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1084,7 +1049,7 @@
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
 							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+								xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1132,7 +1097,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1174,7 +1143,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1216,7 +1189,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1258,7 +1235,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1300,7 +1281,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1342,7 +1327,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1384,7 +1373,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1427,7 +1420,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-1__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1437,7 +1434,7 @@
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
 							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+								xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1495,7 +1492,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -1505,7 +1502,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1517,7 +1514,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -1527,7 +1524,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1580,7 +1577,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1632,7 +1633,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -1642,7 +1643,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1654,7 +1655,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -1664,7 +1665,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1717,7 +1718,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1769,7 +1774,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -1779,7 +1784,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1791,7 +1796,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -1801,7 +1806,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1854,7 +1859,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -1906,7 +1915,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -1916,7 +1925,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1928,7 +1937,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -1938,7 +1947,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1991,7 +2000,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -2043,7 +2056,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -2053,7 +2066,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2065,7 +2078,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -2075,7 +2088,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2128,7 +2141,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -2181,7 +2198,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -2191,7 +2208,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2203,7 +2220,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -2213,7 +2230,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2266,7 +2283,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -2318,7 +2339,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -2328,7 +2349,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2340,7 +2361,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -2350,7 +2371,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2403,7 +2424,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 
@@ -2455,7 +2480,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+											
 											<span></span>
 										</div>
 									</div>
@@ -2465,7 +2490,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2477,7 +2502,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											<span class="active"></span>
+
 											<span class="active"></span>
 										</div>
 									</div>
@@ -2487,7 +2512,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-											<span class="active"></span>
+										
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -2540,7 +2565,11 @@
 									</div>
 								</div>
 								<div
-									class="catalog-card__add-to-cart catalog-card-2__add-to-cart"></div>
+									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
+										<svg class="bag bag--dark">
+											<use xlink:href="sprite.svg#bag" />
+										</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -2550,7 +2579,7 @@
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
 							<use
-								xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+								xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -2563,7 +2592,7 @@
 				href="#"
 				class="footer__top-logo">
 				<svg>
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+					<use xlink:href="./sprite.svg#logo" />
 				</svg>
 			</a>
 			<div class="footer__top-block block1">
@@ -2800,7 +2829,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg>
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vk" />
+							<use xlink:href="./sprite.svg#vk" />
 						</svg>
 					</a>
 				</li>
@@ -2809,7 +2838,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link telegram">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--telegram" />
+							<use xlink:href="./sprite.svg#telegram" />
 						</svg>
 					</a>
 				</li>
@@ -2818,7 +2847,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--youtube" />
+							<use xlink:href="./sprite.svg#youtube" />
 						</svg>
 					</a>
 				</li>
@@ -2827,7 +2856,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--dzen" />
+							<use xlink:href="./sprite.svg#dzen" />
 						</svg>
 					</a>
 				</li>
@@ -2849,7 +2878,7 @@
 					</p>
 				</div>
 				<svg class="request-logo">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--request-logo" />
+					<use xlink:href="./sprite.svg#request" />
 				</svg>
 				<a
 					href="#"
@@ -2961,6 +2990,45 @@
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
 		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal promotion-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal add-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal edit-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal partnership">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
+	</div>
+</div>
+
+<div class="modal partnership-sended">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
 	</div>
 </div>
 

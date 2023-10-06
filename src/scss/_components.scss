@@ -6,7 +6,7 @@ $grey: #bababa;
 $red: #51283f;
 $green: #203d3c;
 $blue: #67a7ac;
-$darkBlue: #35415C;
+$darkBlue: #35415c;
 $brightHeadlines: #e6af9a;
 $biege: #f1ded0;
 $biege-btn: #e3bca0;
@@ -15,6 +15,10 @@ $background: #faf1ed;
 $line: rgba(234, 194, 178, 0.25);
 $grey20: rgba(121, 121, 121, 0.2);
 $white20: rgba(255, 255, 255, 0.2);
+
+.error-404 {
+	margin-top: 14.4rem;
+}
 
 .text-gray {
 	color: #797979;
@@ -65,7 +69,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 
 	&__count-value {
-		color: #35415C;
+		color: #35415c;
 		font-family: Circe;
 		font-size: 3rem;
 		font-style: normal;
@@ -88,7 +92,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	}
 
 	&__count-btn:last-child {
-		background-image: url(../images/svg/generic/plus.svg);
+		background-image: url(/sprite.svg#plus);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -114,8 +118,8 @@ $white20: rgba(255, 255, 255, 0.2);
 .card-det-section {
 	position: relative;
 	padding-bottom: 0 !important;
-	background-image: url(../images/svg/bg/border-card-det-bg.svg),
-		url(../images/svg/bg/border-card-det-bg-right.svg);
+	background-image: url(../images/background-card-det-left.webp),
+		url(../images/background-card-det-right.webp);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: left center, right center;
@@ -153,11 +157,10 @@ $white20: rgba(255, 255, 255, 0.2);
 }
 
 .light-section {
-	background: url(../images/symbol/stack/sprite.svg#bg--background-pattern) top left/cover
-		no-repeat;
+	background: url(../images/background-2.webp) center/cover no-repeat;
 
 	@media (max-width: 48em) {
-		background-image: url(../images/symbol/stack/sprite.svg#bg--background-pattern-mobile);
+		background-image: url(../images/background-2-mobile.webp);
 		background-position: center;
 	}
 }
@@ -170,12 +173,13 @@ $white20: rgba(255, 255, 255, 0.2);
 	justify-content: center;
 	border-radius: 50%;
 	transition: background-color 0.2s ease-in-out;
-	background: $light url(../images/symbol/stack/sprite.svg#generic--short-arrow-right) center/40%
-		no-repeat;
+	background: $light;
 
-	svg {
-		width: 2.8rem;
-		height: 1.2rem;
+	.arrow-link__icon {
+		width: 2.9rem;
+		height: 1.3rem;
+		fill: #29354d;
+		transform: translateY(0);
 	}
 
 	&:hover {
@@ -185,6 +189,14 @@ $white20: rgba(255, 255, 255, 0.2);
 	@media (max-width: 48em) {
 		width: 14rem;
 		height: 14rem;
+
+		.arrow-link__icon {
+			display: block;
+			width: 5.2rem;
+			height: auto;
+			fill: #29354d;
+			transform: translateY(0);
+		}
 	}
 }
 
@@ -301,9 +313,10 @@ $white20: rgba(255, 255, 255, 0.2);
 		line-height: 1.2;
 	}
 
-	&--margin45 {
-		margin-top: 4.5rem;
+	&--margin {
+		margin-top: 3rem;
 	}
+
 }
 
 .square-btn.blue-square-btn {
@@ -432,10 +445,10 @@ $white20: rgba(255, 255, 255, 0.2);
 .filter-result-item {
 	display: none !important;
 	padding-right: 3.4rem;
-	background-image: url(../images/symbol/stack/sprite.svg#generic--close-dark);
+	background-image: url('sprite.svg#dark-crest');
 	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: 2.4rem 2.4rem;
+	background-position: center;
+	background-size: contain;
 
 	&.active {
 		display: flex !important;
@@ -508,10 +521,10 @@ $white20: rgba(255, 255, 255, 0.2);
 .filter-btn {
 	span {
 		padding-left: 3.6rem;
-		background-image: url(../images/symbol/stack/sprite.svg#generic--filter);
+		background-image: url('/sprite.svg#filter');
 		background-repeat: no-repeat;
-		background-position: -1.5rem center;
-		background-size: cover;
+		background-position: top left;
+		background-size: contain;
 	}
 }
 
@@ -646,14 +659,14 @@ $white20: rgba(255, 255, 255, 0.2);
 
 		&.invalid {
 			opacity: 0;
-			background-image: url(../images/svg/generic/invalid.svg);
+			background-image: url(/sprite.svg#invalid);
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 92%;
 		}
 		&.success {
 			opacity: 0;
-			background-image: url(../images/svg/generic/succes.svg);
+			background-image: url(/sprite.svg#succes);
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 100%;
@@ -662,15 +675,19 @@ $white20: rgba(255, 255, 255, 0.2);
 
 	.input-status {
 		position: absolute;
-		bottom: -4rem;
+		bottom: -2rem;
 		left: 0;
 		margin: 0.4rem 0 0 3.5rem;
-		font-size: 2.8rem;
+		font-size: 1.4rem;
 		line-height: 140%;
 		display: none;
 	}
 
 	@media (max-width: 48em) {
+		.input-status {
+			bottom: -4rem;
+			font-size: 2.8rem;
+		}
 		.input {
 			padding: 5.2rem 14.8rem 1.2rem 5rem;
 			font-size: 2.8rem;
@@ -880,7 +897,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			transition: 0.2s ease-in-out;
 
 			&.active {
-				color: #35415C;
+				color: #35415c;
 				font-family: Circe;
 				font-size: 3rem;
 				font-style: normal;
@@ -908,6 +925,10 @@ $white20: rgba(255, 255, 255, 0.2);
 		transition: background-color 0.2s ease-in-out;
 		cursor: pointer;
 
+		.arrow-link__icon {
+			transform: translate(0);
+		}
+
 		&:hover {
 			background-color: $biege-btn;
 		}
@@ -916,19 +937,11 @@ $white20: rgba(255, 255, 255, 0.2);
 	.swiper-prev {
 		left: 0;
 		transform: translate(-50%, -50%) scaleX(-1);
-		background-image: url(../images/symbol/stack/sprite.svg#bg--left-arrow);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 40%;
 	}
 
 	.swiper-next {
 		right: 0;
 		transform: translate(50%, -50%);
-		background-image: url(../images/symbol/stack/sprite.svg#bg--left-arrow);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 40%;
 	}
 
 	.swiper-pagination {
@@ -1006,13 +1019,6 @@ $white20: rgba(255, 255, 255, 0.2);
 			position: relative;
 			align-items: center;
 			display: flex;
-
-			svg {
-				width: 2.8rem;
-				height: 2.8rem;
-				-o-object-fit: contain;
-				object-fit: contain;
-			}
 		}
 	}
 
@@ -1241,8 +1247,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	display: flex;
 	justify-content: space-between;
 	border-radius: 0 0 5rem 5rem;
-	background: url(../images/svg/bg/big-background-pattern.svg) top left/cover
-			no-repeat,
+	background: url(../images/background-6.webp) top left/cover no-repeat,
 		$darkBlue;
 	&.hide {
 		display: none;
@@ -1255,7 +1260,6 @@ $white20: rgba(255, 255, 255, 0.2);
 		height: 59rem;
 		padding: 0;
 		overflow: auto;
-		border-radius: 0rem 0rem 0rem 5rem;
 		.section-info__card-left {
 			padding: 8rem 6rem;
 			padding-right: 4rem;
@@ -1339,8 +1343,25 @@ $white20: rgba(255, 255, 255, 0.2);
 			}
 		}
 
+		&__med-img {
+			width: 74.4rem;
+			height: 49.6rem;
+			border-radius: 0 0 5rem 5rem;
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+
+			@media (max-width: 48em) {
+				width: 59rem;
+				height: 39.2rem;
+			}
+		}
+
 		position: relative;
-		border-radius: 0 0 5rem 5rem;
 
 		& > img {
 			width: 100%;
@@ -1382,7 +1403,9 @@ $white20: rgba(255, 255, 255, 0.2);
 
 	@media (max-width: 48em) {
 		padding: 9.6rem 4rem;
-		background-image: url('../images/svg/bg/big-background-pattern-mobile.svg');
+		background-image: url(../images/background-6-mobile.webp);
+		background-position: center top;
+		background-size: cover;
 
 		&__container {
 			flex-direction: column;
@@ -1604,7 +1627,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/bg/acc-head-ornament.svg) top left/cover
+			background: url(../images/background-head.webp) top left/cover
 					no-repeat,
 				$biege;
 			cursor: pointer;
@@ -1733,7 +1756,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/svg/bg/acc-head-ornament.svg) top left/cover
+			background: url(../images/background-head.webp) top left/cover
 					no-repeat,
 				$biege;
 			cursor: pointer;
@@ -1812,7 +1835,7 @@ $white20: rgba(255, 255, 255, 0.2);
 	@media (max-width: 48em) {
 		.acc-item {
 			.acc-head {
-				background-image: url('../images/svg/bg/acc-head-ornament-mobile.svg');
+				background-image: url('../images/background-head-mobile.webp');
 				background-size: 100% 100%;
 				padding: 4rem;
 

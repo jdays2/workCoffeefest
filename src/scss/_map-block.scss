@@ -20,11 +20,11 @@
 		align-items: center;
 		margin-top: 1.2rem;
 		cursor: pointer;
-		background-image: url(../images/svg/generic/geo-single.svg);
+		background-image: url(/sprite.svg#geo-bg);
 		background-repeat: no-repeat;
 		background-position: left center;
 		background-size: contain;
-		padding-left: 3.4rem;
+		padding-left: 3rem;
 
 		p {
 			color: #35415C;
@@ -70,14 +70,13 @@
 			height: 2.4rem;
 			cursor: pointer;
 			position: absolute;
-			right: 3.5rem;
+			right: 3.1rem;
 			top: 50%;
 			transform: translateY(-50%);
-
-			background-image: url(../images/svg/generic/close-dark.svg);
+			background-image: url(/sprite.svg#close);
 			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
+			background-position: 0.2rem 0.2rem;
+			background-size: 2.4rem;
 		}
 	}
 
@@ -112,7 +111,7 @@
 		&-list {
 			padding-right: 1.2rem;
 			width: 64.6rem;
-			height: 60.9rem;
+			max-height: 60.9rem;
 			display: flex;
 			flex-wrap: wrap;
 			gap: 2.4rem;
@@ -180,8 +179,8 @@
 				width: -webkit-fit-content;
 				width: -moz-fit-content;
 				width: fit-content;
-				padding-left: 3rem;
-				background-image: url(../images/svg/generic/clock.svg);
+				padding-left: 2.4rem;
+				background-image: url(/sprite.svg#clock);
 				background-repeat: no-repeat;
 				background-position: left center;
 				background-size: contain;

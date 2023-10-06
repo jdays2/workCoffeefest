@@ -1,7 +1,10 @@
 .phone-icon {
 	stroke: #fff9ee;
+	stroke-width: 1.5;
+	stroke-miterlimit: 10;
 
 	&--biege {
+		stroke-width: 1.5;
 		stroke: #e6af9a;
 		width: 3.65rem;
 		height: 3.65rem;
@@ -12,11 +15,15 @@
 	width: 2.8rem;
 	height: 2.8rem;
 	stroke: #e6af9a;
-	stroke-width: 2;
+	stroke-width: 1.5;
 	stroke-linecap: round;
 	stroke-linejoin: round;
+	fill: none;
 	&--dark {
+		width: 2.3rem;
+		height: 2.6rem;
 		stroke-width: 1.7;
+
 		stroke: $darkBlue;
 	}
 
@@ -31,8 +38,22 @@
 	height: 3.94rem;
 }
 
+.arrow-right {
+	width: 2.8rem;
+	height: 1.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .search-icon {
 	fill: #fff9ee;
+	width: 2.8rem;
+	height: 2.8rem;
+	stroke: #e6af9a;
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
 	&--dark {
 		fill: $darkBlue;
 		width: 100%;
@@ -60,6 +81,8 @@
 .home {
 	stroke: $darkBlue;
 	fill: transparent;
+	width: 2.4rem;
+	height: 2.4rem;
 }
 
 .crest {
@@ -69,7 +92,7 @@
 	width: 4.3rem;
 	height: 4.3rem;
 	&--dark {
-		stroke: #35415C;
+		stroke: #35415c;
 		width: 2.4rem;
 		height: 2.4rem;
 		stroke-width: 2;
@@ -77,8 +100,19 @@
 	}
 }
 
+.plus {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.minus {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
 .geo,
-.delivery {
+.delivery,
+.curier {
 	stroke-width: 1.5;
 	stroke: $darkBlue;
 	width: 2.4rem;
@@ -86,9 +120,13 @@
 	fill: transparent;
 }
 
+.calendar-arrow {
+	fill: #e6af9a;
+}
+
 .profile {
-	width: 2.4rem;
-	height: 2.4rem;
+	width: 2.8rem;
+	height: 2.8rem;
 	stroke-width: 1.5;
 	fill: transparent;
 	stroke: #e6af9a;
@@ -126,6 +164,10 @@
 .triangal {
 	width: 1rem;
 	height: 0.6rem;
+}
+
+.mobile {
+	fill: #35415c;
 }
 
 .password {

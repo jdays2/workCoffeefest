@@ -385,7 +385,11 @@ const mapContent = `<div class="map-block">
 				class="search-block__input"
 				type="text"
 				placeholder="Поиск" />
-			<button class="search-block__enter-icon"></button>
+			<button class="search-block__enter-icon">
+						<svg class="arrow-right">
+							<use xlink:href="sprite.svg#arrow-right" />
+						</svg>
+					</button>
 		</label>
 	</div>
 
@@ -410,7 +414,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -436,7 +440,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -464,7 +468,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -490,7 +494,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -516,7 +520,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -542,7 +546,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -568,7 +572,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -594,7 +598,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -620,7 +624,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -646,7 +650,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -672,7 +676,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -698,7 +702,7 @@ const mapContent = `<div class="map-block">
 					<span>на карте</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</div>
 			</div>
@@ -762,7 +766,7 @@ const mapContent = `<div class="map-block">
 					<span>оставить отзыв</span>
 					<svg class="arrow-link__icon">
 						<use
-							xlink:href="./src/images/symbol/stack/sprite.svg#standart-arrow-right" />
+							xlink:href="./sprite.svg#standart-arrow-right" />
 					</svg>
 				</button>
 			</div>
@@ -777,7 +781,9 @@ const geoContent = `<p class="heading2">Вы здесь находитесь?</p
 			Москва, ул. 1-й Старомытищенский пр-д, 15к1,
 		</span>
 
-		<div class="map-block__form-adress-remove"></div>
+		<div class="map-block__form-adress-remove">
+			
+		</div>
 	</div>
 	<div class="map-block__identify-box">
 		<p>Определить местоположение</p>
@@ -863,11 +869,11 @@ const personalInfoContent = `<p class="heading2">Персональная инф
 	<div class="input-container modal__input-medium">
 		<input
 			type="number"
-			id="email"
+			id="tel"
 			class="input input-tel"
 			placeholder="Телефон" />
 		<label
-			for="email"
+			for="tel"
 			class="input-label">
 			Телефон
 		</label>
@@ -999,19 +1005,19 @@ const initFeedbackHandler = () => {
 
 			<div class="rates__icons-wrapper">
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
+					<use xlink:href="./sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
+					<use xlink:href="./sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
+					<use xlink:href="./sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
+					<use xlink:href="./sprite.svg#star" />
 				</svg>
 				<svg class="rates__icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#star" />
+					<use xlink:href="./sprite.svg#star" />
 				</svg>
 			</div>
 		</div>
@@ -1275,11 +1281,11 @@ const textUsContent = `
 	<div class="input-container modal__input-large">
 		<input
 			type="text"
-			id="email6"
+			id="email"
 			class="input input-email"
 			placeholder="Email" />
 		<label
-			for="email6"
+			for="email"
 			class="input-label">
 			Email
 		</label>
@@ -1355,11 +1361,11 @@ const vacancyContent = `<button class="modal__close-btn"></button>
 	<div class="input-container modal__input-medium">
 		<input
 			type="text"
-			id="name5"
+			id="name"
 			class="input input-name"
 			placeholder="Имя" />
 		<label
-			for="name5"
+			for="name"
 			class="input-label">
 			Имя
 		</label>
@@ -1710,6 +1716,533 @@ if (unavailableBtn) {
 	unavailableBtn.forEach((btn) =>
 		btn.addEventListener('click', () => {
 			addModal(modalClass, unavailableContent);
+		}),
+	);
+}
+
+//добавление модалки "Акция"
+//пока кнопки не существует, добавьте нужный id к нужной кнопке или перепишите вызов функции addModal
+const promotionContent = `
+<p class="heading2">Акция</p>
+			<div class="news-main__item">
+				<img
+					src="./src/images/news-img2.png"
+					alt=""
+					class="news-main__item-img" />
+				<div class="news-main__item-text">
+					<p class="news-main__item-heading heading4">
+						Скидка для второго и следующего заказов
+					</p>
+					<div class="news-main__item-description menu">
+						<p>
+							Только в течение ограниченного времени мы предлагаем вам
+							адреналиновую акцию: купите одну и получите вторую бесплатно на
+							любой кофе среднего размера на ваш выбор! Пришло время действовать
+							и погрузиться в мир смелых вкусов и бодрящих ароматов.
+						</p>
+					</div>
+					<div class="news-main__item-bottom">
+						<p class="news-main__item-date btns-caps">до 01.12.23</p>
+						<a
+							href="#"
+							class="news-main__item-name btns-caps">
+							Акции
+						</a>
+					</div>
+				</div>
+			</div>
+`;
+
+const promotionBtn = document.querySelectorAll('#promotion-btn');
+
+if (promotionBtn) {
+	const modalClass = 'promotion-modal';
+
+	promotionBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, promotionContent);
+		}),
+	);
+}
+
+//добавить адресс
+const adressContent = `
+<p class="heading2">Добавить адрес</p>
+
+			<form class="modal__form">
+				<div class="input-container modal__input-medium">
+					<input
+						type="text"
+						id="city"
+						class="input"
+						placeholder="Город" />
+					<label
+						for="city"
+						class="input-label">
+						Город
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-medium">
+					<input
+						type="text"
+						id="street"
+						class="input"
+						placeholder="Улица" />
+					<label
+						for="street"
+						class="input-label">
+						Улица
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-small">
+					<input
+						type="text"
+						id="block"
+						class="input"
+						placeholder="Дом" />
+					<label
+						for="block"
+						class="input-label">
+						Дом
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-small">
+					<input
+						type="text"
+						id="flor"
+						class="input"
+						placeholder="Этаж" />
+					<label
+						for="flor"
+						class="input-label">
+						Этаж
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-small">
+					<input
+						type="text"
+						id="apart"
+						class="input"
+						placeholder="Квартира" />
+					<label
+						for="apart"
+						class="input-label">
+						Квартира
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+
+				<div class="input-container modal__input-large">
+					<input
+						type="text"
+						id="description"
+						class="input"
+						placeholder="Комментарий к адресу" />
+					<label
+						for="description"
+						class="input-label">
+						Комментарий к адресу
+					</label>
+					<div class="icon success"></div>
+					<div class="icon invalid"></div>
+					<div class="input-status">Неверный формат</div>
+				</div>
+			</form>
+
+			<div class="modal__btns modal__btns--center">
+				<button class="square-btn blue-square-btn">
+					<span>сохранить изменения</span>
+				</button>
+			</div>`;
+
+const addAdressBtn = document.querySelectorAll('#add-adress');
+
+if (addAdressBtn) {
+	const modalClass = 'add-adress';
+
+	addAdressBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, adressContent);
+		}),
+	);
+}
+
+//редактировать адресс
+const editAdressContent = `
+<p class="heading2">Редактировать адрес</p>
+
+			<div class="section-tags__container">
+				<ul class="section-tags">
+					<li class="section-tags__item">
+						<button
+							class="section-tags__item-btn active"
+							data-path="address-1">
+							адрес 1
+						</button>
+					</li>
+					<li class="section-tags__item">
+						<button
+							class="section-tags__item-btn"
+							data-path="address-2">
+							адрес 2
+						</button>
+					</li>
+				</ul>
+			</div>
+
+			<div
+				class="delivery-main__accordion accordion active"
+				data-target="address-1">
+				<form class="modal__form">
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="city"
+							class="input"
+							placeholder="Город" />
+						<label
+							for="city"
+							class="input-label">
+							Город
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="street"
+							class="input"
+							placeholder="Улица" />
+						<label
+							for="street"
+							class="input-label">
+							Улица
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="block"
+							class="input"
+							placeholder="Дом" />
+						<label
+							for="block"
+							class="input-label">
+							Дом
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="flor"
+							class="input"
+							placeholder="Этаж" />
+						<label
+							for="flor"
+							class="input-label">
+							Этаж
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="apart"
+							class="input"
+							placeholder="Квартира" />
+						<label
+							for="apart"
+							class="input-label">
+							Квартира
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-large">
+						<input
+							type="text"
+							id="description"
+							class="input"
+							placeholder="Комментарий к адресу" />
+						<label
+							for="description"
+							class="input-label">
+							Комментарий к адресу
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+				</form>
+			</div>
+
+			<div
+				class="delivery-main__accordion accordion"
+				data-target="address-2">
+				<form class="modal__form">
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="city"
+							class="input"
+							placeholder="Город" />
+						<label
+							for="city"
+							class="input-label">
+							Город
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-medium">
+						<input
+							type="text"
+							id="street"
+							class="input"
+							placeholder="Улица" />
+						<label
+							for="street"
+							class="input-label">
+							Улица
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="block"
+							class="input"
+							placeholder="Дом" />
+						<label
+							for="block"
+							class="input-label">
+							Дом
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="flor"
+							class="input"
+							placeholder="Этаж" />
+						<label
+							for="flor"
+							class="input-label">
+							Этаж
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-small">
+						<input
+							type="text"
+							id="apart"
+							class="input"
+							placeholder="Квартира" />
+						<label
+							for="apart"
+							class="input-label">
+							Квартира
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+
+					<div class="input-container modal__input-large">
+						<input
+							type="text"
+							id="description"
+							class="input"
+							placeholder="Комментарий к адресу" />
+						<label
+							for="description"
+							class="input-label">
+							Комментарий к адресу
+						</label>
+						<div class="icon success"></div>
+						<div class="icon invalid"></div>
+						<div class="input-status">Неверный формат</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal__btns modal__btns--center">
+				<button class="square-btn blue-square-btn">
+					<span>сохранить изменения</span>
+				</button>
+				<button class="arrow-link">
+					<span>Удалить</span>
+				</button>
+			</div>`;
+
+const editAdressBtn = document.querySelectorAll('#edit-adress');
+
+if (editAdressBtn) {
+	const modalClass = 'edit-adress';
+
+	editAdressBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(modalClass, editAdressContent);
+
+			const wrapper = document.querySelector('.edit-adress');
+			const tagButtons = wrapper.querySelectorAll('.section-tags__item-btn');
+			const tagBlocks = wrapper.querySelectorAll('.delivery-main__accordion');
+
+			const tabsHandler = (btn) => {
+				btn.removeEventListener('click', tabsHandler);
+				tagButtons.forEach((el) => el.classList.remove('active'));
+				tagBlocks.forEach((el) => {
+					el.classList.remove('active');
+					el.classList.add('hide');
+				});
+				btn.classList.add('active');
+				const path = btn.dataset.path;
+				tagBlocks.forEach((block) => {
+					if (block.dataset.target === path) {
+						block.classList.add('active');
+						block.classList.remove('hide');
+					}
+				});
+			};
+
+			tagButtons.forEach((btn) => {
+				btn.addEventListener('click', () => tabsHandler(btn));
+			});
+		}),
+	);
+}
+
+const partnershipContent = `<p class="heading2">Добавить адрес</p>
+
+<form class="modal__form">
+	<div class="input-container modal__input-medium">
+		<input
+			type="text"
+			id="name"
+			class="input input-name"
+			placeholder="Имя" />
+		<label
+			for="name"
+			class="input-label">
+			Имя
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-medium">
+		<input
+			type="tel"
+			id="tel"
+			class="input input-tel"
+			placeholder="Телефон" />
+		<label
+			for="tel"
+			class="input-label">
+			Телефон
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-large">
+		<input
+			type="email"
+			id="email"
+			class="input input-email"
+			placeholder="Дом" />
+		<label
+			for="email"
+			class="input-label">
+			Email
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+</form>
+
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn" id="partnership-confirmation-btn">
+		<span>Зарегистрироваться</span>
+	</button>
+</div>`;
+
+const partnershipConfirmationContent = `
+		<p class="heading2">Регистрация прошла успешно</p>
+
+		<p class="modal__message">контент</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+</div>`;
+
+const partnershipBtn = document.querySelectorAll('#partnership-btn');
+
+if (partnershipBtn) {
+	const modalClass = 'partnership';
+	const confirmationClass = 'partnership-sended';
+	const secondBtn = '#partnership-confirmation-btn';
+
+	partnershipBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(
+				modalClass,
+				partnershipContent,
+				confirmationClass,
+				partnershipConfirmationContent,
+				secondBtn,
+			);
 		}),
 	);
 }

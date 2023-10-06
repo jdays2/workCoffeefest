@@ -14,14 +14,15 @@
 		height: 7rem;
 		cursor: pointer;
 		display: none;
+		justify-content: center;
+		align-items: center;
 		margin-bottom: 1.5rem;
 		margin-right: -1rem;
 		margin-left: -2.1rem;
-		transform: rotate(-180deg);
 
 		svg {
-			width: 100%;
-			height: 100%;
+			width: 2.8rem;
+			fill: $darkBlue
 		}
 		&.active {
 			display: flex;
@@ -89,10 +90,10 @@
 		height: 2.9rem;
 		display: none;
 
-		background-image: url(../images/svg/generic/is-done.svg);
+		background-image: url("/sprite.svg#is-done");
 		background-size: contain;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: 0.6rem 0.9rem;
 	}
 
 	&__phase-value {

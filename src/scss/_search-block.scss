@@ -4,15 +4,16 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 140%;
-	border: 0.2rem solid #35415C;
+	border: 0.2rem solid #35415c;
 	height: 5.4rem;
 	max-height: 5.4rem;
 	min-height: 5.4rem;
-  width: 41.1rem;
+	width: 41.1rem;
 
-  &--long {
-    width: 100%;
-  }
+
+	&--long {
+		width: 100%;
+	}
 
 	&__input {
 		padding: 1.2rem 5.8rem;
@@ -28,10 +29,10 @@
 		height: -moz-fit-content;
 		height: fit-content;
 		display: block;
-		background-image: url(../images/svg/generic/search.svg);
-		background-size: 3rem;
+		background-image: url('/sprite.svg#search');
 		background-repeat: no-repeat;
-		background-position: 1.6rem center;
+		background-position: 1.6rem 1.2rem;
+		background-size: 2.4rem;
 	}
 
 	&__main-icon {
@@ -42,7 +43,7 @@
 		transform: translateY(-50%);
 		left: 1.6rem;
 		width: 3rem;
-    height: 3rem;
+		height: 3rem;
 	}
 
 	&__enter-icon {
@@ -50,13 +51,7 @@
 		z-index: 3;
 		position: absolute;
 		top: 50%;
-		transform: translateY(-50%);
 		right: 1.6rem;
-		width: 2.6rem;
-		height: 2rem;
-		background-image: url(../images/svg/generic/search-arrow.svg);
-		background-size: 97%;
-    background-repeat: no-repeat;
-    background-position: center;
+		transform: translateY(-50%);
 	}
 }

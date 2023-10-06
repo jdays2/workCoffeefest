@@ -98,6 +98,7 @@
                 left: 3rem;
                 color: $light;
                 text-transform: none;
+                width: 32rem;
             }
         }
     }
@@ -125,7 +126,9 @@
 
             &__right {
                 justify-content: space-between;
-
+                &-text {
+                    width: auto;
+                }
                 &-img,
                 &-video {
                     margin: 0;

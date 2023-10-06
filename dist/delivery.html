@@ -21,46 +21,18 @@
 		<header class="header">
 	<div class="container">
 		<button class="header__burger mobile">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="28"
-				height="17"
-				viewBox="0 0 28 17"
-				fill="none"
-				class="open">
-				<path
-					d="M1 8.44336H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 0.568359H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 16.3184H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
+			<svg class="open">
+				<use xlink:href="./sprite.svg#burger-btn" />
 			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" class="close">
-				<g clip-path="url(#clip0_5736_97052)">
-				  <path d="M4.66113 4.66116L22.3388 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				  <path d="M22.3389 4.66116L4.6612 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				</g>
-				<defs>
-				  <clipPath id="clip0_5736_97052">
-					<rect width="27" height="27" fill="white"/>
-				  </clipPath>
-				</defs>
+			<svg class="close">
+				<use xlink:href="./sprite.svg#burger-close" />
 			</svg>
 		</button>
 		<a
 			href="#"
 			class="header__logo">
 			<svg>
-				<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+				<use xlink:href="./sprite.svg#logo" />
 			</svg>
 		</a>
 		<nav class="header__nav desktop">
@@ -143,21 +115,17 @@
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					<button class="header__search-icon">
-						<svg class="search-icon">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
-						</svg>
-					</button>
+					
 
 					<button class="header__search-enter-icon">
 						<svg  class="search-arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search-arrow" />
+							<use xlink:href="./sprite.svg#slim-arrow" />
 						</svg>
 					</button>
 					
 					<button class="header__search-close-icon">
 						<svg class="crest">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--crest" />
+							<use xlink:href="./sprite.svg#crest" />
 						</svg>
 					</button>
 				</label>
@@ -200,21 +168,21 @@
 					class="header__search desktop"
 					id="header-search">
 					<svg class="search-icon">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
+						<use xlink:href="./sprite.svg#search-header" />
 					</svg>
 				</button>
 				<a
 					href="#"
 					class="header__account">
 					<svg class="profile">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--profile" />
+						<use xlink:href="./sprite.svg#profile" />
 					</svg>
 				</a>
 				<a
 					href="#"
 					class="header__cart">
 					<svg class="bag">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--bag" />
+						<use xlink:href="./sprite.svg#bag" />
 					</svg>
 				</a>
 			</div>
@@ -223,7 +191,7 @@
 				href="tel:84952121059"
 				class="header__right-tel-link desktop">
 				<svg class="phone-icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--phone" />
+					<use xlink:href="./sprite.svg#phone" />
 				</svg>
 				<span>8 495 212 10 59</span>
 			</a>
@@ -243,7 +211,7 @@
 					<div class="acc-head">
 						<p class="heading4">Меню</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -262,7 +230,7 @@
 					<div class="acc-head">
 						<p class="heading4">Каталог</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -297,7 +265,7 @@
 								href="/dist/main.html"
 								class="breadcrumbs__item-link">
 								<svg class="home">
-									<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--home" />
+									<use xlink:href="./sprite.svg#home" />
 								</svg>
 							</a>
 						</li>
@@ -343,7 +311,7 @@
 								<p class="heading4">Самовывоз из кофеен в Москве</p>
 								<svg class="arrow">
 									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow" />
+										xlink:href="./sprite.svg#arrow" />
 								</svg>
 							</div>
 							<div class="acc-content">
@@ -358,7 +326,11 @@
 													class="search-block__input"
 													type="text"
 													placeholder="Поиск" />
-												<button class="search-block__enter-icon"></button>
+												<button class="search-block__enter-icon">
+						<svg class="arrow-right">
+							<use xlink:href="sprite.svg#arrow-right" />
+						</svg>
+					</button>
 											</label>
 										</div>
 
@@ -385,7 +357,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -413,7 +385,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -441,7 +413,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -469,7 +441,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -497,7 +469,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -525,7 +497,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -553,7 +525,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -581,7 +553,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -609,7 +581,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -637,7 +609,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -665,7 +637,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -693,7 +665,7 @@
 														<span>на карте</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</div>
 												</div>
@@ -763,7 +735,7 @@
 														<span>оставить отзыв</span>
 														<svg class="arrow-link__icon">
 															<use
-																xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+																xlink:href="sprite.svg#standart-arrow-right" />
 														</svg>
 													</button>
 												</div>
@@ -779,7 +751,7 @@
 								<p class="heading4">Курьерская доставка</p>
 								<svg class="arrow">
 									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow" />
+										xlink:href="./sprite.svg#arrow" />
 								</svg>
 							</div>
 							<div class="acc-content menu">
@@ -803,7 +775,7 @@
 								<p class="heading4">Сроки курьерской доставки</p>
 								<svg class="arrow">
 									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow" />
+										xlink:href="./sprite.svg#arrow" />
 								</svg>
 							</div>
 							<div class="acc-content menu">
@@ -821,7 +793,7 @@
 								<p class="heading4">Самовывоз из ПВЗ в России и СНГ</p>
 								<svg class="arrow">
 									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow" />
+										xlink:href="./sprite.svg#arrow" />
 								</svg>
 							</div>
 							<div class="acc-content menu">
@@ -843,7 +815,7 @@
 								<p class="heading4">Наличными или картой курьеру</p>
 								<svg class="arrow">
 									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow" />
+										xlink:href="./sprite.svg#arrow" />
 								</svg>
 							</div>
 							<div class="acc-content menu">
@@ -874,7 +846,7 @@
 								<p class="heading4">Наличными или картой при самовывозе</p>
 								<svg class="arrow">
 									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow" />
+										xlink:href="./sprite.svg#arrow" />
 								</svg>
 							</div>
 							<div class="acc-content menu">
@@ -897,7 +869,7 @@
 				href="#"
 				class="footer__top-logo">
 				<svg>
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+					<use xlink:href="./sprite.svg#logo" />
 				</svg>
 			</a>
 			<div class="footer__top-block block1">
@@ -1134,7 +1106,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg>
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vk" />
+							<use xlink:href="./sprite.svg#vk" />
 						</svg>
 					</a>
 				</li>
@@ -1143,7 +1115,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link telegram">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--telegram" />
+							<use xlink:href="./sprite.svg#telegram" />
 						</svg>
 					</a>
 				</li>
@@ -1152,7 +1124,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--youtube" />
+							<use xlink:href="./sprite.svg#youtube" />
 						</svg>
 					</a>
 				</li>
@@ -1161,7 +1133,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--dzen" />
+							<use xlink:href="./sprite.svg#dzen" />
 						</svg>
 					</a>
 				</li>
@@ -1183,7 +1155,7 @@
 					</p>
 				</div>
 				<svg class="request-logo">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--request-logo" />
+					<use xlink:href="./sprite.svg#request" />
 				</svg>
 				<a
 					href="#"
@@ -1295,6 +1267,45 @@
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
 		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal promotion-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal add-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal edit-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal partnership">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
+	</div>
+</div>
+
+<div class="modal partnership-sended">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
 	</div>
 </div>
 

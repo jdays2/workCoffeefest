@@ -13,8 +13,7 @@
 		grid-template-rows: 24.6rem;
 
 		&-item__text {
-			background: url('../images/symbol/stack/sprite.svg#bg--main-cards-bg') top left/cover
-					no-repeat,
+			background: url('../images/background-1.webp') center/cover no-repeat,
 				$darkBlue;
 			height: 100%;
 		}
@@ -123,7 +122,9 @@
 			display: block;
 
 			&-item__text {
-				background-image: url('../images/svg/bg/main-cards-bg-mobile.svg');
+				background-image: url('../images/background-1-mobile.webp');
+				background-size: cover;
+				background-position: center;
 			}
 
 			&-item {

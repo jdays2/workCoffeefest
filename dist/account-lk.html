@@ -27,46 +27,18 @@
 		<header class="header">
 	<div class="container">
 		<button class="header__burger mobile">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="28"
-				height="17"
-				viewBox="0 0 28 17"
-				fill="none"
-				class="open">
-				<path
-					d="M1 8.44336H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 0.568359H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 16.3184H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
+			<svg class="open">
+				<use xlink:href="./sprite.svg#burger-btn" />
 			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" class="close">
-				<g clip-path="url(#clip0_5736_97052)">
-				  <path d="M4.66113 4.66116L22.3388 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				  <path d="M22.3389 4.66116L4.6612 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				</g>
-				<defs>
-				  <clipPath id="clip0_5736_97052">
-					<rect width="27" height="27" fill="white"/>
-				  </clipPath>
-				</defs>
+			<svg class="close">
+				<use xlink:href="./sprite.svg#burger-close" />
 			</svg>
 		</button>
 		<a
 			href="#"
 			class="header__logo">
 			<svg>
-				<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+				<use xlink:href="./sprite.svg#logo" />
 			</svg>
 		</a>
 		<nav class="header__nav desktop">
@@ -149,21 +121,17 @@
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					<button class="header__search-icon">
-						<svg class="search-icon">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
-						</svg>
-					</button>
+					
 
 					<button class="header__search-enter-icon">
 						<svg  class="search-arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search-arrow" />
+							<use xlink:href="./sprite.svg#slim-arrow" />
 						</svg>
 					</button>
 					
 					<button class="header__search-close-icon">
 						<svg class="crest">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--crest" />
+							<use xlink:href="./sprite.svg#crest" />
 						</svg>
 					</button>
 				</label>
@@ -206,21 +174,21 @@
 					class="header__search desktop"
 					id="header-search">
 					<svg class="search-icon">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
+						<use xlink:href="./sprite.svg#search-header" />
 					</svg>
 				</button>
 				<a
 					href="#"
 					class="header__account">
 					<svg class="profile">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--profile" />
+						<use xlink:href="./sprite.svg#profile" />
 					</svg>
 				</a>
 				<a
 					href="#"
 					class="header__cart">
 					<svg class="bag">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--bag" />
+						<use xlink:href="./sprite.svg#bag" />
 					</svg>
 				</a>
 			</div>
@@ -229,7 +197,7 @@
 				href="tel:84952121059"
 				class="header__right-tel-link desktop">
 				<svg class="phone-icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--phone" />
+					<use xlink:href="./sprite.svg#phone" />
 				</svg>
 				<span>8 495 212 10 59</span>
 			</a>
@@ -249,7 +217,7 @@
 					<div class="acc-head">
 						<p class="heading4">Меню</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -268,7 +236,7 @@
 					<div class="acc-head">
 						<p class="heading4">Каталог</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -300,19 +268,18 @@
 									data-path="personal-data">
 									<svg
 										class="profile profile--dark sidebar-tabs__item-btn__icon">
-										<use
-											xlink:href="./src/images/symbol/stack/sprite.svg#bg--profile" />
+										<use xlink:href="./sprite.svg#profile" />
 									</svg>
 									<span>Личные данные</span>
 								</button>
 							</li>
-							
+
 							<li class="sidebar-tabs__item">
 								<button
 									class="sidebar-tabs__item-btn"
 									data-path="orders">
 									<svg class="bag bag--dark sidebar-tabs__item-btn__icon">
-										<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--bag" />
+										<use xlink:href="./sprite.svg#bag" />
 									</svg>
 									<span>Заказы</span>
 								</button>
@@ -322,8 +289,7 @@
 									class="sidebar-tabs__item-btn"
 									data-path="bonus-program">
 									<svg class="bonuses sidebar-tabs__item-btn__icon">
-										<use
-											xlink:href="./src/images/symbol/stack/sprite.svg#bg--bonuses" />
+										<use xlink:href="./sprite.svg#bonuses" />
 									</svg>
 									<span>Бонусная программа</span>
 								</button>
@@ -342,8 +308,7 @@
 							class="account-lk__left-logout arrow-link">
 							<span>выйти</span>
 							<svg class="arrow-link__icon">
-								<use
-									xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+								<use xlink:href="sprite.svg#standart-arrow-right" />
 							</svg>
 						</a>
 						<p class="account-lk__left-bottom__text menu desktop">
@@ -362,8 +327,7 @@
 							data-target="personal-data">
 							<button class="account-lk__right-back arrow-link mobile">
 								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-left" />
+									<use xlink:href="./sprite.svg#standart-arrow-left" />
 								</svg>
 								<span>назад</span>
 							</button>
@@ -412,8 +376,7 @@
 										class="arrow-link">
 										<span>сменить пароль</span>
 										<svg class="arrow-link__icon">
-											<use
-												xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+											<use xlink:href="sprite.svg#standart-arrow-right" />
 										</svg>
 									</div>
 								</div>
@@ -422,7 +385,11 @@
 							<div class="account-lk__right-block">
 								<div class="block-top">
 									<p class="block-top__heading heading4">ваши адреса</p>
-									<button class="btns-caps">редактировать</button>
+									<button
+										class="btns-caps"
+										id="edit-adress">
+										редактировать
+									</button>
 								</div>
 								<ul class="block-list">
 									<li class="block-list__item">
@@ -466,8 +433,7 @@
 										class="arrow-link">
 										<span>добавить адрес</span>
 										<svg class="arrow-link__icon">
-											<use
-												xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+											<use xlink:href="sprite.svg#standart-arrow-right" />
 										</svg>
 									</div>
 								</div>
@@ -479,8 +445,7 @@
 							data-target="orders">
 							<button class="account-lk__right-back arrow-link mobile">
 								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-left" />
+									<use xlink:href="./sprite.svg#standart-arrow-left" />
 								</svg>
 								<span>назад</span>
 							</button>
@@ -531,8 +496,7 @@
 										<button class="order-table__head-cell__btn">
 											<span>Номер</span>
 											<svg class="triangal">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--triangal" />
+												<use xlink:href="./sprite.svg#triangal" />
 											</svg>
 										</button>
 									</div>
@@ -541,8 +505,7 @@
 										<button class="order-table__head-cell__btn">
 											<span>Дата</span>
 											<svg class="triangal">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--triangal" />
+												<use xlink:href="./sprite.svg#triangal" />
 											</svg>
 										</button>
 									</div>
@@ -551,8 +514,7 @@
 										<button class="order-table__head-cell__btn">
 											<span>Сумма</span>
 											<svg class="triangal">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--triangal" />
+												<use xlink:href="./sprite.svg#triangal" />
 											</svg>
 										</button>
 									</div>
@@ -561,8 +523,7 @@
 										<button class="order-table__head-cell__btn">
 											<span>Адрес</span>
 											<svg class="triangal">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--triangal" />
+												<use xlink:href="./sprite.svg#triangal" />
 											</svg>
 										</button>
 									</div>
@@ -571,8 +532,7 @@
 										<button class="order-table__head-cell__btn">
 											<span>Статус</span>
 											<svg class="triangal">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--triangal" />
+												<use xlink:href="./sprite.svg#triangal" />
 											</svg>
 										</button>
 									</div>
@@ -584,8 +544,7 @@
 											<div class="order-table__item-cell number">
 												<p>№123456</p>
 												<svg class="mobile">
-													<use
-														xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+													<use xlink:href="sprite.svg#standart-arrow-right" />
 												</svg>
 											</div>
 
@@ -611,8 +570,7 @@
 
 											<button class="order-table__item-open desktop">
 												<svg>
-													<use
-														xlink:href="./src/images/symbol/stack/sprite.svg#bg--popup-icon" />
+													<use xlink:href="./sprite.svg#popup" />
 												</svg>
 											</button>
 										</div>
@@ -773,10 +731,10 @@
 										<div class="order-table__item-head acc-head">
 											<div class="order-table__item-cell number">
 												<p>№123456</p>
-												<img
-													src="./src/images/svg/red-arrow-right.svg"
-													alt=""
-													class="arrow mobile" />
+
+												<svg class="mobile">
+													<use xlink:href="sprite.svg#standart-arrow-right" />
+												</svg>
 											</div>
 
 											<div class="order-table__item-cell date">
@@ -801,8 +759,7 @@
 
 											<button class="order-table__item-open desktop">
 												<svg>
-													<use
-														xlink:href="./src/images/symbol/stack/sprite.svg#bg--popup-icon" />
+													<use xlink:href="./sprite.svg#popup" />
 												</svg>
 											</button>
 										</div>
@@ -963,10 +920,10 @@
 										<div class="order-table__item-head acc-head">
 											<div class="order-table__item-cell number">
 												<p>№123456</p>
-												<img
-													src="./src/images/svg/red-arrow-right.svg"
-													alt=""
-													class="arrow mobile" />
+
+												<svg class="mobile">
+													<use xlink:href="sprite.svg#standart-arrow-right" />
+												</svg>
 											</div>
 
 											<div class="order-table__item-cell date">
@@ -991,8 +948,7 @@
 
 											<button class="order-table__item-open desktop">
 												<svg>
-													<use
-														xlink:href="./src/images/symbol/stack/sprite.svg#bg--popup-icon" />
+													<use xlink:href="./sprite.svg#popup" />
 												</svg>
 											</button>
 										</div>
@@ -1153,10 +1109,9 @@
 										<div class="order-table__item-head acc-head">
 											<div class="order-table__item-cell number">
 												<p>№123456</p>
-												<img
-													src="./src/images/svg/red-arrow-right.svg"
-													alt=""
-													class="arrow mobile" />
+												<svg class="mobile">
+													<use xlink:href="sprite.svg#standart-arrow-right" />
+												</svg>
 											</div>
 
 											<div class="order-table__item-cell date">
@@ -1181,8 +1136,7 @@
 
 											<button class="order-table__item-open desktop">
 												<svg>
-													<use
-														xlink:href="./src/images/symbol/stack/sprite.svg#bg--popup-icon" />
+													<use xlink:href="./sprite.svg#popup" />
 												</svg>
 											</button>
 										</div>
@@ -1347,8 +1301,7 @@
 							data-target="bonus-program">
 							<button class="account-lk__right-back arrow-link mobile">
 								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-left" />
+									<use xlink:href="./sprite.svg#standart-arrow-left" />
 								</svg>
 								<span>назад</span>
 							</button>
@@ -1357,7 +1310,10 @@
 							</p>
 
 							<div class="account-lk__right-video">
-								<video
+								<img
+									src="./src/images/sample-for-large-player.png"
+									alt="" />
+								<!-- <video
 									id="my-video"
 									class="video-js video-js--medium video-js--light"
 									controls
@@ -1367,7 +1323,7 @@
 									<source
 										src="./src/images/sample/sample.mp4"
 										type="video/mp4" />
-								</video>
+								</video> -->
 							</div>
 
 							<div class="account-lk__right-text">
@@ -1425,6 +1381,13 @@
 										<li class="account-lk__right-text__left-list-item menu">
 											<p>Установите электронную карту «CofeFest».</p>
 										</li>
+
+										<button
+											
+											class="square-btn blue-square-btn square-btn--margin square-btn--partnership"
+											id="partnership-btn">
+											Зарегестрироваться
+									</button>
 									</ul>
 
 									<p class="account-lk__right-text__left-heading heading5">
@@ -1444,9 +1407,10 @@
 								</div>
 
 								<div class="account-lk__right-text__right">
-									<svg class="qr">
-										<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--qr" />
-									</svg>
+									<!-- <svg class="qr">
+										<use
+											xlink:href="./sprite.svg#qr" />
+									</svg> -->
 								</div>
 							</div>
 						</div>
@@ -1566,7 +1530,7 @@
 				href="#"
 				class="footer__top-logo">
 				<svg>
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+					<use xlink:href="./sprite.svg#logo" />
 				</svg>
 			</a>
 			<div class="footer__top-block block1">
@@ -1803,7 +1767,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg>
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vk" />
+							<use xlink:href="./sprite.svg#vk" />
 						</svg>
 					</a>
 				</li>
@@ -1812,7 +1776,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link telegram">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--telegram" />
+							<use xlink:href="./sprite.svg#telegram" />
 						</svg>
 					</a>
 				</li>
@@ -1821,7 +1785,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--youtube" />
+							<use xlink:href="./sprite.svg#youtube" />
 						</svg>
 					</a>
 				</li>
@@ -1830,7 +1794,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--dzen" />
+							<use xlink:href="./sprite.svg#dzen" />
 						</svg>
 					</a>
 				</li>
@@ -1852,7 +1816,7 @@
 					</p>
 				</div>
 				<svg class="request-logo">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--request-logo" />
+					<use xlink:href="./sprite.svg#request" />
 				</svg>
 				<a
 					href="#"
@@ -1964,6 +1928,45 @@
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
 		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal promotion-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal add-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal edit-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal partnership">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
+	</div>
+</div>
+
+<div class="modal partnership-sended">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
 	</div>
 </div>
 

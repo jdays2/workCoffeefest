@@ -33,46 +33,18 @@
 		<header class="header">
 	<div class="container">
 		<button class="header__burger mobile">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="28"
-				height="17"
-				viewBox="0 0 28 17"
-				fill="none"
-				class="open">
-				<path
-					d="M1 8.44336H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 0.568359H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
-				<path
-					d="M1 16.3184H26"
-					stroke="#FFF9EE"
-					stroke-linecap="round"
-					stroke-linejoin="round" />
+			<svg class="open">
+				<use xlink:href="./sprite.svg#burger-btn" />
 			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none" class="close">
-				<g clip-path="url(#clip0_5736_97052)">
-				  <path d="M4.66113 4.66116L22.3388 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				  <path d="M22.3389 4.66116L4.6612 22.3388" stroke="#FFF9EE" stroke-linecap="round" stroke-linejoin="round"/>
-				</g>
-				<defs>
-				  <clipPath id="clip0_5736_97052">
-					<rect width="27" height="27" fill="white"/>
-				  </clipPath>
-				</defs>
+			<svg class="close">
+				<use xlink:href="./sprite.svg#burger-close" />
 			</svg>
 		</button>
 		<a
 			href="#"
 			class="header__logo">
 			<svg>
-				<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+				<use xlink:href="./sprite.svg#logo" />
 			</svg>
 		</a>
 		<nav class="header__nav desktop">
@@ -155,21 +127,17 @@
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					<button class="header__search-icon">
-						<svg class="search-icon">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
-						</svg>
-					</button>
+					
 
 					<button class="header__search-enter-icon">
 						<svg  class="search-arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search-arrow" />
+							<use xlink:href="./sprite.svg#slim-arrow" />
 						</svg>
 					</button>
 					
 					<button class="header__search-close-icon">
 						<svg class="crest">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--crest" />
+							<use xlink:href="./sprite.svg#crest" />
 						</svg>
 					</button>
 				</label>
@@ -212,21 +180,21 @@
 					class="header__search desktop"
 					id="header-search">
 					<svg class="search-icon">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--search" />
+						<use xlink:href="./sprite.svg#search-header" />
 					</svg>
 				</button>
 				<a
 					href="#"
 					class="header__account">
 					<svg class="profile">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--profile" />
+						<use xlink:href="./sprite.svg#profile" />
 					</svg>
 				</a>
 				<a
 					href="#"
 					class="header__cart">
 					<svg class="bag">
-						<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--bag" />
+						<use xlink:href="./sprite.svg#bag" />
 					</svg>
 				</a>
 			</div>
@@ -235,7 +203,7 @@
 				href="tel:84952121059"
 				class="header__right-tel-link desktop">
 				<svg class="phone-icon">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--phone" />
+					<use xlink:href="./sprite.svg#phone" />
 				</svg>
 				<span>8 495 212 10 59</span>
 			</a>
@@ -255,7 +223,7 @@
 					<div class="acc-head">
 						<p class="heading4">Меню</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -274,7 +242,7 @@
 					<div class="acc-head">
 						<p class="heading4">Каталог</p>
 						<svg class="arrow">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vertical-arrow"></use>
+							<use xlink:href="./sprite.svg#arrow"></use>
 						</svg>
 					</div>
 					<div class="acc-content menu">
@@ -318,7 +286,21 @@
 								class="main-banner__swiper-slide__img" />
 							<a
 								href=""
-								class="banner-btns banner-btns--blue">
+								class="banner-btns banner-btns--light banner-btns--left">
+								<span>перейти в каталог</span>
+							</a>
+						</div>
+
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="blue">
+							<img
+								src="./src/images/main-banner-cakes1.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--red banner-btns--left">
 								<span>перейти в каталог</span>
 							</a>
 						</div>
@@ -360,15 +342,6 @@
 								href=""
 								class="banner-btns banner-btns--light">
 								<span>Посмотреть меню</span>
-								<span class="banner-btns__icon">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none">
-										<path
-											d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25L1.5 5.75ZM28.0303 7.03033C28.3232 6.73744 28.3232 6.26257 28.0303 5.96967L23.2574 1.1967C22.9645 0.903808 22.4896 0.903808 22.1967 1.1967C21.9038 1.48959 21.9038 1.96447 22.1967 2.25736L26.4393 6.5L22.1967 10.7426C21.9038 11.0355 21.9038 11.5104 22.1967 11.8033C22.4896 12.0962 22.9645 12.0962 23.2574 11.8033L28.0303 7.03033ZM1.5 7.25L27.5 7.25L27.5 5.75L1.5 5.75L1.5 7.25Z"
-											fill="#FFFCF8" />
-									</svg>
-								</span>
 							</a>
 						</div>
 
@@ -389,28 +362,127 @@
 
 					<div class="main-banner__swiper-controllers">
 						<div class="prev">
-							<svg
-								width="28"
-								height="16"
-								viewBox="0 0 28 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-									fill="#e3bca0" />
+							<svg>
+								<use xlink:href="sprite.svg#prev" />
 							</svg>
 						</div>
 						<div class="swiper-pagination"></div>
 						<div class="next">
-							<svg
-								width="28"
-								height="16"
-								viewBox="0 0 28 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.2929L21.3431 0.928934C20.9526 0.53841 20.3195 0.538409 19.9289 0.928934C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM1 9L27 9L27 7L1 7L1 9Z"
-									fill="#e3bca0" />
+							<svg>
+								<use xlink:href="sprite.svg#next" />
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-container main-banner-mobile__swiper">
+					<div class="swiper-wrapper">
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="blue">
+							<img
+								src="./src/images/main-banner-0.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>посмотреть меню</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="blue">
+							<img
+								src="./src/images/main-banner-1.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>перейти в каталог</span>
+							</a>
+						</div>
+
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="blue">
+							<img
+								src="./src/images/main-banner-cakes1.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--red">
+								<span>перейти в каталог</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-2.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>заказать пробник</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-3.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>Посмотреть меню</span>
+							</a>
+						</div>
+
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-4.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>Посмотреть меню</span>
+							</a>
+						</div>
+
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-5.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>подробнее</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="main-banner__swiper-controllers">
+						<div class="prev">
+							<svg>
+								<use xlink:href="sprite.svg#prev" />
+							</svg>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="next">
+							<svg>
+								<use xlink:href="sprite.svg#next" />
 							</svg>
 						</div>
 					</div>
@@ -440,7 +512,11 @@
 								</p>
 								<a
 									href="#"
-									class="categories-section__list-item__link white-arrow-btn"></a>
+									class="categories-section__list-item__link white-arrow-btn">
+									<svg class="arrow-link__icon">
+										<use xlink:href="sprite.svg#standart-arrow-right" />
+									</svg>
+								</a>
 							</div>
 						</div>
 
@@ -456,7 +532,11 @@
 								</p>
 								<a
 									href="#"
-									class="categories-section__list-item__link white-arrow-btn"></a>
+									class="categories-section__list-item__link white-arrow-btn">
+									<svg class="arrow-link__icon">
+										<use xlink:href="sprite.svg#standart-arrow-right" />
+									</svg>
+								</a>
 							</div>
 							<div class="categories-section__list-item__img desktop">
 								<img
@@ -477,7 +557,11 @@
 								</p>
 								<a
 									href="#"
-									class="categories-section__list-item__link white-arrow-btn"></a>
+									class="categories-section__list-item__link white-arrow-btn">
+									<svg class="arrow-link__icon">
+										<use xlink:href="sprite.svg#standart-arrow-right" />
+									</svg>
+								</a>
 							</div>
 						</div>
 
@@ -493,7 +577,11 @@
 								</p>
 								<a
 									href="#"
-									class="categories-section__list-item__link white-arrow-btn"></a>
+									class="categories-section__list-item__link white-arrow-btn">
+									<svg class="arrow-link__icon">
+										<use xlink:href="sprite.svg#standart-arrow-right" />
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -599,9 +687,17 @@
 							</div>
 						</div>
 						<div class="swiper-controllers">
-							<div class="swiper-prev services__swiper-prev desktop"></div>
+							<div class="swiper-prev services__swiper-prev desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
 
-							<div class="swiper-next services__swiper-next desktop"></div>
+							<div class="swiper-next services__swiper-next desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
 							<div class="swiper-pagination services__swiper-pagination"></div>
 						</div>
 					</div>
@@ -794,8 +890,16 @@
 						</div>
 
 						<div class="swiper-controllers news__swiper-controllers">
-							<div class="swiper-prev desktop"></div>
-							<div class="swiper-next desktop"></div>
+							<div class="swiper-prev desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
+							<div class="swiper-next desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
 							<div class="swiper-pagination services__swiper-pagination"></div>
 						</div>
 						<a
@@ -803,8 +907,7 @@
 							class="arrow-link news__link">
 							<span>Смотреть все</span>
 							<svg class="arrow-link__icon">
-								<use
-									xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+								<use xlink:href="sprite.svg#standart-arrow-right" />
 							</svg>
 						</a>
 					</div>
@@ -839,8 +942,7 @@
 											class="arrow-link events__swiper-slide__link">
 											<span>Подробнее</span>
 											<svg class="arrow-link__icon">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+												<use xlink:href="sprite.svg#standart-arrow-right" />
 											</svg>
 										</a>
 									</div>
@@ -873,8 +975,7 @@
 											class="arrow-link events__swiper-slide__link">
 											<span>Подробнее</span>
 											<svg class="arrow-link__icon">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+												<use xlink:href="sprite.svg#standart-arrow-right" />
 											</svg>
 										</a>
 									</div>
@@ -907,8 +1008,7 @@
 											class="arrow-link events__swiper-slide__link">
 											<span>Подробнее</span>
 											<svg class="arrow-link__icon">
-												<use
-													xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+												<use xlink:href="sprite.svg#standart-arrow-right" />
 											</svg>
 										</a>
 									</div>
@@ -921,8 +1021,17 @@
 						</div>
 
 						<div class="swiper-controllers events__swiper-controllers">
-							<div class="swiper-prev desktop"></div>
-							<div class="swiper-next desktop"></div>
+							<div class="swiper-prev desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
+
+							<div class="swiper-next desktop">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
 							<div class="swiper-pagination services__swiper-pagination"></div>
 						</div>
 					</div>
@@ -962,8 +1071,7 @@
 								class="section-banner__left-link arrow-link">
 								<span>Подробнее</span>
 								<svg class="arrow-link__icon">
-									<use
-										xlink:href="./src/images/symbol/stack/sprite.svg#bg--standart-arrow-right" />
+									<use xlink:href="sprite.svg#standart-arrow-right" />
 								</svg>
 							</a>
 						</div>
@@ -975,7 +1083,13 @@
 									alt="" />
 							</div>
 
-							<div class="section-banner__right-video">
+							<div class="section-banner__right-img">
+								<img
+									src="./src/images/carrer-img1.png"
+									alt="" />
+							</div>
+
+							<!-- <div class="section-banner__right-video">
 								<video
 									id="my-video"
 									class="video-js video-js--small"
@@ -987,7 +1101,7 @@
 										src="./src/images/sample/sample.mp4"
 										type="video/mp4" />
 								</video>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -1032,7 +1146,7 @@
 				href="#"
 				class="footer__top-logo">
 				<svg>
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--logo" />
+					<use xlink:href="./sprite.svg#logo" />
 				</svg>
 			</a>
 			<div class="footer__top-block block1">
@@ -1269,7 +1383,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg>
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--vk" />
+							<use xlink:href="./sprite.svg#vk" />
 						</svg>
 					</a>
 				</li>
@@ -1278,7 +1392,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link telegram">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--telegram" />
+							<use xlink:href="./sprite.svg#telegram" />
 						</svg>
 					</a>
 				</li>
@@ -1287,7 +1401,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--youtube" />
+							<use xlink:href="./sprite.svg#youtube" />
 						</svg>
 					</a>
 				</li>
@@ -1296,7 +1410,7 @@
 						href="#"
 						class="footer__top-social__item-link">
 						<svg class="icon-link">
-							<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--dzen" />
+							<use xlink:href="./sprite.svg#dzen" />
 						</svg>
 					</a>
 				</li>
@@ -1318,7 +1432,7 @@
 					</p>
 				</div>
 				<svg class="request-logo">
-					<use xlink:href="./src/images/symbol/stack/sprite.svg#bg--request-logo" />
+					<use xlink:href="./sprite.svg#request" />
 				</svg>
 				<a
 					href="#"
@@ -1430,6 +1544,45 @@
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
 		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal promotion-modal">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal add-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal edit-adress">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root"></div>
+	</div>
+</div>
+
+<div class="modal partnership">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
+	</div>
+</div>
+
+<div class="modal partnership-sended">
+	<div class="modal__container">
+		<button class="modal__close-btn"></button>
+		<div class="modal__root">
+			
+		</div>
 	</div>
 </div>
 
