@@ -383,9 +383,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	const categoryBlockSwiper = new Swiper('.category-block__swiper', {
 		slidesPerView: 'auto',
 		spaceBetween: rem(2.4),
-		updateOnWindowResize: true,
-		rebuildOnUpdate: true,
-		observer: true,
+		// updateOnWindowResize: true,
+		// rebuildOnUpdate: true,
+		// observer: true,
 		navigation: {
 			nextEl: '.category-block__btn-right',
 			prevEl: '.category-block__btn-left',
@@ -396,5 +396,23 @@ document.addEventListener('DOMContentLoaded', function () {
 				slidesPerView: 'auto',
 			},
 		},
+
+		on: {
+			click: function (swiper, event) {
+				if (event.target.classList.contains('category-block__value-show')) {
+					let slide = event.target.closest('.category-block__item');
+
+					swiper.$el[0].querySelectorAll('.category-block__item').forEach(item => {
+						item.classList.remove('active');
+					})
+
+					slide.classList.add('active');
+
+					swiper.update();
+					swiper.updateSize();
+					swiper.updateSlides();
+				}
+			}
+		}
 	});
 });
