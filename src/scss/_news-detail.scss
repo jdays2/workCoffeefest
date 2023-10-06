@@ -155,6 +155,16 @@
 
 		&__center {
 			order: 1;
+
+			&-block {
+				margin-bottom: 8rem;
+
+				&__description {
+					&:not(:last-child) {
+						margin-bottom: 8rem;
+					}
+				}
+			}
 		}
 
 		&__right {

@@ -158,7 +158,7 @@
 
 			&-img {
 				margin-right: 0;
-				width: 32.6rem;
+				width: 32.4rem;
 				height: 42rem;
 				border-radius: 0 0 5.2rem 5.2rem;
 			}
@@ -178,6 +178,15 @@
 				width: 32.6rem;
 				height: 42rem;
 			}
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.about-info__card.section-info__card {
+		.section-banner__right-img {
+			width: 28.4rem;
+    		height: 37rem;
 		}
 	}
 }

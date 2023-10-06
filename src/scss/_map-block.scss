@@ -254,6 +254,10 @@
 				height: auto;
 				max-height: none;
 
+				label {
+					background-position: 2.5rem 3.4rem;
+				}
+
 				&__input {
 					padding: 3rem 7.2rem;
 					font-size: 2.8rem;

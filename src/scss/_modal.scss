@@ -784,6 +784,11 @@
 				}
 			}
 		}
+
+		&__message {
+			font-size: 2.8rem;
+			line-height: 140%; /* 3.92rem */
+		}
 	}
 
 	&.map-modal {
@@ -933,6 +938,22 @@
 	.filter-modal {
 		.modal__btns {
 			align-items: center;
+		}
+	}
+
+	.text-us.modal {
+		.modal__btns {
+			flex-direction: column-reverse;
+
+			.account-main__left-policy.menu {
+				text-align: center;
+				color: $darkBlue;
+				width: 100%;
+
+				p {
+					margin: 0 auto;
+				}
+			}
 		}
 	}
 }

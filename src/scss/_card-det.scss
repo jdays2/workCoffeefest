@@ -506,6 +506,7 @@
 			width: 67rem;
 			height: 72.4rem;
 			margin: 0 0 4rem 0;
+			min-width: 0rem;
 		}
 
 		&__content-box {
@@ -578,11 +579,12 @@
 		}
 
 		&__more {
-			margin: 0 0 5rem 0;
+			margin: 0 0 5rem;
 
 			svg {
-				width: 5rem;
-				height: 5rem;
+				width: 4rem;
+				height: 4rem;
+				margin: 0 0 0 2rem;
 			}
 		}
 
@@ -702,6 +704,11 @@
 				&__count-btn {
 					width: 2.4rem;
 					height: 2.4rem;
+
+					svg {
+						width: 2.4rem;
+						height: 2.4rem;
+					}
 				}
 			}
 

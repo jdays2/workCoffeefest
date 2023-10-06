@@ -275,3 +275,12 @@
 		}
 	}
 }
+
+
+@media (max-width: 48em) {
+	.order-popup {
+		.popup__body {
+			border-radius: 0 0 5rem 5rem;
+		}
+	}
+}
