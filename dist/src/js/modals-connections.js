@@ -869,11 +869,11 @@ const personalInfoContent = `<p class="heading2">Персональная инф
 	<div class="input-container modal__input-medium">
 		<input
 			type="number"
-			id="email"
+			id="tel"
 			class="input input-tel"
 			placeholder="Телефон" />
 		<label
-			for="email"
+			for="tel"
 			class="input-label">
 			Телефон
 		</label>
@@ -1281,11 +1281,11 @@ const textUsContent = `
 	<div class="input-container modal__input-large">
 		<input
 			type="text"
-			id="email6"
+			id="email"
 			class="input input-email"
 			placeholder="Email" />
 		<label
-			for="email6"
+			for="email"
 			class="input-label">
 			Email
 		</label>
@@ -1361,11 +1361,11 @@ const vacancyContent = `<button class="modal__close-btn"></button>
 	<div class="input-container modal__input-medium">
 		<input
 			type="text"
-			id="name5"
+			id="name"
 			class="input input-name"
 			placeholder="Имя" />
 		<label
-			for="name5"
+			for="name"
 			class="input-label">
 			Имя
 		</label>
@@ -2154,6 +2154,95 @@ if (editAdressBtn) {
 			tagButtons.forEach((btn) => {
 				btn.addEventListener('click', () => tabsHandler(btn));
 			});
+		}),
+	);
+}
+
+const partnershipContent = `<p class="heading2">Добавить адрес</p>
+
+<form class="modal__form">
+	<div class="input-container modal__input-medium">
+		<input
+			type="text"
+			id="name"
+			class="input input-name"
+			placeholder="Имя" />
+		<label
+			for="name"
+			class="input-label">
+			Имя
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-medium">
+		<input
+			type="tel"
+			id="tel"
+			class="input input-tel"
+			placeholder="Телефон" />
+		<label
+			for="tel"
+			class="input-label">
+			Телефон
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+
+	<div class="input-container modal__input-large">
+		<input
+			type="email"
+			id="email"
+			class="input input-email"
+			placeholder="Дом" />
+		<label
+			for="email"
+			class="input-label">
+			Email
+		</label>
+		<div class="icon success"></div>
+		<div class="icon invalid"></div>
+		<div class="input-status">Неверный формат</div>
+	</div>
+</form>
+
+<div class="modal__btns modal__btns--center">
+	<button class="square-btn blue-square-btn" id="partnership-confirmation-btn">
+		<span>Зарегистрироваться</span>
+	</button>
+</div>`;
+
+const partnershipConfirmationContent = `
+		<p class="heading2">Регистрация прошла успешно</p>
+
+		<p class="modal__message">контент</p>
+
+		<div class="modal__btns modal__btns--center">
+			<button class="square-btn blue-square-btn">
+				<span>закрыть</span>
+			</button>
+</div>`;
+
+const partnershipBtn = document.querySelectorAll('#partnership-btn');
+
+if (partnershipBtn) {
+	const modalClass = 'partnership';
+	const confirmationClass = 'partnership-sended';
+	const secondBtn = '#partnership-confirmation-btn';
+
+	partnershipBtn.forEach((btn) =>
+		btn.addEventListener('click', () => {
+			addModal(
+				modalClass,
+				partnershipContent,
+				confirmationClass,
+				partnershipConfirmationContent,
+				secondBtn,
+			);
 		}),
 	);
 }
