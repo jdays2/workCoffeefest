@@ -32,6 +32,7 @@
 	.services {
 		&__list-item {
 			width: 100%;
+			height: 100%;
 		}
 
 		&__list-item__text-description {
@@ -78,7 +79,6 @@
 	.formats__swiper {
 		.proposal-card {
 			&__descr {
-				min-height: 85.6rem;
 				padding: 8rem 4rem 8rem 4rem;
 				background-size: 67rem 86.6rem ;
 			}
