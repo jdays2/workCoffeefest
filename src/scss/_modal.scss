@@ -956,6 +956,45 @@
 			}
 		}
 	}
+
+	.add-adress {
+		.modal__form {
+			flex-direction: row;
+
+			.input-container {
+				flex: 0 1 100%;
+
+				&:nth-child(4),
+				&:nth-child(5) {
+					flex: 0 1 27rem;
+				}
+			}
+		}
+	}
+
+	.edit-adress {
+		.section-tags__container {
+			margin-bottom: 7.2rem;
+			margin-top: 0;
+		}
+
+		.modal__form {
+			flex-direction: row;
+
+			.input-container {
+				flex: 0 1 100%;
+
+				&:nth-child(4),
+				&:nth-child(5) {
+					flex: 0 1 27rem;
+				}
+			}
+		}
+
+		.modal__btns {
+			align-items: center;
+		}
+	}
 }
 
 .modal-map {
