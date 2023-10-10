@@ -20,7 +20,7 @@
 		opacity: 0;
 		pointer-events: none;
 
-		label {
+		div {
 			position: relative;
 			display: block;
 			width: -webkit-fit-content;
@@ -42,7 +42,7 @@
 		&.active {
 			opacity: 1;
 			pointer-events: all;
-			label {
+			div {
 				max-width: 100%;
 			}
 		}
@@ -432,8 +432,14 @@
 				font-size: 2.8rem;
 				margin: 0 0 5rem 0;
 
-				label {
+				div {
 					height: 100%;
+					background-size: 2.4rem 2.4rem;
+					background-position: 2rem 3.1rem;
+					
+					input {
+						font-size: 2.8rem;
+					}
 				}
 
 				&__main-icon {

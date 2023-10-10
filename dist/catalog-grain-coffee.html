@@ -113,25 +113,24 @@
 			</ul>
 
 			<div class="header__search-block">
-				<label>
+				<div>
 					<input
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					
 
 					<button class="header__search-enter-icon">
-						<svg  class="search-arrow">
+						<svg class="search-arrow">
 							<use xlink:href="./sprite.svg#slim-arrow" />
 						</svg>
 					</button>
-					
+
 					<button class="header__search-close-icon">
 						<svg class="crest">
 							<use xlink:href="./sprite.svg#crest" />
 						</svg>
 					</button>
-				</label>
+				</div>
 			</div>
 
 			<ul class="header__bottom-list">
@@ -201,13 +200,12 @@
 		</div>
 		<div class="header__burger-menu mobile">
 			<div class="search-block search-block--long">
-				<label>
+				<div>
 					<input
 						class="search-block__input"
 						type="text"
-						placeholder="Поиск" 
-					/>
-				</label>
+						placeholder="Поиск" />
+				</div>
 			</div>
 			<div class="burger-menu__accordion accordion">
 				<div class="acc-item">
@@ -219,13 +217,41 @@
 					</div>
 					<div class="acc-content menu">
 						<div class="content">
-							<a href="#" class="burger-menu__link">Услуги</a>
-							<a href="#" class="burger-menu__link">О нас</a>
-							<a href="#" class="burger-menu__link">О кофе</a>
-							<a href="#" class="burger-menu__link">Для бизнеса</a>
-							<a href="#" class="burger-menu__link">Доставка и оплата</a>
-							<a href="#" class="burger-menu__link">Вакансии</a>
-							<a href="#" class="burger-menu__link">Контакты</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Услуги
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								О нас
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								О кофе
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Для бизнеса
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Доставка и оплата
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Вакансии
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Контакты
+							</a>
 						</div>
 					</div>
 				</div>
@@ -238,10 +264,26 @@
 					</div>
 					<div class="acc-content menu">
 						<div class="content">
-							<a href="#" class="burger-menu__link">Зерновой кофе</a>
-							<a href="#" class="burger-menu__link">Меню кофеен</a>
-							<a href="#" class="burger-menu__link">Меню кулинарии</a>
-							<a href="#" class="burger-menu__link">Торты на заказ</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Зерновой кофе
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Меню кофеен
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Меню кулинарии
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Торты на заказ
+							</a>
 						</div>
 					</div>
 				</div>
@@ -376,12 +418,14 @@
 						</div>
 
 						<div class="section-info__card-right">
-							<img src="./src/images/sample-for-large-player.png" alt="">
+							<img
+								src="./src/images/sample-for-large-player.png"
+								alt="" />
 							<!-- <video
 								id="my-video"
 								class="video-js video-js--medium"
 								controls
-								preload="true"
+								preload
 								poster="./src/images/player-sample.png"
 								data-setup="{}">
 								<source
@@ -394,7 +438,7 @@
 			</section>
 
 			<section class="catalog-main-block grain-coffee section">
-				<div class="settings-bar container">
+				<div class="container"><div class="settings-bar container settings-bar__mobile-big">
 	<div class="settings-bar__row">
 		<div class="settings-bar__box">
 			<button
@@ -404,7 +448,7 @@
 			</button>
 
 			<div class="search-block">
-				<label>
+				<div>
 					<input
 						class="search-block__input"
 						type="text"
@@ -415,7 +459,7 @@
 							<use xlink:href="sprite.svg#arrow-right" />
 						</svg>
 					</button>
-				</label>
+				</div>
 			</div>
 		</div>
 
@@ -429,45 +473,37 @@
 				</svg>
 			</button>
 
-			<button class="popup-block__wrapper">
-				<label class="popup-block">
+			<div class="popup-block__wrapper">
+				<div class="popup-block popup-btn">
 					<span class="popup-block__arrows-icon"></span>
-					<input type="checkbox" />
-					<div class="popup-block__popup popup-block__popup--select">
-						<div class="popup-block__list">
-							<label class="popup-block__item">
-								<input
-									type="radio"
-									name="popup-block__item" />
-								<span class="popup-block__item-title text2">Сначала новые</span>
-							</label>
 
-							<label class="popup-block__item">
-								<input
-									type="radio"
-									name="popup-block__item" />
+					<div class="popup-block__popup popup-block__popup--select popup-list">
+						<ul class="popup-block__list popup-select-list">
+							<li class="popup-block__item popup-select-item">
+								<span class="popup-block__item-title text2">Сначала новые</span>
+							</li>
+
+							<li class="popup-block__item popup-select-item">
 								<span class="popup-block__item-title text2">
 									Сначала недорогие
 								</span>
-							</label>
+							</li>
 
-							<label class="popup-block__item">
-								<input
-									type="radio"
-									name="popup-block__item" />
+							<li class="popup-block__item popup-select-item">
 								<span class="popup-block__item-title text2">
 									Сначала дорогие
 								</span>
-							</label>
-						</div>
+							</li>
+						</ul>
 					</div>
+
 					<span class="text2 popup-block__select-value">Сортировать</span>
 
 					<svg class="popup-block__more-icon">
 						<use xlink:href="sprite.svg#popup" />
 					</svg>
-				</label>
-			</button>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -504,148 +540,106 @@
 				</svg>
 			</button>
 			<div class="category-block category-block__swiper swiper">
-				<div class="swiper-wrapper">
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+				<div class="swiper-wrapper popup-select-list">
+					<div class="category-block__item swiper-slide popup-select-item active">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Все</span>
 							<span class="category-block__value-show">Все</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Завтраки</span>
 							<span class="category-block__value-show">Завтраки</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Салаты</span>
 							<span class="category-block__value-show">Салаты</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Супы и блюда</span>
 							<span class="category-block__value-show">Супы и блюда</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">
 								Сендвичи и бургеры
 							</span>
 							<span class="category-block__value-show">Сендвичи и бургеры</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Зерновой кофе</span>
 							<span class="category-block__value-show">Зерновой кофе</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Горячие напитки</span>
 							<span class="category-block__value-show">Горячие напитки</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Выпечка</span>
 							<span class="category-block__value-show">Выпечка</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Десерты</span>
 							<span class="category-block__value-show">Десерты</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Кофе и чай</span>
 							<span class="category-block__value-show">Кофе и чай</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Завтраки</span>
 							<span class="category-block__value-show">Завтракий</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Зерновой кофе</span>
 							<span class="category-block__value-show">Зерновой кофе</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Горячие напитки</span>
 							<span class="category-block__value-show">Горячие напитки</span>
 						</div>
-					</label>
+					</div>
 
-					<label class="category-block__item swiper-slide">
-						<input
-							name="categories-item"
-							type="radio" />
+					<div class="category-block__item swiper-slide popup-select-item">
 						<div class="category-block__value-wrapper">
 							<span class="category-block__value-hidden">Кулич</span>
 							<span class="category-block__value-show">Кулич</span>
 						</div>
-					</label>
+					</div>
 				</div>
 			</div>
 
@@ -657,7 +651,7 @@
 		</div>
 	</div>
 </div>
-
+</div>
 				<div class="catalog-main-block__container container">
 					<div class="catalog__content-box">
 						<div class="catalog-card-2">
@@ -708,7 +702,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -718,7 +712,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -740,41 +734,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-5" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-5"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-5" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -794,9 +774,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -849,7 +829,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -859,7 +839,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -881,41 +861,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-6" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-6"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-6" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -935,9 +901,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -990,7 +956,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -1000,7 +966,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1022,41 +988,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-7" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-7"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-7" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -1076,9 +1028,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -1131,7 +1083,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -1141,7 +1093,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1163,41 +1115,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-8" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-8"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-8" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -1217,9 +1155,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -1272,7 +1210,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -1282,7 +1220,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1304,41 +1242,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-1" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-1"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-1" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -1358,9 +1282,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -1414,7 +1338,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -1424,7 +1348,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1446,41 +1370,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-2" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-2"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-2" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -1500,9 +1410,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -1555,7 +1465,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -1565,7 +1475,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1587,41 +1497,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-3" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-3"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-3" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -1641,9 +1537,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -1696,7 +1592,7 @@
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
 											<span class="active"></span>
-											
+
 											<span></span>
 										</div>
 									</div>
@@ -1706,7 +1602,7 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
@@ -1728,41 +1624,27 @@
 										</div>
 										<div class="catalog-card-2__characteristic-lines">
 											<span class="active"></span>
-										
+
 											<span class=""></span>
 											<span class=""></span>
 										</div>
 									</div>
 								</div>
-								<div class="catalog-card-2__weights">
-									<label>
-										<input
-											type="radio"
-											name="weight-4" />
-										<div class="catalog-card-2__weight">
-											250
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-4"
-											checked />
-										<div class="catalog-card-2__weight">
-											500
-											<span>г</span>
-										</div>
-									</label>
-									<label>
-										<input
-											type="radio"
-											name="weight-4" />
-										<div class="catalog-card-2__weight">
-											1
-											<span>кг</span>
-										</div>
-									</label>
+								<div class="catalog-card-2__weights popup-select-list">
+									<div class="catalog-card-2__weight popup-select-item">
+										250
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item active">
+										500
+										<span>г</span>
+									</div>
+
+									<div class="catalog-card-2__weight popup-select-item">
+										1
+										<span>кг</span>
+									</div>
 								</div>
 								<div class="catalog-card__price">
 									<div class="catalog-card__main-price">
@@ -1782,9 +1664,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -1794,8 +1676,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="sprite.svg#standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -2255,7 +2136,6 @@
 <script src="./src/js/swiper-bundle.min.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/main.js"></script>
-<script src="./src/js/card-det.js"></script>
 <script src="./src/js/modal.js"></script>
 <script src="./src/js/chronology.js"></script>
 <script src="./src/js/map.js"></script>

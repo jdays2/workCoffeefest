@@ -58,7 +58,7 @@
 			border: 0.4rem solid #35415c;
 			height: 9.6rem;
 
-			label {
+			div {
 				height: 100%;
 				font-size: 2.8rem;
 				background-size: 3.2rem 3.2rem;
@@ -116,6 +116,71 @@
 					&__item {
 						span {
 							font-size: 2.8rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.settings-bar__mobile-medium {
+		-moz-column-gap: 0.8rem;
+		     column-gap: 0.8rem;
+
+		#filter {
+			padding: 0;
+			flex: 0 0 35.6rem;
+			padding: 5rem 9.4rem;
+
+			span {
+				padding-left: 5.2rem;
+				font-size: 2.8rem;
+				line-height: 140%; /* 3.92rem */
+			}
+		}
+
+		.filter__tag-list {
+			flex: 0 0 32.8rem;
+
+			button {
+				span {
+					font-size: 2.8rem;
+					line-height: 140%; /* 3.92rem */
+				}
+			}
+		}
+	}
+
+	.settings-bar__mobile-big {
+		.settings-bar__row {
+			&:first-child {
+				.settings-bar__box {
+					&:first-child {
+						.tag-btn.filter-btn {
+							border: 0.4rem solid $darkBlue;
+							padding-top: 4.45rem;
+							padding-bottom: 4.45rem;
+
+							span {
+								display: block;
+								background-size: 3.6rem 3.6rem;
+								width: 3.6rem;
+								height: 3.6rem;
+								background-position: center 0.5rem;
+							}
+						}
+					}
+
+					&:last-child {
+						.tag-btn.geo-btn {
+							display: none;
+						} 
+
+						.popup-block {
+							padding-top: 4.45rem;
+							padding-bottom: 4.45rem;
 						}
 					}
 				}

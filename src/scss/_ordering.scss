@@ -1,6 +1,6 @@
 .ordering {
 	&__subtitle {
-		color: #35415C;
+		color: #35415c;
 		font-size: 2rem;
 		font-style: normal;
 		font-weight: 700;
@@ -17,8 +17,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/background-head.webp) top left/cover
-					no-repeat,
+			background: url(../images/background-head.webp) top left/cover no-repeat,
 				#f1ded0;
 			cursor: pointer;
 		}
@@ -174,7 +173,7 @@
 					transform: translate(-50%, -50%);
 					position: absolute;
 					content: '';
-					border: 0.2rem solid #35415C;
+					border: 0.2rem solid #35415c;
 					width: 2rem;
 					height: 2rem;
 					border-radius: 50%;
@@ -196,7 +195,7 @@
 		gap: 6rem;
 
 		strong {
-			color: #35415C;
+			color: #35415c;
 			font-size: 2rem;
 			font-style: normal;
 			font-weight: 700;
@@ -259,7 +258,23 @@
 			justify-content: flex-start;
 			cursor: pointer;
 
-			input {
+			&.active {
+				div {
+					&::after {
+						border-width: 0.6rem;
+					}
+				}
+
+				span {
+					font-weight: 700;
+				}
+
+				strong {
+					font-weight: 700;
+				}
+			}
+
+			div {
 				position: absolute;
 				top: 50%;
 				transform: translateY(-50%);
@@ -275,26 +290,12 @@
 					transform: translate(-50%, -50%);
 					position: absolute;
 					content: '';
-					border: 0.2rem solid #35415C;
+					border: 0.2rem solid #35415c;
 					width: 2rem;
 					height: 2rem;
 					border-radius: 50%;
 					margin-left: 1rem;
 				}
-			}
-
-			input:checked {
-				&::after {
-					border-width: 0.6rem;
-				}
-			}
-
-			input:checked ~ span {
-				font-weight: 700;
-			}
-
-			input:checked + strong {
-				font-weight: 700;
 			}
 
 			strong,
@@ -307,7 +308,7 @@
 			}
 
 			strong {
-				color: #35415C;
+				color: #35415c;
 				margin-left: 3.5rem;
 				margin-right: 1.5rem;
 			}
@@ -352,7 +353,7 @@
 		margin-top: 3.2rem;
 
 		strong {
-			color: #35415C;
+			color: #35415c;
 			font-family: Circe;
 			font-size: 2rem;
 			font-style: normal;
@@ -362,7 +363,7 @@
 		}
 
 		p {
-			color: #35415C;
+			color: #35415c;
 			font-family: Circe;
 			font-size: 1.8rem;
 			font-style: normal;
@@ -399,7 +400,16 @@
 			width: 100%;
 			height: 7.6rem;
 			padding: 2.4rem 3.5rem;
+			transition: 0.5s margin;
 			border-color: #f1ded0;
+
+			&.time.active {
+				margin-bottom: 26rem;
+			}
+
+			&.calend.active {
+				margin-bottom: 44rem;
+			}
 			&__wrapper {
 				width: 100%;
 				transition: 0.3s ease-in-out;
@@ -419,6 +429,15 @@
 				width: 100%;
 				border: none;
 				background-color: rgba(241, 222, 208, 0);
+			}
+		}
+
+		.popup-block__list--blue {
+			.popup-block__item {
+				color: #fff9ee;
+				display: flex;
+				justify-content: flex-start;
+				cursor: pointer;
 			}
 		}
 	}
@@ -496,7 +515,7 @@
 				input {
 					top: 5.2rem;
 					right: 5.2rem;
-					
+
 					&::after {
 						width: 4rem;
 						height: 4rem;
@@ -507,6 +526,7 @@
 			&-card-left {
 				.cards-list__item-number {
 					margin: 0 0 7rem 0;
+					-moz-column-gap: 1rem;
 					column-gap: 1rem;
 
 					p {
@@ -559,6 +579,22 @@
 						right: 4rem;
 						top: 8rem;
 					}
+
+					.cart-icon {
+						width: 4rem;
+						height: 4rem;
+
+						.bag {
+							width: 4rem;
+							height: 4rem;
+						}
+
+						.cart-icon__value {
+							width: 3rem;
+							height: 3rem;
+							top: -0.7rem;
+						}
+					}
 				}
 			}
 
@@ -609,7 +645,8 @@
 					height: 4rem;
 				}
 
-				strong, span {
+				strong,
+				span {
 					font-size: 2.8rem;
 					color: $darkBlue;
 					line-height: normal;
@@ -632,6 +669,7 @@
 
 		&__adress-form {
 			row-gap: 5rem;
+			-moz-column-gap: 4rem;
 			column-gap: 4rem;
 
 			.ordering__row:first-child {
@@ -644,7 +682,7 @@
 
 			.ordering__row:last-child {
 				flex-direction: column;
-				
+
 				.popup-block__wrapper {
 					height: 10rem;
 				}
@@ -716,6 +754,7 @@
 								}
 
 								&__board-list {
+									-moz-column-gap: 1.1rem;
 									column-gap: 1.1rem;
 									row-gap: 3.2rem;
 								}
@@ -745,11 +784,6 @@
 										width: 4rem;
 										height: 4rem;
 									}
-
-									& > span {
-										font-size: 2.8rem;
-										margin-left: 4rem;
-									}
 								}
 							}
 						}
@@ -777,7 +811,7 @@
 
 				.map-block__search-item-time {
 					background-size: 4rem 4rem;
-					background-position: 0rem -0.3rem;
+					background-position: 0rem 0rem;
 					padding-left: 5.2rem;
 
 					span {

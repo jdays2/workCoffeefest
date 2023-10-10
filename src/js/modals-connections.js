@@ -380,7 +380,7 @@ const mapContent = `<div class="map-block">
 <div class="map-block__search-box">
 	<p class="heading4 map-block__search-title">Адреса ресторанов</p>
 	<div class="search-block search-block--long">
-		<label>
+		<div>
 			<input
 				class="search-block__input"
 				type="text"
@@ -390,7 +390,7 @@ const mapContent = `<div class="map-block">
 							<use xlink:href="sprite.svg#arrow-right" />
 						</svg>
 					</button>
-		</label>
+		</div>
 	</div>
 
 	<ul class="map-block__search-list">
@@ -1026,7 +1026,7 @@ const initFeedbackHandler = () => {
 			<div
 				class="input-container modal__textarea-medium input-textarea-wrapper">
 				<textarea
-					type="text"
+				
 					id="textarea3"
 					class="input input-textarea"
 					placeholder="Расскажите о продукте"
@@ -1297,7 +1297,7 @@ const textUsContent = `
 	<div
 		class="input-container modal__textarea-medium input-textarea-wrapper">
 		<textarea
-			type="text"
+			
 			id="textarea2"
 			class="input input-textarea"
 			placeholder="Комментарий"
@@ -1452,7 +1452,7 @@ const requestContent = `<p class="heading2">Заявка отправлена!</
 	</button>
 </div>`;
 
-const requestBtn = document.querySelectorAll('#request-btn');
+const requestBtn = document.querySelectorAll('.request-btn');
 
 if (requestBtn) {
 	const modalClass = 'request-sended-modal';

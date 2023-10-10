@@ -110,25 +110,24 @@
 			</ul>
 
 			<div class="header__search-block">
-				<label>
+				<div>
 					<input
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					
 
 					<button class="header__search-enter-icon">
-						<svg  class="search-arrow">
+						<svg class="search-arrow">
 							<use xlink:href="./sprite.svg#slim-arrow" />
 						</svg>
 					</button>
-					
+
 					<button class="header__search-close-icon">
 						<svg class="crest">
 							<use xlink:href="./sprite.svg#crest" />
 						</svg>
 					</button>
-				</label>
+				</div>
 			</div>
 
 			<ul class="header__bottom-list">
@@ -198,13 +197,12 @@
 		</div>
 		<div class="header__burger-menu mobile">
 			<div class="search-block search-block--long">
-				<label>
+				<div>
 					<input
 						class="search-block__input"
 						type="text"
-						placeholder="Поиск" 
-					/>
-				</label>
+						placeholder="Поиск" />
+				</div>
 			</div>
 			<div class="burger-menu__accordion accordion">
 				<div class="acc-item">
@@ -216,13 +214,41 @@
 					</div>
 					<div class="acc-content menu">
 						<div class="content">
-							<a href="#" class="burger-menu__link">Услуги</a>
-							<a href="#" class="burger-menu__link">О нас</a>
-							<a href="#" class="burger-menu__link">О кофе</a>
-							<a href="#" class="burger-menu__link">Для бизнеса</a>
-							<a href="#" class="burger-menu__link">Доставка и оплата</a>
-							<a href="#" class="burger-menu__link">Вакансии</a>
-							<a href="#" class="burger-menu__link">Контакты</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Услуги
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								О нас
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								О кофе
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Для бизнеса
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Доставка и оплата
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Вакансии
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Контакты
+							</a>
 						</div>
 					</div>
 				</div>
@@ -235,10 +261,26 @@
 					</div>
 					<div class="acc-content menu">
 						<div class="content">
-							<a href="#" class="burger-menu__link">Зерновой кофе</a>
-							<a href="#" class="burger-menu__link">Меню кофеен</a>
-							<a href="#" class="burger-menu__link">Меню кулинарии</a>
-							<a href="#" class="burger-menu__link">Торты на заказ</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Зерновой кофе
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Меню кофеен
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Меню кулинарии
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Торты на заказ
+							</a>
 						</div>
 					</div>
 				</div>
@@ -323,7 +365,7 @@
 								<p class="ordering__subtitle">
 									Выберите способ доставки в каждом заказе.
 								</p>
-								<div class="ordering__orders-item acc-item">
+								<!-- <div class="ordering__orders-item acc-item">
 									<div class="acc-head">
 										<p class="heading4">Курьерская доставка</p>
 
@@ -331,14 +373,14 @@
 											<span class="acc-head__box-text text1">
 												Меню кулинарии
 											</span>
-											<span class="cart-icon">
+											<div class="cart-icon">
 												<svg class="bag bag--dark">
 													<use xlink:href="./sprite.svg#bag" />
 												</svg>
 												<div class="cart-icon__value">
 													<span>10</span>
 												</div>
-											</span>
+											</div>
 											<svg class="arrow">
 												<use xlink:href="./sprite.svg#arrow" />
 											</svg>
@@ -566,11 +608,11 @@
 														<div class="input-container modal__input-medium">
 															<input
 																type="text"
-																id="city4"
+																id="city"
 																class="input"
 																placeholder="Город" />
 															<label
-																for="city4"
+																for="city"
 																class="input-label">
 																Город
 															</label>
@@ -929,7 +971,7 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 
 								<div class="ordering__orders-item acc-item">
 									<div class="acc-head">
@@ -939,14 +981,14 @@
 											<span class="acc-head__box-text text1">
 												Меню кулинарии
 											</span>
-											<span class="cart-icon">
+											<div class="cart-icon">
 												<svg class="bag bag--dark">
 													<use xlink:href="./sprite.svg#bag" />
 												</svg>
 												<div class="cart-icon__value">
 													<span>10</span>
 												</div>
-											</span>
+											</div>
 
 											<svg class="arrow">
 												<use xlink:href="./sprite.svg#arrow" />
@@ -1078,32 +1120,22 @@
 
 											<div class="ordering__method-wrapper">
 												<p class="heading4">Выберите вариант доставки</p>
-												<div class="ordering__method">
-													<label class="ordering__method-item">
-														<input
-															id="curier-delivery"
-															checked
-															type="radio"
-															name="delivery-method2" />
+												<div class="ordering__method popup-select-list">
+													<div class="ordering__method-item popup-select-item active">
+														<div></div>
 														<strong>Курьер</strong>
 														<span>от 200₽</span>
-													</label>
-													<label class="ordering__method-item">
-														<input
-															id="self-delivery-sdek"
-															type="radio"
-															name="delivery-method2" />
+													</div>
+													<div class="ordering__method-item popup-select-item">
+														<div></div>
 														<strong>Самовывоз из ПВЗ (СДЭК)</strong>
 														<span>от 100₽</span>
-													</label>
-													<label class="ordering__method-item">
-														<input
-															id="self-delivery"
-															type="radio"
-															name="delivery-method2" />
+													</div>
+													<div class="ordering__method-item popup-select-item">
+														<div></div>
 														<strong>Самовывоз</strong>
 														<span>Бесплатно</span>
-													</label>
+													</div>
 												</div>
 											</div>
 
@@ -1126,40 +1158,31 @@
 												<form class="ordering__adress-form">
 													<div class="ordering__row">
 														<div class="popup-block__wrapper">
-															<label class="popup-block">
-																<input type="checkbox" />
+															<div class="popup-block popup-btn">
 																<div
-																	class="popup-block__popup popup-block__popup--select">
-																	<div class="popup-block__list">
-																		<label class="popup-block__item">
-																			<input
-																				type="radio"
-																				name="popup-block__item" />
+																	class="popup-block__popup popup-block__popup--select popup-list">
+																	<div
+																		class="popup-block__list popup-select-list">
+																		<div class="popup-block__item popup-select-item">
 																			<span
 																				class="popup-block__item-title text2">
 																				1 адрес
 																			</span>
-																		</label>
+																		</div>
 
-																		<label class="popup-block__item">
-																			<input
-																				type="radio"
-																				name="popup-block__item" />
+																		<div class="popup-block__item popup-select-item">
 																			<span
 																				class="popup-block__item-title text2">
 																				2 адрес
 																			</span>
-																		</label>
+																		</div>
 
-																		<label class="popup-block__item">
-																			<input
-																				type="radio"
-																				name="popup-block__item" />
+																		<div class="popup-block__item popup-select-item">
 																			<span
 																				class="popup-block__item-title text2">
 																				3 адрес
 																			</span>
-																		</label>
+																		</div>
 																	</div>
 																</div>
 																<span class="text2 popup-block__select-value">
@@ -1169,7 +1192,7 @@
 																<svg class="popup-block__more-icon">
 																	<use xlink:href="./sprite.svg#popup" />
 																</svg>
-															</label>
+															</div>
 														</div>
 
 														<div class="input-container modal__input-medium">
@@ -1269,13 +1292,11 @@
 
 													<div class="ordering__row">
 														<div
-															class="popup-block__wrapper cart-input-wrapper">
-															<label class="popup-block">
-																<input
-																	class="cart-input"
-																	type="checkbox" />
+															class="popup-block__wrapper cart-input-wrapper ">
+															<div class="popup-block calend popup-btn">
+																
 																<div
-																	class="popup-block__popup popup-block__popup--ordering">
+																	class="popup-block__popup popup-block__popup--ordering popup-list">
 																	<div class="calendar">
 																		<div class="calendar__head">
 																			<div class="calendar__head-date">
@@ -1433,67 +1454,60 @@
 																<svg class="popup-block__more-icon">
 																	<use xlink:href="./sprite.svg#popup" />
 																</svg>
-															</label>
+															</div>
 														</div>
 
 														<div
-															class="popup-block__wrapper cart-input-wrapper popup-block__wrapper--time">
-															<label class="popup-block">
-																<input
-																	type="checkbox"
-																	class="cart-input" />
+															class="popup-block__wrapper cart-input-wrapper popup-block__wrapper--time ">
+															<div class="popup-block time popup-btn">
+															
 																<div
-																	class="popup-block__popup popup-block__popup--select popup-block__popup--ordering">
+																	class="popup-block__popup popup-block__popup--select popup-block__popup--ordering popup-list">
 																	<div
 																		class="popup-block__list popup-block__list--blue">
-																		<label class="popup-block__item">
+																		<label class="popup-block__item text2">
 																			<input
 																				type="radio"
-																				name="popup-block__item" />
-																			<span
-																				class="popup-block__item-title text2">
+																				name="popup-block__item text2" />
+																		
 																				10:00 - 11:00
-																			</span>
+																			
 																		</label>
 
-																		<label class="popup-block__item">
+																		<label class="popup-block__item text2">
 																			<input
 																				type="radio"
-																				name="popup-block__item" />
-																			<span
-																				class="popup-block__item-title text2">
-																				11:00 - 12:00
-																			</span>
+																				name="popup-block__item text2" />
+																		
+																				11:00 - 22:00
+																			
 																		</label>
 
-																		<label class="popup-block__item">
+																		<label class="popup-block__item text2">
 																			<input
 																				type="radio"
-																				name="popup-block__item" />
-																			<span
-																				class="popup-block__item-title text2">
-																				12:00 - 13:00
-																			</span>
+																				name="popup-block__item text2" />
+																		
+																				11:00 - 22:00
+																			
 																		</label>
 
-																		<label class="popup-block__item">
+																		<label class="popup-block__item text2">
 																			<input
 																				type="radio"
-																				name="popup-block__item" />
-																			<span
-																				class="popup-block__item-title text2">
-																				15:00 - 16:00
-																			</span>
+																				name="popup-block__item text2" />
+																		
+																				11:00 - 22:00
+																			
 																		</label>
 
-																		<label class="popup-block__item">
+																		<label class="popup-block__item text2">
 																			<input
 																				type="radio"
-																				name="popup-block__item" />
-																			<span
-																				class="popup-block__item-title text2">
-																				17:00 - 18:00
-																			</span>
+																				name="popup-block__item text2" />
+																		
+																				11:00 - 22:00
+																			
 																		</label>
 																	</div>
 																</div>
@@ -1504,7 +1518,7 @@
 																<svg class="popup-block__more-icon">
 																	<use xlink:href="./sprite.svg#popup" />
 																</svg>
-															</label>
+															</div>
 														</div>
 													</div>
 												</form>
@@ -2038,7 +2052,6 @@
 <script src="./src/js/swiper-bundle.min.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/main.js"></script>
-<script src="./src/js/card-det.js"></script>
 <script src="./src/js/modal.js"></script>
 <script src="./src/js/chronology.js"></script>
 <script src="./src/js/map.js"></script>

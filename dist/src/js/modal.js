@@ -78,3 +78,57 @@ if (modal) {
 		});
 	});
 }
+
+//обработка клика по popup и открытию меню.
+const popupBtns = document.querySelectorAll('.popup-btn');
+
+if (popupBtns) {
+	const activeClass = 'active';
+
+	popupBtns.forEach((btn) => {
+		const list = btn.querySelector('.popup-list');
+		btn.addEventListener('click', (e) => {
+			if (!list.contains(e.target)) {
+				btn.classList.toggle(activeClass);
+			}
+		});
+	});
+}
+
+//select для popups
+const popupSelectList = document.querySelectorAll('.popup-select-list');
+
+if (popupSelectList) {
+	const activeClass = 'active';
+
+	popupSelectList.forEach((list) => {
+		const listItems = list.querySelectorAll('.popup-select-item');
+
+		listItems.forEach((item) => {
+			item.addEventListener('click', () => {
+				listItems.forEach((selectList) => {
+					if (selectList === item) {
+						selectList.classList.add(activeClass);
+					} else {
+						selectList.classList.remove(activeClass);
+					}
+				});
+				//меняем значение
+				const btn = item.closest('.popup-btn');
+
+				if (!btn) {
+					return;
+				}
+				const cardDetSelectValue = btn.querySelector('.card-det__select-value');
+				const popupBlockSelectValue = btn.querySelector(
+					'.popup-block__select-value',
+				);
+				if (cardDetSelectValue) {
+					cardDetSelectValue.textContent = item.textContent.trim();
+					return;
+				}
+				popupBlockSelectValue.textContent = item.textContent.trim();
+			});
+		});
+	});
+}

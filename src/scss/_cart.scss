@@ -321,7 +321,25 @@
 					row-gap: 4rem;
 
 					.cart__main-title {
-						align-items: baseline;
+						align-items: center;
+					}
+
+					&:first-child {
+						.cart-icon {
+							width: 4rem;
+							height: 4rem;
+
+							.bag {
+								width: 4rem;
+								height: 4rem;
+							}
+
+							.cart-icon__value {
+								width: 3rem;
+								height: 3rem;
+								top: -0.7rem;
+							}
+						}
 					}
 				}
 			}
@@ -371,6 +389,11 @@
 					&__count-btn {
 						width: 2.8rem;
 						height: 2.8rem;
+
+						svg {
+							width: 2.8rem;
+							height: 2.8rem;
+						}
 					}
 
 					&__count-value {

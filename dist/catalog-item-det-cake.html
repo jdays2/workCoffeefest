@@ -110,25 +110,24 @@
 			</ul>
 
 			<div class="header__search-block">
-				<label>
+				<div>
 					<input
 						class="header__search-input"
 						type="text"
 						placeholder="Поиск" />
-					
 
 					<button class="header__search-enter-icon">
-						<svg  class="search-arrow">
+						<svg class="search-arrow">
 							<use xlink:href="./sprite.svg#slim-arrow" />
 						</svg>
 					</button>
-					
+
 					<button class="header__search-close-icon">
 						<svg class="crest">
 							<use xlink:href="./sprite.svg#crest" />
 						</svg>
 					</button>
-				</label>
+				</div>
 			</div>
 
 			<ul class="header__bottom-list">
@@ -198,13 +197,12 @@
 		</div>
 		<div class="header__burger-menu mobile">
 			<div class="search-block search-block--long">
-				<label>
+				<div>
 					<input
 						class="search-block__input"
 						type="text"
-						placeholder="Поиск" 
-					/>
-				</label>
+						placeholder="Поиск" />
+				</div>
 			</div>
 			<div class="burger-menu__accordion accordion">
 				<div class="acc-item">
@@ -216,13 +214,41 @@
 					</div>
 					<div class="acc-content menu">
 						<div class="content">
-							<a href="#" class="burger-menu__link">Услуги</a>
-							<a href="#" class="burger-menu__link">О нас</a>
-							<a href="#" class="burger-menu__link">О кофе</a>
-							<a href="#" class="burger-menu__link">Для бизнеса</a>
-							<a href="#" class="burger-menu__link">Доставка и оплата</a>
-							<a href="#" class="burger-menu__link">Вакансии</a>
-							<a href="#" class="burger-menu__link">Контакты</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Услуги
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								О нас
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								О кофе
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Для бизнеса
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Доставка и оплата
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Вакансии
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Контакты
+							</a>
 						</div>
 					</div>
 				</div>
@@ -235,10 +261,26 @@
 					</div>
 					<div class="acc-content menu">
 						<div class="content">
-							<a href="#" class="burger-menu__link">Зерновой кофе</a>
-							<a href="#" class="burger-menu__link">Меню кофеен</a>
-							<a href="#" class="burger-menu__link">Меню кулинарии</a>
-							<a href="#" class="burger-menu__link">Торты на заказ</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Зерновой кофе
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Меню кофеен
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Меню кулинарии
+							</a>
+							<a
+								href="#"
+								class="burger-menu__link">
+								Торты на заказ
+							</a>
 						</div>
 					</div>
 				</div>
@@ -308,10 +350,9 @@
 							</div>
 							<div class="card-det__main-box">
 								<div class="card-det__left-side">
-									<label class="card-det__more">
-										<input type="checkbox" />
+									<div class="card-det__more popup-btn">
 										<div class="card-det__popup">
-											<ul class="card-det__popup-list">
+											<ul class="card-det__popup-list popup-list">
 												<li
 													class="card-det__popup-item card-det__popup-item--list">
 													<span class="card-det__item-title text2">
@@ -351,85 +392,66 @@
 												</li>
 											</ul>
 										</div>
+
 										<span class="heading4">СОСТАВ</span>
 
 										<svg class="card-det__more-icon">
-											<use
-												xlink:href="./sprite.svg#popup" />
+											<use xlink:href="./sprite.svg#popup" />
 										</svg>
-									</label>
+									</div>
 								</div>
 								<div class="card-det__right-side">
-									<div class="card-det__stats-weight-list">
-										<label class="card-det__stats-weight">
-											<input
-												type="radio"
-												name="weight"
-												checked />
+									<div class="card-det__stats-weight-list popup-select-list">
+										<div
+											class="card-det__stats-weight popup-select-item active">
 											<span>1200 г</span>
-										</label>
+										</div>
 									</div>
 
 									<div class="controlls">
 										<div class="controlls__count-btn">
 											<svg class="plus">
-												<use
-													xlink:href="./sprite.svg#plus" />
+												<use xlink:href="./sprite.svg#plus" />
 											</svg>
 										</div>
 										<div class="controlls__count-value">1</div>
 										<div class="controlls__count-btn">
 											<svg class="minus">
-												<use
-													xlink:href="./sprite.svg#minus" />
+												<use xlink:href="./sprite.svg#minus" />
 											</svg>
 										</div>
 									</div>
 
 									<div class="card-det__more-wrapper">
-										<label class="card-det__more">
-											<input
-												type="checkbox"
-												name="more-1" />
-											<div class="card-det__popup card-det__popup--select">
-												<div class="card-det__popup-list">
-													<label class="card-det__popup-item">
-														<input
-															type="radio"
-															name="card-det__item-1"
-															checked />
+										<div class="card-det__more popup-btn">
+											<div class="card-det__popup card-det__popup--select popup-list">
+												<div class="card-det__popup-list popup-select-list">
+													<div class="card-det__popup-item popup-select-item">
 														<span class="card-det__item-title text2">
 															Печенье "Халява"
 														</span>
-													</label>
+													</div>
 
-													<label class="card-det__popup-item">
-														<input
-															type="radio"
-															name="card-det__item-1" />
+													<div class="card-det__popup-item popup-select-item">
 														<span class="card-det__item-title text2">
 															Сироп "Ореховый"
 														</span>
-													</label>
+													</div>
 
-													<label class="card-det__popup-item">
-														<input
-															type="radio"
-															name="card-det__item-1" />
+													<div class="card-det__popup-item popup-select-item">
 														<span class="card-det__item-title text2">
 															Сироп "С Водой"
 														</span>
-													</label>
+													</div>
 												</div>
 											</div>
 
 											<span class="text2 card-det__select-value">Ночинка</span>
 
 											<svg class="card-det__more-icon">
-												<use
-													xlink:href="./sprite.svg#popup" />
+												<use xlink:href="./sprite.svg#popup" />
 											</svg>
-										</label>
+										</div>
 									</div>
 
 									<div class="card-det__price">
@@ -454,7 +476,7 @@
 				</div>
 			</section>
 
-			<section class="catalog-main-block grain-coffee section">
+			<section class="catalog-main-block .cakes section">
 				<div class="catalog-main-block__container container">
 					<div class="catalog-main-block__title heading2">
 						С этим товаром покупают
@@ -495,9 +517,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -537,9 +559,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -583,9 +605,9 @@
 								</div>
 								<div
 									class="catalog-card__add-to-cart catalog-card-1__add-to-cart">
-										<svg class="bag bag--dark">
-											<use xlink:href="sprite.svg#bag" />
-										</svg>
+									<svg class="bag bag--dark">
+										<use xlink:href="sprite.svg#bag" />
+									</svg>
 								</div>
 							</div>
 						</div>
@@ -637,8 +659,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="sprite.svg#standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1098,7 +1119,6 @@
 <script src="./src/js/swiper-bundle.min.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/main.js"></script>
-<script src="./src/js/card-det.js"></script>
 <script src="./src/js/modal.js"></script>
 <script src="./src/js/chronology.js"></script>
 <script src="./src/js/map.js"></script>
