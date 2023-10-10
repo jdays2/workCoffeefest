@@ -27,7 +27,7 @@
 		padding-left: 3rem;
 
 		p {
-			color: #35415C;
+			color: #35415c;
 			font-family: Circe;
 			font-size: 2rem;
 			font-style: normal;
@@ -98,11 +98,12 @@
 
 	&__search-box {
 		padding: 4rem;
-		background-color: $biege;
+		background-color: $biege !important;
 	}
-	label {
+	div {
 		background-color: #fff9ee;
 	}
+
 	&__search {
 		&-title {
 			margin-bottom: 2.7rem !important;
@@ -158,11 +159,11 @@
 			border: 0.2rem solid rgba(0, 0, 0, 0);
 
 			&.active {
-				border: 0.2rem solid #35415C;
+				border: 0.2rem solid #35415c;
 			}
 
 			&-title {
-				color: #35415C;
+				color: #35415c;
 				font-family: Circe;
 				font-size: 2rem;
 				font-style: normal;
@@ -186,7 +187,7 @@
 				background-size: contain;
 
 				span {
-					color: #35415C;
+					color: #35415c;
 					font-family: Circe;
 					font-size: 1.8rem;
 					font-style: normal;
@@ -254,7 +255,7 @@
 				height: auto;
 				max-height: none;
 
-				label {
+				div {
 					background-position: 2.5rem 3.4rem;
 				}
 
@@ -267,7 +268,7 @@
 
 				&__enter-icon {
 					display: none;
-				} 
+				}
 			}
 		}
 
@@ -306,7 +307,7 @@
 				position: fixed;
 				left: 0;
 				z-index: 5 !important;
-				
+
 				.modal__container {
 					margin-top: 5rem;
 					width: 67rem;
@@ -327,7 +328,7 @@
 						&-disc {
 							row-gap: 1.6rem;
 							-moz-column-gap: 0;
-							     column-gap: 0;
+							column-gap: 0;
 
 							& > * {
 								font-size: 2.8rem;
