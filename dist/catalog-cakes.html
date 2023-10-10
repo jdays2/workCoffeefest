@@ -435,7 +435,7 @@
 								id="my-video"
 								class="video-js video-js--small"
 								controls
-								preload="true"
+								preload
 								poster="./src/images/player-sample.png"
 								data-setup="{}">
 								<source
@@ -1154,8 +1154,7 @@
 						class="catalog-main-block__more arrow-link">
 						<span>Загрузить ещё</span>
 						<svg class="arrow-link__icon">
-							<use
-								xlink:href="sprite.svg#standart-arrow-right" />
+							<use xlink:href="sprite.svg#standart-arrow-right" />
 						</svg>
 					</a>
 				</div>
@@ -1186,7 +1185,7 @@
 										Имя
 									</label>
 									<div class="icon success"></div>
-														<div class="icon invalid"></div>
+									<div class="icon invalid"></div>
 									<div class="input-status">Неверный формат</div>
 								</div>
 								<div
@@ -1202,14 +1201,13 @@
 										Телефон
 									</label>
 									<div class="icon success"></div>
-														<div class="icon invalid"></div>
+									<div class="icon invalid"></div>
 									<div class="input-status">Неверный формат</div>
 								</div>
 
 								<div
 									class="cooperation__left-form__input-container input-container catalog-inputs">
 									<textarea
-										type="text"
 										id="wishes"
 										class="input catalog-inputs__textarea"
 										placeholder="text"></textarea>
@@ -1232,25 +1230,25 @@
 										class="catalog-inputs__file-label catalog-inputs__file-label-static">
 										Прикрепить фото
 									</label>
-									<div
-										for="attach"
+									<div 
 										class="catalog-inputs__file-label catalog-inputs__file-label-succes">
 										<strong id="file-name"></strong>
 										<span id="file-size"></span>
 										<div class="catalog-inputs__file-remove-icon">
 											<svg>
-												<use
-													xlink:href="./sprite.svg#remove" />
+												<use xlink:href="./sprite.svg#remove" />
 											</svg>
 										</div>
 									</div>
 									<div class="icon success"></div>
-														<div class="icon invalid"></div>
+									<div class="icon invalid"></div>
 								</div>
 							</form>
-							<button class="cooperation__left-btn square-btn" id="request-btn">
-									отправить заявку
-								</button>
+							<button
+								class="cooperation__left-btn square-btn request-btn"
+								>
+								отправить заявку
+							</button>
 						</div>
 						<div class="cooperation__right">
 							<img
@@ -1716,7 +1714,6 @@
 <script src="./src/js/swiper-bundle.min.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/main.js"></script>
-<script src="./src/js/card-det.js"></script>
 <script src="./src/js/modal.js"></script>
 <script src="./src/js/chronology.js"></script>
 <script src="./src/js/map.js"></script>

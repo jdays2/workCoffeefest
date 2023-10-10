@@ -1026,7 +1026,7 @@ const initFeedbackHandler = () => {
 			<div
 				class="input-container modal__textarea-medium input-textarea-wrapper">
 				<textarea
-					type="text"
+				
 					id="textarea3"
 					class="input input-textarea"
 					placeholder="Расскажите о продукте"
@@ -1297,7 +1297,7 @@ const textUsContent = `
 	<div
 		class="input-container modal__textarea-medium input-textarea-wrapper">
 		<textarea
-			type="text"
+			
 			id="textarea2"
 			class="input input-textarea"
 			placeholder="Комментарий"
@@ -1452,7 +1452,7 @@ const requestContent = `<p class="heading2">Заявка отправлена!</
 	</button>
 </div>`;
 
-const requestBtn = document.querySelectorAll('#request-btn');
+const requestBtn = document.querySelectorAll('.request-btn');
 
 if (requestBtn) {
 	const modalClass = 'request-sended-modal';
