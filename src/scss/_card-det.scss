@@ -100,7 +100,7 @@
 		display: block;
 		background-color: #f1ded0;
 		&.active {
-			background-color: #35415C;
+			background-color: #35415c;
 		}
 	}
 
@@ -225,19 +225,14 @@
 		position: relative;
 		height: 8rem;
 		display: flex;
-		input {
-			opacity: 0;
-			right: 0;
-			top: 0;
-			position: absolute;
 
-			&:checked + .card-det__popup {
+		&.active {
+			.card-det__popup {
 				opacity: 1;
 				z-index: 2;
 				transform: translateY(0);
 			}
-
-			&:checked ~ .card-det__more-icon {
+			.card-det__more-icon {
 				transform: rotate(180deg);
 			}
 		}
@@ -282,10 +277,11 @@
 					width: 100%;
 					cursor: pointer;
 				}
-			}
-
-			input:checked + .card-det__item-title {
-				font-weight: 700;
+				&.active {
+					.card-det__item-title {
+						font-weight: 700;
+					}
+				}
 			}
 		}
 	}
@@ -371,7 +367,7 @@
 	}
 
 	&__item-title {
-		color: #35415C;
+		color: #35415c;
 		text-align: left;
 	}
 
@@ -382,20 +378,16 @@
 
 	&__stats-weight {
 		position: relative;
-		input {
-			opacity: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
 
-		input:checked + span {
-			color: #35415C;
-			font-family: Circe;
-			font-size: 3rem;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 120%;
+		&.active {
+			span {
+				color: #35415c;
+				font-family: Circe;
+				font-size: 3rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 120%;
+			}
 		}
 
 		span {
@@ -403,7 +395,7 @@
 				outline: none;
 			}
 
-			color: #35415C;
+			color: #35415c;
 			font-family: Circe;
 			font-size: 1.8rem;
 			font-style: normal;
@@ -427,7 +419,7 @@
 		align-items: flex-end;
 		strong {
 			display: block;
-			color: #35415C;
+			color: #35415c;
 			font-family: Circe;
 			font-size: 3rem;
 			font-style: normal;
@@ -438,7 +430,7 @@
 		span {
 			display: block;
 			margin-left: 0.6rem;
-			color: #35415C;
+			color: #35415c;
 			font-family: Circe;
 			font-size: 2rem;
 			font-style: normal;
@@ -506,6 +498,7 @@
 			width: 67rem;
 			height: 72.4rem;
 			margin: 0 0 4rem 0;
+			min-width: 0rem;
 		}
 
 		&__content-box {
@@ -577,12 +570,13 @@
 			}
 		}
 
-		&__more {
-			margin: 0 0 5rem 0;
+		&__ &__more {
+			margin: 0 0 5rem;
 
 			svg {
-				width: 5rem;
-				height: 5rem;
+				width: 4rem;
+				height: 4rem;
+				margin: 0 0 0 2rem;
 			}
 		}
 
@@ -671,12 +665,12 @@
 			.card-det__popup {
 				width: 59rem;
 				padding: 4rem;
-	
+
 				&-list {
 					max-height: 80.8rem;
 					gap: 3.2rem;
 				}
-	
+
 				&-item {
 					.card-det__item-value {
 						width: 31.4rem;
@@ -702,6 +696,11 @@
 				&__count-btn {
 					width: 2.4rem;
 					height: 2.4rem;
+
+					svg {
+						width: 2.4rem;
+						height: 2.4rem;
+					}
 				}
 			}
 

@@ -40,29 +40,19 @@
 				padding: 4rem !important;
 			}
 
-			.acc-item:first-child {
-	
+			.acc-item {
 				.acc-content {
-					&__list {
-						margin: 0 0 3rem 0 !important;
-					}
-	
-					.heading {
-						margin: 0 0 1.5rem 0 !important;
-					}
-	
-					.content {
-						padding: 3rem 6rem 13rem 6rem !important;
+					&__list:nth-last-child(2) {
+						margin-bottom: 15rem;
 					}
 				}
-	
+
 				.request-vacancy-btn {
 					width: calc(100% - 8rem);
 					text-align: center;
-					right: 4rem !important;
-					bottom: 2.5rem !important;
 					padding-top: 3rem;
 					padding-bottom: 3rem;
+					right: 4rem !important;
 				}
 			}
 		}

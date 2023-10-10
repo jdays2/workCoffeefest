@@ -559,6 +559,22 @@
 						right: 4rem;
 						top: 8rem;
 					}
+
+					.cart-icon {
+						width: 4rem;
+						height: 4rem;
+
+						.bag {
+							width: 4rem;
+							height: 4rem;
+						}
+
+						.cart-icon__value {
+							width: 3rem;
+							height: 3rem;
+							top: -0.7rem;
+						}
+					}
 				}
 			}
 
@@ -777,7 +793,7 @@
 
 				.map-block__search-item-time {
 					background-size: 4rem 4rem;
-					background-position: 0rem -0.3rem;
+					background-position: 0rem 0rem;
 					padding-left: 5.2rem;
 
 					span {

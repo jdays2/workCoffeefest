@@ -8,7 +8,7 @@
 	justify-content: center;
 	cursor: pointer;
 	padding: 1.4rem 3.6rem;
-	border: 0.2rem solid #35415C;
+	border: 0.2rem solid #35415c;
 
 	&.active {
 		svg {
@@ -34,26 +34,21 @@
 	&__arrows-icon {
 		width: 2.4rem;
 		height: 2.4rem;
-		padding-left:3.6rem;
+		padding-left: 3.6rem;
 		background-image: url('/sprite.svg#double-arrows');
 		background-position: left center;
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
 
-	input {
-		opacity: 0;
-		right: 0;
-		top: 0;
-		position: absolute;
-
-		&:checked + .popup-block__popup {
+	&.active {
+		.popup-block__popup {
 			opacity: 1;
 			z-index: 2;
 			transform: translateY(0);
 		}
 
-		&:checked ~ .popup-block__more-icon {
+		.popup-block__more-icon {
 			transform: rotate(180deg);
 		}
 	}
@@ -102,10 +97,12 @@
 					width: 100%;
 					cursor: pointer;
 				}
-			}
 
-			input:checked + .popup-block__item-title {
-				font-weight: 700;
+				&.active {
+					.popup-block__item-title {
+						font-weight: 700;
+					}
+				}
 			}
 		}
 	}
@@ -234,7 +231,7 @@
 	}
 
 	&__item-title {
-		color: #35415C;
+		color: #35415c;
 		text-align: left;
 		transition: 0.4s ease-in-out;
 	}
