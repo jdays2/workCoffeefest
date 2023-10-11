@@ -46,6 +46,9 @@
 	}
 
 	@media (max-width: 48em) {
+		background-color: $light;
+		padding: 9.6rem 0;
+
 		&__content {
 			flex-direction: column;
 		}

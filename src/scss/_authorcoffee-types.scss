@@ -60,28 +60,64 @@
 
 @media (max-width: 48em) {
 	.authorcoffee-types {
+		&.light-section {
+			background-color: $light;
+			background-image: url('../images/background-12-mobile.webp');
+		}
+
+		.swiper-container {
+			margin-bottom: 8rem;
+		}
+
 		&__swiper-slide {
 			flex-direction: column;
-			height: auto;
+			// height: auto;
 
 			&__left {
 				width: auto;
 				height: calc(100% - 82rem);
 				width: 67rem;
 				border-radius: 0;
+				padding: 9.6rem 3.6rem 8rem 3.6rem;
+
+				&-heading {
+					font-size: 5.2rem;
+					line-height: 120%; /* 6.24rem */
+					margin-bottom: 4rem;
+				}
+
+				&-description {
+					font-size: 2.8rem;
+					line-height: 140%; /* 3.92rem */
+					margin-bottom: 8rem;
+				}
+
+				&-link {
+					width: 100%;
+					justify-content: flex-end;
+
+					span {
+						font-size: 3.2rem;
+						line-height: 120%; /* 3.84rem */
+						letter-spacing: 0.096rem;
+						margin-right: 2rem;
+					}
+				}
 			}
 
 			&__right {
-				height: 82rem;
+				// height: 82rem;
 				border-radius: 0 0 7.2rem 7.2rem;
 				overflow: hidden;
 				width: auto;
 				width: 67rem;
+				height: 57.4rem;
 
 				img {
 					-o-object-fit: cover;
 					   object-fit: cover;
-					width: 100%;
+					width: 67rem;
+					height: 57.4rem;
 				}
 			}
 		}

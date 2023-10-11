@@ -47,6 +47,8 @@
 	}
 
 	@media (max-width: 48em) {
+		background-color: $light;
+
 		&__swiper {
 			margin-bottom: 8rem;
 			&-slide {

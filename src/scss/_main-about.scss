@@ -41,9 +41,26 @@
 	}
 
 	@media (max-width: 48em) {
+		padding: 9.6rem 0;
+
+		&.light-section {
+			background-color: $light;
+		}
+
+		&.biege-section {
+			background-color: $biege;
+		}
+
+		.container {
+			&:not(:last-child) {
+				margin-bottom: 4.8rem;
+			}
+		}
+
 		&__banner {
 			padding: 12rem 4rem;
 			border-radius: 0 0 7.2rem 7.2rem;
+			margin-bottom: 0;
 
 			&-description {
 				width: 100%;

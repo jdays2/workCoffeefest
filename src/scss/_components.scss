@@ -205,8 +205,8 @@ $white20: rgba(255, 255, 255, 0.2);
 	padding-bottom: 15rem;
 
 	@media (max-width: 48em) {
-		padding-top: 12rem;
-		padding-bottom: 12rem;
+		padding-top: 9.6rem;
+		padding-bottom: 9.6rem;
 	}
 
 	&--small {
@@ -1420,6 +1420,14 @@ $white20: rgba(255, 255, 255, 0.2);
 		&-left {
 			&__heading {
 				max-width: 59rem;
+			}
+
+			&__description {
+				p {
+					&:not(:last-child) {
+						margin-bottom: 2rem;
+					}
+				}
 			}
 		}
 

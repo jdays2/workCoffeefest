@@ -116,8 +116,8 @@
 	}
 
 	@media (max-width: 48em) {
-		padding-top: 12rem;
-		padding-bottom: 12rem;
+		padding-top: 9.6rem;
+		padding-bottom: 9.6rem;
 
 		&__container {
 			flex-direction: column;
@@ -129,7 +129,11 @@
 			width: 100%;
 
 			&-heading {
-				margin-bottom: 8rem;
+				margin-bottom: 4rem;
+			}
+
+			&__subheading {
+				margin-bottom: 4rem;
 			}
 
 			&-description {
@@ -145,10 +149,19 @@
 			}
 
 			&-link {
-				margin-top: 8rem;
+				// margin-top: 8rem;
 				position: relative;
 				left: 100%;
 				transform: translateX(-100%);
+				justify-content: flex-end;
+			}
+
+			.arrow-link {
+				justify-content: flex-end;
+
+				svg {
+					fill: $biege-btn;
+				}
 			}
 		}
 
