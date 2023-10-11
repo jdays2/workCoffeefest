@@ -65,6 +65,8 @@
 
 @media (max-width: 48em) {
     .about-numbers {
+        background-color: $light;
+
         &__container {
             .top-left,
             .top-right {

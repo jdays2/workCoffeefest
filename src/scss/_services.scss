@@ -189,6 +189,8 @@
 
 @media (max-width: 48em) {
 	.services {
+		background-color: $light;
+
 		.services__swiper-slide {
 			&__text {
 				padding: 8rem 4rem;

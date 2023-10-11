@@ -369,6 +369,18 @@
 						// .chronology__timeline-list__item-arrow-wrapper {
 						// 	top: 5rem;
 						// }
+
+						.chronology__timeline-list__item-icon-wrapper {
+							width: 10rem;
+							height: 10rem;
+							top: -6rem;
+
+							.chronology-circle {
+								width: 10rem;
+								height: 10rem;
+								stroke-width: 0.6rem;
+							}
+						}
 					}
 
 					&-description {

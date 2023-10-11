@@ -40,6 +40,8 @@
 
 @media (max-width: 48em) {
 	.interiors {
+		background-color: $light;
+		
 		&__swiper {
 			&-slide {
 				height: 67rem;
