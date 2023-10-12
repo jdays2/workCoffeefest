@@ -120,6 +120,10 @@
 					&:not(:last-child) {
 						margin-bottom: 4rem;
 					}
+
+					.input.catalog-inputs__textarea {
+						height: 31rem;
+					}
 				}
 			}
 

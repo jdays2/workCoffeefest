@@ -501,7 +501,7 @@
 		&__img {
 			width: 67rem;
 			height: 72.4rem;
-			margin: 0 0 4rem 0;
+			// margin: 0 0 4rem 0;
 			min-width: 0rem;
 			border-radius: 0;
 			margin-bottom: 0;
@@ -620,10 +620,20 @@
 	.card-det {
 		flex-direction: column;
 
+		&.count-right-bottom {
+			position: relative;
+
+			.controlls {
+				position: absolute;
+				right: 4rem;
+				bottom: 27rem;
+			}
+		}
+
 		&__img {
 			width: 67rem;
 			height: 72.4rem;
-			margin: 0 0 4rem 0;
+			// margin: 0 0 4rem 0;
 		}
 
 		&__content-box {
@@ -661,6 +671,12 @@
 		&__stats-item {
 			flex: 0 1 47%;
 
+			.text1 {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
 			.card-det__popup {
 				padding: 4rem;
 				font-size: 2.8rem;
@@ -686,6 +702,12 @@
 						width: 31.4rem;
 					}
 				}
+			}
+
+			&-icon {
+				width: 3rem !important;
+				height: 3rem;
+				margin-left: 2rem;
 			}
 		}
 
@@ -777,6 +799,16 @@
 		.time-icon {
 			width: 4rem;
 			height: 4rem;
+		}
+
+		&__text-wrapper {
+			row-gap: 5.2rem;
+
+			.card-det__text-icon {
+				.text1 {
+					max-width: 34.2rem;
+				}
+			}
 		}
 	}
 }
