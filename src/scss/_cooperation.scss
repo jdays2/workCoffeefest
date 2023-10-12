@@ -87,6 +87,10 @@
 
 @media (max-width: 48em) {
 	.cooperation {
+		&.light-section {
+			background-color: $light;
+			background-image: url('../images/background-8-mobile.webp');
+		}
 
 		&__container {
 			flex-direction: column;
@@ -168,7 +172,13 @@
 		&__right {
 			width: auto;
 			max-width: 67rem;
+			height: 57.4rem;
 			border-radius: 0 0 7.2rem 7.2rem;
+
+			img {
+				width: 67rem;
+				height: 57.4rem;
+			}
 		}
 	}
 }

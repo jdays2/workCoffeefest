@@ -718,8 +718,12 @@
 				}
 
 				&:last-child {
-					.popup-block__wrapper.active {
-						padding-bottom: 81.6rem;
+					.popup-block__wrapper {
+						height: auto;
+
+						.popup-block.calend.active {
+							margin-bottom: 71rem;
+						}
 
 						.popup-block__popup {
 							top: 11.5rem;
@@ -729,18 +733,27 @@
 
 								&__head {
 									margin: 0 0 3rem 0;
+
+									span {
+										svg {
+											width: 7rem;
+											height: 5rem;
+										}
+
+										&:nth-child(2) {
+											margin-left: auto;
+											margin-right: 2.4rem;
+										}
+
+										&:nth-child(3) {
+											transform: rotateZ(180deg);
+										}
+									}
 								}
 
 								&__month,
 								&__year {
 									font-size: 2.8rem;
-								}
-
-								&__head-controlls {
-									span {
-										width: 7rem;
-										height: 5rem;
-									}
 								}
 
 								&__board-days {
@@ -772,7 +785,9 @@
 						}
 
 						&:last-child {
-							padding-bottom: 61.4rem;
+							.popup-block.time.active {
+								margin-bottom: 49.6rem;
+							}
 
 							.popup-block__list {
 								padding: 4rem;

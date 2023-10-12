@@ -189,6 +189,18 @@
 
 @media (max-width: 48em) {
 	.services {
+		background-color: $light;
+		background-image: url('../images/background-3-mobile.webp');
+		padding: 9.6rem 0;
+
+		&__heading {
+			margin-bottom: 8rem;
+		}
+		
+		.swiper-controllers {
+			margin-top: 8rem;
+		}
+
 		.services__swiper-slide {
 			&__text {
 				padding: 8rem 4rem;

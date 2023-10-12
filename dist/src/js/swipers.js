@@ -418,6 +418,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       on: {
+         init: function () {
+            swiper.update();
+            swiper.updateSize();
+            swiper.updateSlides();
+         },
          click: function (swiper, event) {
             if (event.target.classList.contains("category-block__value-show")) {
                let slide = event.target.closest(".category-block__item");

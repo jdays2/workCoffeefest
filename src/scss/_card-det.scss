@@ -493,12 +493,18 @@
 @media (max-width: 48em) {
 	.card-det {
 		flex-direction: column;
+		border-radius: 0 0 7.2rem 7.2rem;
+		border: 1px solid #E8CCBF;
+		padding-bottom: 8rem;
+		row-gap: 9.57rem;
 
 		&__img {
 			width: 67rem;
 			height: 72.4rem;
 			margin: 0 0 4rem 0;
 			min-width: 0rem;
+			border-radius: 0;
+			margin-bottom: 0;
 		}
 
 		&__content-box {
@@ -559,13 +565,17 @@
 			width: 45.4rem;
 			justify-content: space-between;
 
-			label {
+			.card-det__stats-weight {
 				span {
 					font-size: 2.8rem;
+					line-height: 140%; /* 3.92rem */
 				}
 
-				input:checked + span {
-					font-size: 5.2rem;
+				&.active {
+					span {
+						font-size: 5.2rem;
+						line-height: 120%; /* 6.24rem */
+					}
 				}
 			}
 		}

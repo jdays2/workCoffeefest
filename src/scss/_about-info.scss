@@ -4,4 +4,9 @@
 	.section-tags__container {
 		margin-bottom: 6rem;
 	}
+
+	@media (max-width: 48em) {
+		padding-top: 5.6rem;
+		padding-bottom: 9.6rem;
+	}
 }

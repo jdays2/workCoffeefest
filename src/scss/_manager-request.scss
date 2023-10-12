@@ -97,14 +97,45 @@
 
 @media (max-width: 48em) {
     .manager-request {
+		&.light-section {
+			background-color: $light;
+			background-image: url('../images/background-11-mobile.webp');	
+		}
+
         &__container {
             flex-direction: column;
         }
 
         &__left {
+			&-heading {
+				font-size: 5.2rem;
+				line-height: 120%; /* 6.24rem */
+				margin-bottom: 4rem;
+			}
+
+			&-description {
+				font-size: 2.8rem;
+				line-height: 140%; /* 3.92rem */
+				max-width: 63rem;
+				margin-bottom: 4rem;
+			}
+
             &-form {
                 width: auto;
                 max-width: 67rem;
+				margin-bottom: 8rem;
+
+				.input-container {
+					&:not(:last-child) {
+						margin-bottom: 4rem;
+					}
+
+					&:last-child {
+						textarea {
+							height: 31rem;
+						}
+					}
+				}
             }
 
             &-btn {
@@ -116,7 +147,23 @@
         &__right {
             width: auto;
             max-width: 67rem;
-            height: 61.2rem;
+            // height: 61.2rem;
+
+			&-img {
+				height: 44.6rem;
+				margin-bottom: 4rem;
+			}
+
+			&-name {
+				font-size: 3.6rem;
+				line-height: 150%; /* 5.4rem */
+				margin-bottom: 0;
+			}
+
+			&-post {
+				font-size: 2.8rem;
+				line-height: 140%; /* 3.92rem */
+			}
 
             img {
                 -o-object-fit: cover;

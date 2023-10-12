@@ -282,5 +282,27 @@
 		.popup__body {
 			border-radius: 0 0 5rem 5rem;
 		}
+
+		.popup__heading {
+			font-size: 5.2rem;
+			line-height: 120%; /* 6.24rem */
+		}
+
+		.order-info {
+			padding: 4rem;
+		}
+
+		.details-table__item {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.details-table__bottom {
+			p {
+				font-size: 2.8rem;
+				line-height: 120%; /* 3.36rem */
+				letter-spacing: 0.084rem;
+			}
+		}
 	}
 }

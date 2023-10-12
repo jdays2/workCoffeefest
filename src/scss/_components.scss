@@ -205,8 +205,8 @@ $white20: rgba(255, 255, 255, 0.2);
 	padding-bottom: 15rem;
 
 	@media (max-width: 48em) {
-		padding-top: 12rem;
-		padding-bottom: 12rem;
+		padding-top: 9.6rem;
+		padding-bottom: 9.6rem;
 	}
 
 	&--small {
@@ -316,7 +316,6 @@ $white20: rgba(255, 255, 255, 0.2);
 	&--margin {
 		margin-top: 3rem;
 	}
-
 }
 
 .square-btn.blue-square-btn {
@@ -1032,8 +1031,8 @@ $white20: rgba(255, 255, 255, 0.2);
 
 			&-link {
 				svg {
-					width: 5.6rem;
-					height: 5.6rem;
+					width: 4.6rem;
+					height: 4.6rem;
 				}
 			}
 
@@ -1421,12 +1420,18 @@ $white20: rgba(255, 255, 255, 0.2);
 			&__heading {
 				max-width: 59rem;
 			}
+
+			&__description {
+				p {
+					&:not(:last-child) {
+						margin-bottom: 2rem;
+					}
+				}
+			}
 		}
 
 		&-right {
 			min-width: 59rem;
-
-
 		}
 
 		&__left {
@@ -1639,8 +1644,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/background-head.webp) top left/cover
-					no-repeat,
+			background: url(../images/background-head.webp) top left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
@@ -1768,8 +1772,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/background-head.webp) top left/cover
-					no-repeat,
+			background: url(../images/background-head.webp) top left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
@@ -1872,5 +1875,19 @@ $white20: rgba(255, 255, 255, 0.2);
 			width: 100%;
 			text-align: center;
 		}
+	}
+}
+
+.bns-wrapper-lc {
+	display: flex;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin-left: auto;
+
+	gap: 2rem;
+
+	@media (max-width: 48em) {
+		gap: 3rem;
 	}
 }

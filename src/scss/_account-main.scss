@@ -82,6 +82,13 @@
 
 @media (max-width: 48em) {
 	.account-main {
+		margin-top: 18.5rem;
+
+		&.light-section {
+			background-color: $light;
+			background-image: url('../images/background-3-mobile.webp');
+		}
+
 		&__container {
 			flex-direction: column;
 			max-height: none;

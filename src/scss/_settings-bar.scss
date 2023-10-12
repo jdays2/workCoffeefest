@@ -154,14 +154,17 @@
 	}
 
 	.settings-bar__mobile-big {
+		margin-bottom: 7.2rem;
+
 		.settings-bar__row {
 			&:first-child {
 				.settings-bar__box {
 					&:first-child {
 						.tag-btn.filter-btn {
 							border: 0.4rem solid $darkBlue;
-							padding-top: 4.45rem;
-							padding-bottom: 4.45rem;
+							padding-top: 4.1rem;
+							padding-bottom: 4.3rem;
+							max-height: 9.3rem;
 
 							span {
 								display: block;
@@ -179,8 +182,8 @@
 						} 
 
 						.popup-block {
-							padding-top: 4.45rem;
-							padding-bottom: 4.45rem;
+							padding-top: 4.1rem;
+							padding-bottom: 4.3rem;
 						}
 					}
 				}

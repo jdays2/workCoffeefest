@@ -40,7 +40,25 @@
 
 @media (max-width: 48em) {
 	.interiors {
+		padding-top: 9.8rem;
+		padding-bottom: 9.6rem;
+
+		&.light-section {
+			background-image: url('../images/background-3-mobile.webp');
+			background-position-y: 0rem;
+		}
+
+		&__heading {
+			margin-bottom: 8rem;
+		}
+
+		&.light-section {
+			background-color: $light;
+		}
+		
 		&__swiper {
+			margin-bottom: 8rem;
+
 			&-slide {
 				height: 67rem;
 
