@@ -193,6 +193,12 @@
 		background-image: url('../images/background-3-mobile.webp');
 		padding: 9.6rem 0;
 
+		&.corpo-food-services,
+		&.away,
+		&.catering {
+			padding-bottom: 0;
+		}
+
 		&__heading {
 			margin-bottom: 8rem;
 		}
