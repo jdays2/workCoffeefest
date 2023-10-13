@@ -316,7 +316,6 @@ $white20: rgba(255, 255, 255, 0.2);
 	&--margin {
 		margin-top: 3rem;
 	}
-
 }
 
 .square-btn.blue-square-btn {
@@ -1433,8 +1432,6 @@ $white20: rgba(255, 255, 255, 0.2);
 
 		&-right {
 			min-width: 59rem;
-
-
 		}
 
 		&__left {
@@ -1647,8 +1644,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/background-head.webp) top left/cover
-					no-repeat,
+			background: url(../images/background-head.webp) top left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
@@ -1776,8 +1772,7 @@ $white20: rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: url(../images/background-head.webp) top left/cover
-					no-repeat,
+			background: url(../images/background-head.webp) top left/cover no-repeat,
 				$biege;
 			cursor: pointer;
 
@@ -1880,5 +1875,19 @@ $white20: rgba(255, 255, 255, 0.2);
 			width: 100%;
 			text-align: center;
 		}
+	}
+}
+
+.bns-wrapper-lc {
+	display: flex;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin-left: auto;
+
+	gap: 2rem;
+
+	@media (max-width: 48em) {
+		gap: 3rem;
 	}
 }
