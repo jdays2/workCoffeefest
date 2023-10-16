@@ -555,6 +555,15 @@
 				width: 4rem;
 				height: 1.2rem;
 			}
+
+			&-content {
+				padding: 4.8rem 4rem;
+			}
+
+			&-input-list {
+				row-gap: 4rem;
+				margin-bottom: 4.8rem;
+			}
 		}
 
 		&__orders-item.acc-item {
@@ -640,9 +649,20 @@
 				display: flex;
 				align-items: center;
 
-				input::after {
-					width: 4rem;
-					height: 4rem;
+				&.active {
+					div {
+						&:first-child::after {
+							border: 1rem solid $darkBlue;
+						}
+					}
+				}
+
+				div {
+					&:first-child::after {
+						width: 4rem;
+						height: 4rem;
+						border: 0.4rem solid $darkBlue;
+					}
 				}
 
 				strong,
@@ -736,8 +756,8 @@
 
 									span {
 										svg {
-											width: 7rem;
-											height: 5rem;
+											width: 6rem;
+											height: 4.2rem;
 										}
 
 										&:nth-child(2) {
@@ -775,7 +795,11 @@
 								&__board-cell {
 									width: 6.8rem;
 									height: 6.8rem;
-									font-size: 2.8rem;
+									
+									span {
+										font-size: 2.8rem;
+										line-height: 140%; /* 3.92rem */
+									}
 								}
 
 								&__info {
@@ -795,6 +819,12 @@
 								max-height: none;
 
 								.popup-block__item {
+									padding-left: 5rem;
+
+									input {
+										right: 4rem;
+									}
+
 									input::after {
 										width: 4rem;
 										height: 4rem;

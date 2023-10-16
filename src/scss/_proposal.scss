@@ -130,6 +130,10 @@
 	}
 
 	@media (max-width: 48em) {
+		&__img {
+			height: 50.2rem;
+		}
+
 		&__title {
 			font-size: 3.6rem;
 			margin-bottom: 2.4rem;
