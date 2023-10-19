@@ -317,6 +317,10 @@
 			& > p {
 				display: none;
 			}
+
+			& > .chronology__heading {
+				display: none;
+			}
 		}
 
 		&__timeline {
