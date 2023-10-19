@@ -300,7 +300,7 @@
 @media (max-width: 48em) {
 	.catalog-card-2 {
 		flex: 0 0 32.8rem;
-		height: 89.7rem;
+		height: 91.6rem;
 		max-height: none;
 
 		&__img {
@@ -322,6 +322,7 @@
 		&__descr {
 			padding: 2rem 2rem 4rem 2rem;
 			border: none;
+			min-height: 58.8rem;
 		}
 
 		&__characteristics {
@@ -329,7 +330,7 @@
 			font-size: 2.8rem;
 
 			.catalog-card-2__characteristic {
-				&:nth-child(3) {
+				&:nth-child(4) {
 					display: none;
 				}
 
@@ -348,6 +349,7 @@
 
 		&__title {
 			font-size: 2.8rem;
+			min-height: 12.6rem;
 		}
 
 		&__weights {
@@ -375,7 +377,7 @@
 		}
 
 		.catalog-card__price {
-			margin-top: 4.4rem;
+			margin-top: auto;
 		}
 
 		.catalog-card__main-price {
