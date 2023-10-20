@@ -1173,12 +1173,14 @@
 							</p>
 							<form
 								action="#"
+								id="cake-design"
 								class="cooperation__left-form cooperation__left-form--short">
 								<div
 									class="cooperation__left-form__input-container input-container">
 									<input
 										type="text"
 										id="name"
+										name="name"
 										class="input input-name"
 										placeholder="Имя" />
 									<label
@@ -1194,6 +1196,7 @@
 									class="cooperation__left-form__input-container input-container">
 									<input
 										type="text"
+										name="email"
 										id="email"
 										class="input input-email"
 										placeholder="Email" />
@@ -1212,7 +1215,8 @@
 									<textarea
 										id="wishes"
 										class="input catalog-inputs__textarea"
-										placeholder="text"></textarea>
+										placeholder="text"
+										name="textarea"></textarea>
 
 									<label
 										for="wishes"
@@ -1225,6 +1229,7 @@
 									<input
 										type="file"
 										id="attach"
+										name="file"
 										accept="image/*"
 										class="catalog-inputs__file" />
 									<label
@@ -1232,7 +1237,7 @@
 										class="catalog-inputs__file-label catalog-inputs__file-label-static">
 										Прикрепить фото
 									</label>
-									<div 
+									<div
 										class="catalog-inputs__file-label catalog-inputs__file-label-succes">
 										<strong id="file-name"></strong>
 										<span id="file-size"></span>
@@ -1245,12 +1250,10 @@
 									<div class="icon success"></div>
 									<div class="icon invalid"></div>
 								</div>
+								<button class="cooperation__left-btn square-btn request-btn" 	id="cake-design-btn">
+									отправить заявку
+								</button>
 							</form>
-							<button
-								class="cooperation__left-btn square-btn request-btn"
-								>
-								отправить заявку
-							</button>
 						</div>
 						<div class="cooperation__right">
 							<img

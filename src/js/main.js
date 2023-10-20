@@ -152,8 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		const orderPopup = document.querySelector('.order-popup');
 		const popupClose = document.querySelector('.popup__close');
 		orderTables.forEach((item) => {
-			
-
 			if (window.innerWidth > 768) {
 				initAccordion(item);
 			} else {
@@ -377,7 +375,7 @@ const fileName = document.querySelector('#file-name');
 const fileSize = document.querySelector('#file-size');
 //добавление
 if (fileInput) {
-	fileInput.addEventListener('input', function () {
+	fileInput.addEventListener('change', function () {
 		if (fileInput.files.length > 0) {
 			const inputParent = fileInput.closest('.input-container');
 			inputParent.classList.add('active');
@@ -388,19 +386,39 @@ if (fileInput) {
 		}
 	});
 }
+//функция удаления изображения
+const removeImg = (e) => {
+	if (fileInput.files.length > 0) {
+		const inputParent = fileInput.closest('.input-container');
+		fileInput.value = '';
+		inputParent.classList.remove('active');
+		fileName.textContent = '';
+		fileSize.textContent = '';
+		fileInput.disabled = false;
+	}
+};
+
 //удаление
 if (removeFiles) {
-	removeFiles.addEventListener('click', (e) => {
-		if (fileInput.files.length > 0) {
-			const inputParent = fileInput.closest('.input-container');
-			fileInput.value = '';
-			inputParent.classList.remove('active');
-			fileName.textContent = '';
-			fileSize.textContent = '';
-			fileInput.disabled = false;
-		}
-	});
+	removeFiles.addEventListener('click', removeImg);
 }
+
+//проверка формы
+// const form = document.querySelector('#cake-design');
+// form.addEventListener('submit', (e) => {
+// 	e.preventDefault();
+// 	const formData = new FormData(form);
+
+// 	const isFileExist = fileInput.files[0];
+// 	formData.delete('file');
+// 	if (isFileExist) {
+// 		formData.append('file', fileInput.files[0]);
+// 	}
+
+// 	for (const [name, value] of formData.entries()) {
+// 		console.log(`${name}: ${value}`);
+// 	}
+// });
 
 //
 
