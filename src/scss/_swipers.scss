@@ -1,0 +1,95 @@
+.team__swiper,
+.proposal__swiper,
+.interiors__swiper,
+.away__swiper,
+.ur-menu__swiper,
+.services__swiper,
+.formats__swiper,
+.serv__swiper {
+	.swiper-wrapper {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+	}
+}
+
+.away__swiper-pagination,
+.formats__swiper-pagination,
+.feedback__swiper-pagination,
+.ur-menu__swiper-pagination,
+.serv__swiper-pagination {
+	position: relative;
+	top: 5.1rem;
+}
+
+.service__swiper {
+	.services__list-item__text {
+		min-height: 31rem;
+	}
+}
+
+.swiper-slide {
+	.services {
+		&__list-item {
+			width: 100%;
+			height: 100%;
+		}
+
+		&__list-item__text-description {
+			width: 100%;
+		}
+	}
+}
+
+.swiper-pagination-styles {
+	width: 100%;
+
+	span {
+		width: 1.3rem;
+		height: 1.3rem;
+		border-radius: 50%;
+		opacity: 1;
+		background-color: transparent;
+		border: 0.2rem solid #35415C;
+
+		&:not(:last-child) {
+			margin-right: 1.3rem;
+		}
+
+		&.swiper-pagination-bullet-active {
+			background-color: $darkBlue;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.swiper-pagination-styles {
+		span {
+			width: 3rem;
+			height: 3rem;
+		}
+
+		&:not(:last-child) {
+			margin-right: 2.6rem;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.formats__swiper {
+		.proposal-card {
+			&__descr {
+				padding: 8rem 4rem 8rem 4rem;
+				background-size: 67rem 86.6rem ;
+			}
+
+			&__title {
+				font-size: 3.6rem;
+			}
+
+			&__text {
+				font-size: 2.8rem;
+			}
+		}
+	}
+}

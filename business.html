@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
+		<title>Для бизнеса</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="main-banner">
+				<div class="swiper-container main-banner__swiper">
+					<div class="swiper-wrapper">
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-5.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>подробнее</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="blue">
+							<img
+								src="./src/images/main-banner-1.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--blue">
+								<span>перейти в каталог</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-2.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>заказать пробник</span>
+							</a>
+						</div>
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-3.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>Посмотреть меню</span>
+							</a>
+						</div>
+
+						<div
+							class="swiper-slide main-banner__swiper-slide"
+							data-color="light">
+							<img
+								src="./src/images/main-banner-4.png"
+								alt=""
+								class="main-banner__swiper-slide__img" />
+							<a
+								href=""
+								class="banner-btns banner-btns--light">
+								<span>Посмотреть меню</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="main-banner__swiper-controllers">
+						<div class="prev">
+							<svg>
+								<use xlink:href="sprite.svg#prev" />
+							</svg>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="next">
+							<svg>
+								<use xlink:href="sprite.svg#next" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about-info section section--small">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/main.html"
+								class="breadcrumbs__item-link">
+								<svg class="home">
+									<use xlink:href="./sprite.svg#home" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a
+								href="/dist/business.html"
+								class="breadcrumbs__item-link">
+								<span>Для бизнеса</span>
+							</a>
+						</li>
+					</ul>
+
+					<div class="about-info__card section-info__card active">
+						<div class="section-info__card-left">
+							<h1 class="section-info__card-left__heading heading2">
+								Мы предлагаем
+							</h1>
+							<p class="section-info__card-left__subheading heading4">
+								полный цикл работ в сфере Horeca, от открытия кофейни до
+								организации мероприятий под ключ или кейтеринга
+							</p>
+							<div class="section-info__card-left__description menu">
+								<p>
+									CofeFest для бизнеса — это поставки комплексных обедов,
+									кулинарной и кондитерской продукции собственного производства
+									для корпоративных клиентов.
+								</p>
+								<p>
+									Каждый день на протяжении уже более трех лет мы готовим
+									завтраки и обеды для резидентов бизнес-центров, сотрудников
+									медицинских клиник и деловых людей, предпочитающих здоровые
+									экспресс-бизнес-ланчи как удобная альтернатива домашней еды в
+									контейнерах и дорогим обедам в ресторанах.
+								</p>
+							</div>
+						</div>
+
+						<div class="section-info__card-right">
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/business-img1.png"
+									alt="" />
+							</div>
+							<div class="section-info__card-right__img">
+								<img
+									src="./src/images/business-img2.png"
+									alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section services light-section services--link">
+				<div class="container">
+					<h2 class="services__heading heading2">Наши услуги</h2>
+
+					<div class="services__container">
+						<div class="swiper-container services__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											Выездной бариста
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Приготовим вкусную чашку и увлекательно расскажем все о
+											кофе на вашем мероприятии
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/purple-ver1.png"
+											alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											Открыть кофейню
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Мы всегда готовы к новым предложениям и с удовольствием
+											рассмотрим вашу территорию для нашей сети
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/light-blue-ver1.png"
+											alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											корпоративное питание
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Комплексные обеды собственного производства для
+											корпоративных клиентов
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/green-ver1.png"
+											alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											Кейтеринг
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Полный цикл выездного обслуживания – от приготовления и
+											доставки блюд до подачи и сервировки
+										</p>
+										<a
+											href="#"
+											class="services__swiper-slide__text-link btns-caps">
+											узнать подробнее
+										</a>
+									</div>
+
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/dark-blue-ver1.png"
+											alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-controllers">
+							<div class="swiper-prev services__swiper-prev desktop"><svg class="arrow-link__icon">
+								<use xlink:href="sprite.svg#standart-arrow-right" />
+							</svg></div>
+							<div class="swiper-next services__swiper-next desktop"><svg class="arrow-link__icon">
+								<use xlink:href="sprite.svg#standart-arrow-right" />
+							</svg></div>		
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-banner business">
+				<div class="container">
+					<div class="section-banner__container">
+						<div class="section-banner__left">
+							<h2 class="section-banner__left-heading heading2">
+								Разместить у себя кофейню
+							</h2>
+
+							<p class="section-info__card-left__subheading heading4">
+								в бизнес-центре или медицинском учреждении
+							</p>
+							<div class="section-banner__left-description menu">
+								<p>
+									Сеть кофеен COFEFEST – это более 130 успешных кофеен, которые
+									функционируют в бизнес-центрах, городских больницах,
+									поликлиниках и научных центрах, а также в торговых центрах. У
+									нас устойчивая бизнес-модель и большие планы по расширению
+									сети. Мы всегда готовы к новым предложениям и с удовольствием
+									рассмотрим вашу территорию для нашей сети. Приглашаем вас
+									стать частью нашего проекта!
+								</p>
+							</div>
+							<a
+								href="#"
+								class="arrow-link">
+								<span>подробнее</span>
+								<svg class="arrow-link__icon">
+									<use
+										xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="section-banner__right">
+							<div class="section-banner__right-img">
+								<img
+									src="./src/images/about-buisness.png"
+									alt="" />
+							</div>
+
+							<video
+								id="my-video"
+								class="video-js video-js--small"
+								controls
+								preload
+								poster="./src/images/main-video-sample.png"
+								data-setup="{}">
+								<source
+									src="./src/images/sample/sample.mp4"
+									type="video/mp4" />
+							</video>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section services light-section">
+				<div class="container">
+					<h2 class="services__heading heading2">Арендодателям и партнерам</h2>
+					<div class="services__container">
+						<div class="swiper-container services__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											Производство полного цикла
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Наша фабрика-кухня находится в Москве, на которой
+											располагается полная линейка высоко-технологичного
+											оборудования, позволяющего нам производить широкий
+											ассортимент кулинарных и кондитерских блюд
+										</p>
+									</div>
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/purple-ver1.png"
+											alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											Современные технологии
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Мы уделяем особое внимание тому, чтобы блюда были
+											сбалансированными, легко усваивались и содержали максимум
+											питательных веществ. Сохранить эти свойства нам помогает
+											кулинарная технология su-vide, которую мы активно
+											применяем.
+										</p>
+									</div>
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/light-blue-ver1.png"
+											alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											Опытные повара
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Наша гордость это профессиональные повара, благодаря
+											которым вы ежедневно получаете готовый качественный и
+											вкусный продукт
+										</p>
+									</div>
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/green-ver1.png"
+											alt="" />
+									</div>
+								</div>
+								<div class="swiper-slide services__swiper-slide">
+									<div class="services__swiper-slide__text">
+										<p class="services__swiper-slide__text-heading heading4">
+											Гарантия свежести
+										</p>
+										<p class="services__swiper-slide__text-description text1">
+											Мы обеспечиваем контроль качества на всех этапах – от
+											приема сырья до готовой продукции. Все блюда и выпечка
+											производятся из отборных и натуральных ингредиентов и
+											доставляются в день изготовления
+										</p>
+									</div>
+									<div class="services__swiper-slide__image">
+										<img
+											src="./src/images/dark-blue-ver1.png"
+											alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-controllers">
+							<div class="swiper-prev services__swiper-prev desktop"><svg class="arrow-link__icon">
+								<use xlink:href="sprite.svg#standart-arrow-right" />
+							</svg></div>
+							<div class="swiper-next services__swiper-next desktop"><svg class="arrow-link__icon">
+								<use xlink:href="sprite.svg#standart-arrow-right" />
+							</svg></div>		
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="interiors">
+				<div class="container">
+					<h3 class="interiors__heading heading2">Наши интерьеры</h3>
+					<div class="interiors__container">
+						<div class="swiper-container interiors__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors1.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors2.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+								<div class="swiper-slide interiors__swiper-slide">
+									<img
+										src="./src/images/interiors3.png"
+										alt=""
+										class="interiors__swiper-slide__img" />
+								</div>
+							</div>
+						</div>
+						<div class="interiors__swiper-controllers swiper-controllers">
+							<div class="swiper-prev"><svg class="arrow-link__icon">
+								<use xlink:href="sprite.svg#standart-arrow-right" />
+							</svg></div>
+							<div class="swiper-next">
+								<svg class="arrow-link__icon">
+									<use xlink:href="sprite.svg#standart-arrow-right" />
+								</svg>
+							</div>
+							<div class="swiper-pagination services__swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cooperation section light-section">
+				<div class="container">
+					<div class="cooperation__container">
+						<div class="cooperation__left">
+							<h3 class="heading2">Хотите с нами сотрудничать?</h3>
+							<p class="heading4">
+								Оставьте заявку и наш менеджер свяжется с Вами в ближайшее
+								время!
+							</p>
+							<form
+								action="#"
+								class="cooperation__left-form cooperation__left-form--short">
+								<div
+									class="cooperation__left-form__input-container input-container">
+									<input
+										type="text"
+										id="name"
+										class="input input-name"
+										placeholder="Имя" />
+									<label
+										for="name"
+										class="input-label">
+										Имя
+									</label>
+									<div class="icon success"></div>
+									<div class="icon invalid"></div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+								<div
+									class="cooperation__left-form__input-container input-container">
+									<input
+										type="text"
+										id="tel7"
+										class="input input-tel"
+										placeholder="Телефон" />
+									<label
+										for="tel7"
+										class="input-label">
+										Телефон
+									</label>
+									<div class="icon success"></div>
+									<div class="icon invalid"></div>
+									<div class="input-status">Неверный формат</div>
+								</div>
+							</form>
+							<div class="cooperation__btns">
+								<button
+									class="cooperation__left-btn square-btn request-btn"
+									>
+									отправить заявку
+								</button>
+
+								<button class="cooperation__download-btn desktop">
+									Скачать презентацию
+								</button>
+							</div>
+						</div>
+						<div class="cooperation__right">
+							<img
+								src="./src/images/cooperation-img.png"
+								alt=""
+								class="cooperation__right-img" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
+</html>

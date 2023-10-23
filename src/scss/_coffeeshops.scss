@@ -1,0 +1,13 @@
+.coffeeshops {
+    background-color: $light;
+    
+    &__heading {
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: 48em) {
+        &.light-section {
+            background-image: url('../images/background-10-mobile.webp');
+        }
+    }
+}

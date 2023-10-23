@@ -1,0 +1,42 @@
+.catalog {
+  &__content-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+      gap: 4.7rem 3.45rem;
+  }
+
+  &-det {
+    padding-top: 14.4rem;
+    background-color: #FFF9EE;
+
+    section.light-section-clear.card-det-section {
+      background-image: none;
+    }
+  }
+
+  .section {
+      padding: 0;
+      padding-bottom: 15rem;
+
+      &:nth-child(2) {
+          padding-top: 8rem;
+      }
+  }
+
+  .heading2 {
+    line-height: 6.2rem;
+  }
+
+  @media (max-width: 48em) {
+    &__content-box {
+      column-gap: 1.4rem;
+      row-gap: 4.8rem;
+      margin-bottom: 8rem;
+    }
+
+    .section {
+      padding-bottom: 9.6rem;
+    }
+  }
+}

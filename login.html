@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Вход</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="section light-section account-main">
+				<div class="container">
+					<div class="account-main__container">
+						<div class="account-main__left">
+							<h1 class="account-main__left-heading heading2">Вход</h1>
+							<div class="account-main__left-text menu">
+								<p>Нет аккаунта?</p>
+								<a href="registration.html">Зарегистрироваться</a>
+							</div>
+							<form
+								action="#"
+								class="account-main__left-form">
+								<div class="input-container">
+									<input
+										type="email"
+										class="input"
+										placeholder="Email"
+										id="registration-email" />
+									<label
+										for="registration-email"
+										class="input-label">
+										Email
+									</label>
+									
+									<div class="input-status">Неверный формат</div>
+								</div>
+								<div class="input-container">
+									<input
+										type="password"
+										class="input"
+										placeholder="Пароль"
+										id="registration-password" />
+									<label
+										for="registration-password"
+										class="input-label">
+										Пароль
+									</label>
+									<button class="password-btn icon">
+										<svg class="password">
+											<use
+												xlink:href="./sprite.svg#password" />
+										</svg>
+									</button>
+									<div class="input-status">Неверный формат</div>
+								</div>
+
+								<button class="account-main__left-submit square-btn blue-btn">
+									<span>Войти</span>
+								</button>
+							</form>
+							<div class="account-main__left-policy menu">
+								<a href="forget-password.html">Забыли пароль?</a>
+							</div>
+						</div>
+						<div class="account-main__right">
+							<img
+								src="./src/images/m-123.png"
+								alt=""
+								class="account-main__right-img" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
+</html>

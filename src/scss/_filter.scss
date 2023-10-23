@@ -1,0 +1,16 @@
+.filter {
+  &__tag-list {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 48em) {
+  .filter {
+    &__tag-list {
+      flex-wrap: wrap;
+    }
+  }
+}

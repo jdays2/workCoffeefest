@@ -1,0 +1,114 @@
+.about-numbers {
+    &__container {
+        padding-bottom: 15rem;
+        position: relative;
+        border-bottom: 7px solid $red;
+
+        .top-left,
+        .top-right {
+            position: absolute;
+            top: 0;
+            width: 49rem;
+            height: 8px;
+            background-color: $red;
+        }
+
+        .top-left {
+            left: 0;
+        }
+
+        .top-right {
+            right: 0;
+        }
+    }
+
+    &__heading {
+        margin-top: 1.8rem; 
+        margin-bottom: 11rem;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 6rem;
+        
+        gap: 12rem 24rem;
+
+        &-item {
+            &:nth-child(3n + 1) {
+                width: 31rem;
+            }
+
+            &:nth-child(3n + 2) {
+                width: 30.6rem;
+            }
+
+            &:nth-child(3n + 3) {
+                width: 33.5rem;
+            }
+
+            &__number {
+                margin-bottom: 2.4rem;
+                font-weight: 700;
+                font-size: 9rem;
+                line-height: 1;
+                color: $red;
+            }
+
+            &__description {
+            }
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .about-numbers {
+        background-color: $light;
+        background-image: url('../images/background-5-mobile.webp');
+        background-size: 100% 100%;
+        padding-top: 11.4rem;
+        padding-bottom: 9.6rem;
+
+        &__container {
+            padding-bottom: 8rem;
+
+            .top-left,
+            .top-right {
+                width: 9.8rem;
+                height: 5px;
+                top: -0.25rem;
+            }
+        }
+
+        &__heading {
+            margin: 0 0 8rem 0;
+        }
+
+        &__list {
+            margin: 0;
+            row-gap: 8rem;
+
+            &-item {
+                width: 100% !important;
+                text-align: center;
+
+                &__number {
+                    font-size: 8rem;
+                    line-height: 120%; /* 9.6rem */
+                    letter-spacing: 0.4rem;
+                    margin-bottom: 2.4rem;
+                }
+
+                &__description {
+                    margin: 0 auto;
+                    font-size: 2.8rem;
+                    line-height: 120%; /* 3.36rem */
+                    letter-spacing: 0.084rem;
+                    max-width: 44rem;
+                }
+            }
+        }
+    }
+}

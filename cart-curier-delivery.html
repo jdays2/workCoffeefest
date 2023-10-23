@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Корзина / Доставка курьером</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main class="main cart ordering">
+			<section class="section light-section-clear">
+				<div class="container card__container">
+					<a
+						href="/cart-ordering-final.html"
+						class="arrow-link">
+						<svg class="arrow-link__icon">
+							<use xlink:href="./sprite.svg#standart-arrow-left" />
+						</svg>
+
+						<span>назад</span>
+					</a>
+
+					<div class="map-block map-block--self-delivery">
+						<div class="map-block__form">
+							<div class="map-block__form-head">
+								<h1 class="map-block__form-title heading2">Адрес доставки</h1>
+								<p class="map-block__form-subtitle">
+									Укажите адрес на карте или используйте поиск
+								</p>
+							</div>
+
+							<form class="map-block__form-box">
+								<div class="map-block__form-adress-wrapper">
+									<div class="map-block__form-adress">
+										<span class="map-block__form-adress-value">
+											Москва, ул. 1-й Старомытищенский пр-д, 15к1,
+										</span>
+
+										<div class="map-block__form-adress-remove">
+											<svg class="crest crest--dark">
+												<use xlink:href="./sprite.svg#crest" />
+											</svg>
+										</div>
+									</div>
+									<div class="map-block__identify-box">
+										<p>Определить местоположение</p>
+									</div>
+								</div>
+
+								<div class="map-block__row">
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="street2"
+											class="input"
+											placeholder="Улица" />
+										<label
+											for="floor2"
+											class="input-label">
+											Улица
+										</label>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
+									</div>
+
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="house2"
+											class="input"
+											placeholder="Дом" />
+										<label
+											for="hous2"
+											class="input-label">
+											Дом
+										</label>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
+									</div>
+								</div>
+
+								<div class="map-block__row">
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="floor2"
+											class="input"
+											placeholder="Этаж" />
+										<label
+											for="floor2"
+											class="input-label">
+											Этаж
+										</label>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
+									</div>
+
+									<div class="input-container modal__input-medium">
+										<input
+											type="text"
+											id="hous2"
+											class="input"
+											placeholder="Квартира" />
+										<label
+											for="hous2"
+											class="input-label">
+											Квартира
+										</label>
+										<div class="icon success"></div>
+										<div class="icon invalid"></div>
+									</div>
+								</div>
+
+								<div class="input-container modal__input-large">
+									<input
+										type="text"
+										id="order-comment2"
+										class="input"
+										placeholder="Комментарий" />
+									<label
+										for="order-comment2"
+										class="input-label">
+										Комментарий
+									</label>
+									<div class="icon success"></div>
+									<div class="icon invalid"></div>
+								</div>
+							</form>
+
+							<button class="square-btn blue-square-btn">
+								Сохранить и продолжить
+							</button>
+						</div>
+
+						<div
+							class="map-block__map-box"
+							id="root">
+							<div class="modal modal-map">
+								<div class="modal__container">
+									<button class="modal__close-btn"></button>
+									<div class="modal-map__swiper swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+
+											<div class="swiper-slide modal-map__swiper-item">
+												<img
+													src="./src/images/modal-map-img-1.png"
+													alt="" />
+											</div>
+										</div>
+										<div
+											class="swiper-pagination modal-map__swiper-pagination"></div>
+									</div>
+
+									<div class="modal-map__content">
+										<p class="modal-map__content-title">
+											Детская поликлиника № 118
+										</p>
+										<div class="modal-map__content-disc">
+											<div class="modal-map__content-adress">
+												<p>
+													Москва, 2-й Старомытищинский пр-д., д, 123, корп. 1
+												</p>
+											</div>
+
+											<div class="modal-map__content-time">
+												<span>08-22</span>
+											</div>
+
+											<div class="modal-map__content-pass">
+												<span>Наличие пропуска:</span>
+												<strong>Нет</strong>
+											</div>
+
+											<a
+												href="tel:+74952121059"
+												class="modal-map__content-tel">
+												<span>+7 (495) 212 10 59</span>
+											</a>
+										</div>
+
+										<button class="arrow-link left-feedback">
+											<span>оставить отзыв</span>
+											<svg class="arrow-link__icon">
+												<use xlink:href="sprite.svg#standart-arrow-right" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
+</html>

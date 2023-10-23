@@ -1,0 +1,12 @@
+.index {
+    padding-top: 27.7rem;
+    padding-bottom: 25rem;
+
+    &__list {
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}

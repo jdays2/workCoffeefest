@@ -1,0 +1,61 @@
+.about-production {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background-color: $darkBlue;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 64.5rem;
+        &-heading {
+            margin-bottom: 4.5rem;
+            color: $light;
+        }
+
+        &-subheading {
+            margin-bottom: 4.5rem;
+            color: $brightHeadlines;
+        }
+
+        &-description {
+            color: $light;
+            p {
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    &__right {
+        width: 78.2rem;
+        height: 49.6rem;
+        position: relative;
+        border-radius: 0 0 5rem 5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            border-radius: inherit;
+        }
+
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            img {
+                width: 8.8rem;
+                height: 8.8rem;
+                -o-object-fit: contain;
+                   object-fit: contain;
+            }
+        }
+    }
+}

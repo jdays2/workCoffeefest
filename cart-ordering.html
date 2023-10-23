@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<title>Корзина / Оформление заказа</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main class="main cart ordering">
+			<section class="section light-section-clear">
+				<div class="container card__container">
+					<div class="breadcrumbs__container container">
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item">
+								<a
+									href="/dist/main.html"
+									class="breadcrumbs__item-link">
+									<svg class="home">
+										<use xlink:href="./sprite.svg#home" />
+									</svg>
+								</a>
+							</li>
+
+							<li class="breadcrumbs__item">
+								<a
+									href="/dist/catalog.html"
+									class="breadcrumbs__item-link">
+									<span>Меню кофеен</span>
+								</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a
+									href="/dist/catalog.html"
+									class="breadcrumbs__item-link">
+									<span>Корзина</span>
+								</a>
+							</li>
+
+							<li class="breadcrumbs__item">
+								<a
+									href="/dist/catalog.html"
+									class="breadcrumbs__item-link">
+									<span>Оформление заказа</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cart__content">
+						<div class="cart__main">
+							<div class="cart__head">
+								<h1 class="heading2">Оформление заказа</h1>
+							</div>
+
+							<div class="ordering-progres">
+								<a
+									href=""
+									class="ordering-progres__return-btn">
+									<svg>
+										<use
+											xlink:href="./sprite.svg#standart-arrow-left" />
+									</svg>
+								</a>
+								<div class="ordering-progres__box">
+									<div class="ordering-progres__phase active">
+										<span class="ordering-progres__phase-value">1</span>
+										<span class="ordering-progres__phase-done-icon"></span>
+										<span class="ordering-progres__phase-text">
+											Ваши данные
+										</span>
+									</div>
+
+									<span class="ordering-progres__line"></span>
+									<div class="ordering-progres__phase">
+										<span class="ordering-progres__phase-value">2</span>
+										<span class="ordering-progres__phase-done-icon"></span>
+										<span class="ordering-progres__phase-text">Ваш заказ</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="ordering__box">
+								<div class="ordering__box-head">
+									<p class="heading4">Ваши данные</p>
+								</div>
+								<div class="ordering__box-content">
+									<div class="ordering__box-input-list">
+										<div class="input-container modal__input-large">
+											<input
+												type="text"
+												id="name7"
+												class="input input-name"
+												placeholder="Имя" />
+											<label
+												for="name7"
+												class="input-label">
+												Имя
+											</label>
+
+											<div class="icon success"></div>
+											<div class="icon invalid"></div>
+											<div class="input-status">Неверный формат</div>
+										</div>
+										<div class="input-container modal__input-large">
+											<input
+												type="text"
+												id="tel4"
+												class="input input-tel"
+												placeholder="Телефон" />
+											<label
+												for="tel4"
+												class="input-label">
+												Телефон
+											</label>
+											<div class="icon success"></div>
+											<div class="icon invalid"></div>
+											<div class="input-status">Неверный формат</div>
+										</div>
+										<div class="input-container modal__input-large">
+											<input
+												type="text"
+												id="email2"
+												class="input input-email"
+												placeholder="Email" />
+											<label
+												for="email2"
+												class="input-label">
+												Email
+											</label>
+											<div class="icon success"></div>
+											<div class="icon invalid"></div>
+											<div class="input-status">Неверный формат</div>
+										</div>
+									</div>
+
+									<a
+										href="/cart-ordering-payment.html"
+										class="arrow-link">
+										<span>далее</span>
+										<svg class="arrow-link__icon">
+											<use
+												xlink:href="sprite.svg#standart-arrow-right" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="cart__aside">
+							<div class="box-blue">
+								<div class="cart__aside-row">
+									<p class="heading4 text-gold">Ваш заказ</p>
+									<span class="cart__aside-title">8 товаров</span>
+								</div>
+
+								<div class="cart__aside-row">
+									<p class="text2 text-white">Товары</p>
+									<span class="heading5 text-white">2 000₽</span>
+								</div>
+
+								<div class="cart__aside-row">
+									<p class="text2 text-white">Скидка по бонусной программе</p>
+									<span class="heading5 text-gold">- 200₽</span>
+								</div>
+
+								<div class="cart__aside-total">
+									<p class="cart__aside-total-title">Итоговая сумма</p>
+									<span class="cart__aside-total-value">1 800₽</span>
+								</div>
+
+								<div class="cart__aside-input">
+									<input
+										type="text"
+										placeholder="Промокод"
+										class="cart__input-promo" />
+
+									<svg class="cart__input-icon">
+										<use
+											xlink:href="sprite.svg#standart-arrow-right" />
+									</svg>
+								</div>
+
+								<button
+									class="square-btn"
+									id="unavailable-btn">
+									Оформить
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('./templates/footer.html')
+	</body>
+</html>

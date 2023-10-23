@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+
+		<link
+			href="https://vjs.zencdn.net/8.5.2/video-js.css"
+			rel="stylesheet" />
+		<title>404 - страница не найдена</title>
+	</head>
+
+	<body>
+		@@include('./templates/header.html')
+		<main>
+			<section class="franchise section light-section error-404">
+				<div class="container">
+					<div class="franchise__content">
+						<div class="franchise__left">
+							<h1 class="franchise__left-heading heading2">
+								404
+							</h1>
+							<p class="franchise__left-subheading heading4">
+								Страница не найдена
+							</p>
+							<p class="franchise__left-description text1">
+								Такой страницы не существует либо она была удалена
+							</p>
+							<a href="/"
+								class="franchise__left-btn square-btn request-btn"
+								>
+								На главную
+							</a>
+						</div>
+
+						<div class="franchise__right">
+							<img
+								src="./src/images/franchise-img.png"
+								alt=""
+								class="franchise__right-img" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('./templates/footer.html')
+	</body>
+</html>
