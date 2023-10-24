@@ -111,36 +111,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	//показ и скрытие блока с информацией по заказу (корзина, после выбора карты)
 	const ordersList = document.querySelector('.ordering__orders-wrapper');
-	let orderFormAddressInput = document.getElementById('orderFormAddressInput');
 	if (ordersList) {
-		let accContents = ordersList.querySelector('.acc-content');
-		let accItems = ordersList.querySelectorAll('.acc-item');
+		const activeClass = 'active';
+		const accItems = ordersList.querySelectorAll('.ordering__orders-item');
 		accItems.forEach((item) => {
-			let accHead = item.querySelector('.acc-head');
-			let accContent = item.querySelector('.acc-content');
-			accHead.addEventListener('click', function () {
-				accItems.forEach((item1) => {
-					item1.classList.toggle('active');
-					let accContent1 = item1.querySelector('.acc-content');
-					if (item != item1) {
-						if (accContent1.classList.contains('active')) {
-							accContent1.classList.remove('active');
-						} else {
-							accContent1.classList.add('active');
-							orderFormAddressInput.value = accContent1.getAttribute('data-id');
-							var inputEvent = new Event('input', { bubbles: true });
-							orderFormAddressInput.dispatchEvent(inputEvent);
-						}
-					}
-				});
-				if (accContent.classList.contains('active')) {
-					accContent.classList.remove('active');
-				} else {
-					accContent.classList.add('active');
-					orderFormAddressInput.value = accContent.getAttribute('data-id');
-					var inputEvent = new Event('input', { bubbles: true });
-					orderFormAddressInput.dispatchEvent(inputEvent);
-				}
+			const header = item.querySelector('.acc-head');
+			const content = item.querySelector('.acc-content');
+			header.addEventListener('click', () => {
+				content.classList.toggle(activeClass);
 			});
 		});
 	}
@@ -455,4 +433,42 @@ if (window.screen.width <= 768) {
 			block.style.maxHeight = blockMaxHeight;
 		});
 	});
+}
+
+const massive = [
+	'21-01-2023',
+	'10-09-2023',
+	'21-10-2023',
+	'25-10-2023',
+	'11-10-2023',
+	'02-11-2023',
+];
+
+const calendarIds = ['calendar1', 'calendar2'];
+
+//функция проверки даты
+function renderCell({ date, cellType }) {
+	if (cellType === 'day') {
+		const day = date.getDate();
+		const month = date.getMonth() + 1; // Месяцы начинаются с 0
+		const year = date.getFullYear();
+
+		// Форматируем день, месяц и год в формат 'DD-MM-YYYY'
+		const formattedDate = `${day.toString().padStart(2, '0')}-${month
+			.toString()
+			.padStart(2, '0')}-${year.toString()}`;
+
+		// Проверяем, есть ли отформатированная дата в массиве massive
+		if (massive.includes(formattedDate)) {
+			return { classes: '-my-free-date-' };
+		}
+	}
+}
+
+// Используйте цикл для создания и настройки каждого календаря
+for (const calendarId of calendarIds) {
+	const calendar = new AirDatepicker(`.${calendarId}`, {
+		onRenderCell: renderCell,
+	});
+	calendar.show();
 }
