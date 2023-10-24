@@ -8,6 +8,14 @@ const rem = function (rem) {
    }
 };
 
+// Расстояние от элемента до верха сайта
+function offset(el) {
+   var rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+   return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+}
+
 document.addEventListener("DOMContentLoaded", function () {
    const header = document.querySelector("header");
    const body = document.body;
@@ -420,5 +428,24 @@ if (document.querySelector(".cart__main-item-price") && window.screen.width <= 7
 
       cardWeight.style.marginLeft = `${cardPriceWidth / 5 + 4}rem`;
       console.log(cardPriceWidth);
+   });
+}
+
+//
+
+if (document.querySelector("#slider-categories")) {
+   const sliderCategories = document.querySelector("#slider-categories"),
+      settingsBar = document.querySelector(".settings-bar");
+
+   const topOffset = offset(sliderCategories).top;
+
+   window.addEventListener("scroll", () => {
+      if (window.scrollY + 153 >= topOffset) {
+         settingsBar.classList.add("sticky");
+      }
+
+      if (window.scrollY + 153 < topOffset) {
+         settingsBar.classList.remove("sticky");
+      }
    });
 }

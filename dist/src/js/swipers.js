@@ -73,9 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
    }
 
    const setColorTheme = () => {
-      const mainSlide = document.querySelector(
-         ".main-banner .swiper-slide-active"
-      );
+      const mainSlide = document.querySelector(".main-banner .swiper-slide-active");
 
       if (mainSlide) {
          const mainBanner = document.querySelector(".main-banner");
@@ -418,20 +416,13 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       on: {
-         init: function () {
-            swiper.update();
-            swiper.updateSize();
-            swiper.updateSlides();
-         },
          click: function (swiper, event) {
             if (event.target.classList.contains("category-block__value-show")) {
                let slide = event.target.closest(".category-block__item");
 
-               swiper.$el[0]
-                  .querySelectorAll(".category-block__item")
-                  .forEach((item) => {
-                     item.classList.remove("active");
-                  });
+               swiper.$el[0].querySelectorAll(".category-block__item").forEach((item) => {
+                  item.classList.remove("active");
+               });
 
                slide.classList.add("active");
 
