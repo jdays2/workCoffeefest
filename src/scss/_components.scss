@@ -1891,3 +1891,19 @@ $white20: rgba(255, 255, 255, 0.2);
 		gap: 3rem;
 	}
 }
+
+.cart-input-wrapper.popup-btn {
+	max-height: 7.6rem;
+	overflow: hidden;
+	transition: 0.4s;
+	@media (max-width: 48em) {
+		max-height: 10.5rem;
+	}
+	&.active {
+		max-height: 100rem;
+
+		.popup-block__more-icon {
+			transform: rotate(-180deg);
+		}
+	}
+}

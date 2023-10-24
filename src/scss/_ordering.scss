@@ -223,7 +223,7 @@
 				max-height: 10.5rem;
 				opacity: 1;
 				&.active {
-					max-height: 200rem;
+					max-height: 300rem;
 				}
 
 				p {
@@ -402,20 +402,10 @@
 			padding: 2.4rem 3.5rem;
 			transition: 0.5s margin;
 			border-color: #f1ded0;
-
-			&.time.active {
-				margin-bottom: 26rem;
-			}
-
-			&.calend.active {
-				margin-bottom: 44rem;
-			}
 			&__wrapper {
 				width: 100%;
 				transition: 0.3s ease-in-out;
-				&.active {
-					padding-bottom: 51.4rem;
-				}
+
 				&--time {
 					&.active {
 						padding-bottom: 25.4rem;
