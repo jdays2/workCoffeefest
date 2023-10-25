@@ -184,7 +184,7 @@
 				padding: 2.4rem;
 				border-radius: 0 0 3rem 3rem;
 				border: 0.1rem solid #e6af9a;
-				background: #35415C;
+				background: #35415c;
 				box-shadow: 1.5rem 2.4rem 3.5rem 0rem rgba(0, 0, 0, 0.07);
 				gap: 2rem;
 				position: absolute;
@@ -288,6 +288,45 @@
 		}
 	}
 
+	&__cart {
+		position: relative;
+	}
+	&__cart-value {
+		background-color: #fff;
+		border-radius: 50%;
+		min-width: 2rem;
+		width: 2rem;
+		height: 2rem;
+		min-height: 2rem;
+		position: absolute;
+		top: -20%;
+		right: -25%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+
+		span {
+			color: $darkBlue;
+			font-size: 1.5rem;
+			font-weight: 600;
+			line-height: 100%;
+			margin-top: 0.4rem;
+		}
+
+		@media (max-width: 48em) {
+			min-width: 4rem;
+			width: 4rem;
+			height: 4rem;
+			min-height: 4rem;
+
+			span {
+				font-size: 3rem;
+				font-weight: 600;
+				margin-top: 0.6rem;
+			}
+		}
+	}
+
 	&__search,
 	&__account {
 		margin-right: 2.4rem;
@@ -370,7 +409,7 @@
 			}
 
 			&.active {
-				svg.open  {
+				svg.open {
 					display: none;
 				}
 				svg.close {
@@ -436,7 +475,7 @@
 					height: 100%;
 					background-size: 2.4rem 2.4rem;
 					background-position: 2rem 3.1rem;
-					
+
 					input {
 						font-size: 2.8rem;
 					}
