@@ -1263,7 +1263,7 @@ $white20: rgba(255, 255, 255, 0.2);
 
 	&.mobile-images-hide {
 		.section-info__card-right {
-			display: block;
+			display: flex;
 		}
 	}
 
