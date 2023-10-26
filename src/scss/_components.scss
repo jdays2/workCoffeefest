@@ -1261,6 +1261,12 @@ $white20: rgba(255, 255, 255, 0.2);
 		display: flex !important;
 	}
 
+	&.mobile-images-hide {
+		.section-info__card-right {
+			display: block;
+		}
+	}
+
 	&--big-right-part {
 		height: 59rem;
 		padding: 0;
