@@ -185,6 +185,8 @@
 		& {
 			width: auto;
 			flex: 0 0 32.8rem;
+			display: flex;
+			align-items: stretch;
 
 			&__img {
 				height: 32.8rem !important;
@@ -200,7 +202,7 @@
 			}
 
 			&__info {
-				height: auto;
+				height: 100%;
 				padding: 4rem 2rem;
 			}
 
