@@ -1,6 +1,12 @@
 .news-detail__hero {
     margin-top: 14rem;
 
+    &.big-news-photo {
+        .news-detail__hero-content__right-img {
+            width: 74.2rem;
+        }
+    }
+
     &-top {
         padding-top: 8rem;
         padding-bottom: 5.7rem;
