@@ -416,6 +416,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       on: {
+         init: function (swiper) {
+            swiper.update();
+         },
          click: function (swiper, event) {
             if (event.target.classList.contains("category-block__value-show")) {
                let slide = event.target.closest(".category-block__item");
