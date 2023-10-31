@@ -60,6 +60,10 @@
 				background-size: contain;
 			}
 		}
+
+		.popup-block {
+			z-index: 10;
+		}
 	}
 
 	@media (max-width: 48em) {

@@ -1419,8 +1419,14 @@ $white20: rgba(255, 255, 255, 0.2);
 		background-size: cover;
 
 		&.mobile-images-hide {
+			padding-top: 20.6rem;
+
 			.section-info__card-right {
 				display: none;
+			}
+
+			.section-info__card-left__heading {
+				top: -12rem;
 			}
 		}
 
