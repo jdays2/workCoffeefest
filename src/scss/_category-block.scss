@@ -57,7 +57,7 @@
 	.swiper {
 		overflow: hidden;
 		width: 150.5rem;
-		z-index: 0;
+		z-index: 10;
 
 		&-slide.active {
 			.category-block__value-show {
