@@ -119,6 +119,18 @@
 	}
 
 	@media (max-width: 48em) {
+		&__swiper {
+			&.temporary-fix {
+				width: 95%;
+				padding: 0 7rem;
+
+				.category-block__value-hidden {
+					padding-left: 3rem;
+					padding-right: 3rem;
+				}
+			}
+		}
+
 		.swiper-slide {
 			.category-block__value-show {
 				font-size: 2.8rem;
