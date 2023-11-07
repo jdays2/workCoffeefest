@@ -79,6 +79,16 @@
 	&__title {
 		max-width: 31.4rem;
 		text-align: start;
+		position: relative;
+
+		a {
+			position: absolute;
+			left: -3rem;
+			bottom: 0;
+			display: block;
+			height: calc(100% + 40.5rem);
+			width: 37.4rem;
+		}
 	}
 
 	&__add-to-cart {
@@ -197,6 +207,11 @@
 				overflow: hidden;
 				font-size: 2.7rem;
 				margin: 0 0 8rem 0;
+
+				a {
+					height: calc(100% + 36.2rem);
+					width: 32.5rem;
+				}
 			}
 
 			.catalog-card__price {
