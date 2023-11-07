@@ -349,6 +349,10 @@
 		}
 
 		&__title {
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
 			font-size: 2.8rem;
 			min-height: 12.6rem;
 		}
