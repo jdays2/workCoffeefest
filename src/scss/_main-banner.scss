@@ -187,6 +187,7 @@
 	@media (max-width: 48em) {
 		margin-top: 18.2rem;
 		height: calc(100vh - 18.2rem);
+		min-height: 105rem;
 
 		&__swiper {
 			&-slide {
