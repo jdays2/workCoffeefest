@@ -11,7 +11,7 @@
 			height: 10rem;
 			position: fixed;
 			z-index: 10;
-			top: 15.3rem;
+			top: 15rem;
 			left: 0;
 			width: 100%;
 			background-color: $light;
@@ -19,6 +19,17 @@
 			& > .category-block {
 				width: 160rem;
 				margin: 0 auto;
+				align-items: center;
+
+				button {
+					@media (min-width: 48em) {
+						height: 10rem;
+
+						svg {
+							height: 10rem;
+						}
+					}
+				}
 			}
 		}
 	}
