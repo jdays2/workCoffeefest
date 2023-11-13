@@ -193,6 +193,13 @@ const closeModalHandler = () => {
 		};
 		closeBtn.removeEventListener('click', modalRemove);
 		closeBtn.addEventListener('click', modalRemove);
+
+		mod.addEventListener('click', (e) => {
+			if (e.target === mod) {
+				mod.classList.remove('active');
+				mod.addEventListener('transitionend', transitionHandler);
+			}
+		});
 	});
 };
 
@@ -1944,7 +1951,7 @@ const modals = {
 					</div>
 		</div>
 		</div>`,
-	'partnership': `<div class="modal partnership active">
+	partnership: `<div class="modal partnership active">
 	<div class="modal__container">
 		<button class="modal__close-btn"></button>
 		<div class="modal__root"><p class="heading2">Регистрация</p>

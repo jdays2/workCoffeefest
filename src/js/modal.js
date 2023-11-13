@@ -48,36 +48,6 @@ if (cartBtnInputs) {
 	});
 }
 
-//обработка смежной кнопки закрытия модалки
-// const modal = document.querySelectorAll('.modal');
-
-// if (modal) {
-// 	modal.forEach((item) => {
-// 		const closeBtn = item.querySelector('.modal__close-btn');
-// 		const root = item.querySelector('.modal__root');
-
-// 		const transitionHandler = () => {
-// 			while (root.firstChild) {
-// 				root.removeChild(root.firstChild);
-// 			}
-// 			item.classList.remove('active');
-// 			item.removeEventListener('transitionend', transitionHandler);
-// 		};
-
-// 		closeBtn.addEventListener('click', () => {
-// 			item.classList.remove('active');
-// 			item.addEventListener('transitionend', transitionHandler);
-// 		});
-
-// 		//обработка клика вне модалки, для закрытия
-// 		item.addEventListener('click', (e) => {
-// 			if (e.target === item) {
-// 				item.classList.remove('active');
-// 				item.addEventListener('transitionend', transitionHandler);
-// 			}
-// 		});
-// 	});
-// }
 
 //обработка клика по popup и открытию меню.
 const popupBtns = document.querySelectorAll('.popup-btn');
