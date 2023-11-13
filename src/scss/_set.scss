@@ -108,6 +108,7 @@ ul li {
 .container {
 	width: 160rem;
 	margin: 0 auto;
+	max-width: 1600px;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -125,6 +126,23 @@ button {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+@media (min-width: 120em) {
+	html {
+		font-size: 10px;
+		background-color: #fff9ee;
+	}
+
+	body {
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+
+	.container {
+		margin: 0 auto;
+		max-width: 1600px;
+	}
 }
 
 @media (max-width: 48em) {

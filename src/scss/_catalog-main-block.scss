@@ -38,7 +38,7 @@
     .catalog-main-block.cakes {
         .catalog-card-1 {
             &__descr {
-                height: 70rem;
+                height: 100%;
             }
 
             .catalog-card__main-price {
@@ -47,9 +47,13 @@
                 left: 0rem;
             }
 
-            &__title {
-                margin: 0 0 14.9rem 0;
-            }
+            // .catalog-card-1__title {
+            //     margin-bottom: 8rem;
+            // }
+
+            // &__title {
+            //     margin: 0 0 14.9rem 0;
+            // }
 
             // .catalog-card__main-price {
             //     top: 50rem;

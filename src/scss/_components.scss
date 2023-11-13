@@ -1260,6 +1260,13 @@ $white20: rgba(255, 255, 255, 0.2);
 	&.active {
 		display: flex !important;
 	}
+
+	&.mobile-images-hide {
+		.section-info__card-right {
+			display: flex;
+		}
+	}
+
 	&--big-right-part {
 		height: 59rem;
 		padding: 0;
@@ -1410,6 +1417,18 @@ $white20: rgba(255, 255, 255, 0.2);
 		background-image: url(../images/background-6-mobile.webp);
 		background-position: center top;
 		background-size: cover;
+
+		&.mobile-images-hide {
+			padding-top: 20.6rem;
+
+			.section-info__card-right {
+				display: none;
+			}
+
+			.section-info__card-left__heading {
+				top: -12rem;
+			}
+		}
 
 		&__container {
 			flex-direction: column;

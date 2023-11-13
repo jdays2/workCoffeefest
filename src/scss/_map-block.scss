@@ -101,7 +101,15 @@
 		background-color: $biege !important;
 	}
 	div {
-		background-color: #fff9ee;
+		&:not(:last-child) {
+			background-color: #fff9ee;
+		}
+
+		&:last-child {
+			.modal-map {
+				background-color: transparent;
+			}
+		}
 	}
 
 	&__search {
@@ -184,7 +192,7 @@
 				background-image: url(/sprite.svg#clock);
 				background-repeat: no-repeat;
 				background-position: left center;
-				background-size: contain;
+				background-size: 2.4rem 2.4rem;
 
 				span {
 					color: #35415c;
@@ -295,6 +303,7 @@
 
 			&-time {
 				padding-left: 4rem;
+				background-size: 3.8rem 3.8rem;
 
 				span {
 					font-size: 2.8rem;

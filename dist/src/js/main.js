@@ -444,7 +444,7 @@ const massive = [
 	'02-11-2023',
 ];
 
-const calendarIds = ['calendar1', 'calendar2'];
+const calendarIds = ['calendar1'];
 
 //функция проверки даты
 function renderCell({ date, cellType }) {
@@ -471,4 +471,12 @@ for (const calendarId of calendarIds) {
 		onRenderCell: renderCell,
 	});
 	calendar.show();
+}
+
+//убираем стаднартное поведение кнопки в форме
+const cakesFormBtn = document.querySelector('.cake-design-btn');
+if (cakesFormBtn) {
+	cakesFormBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+	});
 }

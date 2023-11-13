@@ -441,217 +441,204 @@
 
 			<section class="catalog-main-block grain-coffee section">
 				<div class="container"><div class="settings-bar container settings-bar__mobile-big">
-	<div class="settings-bar__row">
-		<div class="settings-bar__box">
-			<button
-				class="tag-btn filter-btn"
-				id="filter">
-				<span>Фильтры</span>
-			</button>
+   <div class="settings-bar__row">
+      <div class="settings-bar__box">
+         <button class="tag-btn filter-btn" id="filter-modal">
+            <span>Фильтры</span>
+         </button>
 
-			<div class="search-block">
-				<div>
-					<input
-						class="search-block__input"
-						type="text"
-						placeholder="Поиск" />
+         <div class="search-block">
+            <div>
+               <input class="search-block__input" type="text" placeholder="Поиск" />
 
-					<button class="search-block__enter-icon">
-						<svg class="arrow-right">
-							<use xlink:href="sprite.svg#arrow-right" />
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>
+               <button class="search-block__enter-icon">
+                  <svg class="arrow-right">
+                     <use xlink:href="sprite.svg#arrow-right" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </div>
 
-		<div class="settings-bar__box">
-			<button
-				class="tag-btn geo-btn"
-				id="geo-btn">
-				<span>Выбрать адрес</span>
-				<svg class="popup-block__more-icon">
-					<use xlink:href="sprite.svg#geo-icon" />
-				</svg>
-			</button>
+      <div class="settings-bar__box">
+         <button class="tag-btn geo-btn" id="geo">
+            <span>Выбрать адрес</span>
+            <svg class="popup-block__more-icon">
+               <use xlink:href="sprite.svg#geo-icon" />
+            </svg>
+         </button>
 
-			<div class="popup-block__wrapper">
-				<div class="popup-block popup-btn">
-					<span class="popup-block__arrows-icon"></span>
+         <div class="popup-block__wrapper">
+            <div class="popup-block popup-btn">
+               <span class="popup-block__arrows-icon"></span>
 
-					<div class="popup-block__popup popup-block__popup--select popup-list">
-						<ul class="popup-block__list popup-select-list">
-							<li class="popup-block__item popup-select-item">
-								<span class="popup-block__item-title text2">Сначала новые</span>
-							</li>
+               <div class="popup-block__popup popup-block__popup--select popup-list">
+                  <ul class="popup-block__list popup-select-list">
+                     <li class="popup-block__item popup-select-item">
+                        <span class="popup-block__item-title text2">Сначала новые</span>
+                     </li>
 
-							<li class="popup-block__item popup-select-item">
-								<span class="popup-block__item-title text2">
-									Сначала недорогие
-								</span>
-							</li>
+                     <li class="popup-block__item popup-select-item">
+                        <span class="popup-block__item-title text2"> Сначала недорогие </span>
+                     </li>
 
-							<li class="popup-block__item popup-select-item">
-								<span class="popup-block__item-title text2">
-									Сначала дорогие
-								</span>
-							</li>
-						</ul>
-					</div>
+                     <li class="popup-block__item popup-select-item">
+                        <span class="popup-block__item-title text2"> Сначала дорогие </span>
+                     </li>
+                  </ul>
+               </div>
 
-					<span class="text2 popup-block__select-value">Сортировать</span>
+               <span class="text2 popup-block__select-value">Сортировать</span>
 
-					<svg class="popup-block__more-icon">
-						<use xlink:href="sprite.svg#popup" />
-					</svg>
-				</div>
-			</div>
-		</div>
-	</div>
+               <svg class="popup-block__more-icon">
+                  <use xlink:href="sprite.svg#popup" />
+               </svg>
+            </div>
+         </div>
+      </div>
+   </div>
 
-	<div class="settings-bar__row">
-		<div class="filter__tag-list">
-			<button class="tag-btn tag-btn--borderless filter-result-item active">
-				<span>Новости кофе</span>
-				<svg class="crest crest--dark">
-					<use xlink:href="sprite.svg#dark-crest" />
-				</svg>
-			</button>
+   <div class="settings-bar__row">
+      <div class="filter__tag-list">
+         <button class="tag-btn tag-btn--borderless filter-result-item active">
+            <span>Новости кофе</span>
+            <svg class="crest crest--dark">
+               <use xlink:href="sprite.svg#dark-crest" />
+            </svg>
+         </button>
 
-			<button class="tag-btn tag-btn--borderless filter-result-item active">
-				<span>Новости кофеен</span>
-				<svg class="crest crest--dark">
-					<use xlink:href="sprite.svg#dark-crest" />
-				</svg>
-			</button>
+         <button class="tag-btn tag-btn--borderless filter-result-item active">
+            <span>Новости кофеен</span>
+            <svg class="crest crest--dark">
+               <use xlink:href="sprite.svg#dark-crest" />
+            </svg>
+         </button>
 
-			<button class="tag-btn tag-btn--borderless filter-result-item active">
-				<span>События</span>
-				<svg class="crest crest--dark">
-					<use xlink:href="sprite.svg#dark-crest" />
-				</svg>
-			</button>
-		</div>
-	</div>
+         <button class="tag-btn tag-btn--borderless filter-result-item active">
+            <span>События</span>
+            <svg class="crest crest--dark">
+               <use xlink:href="sprite.svg#dark-crest" />
+            </svg>
+         </button>
+      </div>
+   </div>
 
-	<div class="settings-bar__row">
-		<div class="category-block">
-			<button class="category-block__btn-left">
-				<svg>
-					<use xlink:href="./sprite.svg#standart-arrow-left" />
-				</svg>
-			</button>
-			<div class="category-block category-block__swiper swiper">
-				<div class="swiper-wrapper popup-select-list">
-					<div class="category-block__item swiper-slide popup-select-item active">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Все</span>
-							<span class="category-block__value-show">Все</span>
-						</div>
-					</div>
+   <div class="settings-bar__row" id="slider-categories">
+      <div class="category-block">
+         <button class="category-block__btn-left">
+            <svg>
+               <use xlink:href="./sprite.svg#standart-arrow-left" />
+            </svg>
+         </button>
+         <div class="category-block category-block__swiper swiper">
+            <div class="swiper-wrapper popup-select-list">
+               <div class="category-block__item swiper-slide popup-select-item active">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Все</span>
+                     <span class="category-block__value-show">Все</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Завтраки</span>
-							<span class="category-block__value-show">Завтраки</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Завтраки</span>
+                     <span class="category-block__value-show">Завтраки</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Салаты</span>
-							<span class="category-block__value-show">Салаты</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Салаты</span>
+                     <span class="category-block__value-show">Салаты</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Супы и блюда</span>
-							<span class="category-block__value-show">Супы и блюда</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Супы и блюда</span>
+                     <span class="category-block__value-show">Супы и блюда</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">
-								Сендвичи и бургеры
-							</span>
-							<span class="category-block__value-show">Сендвичи и бургеры</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden"> Сендвичи и бургеры </span>
+                     <span class="category-block__value-show">Сендвичи и бургеры</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Зерновой кофе</span>
-							<span class="category-block__value-show">Зерновой кофе</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Зерновой кофе</span>
+                     <span class="category-block__value-show">Зерновой кофе</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Горячие напитки</span>
-							<span class="category-block__value-show">Горячие напитки</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Горячие напитки</span>
+                     <span class="category-block__value-show">Горячие напитки</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Выпечка</span>
-							<span class="category-block__value-show">Выпечка</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Выпечка</span>
+                     <span class="category-block__value-show">Выпечка</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Десерты</span>
-							<span class="category-block__value-show">Десерты</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Десерты</span>
+                     <span class="category-block__value-show">Десерты</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Кофе и чай</span>
-							<span class="category-block__value-show">Кофе и чай</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Кофе и чай</span>
+                     <span class="category-block__value-show">Кофе и чай</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Завтраки</span>
-							<span class="category-block__value-show">Завтракий</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Завтраки</span>
+                     <span class="category-block__value-show">Завтракий</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Зерновой кофе</span>
-							<span class="category-block__value-show">Зерновой кофе</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Зерновой кофе</span>
+                     <span class="category-block__value-show">Зерновой кофе</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Горячие напитки</span>
-							<span class="category-block__value-show">Горячие напитки</span>
-						</div>
-					</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Горячие напитки</span>
+                     <span class="category-block__value-show">Горячие напитки</span>
+                  </div>
+               </div>
 
-					<div class="category-block__item swiper-slide popup-select-item">
-						<div class="category-block__value-wrapper">
-							<span class="category-block__value-hidden">Кулич</span>
-							<span class="category-block__value-show">Кулич</span>
-						</div>
-					</div>
-				</div>
-			</div>
+               <div class="category-block__item swiper-slide popup-select-item">
+                  <div class="category-block__value-wrapper">
+                     <span class="category-block__value-hidden">Кулич</span>
+                     <span class="category-block__value-show">Кулич</span>
+                  </div>
+               </div>
+            </div>
+         </div>
 
-			<button class="category-block__btn-right">
-				<svg>
-					<use xlink:href="./sprite.svg#standart-arrow-right" />
-				</svg>
-			</button>
-		</div>
-	</div>
+         <button class="category-block__btn-right">
+            <svg>
+               <use xlink:href="./sprite.svg#standart-arrow-right" />
+            </svg>
+         </button>
+      </div>
+   </div>
 </div>
 </div>
 				<div class="catalog-main-block__container container">
@@ -1996,145 +1983,7 @@
 	</div>
 </footer>
 
-<div class="modal filter-modal-1">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal filter-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal is-correct-adress">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal map-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal personal-info-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal chage-password-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal add-adress">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal feedback-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal feedback-sended-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal text-us">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal request-sended-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal vacancy-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal message-sended-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal request-sended-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal unavailable-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal promotion-modal">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal add-adress">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal edit-adress">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal partnership">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
-
-<div class="modal partnership-sended">
-	<div class="modal__container">
-		<button class="modal__close-btn"></button>
-		<div class="modal__root"></div>
-	</div>
-</div>
+<div class="modal__box"></div>
 
 <script
 	src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"

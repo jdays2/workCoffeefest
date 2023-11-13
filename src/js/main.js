@@ -472,3 +472,11 @@ for (const calendarId of calendarIds) {
 	});
 	calendar.show();
 }
+
+//убираем стаднартное поведение кнопки в форме
+const cakesFormBtn = document.querySelector('.cake-design-btn');
+if (cakesFormBtn) {
+	cakesFormBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+	});
+}
